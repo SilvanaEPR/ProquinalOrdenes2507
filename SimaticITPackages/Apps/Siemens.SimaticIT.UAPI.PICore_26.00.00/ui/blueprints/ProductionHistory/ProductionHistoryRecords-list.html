@@ -1,0 +1,4 @@
+﻿<div ng-controller="PICore_ProductionHistoryRecordsController as vm" ng-if="activeContent === 'ProductionHistory'" style="height:100%;width:100%">
+    <siemens-opcenterex-fn-productionhistory ng-if="vm.isPHRAppInstalled" ng-init="vm.phrComponentActivate()" on-register-api="vm.onProductionHistoryRegisterApi(api)" is-tab-screen="true"></siemens-opcenterex-fn-productionhistory>
+    <div ng-if="!vm.isPHRAppInstalled">{{ 'Siemens_SimaticIT_UAPI_PICore_WorkOrderConfiguration.ProductionHistoryRecordsModuleMesssage' | translate }}</div>
+</div>

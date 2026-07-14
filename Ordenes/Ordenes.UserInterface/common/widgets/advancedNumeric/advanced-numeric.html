@@ -1,0 +1,23 @@
+<span ng-class="advancedNumericCtrl.ngDisabled? 'mask-text-label-disabled' : 'mask-text-label'" ng-transclude></span>
+<div ng-if="advancedNumericCtrl.readOnly || advancedNumericCtrl.ngReadonly" class="label-property-grid-control-readonly property-value-ellipsis"> {{advancedNumericCtrl.value}} </div>
+
+<ng-form name='advancedNumericForm' ng-if="!(advancedNumericCtrl.readOnly || advancedNumericCtrl.ngReadonly)" ng-class="{'isrequired' :(advancedNumericCtrl.validation.required) && advancedNumericCtrl.value!==undefined}">
+    <div class='property-grid-input-group'>
+        <input type='text'
+               ng-keypress='advancedNumericCtrl.keyPressEvent($event)'
+               ng-class="{'validator-control-invalid':((advancedNumericForm.$invalid && advancedNumericForm.$dirty) || (advancedNumericForm.$invalid && advancedNumericForm.$visited)),
+               'validator-control':!((advancedNumericForm.advancedNumericCtrl && advancedNumericForm.$dirty) || (advancedNumericForm.$invalid && advancedNumericForm.$visited)),
+               'ng-dirty':advancedNumericForm.$dirty}"
+               ng-model='advancedNumericCtrl.displayValue'
+               ng-required='advancedNumericCtrl.validation.required'
+               ng-minlength='advancedNumericCtrl.validation.minlength'
+               ng-maxlength='advancedNumericCtrl.validation.maxlength'
+               ng-pattern='advancedNumericCtrl.validation.pattern'
+               ng-blur="advancedNumericCtrl.onBlur()"
+               sit-change="advancedNumericCtrl.sitChange"
+               ng-disabled="advancedNumericCtrl.ngDisabled"
+               ng-focus="advancedNumericCtrl.onFocus()"
+               placeholder={{advancedNumericCtrl.placeholder}}
+               sit-form-input-validator />
+    </div>
+</ng-form>

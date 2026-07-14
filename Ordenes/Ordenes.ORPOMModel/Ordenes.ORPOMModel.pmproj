@@ -1,0 +1,298 @@
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>55ef912b-cc0c-4bd9-b505-a51e11ef35d2</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>OR.PICore.Ordenes.ORPOMModel</RootNamespace>
+    <AssemblyName>OR.PICore.Ordenes.ORPOMModel</AssemblyName>
+    <Name>Ordenes.ORPOMModel</Name>
+    <FunctionalBlockType>ExtendedProject</FunctionalBlockType>
+    <FunctionalBlockVersion>01.00.00</FunctionalBlockVersion>
+    <FunctionalBlockName>Ordenes</FunctionalBlockName>
+    <FunctionalBlockDomain>PICore</FunctionalBlockDomain>
+    <FunctionalBlockPrefix>OR</FunctionalBlockPrefix>
+    <SitPlatformVersion>11.0</SitPlatformVersion>
+    <DocumentationFolder>
+    </DocumentationFolder>
+    <DocumentationCompilerOption>True</DocumentationCompilerOption>
+    <ParallelCompilerOption>True</ParallelCompilerOption>
+    <FunctionalBlockDomainPrefix>OR</FunctionalBlockDomainPrefix>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU'  ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Diagrams\" />
+    <Folder Include="Properties" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Model" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Model\Project.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Model\DataSource.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Model\Command" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Model\Command\Command.ul" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Model\DataModel" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Model\DataModel\DataModel.ul" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Model\Event" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Model\Event\Event.ul" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Model\ReadingFunction" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Model\ReadingFunction\ReadingFunction.ul" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Model\Security" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Model\Security\Security.ul" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Model\Alias" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Model\Alias\Alias.ul" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Model\Type" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Model\Type\Type.ul" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Diagrams\OR_OR_Ordenes.dm" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Siemens_SimaticIT_MS_AGW_MS.um">
+      <Name>Siemens_SimaticIT_MS_AGW_MS.um</Name>
+      <FileModelName>Siemens_SimaticIT_MS_AGW_MS.um</FileModelName>
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.AGW_MS_09.02.00\model\manufacturingModel\Siemens_SimaticIT_MS_AGW_MS.um</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Siemens_SimaticIT_MS_ATN_MS.um">
+      <Name>Siemens_SimaticIT_MS_ATN_MS.um</Name>
+      <FileModelName>Siemens_SimaticIT_MS_ATN_MS.um</FileModelName>
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.ATN_MS_08.02.00\model\manufacturingModel\Siemens_SimaticIT_MS_ATN_MS.um</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Siemens_SimaticIT_MS_PRM_MS.um">
+      <Name>Siemens_SimaticIT_MS_PRM_MS.um</Name>
+      <FileModelName>Siemens_SimaticIT_MS_PRM_MS.um</FileModelName>
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.PRM_MS_03.04.00\model\manufacturingModel\Siemens_SimaticIT_MS_PRM_MS.um</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Siemens_SimaticIT_RF_UDM_RF.um">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.UDM_RF_07.04.00\model\manufacturingModel\Siemens_SimaticIT_RF_UDM_RF.um</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens_SimaticIT_MS_TSK_MS.um">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.TSK_MS_09.04.00\model\manufacturingModel\Siemens_SimaticIT_MS_TSK_MS.um</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens_SimaticIT_MS_BPF_MS.um">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.BPF_MS_06.04.00\model\manufacturingModel\Siemens_SimaticIT_MS_BPF_MS.um</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens_SimaticIT_MS_EQU_MS.um">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.EQU_MS_08.04.00\model\manufacturingModel\Siemens_SimaticIT_MS_EQU_MS.um</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens_SimaticIT_OP_EQU_OP.um">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.EQU_OP_08.04.00\model\manufacturingModel\Siemens_SimaticIT_OP_EQU_OP.um</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens_SimaticIT_OP_TSK_OP.um">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.TSK_OP_11.04.00\model\manufacturingModel\Siemens_SimaticIT_OP_TSK_OP.um</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens_OpcenterEX_FN_OP_NUM_OP.um">
+      <HintPath>..\..\SimaticITPackages\Siemens.OpcenterEX.FN.NUM_OP_02.04.00\model\manufacturingModel\Siemens_OpcenterEX_FN_OP_NUM_OP.um</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens_SimaticIT_OP_BPF_OP.um">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.BPF_OP_09.04.00\model\manufacturingModel\Siemens_SimaticIT_OP_BPF_OP.um</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens_SimaticIT_MS_MAT_MS.um">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.MAT_MS_05.04.00\model\manufacturingModel\Siemens_SimaticIT_MS_MAT_MS.um</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens_SimaticIT_OP_MAT_OP.um">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.MAT_OP_06.04.00\model\manufacturingModel\Siemens_SimaticIT_OP_MAT_OP.um</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens_SimaticIT_MS_UDM_MS.um">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.UDM_MS_21.00.00\model\manufacturingModel\Siemens_SimaticIT_MS_UDM_MS.um</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens_SimaticIT_SD_DSG_SD.um">
+      <Name>Siemens_SimaticIT_SD_DSG_SD.um</Name>
+      <FileModelName>Siemens_SimaticIT_SD_DSG_SD.um</FileModelName>
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.DSG_SD_02.04.00\model\manufacturingModel\Siemens_SimaticIT_SD_DSG_SD.um</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Siemens_SimaticIT_UAPI_MS_CT_MS.um">
+      <Name>Siemens_SimaticIT_UAPI_MS_CT_MS.um</Name>
+      <FileModelName>Siemens_SimaticIT_UAPI_MS_CT_MS.um</FileModelName>
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.UAPI.CT_MS_18.00.00\model\manufacturingModel\Siemens_SimaticIT_UAPI_MS_CT_MS.um</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Siemens_SimaticIT_UAPI_MS_Read_Chn.um">
+      <Name>Siemens_SimaticIT_UAPI_MS_Read_Chn.um</Name>
+      <FileModelName>Siemens_SimaticIT_UAPI_MS_Read_Chn.um</FileModelName>
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.UAPI.Read_Chn_18.00.00\model\manufacturingModel\Siemens_SimaticIT_UAPI_MS_Read_Chn.um</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Siemens_SimaticIT_UAPI_OP_CT_OP.um">
+      <Name>Siemens_SimaticIT_UAPI_OP_CT_OP.um</Name>
+      <FileModelName>Siemens_SimaticIT_UAPI_OP_CT_OP.um</FileModelName>
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.UAPI.CT_OP_22.00.00\model\manufacturingModel\Siemens_SimaticIT_UAPI_OP_CT_OP.um</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Siemens_SimaticIT_UAPI_OP_PITnT_OP.um">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.UAPI.PITnT_OP_19.00.00\model\manufacturingModel\Siemens_SimaticIT_UAPI_OP_PITnT_OP.um</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens_SimaticIT_UAPI_RF_ProductionContext_RF.um">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.UAPI.ProductionContext_RF_15.00.00\model\manufacturingModel\Siemens_SimaticIT_UAPI_RF_ProductionContext_RF.um</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens_SimaticIT_UAPI_MS_PIEquipment_MS.um">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.UAPI.PIEquipment_MS_16.00.00\model\manufacturingModel\Siemens_SimaticIT_UAPI_MS_PIEquipment_MS.um</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens_SimaticIT_UAPI_OP_PIEquipment_OP.um">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.UAPI.PIEquipment_OP_17.00.00\model\manufacturingModel\Siemens_SimaticIT_UAPI_OP_PIEquipment_OP.um</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens_OpcenterEX_RF_Configuration_RF.um">
+      <HintPath>..\..\SimaticITPackages\Siemens.OpcenterEX.Configuration_RF_12.00.00\model\manufacturingModel\Siemens_OpcenterEX_RF_Configuration_RF.um</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens_SimaticIT_MS_ALG_MS.um">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.ALG_MS_02.04.00\model\manufacturingModel\Siemens_SimaticIT_MS_ALG_MS.um</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens_SimaticIT_OP_ALG_OP.um">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.ALG_OP_02.04.00\model\manufacturingModel\Siemens_SimaticIT_OP_ALG_OP.um</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens_OpcenterEX_PR_OP_ApplicationLogExt.um">
+      <HintPath>..\..\SimaticITPackages\Siemens.OpcenterEX.PR.ApplicationLogExt_14.00.00\model\manufacturingModel\Siemens_OpcenterEX_PR_OP_ApplicationLogExt.um</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens_OpcenterEX_FN_MS_ProductionHistory_MS.um">
+      <HintPath>..\..\SimaticITPackages\Siemens.OpcenterEX.FN.ProductionHistory_MS_10.00.00\model\manufacturingModel\Siemens_OpcenterEX_FN_MS_ProductionHistory_MS.um</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens_OpcenterEX_FN_OP_ProductionHistory_OP.um">
+      <HintPath>..\..\SimaticITPackages\Siemens.OpcenterEX.FN.ProductionHistory_OP_11.00.00\model\manufacturingModel\Siemens_OpcenterEX_FN_OP_ProductionHistory_OP.um</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens_SimaticIT_RF_Search_RF.um">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.Search_RF_15.00.00\model\manufacturingModel\Siemens_SimaticIT_RF_Search_RF.um</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens_OpcenterEX_PR_MS_EquipAllocation_MS.um">
+      <HintPath>..\..\SimaticITPackages\Siemens.OpcenterEX.PR.EquipAllocation_MS_14.00.00\model\manufacturingModel\Siemens_OpcenterEX_PR_MS_EquipAllocation_MS.um</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens_OpcenterEX_PR_OP_EquipAllocation_OP.um">
+      <HintPath>..\..\SimaticITPackages\Siemens.OpcenterEX.PR.EquipAllocation_OP_17.00.00\model\manufacturingModel\Siemens_OpcenterEX_PR_OP_EquipAllocation_OP.um</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens_OpcenterEX_OP_Maintenance_OP.um">
+      <HintPath>..\..\SimaticITPackages\Siemens.OpcenterEX.Maintenance_OP_12.00.00\model\manufacturingModel\Siemens_OpcenterEX_OP_Maintenance_OP.um</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens_SimaticIT_MS_CHR_MS.um">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.CHR_MS_10.04.00\model\manufacturingModel\Siemens_SimaticIT_MS_CHR_MS.um</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens_OpcenterEX_FN_MS_DEF_MS.um">
+      <HintPath>..\..\SimaticITPackages\Siemens.OpcenterEX.FN.DEF_MS_05.04.00\model\manufacturingModel\Siemens_OpcenterEX_FN_MS_DEF_MS.um</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens_SimaticIT_MS_ES_MS.um">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.ES_MS_05.04.00\model\manufacturingModel\Siemens_SimaticIT_MS_ES_MS.um</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens_SimaticIT_OP_CHR_OP.um">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.CHR_OP_14.04.00\model\manufacturingModel\Siemens_SimaticIT_OP_CHR_OP.um</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens_SimaticIT_SD_ES_SD.um">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.ES_SD_05.04.00\model\manufacturingModel\Siemens_SimaticIT_SD_ES_SD.um</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens_SimaticIT_UAPI_OP_PIMaterial_OP.um">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.UAPI.PIMaterial_OP_19.00.00\model\manufacturingModel\Siemens_SimaticIT_UAPI_OP_PIMaterial_OP.um</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens_SimaticIT_UAPI_MS_PIMaterial_MS.um">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.UAPI.PIMaterial_MS_15.00.00\model\manufacturingModel\Siemens_SimaticIT_UAPI_MS_PIMaterial_MS.um</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens_SimaticIT_UAPI_OP_PICore_OP.um">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.UAPI.PICore_OP_25.00.00\model\manufacturingModel\Siemens_SimaticIT_UAPI_OP_PICore_OP.um</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens_OpcenterEX_PR_MS_Sampling_MS.um">
+      <HintPath>..\..\SimaticITPackages\Siemens.OpcenterEX.PR.Sampling_MS_15.00.00\model\manufacturingModel\Siemens_OpcenterEX_PR_MS_Sampling_MS.um</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens_SimaticIT_UAPI_MS_PICore_MS.um">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.UAPI.PICore_MS_22.00.00\model\manufacturingModel\Siemens_SimaticIT_UAPI_MS_PICore_MS.um</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens_SimaticIT_OP_UDM_OP.um">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.UDM_OP_22.00.00\model\manufacturingModel\Siemens_SimaticIT_OP_UDM_OP.um</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens_SimaticIT_UAPI_OP_PIOrder_OP.um">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.UAPI.PIOrder_OP_17.00.00\model\manufacturingModel\Siemens_SimaticIT_UAPI_OP_PIOrder_OP.um</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens_SimaticIT_UAPI_PI_PICore.um">
+      <HintPath>..\..\SimaticITPackages\Apps\Siemens.SimaticIT.UAPI.PICore_26.00.00\model\manufacturingModel\Siemens_SimaticIT_UAPI_PI_PICore.um</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <Import Project="$(SITUnifiedVSToolingPlatformBin)\Siemens.SimaticIt.DSL.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

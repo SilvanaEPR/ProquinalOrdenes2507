@@ -1,0 +1,32 @@
+<div class="sit-text-select">
+    <ng-form name="textSelectForm" ng-if="!(ctrl.readOnly || ctrl.ngReadonly)" ng-class="{'isrequired' : ctrl.validation.required}">
+        <input type="text" ng-class="{'validator-control-invalid':((textSelectForm.$invalid && textSelectForm.$dirty) || (textSelectForm.$invalid && textSelectForm.$visited)),
+               'validator-control':!((textSelectForm.$invalid && textSelectForm.$dirty) || (textSelectForm.$invalid && textSelectForm.$visited)),
+               'ng-dirty':textSelectForm.$dirty}" ng-model="ctrl.sitSelectedString" ng-required='ctrl.validation.required' sit-change="ctrl.sitChange" class="text-select-input" sit-form-input-validator/>
+        <div class="dropdown text-select-dropdown">
+            <button ng-class="{'validator-control-invalid':((textSelectForm.$invalid && textSelectForm.$dirty) || (textSelectForm.$invalid && textSelectForm.$visited)),
+                    'validator-control':!((textSelectForm.$invalid && textSelectForm.$dirty) || (textSelectForm.$invalid && textSelectForm.$visited)),
+                    'ng-dirty':textSelectForm.$dirty,
+                    'dropdown-button-focused': (textSelectForm.$focused) && !((textSelectForm.$invalid && textSelectForm.$dirty) || (textSelectForm.$invalid && textSelectForm.$visited))}"
+                    class="btn btn-default dropdown-menu-advanced"
+                    type="button" id="textSelectCombo"
+                    aria-expanded="false"
+                    data-bs-toggle="dropdown"
+                    data-bs-display="static"
+                    ng-blur="ctrl.ngBlur()"
+                    ng-disabled="ctrl.ngDisabled"
+                    ng-focus="ctrl.ngFocus()">
+                <span class="single-selection-dropdown-icon" sit-class="single-selection-dropdown-icon" sit-mom-icon='{path: "common/icons/miscDownArrow16.svg", size:"16px"}'> </span>
+            </button>
+
+            <ul id="dropdownMenuList" class="dropdown-menu" role="menu" aria-labelledby="textSelectCombo" tabindex="0">
+                <li  ng-repeat="selectable in ctrl.sitOptions"
+                    data-internal-type="{{selectable.id}}" ng-class="{selected: selectable.selected}" role="presentation"
+                    ng-click="ctrl.toggleSelected($event, selectable)" class="dropdown-item">
+                    <a role="menuitem" tabindex="-1">{{selectable.name}}</a>
+                </li>
+            </ul>
+        </div>
+    </ng-form>
+</div>
+

@@ -1,0 +1,21 @@
+<svg id="Image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="linear-gradient" x1="26.161" y1="23.839" x2="43.839" y2="6.161" gradientTransform="matrix(1, 0, 0, -1, 0, 50)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#73b4c8"/>
+      <stop offset="0.175" stop-color="#6aaec3"/>
+      <stop offset="0.457" stop-color="#529eb5"/>
+      <stop offset="0.809" stop-color="#2c839f"/>
+      <stop offset="1" stop-color="#147391"/>
+    </linearGradient>
+  </defs>
+  <g id="g890">
+    <g id="g1488">
+      <path id="circle94" d="M47.5,35A12.5,12.5,0,1,1,35,22.5,12.5,12.5,0,0,1,47.5,35Z" stroke="#464646" stroke-linecap="round" stroke-linejoin="round" fill="url(#linear-gradient)"/>
+      <path id="polygon96" d="M28.756,34.571l3.73,4.482,9.2-11.376,2.334,1.884-11.5,14.228-6.074-7.3Z" fill="#fff"/>
+      <path id="path98" d="M41.763,28.38l1.557,1.256L32.513,43l-5.362-6.449,1.54-1.276,3.8,4.566,9.27-11.461m-.15-1.406-.628.777-8.5,10.514-3.022-3.63-.638-.767-.768.637-1.54,1.276-.771.639.64.77,5.362,6.449.78.938.767-.948L44.1,30.264l.629-.778-.779-.629L42.391,27.6Z" fill="#147391"/>
+    </g>
+    <path id="rect879" d="M0,15H44v1H0Z" fill="#6e6e6e"/>
+    <path id="rect879-4" d="M13,0V44H12V0Z" fill="#6e6e6e"/>
+    <path id="path1005" d="M23,15.5A10.5,10.5,0,1,1,12.5,5,10.5,10.5,0,0,1,23,15.5Z" fill="none" stroke="#147391" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

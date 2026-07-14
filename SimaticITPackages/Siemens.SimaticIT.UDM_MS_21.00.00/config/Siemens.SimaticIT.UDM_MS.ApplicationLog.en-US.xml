@@ -1,0 +1,620 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- This file is used to define Application Log messages. You should follow below instructions while defining messages: 
+    - The <message> structure should be repeated for each Application Log message.
+    - The <id> attribute is mandatory and should be unique in this file.
+    - The <short> attribute represents the short text message and should be less than or up to 100 characters.
+    - The <long> attribute represents the long text message and should be less than or up to 400 characters.
+    - The <level> attribute is mandatory and its value should be one of: Verbose | Error | Warning | Critical | Informational.
+    - The <param> structure should be repeated for each parameter of the Application Log message.
+    - The <key> attribute represents the unique identifier for a parameter that repeats multiple times in the message text.
+    - The <type> attribute represents the datatype of the parameter and its value should be one of the primitive types: string | byte | int | decimal | float | double | long | boolean | Guid | Datetime | Timespan.  -->
+<messages>
+  <message>
+    <id>-1</id>
+    <short>The copy of the Bill of Materials revision failed. </short>
+    <long>The Bill of Materials %NId% with Revision %rev% could not be copied because it does not exist.</long>
+    <level>Error</level>
+    <params>
+      <param>
+        <key>NId</key>
+        <type>string</type>
+      </param>
+      <param>
+        <key>rev</key>
+        <type>string</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>-2</id>
+    <short>Bill of Material Template creation failed. </short>
+    <long>The Bill of Material Template %NId% was not created because it already exists.</long>
+    <level>Error</level>
+    <params>
+      <param>
+        <key>NId</key>
+        <type>string</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>-3</id>
+    <short>Bill of Materials Property update failed. </short>
+    <long>The Bill of Material Property %NId% was not updated because it does not exist.</long>
+    <level>Error</level>
+    <params>
+      <param>
+        <key>NId</key>
+        <type>string</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>-4</id>
+    <short>Bill of Materials creation failed. </short>
+    <long>The Bill of Materials Template %NId%, used to create the Bill of Materials %BoMNId% with Revision %rev%, does not exist.</long>
+    <level>Error</level>
+    <params>
+      <param>
+        <key>NId</key>
+        <type>string</type>
+      </param>
+      <param>
+        <key>BoMNId</key>
+        <type>string</type>
+      </param>
+      <param>
+        <key>rev</key>
+        <type>string</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>-5</id>
+    <short>Bill of Material Property update failed. </short>
+    <long>The Bill of Material Property %NId% could not be updated because the value %UserFieldValue% you want to assign is not valid.</long>
+    <level>Error</level>
+    <params>
+      <param>
+        <key>NId</key>
+        <type>string</type>
+      </param>
+      <param>
+        <key>UserFieldValue</key>
+        <type>string</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>-6</id>
+    <short>Bill of Materials creation failed. </short>
+    <long>The Bill of Materials could not be created because no default BoM Template has been set. Set a default BoM Template or select a BoM Template.</long>
+    <level>Error</level>
+    <params>
+      <param>
+        <key></key>
+        <type></type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>-7</id>
+    <short>Bill of Materials creation failed. </short>
+    <long>The Bill of Materials %NId% with Revision %rev% already exists.</long>
+    <level>Error</level>
+    <params>
+      <param>
+        <key>NId</key>
+        <type>string</type>
+      </param>
+      <param>
+        <key>rev</key>
+        <type>string</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>-8</id>
+    <short>Bill of Materials creation failed. </short>
+    <long>The Bill of Materials could not be created because the specified Unit of Measure does not exist.</long>
+    <level>Error</level>
+    <params>
+      <param>
+        <key></key>
+        <type></type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>-9</id>
+    <short>Bill of Materials creation failed. </short>
+    <long>The Bill of Materials could not be created because the specified Unit of Measure is hidden.</long>
+    <level>Error</level>
+    <params>
+      <param>
+        <key></key>
+        <type></type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>-10</id>
+    <short>Bill of Materials update failed. </short>
+    <long>Bill of Materials update failed because the Bill of Materials %NId% is locked and cannot be modified.</long>
+    <level>Error</level>
+    <params>
+      <param>
+        <key>NId</key>
+        <type>string</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>-11</id>
+    <short>Bill of Material Template update failed. </short>
+    <long>The Bill of Material Template %NId% could not be updated because it is readonly.</long>
+    <level>Error</level>
+    <params>
+      <param>
+        <key>NId</key>
+        <type>string</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>-12</id>
+    <short>There are more default Bill of Materials Templates.</short>
+    <long>There are more default Bill of Materials Templates: set only one Bill of Material Template as default.</long>
+    <level>Error</level>
+    <params>
+      <param>
+        <key></key>
+        <type></type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>-13</id>
+    <short>Bill of Materials update failed. </short>
+    <long>Bill of Materials update failed because the Unit of Measure %uom% does not exist.</long>
+    <level>Error</level>
+    <params>
+      <param>
+        <key>uom</key>
+        <type>string</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>-14</id>
+    <short>Bill of Materials update failed.</short>
+    <long>Bill of Materials update failed because the Unit of Measure %uom% is hidden.</long>
+    <level>Error</level>
+    <params>
+      <param>
+        <key>uom</key>
+        <type>string</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>-15</id>
+    <short>Bill of Materials action failed.</short>
+    <long>The Bill of Materials %NId% does not exist.</long>
+    <level>Error</level>
+    <params>
+      <param>
+        <key>NId</key>
+        <type>string</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>-16</id>
+    <short>Bill of Materials update failed. </short>
+    <long>Material and Material Group cannot be both specified.</long>
+    <level>Error</level>
+    <params>
+      <param>
+        <key></key>
+        <type></type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>-17</id>
+    <short>Bill of Materials update failed. </short>
+    <long>The dimension %uomA% of the Material Unit of Measure is not compatible with the dimension %uomB% of the BoM Item Unit of Measure.</long>
+    <level>Error</level>
+    <params>
+      <param>
+        <key>uomA</key>
+        <type>string</type>
+      </param>
+      <param>
+        <key>uomB</key>
+        <type>string</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>-18</id>
+    <short>Bill of Materials update failed. </short>
+    <long>Bill of Materials update failed because the Material Group %NId% does not exist.</long>
+    <level>Error</level>
+    <params>
+      <param>
+        <key>NId</key>
+        <type>string</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>-19</id>
+    <short>Check on Material Group failed. </short>
+    <long>The check on Material Group failed because the Material Group %NId% does not exist.</long>
+    <level>Error</level>
+    <params>
+      <param>
+        <key>NId</key>
+        <type>string</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>-20</id>
+    <short>Retrieval of Material Group failed. </short>
+    <long>The Material Group %NId% does not exist.</long>
+    <level>Error</level>
+    <params>
+      <param>
+        <key>NId</key>
+        <type>string</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>-21</id>
+    <short>Check on Material Group failed. </short>
+    <long>The check on Material Group failed because the Material Group %NId% is frozen.</long>
+    <level>Error</level>
+    <params>
+      <param>
+        <key>NId</key>
+        <type>string</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>-22</id>
+    <short>Bill of Materials Item creation failed. </short>
+    <long>The creation of the Bill of Materials Item failed because it is not possible to specify both Material Group and Material for the same Item.</long>
+    <level>Error</level>
+    <params>
+      <param>
+        <key></key>
+        <type></type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>-23</id>
+    <short>Bill of Materials Item creation failed. </short>
+    <long>The creation of the Bill of Materials Item failed because at least one between Material Group and Material must be specified.</long>
+    <level>Error</level>
+    <params>
+      <param>
+        <key></key>
+        <type></type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>-24</id>
+    <short>Bill of Materials Item creation failed. </short>
+    <long>The creation of the Bill of Materials Item failed because it is not possible to use a Bill of Materials if no Material has been selected.</long>
+    <level>Error</level>
+    <params>
+      <param>
+        <key></key>
+        <type></type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>-25</id>
+    <short>Bill of Materials Item creation failed. </short>
+    <long>The creation of the Bill of Materials Item failed because the Bill of Material Item %NId% already exists.</long>
+    <level>Error</level>
+    <params>
+      <param>
+        <key>NId</key>
+        <type>string</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>-26</id>
+    <short>Bill of Materials Item creation failed. </short>
+    <long>The creation of the Bill of Materials Item failed because the specified Unit of Measure %NId% does not exist.</long>
+    <level>Error</level>
+    <params>
+      <param>
+        <key>NId</key>
+        <type>string</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>-27</id>
+    <short>Bill of Materials Item creation failed. </short>
+    <long>The creation of the Bill of Materials Item failed because the specified Unit of Measure %NId% is hidden.</long>
+    <level>Error</level>
+    <params>
+      <param>
+        <key>NId</key>
+        <type>string</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>-28</id>
+    <short>Retrieval of Material failed. </short>
+    <long>It was not possible to retrieve the Material %NId% because it does not exist.</long>
+    <level>Error</level>
+    <params>
+      <param>
+        <key>NId</key>
+        <type>string</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>-29</id>
+    <short>Retrieval of Material failed. </short>
+    <long>It was not possible to retrieve the Material %NId% because its current revision does not exist.</long>
+    <level>Error</level>
+    <params>
+      <param>
+        <key>NId</key>
+        <type>string</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>-30</id>
+    <short>Retrieval of Material failed. </short>
+    <long>It was not possible to retrieve the Material %NId% with revision %rev% because it does not exist.</long>
+    <level>Error</level>
+    <params>
+      <param>
+        <key>NId</key>
+        <type>string</type>
+      </param>
+      <param>
+        <key>rev</key>
+        <type>string</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>-31</id>
+    <short>Retrieval of Operation failed. </short>
+    <long>It was not possible to retrieve the Operation %NId% because it does not exist.</long>
+    <level>Error</level>
+    <params>
+      <param>
+        <key>NId</key>
+        <type>string</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>-32</id>
+    <short>Retrieval of Operation failed. </short>
+    <long>It was not possible to retrieve the Operation %NId% with revision %rev% because it does not exist.</long>
+    <level>Error</level>
+    <params>
+      <param>
+        <key>NId</key>
+        <type>string</type>
+      </param>
+      <param>
+        <key>rev</key>
+        <type>string</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>-33</id>
+    <short>Bill of Materials Item creation failed. </short>
+    <long>The creation of the Bill of Materials Item failed because the Material UoM %NId% is not compatible with the BoM Item UoM %NIdMatItem%.</long>
+    <level>Error</level>
+    <params>
+      <param>
+        <key>NId</key>
+        <type>string</type>
+      </param>
+      <param>
+        <key>NIdMatItem</key>
+        <type>string</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>-34</id>
+    <short>Bill of Materials Item creation failed. </short>
+    <long>The creation of the Bill of Materials Item %NIdMatItem% failed because the Material Group %NId% does not exist.</long>
+    <level>Error</level>
+    <params>
+      <param>
+        <key>NId</key>
+        <type>string</type>
+      </param>
+      <param>
+        <key>NIdMatItem</key>
+        <type>string</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>-35</id>
+    <short>Bill of Materials creation failed. </short>
+    <long>The Bill of Materials %NId% with Revision %rev%, from which you want to create a new revision, does not exist.</long>
+    <level>Error</level>
+    <params>
+      <param>
+        <key>NId</key>
+        <type>string</type>
+      </param>
+      <param>
+        <key>rev</key>
+        <type>string</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>-36</id>
+    <short>Bill of Materials delete failed. </short>
+    <long>Bill of Materials delete failed because the Bill of Materials %NId% is locked and cannot be delete.</long>
+    <level>Error</level>
+    <params>
+      <param>
+        <key>NId</key>
+        <type>string</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>-80</id>
+    <short>Property adding failed. </short>
+    <long>The Property %NId% could not be added because it is already present.</long>
+    <level>Error</level>
+    <params>
+      <param>
+        <key>NId</key>
+        <type>string</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>-81</id>
+    <short>Bill of Material Template Property update failed. </short>
+    <long>The Bill of Material Template Property %NId% could not be updated because the assigned value is not valid.</long>
+    <level>Error</level>
+    <params>
+      <param>
+        <key>NId</key>
+        <type>string</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>-83</id>
+    <short>Bill of Materials Property update failed. </short>
+    <long>The Bill of Material Property %NId% could not be updated because it is frozen.</long>
+    <level>Error</level>
+    <params>
+      <param>
+        <key>NId</key>
+        <type>string</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>-84</id>
+    <short>Bill of Materials Property update failed.</short>
+    <long>The Bill of Material Property %NId% could not be updated because it is locked.</long>
+    <level>Error</level>
+    <params>
+      <param>
+        <key>NId</key>
+        <type>string</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>-85</id>
+    <short>Bill of Material Template does not exist.</short>
+    <long>The Bill of Material Template %NId% does not exist.</long>
+    <level>Error</level>
+    <params>
+      <param>
+        <key>NId</key>
+        <type>string</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>-86</id>
+    <short>Default Bill of Materials Template update failed. </short>
+    <long>The current default Bill of Materials Template %NId% cannot be changed since it is frozen.</long>
+    <level>Error</level>
+    <params>
+      <param>
+        <key>NId</key>
+        <type>string</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>-87</id>
+    <short>Bill of Materials Template Property update failed. </short>
+    <long>The Bill of Materials Template Property %NId% could not be updated because it does not exist.</long>
+    <level>Error</level>
+    <params>
+      <param>
+        <key>NId</key>
+        <type>string</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>-88</id>
+    <short>Bill of Materials Template Property update failed. </short>
+    <long>The Bill of Materials Template Property %NId% cannot be changed since it is frozen.</long>
+    <level>Error</level>
+    <params>
+      <param>
+        <key>NId</key>
+        <type>string</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>-89</id>
+    <short>The Bill of Materials Item does not exist.</short>
+    <long>The Bill of Materials Item %NId% does not exist.</long>
+    <level>Error</level>
+    <params>
+      <param>
+        <key>NId</key>
+        <type>string</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>-90</id>
+    <short>The Bill of Materials Item update failed.</short>
+    <long>The Bill of Materials Item %NId% could not be updated because it is frozen.</long>
+    <level>Error</level>
+    <params>
+      <param>
+        <key>NId</key>
+        <type>string</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>-91</id>
+    <short>Bill of Materials Template Property delete failed. </short>
+    <long>The Bill of Materials Template Property %NId% could not be delete because it does not exist.</long>
+    <level>Error</level>
+    <params>
+      <param>
+        <key>NId</key>
+        <type>string</type>
+      </param>
+    </params>
+  </message>
+</messages>

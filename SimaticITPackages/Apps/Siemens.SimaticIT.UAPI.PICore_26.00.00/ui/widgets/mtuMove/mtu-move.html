@@ -1,0 +1,63 @@
+﻿<div style="float:right">
+    <button ng-click="vm.save()" title="{{vm.translatedSave}}" class="btn btn-default active" ng-show="vm.validInputs && vm.notCanceled">{{vm.translatedSave}}</button>
+    <button ng-click="vm.cancel()" title="{{vm.translatedCancel}}" class="btn btn-default">{{vm.translatedCancel}}</button>
+</div>
+<div style="float:clear">
+</div>
+<div class="pi-component-title">
+    {{vm.Title}}
+</div>
+<div>
+    <sit-property-grid sit-id="moveProperty"
+                       sit-layout="Vertical"
+                       sit-type="Fluid"
+                       sit-mode="edit"
+                       sit-columns="1" ng-show="vm.notCanceled">
+        <sit-property sit-widget="sit-pi-xor"
+                      sit-widget-attributes="vm.widgetAttributesSource"
+                      sit-change="vm.onSourceChange"
+                      sit-value="vm.currentData.Source"
+                      sit-validation="{required: true}"
+                      ng-readonly="vm.ngReadonly">
+            {{vm.translatedSource}}:
+        </sit-property>
+        <sit-property sit-widget="sit-checkbox"
+                      sit-value="vm.currentData.EntireQty"
+                      sit-change="vm.manageQty"
+                      sit-validation="{required: false}"
+                      ng-show="vm.isMtuSelected"
+                      ng-disabled="vm.checkDis"
+                      ng-readonly="vm.ngReadonly">
+            {{vm.translatedEntireQuantity}}: {{vm.mtuQuantity}}
+        </sit-property>
+        <sit-property sit-widget="sit-numeric"
+                      sit-value="vm.currentData.SourceQuantity"
+                      sit-validation="{required: false, min: 0, max:vm.mtuQuantity}"
+                      ng-disabled="vm.entireQty"
+                      ng-readonly="vm.ngReadonly || vm.entireQty">
+            {{vm.translatedSourceQuantity}}:
+        </sit-property>
+        <sit-property sit-widget="sit-text"
+                      sit-value="vm.currentData.UoM"
+                      sit-validation="{required: false}"
+                      ng-disabled="true"
+                      ng-show="vm.isMtuSelected && vm.hasMtuUoM"
+                      ng-readonly="true">
+            {{vm.translatedUoM}}:
+        </sit-property>
+        <sit-property sit-widget="sit-pi-xor"
+                      sit-widget-attributes="vm.widgetAttributesDestination"
+                      sit-change="vm.onDestinationChange"
+                      sit-value="vm.currentData.Destination"
+                      sit-validation="{required: true}"
+                      ng-readonly="vm.ngReadonly">
+            {{vm.translatedDestination}}:
+        </sit-property>
+        <sit-property sit-widget="sit-numeric"
+                      sit-value="vm.currentData.DestinationQuantity"
+                      sit-validation="{required: false, min: 0}"
+                      ng-readonly="vm.ngReadonly">
+            {{vm.translatedDestinationQuantity}}:
+        </sit-property>
+    </sit-property-grid>
+</div>

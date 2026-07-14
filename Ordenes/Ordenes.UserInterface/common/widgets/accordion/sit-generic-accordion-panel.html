@@ -1,0 +1,11 @@
+<div class="sit-generic-accordion-panel" ng-class="{'panel-padding' : genericAccordionPanelCtrl.options.state === 'COLLAPSE'}">
+    <div class="accordion-panel-header" ng-click="genericAccordionPanelCtrl.toggle()">
+        <div class="icon" sit-class="svg-icon" 
+             sit-mom-icon="{path: genericAccordionPanelCtrl.options.state === 'EXPAND' ? 'common/icons/miscDownArrow16.svg' : 'common/icons/miscRightArrow16.svg'}">
+        </div>
+        <div class="accordion-panel-title"> {{genericAccordionPanelCtrl.options.header}} </div>
+    </div>
+    <div class="accordion-panel-body" ng-if="genericAccordionPanelCtrl.options.state === 'EXPAND'" ng-transclude>
+
+    </div>
+</div>

@@ -1,0 +1,25 @@
+<svg id="Image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="linear-gradient" x1="-90.452" y1="42" x2="-58.452" y2="10" gradientTransform="matrix(1.539, 0, 0, -1, 138.998, 50)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#cde6eb"/>
+      <stop offset="1" stop-color="#8cc3d2"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="14.422" y1="15.546" x2="23.329" y2="6.64" gradientTransform="matrix(1, 0, 0, -1, -5, 50)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#dcdcdc"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="24.757" y1="45.384" x2="33.664" y2="36.478" xlink:href="#linear-gradient-2"/>
+    <linearGradient id="linear-gradient-4" x1="24.757" y1="45.384" x2="33.664" y2="36.478" gradientTransform="matrix(1, 0, 0, -1, 5.783, 64.9)" xlink:href="#linear-gradient-2"/>
+  </defs>
+  <g id="g843">
+    <path id="rect15" d="M9,2H39.786V46H9Z" fill="url(#linear-gradient)"/>
+    <path id="path17" d="M8,1V47H30V1ZM29,16.25H19.5V2H29Zm-9.5,1H29v13.5H19.5ZM18.5,2V16.25H9V2Zm0,28.75H9V17.25h9.5Zm-9.5,1h9.5V46H9ZM19.5,46V31.75H29V46Z" fill="#177491"/>
+    <path id="rect19" d="M10.438,33.438h6.875V44.376H10.438Z" fill="url(#linear-gradient-2)"/>
+    <path id="path21" d="M17.812,44.875H9.938V32.938h7.874Zm-6.874-1h5.874V33.938H10.938Z" fill="#6f6e6e"/>
+    <path id="rect23" d="M20.773,3.6h6.875V14.538H20.773Z" fill="url(#linear-gradient-3)"/>
+    <path id="path25" d="M28.147,15.038H20.272V3.1h7.875Zm-6.875-1h5.875V4.1H21.272Z" fill="#6f6e6e"/>
+    <path id="path17-2" d="M18.5,1V47h22V1Zm21,15.25H30V2h9.5Zm-9.5,1h9.5v13.5H30ZM29,2V16.25H19.5V2Zm0,28.75H19.5V17.25H29Zm-9.5,1H29V46H19.5ZM30,46V31.75h9.5V46Z" fill="#177491"/>
+    <path id="rect23-2" d="M31.556,18.5h6.875V29.438H31.556Z" fill="url(#linear-gradient-4)"/>
+    <path id="path25-9" d="M38.93,29.938H31.055V18H38.93Zm-6.875-1H37.93V19H32.055Z" fill="#6f6e6e"/>
+  </g>
+</svg>

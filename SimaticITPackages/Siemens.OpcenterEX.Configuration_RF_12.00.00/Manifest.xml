@@ -1,0 +1,369 @@
+﻿<?xml version="1.0" encoding="utf-8"?><projectmanifest>
+  <header>
+    <manifestversion>11.0</manifestversion>
+    <platformversion>11.0</platformversion>
+    <type>Library</type>
+    <name>Siemens.OpcenterEX.Configuration_RF</name>
+    <shortname>Configuration_RF</shortname>
+    <description>Configuration Reference Data Domain </description>
+    <version>12.00.00</version>
+    <companyname>Siemens.OpcenterEX</companyname>
+    <author>Siemens.OpcenterEX</author>
+    <hash>1d+V6T66WTF+q3CHOv7phsepKYa+9ZxSUXAW7SZ83Nk=</hash>
+    <modelHash>9H+wZI+75qAv8F/jxRshkkdm2m20yIeRL/LZ1QiWc4U=</modelHash>
+    <modelHashSections>
+      <modelHashSection>
+        <name>projectConfigModelHash</name>
+        <hash>KbSoxRdiSP4akEwR/UneZFu/+a5U4XnQUuM2nuBs3QQ=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>dataModelHash</name>
+        <hash>1nFXNx+YkUr5U+MwkPz8DWhNBq7KPIJgoMxkJqbzpgY=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>commandModelHash</name>
+        <hash>f+Eb4J3G4sVB+0NdpUDbLkRafbvtmecZfBrSQqKld1g=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>aliasModelHash</name>
+        <hash>cdWtFof25lUoH+wgMZZEtJGL5k7aBVT7Ae5HtNcbGxs=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>eventModelHash</name>
+        <hash>1pCUQMeMV1zI9wPwd+zPXfSRUhyKxTb/4j3YyV+SOBI=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>typeModelHash</name>
+        <hash>11KitY5INRgUVX/yath5wVRKXcrLBoqDdTQ/gUmDb+4=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>securityModelHash</name>
+        <hash>cdWtFof25lUoH+wgMZZEtJGL5k7aBVT7Ae5HtNcbGxs=</hash>
+      </modelHashSection>
+    </modelHashSections>
+    <uiHash>na</uiHash>
+    <canbeextended>false</canbeextended>
+    <domain>ReferenceData</domain>
+  </header>
+  <reference>
+    <functionalblocks></functionalblocks>
+    <extensions></extensions>
+  </reference>
+  <artifacts>
+    <commands><command>
+                        <name>Siemens.OpcenterEX.ReferenceData.Configuration_RF.RFModel.Commands.SetConfigurationKey</name>
+                        <shortname>SetConfigurationKey</shortname>
+                        <description>Lets you edit the value of configuration key. The command performs the following checks and returns an error accordingly: 12300: checks if the Configuration Key exists. 14001: checks if Configuration Key has a Value.  14002: checks if Configuration Key has boolean value (True/False). 14003: checks if Configuration Key has numeric value. 14005: checks if Value has 2 decimal places for NId. 14008: checks if Guid for NId is valid. 14009: checks if support for securing application data is enabled in User Management Console. 14011: checks if the Value field (marked as Protected) has exceeded maximum length (100).</description>
+                        <assembly>Siemens.OpcenterEX.ReferenceData.Configuration_RF.RFModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>ReferenceData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.OpcenterEX.ReferenceData.Configuration_RF.RFModel.Commands.SetConfigurationKeyHandlerShell</name>
+                                        <assembly>Siemens.OpcenterEX.Configuration_RF.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.OpcenterEX.ReferenceData.Configuration_RF.RFModel.Commands.SetConfigurationKeyMultiValue</name>
+                        <shortname>SetConfigurationKeyMultiValue</shortname>
+                        <description>Lets you edit multiple values of configuration key. The command performs the following checks and returns an error accordingly: 12300: checks if the Configuration Key Multi Value exists. 14002: checks if Configuration Key has boolean value (True/False). 14003: checks if Configuration Key has numeric value. 14005: checks if Value has 2 decimal places for NId. 14007: checks if Configuration Key Multi Value has a Value. 14008: checks if Guid for NId is valid. 14009: checks if support for securing application data is enabled in User Management Console. 14011: checks if the Value field (marked as Protected) has exceeded maximum length (100).</description>
+                        <assembly>Siemens.OpcenterEX.ReferenceData.Configuration_RF.RFModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>ReferenceData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.OpcenterEX.ReferenceData.Configuration_RF.RFModel.Commands.SetConfigurationKeyMultiValueHandlerShell</name>
+                                        <assembly>Siemens.OpcenterEX.Configuration_RF.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.OpcenterEX.ReferenceData.Configuration_RF.RFModel.Commands.AddConfigurationAppDomain</name>
+                        <shortname>AddConfigurationAppDomain</shortname>
+                        <description>Adds the domain related details, where a domain is a topic for which configuration is being done. A domain can be integration with third party applications such as integration with Opcenter Laboratory or integration with SIMATIC Batch Integration Layer or any other topic. The command performs the following check and returns an error accordingly: 12301: checks if the Domain already exists, using its natural identifier.</description>
+                        <assembly>Siemens.OpcenterEX.ReferenceData.Configuration_RF.RFModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>ReferenceData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.OpcenterEX.ReferenceData.Configuration_RF.RFModel.Commands.AddConfigurationAppDomainHandlerShell</name>
+                                        <assembly>Siemens.OpcenterEX.Configuration_RF.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.OpcenterEX.ReferenceData.Configuration_RF.RFModel.Commands.AddConfigurationKey</name>
+                        <shortname>AddConfigurationKey</shortname>
+                        <description>Adds the configuration key. The command performs the following checks and returns an error accordingly: 12301: checks if the Configuration Key already exists, using its natural identifier. 14001: checks if Configuration Key has a Value. 14002: checks if Configuration Key has boolean value (True/False). 14003: checks if Configuration Key has numeric value. 14005: checks if Value has 2 decimal places for NId. 14008: checks if Guid for NId is valid. 14009: checks if support for securing application data is enabled in User Management Console. 14011: checks if the Value field (marked as Protected) has exceeded maximum length (100).</description>
+                        <assembly>Siemens.OpcenterEX.ReferenceData.Configuration_RF.RFModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>ReferenceData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.OpcenterEX.ReferenceData.Configuration_RF.RFModel.Commands.AddConfigurationKeyHandlerShell</name>
+                                        <assembly>Siemens.OpcenterEX.Configuration_RF.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.OpcenterEX.ReferenceData.Configuration_RF.RFModel.Commands.DeleteConfigurationAppDomain</name>
+                        <shortname>DeleteConfigurationAppDomain</shortname>
+                        <description>Deletes the domain related details, where a domain is a topic for which configuration is being done. A domain can be integration with third party applications such as integration with Opcenter Laboratory or integration with SIMATIC Batch Integration Layer or any other topic. The command performs the following check and returns an error accordingly: 12300: checks if Domain exists.</description>
+                        <assembly>Siemens.OpcenterEX.ReferenceData.Configuration_RF.RFModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>ReferenceData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.OpcenterEX.ReferenceData.Configuration_RF.RFModel.Commands.DeleteConfigurationAppDomainHandlerShell</name>
+                                        <assembly>Siemens.OpcenterEX.Configuration_RF.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.OpcenterEX.ReferenceData.Configuration_RF.RFModel.Commands.DeleteConfigurationKey</name>
+                        <shortname>DeleteConfigurationKey</shortname>
+                        <description>Deletes the configuration key. The command performs the following check and returns an error accordingly: 12300: checks if Configuration Key exists.</description>
+                        <assembly>Siemens.OpcenterEX.ReferenceData.Configuration_RF.RFModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>ReferenceData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.OpcenterEX.ReferenceData.Configuration_RF.RFModel.Commands.DeleteConfigurationKeyHandlerShell</name>
+                                        <assembly>Siemens.OpcenterEX.Configuration_RF.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.OpcenterEX.ReferenceData.Configuration_RF.RFModel.Commands.SetConfigurationAppDomain</name>
+                        <shortname>SetConfigurationAppDomain</shortname>
+                        <description>Lets you edit the domain related details, where a domain is a topic for which configuration is being done. A domain can be integration with third party applications such as integration with Opcenter Laboratory or integration with SIMATIC Batch Integration Layer or any other topic. The command performs the following check and returns an error accordingly: 12300: checks if the Domain exists.</description>
+                        <assembly>Siemens.OpcenterEX.ReferenceData.Configuration_RF.RFModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>ReferenceData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.OpcenterEX.ReferenceData.Configuration_RF.RFModel.Commands.SetConfigurationAppDomainHandlerShell</name>
+                                        <assembly>Siemens.OpcenterEX.Configuration_RF.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.OpcenterEX.ReferenceData.Configuration_RF.RFModel.Commands.AddConfigurationMultiValue</name>
+                        <shortname>AddConfigurationMultiValue</shortname>
+                        <description>Adds multiple values to a Configuration Key. The command performs the following checks and returns an error accordingly: 12301: checks if the Configuration Key Multi Value already exists, using its natural identifier. 14002: checks if Configuration Key has boolean value (True/False). 14003: checks if Configuration Key has numeric value. 14005: checks if Value has 2 decimal places for NId. 14007: checks if Configuration Key Multi Value has a Value. 14008: checks if Guid for NId is valid. 14009: checks if support for securing application data is enabled in User Management Console. 14011: checks if the Value field (marked as Protected) has exceeded maximum length (100).</description>
+                        <assembly>Siemens.OpcenterEX.ReferenceData.Configuration_RF.RFModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>ReferenceData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.OpcenterEX.ReferenceData.Configuration_RF.RFModel.Commands.AddConfigurationMultiValueHandlerShell</name>
+                                        <assembly>Siemens.OpcenterEX.Configuration_RF.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.OpcenterEX.ReferenceData.Configuration_RF.RFModel.Commands.DeleteConfigurationMultiValue</name>
+                        <shortname>DeleteConfigurationMultiValue</shortname>
+                        <description>Deletes the selected value from the multiple values using its identifier. The command performs the following check and returns an error accordingly: 12300: checks if the selected Value to delete exists.</description>
+                        <assembly>Siemens.OpcenterEX.ReferenceData.Configuration_RF.RFModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>ReferenceData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.OpcenterEX.ReferenceData.Configuration_RF.RFModel.Commands.DeleteConfigurationMultiValueHandlerShell</name>
+                                        <assembly>Siemens.OpcenterEX.Configuration_RF.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.OpcenterEX.ReferenceData.Configuration_RF.RFModel.Commands.SetConfigurationKeyMultiValues</name>
+                        <shortname>SetConfigurationKeyMultiValues</shortname>
+                        <description>Lets you edit multiple values at a time, of configuration key from Service Layer. The command performs the following checks and returns an error accordingly: 12300: checks if the Configuration Key Multi Value exists. 14002: checks if Configuration Key has boolean value (True/False). 14003: checks if Configuration Key has numeric value. 14004: checks if Configuration Key Multi Value has duplicate key. 14005: checks if Value has 2 decimal places for NId. 14006: checks if Configuration Key Multi Value has a Key. 14007: checks if Configuration Key Multi Value has a Value. 14008: checks if Guid for NId is valid. 14009: checks if support for securing application data is enabled in User Management Console. 14011: checks if the Value field (marked as Protected) has exceeded maximum length (100).</description>
+                        <assembly>Siemens.OpcenterEX.ReferenceData.Configuration_RF.RFModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>ReferenceData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.OpcenterEX.ReferenceData.Configuration_RF.RFModel.Commands.SetConfigurationKeyMultiValuesHandlerShell</name>
+                                        <assembly>Siemens.OpcenterEX.Configuration_RF.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.OpcenterEX.ReferenceData.Configuration_RF.RFModel.Commands.GetDecryptedValue</name>
+                        <shortname>GetDecryptedValue</shortname>
+                        <description>Returns the decrypted value of the encryted value. The command performs the following check and returns an error accordingly: 14009: checks if support for securing application data is enabled in User Management Console. 14010: checks if encrypted value is valid.</description>
+                        <assembly>Siemens.OpcenterEX.ReferenceData.Configuration_RF.RFModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>ReferenceData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.OpcenterEX.ReferenceData.Configuration_RF.RFModel.Commands.GetDecryptedValueHandlerShell</name>
+                                        <assembly>Siemens.OpcenterEX.Configuration_RF.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command></commands>
+    <commandActions></commandActions>
+    <events></events>
+    <event_handlers></event_handlers>
+    <signals></signals>
+    <readingFunctions></readingFunctions>
+    <entities><entity>
+      <name>Siemens.OpcenterEX.ReferenceData.Configuration_RF.RFModel.DataModel.ReadingModel.ConfigurationKey</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.OpcenterEX.ReferenceData.Configuration_RF.RFModel.DataModel.ReadingModel.ConfigurationKeyMultiValue</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.OpcenterEX.ReferenceData.Configuration_RF.RFModel.DataModel.ReadingModel.ConfigurationAppDomain</name>
+      <securable>true</securable>
+    </entity></entities>
+    <datamodels><datamodel>
+      <assembly>Siemens.OpcenterEX.ReferenceData.Configuration_RF.RFModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>WR</mode>
+      <domain>ReferenceData</domain>
+    </datamodel><datamodel>
+      <assembly>Siemens.OpcenterEX.ReferenceData.Configuration_RF.RFModel.ReadingModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>RD</mode>
+      <domain>ReferenceData</domain>
+    </datamodel><datamodel>
+      <assembly>Siemens.OpcenterEX.ReferenceData.Configuration_RF.RFModel.Types, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>WR</mode>
+      <domain>ReferenceData</domain>
+    </datamodel><datamodel>
+      <assembly>Siemens.OpcenterEX.ReferenceData.Configuration_RF.RFModel.Types.ReadingModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>RD</mode>
+      <domain>ReferenceData</domain>
+    </datamodel></datamodels>
+    <externaldatamodels></externaldatamodels>
+    <appdatamodels></appdatamodels>
+    <uimodules></uimodules>
+    <uicomponents></uicomponents>
+    <wr_entities><wr_entity>
+      <name>Siemens.OpcenterEX.ReferenceData.Configuration_RF.RFModel.DataModel.ConfigurationKey</name>
+      <shortname>ConfigurationKey</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity></parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity></root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.OpcenterEX.ReferenceData.Configuration_RF.RFModel.DataModel.ConfigurationKeyMultiValue</name>
+      <shortname>ConfigurationKeyMultiValue</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity>Siemens.OpcenterEX.ReferenceData.Configuration_RF.RFModel.DataModel.ConfigurationKey</parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity>Siemens.OpcenterEX.ReferenceData.Configuration_RF.RFModel.DataModel.ConfigurationKey</root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.OpcenterEX.ReferenceData.Configuration_RF.RFModel.DataModel.ConfigurationAppDomain</name>
+      <shortname>ConfigurationAppDomain</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity></parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity></root_entity>
+      <base_entity></base_entity>
+    </wr_entity></wr_entities>
+    <wr_facets></wr_facets>
+  </artifacts>
+  <security>
+    <roles></roles>
+  </security>
+  <runtime>
+    <event_subscriptions></event_subscriptions>
+    <handlergroups></handlergroups>
+  </runtime>
+</projectmanifest>

@@ -1,0 +1,77 @@
+<sit-side-panel sit-title="{{vm.sidepanelConfig.title}}"
+                sit-messages="vm.sidepanelConfig.messages"
+                ng-if="vm.displayMode !== 'inCanvas'"
+                sit-actions="vm.sidepanelConfig.actionButtons"
+                sit-close="vm.sidepanelConfig.closeButton">
+
+    <sit-property-grid sit-id="itemPropertyGrid"
+                       sit-layout="Vertical"
+                       sit-type="Fluid"
+                       sit-columns="1"
+                       sit-mode="list">
+        <div ng-repeat="obj in vm.displayData" ng-class="obj.container === 'g' ? 'groupView':'propertyView'">
+            <sit-property-group ng-if="obj.container === 'g'"
+                                sit-id="{{obj.groupDetails.id}}"
+                                sit-name="obj.groupDetails.heading"
+                                sit-collapsible="obj.groupDetails.collapsible">
+                <sit-property ng-repeat="prop in obj.fields"
+                              sit-id="{{prop.name}}"
+                              sit-widget="{{prop.widget}}"
+                              ng-disabled="true"
+                              sit-widget-attributes="prop.widgetAttributes"
+                              sit-value="vm.currentItem[prop.name]">
+                    {{prop.label}}
+                </sit-property>
+            </sit-property-group>
+            <sit-property-group ng-if="obj.container === 'f'"
+                                sit-show-accordion="false">
+                <sit-property ng-repeat="prop in obj.fields"
+                              sit-id="{{prop.name}}"
+                              sit-widget="{{prop.widget}}"
+                              ng-disabled="true"
+                              sit-widget-attributes="prop.widgetAttributes"
+                              sit-value="vm.currentItem[prop.name]">
+                    {{prop.label}}
+                </sit-property>
+        </div>
+
+    </sit-property-grid>
+</sit-side-panel>
+
+
+<div ng-if="vm.displayMode === 'inCanvas'" class="content-area content-area-relative" style="height:100% !important;padding:16px 16px 0 16px;">
+    <h2>{{vm.screenTitle}}</h2>
+    <sit-mdui-breadcrumb sit-options="vm.inCanvasBreadCrumbOptions"></sit-mdui-breadcrumb>
+    <sit-property-grid sit-id="itemPropertyGrid"
+                       sit-layout="Horizontal"
+                       sit-type="Fixed"
+                       sit-columns="vm.inCanvasColumns"
+                       sit-mode="list">
+        <div ng-repeat="obj in vm.displayData">
+            <sit-property-group ng-if="obj.container === 'g'"
+                                sit-id="{{obj.groupDetails.id}}"
+                                sit-name="obj.groupDetails.heading"
+                                sit-collapsible="obj.groupDetails.collapsible">
+                <div ng-repeat="prop in obj.fields" style="display:block; float:left" ng-style="{width : {{ (100 / vm.inCanvasColumns) }} + '%' }">
+                    <sit-property sit-id="{{prop.name}}"
+                                  sit-widget="{{prop.widget}}"
+                                  ng-disabled="true"
+                                  sit-widget-attributes="prop.widgetAttributes"
+                                  sit-value="vm.currentItem[prop.name]">
+                        {{prop.label}}
+                    </sit-property>
+                </div>
+            </sit-property-group>
+            <div ng-repeat="prop in obj.fields" ng-if="obj.container === 'f'" style="display:block; float:left" ng-style="{width : {{ (100 / vm.inCanvasColumns) }} + '%' }">
+                <sit-property sit-id="{{prop.name}}"
+                              sit-widget="{{prop.widget}}"
+                              ng-disabled="true"
+                              sit-widget-attributes="prop.widgetAttributes"
+                              sit-value="vm.currentItem[prop.name]">
+                    {{prop.label}}
+                </sit-property>
+            </div>
+        </div>
+    </sit-property-grid>
+    <sit-command-bar sit-vertical-autofixed="true" sit-commands="vm.inCanvasCommandBarData" sit-layout="vertical"></sit-command-bar>
+</div>

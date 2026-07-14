@@ -1,0 +1,26 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="linear-gradient" x1="83.411" y1="781.529" x2="134.964" y2="826.674" gradientTransform="translate(-67.243 -741.249) scale(0.838 0.952)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="0.221" stop-color="#f8f8f8"/>
+      <stop offset="0.541" stop-color="#e5e5e5"/>
+      <stop offset="0.92" stop-color="#c6c6c6"/>
+      <stop offset="1" stop-color="#bebebe"/>
+    </linearGradient>
+  </defs>
+  <g id="g852">
+    <path id="rect858" d="M.838.5H47.162A.338.338,0,0,1,47.5.838V47.162a.338.338,0,0,1-.339.339H.838A.338.338,0,0,1,.5,47.162V.838A.338.338,0,0,1,.838.5Z" stroke="#147391" stroke-width="0.998" fill="url(#linear-gradient)"/>
+    <path id="path868" d="M8.65,47V1h0" fill="none" stroke="#464646" stroke-width="0.697" stroke-dasharray="0.697 1.393"/>
+    <path id="path868-3" d="M19.148,47V1h0" fill="none" stroke="#464646" stroke-width="0.697" stroke-dasharray="0.697 1.393"/>
+    <path id="path868-3-6" d="M29.648,47V1h0" fill="none" stroke="#464646" stroke-width="0.697" stroke-dasharray="0.697 1.393"/>
+    <path id="path868-3-6-1" d="M40.048,47V1h0" fill="none" stroke="#464646" stroke-width="0.697" stroke-dasharray="0.697 1.393"/>
+    <path id="path868-2" d="M1,39.452H47" fill="none" stroke="#464646" stroke-width="0.697" stroke-dasharray="0.697 1.393"/>
+    <path id="path868-3-0" d="M1,28.854H47" fill="none" stroke="#464646" stroke-width="0.697" stroke-dasharray="0.697 1.393"/>
+    <path id="path868-3-6-7" d="M1,18.554H47" fill="none" stroke="#464646" stroke-width="0.697" stroke-dasharray="0.697 1.393"/>
+    <path id="path868-3-6-1-7" d="M1,7.954H47" fill="none" stroke="#464646" stroke-width="0.697" stroke-dasharray="0.697 1.393"/>
+    <path id="rect38" d="M3.489,32.489H9.511V46.511H3.489Z" fill="#3c91af" stroke="#147391" stroke-width="0.978"/>
+    <path id="rect40" d="M13.473,26.473h6.054V46.527H13.473Z" fill="#3c91af" stroke="#147391" stroke-width="0.946"/>
+    <path id="rect42" d="M23.483,20.483h6.034V46.517H23.483Z" fill="#3c91af" stroke="#147391" stroke-width="0.965"/>
+    <path id="rect40-3" d="M33.546,23.546h5.908V46.454H33.546Z" fill="#3c91af" stroke="#147391" stroke-width="1.092"/>
+  </g>
+</svg>

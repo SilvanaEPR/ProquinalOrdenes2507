@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?><projectmanifest>
+  <header>
+    <manifestversion>11.0</manifestversion>
+    <platformversion>11.0</platformversion>
+    <type>Library</type>
+    <name>Siemens.OpcenterEX.Maintenance_OP</name>
+    <shortname>Maintenance_OP</shortname>
+    <description>Data Domain Functional Block</description>
+    <version>12.00.00</version>
+    <companyname>Siemens.OpcenterEX</companyname>
+    <author>Siemens.OpcenterEX</author>
+    <hash>3TiN78PbB+x4RMt3Sg5dhzDxtVB0HHWHAinO0mrvNnQ=</hash>
+    <modelHash>KDPZWUX0ZjiXrvTOaK6Nh46PWxmAz2yVUbaWrrVzif8=</modelHash>
+    <modelHashSections>
+      <modelHashSection>
+        <name>projectConfigModelHash</name>
+        <hash>MXXxhSdPXYmppdjpJzrpNXQbbkw3OUymJYt2y4XJVtA=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>dataModelHash</name>
+        <hash>LyXQT9A6atoRfj/AEScofNZpWbhlttMdvL7tRJiqXf4=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>commandModelHash</name>
+        <hash>QrMjqdwU8adkmwXSj1KaO/4vcRnm5+pUf7mabv8/F0s=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>aliasModelHash</name>
+        <hash>cdWtFof25lUoH+wgMZZEtJGL5k7aBVT7Ae5HtNcbGxs=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>eventModelHash</name>
+        <hash>LyXQT9A6atoRfj/AEScofNZpWbhlttMdvL7tRJiqXf4=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>typeModelHash</name>
+        <hash>LyXQT9A6atoRfj/AEScofNZpWbhlttMdvL7tRJiqXf4=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>securityModelHash</name>
+        <hash>cdWtFof25lUoH+wgMZZEtJGL5k7aBVT7Ae5HtNcbGxs=</hash>
+      </modelHashSection>
+    </modelHashSections>
+    <uiHash>na</uiHash>
+    <canbeextended>false</canbeextended>
+    <domain>OperationalData</domain>
+  </header>
+  <reference>
+    <functionalblocks></functionalblocks>
+    <extensions></extensions>
+  </reference>
+  <artifacts>
+    <commands><command>
+                        <name>Siemens.OpcenterEX.OperationalData.Maintenance_OP.OPModel.Commands.TagForMaintenanceWorkOrder</name>
+                        <shortname>TagForMaintenanceWorkOrder</shortname>
+                        <description>This Command starts the maintenance process of a Work Order.  It does no perform anything by itself but it triggers Post-Actions that are responsible for the maintenance actions on a Work Order: such as cleaning Entities related to the given Work Order, for example.</description>
+                        <assembly>Siemens.OpcenterEX.OperationalData.Maintenance_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.OpcenterEX.OperationalData.Maintenance_OP.OPModel.Commands.TagForMaintenanceWorkOrderHandlerShell</name>
+                                        <assembly>Siemens.OpcenterEX.Maintenance_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.OpcenterEX.OperationalData.Maintenance_OP.OPModel.Commands.TagForMaintenanceWorkOrders</name>
+                        <shortname>TagForMaintenanceWorkOrders</shortname>
+                        <description>This Command starts the maintenance process of a list of Work Order.  It does not perform anything by itself but it triggers Post-Actions that are responsible for the maintenance actions on a Work Order: such as cleaning Entities related to the given Work Order, for example.</description>
+                        <assembly>Siemens.OpcenterEX.OperationalData.Maintenance_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.OpcenterEX.OperationalData.Maintenance_OP.OPModel.Commands.TagForMaintenanceWorkOrdersHandlerShell</name>
+                                        <assembly>Siemens.OpcenterEX.Maintenance_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.OpcenterEX.OperationalData.Maintenance_OP.OPModel.Commands.TagForMaintenanceInspectionOrder</name>
+                        <shortname>TagForMaintenanceInspectionOrder</shortname>
+                        <description>This command starts the maintenance process of an Inspection Order.  It does not perform anything by itself but it triggers several Post Actions that are responsible for the maintenance of an Inspection Order, such as cleaning or deleting the entities related to the given Inspection Order. It triggers the following Post Actions: -TagForMaintenanceQualityInspections -TagForMaintenanceInspectionOrderSample -TagForMaintenanceInspectionWorkProcessesToBeDeleted -TagForMaintenanceInspectionTasks -TagForMaintenanceInspectionProductionHistoryRecords -TagForMaintenanceInspectionEquipmentOperationsTracking -TagForMaintenanceInspectionStepFlows -TagForMaintenanceInspectionWorkInstructions</description>
+                        <assembly>Siemens.OpcenterEX.OperationalData.Maintenance_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.OpcenterEX.OperationalData.Maintenance_OP.OPModel.Commands.TagForMaintenanceInspectionOrderHandlerShell</name>
+                                        <assembly>Siemens.OpcenterEX.Maintenance_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.OpcenterEX.OperationalData.Maintenance_OP.OPModel.Commands.TagForMaintenanceMaterialTrackingUnits</name>
+                        <shortname>TagForMaintenanceMaterialTrackingUnits</shortname>
+                        <description>This Command starts the maintenance process of a list of Material Tracking Units.  It does not perform anything by itself but it triggers Post-Actions that are responsible for the maintenance actions on the provided Material Tracking Units: such as cleaning Entities related to the given Material Tracking Units. </description>
+                        <assembly>Siemens.OpcenterEX.OperationalData.Maintenance_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.OpcenterEX.OperationalData.Maintenance_OP.OPModel.Commands.TagForMaintenanceMaterialTrackingUnitsHandlerShell</name>
+                                        <assembly>Siemens.OpcenterEX.Maintenance_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.OpcenterEX.OperationalData.Maintenance_OP.OPModel.Commands.TagForMaintenanceMaterialLots</name>
+                        <shortname>TagForMaintenanceMaterialLots</shortname>
+                        <description>This Command starts the maintenance process of a list of Material Lots.  It does not perform anything by itself but it triggers Post-Actions that are responsible for the maintenance actions on the provided Material Lots: such as cleaning Entities related to the given Material Lots.</description>
+                        <assembly>Siemens.OpcenterEX.OperationalData.Maintenance_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.OpcenterEX.OperationalData.Maintenance_OP.OPModel.Commands.TagForMaintenanceMaterialLotsHandlerShell</name>
+                                        <assembly>Siemens.OpcenterEX.Maintenance_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.OpcenterEX.OperationalData.Maintenance_OP.OPModel.Commands.TagForMaintenanceMaterialTrackingUnitAggregates</name>
+                        <shortname>TagForMaintenanceMaterialTrackingUnitAggregates</shortname>
+                        <description>This Command starts the maintenance process of a list of Material Tracking Unit Aggregates.  It does not perform anything by itself but it triggers Post-Actions that are responsible for the maintenance actions on the provided Material Tracking Unit Aggregates: such as cleaning Entities related to the given Material Tracking Unit Aggregates.</description>
+                        <assembly>Siemens.OpcenterEX.OperationalData.Maintenance_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.OpcenterEX.OperationalData.Maintenance_OP.OPModel.Commands.TagForMaintenanceMaterialTrackingUnitAggregatesHandlerShell</name>
+                                        <assembly>Siemens.OpcenterEX.Maintenance_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command></commands>
+    <commandActions></commandActions>
+    <events></events>
+    <event_handlers></event_handlers>
+    <signals></signals>
+    <readingFunctions></readingFunctions>
+    <entities></entities>
+    <datamodels><datamodel>
+      <assembly>Siemens.OpcenterEX.OperationalData.Maintenance_OP.OPModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>WR</mode>
+      <domain>OperationalData</domain>
+    </datamodel><datamodel>
+      <assembly>Siemens.OpcenterEX.OperationalData.Maintenance_OP.OPModel.ReadingModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>RD</mode>
+      <domain>OperationalData</domain>
+    </datamodel><datamodel>
+      <assembly>Siemens.OpcenterEX.OperationalData.Maintenance_OP.OPModel.Types, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>WR</mode>
+      <domain>OperationalData</domain>
+    </datamodel><datamodel>
+      <assembly>Siemens.OpcenterEX.OperationalData.Maintenance_OP.OPModel.Types.ReadingModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>RD</mode>
+      <domain>OperationalData</domain>
+    </datamodel></datamodels>
+    <externaldatamodels></externaldatamodels>
+    <appdatamodels></appdatamodels>
+    <uimodules></uimodules>
+    <uicomponents></uicomponents>
+    <wr_entities></wr_entities>
+    <wr_facets></wr_facets>
+  </artifacts>
+  <security>
+    <roles></roles>
+  </security>
+  <runtime>
+    <event_subscriptions></event_subscriptions>
+    <handlergroups></handlergroups>
+  </runtime>
+</projectmanifest>

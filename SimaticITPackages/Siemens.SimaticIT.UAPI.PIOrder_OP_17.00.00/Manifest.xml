@@ -1,0 +1,756 @@
+﻿<?xml version="1.0" encoding="utf-8"?><projectmanifest>
+  <header>
+    <manifestversion>11.0</manifestversion>
+    <platformversion>11.0</platformversion>
+    <type>Library</type>
+    <name>Siemens.SimaticIT.UAPI.PIOrder_OP</name>
+    <shortname>PIOrder_OP</shortname>
+    <description>SIMATIC IT Process Industries Order Management</description>
+    <version>17.00.00</version>
+    <companyname>Siemens.SimaticIT.UAPI</companyname>
+    <author>Siemens.SimaticIT.UAPI</author>
+    <hash>jDzdyH1Hk9pl7HsfGafpgTqIRvhKp4iv5KoJ4a6ai4s=</hash>
+    <modelHash>UGnrmcLbnuaNOoLYB8HDA4tfiBbqs8sCrrU2mJMSBuU=</modelHash>
+    <modelHashSections>
+      <modelHashSection>
+        <name>projectConfigModelHash</name>
+        <hash>TUo1OsFvW1cfauU6FKZpAoy8DgcN1Wrzx+vNP4ku/mk=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>dataModelHash</name>
+        <hash>gb4KhNk92f0X18Cnt+TmMs+MUfpZm/ptbO8Q6ihk86w=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>commandModelHash</name>
+        <hash>kgCv38UatlUUddoFCd0WUPj9Noix+JD/QFEqgMZYIBw=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>aliasModelHash</name>
+        <hash>cdWtFof25lUoH+wgMZZEtJGL5k7aBVT7Ae5HtNcbGxs=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>eventModelHash</name>
+        <hash>YJT2wbEWgSDm4evO0sQx8Qq9lorfk11YByCZvsOo2M4=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>typeModelHash</name>
+        <hash>qTC0oP/g/HF4QjkJ3cYm2UI00cu9UGnj0j6khjVT1Zw=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>securityModelHash</name>
+        <hash>cdWtFof25lUoH+wgMZZEtJGL5k7aBVT7Ae5HtNcbGxs=</hash>
+      </modelHashSection>
+    </modelHashSections>
+    <uiHash>na</uiHash>
+    <canbeextended>false</canbeextended>
+    <domain>OperationalData</domain>
+  </header>
+  <reference>
+    <functionalblocks>
+      <functionalblock>
+        <name>Siemens.SimaticIT.UDM_RF</name>
+        <version>07.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.EQU_MS</name>
+        <version>08.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.EQU_OP</name>
+        <version>08.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.MAT_MS</name>
+        <version>05.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.MAT_OP</name>
+        <version>06.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.TSK_MS</name>
+        <version>09.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.TSK_OP</name>
+        <version>11.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.OpcenterEX.FN.NUM_OP</name>
+        <version>02.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.OpcenterEX.Configuration_RF</name>
+        <version>12.00.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.ALG_MS</name>
+        <version>02.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.ALG_OP</name>
+        <version>02.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.OpcenterEX.PR.ApplicationLogExt</name>
+        <version>14.00.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.OpcenterEX.FN.ProductionHistory_MS</name>
+        <version>10.00.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.OpcenterEX.FN.ProductionHistory_OP</name>
+        <version>11.00.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.UAPI.ProductionContext_RF</name>
+        <version>15.00.00</version>
+        <type>Library</type>
+      </functionalblock>
+    </functionalblocks>
+    <extensions></extensions>
+  </reference>
+  <artifacts>
+    <commands><command>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.Commands.CreateOrder</name>
+                        <shortname>CreateOrder</shortname>
+                        <description>Creates an Order. When the Order is created, the command raises the OrderCreated event. The command checks the Order: 1. if it does not exist, error 11205 is returned if it does; 2. if the Quantity is not &lt; 0, if so error 10849 is returned; 3. if the UoM is defined but not the Quantity, if not error 10008 is returned; 4. if the ActualStartTime &gt;= ActualEndTime, if not error 10979 is returned;  5. if PlannedStartTime &gt;= PlannedEndTime, if not error 11201 is returned; 6. if the StateMachine exists, if not error 10300 is returned; 7. if the StateMachine has at least one Status, if not error 11320 is returned; 8. if the StateMachine has an initial Status, if not the error 10984 is returned.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.Commands.CreateOrderHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PIOrder_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.Commands.AddOrderUserFieldsToOrder</name>
+                        <shortname>AddOrderUserFieldsToOrder</shortname>
+                        <description>Adds one or more User Fields to an Order. Verifies that the Order is not frozen. If frozen, it raizes the error 11202.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.Commands.AddOrderUserFieldsToOrderHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PIOrder_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.Commands.UpdateOrder</name>
+                        <shortname>UpdateOrder</shortname>
+                        <description>Updates an Order. When the Order is updated, the command raises the OrderUpdated event. The command checks the Order: 1. if it exists, if not error 10300 is returned; 2. if the Quantity is not &lt; 0, if so error 10849 is returned; 3. if the UoM is defined but not the Quantity, if not error 10008 is returned; 4. if the ActualStartTime &gt;= ActualEndTime, if not error 10979 is returned; 5. if PlannedStartTime &gt;= PlannedEndTime, if not error 11201 is returned; 6. if the StateMachine exists, if not error 10300 is returned; 7. if the StateMachine has at least one Status, if not error 11320 is returned; 8. if the StateMachine has an initial Status, if not the error 10984 is returned.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.Commands.UpdateOrderHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PIOrder_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.Commands.DeleteOrder</name>
+                        <shortname>DeleteOrder</shortname>
+                        <description>Deletes an existing Order. Verifies that the Order exists and is not frozen. If frozen, it raizes the error 11202.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.Commands.DeleteOrderHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PIOrder_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.Commands.DeleteOrderUserFields</name>
+                        <shortname>DeleteOrderUserFields</shortname>
+                        <description>Deletes one or more Order User Fields. Verifies that Orders are not frozen. If more than one Orders are frozen, the error 11219 is raised.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.Commands.DeleteOrderUserFieldsHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PIOrder_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.Commands.UpdateOrderUserField</name>
+                        <shortname>UpdateOrderUserField</shortname>
+                        <description>Updates the value of the Order User Field. Verifies that the respective Order is not frozen. If frozen, it raises the error 11202.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.Commands.UpdateOrderUserFieldHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PIOrder_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.Commands.AddOrderOperationsToOrder</name>
+                        <shortname>AddOrderOperationsToOrder</shortname>
+                        <description>Adds one or more Operations to an Order. Verifies that the submitted Order exists in the database (according to the ID given as input) and that it is not frozen. If frozen, it raises the error 11202. If the execution of the command AddOrderOperationsToOrder is successful, it raises an event OrderOperationsAddedToOrder when the new operation data is saved in the database.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.Commands.AddOrderOperationsToOrderHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PIOrder_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.Commands.AddOrderOperationMaterialRequirementsToOrderOperation</name>
+                        <shortname>AddOrderOperationMaterialRequirementsToOrderOperation</shortname>
+                        <description>Associates, to the specified Order Operation, the list of Material Requirements. Verifies that: -  the respective Order is not frozen or raises the error 11202; -  the Order operation exists in the MES; -  the MaterialNId, quantity, UoM and Sequence are defined (mandatory fields); - if defined, the MaterialNId exists in the MES; - the UoM exists in the MES.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.Commands.AddOrderOperationMaterialRequirementsToOrderOperationHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PIOrder_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.Commands.AddOrderOperationEquipmentRequirementsToOrderOperation</name>
+                        <shortname>AddOrderOperationEquipmentRequirementsToOrderOperation</shortname>
+                        <description>Associates Equipment Requirements to Order Operation.  Verifies that: - the order is not frozen or raises the error 11202; - Operation Equipment Requirement Sequence is &gt;0; - either EquipmentNId or EquipmentGroupNId exists; - if set, the EquipmentNId is an existing Equipment;  - if set, the EquipmentGroupNId is an existing Equipment group; - if both set, they are related to each other.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.Commands.AddOrderOperationEquipmentRequirementsToOrderOperationHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PIOrder_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.Commands.DeleteOrderOperations</name>
+                        <shortname>DeleteOrderOperations</shortname>
+                        <description>Deletes one or more Order Operations. Verifies that Orders are not frozen. If more than one Orders are frozen, the error 11219 is raised.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.Commands.DeleteOrderOperationsHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PIOrder_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.Commands.SetOrderStatus</name>
+                        <shortname>SetOrderStatus</shortname>
+                        <description>This command updates the status of an Order. The event OrderStatusChanged is fired only if the property DoRaiseEvent of the transition passed as argument is equal to true.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.Commands.SetOrderStatusHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PIOrder_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.Commands.FreezeOrder</name>
+                        <shortname>FreezeOrder</shortname>
+                        <description>Configures the Order to read-only by setting the attribute IsFrozen to True.  The command verifies that an Order exists with the Id passed as argument. If not, it raises the error 10300. When the command is successful, it triggers the event OrderFrozen.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.Commands.FreezeOrderHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PIOrder_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.Commands.UnfreezeOrder</name>
+                        <shortname>UnfreezeOrder</shortname>
+                        <description>Configures the Order to be editable or allows its deletion by setting the attribute IsFrozen to False.  The command verifies that an Order exists with the Id passed as argument. If not, it raises the error 10300. When the command is successful, it triggers the event OrderUnfrozen.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.Commands.UnfreezeOrderHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PIOrder_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.Commands.CreateFullOrder</name>
+                        <shortname>CreateFullOrder</shortname>
+                        <description>Creates an Order with all its associated Entities: User Fields, Operations, and Operation Requirements (Materials, Parameters and Equipment). You can also specify the BoMNId and Revision of an existing Bill of Materials, OR a list of Materials (Material Items) to add Material Requirements to the Operations. The BoM Items or the Material Items can be already associated with a Catalog Operation.  If the BoM Items or the Material Items are associated with a Catalog Operation, linked to an Order Operation, they become the Material Requirements of the Order Operation. If the BoM Items or the Material Items are associated with a Catalog Operation, that is not linked to an Order Operation, they become the Material Requirements of a newly created Order Operation. If the BoM Items or the Material Items are not associated with a Catalog Operation, they become the Material Requirements of the Default Catalog Operation.  If an Order, with the data specified as command parameter, already exists, the Order is first deleted, if not frozen, and then re-created. If the Order is frozen, error 11202 is returned, as returned by the call to the sub command DeleteOrder. After the Order creation, the command raises the FullOrderCreated event. The command also checks if all provided dataSegregationTags exist, if not error 11308 is returned.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.Commands.CreateFullOrderHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PIOrder_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.Commands.AddOrderOperationParameterRequirementsToOrderOperation</name>
+                        <shortname>AddOrderOperationParameterRequirementsToOrderOperation</shortname>
+                        <description>Associates to the specified Order Operation the list of Parameter Requirements. Verifies that: the Order is not frozen, the Order Operation exists, there is not an existing parameter requirement with same ParameterNId, that Parameter type matches the given value, that UoM is defined and exists for Quantity type. Raised event: OrderOperationParameterRequirementsAddedToOrderOperation.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.Commands.AddOrderOperationParameterRequirementsToOrderOperationHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PIOrder_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.Commands.SetOrderStateMachine</name>
+                        <shortname>SetOrderStateMachine</shortname>
+                        <description>Sets a new State Machine to a Order.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.Commands.SetOrderStateMachineHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PIOrder_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command></commands>
+    <commandActions></commandActions>
+    <events><event>
+                <name>Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.Events.OrderCreated</name>
+                <shortname>OrderCreated</shortname>
+                <description> This event is fired when an Order is created.</description>
+                <assembly>Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.Events, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                <dotneteventtype></dotneteventtype>
+                <eventtype>Application</eventtype>
+                <domain>OperationalData</domain>
+                <taglist>
+                </taglist>
+                <securable>true</securable>
+        </event><event>
+                <name>Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.Events.OrderUpdated</name>
+                <shortname>OrderUpdated</shortname>
+                <description> This event is fired when an Order is updated.</description>
+                <assembly>Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.Events, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                <dotneteventtype></dotneteventtype>
+                <eventtype>Application</eventtype>
+                <domain>OperationalData</domain>
+                <taglist>
+                </taglist>
+                <securable>true</securable>
+        </event><event>
+                <name>Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.Events.OrderDeleted</name>
+                <shortname>OrderDeleted</shortname>
+                <description> This event is fired when an Order is deleted.</description>
+                <assembly>Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.Events, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                <dotneteventtype></dotneteventtype>
+                <eventtype>Application</eventtype>
+                <domain>OperationalData</domain>
+                <taglist>
+                </taglist>
+                <securable>true</securable>
+        </event><event>
+                <name>Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.Events.OrderUserFieldsAddedToOrder</name>
+                <shortname>OrderUserFieldsAddedToOrder</shortname>
+                <description> This event is fired when an Order user fields are added to an Order.</description>
+                <assembly>Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.Events, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                <dotneteventtype></dotneteventtype>
+                <eventtype>Application</eventtype>
+                <domain>OperationalData</domain>
+                <taglist>
+                </taglist>
+                <securable>true</securable>
+        </event><event>
+                <name>Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.Events.OrderUserFieldUpdated</name>
+                <shortname>OrderUserFieldUpdated</shortname>
+                <description> This event is fired when an Order user field is updated.</description>
+                <assembly>Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.Events, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                <dotneteventtype></dotneteventtype>
+                <eventtype>Application</eventtype>
+                <domain>OperationalData</domain>
+                <taglist>
+                </taglist>
+                <securable>true</securable>
+        </event><event>
+                <name>Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.Events.OrderUserFieldsDeleted</name>
+                <shortname>OrderUserFieldsDeleted</shortname>
+                <description> This event is fired when one or more Order user field is deleted.</description>
+                <assembly>Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.Events, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                <dotneteventtype></dotneteventtype>
+                <eventtype>Application</eventtype>
+                <domain>OperationalData</domain>
+                <taglist>
+                </taglist>
+                <securable>true</securable>
+        </event><event>
+                <name>Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.Events.OrderOperationsAddedToOrder</name>
+                <shortname>OrderOperationsAddedToOrder</shortname>
+                <description> Event fired when the operations are added to the Order</description>
+                <assembly>Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.Events, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                <dotneteventtype></dotneteventtype>
+                <eventtype>Application</eventtype>
+                <domain>OperationalData</domain>
+                <taglist>
+                </taglist>
+                <securable>true</securable>
+        </event><event>
+                <name>Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.Events.OrderOperationMaterialRequirementsAddedToOrderOperation</name>
+                <shortname>OrderOperationMaterialRequirementsAddedToOrderOperation</shortname>
+                <description> Event fired when the material requirements are added to the order operation.</description>
+                <assembly>Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.Events, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                <dotneteventtype></dotneteventtype>
+                <eventtype>Application</eventtype>
+                <domain>OperationalData</domain>
+                <taglist>
+                </taglist>
+                <securable>true</securable>
+        </event><event>
+                <name>Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.Events.OrderOperationEquipmentRequirementsAddedToOrderOperation</name>
+                <shortname>OrderOperationEquipmentRequirementsAddedToOrderOperation</shortname>
+                <description> Event fired when the equipment requirements are added to the order operation.</description>
+                <assembly>Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.Events, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                <dotneteventtype></dotneteventtype>
+                <eventtype>Application</eventtype>
+                <domain>OperationalData</domain>
+                <taglist>
+                </taglist>
+                <securable>true</securable>
+        </event><event>
+                <name>Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.Events.OrderOperationsDeleted</name>
+                <shortname>OrderOperationsDeleted</shortname>
+                <description> This event is fired when one or more Order operation is deleted.</description>
+                <assembly>Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.Events, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                <dotneteventtype></dotneteventtype>
+                <eventtype>Application</eventtype>
+                <domain>OperationalData</domain>
+                <taglist>
+                </taglist>
+                <securable>true</securable>
+        </event><event>
+                <name>Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.Events.OrderStatusChanged</name>
+                <shortname>OrderStatusChanged</shortname>
+                <description> This event is fired when Order status changes.</description>
+                <assembly>Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.Events, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                <dotneteventtype></dotneteventtype>
+                <eventtype>Application</eventtype>
+                <domain>OperationalData</domain>
+                <taglist>
+                </taglist>
+                <securable>true</securable>
+        </event><event>
+                <name>Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.Events.OrderFrozen</name>
+                <shortname>OrderFrozen</shortname>
+                <description> This event is fired when Order is frozen.</description>
+                <assembly>Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.Events, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                <dotneteventtype></dotneteventtype>
+                <eventtype>Application</eventtype>
+                <domain>OperationalData</domain>
+                <taglist>
+                </taglist>
+                <securable>true</securable>
+        </event><event>
+                <name>Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.Events.OrderUnfrozen</name>
+                <shortname>OrderUnfrozen</shortname>
+                <description> This event is fired when Order is unfrozen.</description>
+                <assembly>Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.Events, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                <dotneteventtype></dotneteventtype>
+                <eventtype>Application</eventtype>
+                <domain>OperationalData</domain>
+                <taglist>
+                </taglist>
+                <securable>true</securable>
+        </event><event>
+                <name>Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.Events.FullOrderCreated</name>
+                <shortname>FullOrderCreated</shortname>
+                <description> This event is fired when an Order is created using CreateFullOrder command</description>
+                <assembly>Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.Events, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                <dotneteventtype></dotneteventtype>
+                <eventtype>Application</eventtype>
+                <domain>OperationalData</domain>
+                <taglist>
+                </taglist>
+                <securable>true</securable>
+        </event><event>
+                <name>Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.Events.OrderOperationParameterRequirementsAddedToOrderOperation</name>
+                <shortname>OrderOperationParameterRequirementsAddedToOrderOperation</shortname>
+                <description> Event fired when the parameter requirements are added to the order operation.</description>
+                <assembly>Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.Events, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                <dotneteventtype></dotneteventtype>
+                <eventtype>Application</eventtype>
+                <domain>OperationalData</domain>
+                <taglist>
+                </taglist>
+                <securable>true</securable>
+        </event></events>
+    <event_handlers></event_handlers>
+    <signals></signals>
+    <readingFunctions></readingFunctions>
+    <entities><entity>
+      <name>Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.DataModel.ReadingModel.OrderUserField</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.DataModel.ReadingModel.Order</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.DataModel.ReadingModel.OrderOperation</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.DataModel.ReadingModel.OrderOperationMaterialRequirement</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.DataModel.ReadingModel.OrderOperationEquipmentRequirement</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.DataModel.ReadingModel.OrderOperationParameterRequirement</name>
+      <securable>true</securable>
+    </entity></entities>
+    <datamodels><datamodel>
+      <assembly>Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>WR</mode>
+      <domain>OperationalData</domain>
+    </datamodel><datamodel>
+      <assembly>Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.ReadingModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>RD</mode>
+      <domain>OperationalData</domain>
+    </datamodel><datamodel>
+      <assembly>Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.Types, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>WR</mode>
+      <domain>OperationalData</domain>
+    </datamodel><datamodel>
+      <assembly>Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.Types.ReadingModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>RD</mode>
+      <domain>OperationalData</domain>
+    </datamodel></datamodels>
+    <externaldatamodels></externaldatamodels>
+    <appdatamodels></appdatamodels>
+    <uimodules></uimodules>
+    <uicomponents></uicomponents>
+    <wr_entities><wr_entity>
+      <name>Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.DataModel.OrderUserField</name>
+      <shortname>OrderUserField</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity>Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.DataModel.Order</parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity>Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.DataModel.Order</root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.DataModel.Order</name>
+      <shortname>Order</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity></parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity></root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.DataModel.OrderOperation</name>
+      <shortname>OrderOperation</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity>Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.DataModel.Order</parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity>Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.DataModel.Order</root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.DataModel.OrderOperationMaterialRequirement</name>
+      <shortname>OrderOperationMaterialRequirement</shortname>
+      <haslogicalkey>false</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity>Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.DataModel.OrderOperation</parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity>Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.DataModel.Order</root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.DataModel.OrderOperationEquipmentRequirement</name>
+      <shortname>OrderOperationEquipmentRequirement</shortname>
+      <haslogicalkey>false</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity>Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.DataModel.OrderOperation</parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity>Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.DataModel.Order</root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.DataModel.OrderOperationParameterRequirement</name>
+      <shortname>OrderOperationParameterRequirement</shortname>
+      <haslogicalkey>false</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity>Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.DataModel.OrderOperation</parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity>Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.DataModel.Order</root_entity>
+      <base_entity></base_entity>
+    </wr_entity></wr_entities>
+    <wr_facets></wr_facets>
+  </artifacts>
+  <security>
+    <roles></roles>
+  </security>
+  <runtime>
+    <event_subscriptions></event_subscriptions>
+    <handlergroups></handlergroups>
+  </runtime>
+</projectmanifest>

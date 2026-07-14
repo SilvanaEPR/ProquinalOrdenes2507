@@ -1,0 +1,31 @@
+﻿
+<div class="pi-component-title" ng-show="vm.isComponentTitleVisible">{{vm.componentDetailsTitle}}</div>
+
+<div class="pi-command-bar-side-panel" ng-show="vm.isEditEnabled && vm.showEdit">
+    <button ng-click="vm.onEditClick()" title="{{vm.editCmdLabel}}" class="btn btn-default active" ng-show="vm.showEditButton">{{vm.editCmdLabel}}</button>
+</div>
+<div style="padding-top: 50px;" ng-show="vm.showDetails">
+    <sit-property-grid sit-id="workOrderPropertyGrid"
+                       sit-layout="Horizontal"
+                       sit-type="Fixed"
+                       sit-mode="edit"
+                       sit-columns="1"
+                       sit-data="vm.workOrderPropertyGridData">
+    </sit-property-grid>
+    <sit-property-grid sit-id="woPropertyExt"
+                       sit-layout="Horizontal"
+                       sit-type="Fixed"
+                       sit-mode="edit"
+                       sit-columns="1" ng-show="!vm.NoData">
+        <sit-property ng-repeat="prop in vm.woPropertyExtData"
+                      sit-widget-attributes=prop.widgetAttributes
+                      sit-widget={{prop.widget}}
+                      sit-value=prop.value
+                      sit-validation=prop.validation
+                      ng-readonly=prop.read_only>
+            {{prop.label}}:
+        </sit-property>
+    </sit-property-grid>
+</div>
+<sit-pi-work-order-create on-register-create-api="vm.onRegisterCreateApi(api)" ng-show="vm.isEditEnabled && !vm.showEdit"></sit-pi-work-order-create>
+

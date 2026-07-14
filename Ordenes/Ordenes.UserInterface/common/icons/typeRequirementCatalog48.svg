@@ -1,0 +1,20 @@
+<svg id="Image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="linear-gradient" x1="4.437" y1="744" x2="48.437" y2="788" gradientTransform="translate(0 -742)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#dcdcdc"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="9.542" y1="756.898" x2="29.542" y2="776.898" gradientTransform="translate(8.781 -753.641) scale(1.014 1.018)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#73b4c8"/>
+      <stop offset="0.175" stop-color="#6aaec3"/>
+      <stop offset="0.457" stop-color="#529eb5"/>
+      <stop offset="0.809" stop-color="#2c839f"/>
+      <stop offset="1" stop-color="#147391"/>
+    </linearGradient>
+  </defs>
+  <g id="g986">
+    <path id="rect16" d="M5.437,1h42V47h-42Z" fill="url(#linear-gradient)"/>
+    <path id="path18" d="M5.438,1V11.062H1.5a.5.5,0,0,0,0,1H5.438v24H1.5a.5.5,0,0,0,0,1H5.438V47h42V1Zm41,45h-40V37.062h4.874a.5.5,0,0,0,0-1H6.438v-24h4.874a.5.5,0,0,0,0-1H6.438V2h40Z" fill="#464646"/>
+    <path id="path28" d="M31.286,17.025A3.78,3.78,0,1,0,24.9,14.276a3.943,3.943,0,0,0,1.115,2.749h-7.5V24.56a3.676,3.676,0,0,1,2.637-1.12,3.768,3.768,0,0,1,0,7.535h0a3.509,3.509,0,0,1-2.637-1.12v7.637H38.79V17.127h-7.5Z" stroke="#147391" stroke-miterlimit="10" stroke-width="1.016" fill="url(#linear-gradient-2)"/>
+  </g>
+</svg>

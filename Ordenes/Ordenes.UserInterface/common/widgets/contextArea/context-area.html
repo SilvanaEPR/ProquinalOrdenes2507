@@ -1,0 +1,30 @@
+<div class="sit-context-area" ng-if="ContextArea.propertyList.length || ContextArea.templateUrl">
+    <div class="context-area-container">
+        <div class="context-area-content" ng-class="{ 'collapsed-height' : !ContextArea.isContextAreaExpanded, 'expanded-height' :ContextArea.isContextAreaExpanded,
+             'icon-visible-width' :ContextArea.isExpandIconVisible}">
+            <div class="context-area-properties" ng-if="ContextArea.propertyList.length" ng-class="{'fixed-height' : ContextArea.propertyList.length && ContextArea.templateUrl}">
+                <div class="context-area-property" ng-repeat="list in ContextArea.propertyList">
+                    <div class="context-property-item pl-property-grid-list">
+                        <div class="pl-label" title="{{list.label}}">
+                            {{list.label}}
+                        </div>
+                        <div class="colon-seperator">
+                            <span>:</span>
+                        </div>
+                        <div class="pl-value" title="{{list.value}}">
+                            {{list.value}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="custom-context-area" ng-if="ContextArea.templateUrl" ng-class="{'fixed-height' : ContextArea.propertyList.length && ContextArea.templateUrl }">
+                <ng-include src="ContextArea.templateUrl"></ng-include>
+            </div>
+        </div>
+
+        <div class="expand-context-area" ng-click="ContextArea.expandContextArea()" ng-if="ContextArea.isExpandIconVisible">
+            <span sit-mom-icon="{ path: 'common/icons/miscDownArrow16.svg', size: '16px' }" sit-class="svg-icon"
+                  ng-class="{'pl-icon-flip-horizontal': ContextArea.isContextAreaExpanded}" class="expand-mom-icon"></span>
+        </div>
+    </div>
+</div>

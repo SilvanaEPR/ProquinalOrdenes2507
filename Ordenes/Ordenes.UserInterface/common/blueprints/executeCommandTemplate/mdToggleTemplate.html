@@ -1,0 +1,14 @@
+<div class="sit-checkbox">
+    <div class="validator-control checkbox-noborder" style="background: transparent">
+        <div class="group-control">
+            <div class="check-box" ng-class="toggleCtrl.disabled ? 'checkbox-disabled' : 'checkbox-enabled'" style="padding-top:2px;display:block; position:static">
+                <label>
+                    <input type="checkbox" ng-model="toggleCtrl.Value" ng-model-options="{ getterSetter: true }" ng-click="toggleCtrl.onChange()" ng-disabled="toggleCtrl.disabled">
+                    <span class="property-label-ellipsis" title={{toggleCtrl.label|translate}}>
+                        <span class="check"></span>{{toggleCtrl.label|translate}}
+                    </span>
+                </label>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,150 @@
+﻿<style>
+    pi-optsk-command-bar > sit-command-bar > div {
+        border-radius: 0px 3px 0px 0px;
+    }
+</style>
+<!--         
+
+    -->
+<sit-command-bar name="OTLcommandBar" sit-type="Tool" sit-layout="vertical" sit-vertical-autofixed="false" style="position: inherit;">
+    <sit-command svg-icon="common/icons/cmdWorkProcessExecution24.svg"
+                 sit-name="openStartWorkProcessPanel"
+                 sit-tooltip="{{ 'Siemens.SimaticIT.UAPI.PICore.OperatorTask.common.PDLaunch' | translate }}"
+                 ng-click="vm.commandClick"
+                 sit-label="{{ 'Siemens.SimaticIT.UAPI.PICore.OperatorTask.common.PDLaunch' | translate }}"
+                 ng-show="!vm.isFullScreenSidePanel && vm.isWorkOrderContextSet"
+                 sit-type="command">
+    </sit-command>
+    <sit-command-group cmd-icon="Push"
+                       sit-name="changeStatus"
+                       sit-tooltip="{{ 'Siemens.SimaticIT.UAPI.PICore.OperatorTask.common.ChangeStatus' | translate }}"
+                       sit-label="{{ 'Siemens.SimaticIT.UAPI.PICore.OperatorTask.common.ChangeStatus' | translate }}"
+                       sit-type="group">
+        <sit-command cmd-icon="Pause"
+                     sit-name="pause"
+                     sit-tooltip="{{ 'Siemens.SimaticIT.UAPI.PICore.OperatorTask.common.pause' | translate }}"
+                     ng-click="vm.commandClick"
+                     sit-label="{{ 'Siemens.SimaticIT.UAPI.PICore.OperatorTask.common.pause' | translate }}"
+                     ng-show="vm.isPauseVisible && !vm.isFullScreenSidePanel"
+                     sit-type="command">
+        </sit-command>
+        <sit-command svg-icon="common/icons/miscGoToLast24.svg"
+                     sit-name="skip"
+                     sit-tooltip="{{ 'Siemens.SimaticIT.UAPI.PICore.OperatorTask.common.skip' | translate }}"
+                     ng-click="vm.commandClick"
+                     sit-label="{{ 'Siemens.SimaticIT.UAPI.PICore.OperatorTask.common.skip' | translate }}"
+                     ng-show="vm.isSkipVisible && !vm.isFullScreenSidePanel"
+                     sit-type="command">
+        </sit-command>
+        <sit-command cmd-icon="Time"
+                     sit-name="suspend"
+                     sit-tooltip="{{ 'Siemens.SimaticIT.UAPI.PICore.OperatorTask.common.suspend' | translate }}"
+                     ng-click="vm.commandClick"
+                     sit-label="{{ 'Siemens.SimaticIT.UAPI.PICore.OperatorTask.common.suspend' | translate }}"
+                     ng-show="vm.isSuspendVisible && !vm.isFullScreenSidePanel"
+                     sit-type="command">
+        </sit-command>
+        <sit-command cmd-icon="ClosePanel"
+                     sit-name="cancel"
+                     sit-tooltip="{{ 'Siemens.SimaticIT.UAPI.PICore.OperatorTask.common.cancel' | translate }}"
+                     ng-click="vm.commandClick"
+                     sit-label="{{ 'Siemens.SimaticIT.UAPI.PICore.OperatorTask.common.cancel' | translate }}"
+                     ng-show="vm.isCancelVisible && !vm.isFullScreenSidePanel"
+                     sit-type="command">
+        </sit-command>
+    </sit-command-group>
+    <sit-command svg-icon="common/icons/cmdProductionContext24.svg"
+                 sit-name="openProductionContext"
+                 sit-tooltip="{{ 'Siemens.SimaticIT.UAPI.PICore.OperatorTask.common.openProductionContext' | translate }}"
+                 ng-click="vm.commandClick"
+                 sit-label="{{ 'Siemens.SimaticIT.UAPI.PICore.OperatorTask.common.openProductionContext' | translate }}"
+                 ng-show="!vm.isFullScreenSidePanel"
+                 sit-type="command">
+    </sit-command>
+    <sit-command cmd-icon="Show"
+                 sit-name="showFinalizedTasks"
+                 sit-tooltip="{{ 'Siemens.SimaticIT.UAPI.PICore.OperatorTask.common.unhideTasksInFinalStates' | translate }}"
+                 ng-click="vm.commandClick"
+                 sit-label="{{ 'Siemens.SimaticIT.UAPI.PICore.OperatorTask.common.finalizedTasks' | translate }}"
+                 sit-selected="false"
+                 ng-show="vm.IsShowFinalizedTasksVisible && !vm.isFullScreenSidePanel"
+                 sit-type="toggle">
+    </sit-command>
+    <sit-command cmd-icon="Hide"
+                 sit-name="unshowFinalizedTasks"
+                 sit-tooltip="{{ 'Siemens.SimaticIT.UAPI.PICore.OperatorTask.common.hideTasksInFinalStates' | translate }}"
+                 ng-click="vm.commandClick"
+                 sit-label="{{ 'Siemens.SimaticIT.UAPI.PICore.OperatorTask.common.hideTasksInFinalStates' | translate }}"
+                 sit-selected="false"
+                 ng-show="!vm.IsShowFinalizedTasksVisible && !vm.isFullScreenSidePanel"
+                 sit-type="toggle">
+    </sit-command>
+    <sit-command cmd-icon="WorkProcess"
+                 sit-name="openWorkProcess"
+                 sit-tooltip="{{ 'Siemens.SimaticIT.UAPI.PICore.OperatorTask.common.openWorkProcess' | translate }}"
+                 ng-click="vm.commandClick"
+                 sit-label="{{ 'Siemens.SimaticIT.UAPI.PICore.OperatorTask.common.openWorkProcess' | translate }}"
+                 ng-show="vm.isWorkprocessVisible && !vm.isFullScreenSidePanel"
+                 sit-type="command">
+    </sit-command>
+
+    <sit-command-group sit-label="{{ 'Siemens.SimaticIT.UAPI.PICore.OperatorTask.common.details' | translate }}" sit-name="Details" sit-tooltip="{{ 'Siemens.SimaticIT.UAPI.PICore.OperatorTask.common.details' | translate }}" cmd-icon="ListBox" sit-type="group">
+        <sit-command cmd-icon="ListBox"
+                     sit-name="overview"
+                     sit-tooltip="{{ 'Siemens.SimaticIT.UAPI.PICore.OperatorTask.common.taskDetails' | translate }}"
+                     ng-click="vm.commandClick"
+                     sit-label="{{ 'Siemens.SimaticIT.UAPI.PICore.OperatorTask.common.taskDetails' | translate }}"
+                     ng-show="vm.isOverviewVisible && !vm.isFullScreenSidePanel"
+                     sit-type="command">
+        </sit-command>
+        <sit-command cmd-icon="ListView"
+                     sit-name="visibility"
+                     sit-tooltip="{{ 'Siemens.SimaticIT.UAPI.PICore.OperatorTask.common.operationDetails' | translate }}"
+                     ng-click="vm.commandClick"
+                     sit-label="{{ 'Siemens.SimaticIT.UAPI.PICore.OperatorTask.common.operationDetails' | translate }}"
+                     ng-show="vm.isWorkOrderOperationSelected && !vm.isFullScreenSidePanel"
+                     sit-type="command">
+        </sit-command>
+    </sit-command-group>
+
+    <sit-command cmd-icon="TaskActivate"
+                 sit-name="activate"
+                 sit-tooltip="{{ 'Siemens.SimaticIT.UAPI.PICore.OperatorTask.common.activate' | translate }}"
+                 ng-click="vm.commandClick"
+                 sit-label="{{ 'Siemens.SimaticIT.UAPI.PICore.OperatorTask.common.activate' | translate }}"
+                 ng-show="vm.isActivateVisible && !vm.isFullScreenSidePanel"
+                 sit-type="main">
+    </sit-command>
+    <sit-command cmd-icon="Start"
+                 sit-name="start"
+                 sit-tooltip="{{ 'Siemens.SimaticIT.UAPI.PICore.OperatorTask.common.start' | translate }}"
+                 ng-click="vm.commandClick"
+                 sit-label="{{ 'Siemens.SimaticIT.UAPI.PICore.OperatorTask.common.start' | translate }}"
+                 ng-show="vm.isStartVisible && !vm.isFullScreenSidePanel"
+                 sit-type="main">
+    </sit-command>
+    <sit-command cmd-icon="Validate"
+                 sit-name="complete"
+                 sit-tooltip="{{ 'Siemens.SimaticIT.UAPI.PICore.OperatorTask.common.complete' | translate }}"
+                 ng-click="vm.commandClick"
+                 sit-label="{{ 'Siemens.SimaticIT.UAPI.PICore.OperatorTask.common.complete' | translate }}"
+                 ng-show="vm.isCompleteVisible && !vm.isFullScreenSidePanel"
+                 sit-type="main">
+    </sit-command>
+    <sit-command cmd-icon="Forwards"
+                 sit-name="resume"
+                 sit-tooltip="{{ 'Siemens.SimaticIT.UAPI.PICore.OperatorTask.common.resume' | translate }}"
+                 ng-click="vm.commandClick"
+                 sit-label="{{ 'Siemens.SimaticIT.UAPI.PICore.OperatorTask.common.resume' | translate }}"
+                 ng-show="vm.isResumeVisible && !vm.isFullScreenSidePanel"
+                 sit-type="main">
+    </sit-command>
+    <sit-command cmd-icon="ClosePanel"
+                 sit-name="closePanel"
+                 sit-tooltip="{{ 'SIT.TSK.common.close' | translate }}"
+                 ng-click="vm.commandClick"
+                 sit-label="{{ 'SIT.TSK.common.close' | translate }}"
+                 ng-show="vm.isFullScreenSidePanel"
+                 sit-type="main">
+    </sit-command>
+</sit-command-bar>

@@ -1,0 +1,523 @@
+﻿<?xml version="1.0" encoding="utf-8"?><projectmanifest>
+  <header>
+    <manifestversion>11.0</manifestversion>
+    <platformversion>11.0</platformversion>
+    <type>Library</type>
+    <name>Siemens.SimaticIT.UAPI.PITnT_OP</name>
+    <shortname>PITnT_OP</shortname>
+    <description>Process Industries Tracking and Tracing</description>
+    <version>19.00.00</version>
+    <companyname>Siemens.SimaticIT.UAPI</companyname>
+    <author>Siemens.SimaticIT.UAPI</author>
+    <hash>4pvoDFTSTOmwjop+r46928M3Gbi4aPunRwUB2X9TsuM=</hash>
+    <modelHash>63NFjWYvnxgbeBvSfXsqqB/4dO1vMCQj9H1SrgTibsY=</modelHash>
+    <modelHashSections>
+      <modelHashSection>
+        <name>projectConfigModelHash</name>
+        <hash>O+5A+pZHAmstPMcXmVM5+PnNPxvhA29syyOG0eU3q2k=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>dataModelHash</name>
+        <hash>iBYuopfqvWwOVw0Rxjc1uR/FuGTLSJgWv+QZJ8dTeJo=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>commandModelHash</name>
+        <hash>NQTzdtCyVGWJ9BEZRwt7do24oElONZCj55lfneqOd3E=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>aliasModelHash</name>
+        <hash>FCE0KMXJjmDlnki7ue9cotrur1tAAXlmG5Tm782yrrs=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>eventModelHash</name>
+        <hash>1pCUQMeMV1zI9wPwd+zPXfSRUhyKxTb/4j3YyV+SOBI=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>typeModelHash</name>
+        <hash>hAlRm3xtQ6zg1mt0bfNMTY8n9pb02BdpG7N7kRSjE1A=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>securityModelHash</name>
+        <hash>HBCAwH1bPzPLFZ0nja4tQ6QtcIjsQ44hwxLWV6Kg8e4=</hash>
+      </modelHashSection>
+    </modelHashSections>
+    <uiHash>na</uiHash>
+    <canbeextended>false</canbeextended>
+    <domain>OperationalData</domain>
+  </header>
+  <reference>
+    <functionalblocks>
+      <functionalblock>
+        <name>Siemens.SimaticIT.UDM_RF</name>
+        <version>07.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+    </functionalblocks>
+    <extensions></extensions>
+  </reference>
+  <artifacts>
+    <commands><command>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PITnT_OP.OPModel.Commands.CreateMTUOperationTracking</name>
+                        <shortname>CreateMTUOperationTracking</shortname>
+                        <description>Creates a MTU Operation Tracking. The command checks: 1. If the MTU Operation Type is invalid. If yes, error code -11005 is returned. 2. If the Custom fields contains malformed properties. if yes, the message will contain malformed properties and error code -10312 is returned</description>
+                        <assembly>Siemens.SimaticIT.UAPI.OperationalData.PITnT_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.OperationalData.PITnT_OP.OPModel.Commands.CreateMTUOperationTrackingHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PITnT_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PITnT_OP.OPModel.Commands.CreateMTUOperationMaterial</name>
+                        <shortname>CreateMTUOperationMaterial</shortname>
+                        <description>Creates a MTUOperationMaterial entity, adding material.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.OperationalData.PITnT_OP.OPModel.Commands.Internal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Private</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>false</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.OperationalData.PITnT_OP.OPModel.Commands.CreateMTUOperationMaterialHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PITnT_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PITnT_OP.OPModel.Commands.DeleteMTUOperationMaterial</name>
+                        <shortname>DeleteMTUOperationMaterial</shortname>
+                        <description>Deletes a MTUOperationMaterial entity.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.OperationalData.PITnT_OP.OPModel.Commands.Internal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Private</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>false</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.OperationalData.PITnT_OP.OPModel.Commands.DeleteMTUOperationMaterialHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PITnT_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PITnT_OP.OPModel.Commands.DeleteMTUOperationTracking</name>
+                        <shortname>DeleteMTUOperationTracking</shortname>
+                        <description>Deletes a MTUOperationTracking entity.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.OperationalData.PITnT_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.OperationalData.PITnT_OP.OPModel.Commands.DeleteMTUOperationTrackingHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PITnT_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PITnT_OP.OPModel.Commands.RemoveMTUTrackingInconsistency</name>
+                        <shortname>RemoveMTUTrackingInconsistency</shortname>
+                        <description>Removes a set of inconsistencies from the MTUTrackingInconsistency entity.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.OperationalData.PITnT_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.OperationalData.PITnT_OP.OPModel.Commands.RemoveMTUTrackingInconsistencyHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PITnT_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PITnT_OP.OPModel.Commands.CreateMTUOperationType</name>
+                        <shortname>CreateMTUOperationType</shortname>
+                        <description>Creates a new MTU operation type instance.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.OperationalData.PITnT_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.OperationalData.PITnT_OP.OPModel.Commands.CreateMTUOperationTypeHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PITnT_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PITnT_OP.OPModel.Commands.UpdateMTUOperationType</name>
+                        <shortname>UpdateMTUOperationType</shortname>
+                        <description>Updates the specified instance of operation type.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.OperationalData.PITnT_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.OperationalData.PITnT_OP.OPModel.Commands.UpdateMTUOperationTypeHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PITnT_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PITnT_OP.OPModel.Commands.DeleteMTUOperationType</name>
+                        <shortname>DeleteMTUOperationType</shortname>
+                        <description>Deletes the specified operation type.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.OperationalData.PITnT_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.OperationalData.PITnT_OP.OPModel.Commands.DeleteMTUOperationTypeHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PITnT_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PITnT_OP.OPModel.Commands.ComputeMTUSources</name>
+                        <shortname>ComputeMTUSources</shortname>
+                        <description>Lists the MTUs that have contributed to the realization of the MTU passed as input. </description>
+                        <assembly>Siemens.SimaticIT.UAPI.OperationalData.PITnT_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.OperationalData.PITnT_OP.OPModel.Commands.ComputeMTUSourcesHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PITnT_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PITnT_OP.OPModel.Commands.ComputeMTUDestinations</name>
+                        <shortname>ComputeMTUDestinations</shortname>
+                        <description>Lists the MTUs that have received a contribution, in terms of material quantity, from the MTU passed as input. </description>
+                        <assembly>Siemens.SimaticIT.UAPI.OperationalData.PITnT_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.OperationalData.PITnT_OP.OPModel.Commands.ComputeMTUDestinationsHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PITnT_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PITnT_OP.OPModel.Commands.ComputeMTUSourcesAndDestinations</name>
+                        <shortname>ComputeMTUSourcesAndDestinations</shortname>
+                        <description>Joins the lists returned by ComputeMTUDestinations and ComputeMTUSources.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.OperationalData.PITnT_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.OperationalData.PITnT_OP.OPModel.Commands.ComputeMTUSourcesAndDestinationsHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PITnT_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PITnT_OP.OPModel.Commands.ComputeMTUPastLocations</name>
+                        <shortname>ComputeMTUPastLocations</shortname>
+                        <description>Lists of pieces of equipment/locations the MTU has passed through and relative stop time information.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.OperationalData.PITnT_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.OperationalData.PITnT_OP.OPModel.Commands.ComputeMTUPastLocationsHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PITnT_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PITnT_OP.OPModel.Commands.ComputeMTUsByLocation</name>
+                        <shortname>ComputeMTUsByLocation</shortname>
+                        <description>Lists the MTUs that have passed through the equipment/location and relative stop-time information.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.OperationalData.PITnT_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.OperationalData.PITnT_OP.OPModel.Commands.ComputeMTUsByLocationHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PITnT_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PITnT_OP.OPModel.Commands.CreateMTUOperationTrackingFromSignal</name>
+                        <shortname>CreateMTUOperationTrackingFromSignal</shortname>
+                        <description>Creates a MTU Operation Tracking. The command checks: 1. If the MTU Operation Type is invalid. If yes, error code -11005 is returned. 2. If the Custom fields contains malformed properties. if yes, the message will contain malformed properties and error code -10312 is returned</description>
+                        <assembly>Siemens.SimaticIT.UAPI.OperationalData.PITnT_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.OperationalData.PITnT_OP.OPModel.Commands.CreateMTUOperationTrackingFromSignalHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PITnT_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PITnT_OP.OPModel.Commands.CreateEquipmentOperationTracking</name>
+                        <shortname>CreateEquipmentOperationTracking</shortname>
+                        <description>Creates a Equipment Operation Tracking. The command checks: 1. If the Properties field contains malformed properties, the error code -10312 is returned. 2. If the Properties field contains duplicated properties, the error code -10313 is returned. 3. If the Attributes field of Property contains malformed attributes, the error code -10318 is returned. 4. If the Attributes field of Property contains duplicated attributes, the error code -10319 is returned.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.OperationalData.PITnT_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.OperationalData.PITnT_OP.OPModel.Commands.CreateEquipmentOperationTrackingHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PITnT_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command></commands>
+    <commandActions></commandActions>
+    <events></events>
+    <event_handlers></event_handlers>
+    <signals></signals>
+    <readingFunctions></readingFunctions>
+    <entities><entity>
+      <name>Siemens.SimaticIT.UAPI.OperationalData.PITnT_OP.OPModel.DataModel.ReadingModel.MTUOperationTracking</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.UAPI.OperationalData.PITnT_OP.OPModel.DataModel.ReadingModel.MTUTrackingInconsistency</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.UAPI.OperationalData.PITnT_OP.OPModel.DataModel.ReadingModel.MTUOperationMaterial</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.UAPI.OperationalData.PITnT_OP.OPModel.DataModel.ReadingModel.MTUOperationType</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.UAPI.OperationalData.PITnT_OP.OPModel.DataModel.ReadingModel.MTUOperationTrackingProperty</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.UAPI.OperationalData.PITnT_OP.OPModel.DataModel.ReadingModel.EquipmentOperationTracking</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.UAPI.OperationalData.PITnT_OP.OPModel.DataModel.ReadingModel.EquipmentOperationTrackingProperty</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.UAPI.OperationalData.PITnT_OP.OPModel.DataModel.ReadingModel.EquipmentOperationTrackingPropertyAttribute</name>
+      <securable>true</securable>
+    </entity></entities>
+    <datamodels><datamodel>
+      <assembly>Siemens.SimaticIT.UAPI.OperationalData.PITnT_OP.OPModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>WR</mode>
+      <domain>OperationalData</domain>
+    </datamodel><datamodel>
+      <assembly>Siemens.SimaticIT.UAPI.OperationalData.PITnT_OP.OPModel.ReadingModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>RD</mode>
+      <domain>OperationalData</domain>
+    </datamodel><datamodel>
+      <assembly>Siemens.SimaticIT.UAPI.OperationalData.PITnT_OP.OPModel.Types, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>WR</mode>
+      <domain>OperationalData</domain>
+    </datamodel><datamodel>
+      <assembly>Siemens.SimaticIT.UAPI.OperationalData.PITnT_OP.OPModel.Types.ReadingModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>RD</mode>
+      <domain>OperationalData</domain>
+    </datamodel></datamodels>
+    <externaldatamodels></externaldatamodels>
+    <appdatamodels></appdatamodels>
+    <uimodules></uimodules>
+    <uicomponents></uicomponents>
+    <wr_entities><wr_entity>
+      <name>Siemens.SimaticIT.UAPI.OperationalData.PITnT_OP.OPModel.DataModel.MTUOperationTracking</name>
+      <shortname>MTUOperationTracking</shortname>
+      <haslogicalkey>false</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity></parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity></root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.UAPI.OperationalData.PITnT_OP.OPModel.DataModel.MTUTrackingInconsistency</name>
+      <shortname>MTUTrackingInconsistency</shortname>
+      <haslogicalkey>false</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity>Siemens.SimaticIT.UAPI.OperationalData.PITnT_OP.OPModel.DataModel.MTUOperationTracking</parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity>Siemens.SimaticIT.UAPI.OperationalData.PITnT_OP.OPModel.DataModel.MTUOperationTracking</root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.UAPI.OperationalData.PITnT_OP.OPModel.DataModel.MTUOperationMaterial</name>
+      <shortname>MTUOperationMaterial</shortname>
+      <haslogicalkey>false</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity></parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity></root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.UAPI.OperationalData.PITnT_OP.OPModel.DataModel.MTUOperationType</name>
+      <shortname>MTUOperationType</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity></parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity></root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.UAPI.OperationalData.PITnT_OP.OPModel.DataModel.MTUOperationTrackingProperty</name>
+      <shortname>MTUOperationTrackingProperty</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity>Siemens.SimaticIT.UAPI.OperationalData.PITnT_OP.OPModel.DataModel.MTUOperationTracking</parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity>Siemens.SimaticIT.UAPI.OperationalData.PITnT_OP.OPModel.DataModel.MTUOperationTracking</root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.UAPI.OperationalData.PITnT_OP.OPModel.DataModel.EquipmentOperationTracking</name>
+      <shortname>EquipmentOperationTracking</shortname>
+      <haslogicalkey>false</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity></parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity></root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.UAPI.OperationalData.PITnT_OP.OPModel.DataModel.EquipmentOperationTrackingProperty</name>
+      <shortname>EquipmentOperationTrackingProperty</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity>Siemens.SimaticIT.UAPI.OperationalData.PITnT_OP.OPModel.DataModel.EquipmentOperationTracking</parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity>Siemens.SimaticIT.UAPI.OperationalData.PITnT_OP.OPModel.DataModel.EquipmentOperationTracking</root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.UAPI.OperationalData.PITnT_OP.OPModel.DataModel.EquipmentOperationTrackingPropertyAttribute</name>
+      <shortname>EquipmentOperationTrackingPropertyAttribute</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity>Siemens.SimaticIT.UAPI.OperationalData.PITnT_OP.OPModel.DataModel.EquipmentOperationTrackingProperty</parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity>Siemens.SimaticIT.UAPI.OperationalData.PITnT_OP.OPModel.DataModel.EquipmentOperationTracking</root_entity>
+      <base_entity></base_entity>
+    </wr_entity></wr_entities>
+    <wr_facets></wr_facets>
+  </artifacts>
+  <security>
+    <roles></roles>
+  </security>
+  <runtime>
+    <event_subscriptions></event_subscriptions>
+    <handlergroups></handlergroups>
+  </runtime>
+</projectmanifest>

@@ -1,0 +1,893 @@
+﻿<?xml version="1.0" encoding="utf-8"?><projectmanifest>
+  <header>
+    <manifestversion>11.0</manifestversion>
+    <platformversion>11.0</platformversion>
+    <type>Library</type>
+    <name>Siemens.OpcenterEX.FN.DEF_MS</name>
+    <shortname>DEF_MS</shortname>
+    <description>Defect Master Data Domain Functional Block</description>
+    <version>05.04.00</version>
+    <companyname>Siemens.OpcenterEX.FN</companyname>
+    <author>Siemens.OpcenterEX.FN</author>
+    <hash>KcRr2T0A6ypinjGYt3NsC45QZ1H8i2/zQAQX88o2yPE=</hash>
+    <modelHash>cNJ98bqm3GCQqGOaKBjBcXPaTrP+EciHkaDihKoRkWw=</modelHash>
+    <modelHashSections>
+      <modelHashSection>
+        <name>projectConfigModelHash</name>
+        <hash>thYKw9fk8K1y7EkPjtafLUo/vHxiqBHKOw3vQp4Wz+0=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>dataModelHash</name>
+        <hash>A2rivqtcIBj1eLwPViyWGsWPpJdREf62yn5tnhNU+rw=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>commandModelHash</name>
+        <hash>H6LlpjLDG/lwomE5+HsGLjW7K+9pTBAHLsuR+1q0Nnw=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>aliasModelHash</name>
+        <hash>cdWtFof25lUoH+wgMZZEtJGL5k7aBVT7Ae5HtNcbGxs=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>eventModelHash</name>
+        <hash>LyXQT9A6atoRfj/AEScofNZpWbhlttMdvL7tRJiqXf4=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>typeModelHash</name>
+        <hash>DEfuxTpo+mHRbC6M+FY6QfBNDy8v1baTZg9rkrLE6IU=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>securityModelHash</name>
+        <hash>cdWtFof25lUoH+wgMZZEtJGL5k7aBVT7Ae5HtNcbGxs=</hash>
+      </modelHashSection>
+    </modelHashSections>
+    <uiHash>na</uiHash>
+    <canbeextended>false</canbeextended>
+    <domain>MasterData</domain>
+  </header>
+  <reference>
+    <functionalblocks>
+      <functionalblock>
+        <name>Siemens.SimaticIT.UDM_RF</name>
+        <version>07.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+    </functionalblocks>
+    <extensions><extension>
+      <name>Siemens.OpcenterEX.FN.DEF_MS</name>
+    </extension></extensions>
+  </reference>
+  <artifacts>
+    <commands><command>
+                        <name>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.Commands.CreateFailure</name>
+                        <shortname>CreateFailure</shortname>
+                        <description>Creates a new Failure.</description>
+                        <assembly>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.Commands.CreateFailureHandlerShell</name>
+                                        <assembly>Siemens.OpcenterEX.FN.DEF_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.Commands.UpdateFailure</name>
+                        <shortname>UpdateFailure</shortname>
+                        <description>Updates an existing Failure.</description>
+                        <assembly>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.Commands.UpdateFailureHandlerShell</name>
+                                        <assembly>Siemens.OpcenterEX.FN.DEF_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.Commands.DeleteFailure</name>
+                        <shortname>DeleteFailure</shortname>
+                        <description>Deletes an existing Failure.</description>
+                        <assembly>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.Commands.DeleteFailureHandlerShell</name>
+                                        <assembly>Siemens.OpcenterEX.FN.DEF_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.Commands.UpdateGeneralQualityAction</name>
+                        <shortname>UpdateGeneralQualityAction</shortname>
+                        <description>Updates an existing GeneralQualityaction</description>
+                        <assembly>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.Commands.UpdateGeneralQualityActionHandlerShell</name>
+                                        <assembly>Siemens.OpcenterEX.FN.DEF_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.Commands.DeleteGeneralQualityAction</name>
+                        <shortname>DeleteGeneralQualityAction</shortname>
+                        <description>Deletes an existing GeneralQualityaction</description>
+                        <assembly>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.Commands.DeleteGeneralQualityActionHandlerShell</name>
+                                        <assembly>Siemens.OpcenterEX.FN.DEF_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.Commands.CreateGeneralQualityAction</name>
+                        <shortname>CreateGeneralQualityAction</shortname>
+                        <description>Creates a new GeneralQualityaction</description>
+                        <assembly>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.Commands.CreateGeneralQualityActionHandlerShell</name>
+                                        <assembly>Siemens.OpcenterEX.FN.DEF_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.Commands.CreateQualityAction</name>
+                        <shortname>CreateQualityAction</shortname>
+                        <description>Create a Quality Action</description>
+                        <assembly>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.Commands.CreateQualityActionHandlerShell</name>
+                                        <assembly>Siemens.OpcenterEX.FN.DEF_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.Commands.AssociateQualityActionsWithFailure</name>
+                        <shortname>AssociateQualityActionsWithFailure</shortname>
+                        <description>Associates one or more Quality action to a Failure.</description>
+                        <assembly>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.Commands.AssociateQualityActionsWithFailureHandlerShell</name>
+                                        <assembly>Siemens.OpcenterEX.FN.DEF_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.Commands.DisassociateQualityActionsFromFailure</name>
+                        <shortname>DisassociateQualityActionsFromFailure</shortname>
+                        <description>Removes the association between one or more Quality Action and a Failure.</description>
+                        <assembly>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.Commands.DisassociateQualityActionsFromFailureHandlerShell</name>
+                                        <assembly>Siemens.OpcenterEX.FN.DEF_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.Commands.UpdateQualityAction</name>
+                        <shortname>UpdateQualityAction</shortname>
+                        <description>Updates an existing Qualityaction</description>
+                        <assembly>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.Commands.UpdateQualityActionHandlerShell</name>
+                                        <assembly>Siemens.OpcenterEX.FN.DEF_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.Commands.DeleteQualityAction</name>
+                        <shortname>DeleteQualityAction</shortname>
+                        <description>Deletes an existing Qualityaction</description>
+                        <assembly>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.Commands.DeleteQualityActionHandlerShell</name>
+                                        <assembly>Siemens.OpcenterEX.FN.DEF_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.Commands.CreateSubQualityAction</name>
+                        <shortname>CreateSubQualityAction</shortname>
+                        <description>Create a SubQualityAction</description>
+                        <assembly>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.Commands.CreateSubQualityActionHandlerShell</name>
+                                        <assembly>Siemens.OpcenterEX.FN.DEF_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.Commands.DeleteSubQualityAction</name>
+                        <shortname>DeleteSubQualityAction</shortname>
+                        <description>Deletes an existing SubQualityAction</description>
+                        <assembly>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.Commands.DeleteSubQualityActionHandlerShell</name>
+                                        <assembly>Siemens.OpcenterEX.FN.DEF_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.Commands.UpdateSubQualityAction</name>
+                        <shortname>UpdateSubQualityAction</shortname>
+                        <description>Updates an existing SubQualityAction</description>
+                        <assembly>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.Commands.UpdateSubQualityActionHandlerShell</name>
+                                        <assembly>Siemens.OpcenterEX.FN.DEF_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.Commands.CreateNewFailureRevision</name>
+                        <shortname>CreateNewFailureRevision</shortname>
+                        <description>Creates a new Failure Revision.</description>
+                        <assembly>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.Commands.CreateNewFailureRevisionHandlerShell</name>
+                                        <assembly>Siemens.OpcenterEX.FN.DEF_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.Commands.LockFailure</name>
+                        <shortname>LockFailure</shortname>
+                        <description>Lock a Failure</description>
+                        <assembly>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.Commands.LockFailureHandlerShell</name>
+                                        <assembly>Siemens.OpcenterEX.FN.DEF_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.Commands.UnlockFailure</name>
+                        <shortname>UnlockFailure</shortname>
+                        <description>Unlock a Failure</description>
+                        <assembly>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.Commands.UnlockFailureHandlerShell</name>
+                                        <assembly>Siemens.OpcenterEX.FN.DEF_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.Commands.SetFailureRevisionCurrent</name>
+                        <shortname>SetFailureRevisionCurrent</shortname>
+                        <description>Sets a Failure Revision to Current.</description>
+                        <assembly>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.Commands.SetFailureRevisionCurrentHandlerShell</name>
+                                        <assembly>Siemens.OpcenterEX.FN.DEF_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.Commands.UnsetFailureRevisionCurrent</name>
+                        <shortname>UnsetFailureRevisionCurrent</shortname>
+                        <description>Unsets a Failure Revision as  Current.</description>
+                        <assembly>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.Commands.UnsetFailureRevisionCurrentHandlerShell</name>
+                                        <assembly>Siemens.OpcenterEX.FN.DEF_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.Commands.CreateAttachment</name>
+                        <shortname>CreateAttachment</shortname>
+                        <description>Create an attachment storing the uploaded file</description>
+                        <assembly>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.Commands.CreateAttachmentHandlerShell</name>
+                                        <assembly>Siemens.OpcenterEX.FN.DEF_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.Commands.DeleteAttachment</name>
+                        <shortname>DeleteAttachment</shortname>
+                        <description>Delete attachment removing the file</description>
+                        <assembly>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.Commands.DeleteAttachmentHandlerShell</name>
+                                        <assembly>Siemens.OpcenterEX.FN.DEF_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.Commands.AssociateAttachmentsToFailure</name>
+                        <shortname>AssociateAttachmentsToFailure</shortname>
+                        <description>Associate one or more attachments to a failure</description>
+                        <assembly>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.Commands.AssociateAttachmentsToFailureHandlerShell</name>
+                                        <assembly>Siemens.OpcenterEX.FN.DEF_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.Commands.DisassociateAttachmentsFromFailure</name>
+                        <shortname>DisassociateAttachmentsFromFailure</shortname>
+                        <description>Disassociate one or more attachments from a failure</description>
+                        <assembly>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.Commands.DisassociateAttachmentsFromFailureHandlerShell</name>
+                                        <assembly>Siemens.OpcenterEX.FN.DEF_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.Commands.UpdateAttachment</name>
+                        <shortname>UpdateAttachment</shortname>
+                        <description>Update attachment</description>
+                        <assembly>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.Commands.UpdateAttachmentHandlerShell</name>
+                                        <assembly>Siemens.OpcenterEX.FN.DEF_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.Commands.AssociateFailuresToAttachment</name>
+                        <shortname>AssociateFailuresToAttachment</shortname>
+                        <description>Associate one or more failures to specified attachment</description>
+                        <assembly>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.Commands.AssociateFailuresToAttachmentHandlerShell</name>
+                                        <assembly>Siemens.OpcenterEX.FN.DEF_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.Commands.DisassociateFailuresFromAttachment</name>
+                        <shortname>DisassociateFailuresFromAttachment</shortname>
+                        <description>Disassociate one or more failures from specified attachment</description>
+                        <assembly>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.Commands.DisassociateFailuresFromAttachmentHandlerShell</name>
+                                        <assembly>Siemens.OpcenterEX.FN.DEF_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.Commands.CreateAndLinkAttachment</name>
+                        <shortname>CreateAndLinkAttachment</shortname>
+                        <description>Create an attachment storing the uploaded file</description>
+                        <assembly>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.Commands.CreateAndLinkAttachmentHandlerShell</name>
+                                        <assembly>Siemens.OpcenterEX.FN.DEF_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.Commands.UpdateFailureParent</name>
+                        <shortname>UpdateFailureParent</shortname>
+                        <description>Update the associated parent. If ParentFailureId is null, the failure is promoted as root.</description>
+                        <assembly>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.Commands.UpdateFailureParentHandlerShell</name>
+                                        <assembly>Siemens.OpcenterEX.FN.DEF_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.Commands.SetQualitySubActionAsDefault</name>
+                        <shortname>SetQualitySubActionAsDefault</shortname>
+                        <description></description>
+                        <assembly>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.Commands.SetQualitySubActionAsDefaultHandlerShell</name>
+                                        <assembly>Siemens.OpcenterEX.FN.DEF_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.Commands.CreateBaseQualityAction</name>
+                        <shortname>CreateBaseQualityAction</shortname>
+                        <description>Create a Quality Action</description>
+                        <assembly>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.Commands.CreateBaseQualityActionHandlerShell</name>
+                                        <assembly>Siemens.OpcenterEX.FN.DEF_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.Commands.UpdateBaseQualityAction</name>
+                        <shortname>UpdateBaseQualityAction</shortname>
+                        <description>Updates an existing Qualityaction</description>
+                        <assembly>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.Commands.UpdateBaseQualityActionHandlerShell</name>
+                                        <assembly>Siemens.OpcenterEX.FN.DEF_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command></commands>
+    <commandActions><commandAction>
+                        <name>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.Commands.DeleteDocumentEntityLinksFailureHandlerShell</name>
+                        <shortname>DeleteDocumentEntityLinksFailureHandlerShell</shortname>
+                        <description>Deletes links between Document and deleted Entity.</description>
+                        <assembly>Siemens.OpcenterEX.FN.DEF_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <target_cpu>AnyCPU</target_cpu>
+                        <targetframework>netstandard2.0</targetframework>
+                        <command>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.Commands.DeleteFailure</command>
+                        <type>Post</type>
+                        <is_enabled>false</is_enabled>
+                        <is_optional>true</is_optional>
+                </commandAction><commandAction>
+                        <name>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.Commands.CopyDocumentEntityLinksFailureHandlerShell</name>
+                        <shortname>CopyDocumentEntityLinksFailureHandlerShell</shortname>
+                        <description>Copy links between Document and revisioned Failure.</description>
+                        <assembly>Siemens.OpcenterEX.FN.DEF_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <target_cpu>AnyCPU</target_cpu>
+                        <targetframework>netstandard2.0</targetframework>
+                        <command>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.Commands.CreateNewFailureRevision</command>
+                        <type>Post</type>
+                        <is_enabled>false</is_enabled>
+                        <is_optional>true</is_optional>
+                </commandAction></commandActions>
+    <events></events>
+    <event_handlers></event_handlers>
+    <signals></signals>
+    <readingFunctions></readingFunctions>
+    <entities><entity>
+      <name>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.DataModel.ReadingModel.Failure</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.DataModel.ReadingModel.QualityAction</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.DataModel.ReadingModel.Attachment</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.DataModel.ReadingModel.QualitySubAction</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.DataModel.ReadingModel.FailureParent</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.DataModel.ReadingModel.FailureChild</name>
+      <securable>true</securable>
+    </entity></entities>
+    <datamodels><datamodel>
+      <assembly>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>WR</mode>
+      <domain>MasterData</domain>
+    </datamodel><datamodel>
+      <assembly>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.ReadingModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>RD</mode>
+      <domain>MasterData</domain>
+    </datamodel><datamodel>
+      <assembly>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.Types, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>WR</mode>
+      <domain>MasterData</domain>
+    </datamodel><datamodel>
+      <assembly>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.Types.ReadingModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>RD</mode>
+      <domain>MasterData</domain>
+    </datamodel></datamodels>
+    <externaldatamodels></externaldatamodels>
+    <appdatamodels></appdatamodels>
+    <uimodules></uimodules>
+    <uicomponents></uicomponents>
+    <wr_entities><wr_entity>
+      <name>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.DataModel.Failure</name>
+      <shortname>Failure</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity></parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity></root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.DataModel.QualityAction</name>
+      <shortname>QualityAction</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity></parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity></root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.DataModel.GeneralQualityAction</name>
+      <shortname>GeneralQualityAction</shortname>
+      <haslogicalkey>false</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity></parententity>
+      <derivefromentity>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.DataModel.QualityAction</derivefromentity>
+      <root_entity></root_entity>
+      <base_entity>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.DataModel.QualityAction</base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.DataModel.Attachment</name>
+      <shortname>Attachment</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity></parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity></root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.DataModel.QualitySubAction</name>
+      <shortname>QualitySubAction</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity></parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity></root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.DataModel.FailureParent</name>
+      <shortname>FailureParent</shortname>
+      <haslogicalkey>false</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.DataModel.Failure</parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.DataModel.Failure</root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.DataModel.FailureChild</name>
+      <shortname>FailureChild</shortname>
+      <haslogicalkey>false</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.DataModel.Failure</parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.DataModel.Failure</root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.DataModel.DCDQualityAction</name>
+      <shortname>DCDQualityAction</shortname>
+      <haslogicalkey>false</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity></parententity>
+      <derivefromentity>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.DataModel.QualityAction</derivefromentity>
+      <root_entity></root_entity>
+      <base_entity>Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.DataModel.QualityAction</base_entity>
+    </wr_entity></wr_entities>
+    <wr_facets></wr_facets>
+  </artifacts>
+  <security>
+    <roles></roles>
+  </security>
+  <runtime>
+    <event_subscriptions></event_subscriptions>
+    <handlergroups></handlergroups>
+  </runtime>
+</projectmanifest>

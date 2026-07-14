@@ -1,0 +1,11 @@
+<div class="ngHeaderSortColumn {{::col.headerClass}} ng-indicator-header" ng-style="::{'cursor': col.cursor}" ng-class="::{ 'ngSorted' : !col.noSortVisible() }" ng-click="col.sort($event)">
+    <div id="header-sort-button" ng-attr-title="{{::col.displayName}}" ng-class="'colt' + col.index" class="ng-indicator-header-image">
+        <sit-column-header-indicator sit-column="col"></sit-column-header-indicator>
+    </div>
+    <div class="ngSortButtonDown" ng-if="col.showSortButtonDown()">
+        <em sit-mom-icon="{path:'common/icons/miscUpArrow16.svg', size:'16px'}" sit-class="header-srot-icon"></em>
+    </div>
+    <div class="ngSortButtonUp" ng-if="col.showSortButtonUp()">
+        <em sit-mom-icon="{path:'common/icons/miscDownArrow16.svg', size:'16px'}" sit-class="header-srot-icon"></em>
+    </div>
+</div>

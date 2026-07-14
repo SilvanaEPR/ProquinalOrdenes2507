@@ -1,0 +1,15 @@
+<div class="row" style="width:700px; height: 550px">
+    <div class="row">
+        <div id="bill-of-materials-container">
+            <div>
+                <sit-pi-table sit-pi-table-id="bomList" sit-config="Dialog.templatedata.bomToAssociateTableConfig" sit-pi-config="Dialog.templatedata.bomToAssociateDataConfig" sit-view-mode="grid"></sit-pi-table>
+            </div>
+            <div ng-show="Dialog.templatedata.bomToAssociateSelected">
+                <a id="btnShow" ng-show="Dialog.templatedata.isCollapsed" ng-click="Dialog.templatedata.onToggle()" style="padding-left: 5px;font-size: 15px; cursor: pointer;" aria-expanded="false"> <em class="fa fa-angle-right fa-lg" style="padding-right: 5px;"></em> {{Dialog.templatedata.showBoMItems}}</a>
+                <a ng-show="!Dialog.templatedata.isCollapsed" id="btnHide" ng-click="Dialog.templatedata.onToggle()" style="padding-left: 5px;font-size: 15px; cursor: pointer;" aria-expanded="false"> <em class="fa fa-angle-down fa-lg" style="padding-right: 5px;"></em>{{Dialog.templatedata.hideBoMItems}}</a>
+                <sit-pi-table ng-show="!Dialog.templatedata.isCollapsed" sit-pi-table-id="bomItemList" sit-config="Dialog.templatedata.bomItemTableConfig" sit-pi-config="Dialog.templatedata.bomItemDataConfig" sit-view-mode="grid">
+            </div>
+        </div>
+    </div>
+</div>
+

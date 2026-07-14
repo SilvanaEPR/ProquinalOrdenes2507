@@ -1,0 +1,7 @@
+﻿<sit-side-panel sit-title="{{ 'picore.buttonsAndTooltips.startNewWorkProcess' | translate }}"
+                sit-actions="vm.sidePanelConfig.actionButtons"
+                sit-close="vm.sidePanelConfig.closeButton">
+    
+    <pi-start-process-definition on-register-api="vm.onStartPDResgisterApi(api)" on-confirm-clicked="vm.startProcessDefinitionApi(item)"></pi-start-process-definition>
+    
+</sit-side-panel>

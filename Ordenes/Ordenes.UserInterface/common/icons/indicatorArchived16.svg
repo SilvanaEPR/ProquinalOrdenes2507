@@ -1,0 +1,16 @@
+<svg id="Verb_Zone" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 16 16">
+  <defs>
+    <linearGradient id="linear-gradient" x1="-14.56" y1="752.877" x2="-1.921" y2="761.149" gradientTransform="translate(16.426 -801.069) scale(1.054 1.071)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#afd7e1"/>
+      <stop offset="1" stop-color="#54a4bc"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="-11.367" y1="748.463" x2="-3.778" y2="753.808" xlink:href="#linear-gradient"/>
+  </defs>
+  <g id="g832">
+    <path id="path890" d="M1.611,9.859V4.571H14.374V15.147H1.611Zm9.058-1.8a.877.877,0,0,0,.345-.4c.045-.1.051-.176.051-.718,0-.712-.3-.371-.473-.569a1.16,1.16,0,0,0-.27-.212l-.155-.084L7.887,6.4l-1.95.179-.131.075a1.124,1.124,0,0,0-.412.444c-.053.117-.285-.722-.279-.116a2.109,2.109,0,0,0,.055.748c.069.155.024.269.192.36l.143.079h5.008Z" fill="url(#linear-gradient)"/>
+    <path id="path892" d="M.619,3V2.258H15.162V3.742H.619Z" fill="url(#linear-gradient-2)"/>
+    <path id="path817" d="M.744,10.279V4.571H.032V1.419H16V4.571h-.712V15.986H.744ZM14.269,9.77V4.622H1.761v10.3H14.269ZM14.981,3V2.436H1.049V3.554H14.981Z" fill="#464646"/>
+    <path id="rect822" d="M5.917,5.9h4.252a1.015,1.015,0,0,1,1.017,1.017V7.77a1.015,1.015,0,0,1-1.017,1.017H5.917A1.015,1.015,0,0,1,4.9,7.77V6.912A1.015,1.015,0,0,1,5.917,5.9Z" fill="#464646"/>
+    <path id="rect822-4" d="M6.425,6.841H9.661a.351.351,0,0,1,.352.352v.3a.351.351,0,0,1-.352.352H6.425a.351.351,0,0,1-.352-.352v-.3A.351.351,0,0,1,6.425,6.841Z" fill="#fff"/>
+  </g>
+</svg>

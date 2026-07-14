@@ -1,0 +1,12 @@
+<svg id="Livello_1" data-name="Livello 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <g id="g832">
+    <path id="rect6" d="M0,0H1V21H0Z" class="aw-theme-iconOutline" fill="#464646"/>
+    <path id="rect10" d="M0,20H10l.3,1H0Z" class="aw-theme-iconOutline" fill="#464646"/>
+    <path id="polygon20" d="M3,8.088,7.237,2.743,10.324,4.78,15.552-.048l.678.735-5.8,5.36L7.451,4.083,3.783,8.708Z" class="aw-theme-iconOutline" fill="#464646"/>
+    <path id="path22" d="M7,18.99H2v-9H7Zm-4-1H6v-7H3Z" class="aw-theme-iconOutline" fill="#464646"/>
+    <path id="path24" d="M8,7V18.99h2.146a7.631,7.631,0,0,1-.121-1H9V8h3v4.414a7.574,7.574,0,0,1,1-.9V7Z" class="aw-theme-iconOutline" fill="#464646"/>
+    <path id="path26" d="M14.016,4v6.861a7.4,7.4,0,0,1,1-.429V5h3v5.027a7.83,7.83,0,0,1,1,.127V4Z" class="aw-theme-iconOutline" fill="#464646"/>
+    <path id="path6" d="M17.486,24a6.5,6.5,0,1,1,.028,0Zm0-12.023A5.511,5.511,0,1,0,23,17.489a5.513,5.513,0,0,0-5.512-5.512" class="aw-theme-iconOutline" fill="#464646"/>
+    <path id="polygon8" d="M20.251,14.5v1h-4.6l3,2-3,2h4.6v1h-6V19.232l2.6-1.732-2.6-1.732V14.5Z" class="aw-theme-iconOutline" fill="#464646"/>
+  </g>
+</svg>

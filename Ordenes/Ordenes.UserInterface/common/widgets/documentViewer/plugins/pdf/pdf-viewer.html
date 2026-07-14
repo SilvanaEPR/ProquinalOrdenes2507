@@ -1,0 +1,8 @@
+<div class="pdf-canvas" ng-click="$ctrl.showFullScreen()">
+    <div class="pdf-viewer"></div>
+</div>
+
+<div id="document-viewer-full-screen-pdf" ng-if="$ctrl.isFullScreenMode">
+    <iframe title="" id="pdf-full-screen" ng-src="common/scripts/pdfjs/viewer.html" name="pdf-full-screen-viewer" data-frame-name="{{$ctrl.viewerName}}" frameborder="0"
+            style="height: 100vh; width: 100%; padding: 0; margin: 0; border: none; position: fixed; top: 0; left: 0; z-index: 1111"></iframe>
+</div>

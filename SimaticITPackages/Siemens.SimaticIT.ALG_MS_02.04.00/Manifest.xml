@@ -1,0 +1,391 @@
+﻿<?xml version="1.0" encoding="utf-8"?><projectmanifest>
+  <header>
+    <manifestversion>11.0</manifestversion>
+    <platformversion>11.0</platformversion>
+    <type>Library</type>
+    <name>Siemens.SimaticIT.ALG_MS</name>
+    <shortname>ALG_MS</shortname>
+    <description>Application Log Master Data Domain Functional Block</description>
+    <version>02.04.00</version>
+    <companyname>Siemens.SimaticIT</companyname>
+    <author>Siemens.SimaticIT</author>
+    <hash>J/mJzepHyWw/0Ufp0L+MVBqN+ks2P43kebQ3g5J1/uk=</hash>
+    <modelHash>yMvt+wpK4zYF3sSQvbYr2oxqOtAwbHgbGql9hRuU3KM=</modelHash>
+    <modelHashSections>
+      <modelHashSection>
+        <name>projectConfigModelHash</name>
+        <hash>KooGblq8uSpyn9SdKnr+hqBR7RV38uvGX0S5gKdxddw=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>dataModelHash</name>
+        <hash>JzxYTlPsxUprSOuZp2zE4y0US/S6PtqVOLVG+xVRX8c=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>commandModelHash</name>
+        <hash>Hhv1auFwuASI3kgTaPa4CDabn+/NMfWtr8/q1JD5LM0=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>aliasModelHash</name>
+        <hash>cdWtFof25lUoH+wgMZZEtJGL5k7aBVT7Ae5HtNcbGxs=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>eventModelHash</name>
+        <hash>kNgd8MxKgQ0TkKNwHtgy2RIgQPgA5RYWJsy3/PsZiZc=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>typeModelHash</name>
+        <hash>TLf1bhQGVDAxKKlx5VxcUzToW7EFkB/V5+9V4vDfWYs=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>securityModelHash</name>
+        <hash>cdWtFof25lUoH+wgMZZEtJGL5k7aBVT7Ae5HtNcbGxs=</hash>
+      </modelHashSection>
+    </modelHashSections>
+    <uiHash>na</uiHash>
+    <canbeextended>false</canbeextended>
+    <domain>MasterData</domain>
+  </header>
+  <reference>
+    <functionalblocks></functionalblocks>
+    <extensions></extensions>
+  </reference>
+  <artifacts>
+    <commands><command>
+                        <name>Siemens.SimaticIT.MasterData.ALG_MS.MSModel.Commands.CreateRule</name>
+                        <shortname>CreateRule</shortname>
+                        <description>Creates a new Rule for application log maintenance configuration.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.ALG_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.ALG_MS.MSModel.Commands.CreateRuleHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.ALG_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.ALG_MS.MSModel.Commands.DeleteRule</name>
+                        <shortname>DeleteRule</shortname>
+                        <description>Deletes a Rule.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.ALG_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.ALG_MS.MSModel.Commands.DeleteRuleHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.ALG_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.ALG_MS.MSModel.Commands.UpdateRule</name>
+                        <shortname>UpdateRule</shortname>
+                        <description>Updates a Rule.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.ALG_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.ALG_MS.MSModel.Commands.UpdateRuleHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.ALG_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.ALG_MS.MSModel.Commands.UpdateCleaningCondition</name>
+                        <shortname>UpdateCleaningCondition</shortname>
+                        <description>This command will update the cleaning condition.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.ALG_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.ALG_MS.MSModel.Commands.UpdateCleaningConditionHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.ALG_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.ALG_MS.MSModel.Commands.DeleteCleaningCondition</name>
+                        <shortname>DeleteCleaningCondition</shortname>
+                        <description>Command to delete a Cleaning Condition.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.ALG_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.ALG_MS.MSModel.Commands.DeleteCleaningConditionHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.ALG_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.ALG_MS.MSModel.Commands.UpdateSchedule</name>
+                        <shortname>UpdateSchedule</shortname>
+                        <description>Command to update the Schedule.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.ALG_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.ALG_MS.MSModel.Commands.UpdateScheduleHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.ALG_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.ALG_MS.MSModel.Commands.DeleteSchedule</name>
+                        <shortname>DeleteSchedule</shortname>
+                        <description>Command to delete a Schedule.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.ALG_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.ALG_MS.MSModel.Commands.DeleteScheduleHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.ALG_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.ALG_MS.MSModel.Commands.RefreshRuleExecutionInfo</name>
+                        <shortname>RefreshRuleExecutionInfo</shortname>
+                        <description>Refreshes the rule execution information.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.ALG_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.ALG_MS.MSModel.Commands.RefreshRuleExecutionInfoHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.ALG_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.ALG_MS.MSModel.Commands.ActivateRule</name>
+                        <shortname>ActivateRule</shortname>
+                        <description>Command to Activate a Rule.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.ALG_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.ALG_MS.MSModel.Commands.ActivateRuleHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.ALG_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.ALG_MS.MSModel.Commands.DeactivateRule</name>
+                        <shortname>DeactivateRule</shortname>
+                        <description>Command to deactivate a Rule.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.ALG_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.ALG_MS.MSModel.Commands.DeactivateRuleHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.ALG_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.ALG_MS.MSModel.Commands.GetTimeZoneInformation</name>
+                        <shortname>GetTimeZoneInformation</shortname>
+                        <description>Retrieves the current time zone of the server along with the list of available time zones.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.ALG_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.ALG_MS.MSModel.Commands.GetTimeZoneInformationHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.ALG_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command></commands>
+    <commandActions></commandActions>
+    <events><event>
+                <name>Siemens.SimaticIT.MasterData.ALG_MS.MSModel.Events.UpdateRuleExecutionEvent</name>
+                <shortname>UpdateRuleExecutionEvent</shortname>
+                <description> Event to update Rule Execution. This event will be triggered when a Rule is enabled / disabled.</description>
+                <assembly>Siemens.SimaticIT.MasterData.ALG_MS.MSModel.Events, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                <dotneteventtype></dotneteventtype>
+                <eventtype>Application</eventtype>
+                <domain>MasterData</domain>
+                <taglist>
+                </taglist>
+                <securable>true</securable>
+        </event><event>
+                <name>Siemens.SimaticIT.MasterData.ALG_MS.MSModel.Events.DeleteRuleExecutionEvent</name>
+                <shortname>DeleteRuleExecutionEvent</shortname>
+                <description> Deletes a Rule execution entry.</description>
+                <assembly>Siemens.SimaticIT.MasterData.ALG_MS.MSModel.Events, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                <dotneteventtype></dotneteventtype>
+                <eventtype>Application</eventtype>
+                <domain>MasterData</domain>
+                <taglist>
+                </taglist>
+                <securable>true</securable>
+        </event></events>
+    <event_handlers></event_handlers>
+    <signals></signals>
+    <readingFunctions></readingFunctions>
+    <entities><entity>
+      <name>Siemens.SimaticIT.MasterData.ALG_MS.MSModel.DataModel.ReadingModel.CleaningCondition</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.MasterData.ALG_MS.MSModel.DataModel.ReadingModel.Schedule</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.MasterData.ALG_MS.MSModel.DataModel.ReadingModel.Rule</name>
+      <securable>true</securable>
+    </entity></entities>
+    <datamodels><datamodel>
+      <assembly>Siemens.SimaticIT.MasterData.ALG_MS.MSModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>WR</mode>
+      <domain>MasterData</domain>
+    </datamodel><datamodel>
+      <assembly>Siemens.SimaticIT.MasterData.ALG_MS.MSModel.ReadingModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>RD</mode>
+      <domain>MasterData</domain>
+    </datamodel><datamodel>
+      <assembly>Siemens.SimaticIT.MasterData.ALG_MS.MSModel.Types, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>WR</mode>
+      <domain>MasterData</domain>
+    </datamodel><datamodel>
+      <assembly>Siemens.SimaticIT.MasterData.ALG_MS.MSModel.Types.ReadingModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>RD</mode>
+      <domain>MasterData</domain>
+    </datamodel></datamodels>
+    <externaldatamodels></externaldatamodels>
+    <appdatamodels></appdatamodels>
+    <uimodules></uimodules>
+    <uicomponents></uicomponents>
+    <wr_entities><wr_entity>
+      <name>Siemens.SimaticIT.MasterData.ALG_MS.MSModel.DataModel.CleaningCondition</name>
+      <shortname>CleaningCondition</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity>Siemens.SimaticIT.MasterData.ALG_MS.MSModel.DataModel.Rule</parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity>Siemens.SimaticIT.MasterData.ALG_MS.MSModel.DataModel.Rule</root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.MasterData.ALG_MS.MSModel.DataModel.Schedule</name>
+      <shortname>Schedule</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity>Siemens.SimaticIT.MasterData.ALG_MS.MSModel.DataModel.Rule</parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity>Siemens.SimaticIT.MasterData.ALG_MS.MSModel.DataModel.Rule</root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.MasterData.ALG_MS.MSModel.DataModel.Rule</name>
+      <shortname>Rule</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity></parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity></root_entity>
+      <base_entity></base_entity>
+    </wr_entity></wr_entities>
+    <wr_facets></wr_facets>
+  </artifacts>
+  <security>
+    <roles></roles>
+  </security>
+  <runtime>
+    <event_subscriptions></event_subscriptions>
+    <handlergroups></handlergroups>
+  </runtime>
+</projectmanifest>

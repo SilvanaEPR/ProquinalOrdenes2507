@@ -1,0 +1,19 @@
+{
+  "name": "Siemens.SimaticIT.UAPI.PICore.ProductionSetup",
+  "type": "standard",
+  "title": "ProductionSetup",
+  "icon": "fa-folder",
+  "functionalBlock": "Siemens.SimaticIT.UAPI.PICore",
+  "dependencies": [],
+  "states": [
+    {
+      "id": "home.Siemens_SimaticIT_UAPI_PICore_ProductionSetup_Settings",
+      "title": "ProductionSetup",
+      "securable": true,
+      "roles": [],
+      "header": "picore.titles.productionSetup"
+    }
+  ],
+  "manifestVersion": "01.01.00",
+  "header": "picore.titles.productionSetup"
+}

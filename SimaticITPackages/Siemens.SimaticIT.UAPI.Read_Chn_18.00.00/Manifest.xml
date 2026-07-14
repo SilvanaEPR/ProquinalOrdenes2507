@@ -1,0 +1,775 @@
+﻿<?xml version="1.0" encoding="utf-8"?><projectmanifest>
+  <header>
+    <manifestversion>11.0</manifestversion>
+    <platformversion>11.0</platformversion>
+    <type>Library</type>
+    <name>Siemens.SimaticIT.UAPI.Read_Chn</name>
+    <shortname>Read_Chn</shortname>
+    <description>Reading Channel Management</description>
+    <version>18.00.00</version>
+    <companyname>Siemens.SimaticIT.UAPI</companyname>
+    <author>Siemens.SimaticIT.UAPI</author>
+    <hash>w1Dk9j74t6ZGpVK6BF7IEEGRZ0Skp2M9MC2w2ELffYk=</hash>
+    <modelHash>1ORSUacYfsZfBh1hqf01t8lmGHVbhYFOZbdipImYihQ=</modelHash>
+    <modelHashSections>
+      <modelHashSection>
+        <name>projectConfigModelHash</name>
+        <hash>Xq87J0XYRZeHT4aYzgo9+u3H45HU/zYLd7lmqR/wYFE=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>dataModelHash</name>
+        <hash>u9NmBNFRNdqaNonnaq4CyqEdKbqr4KI3MlKowf1daDg=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>commandModelHash</name>
+        <hash>CK/SZwcqmXGu6kYrPhVsRtdgb+A8ut4NHSm4zxB55o8=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>aliasModelHash</name>
+        <hash>FCE0KMXJjmDlnki7ue9cotrur1tAAXlmG5Tm782yrrs=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>eventModelHash</name>
+        <hash>UmG2fDTmey37jCF+TyCKR9yp6HIHmMmE7CxAI2ZHN0k=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>typeModelHash</name>
+        <hash>ZbhOoZCl+adAf3IF1LgDxLfZnVgt6+cb+hEaCpxTF/c=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>securityModelHash</name>
+        <hash>HBCAwH1bPzPLFZ0nja4tQ6QtcIjsQ44hwxLWV6Kg8e4=</hash>
+      </modelHashSection>
+    </modelHashSections>
+    <uiHash>na</uiHash>
+    <canbeextended>false</canbeextended>
+    <domain>MasterData</domain>
+  </header>
+  <reference>
+    <functionalblocks></functionalblocks>
+    <extensions><extension>
+      <name>Siemens.SimaticIT.UAPI.Read_Chn</name>
+    </extension></extensions>
+  </reference>
+  <artifacts>
+    <commands><command>
+                        <name>Siemens.SimaticIT.UAPI.MasterData.Read_Chn.MSModel.Commands.SaveFormulaCategoryInfo</name>
+                        <shortname>SaveFormulaCategoryInfo</shortname>
+                        <description>(For internal use only) Creates/Updates a Formula Category Information record.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.MasterData.Read_Chn.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.MasterData.Read_Chn.MSModel.Commands.SaveFormulaCategoryInfoHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.Read_Chn.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.MasterData.Read_Chn.MSModel.Commands.SaveFormulaInfoList</name>
+                        <shortname>SaveFormulaInfoList</shortname>
+                        <description>(For internal use only) Creates/Update a list of Formula Information records.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.MasterData.Read_Chn.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.MasterData.Read_Chn.MSModel.Commands.SaveFormulaInfoListHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.Read_Chn.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.MasterData.Read_Chn.MSModel.Commands.SaveMasterRecipeInfoList</name>
+                        <shortname>SaveMasterRecipeInfoList</shortname>
+                        <description>(For internal use only) Creates/Updates a list of Master Recipe Information records.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.MasterData.Read_Chn.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.MasterData.Read_Chn.MSModel.Commands.SaveMasterRecipeInfoListHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.Read_Chn.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.MasterData.Read_Chn.MSModel.Commands.DeleteFormulaCategoryInfo</name>
+                        <shortname>DeleteFormulaCategoryInfo</shortname>
+                        <description>(For internal use only) Deletes a Formula Category Info record.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.MasterData.Read_Chn.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.MasterData.Read_Chn.MSModel.Commands.DeleteFormulaCategoryInfoHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.Read_Chn.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.MasterData.Read_Chn.MSModel.Commands.DeleteFormulaInfo</name>
+                        <shortname>DeleteFormulaInfo</shortname>
+                        <description>(For internal use only) Deletes an existing Formula Info record.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.MasterData.Read_Chn.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.MasterData.Read_Chn.MSModel.Commands.DeleteFormulaInfoHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.Read_Chn.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.MasterData.Read_Chn.MSModel.Commands.DeleteMasterRecipeInfo</name>
+                        <shortname>DeleteMasterRecipeInfo</shortname>
+                        <description>(For internal use only) Deletes an existing Master Recipe Info record.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.MasterData.Read_Chn.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.MasterData.Read_Chn.MSModel.Commands.DeleteMasterRecipeInfoHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.Read_Chn.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.MasterData.Read_Chn.MSModel.Commands.SetMasterRecipeParameterInfoToMasterRecipeInfo</name>
+                        <shortname>SetMasterRecipeParameterInfoToMasterRecipeInfo</shortname>
+                        <description>(For internal use only) Creates/Updates the Master Recipe Header Parameter information record given an existing Master Recipe information record.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.MasterData.Read_Chn.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.MasterData.Read_Chn.MSModel.Commands.SetMasterRecipeParameterInfoToMasterRecipeInfoHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.Read_Chn.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.MasterData.Read_Chn.MSModel.Commands.SetFormulaParameterinfoToFormulaInfo</name>
+                        <shortname>SetFormulaParameterinfoToFormulaInfo</shortname>
+                        <description>(For internal use only) Creates/Updates the Formula Header Parameter information record given an existing Formula information record.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.MasterData.Read_Chn.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.MasterData.Read_Chn.MSModel.Commands.SetFormulaParameterinfoToFormulaInfoHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.Read_Chn.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.MasterData.Read_Chn.MSModel.Commands.RemoveMasterRecipeParameterInfoFromMasterRecipeInfo</name>
+                        <shortname>RemoveMasterRecipeParameterInfoFromMasterRecipeInfo</shortname>
+                        <description>(For internal use only) Removes the Master Recipe Header Parameter information record given an existing Master Recipe information record.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.MasterData.Read_Chn.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.MasterData.Read_Chn.MSModel.Commands.RemoveMasterRecipeParameterInfoFromMasterRecipeInfoHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.Read_Chn.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.MasterData.Read_Chn.MSModel.Commands.RemoveFormulaParameterInfoFromFormulaInfo</name>
+                        <shortname>RemoveFormulaParameterInfoFromFormulaInfo</shortname>
+                        <description>(For internal use only) Removes the Formula Header Parameter information record given an existing Master Recipe information record.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.MasterData.Read_Chn.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.MasterData.Read_Chn.MSModel.Commands.RemoveFormulaParameterInfoFromFormulaInfoHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.Read_Chn.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.MasterData.Read_Chn.MSModel.Commands.ReadAllFormulaCategory</name>
+                        <shortname>ReadAllFormulaCategory</shortname>
+                        <description>Retrieves the list of all Formula Categories.  The command may trace the following errors/warnings: * -10108: no Master Recipe has been found in the specified PCell.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.MasterData.Read_Chn.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.MasterData.Read_Chn.MSModel.Commands.ReadAllFormulaCategoryHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.Read_Chn.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.MasterData.Read_Chn.MSModel.Commands.ReadAllFormulas</name>
+                        <shortname>ReadAllFormulas</shortname>
+                        <description>Retrieves the list of all Formulas. You can filter the results by formula status.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.MasterData.Read_Chn.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.MasterData.Read_Chn.MSModel.Commands.ReadAllFormulasHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.Read_Chn.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.MasterData.Read_Chn.MSModel.Commands.ReadAllFormulasForFormulaCategory</name>
+                        <shortname>ReadAllFormulasForFormulaCategory</shortname>
+                        <description>Retrieves the list of all Formulas, optionally filtered by a specific Formula Category and a specific Status.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.MasterData.Read_Chn.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.MasterData.Read_Chn.MSModel.Commands.ReadAllFormulasForFormulaCategoryHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.Read_Chn.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.MasterData.Read_Chn.MSModel.Commands.ReadAllFormulasForMasterRecipe</name>
+                        <shortname>ReadAllFormulasForMasterRecipe</shortname>
+                        <description>Retrieves the list of all Formulas, optionally filtered by specific Master Recipe, Status and Product Name.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.MasterData.Read_Chn.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.MasterData.Read_Chn.MSModel.Commands.ReadAllFormulasForMasterRecipeHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.Read_Chn.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.MasterData.Read_Chn.MSModel.Commands.ReadMasterRecipeList</name>
+                        <shortname>ReadMasterRecipeList</shortname>
+                        <description>Retrieves the list of all Master Recipes, optionally filtered by specific Name and Version, a specific Status and a specific Product Name.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.MasterData.Read_Chn.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.MasterData.Read_Chn.MSModel.Commands.ReadMasterRecipeListHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.Read_Chn.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.MasterData.Read_Chn.MSModel.Commands.ReadAllMasterRecipeForFormulaCategory</name>
+                        <shortname>ReadAllMasterRecipeForFormulaCategory</shortname>
+                        <description>Retrieves the list of all Master Recipes, optionally filtered by a specific Name and Version, a specific Product Name, a specific Status and a specific Formula Category.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.MasterData.Read_Chn.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.MasterData.Read_Chn.MSModel.Commands.ReadAllMasterRecipeForFormulaCategoryHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.Read_Chn.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.MasterData.Read_Chn.MSModel.Commands.ReadAllMasterRecipeForFormula</name>
+                        <shortname>ReadAllMasterRecipeForFormula</shortname>
+                        <description>Retrieves the list of all Master Recipes, optionally filtered by specific Name and Version, Status, Product Name and Formula.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.MasterData.Read_Chn.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.MasterData.Read_Chn.MSModel.Commands.ReadAllMasterRecipeForFormulaHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.Read_Chn.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.MasterData.Read_Chn.MSModel.Commands.ReadMasterRecipeHeaderParameters</name>
+                        <shortname>ReadMasterRecipeHeaderParameters</shortname>
+                        <description>Retrieves the list of all Header Parameters for a specific Master Recipe.  The command may trace the following errors/warnings: * -10103: The specified Master Recipe does not exist in the specified PCell; * -10105: an error occurred while retrieving the Parameters for the specified Master Recipe in the specified PCell.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.MasterData.Read_Chn.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.MasterData.Read_Chn.MSModel.Commands.ReadMasterRecipeHeaderParametersHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.Read_Chn.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.MasterData.Read_Chn.MSModel.Commands.ReadFormulaHeaderParameters</name>
+                        <shortname>ReadFormulaHeaderParameters</shortname>
+                        <description>Retrieves the list of all Header Parameters for a specific Formula. The command may trace the following errors/warnings: * -10102: the specified Formula has not been found in the specified PCell; * -10106: an error occurred while retrieving the Parameters for the specified Formula in the specified PCell.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.MasterData.Read_Chn.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.MasterData.Read_Chn.MSModel.Commands.ReadFormulaHeaderParametersHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.Read_Chn.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.MasterData.Read_Chn.MSModel.Commands.AddFormulaInfoListToMasterRecipeInfo</name>
+                        <shortname>AddFormulaInfoListToMasterRecipeInfo</shortname>
+                        <description>(For internal use only) Adds a list of Formula information records to a selected Master Recipe information record.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.MasterData.Read_Chn.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.MasterData.Read_Chn.MSModel.Commands.AddFormulaInfoListToMasterRecipeInfoHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.Read_Chn.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.MasterData.Read_Chn.MSModel.Commands.RemoveFormulaInfoListFromMasterRecipeInfo</name>
+                        <shortname>RemoveFormulaInfoListFromMasterRecipeInfo</shortname>
+                        <description>(For internal use only) Removes a list of Formulainformation records from the selected Master Recipe information record.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.MasterData.Read_Chn.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.MasterData.Read_Chn.MSModel.Commands.RemoveFormulaInfoListFromMasterRecipeInfoHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.Read_Chn.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.MasterData.Read_Chn.MSModel.Commands.InitReadingModel</name>
+                        <shortname>InitReadingModel</shortname>
+                        <description>Triggers the Reading Model initialization. You could use this command to re-populate the database consequently to a connection failure.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.MasterData.Read_Chn.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.MasterData.Read_Chn.MSModel.Commands.InitReadingModelHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.Read_Chn.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.MasterData.Read_Chn.MSModel.Commands.UpdateFormulaInfo</name>
+                        <shortname>UpdateFormulaInfo</shortname>
+                        <description>(For internal use only) Updates a Formula information record with any of the following details: Name, Version, Current Status.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.MasterData.Read_Chn.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.MasterData.Read_Chn.MSModel.Commands.UpdateFormulaInfoHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.Read_Chn.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.MasterData.Read_Chn.MSModel.Commands.UpdateMasterRecipeInfo</name>
+                        <shortname>UpdateMasterRecipeInfo</shortname>
+                        <description>(For internal use only) Updates a Master Recipe information record with any of the following details: Name, Version, Current Status.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.MasterData.Read_Chn.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.MasterData.Read_Chn.MSModel.Commands.UpdateMasterRecipeInfoHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.Read_Chn.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.MasterData.Read_Chn.MSModel.Commands.ReadAllMasterRecipeFormulaAndCategory</name>
+                        <shortname>ReadAllMasterRecipeFormulaAndCategory</shortname>
+                        <description>Reads all master recipe, together with the associated Formulas and Formula Categories. The command may trace the following errors/warnings: * -10108: no Master Recipe has been found in the specified PCell; * -10109: no Formula has been found for the specified Master Recipe and PCell.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.MasterData.Read_Chn.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.MasterData.Read_Chn.MSModel.Commands.ReadAllMasterRecipeFormulaAndCategoryHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.Read_Chn.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.MasterData.Read_Chn.MSModel.Commands.ReadMasterRecipeHeaderParametersMinimal</name>
+                        <shortname>ReadMasterRecipeHeaderParametersMinimal</shortname>
+                        <description>Retrieves the MES relevant information of all Header Parameter for a specified Master Recipe with a specified Version.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.MasterData.Read_Chn.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.MasterData.Read_Chn.MSModel.Commands.ReadMasterRecipeHeaderParametersMinimalHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.Read_Chn.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.MasterData.Read_Chn.MSModel.Commands.ReadFormulaHeaderParametersMinimal</name>
+                        <shortname>ReadFormulaHeaderParametersMinimal</shortname>
+                        <description>Retrieves the MES relevant information of all Header Parameter for a specified Formula with a specified Version. The command may trace the following errors/warnings: * -10100: generic error. </description>
+                        <assembly>Siemens.SimaticIT.UAPI.MasterData.Read_Chn.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.MasterData.Read_Chn.MSModel.Commands.ReadFormulaHeaderParametersMinimalHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.Read_Chn.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.MasterData.Read_Chn.MSModel.Commands.CleanReadingModel</name>
+                        <shortname>CleanReadingModel</shortname>
+                        <description>Removes all the information of the Master Recipes and the related Formulas.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.MasterData.Read_Chn.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.MasterData.Read_Chn.MSModel.Commands.CleanReadingModelHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.Read_Chn.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command></commands>
+    <commandActions><commandAction>
+                        <name>Siemens.SimaticIT.UAPI.MasterData.Read_Chn.MSModel.Commands.CleanReadingModelOnInitHandlerShell</name>
+                        <shortname>CleanReadingModelOnInitHandlerShell</shortname>
+                        <description>Deletes the old instances of both Master Recipe Info and Formula Info entities, when a new request for initialization is sent out.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.Read_Chn.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <target_cpu>AnyCPU</target_cpu>
+                        <targetframework>netstandard2.0</targetframework>
+                        <command>Siemens.SimaticIT.UAPI.MasterData.Read_Chn.MSModel.Commands.InitReadingModel</command>
+                        <type>Post</type>
+                        <is_enabled>true</is_enabled>
+                        <is_optional>true</is_optional>
+                </commandAction></commandActions>
+    <events><event>
+                <name>Siemens.SimaticIT.UAPI.MasterData.Read_Chn.MSModel.Events.OnInitReadingModelRequest</name>
+                <shortname>OnInitReadingModelRequest</shortname>
+                <description> Request for Reading Model initialization.</description>
+                <assembly>Siemens.SimaticIT.UAPI.MasterData.Read_Chn.MSModel.Events, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                <dotneteventtype></dotneteventtype>
+                <eventtype>Application</eventtype>
+                <domain>MasterData</domain>
+                <taglist>
+                </taglist>
+                <securable>true</securable>
+        </event></events>
+    <event_handlers><event_handler>
+<name>Siemens.SimaticIT.UAPI.MasterData.Read_Chn.MSModel.Events.DebugTestShell</name>
+<assembly>Siemens.SimaticIT.UAPI.Read_Chn.EventHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+<event_name>Siemens.SimaticIT.SystemData.Foundation.Events.DebugStartupEvent</event_name>
+<target_cpu>AnyCPU</target_cpu>
+<targetframework>netstandard2.0</targetframework>
+<dependencies></dependencies>
+</event_handler></event_handlers>
+    <signals></signals>
+    <readingFunctions></readingFunctions>
+    <entities></entities>
+    <datamodels><datamodel>
+      <assembly>Siemens.SimaticIT.UAPI.MasterData.Read_Chn.MSModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>WR</mode>
+      <domain>MasterData</domain>
+    </datamodel><datamodel>
+      <assembly>Siemens.SimaticIT.UAPI.MasterData.Read_Chn.MSModel.ReadingModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>RD</mode>
+      <domain>MasterData</domain>
+    </datamodel><datamodel>
+      <assembly>Siemens.SimaticIT.UAPI.MasterData.Read_Chn.MSModel.Types, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>WR</mode>
+      <domain>MasterData</domain>
+    </datamodel><datamodel>
+      <assembly>Siemens.SimaticIT.UAPI.MasterData.Read_Chn.MSModel.Types.ReadingModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>RD</mode>
+      <domain>MasterData</domain>
+    </datamodel></datamodels>
+    <externaldatamodels></externaldatamodels>
+    <appdatamodels></appdatamodels>
+    <uimodules></uimodules>
+    <uicomponents></uicomponents>
+    <wr_entities><wr_entity>
+      <name>Siemens.SimaticIT.UAPI.MasterData.Read_Chn.MSModel.DataModel.FormulaCategoryInfo</name>
+      <shortname>FormulaCategoryInfo</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity></parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity></root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.UAPI.MasterData.Read_Chn.MSModel.DataModel.FormulaInfo</name>
+      <shortname>FormulaInfo</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity></parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity></root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.UAPI.MasterData.Read_Chn.MSModel.DataModel.MasterRecipeInfo</name>
+      <shortname>MasterRecipeInfo</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity></parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity></root_entity>
+      <base_entity></base_entity>
+    </wr_entity></wr_entities>
+    <wr_facets><wr_facet>
+      <name>Siemens.SimaticIT.UAPI.MasterData.Read_Chn.MSModel.DataModel.FormulaParameterInfo</name>
+      <shortname>FormulaParameterInfo</shortname>
+      <parententity>Siemens.SimaticIT.UAPI.MasterData.Read_Chn.MSModel.DataModel.FormulaInfo</parententity>
+      <root_entity>Siemens.SimaticIT.UAPI.MasterData.Read_Chn.MSModel.DataModel.FormulaInfo</root_entity>
+    </wr_facet><wr_facet>
+      <name>Siemens.SimaticIT.UAPI.MasterData.Read_Chn.MSModel.DataModel.MasterRecipeParameterInfo</name>
+      <shortname>MasterRecipeParameterInfo</shortname>
+      <parententity>Siemens.SimaticIT.UAPI.MasterData.Read_Chn.MSModel.DataModel.MasterRecipeInfo</parententity>
+      <root_entity>Siemens.SimaticIT.UAPI.MasterData.Read_Chn.MSModel.DataModel.MasterRecipeInfo</root_entity>
+    </wr_facet></wr_facets>
+  </artifacts>
+  <security>
+    <roles></roles>
+  </security>
+  <runtime>
+    <event_subscriptions></event_subscriptions>
+    <handlergroups></handlergroups>
+  </runtime>
+</projectmanifest>

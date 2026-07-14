@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?><projectmanifest>
+  <header>
+    <manifestversion>11.0</manifestversion>
+    <platformversion>11.0</platformversion>
+    <type>Library</type>
+    <name>Siemens.SimaticIT.Search_RF</name>
+    <shortname>Search_RF</shortname>
+    <description>Search Engine</description>
+    <version>15.00.00</version>
+    <companyname>Siemens.SimaticIT</companyname>
+    <author>Siemens.SimaticIT</author>
+    <hash>OUFrqnmQMtYLPktdMQCVk+CeB3VkIULOnf25xpnSVvg=</hash>
+    <modelHash>B//KV3m6tdP+Z0cmAFWZ1OEJ91olT68IOhIKB6vq7hk=</modelHash>
+    <modelHashSections>
+      <modelHashSection>
+        <name>projectConfigModelHash</name>
+        <hash>Ri7Pxf9f7DoluaPrewhvmGL+qBym/5reK4gDRKV4ZB0=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>dataModelHash</name>
+        <hash>1pCUQMeMV1zI9wPwd+zPXfSRUhyKxTb/4j3YyV+SOBI=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>commandModelHash</name>
+        <hash>N3h3abCG9rblZaeXtYGcpNxTQiFE3sYY93vaECLgqpw=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>aliasModelHash</name>
+        <hash>cdWtFof25lUoH+wgMZZEtJGL5k7aBVT7Ae5HtNcbGxs=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>eventModelHash</name>
+        <hash>f1qMeFSrAX9DEdZKNSVtnzUjPJXwvjLmxwephLVQKvA=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>typeModelHash</name>
+        <hash>vqhOY++EPwNz4CThqVQNi5CDX9x0ZnPaofL51ggceEo=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>securityModelHash</name>
+        <hash>cdWtFof25lUoH+wgMZZEtJGL5k7aBVT7Ae5HtNcbGxs=</hash>
+      </modelHashSection>
+    </modelHashSections>
+    <uiHash>na</uiHash>
+    <canbeextended>false</canbeextended>
+    <domain>ReferenceData</domain>
+  </header>
+  <reference>
+    <functionalblocks></functionalblocks>
+    <extensions></extensions>
+  </reference>
+  <artifacts>
+    <commands><command>
+                        <name>Siemens.SimaticIT.ReferenceData.Search_RF.RFModel.Commands.Search</name>
+                        <shortname>Search</shortname>
+                        <description>This command is used to trigger a search request. Each search request contains information on the context in which the request has been triggered, as well as the key to be used for the search. This command fires the SearchRequested event.</description>
+                        <assembly>Siemens.SimaticIT.ReferenceData.Search_RF.RFModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>ReferenceData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.ReferenceData.Search_RF.RFModel.Commands.SearchHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.Search_RF.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command></commands>
+    <commandActions></commandActions>
+    <events><event>
+                <name>Siemens.SimaticIT.ReferenceData.Search_RF.RFModel.Events.HitsFound</name>
+                <shortname>HitsFound</shortname>
+                <description> This event is raised by any subscriber to the SearchRequested event to inform the system that one or more Hits satisfy the request, in the domain of the subscriber.</description>
+                <assembly>Siemens.SimaticIT.ReferenceData.Search_RF.RFModel.Events, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                <dotneteventtype></dotneteventtype>
+                <eventtype>Application</eventtype>
+                <domain>ReferenceData</domain>
+                <taglist>
+                </taglist>
+                <securable>true</securable>
+        </event><event>
+                <name>Siemens.SimaticIT.ReferenceData.Search_RF.RFModel.Events.SearchRequested</name>
+                <shortname>SearchRequested</shortname>
+                <description> This event is raised by the Search command. Subscribers handle this event evaluating the search request.</description>
+                <assembly>Siemens.SimaticIT.ReferenceData.Search_RF.RFModel.Events, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                <dotneteventtype></dotneteventtype>
+                <eventtype>Application</eventtype>
+                <domain>ReferenceData</domain>
+                <taglist>
+                </taglist>
+                <securable>true</securable>
+        </event><event>
+                <name>Siemens.SimaticIT.ReferenceData.Search_RF.RFModel.Events.SearchRequestedAck</name>
+                <shortname>SearchRequestedAck</shortname>
+                <description> This event is raised by any subscriber to the SearchRequested event to inform the system that the search request is going to be handled. The acknowledge is meant to be sent as soon as the execution of the custom event handler has started.</description>
+                <assembly>Siemens.SimaticIT.ReferenceData.Search_RF.RFModel.Events, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                <dotneteventtype></dotneteventtype>
+                <eventtype>Application</eventtype>
+                <domain>ReferenceData</domain>
+                <taglist>
+                </taglist>
+                <securable>true</securable>
+        </event></events>
+    <event_handlers></event_handlers>
+    <signals></signals>
+    <readingFunctions></readingFunctions>
+    <entities></entities>
+    <datamodels><datamodel>
+      <assembly>Siemens.SimaticIT.ReferenceData.Search_RF.RFModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>WR</mode>
+      <domain>ReferenceData</domain>
+    </datamodel><datamodel>
+      <assembly>Siemens.SimaticIT.ReferenceData.Search_RF.RFModel.ReadingModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>RD</mode>
+      <domain>ReferenceData</domain>
+    </datamodel><datamodel>
+      <assembly>Siemens.SimaticIT.ReferenceData.Search_RF.RFModel.Types, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>WR</mode>
+      <domain>ReferenceData</domain>
+    </datamodel><datamodel>
+      <assembly>Siemens.SimaticIT.ReferenceData.Search_RF.RFModel.Types.ReadingModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>RD</mode>
+      <domain>ReferenceData</domain>
+    </datamodel></datamodels>
+    <externaldatamodels></externaldatamodels>
+    <appdatamodels></appdatamodels>
+    <uimodules></uimodules>
+    <uicomponents></uicomponents>
+    <wr_entities></wr_entities>
+    <wr_facets></wr_facets>
+  </artifacts>
+  <security>
+    <roles></roles>
+  </security>
+  <runtime>
+    <event_subscriptions></event_subscriptions>
+    <handlergroups></handlergroups>
+  </runtime>
+</projectmanifest>

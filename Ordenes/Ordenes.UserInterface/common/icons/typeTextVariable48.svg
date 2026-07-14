@@ -1,0 +1,21 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="linear-gradient" x1="10.895" y1="49.043" x2="35.279" y2="24.659" gradientTransform="matrix(1.038, 0, 0, -1.038, -5.63, 58.904)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#73b4c8"/>
+      <stop offset="0.175" stop-color="#6aaec3"/>
+      <stop offset="0.457" stop-color="#529eb5"/>
+      <stop offset="0.809" stop-color="#2c839f"/>
+      <stop offset="1" stop-color="#147391"/>
+    </linearGradient>
+  </defs>
+  <g id="g961">
+    <g id="g65">
+      <path id="path63" d="M5.37,8.288H31.332V16.5H28.981a22.371,22.371,0,0,0-1.044-3.207A6.359,6.359,0,0,0,26.845,11.5a3.44,3.44,0,0,0-1.236-.872,5.688,5.688,0,0,0-1.979-.26H20.583V34.514a12.586,12.586,0,0,0,.155,2.217,3.539,3.539,0,0,0,.48,1.309,2.173,2.173,0,0,0,.876.755,8.063,8.063,0,0,0,1.728.53v1.156H12.856V39.325a12.6,12.6,0,0,0,1.273-.353,3.1,3.1,0,0,0,.9-.46,2.171,2.171,0,0,0,.576-.7,4.01,4.01,0,0,0,.36-1.156,12.99,12.99,0,0,0,.132-2.146V10.364H13.074a6.838,6.838,0,0,0-1.86.212,2.994,2.994,0,0,0-1.356.884,6.461,6.461,0,0,0-1.14,1.911A21.482,21.482,0,0,0,7.746,16.5H5.37Z" stroke="#464646" stroke-miterlimit="10.385" stroke-width="1.038" fill="url(#linear-gradient)"/>
+    </g>
+    <path id="rect881" d="M3.129,3.129H45.871v.742H3.129Z" fill="#464646" stroke="#464646" stroke-linecap="square" stroke-width="0.258"/>
+    <path id="rect881-7" d="M3.129,44.129H45.871v.742H3.129Z" fill="#464646" stroke="#464646" stroke-linecap="square" stroke-width="0.258"/>
+    <path id="rect881-7-3" d="M45.872,3.128V44.872h-.744V3.128Z" fill="#464646" stroke="#464646" stroke-linecap="square" stroke-width="0.255"/>
+    <path id="rect881-7-32" d="M35.057,35.057h6.886v.886H35.057Z" fill="#464646" stroke="#464646" stroke-linecap="square" stroke-width="0.113"/>
+    <path id="rect881-7-32-8" d="M35.057,13.057h6.886v.886H35.057Z" fill="#464646" stroke="#464646" stroke-linecap="square" stroke-width="0.113"/>
+  </g>
+</svg>

@@ -1,0 +1,814 @@
+﻿<?xml version="1.0" encoding="utf-8"?><projectmanifest>
+  <header>
+    <manifestversion>11.0</manifestversion>
+    <platformversion>11.0</platformversion>
+    <type>Library</type>
+    <name>Siemens.SimaticIT.TSK_OP</name>
+    <shortname>TSK_OP</shortname>
+    <description>Task Operational Data Domain Functional Block</description>
+    <version>11.04.00</version>
+    <companyname>Siemens.SimaticIT</companyname>
+    <author>Siemens.SimaticIT</author>
+    <hash>bLChcf25gmGh0NSJpJe1FbDqZ2cnYVaK53nSCVYPyLM=</hash>
+    <modelHash>JmiHVkUhrJoTwdKJYoc5iIkPH6Gj1O+btPnCEqcB1n0=</modelHash>
+    <modelHashSections>
+      <modelHashSection>
+        <name>projectConfigModelHash</name>
+        <hash>of+3IPS6z60gfonftcwYyBKkY2zSp0zKlaR1bn8wXQg=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>dataModelHash</name>
+        <hash>4sqVfWYBtcSPZycqmC6oZ38zAVk7ZMgKsBhSlMXcyxA=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>commandModelHash</name>
+        <hash>3nnYyo3GluZE9urzuSOgP93YXzcGuglWnwDliezpbHk=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>aliasModelHash</name>
+        <hash>FCE0KMXJjmDlnki7ue9cotrur1tAAXlmG5Tm782yrrs=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>eventModelHash</name>
+        <hash>rM1cV4QXxvsG2vpMzsPSYqWsE4P6NCP71evDxUKgATw=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>typeModelHash</name>
+        <hash>VrRH1DF1dL8A/n+1V/WhbT0767iTBf9Cf9Vtuo0cR48=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>securityModelHash</name>
+        <hash>HBCAwH1bPzPLFZ0nja4tQ6QtcIjsQ44hwxLWV6Kg8e4=</hash>
+      </modelHashSection>
+    </modelHashSections>
+    <uiHash>na</uiHash>
+    <canbeextended>false</canbeextended>
+    <domain>OperationalData</domain>
+  </header>
+  <reference>
+    <functionalblocks>
+      <functionalblock>
+        <name>Siemens.SimaticIT.UDM_RF</name>
+        <version>07.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.EQU_MS</name>
+        <version>08.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.EQU_OP</name>
+        <version>08.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.TSK_MS</name>
+        <version>09.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.OpcenterEX.FN.NUM_OP</name>
+        <version>02.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+    </functionalblocks>
+    <extensions></extensions>
+  </reference>
+  <artifacts>
+    <commands><command>
+                        <name>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.Commands.CreateTask</name>
+                        <shortname>CreateTask</shortname>
+                        <description>Creates a Task.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.Commands.CreateTaskHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.TSK_OP.TSK_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.Commands.UpdateTask</name>
+                        <shortname>UpdateTask</shortname>
+                        <description>Updates one or more properties of an existing Task. </description>
+                        <assembly>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.Commands.UpdateTaskHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.TSK_OP.TSK_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.Commands.DeleteTask</name>
+                        <shortname>DeleteTask</shortname>
+                        <description>Deletes an existing Task.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.Commands.DeleteTaskHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.TSK_OP.TSK_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.Commands.UpdateTaskParameter</name>
+                        <shortname>UpdateTaskParameter</shortname>
+                        <description>Updates a Task Parameter.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.Commands.UpdateTaskParameterHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.TSK_OP.TSK_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.Commands.SetTaskStatus</name>
+                        <shortname>SetTaskStatus</shortname>
+                        <description>Sets the status of a Task, checking the validity of the transition.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.Commands.SetTaskStatusHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.TSK_OP.TSK_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.Commands.ForceTaskStatus</name>
+                        <shortname>ForceTaskStatus</shortname>
+                        <description>Sets the status of the Task, without checking the validity of the transition.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.Commands.ForceTaskStatusHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.TSK_OP.TSK_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.Commands.ActivateTask</name>
+                        <shortname>ActivateTask</shortname>
+                        <description>Applies the verb Activate to the Task, firing the ActionOnTaskRequested event.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.Commands.ActivateTaskHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.TSK_OP.TSK_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.Commands.SuspendTask</name>
+                        <shortname>SuspendTask</shortname>
+                        <description>Applies the verb Suspend to the Task, firing the ActionOnTaskRequested event.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.Commands.SuspendTaskHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.TSK_OP.TSK_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.Commands.StartTask</name>
+                        <shortname>StartTask</shortname>
+                        <description>Applies the verb Start to the Task, firing the ActionOnTaskRequested event.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.Commands.StartTaskHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.TSK_OP.TSK_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.Commands.PauseTask</name>
+                        <shortname>PauseTask</shortname>
+                        <description>Applies the verb Pause to the Task, firing the ActionOnTaskRequested event.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.Commands.PauseTaskHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.TSK_OP.TSK_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.Commands.ResumeTask</name>
+                        <shortname>ResumeTask</shortname>
+                        <description>Applies the verb Resume to the Task, firing the ActionOnTaskRequested event.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.Commands.ResumeTaskHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.TSK_OP.TSK_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.Commands.RecoverTask</name>
+                        <shortname>RecoverTask</shortname>
+                        <description>Applies the verb Recover to the Task, firing the ActionOnTaskRequested event.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.Commands.RecoverTaskHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.TSK_OP.TSK_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.Commands.FailTask</name>
+                        <shortname>FailTask</shortname>
+                        <description>Applies the verb Fail to the Task, firing the ActionOnTaskRequested event.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.Commands.FailTaskHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.TSK_OP.TSK_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.Commands.CompleteTask</name>
+                        <shortname>CompleteTask</shortname>
+                        <description>Applies the verb Complete to the Task, firing the ActionOnTaskRequested event.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.Commands.CompleteTaskHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.TSK_OP.TSK_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.Commands.AbortTask</name>
+                        <shortname>AbortTask</shortname>
+                        <description>Applies the verb Abort to the Task, firing the ActionOnTaskRequested event.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.Commands.AbortTaskHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.TSK_OP.TSK_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.Commands.CancelTask</name>
+                        <shortname>CancelTask</shortname>
+                        <description>Applies the verb Cancel to the Task, firing the ActionOnTaskRequested event.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.Commands.CancelTaskHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.TSK_OP.TSK_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.Commands.SkipTask</name>
+                        <shortname>SkipTask</shortname>
+                        <description>Applies the verb Skip to the Task, firing the ActionOnTaskRequested event.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.Commands.SkipTaskHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.TSK_OP.TSK_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.Commands.FreezeTask</name>
+                        <shortname>FreezeTask</shortname>
+                        <description>Configures a Task to read-only by setting the attribute IsFrozen to True.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.Commands.FreezeTaskHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.TSK_OP.TSK_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.Commands.UnfreezeTask</name>
+                        <shortname>UnfreezeTask</shortname>
+                        <description>Removes the read-only setting from a Task by setting the attribute IsFrozen to False.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.Commands.UnfreezeTaskHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.TSK_OP.TSK_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.Commands.SetErrorCount</name>
+                        <shortname>SetErrorCount</shortname>
+                        <description>Sets the value of the Error Count and fires the event ErrorCountChanged.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.Commands.SetErrorCountHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.TSK_OP.TSK_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.Commands.ChangeTaskStatusOnAction</name>
+                        <shortname>ChangeTaskStatusOnAction</shortname>
+                        <description>FOR INTERNAL USE ONLY. Changes the Task Status.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>false</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.Commands.ChangeTaskStatusOnActionHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.TSK_OP.TSK_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.Commands.RepeatTask</name>
+                        <shortname>RepeatTask</shortname>
+                        <description>Repeats a Task, copying its values and adding 1 to the iteration number of the copy.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.Commands.RepeatTaskHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.TSK_OP.TSK_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.Commands.ActivateSequenceStep</name>
+                        <shortname>ActivateSequenceStep</shortname>
+                        <description>Activates the Tasks for the given Sequence Number within the given Task Flow identifier.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.Commands.ActivateSequenceStepHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.TSK_OP.TSK_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.Commands.CheckSequenceStepCompleted</name>
+                        <shortname>CheckSequenceStepCompleted</shortname>
+                        <description>FOR INTERNAL USE ONLY. Checks if a Sequence Step has been completed.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.Commands.CheckSequenceStepCompletedHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.TSK_OP.TSK_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.Commands.RemoveTaskFromTaskFlow</name>
+                        <shortname>RemoveTaskFromTaskFlow</shortname>
+                        <description>Resets task flow information in order to remove a Task from a Task Flow.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.Commands.RemoveTaskFromTaskFlowHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.TSK_OP.TSK_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command></commands>
+    <commandActions></commandActions>
+    <events><event>
+                <name>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.Events.ActionOnTaskRequested</name>
+                <shortname>ActionOnTaskRequested</shortname>
+                <description> The event fired when one of the verbs is applied to the Task.  </description>
+                <assembly>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.Events, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                <dotneteventtype></dotneteventtype>
+                <eventtype>Application</eventtype>
+                <domain>OperationalData</domain>
+                <taglist>
+                </taglist>
+                <securable>true</securable>
+        </event><event>
+                <name>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.Events.MessageOnTaskReceived</name>
+                <shortname>MessageOnTaskReceived</shortname>
+                <description> The event which permits the receipt of the possible error messages occurred during an operation.</description>
+                <assembly>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.Events, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                <dotneteventtype></dotneteventtype>
+                <eventtype>Application</eventtype>
+                <domain>OperationalData</domain>
+                <taglist>
+                </taglist>
+                <securable>true</securable>
+        </event><event>
+                <name>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.Events.ErrorCountChanged</name>
+                <shortname>ErrorCountChanged</shortname>
+                <description> The event is fired when Task Error Count is changed calling command SetErrorCount.</description>
+                <assembly>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.Events, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                <dotneteventtype></dotneteventtype>
+                <eventtype>Application</eventtype>
+                <domain>OperationalData</domain>
+                <taglist>
+                </taglist>
+                <securable>true</securable>
+        </event><event>
+                <name>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.Events.SequenceStepCompleted</name>
+                <shortname>SequenceStepCompleted</shortname>
+                <description> Indicates a completed sequence step.</description>
+                <assembly>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.Events, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                <dotneteventtype></dotneteventtype>
+                <eventtype>Application</eventtype>
+                <domain>OperationalData</domain>
+                <taglist>
+                </taglist>
+                <securable>true</securable>
+        </event><event>
+                <name>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.Events.ActionOnCompleteWITask</name>
+                <shortname>ActionOnCompleteWITask</shortname>
+                <description> The event fired to complete WI Task. </description>
+                <assembly>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.Events, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                <dotneteventtype></dotneteventtype>
+                <eventtype>Application</eventtype>
+                <domain>OperationalData</domain>
+                <taglist>
+                </taglist>
+                <securable>true</securable>
+        </event><event>
+                <name>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.Events.TaskStatusChanged</name>
+                <shortname>TaskStatusChanged</shortname>
+                <description> Indicates that a status of a task has been changed. It contains information related to the Task. For more information on the event envelope attributes, see TSK_OP Functional Block in the Opcenter EX FN Development and Configuration Guide.  </description>
+                <assembly>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.Events, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                <dotneteventtype></dotneteventtype>
+                <eventtype>Application</eventtype>
+                <domain>OperationalData</domain>
+                <taglist>
+                </taglist>
+                <securable>true</securable>
+        </event></events>
+    <event_handlers><event_handler>
+<name>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.Events.ActionOnTaskShell</name>
+<assembly>Siemens.SimaticIT.TSK_OP.EventHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+<event_name>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.Events.ActionOnTaskRequested</event_name>
+<target_cpu>AnyCPU</target_cpu>
+<targetframework>netstandard2.0</targetframework>
+<dependencies></dependencies>
+</event_handler><event_handler>
+<name>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.Events.TaskSequenceStepCompletedShell</name>
+<assembly>Siemens.SimaticIT.TSK_OP.EventHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+<event_name>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.Events.SequenceStepCompleted</event_name>
+<target_cpu>AnyCPU</target_cpu>
+<targetframework>netstandard2.0</targetframework>
+<dependencies></dependencies>
+</event_handler><event_handler>
+<name>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.Events.TaskFinalStatusReachedShell</name>
+<assembly>Siemens.SimaticIT.TSK_OP.EventHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+<event_name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Events.StatusChanged</event_name>
+<target_cpu>AnyCPU</target_cpu>
+<targetframework>netstandard2.0</targetframework>
+<dependencies></dependencies>
+</event_handler></event_handlers>
+    <signals></signals>
+    <readingFunctions></readingFunctions>
+    <entities><entity>
+      <name>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.DataModel.ReadingModel.Task</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.DataModel.ReadingModel.TaskParameter</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.DataModel.ReadingModel.WorkflowGateway</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.DataModel.ReadingModel.TaskContext</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.DataModel.ReadingModel.TaskContextUserField</name>
+      <securable>true</securable>
+    </entity></entities>
+    <datamodels><datamodel>
+      <assembly>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>WR</mode>
+      <domain>OperationalData</domain>
+    </datamodel><datamodel>
+      <assembly>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.ReadingModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>RD</mode>
+      <domain>OperationalData</domain>
+    </datamodel><datamodel>
+      <assembly>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.Types, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>WR</mode>
+      <domain>OperationalData</domain>
+    </datamodel><datamodel>
+      <assembly>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.Types.ReadingModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>RD</mode>
+      <domain>OperationalData</domain>
+    </datamodel></datamodels>
+    <externaldatamodels></externaldatamodels>
+    <appdatamodels></appdatamodels>
+    <uimodules></uimodules>
+    <uicomponents></uicomponents>
+    <wr_entities><wr_entity>
+      <name>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.DataModel.Task</name>
+      <shortname>Task</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity></parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity></root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.DataModel.TaskParameter</name>
+      <shortname>TaskParameter</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.DataModel.Task</parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.DataModel.Task</root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.DataModel.WorkflowGateway</name>
+      <shortname>WorkflowGateway</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity></parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity></root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.DataModel.TaskContext</name>
+      <shortname>TaskContext</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity></parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity></root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.DataModel.TaskContextUserField</name>
+      <shortname>TaskContextUserField</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.DataModel.TaskContext</parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.DataModel.TaskContext</root_entity>
+      <base_entity></base_entity>
+    </wr_entity></wr_entities>
+    <wr_facets></wr_facets>
+  </artifacts>
+  <security>
+    <roles></roles>
+  </security>
+  <runtime>
+    <event_subscriptions></event_subscriptions>
+    <handlergroups></handlergroups>
+  </runtime>
+</projectmanifest>

@@ -1,0 +1,26 @@
+<svg id="svg54" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="linear-gradient" x1="7.916" y1="47.503" x2="31.485" y2="32.679" gradientTransform="matrix(1, 0, 0, -1, 3, 56.681)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#cee6eb"/>
+      <stop offset="0.221" stop-color="#c6e2e8"/>
+      <stop offset="0.542" stop-color="#b3d8e1"/>
+      <stop offset="0.921" stop-color="#93c7d4"/>
+      <stop offset="1" stop-color="#8dc3d2"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.398" y1="40.419" x2="18.883" y2="9.242" gradientTransform="matrix(1, 0, 0, -1, 3, 56.681)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#afd7e1"/>
+      <stop offset="0.159" stop-color="#a5d1dc"/>
+      <stop offset="0.706" stop-color="#82bdcf"/>
+      <stop offset="1" stop-color="#73b4c8"/>
+    </linearGradient>
+  </defs>
+  <g id="g850">
+    <path id="polygon30" d="M39.969,36.986,21.713,47.54V26.526L39.969,15.969Z" fill="#3f91af"/>
+    <path id="polygon32" d="M39.969,15.969,21.713,26.526,3.456,15.968,21.682,5.411Z" fill="url(#linear-gradient)"/>
+    <path id="polygon34" d="M3.456,36.986V15.968L21.713,26.526V47.54Z" fill="url(#linear-gradient-2)"/>
+    <path id="polygon36" d="M21.257,26.786V47.539h.912V26.786L40.2,16.364l-.458-.79-7.294,4.217-.009-.015-10.724,6.2-10.727-6.2-.009.015L3.685,15.573l-.458.79Z" fill="#197492"/>
+    <path id="path38" d="M40.2,15.574,21.913,5.016a.458.458,0,0,0-.456,0L3.227,15.573a.458.458,0,0,0-.227.4V36.98a.458.458,0,0,0,.227.4L21.484,47.939a.462.462,0,0,0,.458,0L40.2,37.386a.457.457,0,0,0,.227-.4V15.968A.458.458,0,0,0,40.2,15.574ZM39.515,36.72l-17.8,10.292L3.917,36.718V16.231L21.682,5.938l17.83,10.294Z" fill="#474647"/>
+    <path id="path43-5" d="M38.414,2.937,41.207,5.73H26.728a6.508,6.508,0,0,0-6.5,6.5v5.5h3v-5.5a3.5,3.5,0,0,1,3.5-3.5H41.207l-2.793,2.793,2.121,2.121L46.949,7.23,40.535.816Z" fill="#3c91af"/>
+    <path id="path45-4" d="M22.728,17.33v-5.1a4,4,0,0,1,4-4H42.414l-3.293,3.293,1.414,1.414L46.242,7.23,40.535,1.523,39.121,2.937,42.414,6.23H26.728a6.006,6.006,0,0,0-6,6v5.1h2m1,1h-4v-6.1a7.008,7.008,0,0,1,7-7H40L38.414,3.644l-.707-.707.707-.707L39.828.816l.707-.707.707.707,5.707,5.707.707.707-.707.707-5.707,5.707-.707.707-.707-.707L38.414,12.23l-.707-.707.707-.707L40,9.23H26.728a3,3,0,0,0-3,3v6.1Z" fill="#147391"/>
+  </g>
+</svg>

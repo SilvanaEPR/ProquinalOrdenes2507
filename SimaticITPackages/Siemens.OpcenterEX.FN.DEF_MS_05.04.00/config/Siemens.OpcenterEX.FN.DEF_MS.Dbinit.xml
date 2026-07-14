@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--created on Monday, 05 June 2023 14:38:46 (UTC)-->
+<!--GUID values are formatted like '0b0e9810-096f-4864-b8e0-0dca91f6ff0f'; ALL OTHER VALUES FOLLOW .NET System.Globalization.CultureInfo.InvariantCulture FORMAT-->
+<Sections>
+  <Section engineeringLevel="LibraryFunctionalBlock" implementationName="2023-6-5-04-38-44" domainName="MasterData">
+    <Entity type="Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.DataModel.DCDQualityAction">
+      <Property name="NId" kind="Plain" value="InvalidFormatBehavior" />
+      <Property name="Name" kind="Plain" value="Invalid Format behavior" />
+      <Property name="Description" kind="Plain" value="Invalid format behavior" />
+      <Property name="DueDate" kind="Plain" value="NULL" />
+      <Property name="Type" kind="Plain" value="DCDViolationBehavior" />
+      <Property name="IsSystemDefined" kind="Plain" value="true" />     
+    </Entity>
+    <Entity type="Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.DataModel.QualitySubAction">
+      <Property name="Name" kind="Plain" value="Blocking" />
+      <Property name="Description" kind="Plain" value="Blocking" />
+      <Property name="DueDate" kind="Plain" value="NULL" />
+      <Property name="NId" kind="Plain" value="Blocking" />
+      <Property name="Action" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.DataModel.QualityAction">
+          <Property name="NId" kind="Plain" value="InvalidFormatBehavior" />
+        </LogicalKey>
+      </Property>
+      <Property name="IsDefault" kind="Plain" value="True" />
+      <Property name="IsSystemDefined" kind="Plain" value="true" />
+    </Entity>
+    <Entity type="Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.DataModel.QualitySubAction">
+      <Property name="Name" kind="Plain" value="NoBlocking" />
+      <Property name="Description" kind="Plain" value="NoBlocking" />
+      <Property name="DueDate" kind="Plain" value="NULL" />
+      <Property name="NId" kind="Plain" value="NoBlocking" />
+      <Property name="Action" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.DataModel.QualityAction">
+          <Property name="NId" kind="Plain" value="InvalidFormatBehavior" />
+        </LogicalKey>
+      </Property>
+      <Property name="IsDefault" kind="Plain" value="False" />
+      <Property name="IsSystemDefined" kind="Plain" value="true" />
+    </Entity>
+    <Entity type="Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.DataModel.DCDQualityAction">
+      <Property name="NId" kind="Plain" value="LimitsViolationBehavior" />
+      <Property name="Name" kind="Plain" value="Integer and Decimal Limits behavior" />
+      <Property name="Description" kind="Plain" value="Integer and Decimal Limits behavior" />
+      <Property name="DueDate" kind="Plain" value="NULL" />
+      <Property name="Type" kind="Plain" value="DCDViolationBehavior" />
+      <Property name="IsSystemDefined" kind="Plain" value="true" />
+    </Entity>
+    <Entity type="Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.DataModel.QualitySubAction">
+      <Property name="Name" kind="Plain" value="A message is shown to the operator" />
+      <Property name="Description" kind="Plain" value="A message is shown to the operator" />
+      <Property name="DueDate" kind="Plain" value="NULL" />
+      <Property name="NId" kind="Plain" value="Message" />
+      <Property name="Action" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.DataModel.QualityAction">
+          <Property name="NId" kind="Plain" value="LimitsViolationBehavior" />
+        </LogicalKey>
+      </Property>
+      <Property name="IsDefault" kind="Plain" value="True" />
+      <Property name="IsSystemDefined" kind="Plain" value="true" />
+    </Entity>
+    <Entity type="Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.DataModel.QualitySubAction">
+      <Property name="Name" kind="Plain" value="The result is a part which is defective" />
+      <Property name="Description" kind="Plain" value="The result is a part which is defective" />
+      <Property name="DueDate" kind="Plain" value="NULL" />
+      <Property name="NId" kind="Plain" value="DefectivePart" />
+      <Property name="Action" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.DataModel.QualityAction">
+          <Property name="NId" kind="Plain" value="LimitsViolationBehavior" />
+        </LogicalKey>
+      </Property>
+      <Property name="IsDefault" kind="Plain" value="False" />
+      <Property name="IsSystemDefined" kind="Plain" value="true" />
+    </Entity>
+    <Entity type="Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.DataModel.QualitySubAction">
+      <Property name="Name" kind="Plain" value="Will result in non-conformance" />
+      <Property name="Description" kind="Plain" value="Will result in non-conformance" />
+      <Property name="DueDate" kind="Plain" value="NULL" />
+      <Property name="NId" kind="Plain" value="NonConformance" />
+      <Property name="Action" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.DataModel.QualityAction">
+          <Property name="NId" kind="Plain" value="LimitsViolationBehavior" />
+        </LogicalKey>
+      </Property>
+      <Property name="IsDefault" kind="Plain" value="False" />
+      <Property name="IsSystemDefined" kind="Plain" value="true" />
+    </Entity>
+    <Entity type="Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.DataModel.DCDQualityAction">
+      <Property name="NId" kind="Plain" value="DataAcquisitionMethod" />
+      <Property name="Name" kind="Plain" value="Data Acquisition method" />
+      <Property name="Description" kind="Plain" value="Data Acquisition method" />
+      <Property name="DueDate" kind="Plain" value="NULL" />
+      <Property name="Type" kind="Plain" value="DCDAcquisitionMethod" />
+      <Property name="IsSystemDefined" kind="Plain" value="true" />
+    </Entity>
+    <Entity type="Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.DataModel.QualitySubAction">
+      <Property name="Name" kind="Plain" value="Manual" />
+      <Property name="Description" kind="Plain" value="Manual" />
+      <Property name="DueDate" kind="Plain" value="NULL" />
+      <Property name="NId" kind="Plain" value="Manual" />
+      <Property name="Action" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.DataModel.QualityAction">
+          <Property name="NId" kind="Plain" value="DataAcquisitionMethod" />
+        </LogicalKey>
+      </Property>
+      <Property name="IsDefault" kind="Plain" value="True" />
+      <Property name="IsSystemDefined" kind="Plain" value="true" />
+    </Entity>
+    <Entity type="Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.DataModel.QualitySubAction">
+      <Property name="Name" kind="Plain" value="Semi-Automatic" />
+      <Property name="Description" kind="Plain" value="Semi-Automatic" />
+      <Property name="DueDate" kind="Plain" value="NULL" />
+      <Property name="NId" kind="Plain" value="SemiAutomatic" />
+      <Property name="Action" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.DataModel.QualityAction">
+          <Property name="NId" kind="Plain" value="DataAcquisitionMethod" />
+        </LogicalKey>
+      </Property>
+      <Property name="IsDefault" kind="Plain" value="False" />
+      <Property name="IsSystemDefined" kind="Plain" value="true" />
+    </Entity>
+    <Entity type="Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.DataModel.QualitySubAction">
+      <Property name="Name" kind="Plain" value="Automatic" />
+      <Property name="Description" kind="Plain" value="Automatic" />
+      <Property name="DueDate" kind="Plain" value="NULL" />
+      <Property name="NId" kind="Plain" value="Automatic" />
+      <Property name="Action" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.DataModel.QualityAction">
+          <Property name="NId" kind="Plain" value="DataAcquisitionMethod" />
+        </LogicalKey>
+      </Property>
+      <Property name="IsDefault" kind="Plain" value="False" />
+      <Property name="IsSystemDefined" kind="Plain" value="true" />
+    </Entity>
+  </Section>
+</Sections>

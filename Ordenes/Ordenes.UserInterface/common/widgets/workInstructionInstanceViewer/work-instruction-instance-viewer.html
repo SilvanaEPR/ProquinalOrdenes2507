@@ -1,0 +1,323 @@
+<div class="instance-viewer-content panel-group" ng-class="{'instance-viewer-content-with-warning' : instanceViewerCtr.noSectionOrStepsWarningMessage !== ''}">
+    <div class="admonition admonition-note" ng-if="instanceViewerCtr.noSectionOrStepsWarningMessage !== ''">
+        <em class="fa fa-warning number-warning-message"></em>
+        <span>{{instanceViewerCtr.noSectionOrStepsWarningMessage}}</span>
+    </div>
+    <div class="wi-header" ng-show="instanceViewerCtr.sections.length>1 && instanceViewerCtr.sectionsWithSteps.length > 1">
+        <em ng-class="(instanceViewerCtr.isAllExpanded) ? 'fa fa-2x fa-angle-double-up' : 'fa fa-2x fa-angle-double-down'" class="keep-right" ng-click="instanceViewerCtr.toggleExpand();"></em>
+    </div>
+    <ul class="custom-accordion sections" ng-class="{'sections-with-warning' : instanceViewerCtr.noSectionOrStepsWarningMessage !== ''}">
+        <li ng-repeat="section in instanceViewerCtr.sections" class="panel accordion-content" ng-if="section.noOfSteps>0" ng-class="{'closed-section':!section.isOpen, 'single-section':instanceViewerCtr.sections.length === 1 && section.isOpen, 'double-section':instanceViewerCtr.sections.length === 2 && section.isOpen, 'multiple-section':instanceViewerCtr.sections.length > 2  && section.isOpen}">
+            <div class="panel-heading">
+                <h4 class="panel-title" ng-click="instanceViewerCtr.toggleOpen(section)">
+                    <span class="panel-header-text"><label class="display-name" title="{{section.displayName}}" ng-class="section.IsCompleted ? 'ellipsis-width' : 'full-width'">{{section.displayName}}</label></span>
+                    <span ng-if="section.IsCompleted" class="keep-right">
+                        <em sit-mom-icon="{'path':'common/icons/cmdCheckmark16.svg','size':'16px'}"></em>
+                    </span>
+                </h4>
+            </div>
+            <div class="panel-body" ng-class="section.isOpen ? 'step-content-show' : 'step-content-hide'">
+                <ul class="custom-accordion" ng-class="section.noOfSteps>1 ? 'with-pager' : 'without-pager'">
+                    <li ng-repeat="step in section.Steps | limitTo : 1 : (section.currentPage - 1) * 1">
+                        <span class="step-header"><label title="{{step.displayName}}" class="display-name full-width">{{step.displayName}}</label></span>
+                        <div class="step-body">
+                            <div class="instructions-box">
+                                <div ng-bind-html="step.stepInstruction" html-render-complete></div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div ng-if="step.Type === 'DataCollection'">
+                                <sit-property-grid sit-id="content_fields_form_{{section.NId}}_{{step.NId}}"
+                                                   sit-layout="Vertical"
+                                                   sit-type="Fluid"
+                                                   sit-mode="edit">
+                                    <div ng-repeat="item in step.DataCollectionItems">
+                                        <div class="data-collection-item-caption property-label-ellipsis">
+                                            <span ng-if="item.formData.Caption" class="data-collection-item-bold" title="{{item.formData.Label}}">{{item.formData.Label}}</span>
+                                        </div>
+                                        <div ng-switch="item.UIControl" ng-class="(item.AcquisitionBehavior === instanceViewerCtr.semiAuto) ? 'acquisition-behavior-field' : ''">
+                                            <div ng-switch-when="Text" class="data-collection-item">
+                                                <sit-property sit-widget="sit-text"
+                                                              sit-value="item.formData.value"
+                                                              sit-validation="item.formData.Validation"
+                                                              sit-placeholder="item.formData.Placeholder"
+                                                              ng-disabled="(step.isDisabled || item.IsReadOnly || step.IsCompleted || step.IsSignaturePending) && !instanceViewerCtr.onPreview"
+                                                              ng-blur="instanceViewerCtr.saveStepItem(item)">
+                                                    <span ng-if="item.formData.Caption">{{item.formData.Caption}}:</span>
+                                                    <span ng-if="!item.formData.Caption" class="property-label-ellipsis data-collection-item-bold" title="{{item.formData.Label}}">{{item.formData.Label}}:</span>
+                                                    <img alt="" src='common/icons/indicatorInformationWarning16.svg' ng-if="!step.IsCompleted && item.warnings && item.warnings.length>0" class="instance-viewer-warning-icon" data-sit-flyout ng-click="instanceViewerCtr.updateFlyoutStyles()" data-sit-templatedata="item.warnings" data-sit-templateuri="common/widgets/workInstructionInstanceViewer/warning-messages-template.html" data-sit-template-callback="instanceViewerCtr.warningsCallback" data-sit-placement="auto" data-sit-template-title="instanceViewerCtr.warningPopupTitle"></>
+                                                </sit-property>
+                                                <div ng-if="item.formData.validationMessage">
+                                                    <em class="fa fa-warning number-warning-message"></em>
+                                                    <span>{{item.formData.validationMessage}}</span>
+                                                </div>
+                                            </div>
+                                            <div ng-switch-when="Number" class="data-collection-item">
+                                                <div ng-class="(item.formData.Uom || item.formData.UomBinding) ? 'number-box-row-flex' : 'number-box-column-flex'">
+                                                    <div ng-class="(item.formData.Uom || item.formData.UomBinding) ? 'number-box-width':'number-box-full-width'">
+                                                        <sit-property ng-if="!step.isDisabled && !item.IsReadOnly && !step.IsCompleted && !step.IsSignaturePending"
+                                                                      sit-widget="sit-numeric"
+                                                                      sit-value="item.formData.value"
+                                                                      sit-validation="item.formData.Validation"
+                                                                      ng-blur="instanceViewerCtr.saveStepItem(item)">
+                                                            <span ng-if="item.formData.Caption">{{item.formData.Caption}}:</span>
+                                                            <span ng-if="!item.formData.Caption" class="property-label-ellipsis data-collection-item-bold" title="{{item.formData.Label}}">{{item.formData.Label}}:</span>
+                                                            <img alt="" src='common/icons/indicatorInformationWarning16.svg' ng-if="!step.IsCompleted && item.warnings && item.warnings.length>0" class="instance-viewer-warning-icon" data-sit-flyout ng-click="instanceViewerCtr.updateFlyoutStyles()" data-sit-templatedata="item.warnings" data-sit-templateuri="common/widgets/workInstructionInstanceViewer/warning-messages-template.html" data-sit-template-callback="instanceViewerCtr.warningsCallback" data-sit-placement="auto" data-sit-template-title="instanceViewerCtr.warningPopupTitle"></>
+                                                        </sit-property>
+                                                        <sit-property ng-if="step.isDisabled || item.IsReadOnly || step.IsCompleted || step.IsSignaturePending"
+                                                                      sit-widget="sit-text"
+                                                                      sit-value="item.formData.value"
+                                                                      ng-disabled="!instanceViewerCtr.onPreview"
+                                                                      sit-validation="item.formData.Validation"
+                                                                      ng-blur="instanceViewerCtr.saveStepItem(item)">
+                                                            <span ng-if="item.formData.Caption">{{item.formData.Caption}}:</span>
+                                                            <span ng-if="!item.formData.Caption" class="property-label-ellipsis data-collection-item-bold" title="{{item.formData.Label}}">{{item.formData.Label}}:</span>
+                                                            <img alt="" src='common/icons/indicatorInformationWarning16.svg' ng-if="step.IsCompleted && item.warnings && item.warnings.length>0" class="instance-viewer-warning-icon" data-sit-flyout ng-click="instanceViewerCtr.updateFlyoutStyles()" data-sit-templatedata="item.warnings" data-sit-templateuri="common/widgets/workInstructionInstanceViewer/warning-messages-template.html" data-sit-template-callback="instanceViewerCtr.warningsCallback" data-sit-placement="auto" data-sit-template-title="instanceViewerCtr.warningPopupTitle"></>
+                                                        </sit-property>
+                                                    </div>
+                                                    <div ng-if="item.formData.Uom !== ''" class="data-collection-item-uom">
+                                                        <span>{{item.formData.Uom ? item.formData.Uom : (item.formData.UomBinding ? (('instanceViewer.dataCollection.uomText' | translate)+': --') : '')}}</span>
+                                                    </div>
+                                                </div>
+                                                <div class="number-box-row-flex">
+                                                    <div ng-if="item.formData.IsLowLimitVisible">
+                                                        <div class="sit-work-instruction-instance-viewer-target-font">
+                                                            {{'instanceViewer.dataCollection.lowLimit' | translate}}: {{item.formData.lowLimit ? item.formData.lowLimit : '--'}}
+                                                        </div>
+                                                    </div>
+                                                    <div ng-class="{'space-limit':item.formData.IsLowLimitVisible || item.formData.IsHighLimitVisible}" ng-if="item.formData.IsTargetVisible">
+                                                        <div class="sit-work-instruction-instance-viewer-target-font">
+                                                            {{'instanceViewer.dataCollection.target' | translate}}: {{item.formData.Target ? item.formData.Target : '--'}}
+                                                        </div>
+                                                    </div>
+                                                    <div ng-class="{'space-limit':item.formData.IsLowLimitVisible}" ng-if="item.formData.IsHighLimitVisible">
+                                                        <div class="sit-work-instruction-instance-viewer-target-font">
+                                                            {{'instanceViewer.dataCollection.highLimit' | translate}}: {{item.formData.highLimit ? item.formData.highLimit : '--'}}
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div ng-if="item.formData.validationMessage">
+                                                    <em class="fa fa-warning number-warning-message"></em>
+                                                    <span>{{item.formData.validationMessage}}</span>
+                                                </div>
+                                            </div>
+                                            <div ng-switch-when="Integer" class="data-collection-item">
+                                                <div ng-class="(item.formData.Uom || item.formData.UomBinding) ? 'number-box-row-flex' : 'number-box-column-flex'">
+                                                    <div ng-class="(item.formData.Uom || item.formData.UomBinding) ? 'number-box-width':'number-box-full-width'">
+                                                        <sit-property sit-widget="sit-advanced-numeric"
+                                                                      sit-value="item.formData.value"
+                                                                      sit-widget-attributes="{'sit-type' : 'integer'}"
+                                                                      sit-validation="item.formData.Validation"
+                                                                      sit-placeholder="item.formData.Placeholder"
+                                                                      ng-disabled="(step.isDisabled || item.IsReadOnly || step.IsCompleted || step.IsSignaturePending)  && !instanceViewerCtr.onPreview"
+                                                                      ng-blur="instanceViewerCtr.saveStepItem(item)">
+                                                            <span ng-if="item.formData.Caption">{{item.formData.Caption}}:</span>
+                                                            <span ng-if="!item.formData.Caption" class="property-label-ellipsis data-collection-item-bold" title="{{item.formData.Label}}">{{item.formData.Label}}:</span>
+                                                            <img alt="" src='common/icons/indicatorInformationWarning16.svg' ng-if="!step.IsCompleted && item.warnings && item.warnings.length>0" class="instance-viewer-warning-icon" data-sit-flyout ng-click="instanceViewerCtr.updateFlyoutStyles()" data-sit-templatedata="item.warnings" data-sit-templateuri="common/widgets/workInstructionInstanceViewer/warning-messages-template.html" data-sit-template-callback="instanceViewerCtr.warningsCallback" data-sit-placement="auto" data-sit-template-title="instanceViewerCtr.warningPopupTitle"></>
+                                                        </sit-property>
+                                                    </div>
+                                                    <div ng-if="item.formData.Uom !== ''" class="data-collection-item-uom">
+                                                        <span>{{item.formData.Uom ? item.formData.Uom : (item.formData.UomBinding ? (('instanceViewer.dataCollection.uomText' | translate)+': --') : '')}}</span>
+                                                    </div>
+                                                </div>
+                                                <div class="number-box-row-flex">
+                                                    <div ng-if="item.formData.IsLowLimitVisible">
+                                                        <div class="sit-work-instruction-instance-viewer-target-font">
+                                                            {{'instanceViewer.dataCollection.lowLimit' | translate}}: {{instanceViewerCtr.getLocaleString(item.formData.lowLimit)}}
+                                                        </div>
+                                                    </div>
+                                                    <div ng-class="{'space-limit':item.formData.IsLowLimitVisible || item.formData.IsHighLimitVisible}" ng-if="item.formData.IsTargetVisible">
+                                                        <div class="sit-work-instruction-instance-viewer-target-font">
+                                                            {{'instanceViewer.dataCollection.target' | translate}}: {{instanceViewerCtr.getLocaleString(item.formData.Target)}}
+                                                        </div>
+                                                    </div>
+                                                    <div ng-class="{'space-limit':item.formData.IsLowLimitVisible}" ng-if="item.formData.IsHighLimitVisible">
+                                                        <div class="sit-work-instruction-instance-viewer-target-font">
+                                                            {{'instanceViewer.dataCollection.highLimit' | translate}}: {{instanceViewerCtr.getLocaleString(item.formData.highLimit)}}
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div ng-if="item.formData.validationMessage">
+                                                    <em class="fa fa-warning number-warning-message"></em>
+                                                    <span>{{item.formData.validationMessage}}</span>
+                                                </div>
+                                            </div>
+                                            <div ng-switch-when="Decimal" class="data-collection-item">
+                                                <div ng-class="(item.formData.Uom || item.formData.UomBinding) ? 'number-box-row-flex' : 'number-box-column-flex'">
+                                                    <div ng-class="(item.formData.Uom || item.formData.UomBinding) ? 'number-box-width':'number-box-full-width'">
+                                                        <sit-property sit-widget="sit-advanced-numeric"
+                                                                      sit-value="item.formData.value"
+                                                                      sit-widget-attributes="{'sit-type' : 'decimal'}"
+                                                                      sit-validation="item.formData.Validation"
+                                                                      sit-placeholder="item.formData.Placeholder"
+                                                                      ng-disabled="(step.isDisabled || item.IsReadOnly || step.IsCompleted || step.IsSignaturePending) && !instanceViewerCtr.onPreview"
+                                                                      ng-blur="instanceViewerCtr.saveStepItem(item)">
+                                                            <span ng-if="item.formData.Caption">{{item.formData.Caption}}:</span>
+                                                            <span ng-if="!item.formData.Caption" class="property-label-ellipsis data-collection-item-bold" title="{{item.formData.Label}}">{{item.formData.Label}}:</span>
+                                                            <img alt="" src='common/icons/indicatorInformationWarning16.svg' ng-if="!step.IsCompleted && item.warnings && item.warnings.length>0" class="instance-viewer-warning-icon" data-sit-flyout ng-click="instanceViewerCtr.updateFlyoutStyles()" data-sit-templatedata="item.warnings" data-sit-templateuri="common/widgets/workInstructionInstanceViewer/warning-messages-template.html" data-sit-template-callback="instanceViewerCtr.warningsCallback" data-sit-placement="auto" data-sit-template-title="instanceViewerCtr.warningPopupTitle"></>
+                                                        </sit-property>
+                                                    </div>
+                                                    <div ng-if="item.formData.Uom !== ''" class="data-collection-item-uom">
+                                                        <span>{{item.formData.Uom ? item.formData.Uom : (item.formData.UomBinding ? (('instanceViewer.dataCollection.uomText' | translate)+': --') : '')}}</span>
+                                                    </div>
+                                                </div>
+                                                <div class="number-box-row-flex">
+                                                    <div ng-if="item.formData.IsLowLimitVisible">
+                                                        <div class="sit-work-instruction-instance-viewer-target-font">
+                                                            {{'instanceViewer.dataCollection.lowLimit' | translate}}: {{item.formData.lowLimit}}
+                                                        </div>
+                                                    </div>
+                                                    <div ng-class="{'space-limit':item.formData.IsLowLimitVisible || item.formData.IsHighLimitVisible}" ng-if="item.formData.IsTargetVisible">
+                                                        <div class="sit-work-instruction-instance-viewer-target-font">
+                                                            {{'instanceViewer.dataCollection.target' | translate}}: {{item.formData.Target}}
+                                                        </div>
+                                                    </div>
+                                                    <div ng-class="{'space-limit':item.formData.IsLowLimitVisible}" ng-if="item.formData.IsHighLimitVisible">
+                                                        <div class="sit-work-instruction-instance-viewer-target-font">
+                                                            {{'instanceViewer.dataCollection.highLimit' | translate}}: {{item.formData.highLimit}}
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div ng-if="item.formData.validationMessage">
+                                                    <em class="fa fa-warning number-warning-message"></em>
+                                                    <span>{{item.formData.validationMessage}}</span>
+                                                </div>
+                                            </div>
+                                            <div ng-switch-when="Multiline" class="data-collection-item text-area-no-resize" ng-class="{'text-area-large':item.formData.Size === 'large','text-area-medium' :item.formData.Size === 'medium'}">
+                                                <sit-property sit-widget="sit-textarea"
+                                                              sit-value="item.formData.value"
+                                                              sit-placeholder="item.formData.Placeholder"
+                                                              sit-validation="item.formData.Validation"
+                                                              ng-disabled="(step.isDisabled || item.IsReadOnly || step.IsCompleted || step.IsSignaturePending)  && !instanceViewerCtr.onPreview"
+                                                              ng-blur="instanceViewerCtr.saveStepItem(item)">
+                                                    <span ng-if="item.formData.Caption">{{item.formData.Caption}}:</span>
+                                                    <span ng-if="!item.formData.Caption" class="property-label-ellipsis data-collection-item-bold" title="{{item.formData.Label}}">{{item.formData.Label}}:</span>
+                                                    <img alt="" src='common/icons/indicatorInformationWarning16.svg' ng-if="!step.IsCompleted && item.warnings && item.warnings.length>0" class="instance-viewer-warning-icon" data-sit-flyout ng-click="instanceViewerCtr.updateFlyoutStyles()" data-sit-templatedata="item.warnings" data-sit-templateuri="common/widgets/workInstructionInstanceViewer/warning-messages-template.html" data-sit-template-callback="instanceViewerCtr.warningsCallback" data-sit-placement="auto" data-sit-template-title="instanceViewerCtr.warningPopupTitle"></>
+                                                </sit-property>
+                                                <div ng-if="item.formData.validationMessage">
+                                                    <em class="fa fa-warning number-warning-message"></em>
+                                                    <span>{{item.formData.validationMessage}}</span>
+                                                </div>
+                                            </div>
+                                            <div ng-switch-when="Checkbox" class="data-collection-item">
+                                                <sit-property sit-widget="sit-tristate-checkbox"
+                                                              sit-value="item.formData.value"
+                                                              sit-validation="item.formData.Validation"
+                                                              ng-disabled="(step.isDisabled || item.IsReadOnly || step.IsCompleted || step.IsSignaturePending) && !instanceViewerCtr.onPreview"
+                                                              ng-blur="instanceViewerCtr.saveStepItem(item)">
+                                                    <span ng-if="item.formData.Caption">{{item.formData.Caption}}:</span>
+                                                    <span ng-if="!item.formData.Caption" class="property-label-ellipsis data-collection-item-bold" title="{{item.formData.Label}}">{{item.formData.Label}}:</span>
+                                                    <img alt="" src='common/icons/indicatorInformationWarning16.svg' ng-if="!step.IsCompleted && item.warnings && item.warnings.length>0" class="instance-viewer-warning-icon" data-sit-flyout ng-click="instanceViewerCtr.updateFlyoutStyles()" data-sit-templatedata="item.warnings" data-sit-templateuri="common/widgets/workInstructionInstanceViewer/warning-messages-template.html" data-sit-template-callback="instanceViewerCtr.warningsCallback" data-sit-placement="auto" data-sit-template-title="instanceViewerCtr.warningPopupTitle"></>
+                                                </sit-property>
+                                                <div ng-if="item.formData.IsTargetVisible">
+                                                    <div class="sit-work-instruction-instance-viewer-target-font">
+                                                        {{'instanceViewer.dataCollection.target' | translate}}: {{item.formData.Target}}
+                                                    </div>
+                                                </div>
+                                                <div ng-if="item.formData.validationMessage">
+                                                    <em class="fa fa-warning number-warning-message"></em>
+                                                    <span>{{item.formData.validationMessage}}</span>
+                                                </div>
+                                            </div>
+                                            <div ng-switch-when="Dropdown" class="data-collection-item">
+                                                <sit-property sit-widget="sit-select"
+                                                              sit-value="item.formData.value"
+                                                              sit-placeholder="item.formData.Placeholder"
+                                                              sit-validation="{required:item.IsRequired}"
+                                                              ng-disabled="(step.isDisabled || item.IsReadOnly || step.IsCompleted || step.IsSignaturePending) && !instanceViewerCtr.onPreview"
+                                                              sit-options="item.formData.options"
+                                                              sit-to-display="'label'"
+                                                              sit-to-keep="'value'"
+                                                              ng-blur="instanceViewerCtr.saveStepItem(item)">
+                                                    <span ng-if="item.formData.Caption">{{item.formData.Caption}}:</span>
+                                                    <span ng-if="!item.formData.Caption" class="property-label-ellipsis data-collection-item-bold" title="{{item.formData.Label}}">{{item.formData.Label}}:</span>
+                                                    <img alt="" src='common/icons/indicatorInformationWarning16.svg' ng-if="!step.IsCompleted && item.warnings && item.warnings.length>0" class="instance-viewer-warning-icon" data-sit-flyout ng-click="instanceViewerCtr.updateFlyoutStyles()" data-sit-templatedata="item.warnings" data-sit-templateuri="common/widgets/workInstructionInstanceViewer/warning-messages-template.html" data-sit-template-callback="instanceViewerCtr.warningsCallback" data-sit-placement="auto" data-sit-template-title="instanceViewerCtr.warningPopupTitle"></>
+                                                </sit-property>
+                                            </div>
+                                            <div ng-switch-when="MultipleChoice" class="data-collection-item">
+                                                <sit-property sit-widget="sit-radio"
+                                                              sit-value="item.formData.value"
+                                                              sit-validation="item.formData.Validation"
+                                                              ng-disabled="(step.isDisabled || item.IsReadOnly || step.IsCompleted || step.IsSignaturePending) && !instanceViewerCtr.onPreview"
+                                                              sit-options="item.formData.options"
+                                                              ng-blur="instanceViewerCtr.saveStepItem(item)">
+                                                    <span ng-if="item.formData.Caption">{{item.formData.Caption}}:</span>
+                                                    <span ng-if="!item.formData.Caption" class="property-label-ellipsis data-collection-item-bold" title="{{item.formData.Label}}">{{item.formData.Label}}:</span>
+                                                    <img alt="" src='common/icons/indicatorInformationWarning16.svg' ng-if="!step.IsCompleted && item.warnings && item.warnings.length>0" class="instance-viewer-warning-icon" data-sit-flyout ng-click="instanceViewerCtr.updateFlyoutStyles()" data-sit-templatedata="item.warnings" data-sit-templateuri="common/widgets/workInstructionInstanceViewer/warning-messages-template.html" data-sit-template-callback="instanceViewerCtr.warningsCallback" data-sit-placement="auto" data-sit-template-title="instanceViewerCtr.warningPopupTitle"></>
+                                                </sit-property>
+                                                <div ng-if="item.formData.IsTargetVisible">
+                                                    <div class="sit-work-instruction-instance-viewer-target-font">
+                                                        {{'instanceViewer.dataCollection.target' | translate}}: {{item.formData.Target}}
+                                                    </div>
+                                                </div>
+                                                <div ng-if="item.formData.validationMessage">
+                                                    <em class="fa fa-warning number-warning-message"></em>
+                                                    <span>{{item.formData.validationMessage}}</span>
+                                                </div>
+                                            </div>
+                                            <div ng-switch-when="Datetime" class="data-collection-item">
+                                                <sit-property sit-widget="sit-date-time-picker"
+                                                              sit-value="item.formData.value"
+                                                              sit-format="item.formData.format"
+                                                              sit-placeholder="item.formData.Placeholder"
+                                                              ng-disabled="(step.isDisabled || item.IsReadOnly || step.IsCompleted || step.IsSignaturePending) && !instanceViewerCtr.onPreview"
+                                                              sit-validation="item.formData.Validation"
+                                                              ng-blur="instanceViewerCtr.saveStepItem(item)">
+                                                    <span ng-if="item.formData.Caption">{{item.formData.Caption}}:</span>
+                                                    <span ng-if="!item.formData.Caption" class="property-label-ellipsis data-collection-item-bold" title="{{item.formData.Label}}">{{item.formData.Label}}:</span>
+                                                    <img alt="" src='common/icons/indicatorInformationWarning16.svg' ng-if="!step.IsCompleted && item.warnings && item.warnings.length>0" class="instance-viewer-warning-icon" data-sit-flyout ng-click="instanceViewerCtr.updateFlyoutStyles()" data-sit-templatedata="item.warnings" data-sit-templateuri="common/widgets/workInstructionInstanceViewer/warning-messages-template.html" data-sit-template-callback="instanceViewerCtr.warningsCallback" data-sit-placement="auto" data-sit-template-title="instanceViewerCtr.warningPopupTitle"></>
+                                                </sit-property>
+                                                <div class="number-box-row-flex">
+                                                    <div ng-if="item.formData.IsLowLimitVisible">
+                                                        <div class="sit-work-instruction-instance-viewer-target-font">
+                                                            {{'instanceViewer.dataCollection.lowLimit' | translate}}: {{item.formData.lowLimit ? (item.formData.lowLimit| date:item.formData.format) : '--'}}
+                                                        </div>
+                                                    </div>
+                                                    <div ng-class="{'space-limit':item.formData.IsLowLimitVisible || item.formData.IsHighLimitVisible}" ng-if="item.formData.IsTargetVisible">
+                                                        <div class="sit-work-instruction-instance-viewer-target-font">
+                                                            {{'instanceViewer.dataCollection.target' | translate}}: {{item.formData.Target ? (item.formData.Target| date:item.formData.format) : '--'}}
+                                                        </div>
+                                                    </div>
+                                                    <div ng-class="{'space-limit':item.formData.IsLowLimitVisible}" ng-if="item.formData.IsHighLimitVisible">
+                                                        <div class="sit-work-instruction-instance-viewer-target-font">
+                                                            {{'instanceViewer.dataCollection.highLimit' | translate}}: {{item.formData.highLimit ? (item.formData.highLimit| date:item.formData.format) : '--'}}
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div ng-if="item.formData.validationMessage">
+                                                    <em class="fa fa-warning number-warning-message"></em>
+                                                    <span>{{item.formData.validationMessage}}</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </sit-property-grid>
+                            </div>
+                            <div class="confirm-button-container">
+                                <div ng-if="step.IsSignButtonVisible"
+                                     ng-class="((!step.isDisabled || step.IsCompleted) && (step.IsSignaturePending || (step.ScenarioInstanceId != null)))  ? 'button-enable' : 'button-disable'" class="rt-sign-button-container float-left wi-es-sign-button">
+                                    <sit-rt-signatures sit-scenario-instance="step.ScenarioInstance"></sit-rt-signatures>
+                                </div>
+                                <div class="confirm-button-type" ng-if="step.Type === 'Acknowledge'">
+                                    <label ng-if="step.IsCompleted || step.IsSignaturePending">{{'instanceViewer.acknowledge.text' | translate: { CompletedBy:step.CompletedBy, AcknowledgeOn: (step.AcknowledgeOn | date:'medium') } }}</label>
+                                    <button ng-if="!(step.IsCompleted || step.IsSignaturePending || step.AvoidAck)" class="acknowledge-button" ng-disabled="step.isDisabled || instanceViewerCtr.onPreview" ng-click="instanceViewerCtr.acknowledge(step)">{{'instanceViewer.acknowledge.button' | translate}}</button>
+                                </div>
+                                <div class="confirm-button-type" ng-if="step.Type === 'DataCollection'">
+                                    <label ng-if="step.IsCompleted || step.IsSignaturePending">{{'instanceViewer.dataCollection.text' | translate: { CompletedBy:step.CompletedBy, AcknowledgeOn: (step.AcknowledgeOn | date:'medium') } }} <label ng-if="(step.IsCompleted || step.IsSignaturePending) && step.IsOutOfSpecValues"> {{'instanceViewer.dataCollection.outOfSpecMessage'|translate}}</label></label>
+                                    <button ng-if="!(step.IsCompleted || step.IsSignaturePending)" class="acknowledge-button" ng-disabled="step.isDisabled || !step.validInputs || instanceViewerCtr.onPreview" ng-click="instanceViewerCtr.confirmDataCollectionStep(step)">{{'instanceViewer.dataCollection.button' | translate}}</button>
+                                </div>
+                                <div class="confirm-button-type" ng-if="instanceViewerCtr.hasAcquireStep(step)">
+                                    <button ng-if="!(step.IsCompleted || step.IsSignaturePending)" class="pl-button-dialog defaultBtnBorder acquire-button"
+                                            ng-disabled="step.isDisabled" ng-click="instanceViewerCtr.acquireDataCollectionStep(step)">
+                                        {{'instanceViewer.acquire.button' | translate}}
+                                    </button>
+                                </div>
+                            </div>
+                            <button ng-if="step.IsCompleted && instanceViewerCtr.isReEditEnabled" class="acknowledge-button float-right" ng-click="instanceViewerCtr.reEditStep(step.Id)">{{'instanceViewer.reEdit.button' | translate}}</button>
+                        </div>
+                    </li>
+                </ul>
+                <ul uib-pagination items-per-page="1" total-items="section.noOfSteps" ng-model="section.currentPage" boundary-links="true" max-size="10" ng-if="section.noOfSteps>1" class="pager"></ul>
+            </div>
+        </li>
+    </ul>
+</div>

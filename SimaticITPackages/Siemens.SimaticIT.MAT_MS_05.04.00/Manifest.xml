@@ -1,0 +1,982 @@
+﻿<?xml version="1.0" encoding="utf-8"?><projectmanifest>
+  <header>
+    <manifestversion>11.0</manifestversion>
+    <platformversion>11.0</platformversion>
+    <type>Library</type>
+    <name>Siemens.SimaticIT.MAT_MS</name>
+    <shortname>MAT_MS</shortname>
+    <description>Material Master Data Domain Functional Block</description>
+    <version>05.04.00</version>
+    <companyname>Siemens.SimaticIT</companyname>
+    <author>Siemens.SimaticIT</author>
+    <hash>FSJeCZzZ50JAdEz9WoLYqhISbrpVwb4zXeMzVTLC6AQ=</hash>
+    <modelHash>lcO9ITjoQ1VHNhh5bSbDPlK+KEmUwkbSZYzjH/7tP8I=</modelHash>
+    <modelHashSections>
+      <modelHashSection>
+        <name>projectConfigModelHash</name>
+        <hash>nzFCcVHn9B3fDXAgEPzIwJTVFzPvV9/S5kaU/UsCadA=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>dataModelHash</name>
+        <hash>RRa/z7ijSq3X3bZIMo2iTj4C/1yIUiwNCFAZSZxmAoI=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>commandModelHash</name>
+        <hash>9/8BxjK9M62OVZzDusI12b5ILkpWBbu6Il0pNfIFHkY=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>aliasModelHash</name>
+        <hash>cdWtFof25lUoH+wgMZZEtJGL5k7aBVT7Ae5HtNcbGxs=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>eventModelHash</name>
+        <hash>1pCUQMeMV1zI9wPwd+zPXfSRUhyKxTb/4j3YyV+SOBI=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>typeModelHash</name>
+        <hash>1pCUQMeMV1zI9wPwd+zPXfSRUhyKxTb/4j3YyV+SOBI=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>securityModelHash</name>
+        <hash>cdWtFof25lUoH+wgMZZEtJGL5k7aBVT7Ae5HtNcbGxs=</hash>
+      </modelHashSection>
+    </modelHashSections>
+    <uiHash>na</uiHash>
+    <canbeextended>false</canbeextended>
+    <domain>MasterData</domain>
+  </header>
+  <reference>
+    <functionalblocks>
+      <functionalblock>
+        <name>Siemens.SimaticIT.UDM_RF</name>
+        <version>07.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+    </functionalblocks>
+    <extensions></extensions>
+  </reference>
+  <artifacts>
+    <commands><command>
+                        <name>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands.CreateMaterialGroup</name>
+                        <shortname>CreateMaterialGroup</shortname>
+                        <description>Creates a Material Group.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands.CreateMaterialGroupHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands.UpdateMaterialGroup</name>
+                        <shortname>UpdateMaterialGroup</shortname>
+                        <description>Updates a Material Group.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands.UpdateMaterialGroupHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands.DeleteMaterialGroup</name>
+                        <shortname>DeleteMaterialGroup</shortname>
+                        <description>Deletes an existing Material Group.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands.DeleteMaterialGroupHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands.FreezeMaterialGroup</name>
+                        <shortname>FreezeMaterialGroup</shortname>
+                        <description>Configures the Material Group to be read-only by setting the attribute IsFrozen to True.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands.FreezeMaterialGroupHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands.UnfreezeMaterialGroup</name>
+                        <shortname>UnfreezeMaterialGroup</shortname>
+                        <description>Removes the read-only setting from the Material Group by setting the attribute IsFrozen to False.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands.UnfreezeMaterialGroupHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands.AssociateChildrenMaterialGroupWithMaterialGroup</name>
+                        <shortname>AssociateChildrenMaterialGroupWithMaterialGroup</shortname>
+                        <description>Associates a Material Group to a list of children Material Group.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands.AssociateChildrenMaterialGroupWithMaterialGroupHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands.DisassociateChildrenMaterialGroupFromMaterialGroup</name>
+                        <shortname>DisassociateChildrenMaterialGroupFromMaterialGroup</shortname>
+                        <description>Removes the association between one or more children Material Group and a Material Group.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands.DisassociateChildrenMaterialGroupFromMaterialGroupHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands.AssociateParentsMaterialGroupWithMaterialGroup</name>
+                        <shortname>AssociateParentsMaterialGroupWithMaterialGroup</shortname>
+                        <description>Associates a Material Group to a list of parents Material Group.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands.AssociateParentsMaterialGroupWithMaterialGroupHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands.DisassociateParentsMaterialGroupFromMaterialGroup</name>
+                        <shortname>DisassociateParentsMaterialGroupFromMaterialGroup</shortname>
+                        <description>Removes the association between one or more Parents Material Group and a Material Group.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands.DisassociateParentsMaterialGroupFromMaterialGroupHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands.AssociateMaterialsWithMaterialGroup</name>
+                        <shortname>AssociateMaterialsWithMaterialGroup</shortname>
+                        <description>Associates a Material Group to a list of Materials.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands.AssociateMaterialsWithMaterialGroupHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands.DisassociateMaterialsFromMaterialGroup</name>
+                        <shortname>DisassociateMaterialsFromMaterialGroup</shortname>
+                        <description>Removes the association between one or more Materials and a Material Group.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands.DisassociateMaterialsFromMaterialGroupHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands.AssociateMaterialGroupsWithMaterial</name>
+                        <shortname>AssociateMaterialGroupsWithMaterial</shortname>
+                        <description>Associates one or more Material Groups to a Material.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands.AssociateMaterialGroupsWithMaterialHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands.DisassociateMaterialGroupsFromMaterial</name>
+                        <shortname>DisassociateMaterialGroupsFromMaterial</shortname>
+                        <description>Removes the association between one or more Material Groups and a Material.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands.DisassociateMaterialGroupsFromMaterialHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands.CreateMaterialTemplate</name>
+                        <shortname>CreateMaterialTemplate</shortname>
+                        <description>Creates a Material Template.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands.CreateMaterialTemplateHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands.SetMaterialTemplateAsDefault</name>
+                        <shortname>SetMaterialTemplateAsDefault</shortname>
+                        <description>Sets a Material Template as default.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands.SetMaterialTemplateAsDefaultHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands.UnsetMaterialTemplateAsDefault</name>
+                        <shortname>UnsetMaterialTemplateAsDefault</shortname>
+                        <description>Unsets a Material Template as default.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands.UnsetMaterialTemplateAsDefaultHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands.SetMaterialTemplateUoM</name>
+                        <shortname>SetMaterialTemplateUoM</shortname>
+                        <description>Sets a new Unit of Measure to a Material Template.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands.SetMaterialTemplateUoMHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands.UpdateMaterialTemplate</name>
+                        <shortname>UpdateMaterialTemplate</shortname>
+                        <description>Updates a Material Template.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands.UpdateMaterialTemplateHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands.FreezeMaterialTemplate</name>
+                        <shortname>FreezeMaterialTemplate</shortname>
+                        <description>Configures the Material Template to be read-only by setting the attribute IsFrozen to True.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands.FreezeMaterialTemplateHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands.UnfreezeMaterialTemplate</name>
+                        <shortname>UnfreezeMaterialTemplate</shortname>
+                        <description>Removes the read-only setting from the Material Template by setting the attribute IsFrozen to False.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands.UnfreezeMaterialTemplateHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands.CreateMaterialTemplateProperties</name>
+                        <shortname>CreateMaterialTemplateProperties</shortname>
+                        <description>Adds Material Template Properties to a Material Template.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands.CreateMaterialTemplatePropertiesHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands.UpdateMaterialTemplateProperties</name>
+                        <shortname>UpdateMaterialTemplateProperties</shortname>
+                        <description>Updates Material Template Properties to a Material Template.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands.UpdateMaterialTemplatePropertiesHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands.DeleteMaterialTemplate</name>
+                        <shortname>DeleteMaterialTemplate</shortname>
+                        <description>Deletes an existing Material Template.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands.DeleteMaterialTemplateHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands.DeleteMaterialTemplateProperties</name>
+                        <shortname>DeleteMaterialTemplateProperties</shortname>
+                        <description>Deletes Material Template Properties from a Material Template.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands.DeleteMaterialTemplatePropertiesHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands.CreateMaterial</name>
+                        <shortname>CreateMaterial</shortname>
+                        <description>Creates a Material.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands.CreateMaterialHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands.UpdateMaterial</name>
+                        <shortname>UpdateMaterial</shortname>
+                        <description>Updates a Material.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands.UpdateMaterialHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands.DeleteMaterial</name>
+                        <shortname>DeleteMaterial</shortname>
+                        <description>Deletes an existing Material.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands.DeleteMaterialHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands.SetMaterialRevisionCurrent</name>
+                        <shortname>SetMaterialRevisionCurrent</shortname>
+                        <description>Sets a Material Revision to Current.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands.SetMaterialRevisionCurrentHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands.UnsetMaterialRevisionCurrent</name>
+                        <shortname>UnsetMaterialRevisionCurrent</shortname>
+                        <description>Removes the setting as Current from a Material revision.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands.UnsetMaterialRevisionCurrentHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands.SetMaterialUoM</name>
+                        <shortname>SetMaterialUoM</shortname>
+                        <description>Sets a new Unit of Measure to a Material.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands.SetMaterialUoMHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands.LockMaterial</name>
+                        <shortname>LockMaterial</shortname>
+                        <description>Locks a Material.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands.LockMaterialHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands.UnlockMaterial</name>
+                        <shortname>UnlockMaterial</shortname>
+                        <description>Unlocks a Material.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands.UnlockMaterialHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands.CopyMaterialRevision</name>
+                        <shortname>CopyMaterialRevision</shortname>
+                        <description>Copies a Material revision.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands.CopyMaterialRevisionHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands.CreateNewMaterialRevision</name>
+                        <shortname>CreateNewMaterialRevision</shortname>
+                        <description>Creates a new Material Revision.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands.CreateNewMaterialRevisionHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands.CreateMaterialProperties</name>
+                        <shortname>CreateMaterialProperties</shortname>
+                        <description>Adds Material Properties to a Material.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands.CreateMaterialPropertiesHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands.UpdateMaterialProperties</name>
+                        <shortname>UpdateMaterialProperties</shortname>
+                        <description>Updates Material Properties to a Material.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands.UpdateMaterialPropertiesHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands.DeleteMaterialProperties</name>
+                        <shortname>DeleteMaterialProperties</shortname>
+                        <description>Deletes Material Properties from a Material.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands.DeleteMaterialPropertiesHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command></commands>
+    <commandActions><commandAction>
+                        <name>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands.DeleteConfigurationEntityLinksHandlerShell</name>
+                        <shortname>DeleteConfigurationEntityLinksHandlerShell</shortname>
+                        <description>Deletes each ConfigurationEntityLink related to this Material.</description>
+                        <assembly>Siemens.SimaticIT.MAT_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <target_cpu>AnyCPU</target_cpu>
+                        <targetframework>netstandard2.0</targetframework>
+                        <command>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands.DeleteMaterial</command>
+                        <type>Post</type>
+                        <is_enabled>true</is_enabled>
+                        <is_optional>false</is_optional>
+                </commandAction></commandActions>
+    <events></events>
+    <event_handlers></event_handlers>
+    <signals></signals>
+    <readingFunctions></readingFunctions>
+    <entities><entity>
+      <name>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.DataModel.ReadingModel.MaterialGroup</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.DataModel.ReadingModel.MaterialTemplate</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.DataModel.ReadingModel.MaterialTemplateProperty</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.DataModel.ReadingModel.Material</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.DataModel.ReadingModel.MaterialProperty</name>
+      <securable>true</securable>
+    </entity></entities>
+    <datamodels><datamodel>
+      <assembly>Siemens.SimaticIT.MasterData.MAT_MS.MSModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>WR</mode>
+      <domain>MasterData</domain>
+    </datamodel><datamodel>
+      <assembly>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.ReadingModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>RD</mode>
+      <domain>MasterData</domain>
+    </datamodel><datamodel>
+      <assembly>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Types, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>WR</mode>
+      <domain>MasterData</domain>
+    </datamodel><datamodel>
+      <assembly>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Types.ReadingModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>RD</mode>
+      <domain>MasterData</domain>
+    </datamodel></datamodels>
+    <externaldatamodels></externaldatamodels>
+    <appdatamodels></appdatamodels>
+    <uimodules></uimodules>
+    <uicomponents></uicomponents>
+    <wr_entities><wr_entity>
+      <name>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.DataModel.MaterialGroup</name>
+      <shortname>MaterialGroup</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity></parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity></root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.DataModel.MaterialTemplate</name>
+      <shortname>MaterialTemplate</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity></parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity></root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.DataModel.MaterialTemplateProperty</name>
+      <shortname>MaterialTemplateProperty</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.DataModel.MaterialTemplate</parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.DataModel.MaterialTemplate</root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.DataModel.Material</name>
+      <shortname>Material</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity></parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity></root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.DataModel.MaterialProperty</name>
+      <shortname>MaterialProperty</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.DataModel.Material</parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity>Siemens.SimaticIT.MasterData.MAT_MS.MSModel.DataModel.Material</root_entity>
+      <base_entity></base_entity>
+    </wr_entity></wr_entities>
+    <wr_facets></wr_facets>
+  </artifacts>
+  <security>
+    <roles></roles>
+  </security>
+  <runtime>
+    <event_subscriptions></event_subscriptions>
+    <handlergroups></handlergroups>
+  </runtime>
+</projectmanifest>

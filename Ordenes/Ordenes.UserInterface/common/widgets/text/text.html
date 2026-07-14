@@ -1,0 +1,33 @@
+<div ng-if="textCtrl.readOnly || textCtrl.ngReadonly|| textCtrl.ngDisabled">
+    <ng-form name='textForm'>
+        <input type='text'
+               class="label label-property-grid-control-readonly"
+               ng-model='textCtrl.value'
+               ng-blur="textCtrl.ngBlur()"
+               ng-disabled="textCtrl.ngDisabled"
+               ng-readonly="textCtrl.ngReadonly || textCtrl.readOnly"
+               ng-focus="textCtrl.ngFocus()"
+               placeholder={{textCtrl.placeholder}} />
+    </ng-form>
+</div>
+
+<ng-form name='textForm' ng-if="!(textCtrl.readOnly || textCtrl.ngReadonly|| textCtrl.ngDisabled)" ng-class="{'isrequired' :(textCtrl.validation.required) && textCtrl.value!==undefined}">
+    <div class='property-grid-input-group'>
+        <input type='text'
+                ng-class="{'validator-control-invalid':((textForm.$invalid && textForm.$dirty) || (textForm.$invalid && textForm.$visited)),
+            'validator-control':!((textForm.$invalid && textForm.$dirty) || (textForm.$invalid && textForm.$visited)),
+            'ng-dirty':textForm.$dirty,
+            'validator-control-warn': !textForm.$invalid && textForm.getWarningStatus()}"
+                ng-model='textCtrl.value'
+                ng-required='textCtrl.validation.required'
+                ng-minlength='textCtrl.validation.minlength'
+                ng-maxlength='textCtrl.validation.maxlength'
+                ng-pattern='textCtrl.validation.pattern'
+                ng-blur="textCtrl.ngBlur()"
+                sit-change="textCtrl.sitChange"
+                ng-disabled="textCtrl.ngDisabled"
+                ng-focus="textCtrl.ngFocus()"
+                placeholder={{textCtrl.placeholder}}
+                sit-form-input-validator />
+    </div>
+</ng-form>

@@ -1,0 +1,1588 @@
+﻿<?xml version="1.0" encoding="utf-8"?><projectmanifest>
+  <header>
+    <manifestversion>11.0</manifestversion>
+    <platformversion>11.0</platformversion>
+    <type>Library</type>
+    <name>Siemens.SimaticIT.CHR_OP</name>
+    <shortname>CHR_OP</shortname>
+    <description>Runtime Characteristic Management</description>
+    <version>14.04.00</version>
+    <companyname>Siemens.SimaticIT</companyname>
+    <author>Siemens.SimaticIT</author>
+    <hash>EIk32lVCrkZqaEpCt+GnCvGR6kh/MaaJMNR5FkwnOY0=</hash>
+    <modelHash>ce1iNwv2/twL0et/eFOBMKbqsVOvqdLi5WrE3IqHES8=</modelHash>
+    <modelHashSections>
+      <modelHashSection>
+        <name>projectConfigModelHash</name>
+        <hash>k3LNlutLqmu1s8bL+6EYrRvfxBX10DAmGwABdsaEOWQ=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>dataModelHash</name>
+        <hash>Oy21LagS+hlyttUZHIJpBd+LWOsClLCFNwxElB9w1uI=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>commandModelHash</name>
+        <hash>PAJWXy58k7OFJUixrY+fMdx8gzll58jKZX8u/L3uOB8=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>aliasModelHash</name>
+        <hash>cdWtFof25lUoH+wgMZZEtJGL5k7aBVT7Ae5HtNcbGxs=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>eventModelHash</name>
+        <hash>GDjCrQwsbWPe2aMtWtB+e4OcUSdZqSAqssxphuQ813Y=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>typeModelHash</name>
+        <hash>j0rQLloLfezcdw55nqWetjAoXKMlWFEWEXueWzxWdTc=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>securityModelHash</name>
+        <hash>cdWtFof25lUoH+wgMZZEtJGL5k7aBVT7Ae5HtNcbGxs=</hash>
+      </modelHashSection>
+    </modelHashSections>
+    <uiHash>na</uiHash>
+    <canbeextended>false</canbeextended>
+    <domain>OperationalData</domain>
+  </header>
+  <reference>
+    <functionalblocks>
+      <functionalblock>
+        <name>Siemens.SimaticIT.UDM_RF</name>
+        <version>07.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.OpcenterEX.FN.DEF_MS</name>
+        <version>05.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.ES_MS</name>
+        <version>05.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.ES_SD</name>
+        <version>05.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.TSK_MS</name>
+        <version>09.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.BPF_MS</name>
+        <version>06.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.MAT_MS</name>
+        <version>05.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.MAT_OP</name>
+        <version>06.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.EQU_MS</name>
+        <version>08.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.EQU_OP</name>
+        <version>08.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.OpcenterEX.FN.NUM_OP</name>
+        <version>02.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.CHR_MS</name>
+        <version>10.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+    </functionalblocks>
+    <extensions></extensions>
+  </reference>
+  <artifacts>
+    <commands><command>
+                        <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands.CreateRuntimeChrReprContainer</name>
+                        <shortname>CreateRuntimeChrReprContainer</shortname>
+                        <description>Creates a Runtime Characteristic Representation Container with its Runtime Characteristic Representations entities.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands.CreateRuntimeChrReprContainerHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.CHR_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands.CreateInspectionAcquisitionContext</name>
+                        <shortname>CreateInspectionAcquisitionContext</shortname>
+                        <description>Creates an Inspection Acquisition Context.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands.CreateInspectionAcquisitionContextHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.CHR_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands.CreateSample</name>
+                        <shortname>CreateSample</shortname>
+                        <description>Creates an Inspection Sample.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands.CreateSampleHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.CHR_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands.CreateInspectionValue</name>
+                        <shortname>CreateInspectionValue</shortname>
+                        <description>Creates an Inspection Value.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands.CreateInspectionValueHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.CHR_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands.UpdateInspectionValue</name>
+                        <shortname>UpdateInspectionValue</shortname>
+                        <description>Updates the value of an inspection value.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands.UpdateInspectionValueHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.CHR_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands.CreateVisualDetectedFailure</name>
+                        <shortname>CreateVisualDetectedFailure</shortname>
+                        <description>Creates a visual detected failure.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands.CreateVisualDetectedFailureHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.CHR_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands.UpdateVisualDetectedFailure</name>
+                        <shortname>UpdateVisualDetectedFailure</shortname>
+                        <description>Updates the value of a visual detected failure.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands.UpdateVisualDetectedFailureHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.CHR_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands.DeleteRuntimeChrReprContainer</name>
+                        <shortname>DeleteRuntimeChrReprContainer</shortname>
+                        <description>Deletes an existing Runtime Characteristic Representation container.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands.DeleteRuntimeChrReprContainerHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.CHR_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands.DeleteRuntimeChrRepresentation</name>
+                        <shortname>DeleteRuntimeChrRepresentation</shortname>
+                        <description>Deletes an existing Runtime Characteristic Representation.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands.DeleteRuntimeChrRepresentationHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.CHR_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands.CreateRuntimeChrRepresentation</name>
+                        <shortname>CreateRuntimeChrRepresentation</shortname>
+                        <description>Add Runtime Characteristic Representations entities to an existing Runtime Characteristic Representation Container.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands.CreateRuntimeChrRepresentationHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.CHR_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands.AssociateFailureToInspectionValue</name>
+                        <shortname>AssociateFailureToInspectionValue</shortname>
+                        <description>Associates a Failure to an Inspection Value</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands.AssociateFailureToInspectionValueHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.CHR_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands.DisassociateFailureFromInspectionValue</name>
+                        <shortname>DisassociateFailureFromInspectionValue</shortname>
+                        <description>Removes the association between the InspectionValue and the Failure</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands.DisassociateFailureFromInspectionValueHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.CHR_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands.AddPointToVisualFailure</name>
+                        <shortname>AddPointToVisualFailure</shortname>
+                        <description>Add a Point to a Visual Detected Failure</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands.AddPointToVisualFailureHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.CHR_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands.UpdateInspectionSamplewithES</name>
+                        <shortname>UpdateInspectionSamplewithES</shortname>
+                        <description>Updates the value of an inspection sample.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands.UpdateInspectionSamplewithESHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.CHR_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands.UpdatePartBasedInspectionExecutionCounter</name>
+                        <shortname>UpdatePartBasedInspectionExecutionCounter</shortname>
+                        <description>Updates the Inspection Execution Engine.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands.UpdatePartBasedInspectionExecutionCounterHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.CHR_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands.SetMandatoryExecutionsCompleted</name>
+                        <shortname>SetMandatoryExecutionsCompleted</shortname>
+                        <description>Sets the MandatoryExecutionsCompleted property of a RuntimeCharacteristicRepresentation.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands.SetMandatoryExecutionsCompletedHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.CHR_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands.UpdateChrReprRuntimeNumber</name>
+                        <shortname>UpdateChrReprRuntimeNumber</shortname>
+                        <description>Updates the Characteristic Representation Runtime Number of an Inspection Execution Engine.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands.UpdateChrReprRuntimeNumberHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.CHR_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands.CreateCandidateSerial</name>
+                        <shortname>CreateCandidateSerial</shortname>
+                        <description>Creates a Candidate Serial.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands.CreateCandidateSerialHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.CHR_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands.AddInspectionSample</name>
+                        <shortname>AddInspectionSample</shortname>
+                        <description>Create Sample</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands.AddInspectionSampleHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.CHR_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands.DeleteCandidateSerial</name>
+                        <shortname>DeleteCandidateSerial</shortname>
+                        <description>Deletes the Candidate Serial.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands.DeleteCandidateSerialHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.CHR_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands.AcquireCharacteristicValues</name>
+                        <shortname>AcquireCharacteristicValues</shortname>
+                        <description>It will get the Characteristics values from the 3rd party</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands.AcquireCharacteristicValuesHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.CHR_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands.SetCharacteristicSpecificationAcquisitionBehavior</name>
+                        <shortname>SetCharacteristicSpecificationAcquisitionBehavior</shortname>
+                        <description>It will set the Characteristic Specification Acquisition behaviour. </description>
+                        <assembly>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands.SetCharacteristicSpecificationAcquisitionBehaviorHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.CHR_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands.SetCharacteristicsValue</name>
+                        <shortname>SetCharacteristicsValue</shortname>
+                        <description>Set the characteristics values after acquire button </description>
+                        <assembly>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands.SetCharacteristicsValueHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.CHR_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands.AddTimeBasedInspectionExecutionCounter</name>
+                        <shortname>AddTimeBasedInspectionExecutionCounter</shortname>
+                        <description>Adding the time based Execution Counter</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands.AddTimeBasedInspectionExecutionCounterHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.CHR_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands.StartTimeBasedInspectionExecutionCounter</name>
+                        <shortname>StartTimeBasedInspectionExecutionCounter</shortname>
+                        <description>Activate the Time based Inspection Counter</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands.StartTimeBasedInspectionExecutionCounterHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.CHR_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands.PauseTimeBasedInspectionExecutionCounter</name>
+                        <shortname>PauseTimeBasedInspectionExecutionCounter</shortname>
+                        <description>Pause the Execution Counter</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands.PauseTimeBasedInspectionExecutionCounterHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.CHR_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands.ResumeTimeBasedInspectionExecutionCounter</name>
+                        <shortname>ResumeTimeBasedInspectionExecutionCounter</shortname>
+                        <description>Resume Time Based Inspection Execution Counter</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands.ResumeTimeBasedInspectionExecutionCounterHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.CHR_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands.CompleteTimeBasedInspectionExecutionCounter</name>
+                        <shortname>CompleteTimeBasedInspectionExecutionCounter</shortname>
+                        <description>Is called when the Time Based Inspection Execution is completed</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands.CompleteTimeBasedInspectionExecutionCounterHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.CHR_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands.DeleteTimeBasedInspectionExecutionCounter</name>
+                        <shortname>DeleteTimeBasedInspectionExecutionCounter</shortname>
+                        <description>Delete the Time Based Execution Engine</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands.DeleteTimeBasedInspectionExecutionCounterHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.CHR_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands.ResetTimeBasedInspectionTimer</name>
+                        <shortname>ResetTimeBasedInspectionTimer</shortname>
+                        <description>Reset the time based inspection timer</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands.ResetTimeBasedInspectionTimerHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.CHR_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands.ConfirmInspectionSample</name>
+                        <shortname>ConfirmInspectionSample</shortname>
+                        <description>Confirms the retrieved Inspection sample value. Once confirmed, the value cannot be changed anymore.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands.ConfirmInspectionSampleHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.CHR_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands.CreateInspectionOrderFromBoQ</name>
+                        <shortname>CreateInspectionOrderFromBoQ</shortname>
+                        <description>Command to create Inspection Order from Bill Of Quality</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands.CreateInspectionOrderFromBoQHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.CHR_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands.ReleaseInspectionOrder</name>
+                        <shortname>ReleaseInspectionOrder</shortname>
+                        <description>Release Inspection Order Command Handler</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands.ReleaseInspectionOrderHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.CHR_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands.CompleteInspectionOrder</name>
+                        <shortname>CompleteInspectionOrder</shortname>
+                        <description>Changes Status of Inspection Order to Complete</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands.CompleteInspectionOrderHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.CHR_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands.CreateInspectionOrderFromInspectionOperation</name>
+                        <shortname>CreateInspectionOrderFromInspectionOperation</shortname>
+                        <description>Command to create Inspection Order from Bill Of Quality</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands.CreateInspectionOrderFromInspectionOperationHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.CHR_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands.DeleteInspectionOrder</name>
+                        <shortname>DeleteInspectionOrder</shortname>
+                        <description>Command handler will delete the selected Inspection order and the associated Inspection Order Operations</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands.DeleteInspectionOrderHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.CHR_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands.UpdateUnitBasedInspectionExecutionCounter</name>
+                        <shortname>UpdateUnitBasedInspectionExecutionCounter</shortname>
+                        <description>Updates the Unit based Inspection Execution Engine.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands.UpdateUnitBasedInspectionExecutionCounterHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.CHR_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands.SetInspectionOrderOperationToWorkProcess</name>
+                        <shortname>SetInspectionOrderOperationToWorkProcess</shortname>
+                        <description>Associates the Work Process to an Inspection Order Operation.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands.SetInspectionOrderOperationToWorkProcessHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.CHR_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands.UpdateInspectionOrderOperationToWorkProcess</name>
+                        <shortname>UpdateInspectionOrderOperationToWorkProcess</shortname>
+                        <description>Updates the properties of InspectionOrderOperationWorkProcess. For example, the IsSampleCreated property is updated with the respective boolean value. A True value indicates a Sample is created.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands.UpdateInspectionOrderOperationToWorkProcessHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.CHR_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands.MarkForCleaningInspectionOrderAndOperation</name>
+                        <shortname>MarkForCleaningInspectionOrderAndOperation</shortname>
+                        <description>Marks the Inspection Order and Inspection Order Operation for cleaning. Such as, it sets the ToBeCleaned property of Inspection Order and Inspection Order Operation entities to True.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands.MarkForCleaningInspectionOrderAndOperationHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.CHR_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands.MarkForCleaningInspectionAcquisitionContext</name>
+                        <shortname>MarkForCleaningInspectionAcquisitionContext</shortname>
+                        <description>Marks the Inspection Acquisition Context for cleaning. Such as, it sets the ToBeCleaned property of InspectionAcquisitionContext entity to True.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands.MarkForCleaningInspectionAcquisitionContextHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.CHR_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands.MarkForCleaningInspectionOrderOperationWorkProcess</name>
+                        <shortname>MarkForCleaningInspectionOrderOperationWorkProcess</shortname>
+                        <description>Marks the Work Process of an Inspection Order Operation for cleaning. Such as, it sets the ToBeCleaned property of InspectionOrderOperationWorkProcess entity to True.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands.MarkForCleaningInspectionOrderOperationWorkProcessHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.CHR_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands.MarkForCleaningInspectionSample</name>
+                        <shortname>MarkForCleaningInspectionSample</shortname>
+                        <description>Marks the acquired Sample of an Inspection for cleaning. Such as, it sets the ToBeCleaned property of InspectionSample entity to True.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands.MarkForCleaningInspectionSampleHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.CHR_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands.MarkForCleaningRuntimeCharacteristicRepresentationContainer</name>
+                        <shortname>MarkForCleaningRuntimeCharacteristicRepresentationContainer</shortname>
+                        <description>Marks the Runtime Characteristic Representation Container for cleaning. Such as, it sets the ToBeCleaned property of RuntimeCharacteristicRepresentationContainer entity to True. </description>
+                        <assembly>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands.MarkForCleaningRuntimeCharacteristicRepresentationContainerHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.CHR_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands.MarkForDeletionInspectionExecutionEngine</name>
+                        <shortname>MarkForDeletionInspectionExecutionEngine</shortname>
+                        <description>Marks the InspectionExecutionEngine entity for deletion. Such as, it sets the IsDeleted property of InspectionExecutionEngine entity to True.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands.MarkForDeletionInspectionExecutionEngineHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.CHR_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands.MarkForDeletionTimeBasedInspectionExecutionEngine</name>
+                        <shortname>MarkForDeletionTimeBasedInspectionExecutionEngine</shortname>
+                        <description>Marks the TimeBasedInspectionExecutionEngine entity for deletion. Such as, it sets the IsDeleted property of TimeBasedInspectionExecutionEngine entity to True.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands.MarkForDeletionTimeBasedInspectionExecutionEngineHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.CHR_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands.FireEventOnCommitQualityInspectionExecutionNeeded</name>
+                        <shortname>FireEventOnCommitQualityInspectionExecutionNeeded</shortname>
+                        <description>Prepares a QualityInspectionExecutionNeeded event and fire it on transaction commit.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands.FireEventOnCommitQualityInspectionExecutionNeededHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.CHR_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands.CreateInspectionValueListForAutomation</name>
+                        <shortname>CreateInspectionValueListForAutomation</shortname>
+                        <description>Creates a set of Inspection Value.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands.CreateInspectionValueListForAutomationHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.CHR_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands.UpdateInspectionValueList</name>
+                        <shortname>UpdateInspectionValueList</shortname>
+                        <description>Updates a list of inspection values.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands.UpdateInspectionValueListHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.CHR_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command></commands>
+    <commandActions></commandActions>
+    <events><event>
+                <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Events.RuntimeVisualFailureTraced</name>
+                <shortname>RuntimeVisualFailureTraced</shortname>
+                <description> This event is triggered whenever a visual Failure is traced during a Quality Inspection.</description>
+                <assembly>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Events, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                <dotneteventtype></dotneteventtype>
+                <eventtype>Application</eventtype>
+                <domain>OperationalData</domain>
+                <taglist>
+                </taglist>
+                <securable>true</securable>
+        </event><event>
+                <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Events.RuntimeAttributiveOrVariableFailureTraced</name>
+                <shortname>RuntimeAttributiveOrVariableFailureTraced</shortname>
+                <description> This event is triggered whenever a Failure on an attribute or a variable is traced during a Quality Inspection.</description>
+                <assembly>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Events, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                <dotneteventtype></dotneteventtype>
+                <eventtype>Application</eventtype>
+                <domain>OperationalData</domain>
+                <taglist>
+                </taglist>
+                <securable>true</securable>
+        </event><event>
+                <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Events.OnCompleteInspectionSampleScenarioInstance</name>
+                <shortname>OnCompleteInspectionSampleScenarioInstance</shortname>
+                <description> ///This event is triggered when the ScenarioInstance has been approved and there are no pending signatures for approval for the Inspection Sample.</description>
+                <assembly>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Events, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                <dotneteventtype></dotneteventtype>
+                <eventtype>Application</eventtype>
+                <domain>OperationalData</domain>
+                <taglist>
+                </taglist>
+                <securable>true</securable>
+        </event><event>
+                <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Events.QualityInspectionExecutionNeeded</name>
+                <shortname>QualityInspectionExecutionNeeded</shortname>
+                <description> Indicates whether the Quality Inspection is needed.</description>
+                <assembly>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Events, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                <dotneteventtype></dotneteventtype>
+                <eventtype>Application</eventtype>
+                <domain>OperationalData</domain>
+                <taglist>
+                </taglist>
+                <securable>true</securable>
+        </event><event>
+                <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Events.UpdateContainerUI</name>
+                <shortname>UpdateContainerUI</shortname>
+                <description> This event is riggered when the MandatoryExecutionsCompleted property of a Runtime Characteristic Representation is updated.</description>
+                <assembly>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Events, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                <dotneteventtype></dotneteventtype>
+                <eventtype>Application</eventtype>
+                <domain>OperationalData</domain>
+                <taglist>
+                </taglist>
+                <securable>true</securable>
+        </event><event>
+                <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Events.PartBasedInspectionSampleCreated</name>
+                <shortname>PartBasedInspectionSampleCreated</shortname>
+                <description> This event is triggered when an Inspection Sample of the Runtime Characteristic Representation having the frequency as PartBased is created. </description>
+                <assembly>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Events, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                <dotneteventtype></dotneteventtype>
+                <eventtype>Application</eventtype>
+                <domain>OperationalData</domain>
+                <taglist>
+                </taglist>
+                <securable>true</securable>
+        </event><event>
+                <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Events.DelayedExecution</name>
+                <shortname>DelayedExecution</shortname>
+                <description> Indicates whether the Quality Inspection is needed.</description>
+                <assembly>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Events, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                <dotneteventtype></dotneteventtype>
+                <eventtype>Application</eventtype>
+                <domain>OperationalData</domain>
+                <taglist>
+                </taglist>
+                <securable>true</securable>
+        </event><event>
+                <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Events.TimeBasedInspectionSampleCreated</name>
+                <shortname>TimeBasedInspectionSampleCreated</shortname>
+                <description> This event is triggered when an Inspection Sample of the Runtime Characteristic Representation having the frequency as PartBased is created. </description>
+                <assembly>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Events, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                <dotneteventtype></dotneteventtype>
+                <eventtype>Application</eventtype>
+                <domain>OperationalData</domain>
+                <taglist>
+                </taglist>
+                <securable>true</securable>
+        </event><event>
+                <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Events.TimeBasedExecutionStatusChanged</name>
+                <shortname>TimeBasedExecutionStatusChanged</shortname>
+                <description> Time Based Execution Status Changed</description>
+                <assembly>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Events, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                <dotneteventtype></dotneteventtype>
+                <eventtype>Application</eventtype>
+                <domain>OperationalData</domain>
+                <taglist>
+                </taglist>
+                <securable>true</securable>
+        </event><event>
+                <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Events.UnitBasedInspectionSampleCreated</name>
+                <shortname>UnitBasedInspectionSampleCreated</shortname>
+                <description> This event is triggered when an Inspection Sample of the Runtime Characteristic Representation having the frequency as UnitBased is created. </description>
+                <assembly>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Events, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                <dotneteventtype></dotneteventtype>
+                <eventtype>Application</eventtype>
+                <domain>OperationalData</domain>
+                <taglist>
+                </taglist>
+                <securable>true</securable>
+        </event><event>
+                <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Events.InspectionExecutionChrReprRuntimeNumberChanged</name>
+                <shortname>InspectionExecutionChrReprRuntimeNumberChanged</shortname>
+                <description> This event is triggered when the CharacteristicRepresentationRuntimeNumber property of Inspection Execution Engine/ No.of Inspection of Serial is updated.</description>
+                <assembly>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Events, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                <dotneteventtype></dotneteventtype>
+                <eventtype>Application</eventtype>
+                <domain>OperationalData</domain>
+                <taglist>
+                </taglist>
+                <securable>true</securable>
+        </event><event>
+                <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Events.FailuresDetectedOnSample</name>
+                <shortname>FailuresDetectedOnSample</shortname>
+                <description> Indicates that a sample contains values with failures associated to a MTUs.</description>
+                <assembly>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Events, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                <dotneteventtype></dotneteventtype>
+                <eventtype>Application</eventtype>
+                <domain>OperationalData</domain>
+                <taglist>
+                </taglist>
+                <securable>true</securable>
+        </event><event>
+                <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Events.InspectionSampleConfirmed</name>
+                <shortname>InspectionSampleConfirmed</shortname>
+                <description> This event is triggered when an Inspection Sample is confirmed.</description>
+                <assembly>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Events, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                <dotneteventtype></dotneteventtype>
+                <eventtype>Application</eventtype>
+                <domain>OperationalData</domain>
+                <taglist>
+                </taglist>
+                <securable>true</securable>
+        </event></events>
+    <event_handlers><event_handler>
+<name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Events.DelayedExecutionHandlerShell</name>
+<assembly>Siemens.SimaticIT.CHR_OP.EventHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+<event_name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Events.DelayedExecution</event_name>
+<target_cpu>AnyCPU</target_cpu>
+<targetframework>netstandard2.0</targetframework>
+<dependencies></dependencies>
+</event_handler><event_handler>
+<name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Events.UpdateESInfoOnCompleteScenarioInstanceShell</name>
+<assembly>Siemens.SimaticIT.CHR_OP.EventHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+<event_name>Siemens.SimaticIT.SystemData.ES_SD.SDModel.Events.OnCompleteScenarioInstance</event_name>
+<target_cpu>AnyCPU</target_cpu>
+<targetframework>netstandard2.0</targetframework>
+<dependencies></dependencies>
+</event_handler><event_handler>
+<name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Events.DecreaseChrReprRuntimeNumberShell</name>
+<assembly>Siemens.SimaticIT.CHR_OP.EventHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+<event_name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Events.PartBasedInspectionSampleCreated</event_name>
+<target_cpu>AnyCPU</target_cpu>
+<targetframework>netstandard2.0</targetframework>
+<dependencies></dependencies>
+</event_handler><event_handler>
+<name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Events.TimeBasedInspectionTimerResetShell</name>
+<assembly>Siemens.SimaticIT.CHR_OP.EventHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+<event_name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Events.TimeBasedInspectionSampleCreated</event_name>
+<target_cpu>AnyCPU</target_cpu>
+<targetframework>netstandard2.0</targetframework>
+<dependencies></dependencies>
+</event_handler><event_handler>
+<name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Events.DecreaseChrReprRuntimeNumberUnitBasedShell</name>
+<assembly>Siemens.SimaticIT.CHR_OP.EventHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+<event_name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Events.UnitBasedInspectionSampleCreated</event_name>
+<target_cpu>AnyCPU</target_cpu>
+<targetframework>netstandard2.0</targetframework>
+<dependencies></dependencies>
+</event_handler></event_handlers>
+    <signals></signals>
+    <readingFunctions></readingFunctions>
+    <entities><entity>
+      <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.DataModel.ReadingModel.RuntimeCharacteristicRepresentation</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.DataModel.ReadingModel.RuntimeCharacteristicRepresentationContainer</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.DataModel.ReadingModel.InspectionValue</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.DataModel.ReadingModel.InspectionSample</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.DataModel.ReadingModel.InspectionAcquisitionContext</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.DataModel.ReadingModel.VisualDetectedFailure</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.DataModel.ReadingModel.Coordinates</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.DataModel.ReadingModel.InspectionExecutionEngine</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.DataModel.ReadingModel.PartBasedInspectionExecutionCriteria</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.DataModel.ReadingModel.PartBasedChrReprContainer</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.DataModel.ReadingModel.CandidateSerial</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.DataModel.ReadingModel.TimeBasedInspectionExecutionEngine</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.DataModel.ReadingModel.InspectionOrder</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.DataModel.ReadingModel.InspectionOrderOperation</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.DataModel.ReadingModel.InspectionOrderOperationWorkProcess</name>
+      <securable>true</securable>
+    </entity></entities>
+    <datamodels><datamodel>
+      <assembly>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>WR</mode>
+      <domain>OperationalData</domain>
+    </datamodel><datamodel>
+      <assembly>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.ReadingModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>RD</mode>
+      <domain>OperationalData</domain>
+    </datamodel><datamodel>
+      <assembly>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Types, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>WR</mode>
+      <domain>OperationalData</domain>
+    </datamodel><datamodel>
+      <assembly>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Types.ReadingModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>RD</mode>
+      <domain>OperationalData</domain>
+    </datamodel></datamodels>
+    <externaldatamodels></externaldatamodels>
+    <appdatamodels></appdatamodels>
+    <uimodules></uimodules>
+    <uicomponents></uicomponents>
+    <wr_entities><wr_entity>
+      <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.DataModel.RuntimeCharacteristicRepresentation</name>
+      <shortname>RuntimeCharacteristicRepresentation</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.DataModel.RuntimeCharacteristicRepresentationContainer</parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.DataModel.RuntimeCharacteristicRepresentationContainer</root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.DataModel.RuntimeCharacteristicRepresentationContainer</name>
+      <shortname>RuntimeCharacteristicRepresentationContainer</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity></parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity></root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.DataModel.InspectionValue</name>
+      <shortname>InspectionValue</shortname>
+      <haslogicalkey>false</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.DataModel.InspectionSample</parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.DataModel.InspectionSample</root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.DataModel.InspectionSample</name>
+      <shortname>InspectionSample</shortname>
+      <haslogicalkey>false</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity></parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity></root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.DataModel.InspectionAcquisitionContext</name>
+      <shortname>InspectionAcquisitionContext</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity></parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity></root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.DataModel.VisualDetectedFailure</name>
+      <shortname>VisualDetectedFailure</shortname>
+      <haslogicalkey>false</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity></parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity></root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.DataModel.Coordinates</name>
+      <shortname>Coordinates</shortname>
+      <haslogicalkey>false</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.DataModel.VisualDetectedFailure</parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.DataModel.VisualDetectedFailure</root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.DataModel.InspectionExecutionEngine</name>
+      <shortname>InspectionExecutionEngine</shortname>
+      <haslogicalkey>false</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity></parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity></root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.DataModel.PartBasedInspectionExecutionCriteria</name>
+      <shortname>PartBasedInspectionExecutionCriteria</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity></parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity></root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.DataModel.PartBasedChrReprContainer</name>
+      <shortname>PartBasedChrReprContainer</shortname>
+      <haslogicalkey>false</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity></parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity></root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.DataModel.CandidateSerial</name>
+      <shortname>CandidateSerial</shortname>
+      <haslogicalkey>false</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity></parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity></root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.DataModel.TimeBasedInspectionExecutionEngine</name>
+      <shortname>TimeBasedInspectionExecutionEngine</shortname>
+      <haslogicalkey>false</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity></parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity></root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.DataModel.InspectionOrder</name>
+      <shortname>InspectionOrder</shortname>
+      <haslogicalkey>false</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity></parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity></root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.DataModel.InspectionOrderOperation</name>
+      <shortname>InspectionOrderOperation</shortname>
+      <haslogicalkey>false</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.DataModel.InspectionOrder</parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.DataModel.InspectionOrder</root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.DataModel.InspectionOrderOperationWorkProcess</name>
+      <shortname>InspectionOrderOperationWorkProcess</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity></parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity></root_entity>
+      <base_entity></base_entity>
+    </wr_entity></wr_entities>
+    <wr_facets></wr_facets>
+  </artifacts>
+  <security>
+    <roles></roles>
+  </security>
+  <runtime>
+    <event_subscriptions></event_subscriptions>
+    <handlergroups></handlergroups>
+  </runtime>
+</projectmanifest>

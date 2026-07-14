@@ -1,0 +1,17 @@
+﻿
+<div class="pi-component-title">{{vm.componentDetailsTitle}}</div>
+
+<div class="pi-command-bar-side-panel" ng-show="vm.isEditEnabled && vm.showEdit">
+    <button ng-click="vm.onEditClick()" title="{{vm.editCmdLabel}}" class="btn btn-default active" ng-show="vm.showEditButton">{{vm.editCmdLabel}}</button>
+</div>
+<div style="padding-top: 50px;" ng-show="vm.showDetails">
+    <sit-property-grid sit-id="workMasterPropertyGrid"
+                       sit-layout="Horizontal"
+                       sit-type="Fixed"
+                       sit-mode="edit"
+                       sit-columns="1"
+                       sit-data="vm.workMasterPropertyGridData">
+    </sit-property-grid>
+</div>
+<sit-pi-work-master-create id="creationPage" on-register-create-api="vm.onRegisterCreateApi(api)" ng-show="vm.isEditEnabled && !vm.showEdit"></sit-pi-work-master-create>
+

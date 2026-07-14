@@ -1,0 +1,96 @@
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>0721b9bb-0924-48af-a3bb-15c5a817b564</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>OR.Ordenes.Installer</RootNamespace>
+    <AssemblyName>OR.Ordenes.Installer</AssemblyName>
+    <Name>Ordenes.Installer</Name>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FunctionalBlockType>ExtendedProject</FunctionalBlockType>
+    <FunctionalBlockVersion>01.00.00</FunctionalBlockVersion>
+    <FunctionalBlockName>Ordenes</FunctionalBlockName>
+    <FunctionalBlockPrefix>OR</FunctionalBlockPrefix>
+    <FunctionalBlockModels>OR.PICore.Ordenes.ORPOMModel</FunctionalBlockModels>
+    <FunctionalBlockDescription>
+    </FunctionalBlockDescription>
+    <SitPlatformVersion>11.0</SitPlatformVersion>
+    <AutoDeployPackage>True</AutoDeployPackage>
+    <CanBeExtended>False</CanBeExtended>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU'  ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Release\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <AppName>PICore</AppName>
+    <CertificateName />
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Config" />
+    <Folder Include="ExternalDependencies" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Config\OR.Ordenes.Dbinit.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Config\OR.Ordenes.References.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Config\OR.Ordenes.ApplicationLog.en-US.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Ordenes.CommandHandler\Ordenes.CommandHandler.csproj">
+      <Name>Ordenes.CommandHandler</Name>
+      <Project>{5c21469d-47e2-4604-b8d8-79c2324d19a7}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Ordenes.EventHandler\Ordenes.EventHandler.csproj">
+      <Name>Ordenes.EventHandler</Name>
+      <Project>{29daa07f-2467-4ac3-a2f9-046006e86599}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Ordenes.ORPOMModel\Ordenes.ORPOMModel.pmproj">
+      <Name>Ordenes.ORPOMModel</Name>
+      <Project>{55ef912b-cc0c-4bd9-b505-a51e11ef35d2}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Ordenes.ReadingFunctionHandler\Ordenes.ReadingFunctionHandler.csproj">
+      <Name>Ordenes.ReadingFunctionHandler</Name>
+      <Project>{75103bfe-bc63-4868-a4b7-0c0ce9991f51}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Ordenes.RemoteArtifacts\Ordenes.RemoteArtifacts.csproj">
+      <Name>Ordenes.RemoteArtifacts</Name>
+      <Project>{74b3a601-afdf-4f28-a09d-205dd78878ff}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Ordenes.UserInterface\Ordenes.UserInterface.csproj">
+      <Name>Ordenes.UserInterface</Name>
+      <Project>{deca3f0e-af39-fc49-02db-b3bada6b793d}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(SITUnifiedVSToolingPlatformBin)\Siemens.SimaticIt.Build.Installer.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

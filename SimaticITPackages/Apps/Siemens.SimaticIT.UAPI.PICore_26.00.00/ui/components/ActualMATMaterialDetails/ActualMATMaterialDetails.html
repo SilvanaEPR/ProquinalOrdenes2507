@@ -1,0 +1,27 @@
+﻿<div class="content-area content-area-relative" style="height: 100%" id="ActualMaterialList">
+    <div class="pi-component-title" ng-show="vm.isComponentTitleVisible">{{vm.actualMaterialDetailsComponentTitle}}</div>
+    <div style="float:right;padding-right:12px">
+        <button ng-click="vm.close()" title="{{vm.translatedCloseButton}}" class="btn btn-default active" ng-show="vm.isCloseButtonVisible">{{vm.translatedCloseButton}}</button>
+    </div>
+    <div style="padding-top: 45px;padding-left:8px" ng-show="vm.isNotInMD">
+        <sit-property-grid sit-id="workOrderOperationactualmatmaterialdetailsPropertyGrid"
+                           sit-layout="Horizontal"
+                           sit-type="Fixed"
+                           sit-mode="edit"
+                           sit-columns="2"
+                           sit-rows="1"
+                           sit-data="vm.workOrderOperationactualmatmaterialdetailsPropertyGridData">
+        </sit-property-grid>
+    </div>
+    <div ng-class="{'padded' : vm.isNotInMD }">
+        <sit-pi-table sit-pi-table-id="actualMaterialDetailsTable"
+                      sit-config="vm.actualmatmaterialdetailsTableConfig"
+                      sit-pi-toolbar-buttons="vm.actualmatmaterialdetailsToolbarButtons"
+                      on-command-clicked="vm.onActionClicked(command)"
+                      sit-pi-toolbar-visible="vm.toolbarVisible"
+                      sit-pi-config="vm.actualmatmaterialdetailsDataConfig"
+                      sit-view-mode="grid">
+        </sit-pi-table>
+    </div>
+</div>
+

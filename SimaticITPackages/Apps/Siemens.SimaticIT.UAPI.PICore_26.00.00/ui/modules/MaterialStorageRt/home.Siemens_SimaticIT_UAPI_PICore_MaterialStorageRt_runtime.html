@@ -1,0 +1,53 @@
+
+<sit-container sit-isswac="False">
+	<div gridster="mashup.layOutOptions" >
+ 
+		<sit-component style="display:none" 
+				grid-max-columns="{{mashup.layOutOptions.columns}}" grid-margin="{{mashup.layOutOptions.margins[0]}}" 
+				sit-name="runtime_mashup_1" sit-componentname="mashup" 
+				sit-type="ui" sit-source="sit-mashup" 
+				sit-left="0" sit-top="0" 
+				sit-rows="2" sit-cols="2" 
+				sit-flavor="ui">
+		</sit-component>   
+ 
+		<sit-component gridster-item ng-show="mashup.componentInstances[1].isVisible"
+				row="mashup.componentInstances[1].layout.row" col="mashup.componentInstances[1].layout.col" 
+				size-x="mashup.componentInstances[1].layout.sizeX" size-y="mashup.componentInstances[1].layout.sizeY" 
+				grid-max-columns="{{mashup.layOutOptions.columns}}" grid-margin="{{mashup.layOutOptions.margins[0]}}" 
+				sit-name="runtime_storagehierarchylist_2" sit-componentname="storagehierarchylist" 
+				sit-type="ui" sit-source="storagehierarchylist" 
+				sit-left="0" sit-top="0" 
+				sit-rows="5" sit-cols="12" 
+				sit-flavor="ui"
+				sit-contracts="mashup.componentInstances[1].contracts">
+		</sit-component>
+ 
+		<sit-component gridster-item ng-show="mashup.componentInstances[2].isVisible"
+				row="mashup.componentInstances[2].layout.row" col="mashup.componentInstances[2].layout.col" 
+				size-x="mashup.componentInstances[2].layout.sizeX" size-y="mashup.componentInstances[2].layout.sizeY" 
+				grid-max-columns="{{mashup.layOutOptions.columns}}" grid-margin="{{mashup.layOutOptions.margins[0]}}" 
+				sit-name="runtime_storagehierarchydetails_4" sit-componentname="storagehierarchydetails" 
+				sit-type="ui" sit-source="storagehierarchydetails" 
+				sit-left="0" sit-top="5" 
+				sit-rows="12" sit-cols="6" 
+				sit-flavor="ui"
+				sit-contracts="mashup.componentInstances[2].contracts">
+		</sit-component>
+ 
+		<sit-component gridster-item ng-show="mashup.componentInstances[3].isVisible"
+				row="mashup.componentInstances[3].layout.row" col="mashup.componentInstances[3].layout.col" 
+				size-x="mashup.componentInstances[3].layout.sizeX" size-y="mashup.componentInstances[3].layout.sizeY" 
+				grid-max-columns="{{mashup.layOutOptions.columns}}" grid-margin="{{mashup.layOutOptions.margins[0]}}" 
+				sit-name="runtime_storagehierarchyequipmentcontent_3" sit-componentname="storagehierarchyequipmentcontent" 
+				sit-type="ui" sit-source="storagehierarchyequipmentcontent" 
+				sit-left="6" sit-top="5" 
+				sit-rows="12" sit-cols="6" 
+				sit-flavor="ui"
+				sit-contracts="mashup.componentInstances[3].contracts">
+		</sit-component>
+		<sit-wire sit-name="DisableActions" sit-inputcomponents="runtime_mashup_1" sit-inputevents="onLoad" sit-outputcomponents="runtime_storagehierarchydetails_4,runtime_storagehierarchylist_2" sit-outputapis="setActionBarVisibility,setActionBarVisibility" sit-converters="mashup.DisableActionsConverter" sit-inputtypes="ui" sit-outputtypes="ui,ui"></sit-wire>
+		<sit-wire sit-name="onSelectionChanged" sit-inputcomponents="runtime_storagehierarchydetails_4" sit-inputevents="onEquipmentGraphNodeSelected" sit-outputcomponents="runtime_storagehierarchyequipmentcontent_3" sit-outputapis="setStorageHierarchyEquipmentContext" sit-converters="mashup.onSelectionChangedConverter" sit-inputtypes="ui" sit-outputtypes="ui"></sit-wire>
+		<sit-wire sit-name="selectItem" sit-inputcomponents="runtime_storagehierarchylist_2" sit-inputevents="onStorageHierarchySelected" sit-outputcomponents="runtime_storagehierarchydetails_4" sit-outputapis="setStorageHierarchyId" sit-converters="mashup.selectItemConverter" sit-inputtypes="ui" sit-outputtypes="ui"></sit-wire>
+	</div>
+</sit-container>

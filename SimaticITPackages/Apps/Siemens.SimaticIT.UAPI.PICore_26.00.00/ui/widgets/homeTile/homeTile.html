@@ -1,0 +1,20 @@
+﻿<div class="home-tile-container"
+     data-internal-id="{{tileConfig.id}}"
+     ng-class="{'home-tile-containter-s': tileConfig.sizeContainer == 's',
+                'home-tile-containter-m' : tileConfig.sizeContainer == 'm',
+                'home-tile-containter-l' : tileConfig.sizeContainer == 'l'}"
+     ng-click="navigate()">
+    <div class="home-tile-icon-container" title="{{tileConfig.description}}">
+        <div ng-if="tileConfig.fontIcon" class="fa {{tileConfig.icon}}" ng-style="style" ng-class="{'home-tile-icon-s': tileConfig.size == 's',
+                                                                        'home-tile-icon-m' : tileConfig.size == 'm',
+                                                                        'home-tile-icon-l' : tileConfig.size == 'l'}"></div>
+        <img src="{{tileConfig.icon}}" alt="tileConfig.label" ng-style="style" ng-class="{'home-tile-icon-s': tileConfig.size == 's',
+                                                                        'home-tile-icon-m' : tileConfig.size == 'm',
+                                                                        'home-tile-icon-l' : tileConfig.size == 'l', imgNotVisible: tileConfig.fontIcon==true} " style="width:64px; height:64px;"></img>
+    </div>
+    <div class="home-tile-text-container" ng-class="{'home-tile-font-s': tileConfig.sizeContainer == 's',
+                                                     'home-tile-font-m' : tileConfig.sizeContainer == 'm',
+                                                     'home-tile-font-l' : tileConfig.sizeContainer == 'l'}">
+        <div class="home-tile-text" title="{{tileConfig.label}}">{{tileConfig.label}}</div>
+    </div>
+</div>

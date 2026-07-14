@@ -1,0 +1,337 @@
+<script src="common/scripts/moment.js"></script>
+<script src="common/scripts/moment-with-locales.js"></script>
+
+
+
+
+<script>
+
+    //Make the DIV element draggable:
+    var outerdivclassname = "dialog-modal";
+    var headerdivclassname = "input-dialog-header";
+    //var headerdivclassname = "dialog-header-text";
+    dragElement(document.getElementsByClassName(outerdivclassname)[0]);
+
+    function dragElement(elmnt) {
+        var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+        if (document.getElementsByClassName(headerdivclassname)[0]) {
+
+            document.getElementsByClassName(headerdivclassname)[0].onmousedown = dragMouseDown;
+        } else {
+
+            elmnt.onmousedown = dragMouseDown;
+        }
+
+        function dragMouseDown(e) {
+            e = e || window.event;
+            e.preventDefault();
+            // get the mouse cursor position at startup:
+            pos3 = e.clientX;
+            pos4 = e.clientY;
+            document.onmouseup = closeDragElement;
+            // call a function whenever the cursor moves:
+            document.onmousemove = elementDrag;
+        }
+
+        function elementDrag(e) {
+            e = e || window.event;
+            e.preventDefault();
+            // calculate the new cursor position:
+            pos1 = pos3 - e.clientX;
+            pos2 = pos4 - e.clientY;
+            pos3 = e.clientX;
+            pos4 = e.clientY;
+            // set the element's new position:
+            elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+            elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+        }
+
+        function closeDragElement() {
+
+            document.onmouseup = null;
+            document.onmousemove = null;
+        }
+    }
+</script>
+
+
+<style>
+
+    #es-browse-signers 
+    {
+        max-width:100%;
+    }
+    #signs_accordion
+    {
+        max-width:100%;
+    }
+    #es-browse-signers .error_rectangle {
+        color: #DC0000;
+        text-align: left;
+        text-decoration: none;
+        font-family: 'Segoe UI',Arial;
+        font-size: 10.0pt;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 0px;
+        background-attachment: scroll;
+        background-color: rgb(251, 238, 237);
+        background-size: auto;
+        border-bottom-color: rgb(239, 187, 185);
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+        border-collapse: separate;
+        border-left-color: rgb(239, 187, 185);
+        border-left-style: solid;
+        border-left-width: 1px;
+        border-right-color: rgb(239, 187, 185);
+        border-right-style: solid;
+        border-right-width: 1px;
+        border-top-color: rgb(239, 187, 185);
+        border-top-style: solid;
+        border-top-width: 1px;
+        box-shadow: none;
+        display: block;
+        font-family: "Segoe UI", Arial;
+        font-size: 13.3333px;
+        height: 46px;
+        line-height: 18px;
+        pointer-events: auto;
+        width:100%;
+        -webkit-border-horizontal-spacing: 0px;
+        -webkit-border-vertical-spacing: 0px;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    }
+
+    #es-browse-signers .accordion_header {
+        background-color: #ffffff;
+        text-decoration: none !important;
+        border: none;
+        border-width: 0;
+        border-style: none;
+    }
+
+    #es-browse-signers .accordionGroup {
+        background-color: #ffffff;
+        text-decoration: none !important;
+        border: none;
+        border-width: 0;
+        border-style: none;
+    }
+
+    #es-browse-signers .isOpened {
+        transform: rotate(0deg);
+    }
+
+    #es-browse-signers .isClosed {
+        transform: rotate(270deg);
+    }
+
+    #es-browse-signers .card-group .card {
+        border: none !important;
+        border-width: 0;
+        border-style: none;
+        background-color: #ffffff;
+        overflow:auto;
+    }
+
+    #es-browse-signers .card-body {
+        background-color: #f0f0f0;
+        border: none !important;
+        border-width: 0;
+        border-style: none;
+    }
+
+    #es-browse-signers .card {
+        border: none !important;
+        border-width: 0;
+        border-style: none;
+        background-color: #ffffff;
+    }
+
+    #es-browse-signers .card-open {
+        border: none;
+        border-width: 0;
+        border-style: none;
+    }
+
+    #es-browse-signers .box {
+        height: 100%;
+        float: left;
+        display: block;
+    }
+
+    #es-browse-signers a:hover {
+        text-decoration: none !important;
+    }
+
+    #es-browse-signers a {
+        text-decoration: none !important;
+    }
+
+    #es-browse-signers a:hover span {
+            text-decoration: none;
+        }
+
+    #es-browse-signers .Signature_text_style {
+        color: #464646;
+        text-align: left;
+        text-decoration: none;
+        font-family: 'Segoe UI',Arial;
+        font-size: 9.0pt;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 0px;
+    }
+
+    #es-browse-signers .Paragraph {
+        color: #464646;
+        text-align: left;
+        text-decoration: none;
+        font-family: 'Segoe UI',Arial;
+        font-size: 12.5pt;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 0px;
+    }
+
+    #es-browse-signers .headersDIV {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    #es-browse-signers .progressheaderDIV {
+        height: 20px;
+        border: 1px solid #aaaaaa;
+        max-width:100%;
+    }
+
+        #es-browse-signers .progressheaderDIV .progress-bar {
+            height: 100%;
+        }
+
+    #es-browse-signers .signer_info_header {
+        color: #5A5A5A;
+        text-align: left;
+        text-decoration: none;
+        font-family: 'Segoe UI',Arial;
+        font-size: 9.0pt;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 0px;
+    }
+
+    #es-browse-signers .signer_info_text {
+        color: #464646;
+        text-align: left;
+        text-decoration: none;
+        font-family: 'Segoe UI',Arial;
+        font-size: 10.5pt;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 0px;
+        max-width:100%;
+    }
+
+    #globalDialogId {
+        position: absolute;
+        z-index: 9;
+    }
+
+    #es-browse-signers .dialog-header-text {
+        z-index: 10;
+    }
+    #es-browse-signers .collapsing {
+    -webkit-transition: none;
+    transition: none;
+    display: none;
+}
+
+    #es-browse-signers .align-center {
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    }
+
+</style>
+<div id="es-browse-signers">
+    <div>
+        <div>
+            <div class="headersDIV">
+                <span class="Paragraph">{{vm.config.description}}</span>
+            </div>
+            <div class="progressheaderDIV" style="">
+                <div class="progress-bar" role="progressbar" style="background-color: #55A0B9 !important; width: {{vm.config.progressvalue}}%;" aria-valuenow="{{vm.config.progressvalue}}" aria-valuemin="0" aria-valuemax="{{vm.config.signstocollect}}"></div>
+            </div>
+            <div class="headersDIV">
+                <span class="Signature_text_style">{{vm.config.signsleftdescription}}</span>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="signs_accordion" uib-accordion class="sortHead without_widgets_group" close-others="true">
+        <div uib-accordion-group ng-repeat="xxx in vm.config.items.SignatureInstances" is-open="isOpen" on-finish-render="ReStyle()" class="accordionGroup">
+            <div uib-accordion-heading class="accordion_header">
+                <table id="tablerowaccordionheader{{xxx.Id}}" style="width:100%" class="accordionGroup" ng-click="vm.Opened(isOpen, $index)">
+                    <tr>
+                        <td style="width:5%;padding:5px;">
+                            <div id="{{xxx.Id}}_imginfotable">
+                                <svg preserveAspectRatio="none" ng-class="{isOpened: isOpen, isClosed:!isOpen}" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" xml:space="preserve">                 
+                                <polygon class="aw-theme-iconOutline" fill="#464646" points="4,6 8,10 12,6 "></polygon>
+                        </svg>
+                            </div>
+                        </td>
+                        <td style="width:50%;padding:10px;">
+                            <div id="{{xxx.Id}}_maxleftinfotable" style="text-decoration: none;">
+                                <div id="{{xxx.Id}}_upper_infomaxleftinfotable" style="text-decoration: none !important;">
+                                    <span style="color: #5A5A5A;text-align: left;text-decoration: none !important;font-family: 'Segoe UI',Arial;font-size: 9.0pt;font-style: normal;font-weight: 700;line-height: 0px;">{{vm.Translate(xxx.Signer.Type)}}</span>
+
+                                </div>
+                                <div id="{{xxx.Id}}_upperinner_infomaxleftinfotable" style="text-decoration: none !important;">
+                                    <span style="color: #464646;text-align: left;text-decoration: none !important;font-family: 'Segoe UI',Arial;font-size: 10.5pt;font-style: normal;font-weight: 400;line-height: 0px;">{{xxx.Signer.Name}}</span>
+                                </div>
+                            </div>
+                        </td>
+                        <td style="width:40%;padding:10px;">
+                            <div id="{{xxx.Id}}_maxleftinfotable" style="text-decoration: none;">
+                                <div id="{{xxx.Id}}_upper_infomaxleftinfotable" style="text-decoration: none !important;">
+                                    <span style="color: #5A5A5A;text-align: left;text-decoration: none !important;font-family: 'Segoe UI',Arial;font-size: 9.0pt;font-style: normal;font-weight: 700;line-height: 0px;">{{vm.Translate('Meaning')}}</span>
+
+                                </div>
+                                <div id="{{xxx.Id}}_upperinner_infomaxleftinfotable" style="text-decoration: none !important;">
+                                    <span style="color: #464646;text-align: left;text-decoration: none !important;font-family: 'Segoe UI',Arial;font-size: 10.5pt;font-style: normal;font-weight: 400;line-height: 0px;">{{xxx.ShortReason}}</span>
+                                </div>
+
+                            </div>
+                        </td>
+                        <td style="width:5%;padding:5px;">
+                            <div id="{{xxx.Id}}_Initial_State" class="pie image firer ie-background commentable" alt="image" overlay="#464646" ng-hide="xxx.Status!='Initial'">
+                                <svg preserveAspectRatio="none" width="24" height="24" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1024 544v448q0 14-9 23t-23 9h-320q-14 0-23-9t-9-23v-64q0-14 9-23t23-9h224v-352q0-14 9-23t23-9h64q14 0 23 9t9 23zm416 352q0-148-73-273t-198-198-273-73-273 73-198 198-73 273 73 273 198 198 273 73 273-73 198-198 73-273zm224 0q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z" style="fill:#464646 !important;"></path></svg>
+                            </div>
+                            <div id="{{xxx.Id}}_Accepted_State" class="pie image firer ie-background commentable" alt="image" overlay="#464646" ng-hide="xxx.Status!='Approved'">
+                                <svg preserveAspectRatio="none" width="24" height="24" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1671 566q0 40-28 68l-724 724-136 136q-28 28-68 28t-68-28l-136-136-362-362q-28-28-28-68t28-68l136-136q28-28 68-28t68 28l294 295 656-657q28-28 68-28t68 28l136 136q28 28 28 68z" style="fill:#464646 !important;"></path></svg>
+                            </div>
+                            <div id="{{xxx.Id}}_Warning_State" class="pie image firer ie-background commentable" alt="image" overlay="#464646" ng-hide="xxx.Status!='Warning'">
+                                <svg preserveAspectRatio="none" width="24" height="24" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1024 1375v-190q0-14-9.5-23.5t-22.5-9.5h-192q-13 0-22.5 9.5t-9.5 23.5v190q0 14 9.5 23.5t22.5 9.5h192q13 0 22.5-9.5t9.5-23.5zm-2-374l18-459q0-12-10-19-13-11-24-11h-220q-11 0-24 11-10 7-10 21l17 457q0 10 10 16.5t24 6.5h185q14 0 23.5-6.5t10.5-16.5zm-14-934l768 1408q35 63-2 126-17 29-46.5 46t-63.5 17h-1536q-34 0-63.5-17t-46.5-46q-37-63-2-126l768-1408q17-31 47-49t65-18 65 18 47 49z" style="fill:#464646 !important;"></path></svg>
+                            </div>
+                            <div id="{{xxx.Id}}_Error_State" class="pie image firer ie-background commentable" alt="image" overlay="#464646" ng-hide="xxx.Status!='Rejected'">
+                                <svg preserveAspectRatio="none" width="24" height="24" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1490 1322q0 40-28 68l-136 136q-28 28-68 28t-68-28l-294-294-294 294q-28 28-68 28t-68-28l-136-136q-28-28-28-68t28-68l294-294-294-294q-28-28-28-68t28-68l136-136q28-28 68-28t68 28l294 294 294-294q28-28 68-28t68 28l136 136q28 28 28 68t-28 68l-294 294 294 294q28 28 28 68z" style="fill:#464646 !important;"></path></svg>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="collapse" uib-collapse="!isOpen">
+                <div id="{{xxx.Id}}_error" class="error_rectangle" ng-show="xxx.error.length>0">
+                    <span>{{xxx.error}}</span>
+                </div>
+                <div id="{{xxx.Id}}_header" ng-hide="vm.config.items.ValidationMode=='Approve'"></div>
+                <div class="align-center">
+                    <div id="{{xxx.Id}}_content"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

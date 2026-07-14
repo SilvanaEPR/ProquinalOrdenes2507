@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sections>
+  <Section engineeringLevel="LibraryFunctionalBlock" implementationName="2018-7-26-11-08-05" domainName="MasterData">
+    <Entity type="Siemens.SimaticIT.UAPI.MasterData.PIEquipment_MS.MSModel.DataModel.MaterialBehaviorType">
+      <Property name="NId" kind="Plain" value="FIFO" />
+      <Property name="Name" kind="Plain" value="FIFO" />
+      <Property name="Description" kind="Plain" value="First in First out" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.UAPI.MasterData.PIEquipment_MS.MSModel.DataModel.MaterialBehaviorType">
+      <Property name="NId" kind="Plain" value="MIXING" />
+      <Property name="Name" kind="Plain" value="MIXING" />
+      <Property name="Description" kind="Plain" value="Only one MTU into equipment" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.MasterData.EQU_MS.MSModel.DataModel.EquipmentType">
+      <Property name="NId" kind="Plain" value="PackagingArea" />
+      <Property name="Name" kind="Plain" value="Packaging Area" />
+      <Property name="Description" kind="Plain" value="Packaging Area Template" />
+      <Property name="IsDefault" kind="Plain" value="false" />
+      <Property name="LevelNId" kind="Plain" value="" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.MasterData.EQU_MS.MSModel.DataModel.EquipmentType">
+      <Property name="NId" kind="Plain" value="PackagingLine" />
+      <Property name="Name" kind="Plain" value="Packaging Line" />
+      <Property name="Description" kind="Plain" value="Packaging Line Template" />
+      <Property name="IsDefault" kind="Plain" value="false" />
+      <Property name="LevelNId" kind="Plain" value="" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.MasterData.EQU_MS.MSModel.DataModel.EquipmentType">
+      <Property name="NId" kind="Plain" value="PackagingUnit" />
+      <Property name="Name" kind="Plain" value="Packaging Unit" />
+      <Property name="Description" kind="Plain" value="Packaging Unit Template" />
+      <Property name="IsDefault" kind="Plain" value="false" />
+      <Property name="LevelNId" kind="Plain" value="" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.MasterData.EQU_MS.MSModel.DataModel.EquipmentTypeProperty">
+      <Property name="NId" kind="Plain" value="SecondaryProductionTerminal" />
+      <Property name="PropertyType" kind="Plain" value="Bool" />
+      <Property name="PropertyValue" kind="Plain" value="true" />
+      <Property name="Operational" kind="Plain" value="false" />
+      <Property name="EquipmentType" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.SimaticIT.MasterData.EQU_MS.MSModel.DataModel.EquipmentType">
+          <Property name="NId" kind="Plain" value="PackagingArea" />
+        </LogicalKey>
+      </Property>
+    </Entity>
+    <Entity type="Siemens.SimaticIT.MasterData.EQU_MS.MSModel.DataModel.EquipmentTypeProperty">
+      <Property name="NId" kind="Plain" value="EquipmentFlow" />
+      <Property name="PropertyType" kind="Plain" value="String" />
+      <Property name="PropertyValue" kind="Plain" value="" />
+      <Property name="Operational" kind="Plain" value="false" />
+      <Property name="EquipmentType" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.SimaticIT.MasterData.EQU_MS.MSModel.DataModel.EquipmentType">
+          <Property name="NId" kind="Plain" value="PackagingLine" />
+        </LogicalKey>
+      </Property>
+    </Entity>
+    <Entity type="Siemens.SimaticIT.MasterData.EQU_MS.MSModel.DataModel.EquipmentTypeProperty">
+      <Property name="NId" kind="Plain" value="OEERelevant" />
+      <Property name="PropertyType" kind="Plain" value="Bool" />
+      <Property name="PropertyValue" kind="Plain" value="true" />
+      <Property name="Operational" kind="Plain" value="false" />
+      <Property name="EquipmentType" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.SimaticIT.MasterData.EQU_MS.MSModel.DataModel.EquipmentType">
+          <Property name="NId" kind="Plain" value="PackagingUnit" />
+        </LogicalKey>
+      </Property>
+    </Entity>
+    <Entity type="Siemens.SimaticIT.MasterData.EQU_MS.MSModel.DataModel.EquipmentTypePropertyAttribute">
+      <Property name="NId" kind="Plain" value="CalculationName" />
+      <Property name="AttributeType" kind="Plain" value="String" />
+      <Property name="AttributeValue" kind="Plain" value="" />
+      <Property name="Operational" kind="Plain" value="false" />
+      <Property name="EquipmentTypeProperty" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.SimaticIT.MasterData.EQU_MS.MSModel.DataModel.EquipmentTypeProperty">
+          <Property name="NId" kind="Plain" value="OEERelevant" />
+          <Property name="EquipmentType" kind="SingleReferenceToParent">
+            <LogicalKey entityType="Siemens.SimaticIT.MasterData.EQU_MS.MSModel.DataModel.EquipmentType">
+              <Property name="NId" kind="Plain" value="PackagingUnit" />
+            </LogicalKey>
+          </Property>
+        </LogicalKey>
+      </Property>
+    </Entity>
+    <Entity type="Siemens.SimaticIT.MasterData.EQU_MS.MSModel.DataModel.EquipmentType">
+      <Property name="NId" kind="Plain" value="PrimaryArea" />
+      <Property name="Name" kind="Plain" value="Primary Area" />
+      <Property name="Description" kind="Plain" value="Primary Area Template" />
+      <Property name="IsDefault" kind="Plain" value="false" />
+      <Property name="LevelNId" kind="Plain" value="" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.MasterData.EQU_MS.MSModel.DataModel.EquipmentType">
+      <Property name="NId" kind="Plain" value="PrimaryLine" />
+      <Property name="Name" kind="Plain" value="Primary Line" />
+      <Property name="Description" kind="Plain" value="Primary Line Template" />
+      <Property name="IsDefault" kind="Plain" value="false" />
+      <Property name="LevelNId" kind="Plain" value="" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.MasterData.EQU_MS.MSModel.DataModel.EquipmentType">
+      <Property name="NId" kind="Plain" value="PrimaryUnit" />
+      <Property name="Name" kind="Plain" value="Primary Unit" />
+      <Property name="Description" kind="Plain" value="Primary Unit Template" />
+      <Property name="IsDefault" kind="Plain" value="false" />
+      <Property name="LevelNId" kind="Plain" value="" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.MasterData.EQU_MS.MSModel.DataModel.EquipmentTypeProperty">
+      <Property name="NId" kind="Plain" value="PrimaryProductionTerminal" />
+      <Property name="PropertyType" kind="Plain" value="Bool" />
+      <Property name="PropertyValue" kind="Plain" value="true" />
+      <Property name="Operational" kind="Plain" value="false" />
+      <Property name="EquipmentType" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.SimaticIT.MasterData.EQU_MS.MSModel.DataModel.EquipmentType">
+          <Property name="NId" kind="Plain" value="PrimaryArea" />
+        </LogicalKey>
+      </Property>
+    </Entity>
+    <Entity type="Siemens.SimaticIT.MasterData.EQU_MS.MSModel.DataModel.EquipmentTypeProperty">
+      <Property name="NId" kind="Plain" value="EquipmentFlow" />
+      <Property name="PropertyType" kind="Plain" value="String" />
+      <Property name="PropertyValue" kind="Plain" value="" />
+      <Property name="Operational" kind="Plain" value="false" />
+      <Property name="EquipmentType" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.SimaticIT.MasterData.EQU_MS.MSModel.DataModel.EquipmentType">
+          <Property name="NId" kind="Plain" value="PrimaryLine" />
+        </LogicalKey>
+      </Property>
+    </Entity>
+    <Entity type="Siemens.SimaticIT.MasterData.EQU_MS.MSModel.DataModel.EquipmentTypeProperty">
+      <Property name="NId" kind="Plain" value="OEERelevant" />
+      <Property name="PropertyType" kind="Plain" value="Bool" />
+      <Property name="PropertyValue" kind="Plain" value="true" />
+      <Property name="Operational" kind="Plain" value="false" />
+      <Property name="EquipmentType" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.SimaticIT.MasterData.EQU_MS.MSModel.DataModel.EquipmentType">
+          <Property name="NId" kind="Plain" value="PrimaryUnit" />
+        </LogicalKey>
+      </Property>
+    </Entity>
+    <Entity type="Siemens.SimaticIT.MasterData.EQU_MS.MSModel.DataModel.EquipmentTypePropertyAttribute">
+      <Property name="NId" kind="Plain" value="CalculationName" />
+      <Property name="AttributeType" kind="Plain" value="String" />
+      <Property name="AttributeValue" kind="Plain" value="" />
+      <Property name="Operational" kind="Plain" value="false" />
+      <Property name="EquipmentTypeProperty" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.SimaticIT.MasterData.EQU_MS.MSModel.DataModel.EquipmentTypeProperty">
+          <Property name="NId" kind="Plain" value="OEERelevant" />
+          <Property name="EquipmentType" kind="SingleReferenceToParent">
+            <LogicalKey entityType="Siemens.SimaticIT.MasterData.EQU_MS.MSModel.DataModel.EquipmentType">
+              <Property name="NId" kind="Plain" value="PrimaryUnit" />
+            </LogicalKey>
+          </Property>
+        </LogicalKey>
+      </Property>
+    </Entity>
+  </Section>
+</Sections>

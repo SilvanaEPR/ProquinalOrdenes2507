@@ -1,0 +1,1872 @@
+﻿<?xml version="1.0" encoding="utf-8"?><projectmanifest>
+  <header>
+    <manifestversion>11.0</manifestversion>
+    <platformversion>11.0</platformversion>
+    <type>Library</type>
+    <name>Siemens.SimaticIT.UAPI.PICore_MS</name>
+    <shortname>PICore_MS</shortname>
+    <description>SIMATIC IT Process Industries Master Data Core</description>
+    <version>22.00.00</version>
+    <companyname>Siemens.SimaticIT.UAPI</companyname>
+    <author>Siemens.SimaticIT.UAPI</author>
+    <hash>GoVtRCqy/My70yCOF0wHSTWpwvgk/U0dE97Eofusni4=</hash>
+    <modelHash>huTX61BLTRjrV/OJ7qdzXNZvkCvyGvgQlfFo5F0lSyM=</modelHash>
+    <modelHashSections>
+      <modelHashSection>
+        <name>projectConfigModelHash</name>
+        <hash>4wSoTyDNJJSRxVDXiNiPr7lvSFr1XZV1Os1aJ90dzCI=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>dataModelHash</name>
+        <hash>h4nQkUyvFpELrJ9QckaR6GUI9YXWWNaLSKjMMbvXeak=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>commandModelHash</name>
+        <hash>fYkIDO0pUrRLtOo5gcjE4pVB4IcrAGseu2TsMikq864=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>aliasModelHash</name>
+        <hash>FCE0KMXJjmDlnki7ue9cotrur1tAAXlmG5Tm782yrrs=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>eventModelHash</name>
+        <hash>Z8BI8OawmLSH8frZpfD6kG6MmD1cemO+d9D89LSKhbk=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>typeModelHash</name>
+        <hash>pjam8iWLl8dqgG+mXFKhnW5m7QoN83pVBMSKBsZA+/g=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>securityModelHash</name>
+        <hash>HBCAwH1bPzPLFZ0nja4tQ6QtcIjsQ44hwxLWV6Kg8e4=</hash>
+      </modelHashSection>
+    </modelHashSections>
+    <uiHash>na</uiHash>
+    <canbeextended>false</canbeextended>
+    <domain>MasterData</domain>
+  </header>
+  <reference>
+    <functionalblocks>
+      <functionalblock>
+        <name>Siemens.SimaticIT.UDM_RF</name>
+        <version>07.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.TSK_MS</name>
+        <version>09.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.BPF_MS</name>
+        <version>06.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.EQU_MS</name>
+        <version>08.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.UDM_MS</name>
+        <version>21.00.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.OpcenterEX.Configuration_RF</name>
+        <version>12.00.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.MAT_MS</name>
+        <version>05.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.OpcenterEX.FN.DEF_MS</name>
+        <version>05.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.ES_MS</name>
+        <version>05.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.CHR_MS</name>
+        <version>10.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.UAPI.PIMaterial_MS</name>
+        <version>15.00.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.OpcenterEX.PR.Sampling_MS</name>
+        <version>15.00.00</version>
+        <type>Library</type>
+      </functionalblock>
+    </functionalblocks>
+    <extensions><extension>
+      <name>Siemens.SimaticIT.UDM_MS</name>
+    </extension><extension>
+      <name>Siemens.SimaticIT.UAPI.PICore_MS</name>
+    </extension></extensions>
+  </reference>
+  <artifacts>
+    <commands><command>
+                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.CreateCatalogueParameter</name>
+                        <shortname>CreateCatalogueParameter</shortname>
+                        <description>Creates a new instance of a catalog parameter. You should specify the Unit of Measure of the Parameter you are defining only if you set ParameterType to Quantity. Choosing another ParameterType and setting the ParameterUoMNId value could lead to inconsistencies when the parameter is imported as Process Definition Parameter from catalog. Checks if the given ParameterNId exists, otherwise throws the error 10801. If it exists, it verifies that there is only one respective catalog parameter, otherwise it throws the error 10802. If the value of ParameterType is "Quantity", it verifies that there is a Unit of Measure; otherwise it throws the error 10007. Checks if the given ParameterUoMNId exists, otherwise it throws the error 10803. Checks if the given ParameterTargetValue, ParameterToleranceLow, ParameterToleranceHigh, ParameterLimitLow, ParameterLimitHigh values are of the same type than the given ParameterType value, otherwise it throws the error code 10835.  If the given ProcessDefinitionNId isn't null or empty, checks if it exists, otherwise it throws the error 11210. If the given ProcessDefinitionRevision isn't null or empty, the command controls that this value exists for the given ProcessDefinitionNId; otherwise it throws the error 10895.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.CreateCatalogueParameterHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PICore_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.UpdateCatalogueParameter</name>
+                        <shortname>UpdateCatalogueParameter</shortname>
+                        <description>Updates an existing instance of a catalog parameter. If the value of an input parameter is empty or null, the respective property of the catalog parameter is not changed. Checks if the given ParameterId exists, otherwise it throws the error 10800. Checks if the given ParameterTargetValue, ParameterToleranceLow, ParameterToleranceHigh, ParameterLimitLow, ParameterLimitHigh values are of the same type than the given ParameterType value, otherwise it throws the error code 10835.  If the given Process Definition is different from an already defined Process Definition of the catalog parameter, the command checks: - if the given ProcessDefinitionNId exists, otherwise it throws the error 11210; - if the given argument SetToUseCurrentRevisionOfProcessDefinition is set to true, the catalog parameter property ProcessDefinitionRevision will be deleted; if not, the command controls that the given argument ProcessDefinitionRevision exists for the given ProcessDefinitionNId; otherwise it throws the error 10895. Checks if the given ParameterUoMNId exists, otherwise it throws the error 10803. If the value of ParameterType is "Quantity", it verifies that there is a Unit of Measure; otherwise it throws the error 10007.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.UpdateCatalogueParameterHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PICore_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.DeleteCatalogueParameter</name>
+                        <shortname>DeleteCatalogueParameter</shortname>
+                        <description>Logically deletes an existing instance of a catalog parameter.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.DeleteCatalogueParameterHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PICore_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.AddProcessParametersToWorkMasterHeader</name>
+                        <shortname>AddProcessParametersToWorkMasterHeader</shortname>
+                        <description>Adds a set of process Parameters, taken from the Catalog, to a Work Master Header.  For each given Parameter, it is possible to override the Target Value. The Command checks: 1. if the given WorkMaster exists, if not error 10812 is returned; 2. if the given WorkMaster is not Locked, if so error 10813 is returned; 3. if the given process Parameters exist as catalog Parameters, if not error 10814 is returned; 4. if the catalog Parameters are not already linked to the given WorkMaster, if so error 10836 is returned; 5. if the given process Parameter values are compatible with the data type, if not the error 10836 is returned.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.AddProcessParametersToWorkMasterHeaderHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PICore_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.DeleteWorkMaster</name>
+                        <shortname>DeleteWorkMaster</shortname>
+                        <description>Logically deletes a Work Master.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.DeleteWorkMasterHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PICore_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.SetWorkMasterCurrent</name>
+                        <shortname>SetWorkMasterCurrent</shortname>
+                        <description>Sets the specified Work Master to current, if you want to recommend it for the creation of Work Orders </description>
+                        <assembly>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.SetWorkMasterCurrentHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PICore_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.UnsetWorkMasterCurrent</name>
+                        <shortname>UnsetWorkMasterCurrent</shortname>
+                        <description>Sets the Work Master to "not current".</description>
+                        <assembly>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.UnsetWorkMasterCurrentHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PICore_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.UpdateWorkMasterHeaderParameter</name>
+                        <shortname>UpdateWorkMasterHeaderParameter</shortname>
+                        <description>Updates the Target Value of a Work Master Header Parameter. The commands checks: 1. if the given WorkMasterHeaderParameter exists, if not the error 10817 is returned; 2. if the given WorkMaster exists,if not the error 10812 is returned; 3. if the given WorkMaster is not locked, if so the error 10813 is returned; 4. if the given WorkMasterHeaderParameter values are compatible with the data type, if not the error 10836 is returned.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.UpdateWorkMasterHeaderParameterHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PICore_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.DeleteWorkMasterHeaderParameter</name>
+                        <shortname>DeleteWorkMasterHeaderParameter</shortname>
+                        <description>Logically deletes a parameter of a Work Master Header.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.DeleteWorkMasterHeaderParameterHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PICore_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.LockWorkMaster</name>
+                        <shortname>LockWorkMaster</shortname>
+                        <description>Locks a specific Work Master. This means that the Work Master is configured as read-only , so that it cannot be edited or deleted. </description>
+                        <assembly>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.LockWorkMasterHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PICore_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.UnlockWorkMaster</name>
+                        <shortname>UnlockWorkMaster</shortname>
+                        <description>Unlocks a specific Work Master.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.UnlockWorkMasterHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PICore_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.UpdateOperationParameterSpecification</name>
+                        <shortname>UpdateOperationParameterSpecification</shortname>
+                        <description>Updates a Parameter Specification of the given Work Master Operation. Apart from Id, each input argument is respective to one property of a Parameter Specification. The command only updates the properties of the Parameter Specification given as input for which you pass a value. If you pass no value for an argument (other than Id), the respective property of the Parameter Specification is unchanged by the command. Checks if the given Id exists, otherwise it throws the error 10824. Checks if the Work Master Operation associated to the given Work Master Operation Parameter Specification exists, otherwise it throws the error 10300. Checks if the Work Master associated to the given Work Master Operation Parameter Specification exists, otherwise it throws the error 10812. If it exists but it is locked, it throws the error 10813. Checks if the given ParameterTargetValue, ParameterToleranceLow, ParameterToleranceHigh, ParameterLimitLow, ParameterLimitHigh values are of the same type than the given ParameterType value, otherwise it throws the error code 10835. If the given Process Definition is different from the Process Definition defined in the Parameter Specification, the command checks: - if the given ProcessDefinitionNId exists, otherwise it throws the error 11210; - if the given argument SetToUseCurrentRevisionOfProcessDefinition is set to true, the property ProcessDefinitionRevision of the Parameter Specification will be deleted; if not, the command controls that the given argument ProcessDefinitionRevision exists for the given ProcessDefinitionNId; otherwise it throws the error 10895.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.UpdateOperationParameterSpecificationHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PICore_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.DeleteOperationParameterSpecification</name>
+                        <shortname>DeleteOperationParameterSpecification</shortname>
+                        <description>Deletes an operation parameter specification of a Work Master.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.DeleteOperationParameterSpecificationHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PICore_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.DeleteOperationMaterialSpecification</name>
+                        <shortname>DeleteOperationMaterialSpecification</shortname>
+                        <description>Deletes an operation material specification.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.DeleteOperationMaterialSpecificationHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PICore_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.CreateBillOfMaterialsExtended</name>
+                        <shortname>CreateBillOfMaterialsExtended</shortname>
+                        <description>Creates a BillOfMaterialExtended Entity associating the Material, that is to be produced, to the BoM.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.CreateBillOfMaterialsExtendedHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PICore_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.UpdateBillOfMaterialsExtended</name>
+                        <shortname>UpdateBillOfMaterialsExtended</shortname>
+                        <description>Updates the Material, to be produced, associated to a BoM. The first time a Material is associated to a specific BoM, a new instance of a BillOfMaterialsExtended entity is created.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.UpdateBillOfMaterialsExtendedHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PICore_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.DeleteBillOfMaterialsExtended</name>
+                        <shortname>DeleteBillOfMaterialsExtended</shortname>
+                        <description>Removes the association of a Material from an existing BillOfMaterial Extended Entity.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.DeleteBillOfMaterialsExtendedHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PICore_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.UpdateOperationMaterialSpecification</name>
+                        <shortname>UpdateOperationMaterialSpecification</shortname>
+                        <description>Updates one or more properties of an Operation Material Specification.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.UpdateOperationMaterialSpecificationHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PICore_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.CreateOperationMaterialSpecificationDirection</name>
+                        <shortname>CreateOperationMaterialSpecificationDirection</shortname>
+                        <description>Creates a new instance of an Operation Material Specification Direction.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.CreateOperationMaterialSpecificationDirectionHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PICore_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.CreateOperationMaterialSpecificationUsage</name>
+                        <shortname>CreateOperationMaterialSpecificationUsage</shortname>
+                        <description>Creates a new instance of Operation Material Specification Usage.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.CreateOperationMaterialSpecificationUsageHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PICore_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.DeleteOperationMaterialSpecificationDirection</name>
+                        <shortname>DeleteOperationMaterialSpecificationDirection</shortname>
+                        <description>Deletes an Operation Material Specification Direction instance.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.DeleteOperationMaterialSpecificationDirectionHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PICore_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.DeleteOperationMaterialSpecificationUsage</name>
+                        <shortname>DeleteOperationMaterialSpecificationUsage</shortname>
+                        <description>Deletes an Operation Material Specification Usage instance.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.DeleteOperationMaterialSpecificationUsageHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PICore_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.UpdateOperationMaterialSpecificationDirection</name>
+                        <shortname>UpdateOperationMaterialSpecificationDirection</shortname>
+                        <description>Updates one or more properties of an Operation Material Specification Direction instance.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.UpdateOperationMaterialSpecificationDirectionHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PICore_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.UpdateOperationMaterialSpecificationUsage</name>
+                        <shortname>UpdateOperationMaterialSpecificationUsage</shortname>
+                        <description>Updates one or more properties of an Operation Material Specification Usage instance.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.UpdateOperationMaterialSpecificationUsageHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PICore_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.DeleteOperationEquipmentSpecification</name>
+                        <shortname>DeleteOperationEquipmentSpecification</shortname>
+                        <description>Deletes an Operation Equipment Specification instance.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.DeleteOperationEquipmentSpecificationHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PICore_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.CreateStorageHierarchy</name>
+                        <shortname>CreateStorageHierarchy</shortname>
+                        <description>Creates a Storage Hierarchy.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.CreateStorageHierarchyHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PICore_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.DeleteStorageHierarchy</name>
+                        <shortname>DeleteStorageHierarchy</shortname>
+                        <description>Deletes the specified Storage Hierarchy.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.DeleteStorageHierarchyHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PICore_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.UpdateStorageHierarchy</name>
+                        <shortname>UpdateStorageHierarchy</shortname>
+                        <description>Updates the name and/or the description of a Storage Hierarchy.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.UpdateStorageHierarchyHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PICore_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.AddEquipmentConfigurationPropertiesToStorageHierarchy</name>
+                        <shortname>AddEquipmentConfigurationPropertiesToStorageHierarchy</shortname>
+                        <description>Assigns to the Storage Hierarchy the configuration properties that must be applied to the included Equipment. </description>
+                        <assembly>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.AddEquipmentConfigurationPropertiesToStorageHierarchyHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PICore_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.UpdateOperationEquipmentSpecification</name>
+                        <shortname>UpdateOperationEquipmentSpecification</shortname>
+                        <description>Updates the Sequence number, Requirement Tag and IsMain Properties of the Operation Equipment Specification.   The command will:  1. retrieve the Work Master Operation and the Work Master;  2. check if the Work Master can be edited;  3. update the Work Master Operation Equipment Specification according to the given command inputs.   The command checks if the given Work Master Operation exists, If not error -10300 is returned.  The command checks if the Work Master associated to the given Work Master Operation is locked for editing, If so, error -10813 is returned.  The command checks if the Operation Equipment Specification specifies an Equipment Group identifier when the IsMain Property is set to True, If not error -10899 is returned </description>
+                        <assembly>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.UpdateOperationEquipmentSpecificationHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PICore_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.CreateWorkMasterV2</name>
+                        <shortname>CreateWorkMasterV2</shortname>
+                        <description>Creates a new Work Master. The command may return the following error codes, if some checks on input parameters fail: * Error -10804: The Work Master with the specified NId and Revision already exists. * Error -10805: More than one Work Master with the specified NId and Revision exists. The command may return the following error codes, during its execution: * Error -10818: The Work Master identifier generation failed.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.CreateWorkMasterV2HandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PICore_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.UpdateWorkMasterV2</name>
+                        <shortname>UpdateWorkMasterV2</shortname>
+                        <description>The command may return the following error codes, if some checks on input parameters fail: * Error -10812: The Work Master with the specified NId does not exist. The command may return the following error codes, during its execution: * Error -10813: The Work Master with the specified Id, NId, and Revision is locked and cannot be updated. * Error -10803: The specified UoM does not exist or there is more than one.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.UpdateWorkMasterV2HandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PICore_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.CreateNewWorkMasterRevisionV2</name>
+                        <shortname>CreateNewWorkMasterRevisionV2</shortname>
+                        <description>Creates  a new Work Master as revision of an existing Work Master.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.CreateNewWorkMasterRevisionV2HandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PICore_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.CreateAndAssociateProcessParametersToWorkMaster</name>
+                        <shortname>CreateAndAssociateProcessParametersToWorkMaster</shortname>
+                        <description>Creates a process Parameter and associates it to a Work Master.  Whenever you define a new Parameter, the system stores this Parameter into a catalog.  Then this catalog Parameter is available to be used as Work Master Parameters, Parameter Specifications of Work Master Operation, and Work Order Parameters. The command CreateCatalogueParameter is called for each process Parameter.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.CreateAndAssociateProcessParametersToWorkMasterHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PICore_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.AssociateWorkMastersToWorkMaster</name>
+                        <shortname>AssociateWorkMastersToWorkMaster</shortname>
+                        <description>Creates one or more Work Master Operations, specifying the referenced Work Masters, and associates them to the Work Master provided in input.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.AssociateWorkMastersToWorkMasterHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PICore_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.CopyWorkMasterRevisionV2</name>
+                        <shortname>CopyWorkMasterRevisionV2</shortname>
+                        <description>Makes a copy of an existing revision of a Work Master.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.CopyWorkMasterRevisionV2HandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PICore_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.AssociateOperationsToWorkMaster</name>
+                        <shortname>AssociateOperationsToWorkMaster</shortname>
+                        <description>Creates one or more Work Master Operations, specifying the referenced Operations, and associates them to the Work Master provided in input.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.AssociateOperationsToWorkMasterHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PICore_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.DeleteWorkMasterOperations</name>
+                        <shortname>DeleteWorkMasterOperations</shortname>
+                        <description>Deletes a list of  Work Master Operation.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.DeleteWorkMasterOperationsHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PICore_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.UpdateWorkMasterOperation</name>
+                        <shortname>UpdateWorkMasterOperation</shortname>
+                        <description>Updates an existing instance of a Work Master Operation with the specified input. Fields with Null value will not be updated. The command may return the following error codes, if some checks on input parameters fail: * Error -10300: The Work Master Operation specified in input does not exist. The command may return the following error codes, during its execution: * Error -10813: The WorkMaster with the specified NId and Revision is locked and cannot be edited. * Error -11314: The Estimated Duration of the Operation cannot be negative. * Error -10301: The piece of Equipment with the specified NId already exists.  </description>
+                        <assembly>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.UpdateWorkMasterOperationHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PICore_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.AddMaterialSpecificationsToWorkMasterOperationFromBoM</name>
+                        <shortname>AddMaterialSpecificationsToWorkMasterOperationFromBoM</shortname>
+                        <description>Adds a list of Operation Material Specifications to the Work Master Operation. The Material data are taken from the BoM that is given as input.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.AddMaterialSpecificationsToWorkMasterOperationFromBoMHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PICore_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.AddEquipmentSpecificationsToWorkMasterOperation</name>
+                        <shortname>AddEquipmentSpecificationsToWorkMasterOperation</shortname>
+                        <description>Adds a set of Equipment Specifications to the selected Work Master Operation   The command will:  1. retrieve the Work Master Operation and the Work Master;  2. check if the Work Master can be edited;  3. perform consistency checks for the given Equipment and Equipment Groups;  4. create an Operation Equipment Specification for each given Equipment and Equipment Group, associating them to the Work Master Operation.   The command checks if the given Work Master Operation exists, If not error -10300 is returned.  The command checks if the Work Master associated to the given Work Master Operation is not Locked for editing, If not error -10813 is returned.   The command performs the following checks for each Equipment Specification:  1. if only one Equipment Specification has the IsMain Property set to True, if not error -10898 is returned;  2. if an Equipment Group identifier is specified when the IsMain Property is set to True, If not error -10899 is returned;  3. if either a piece of Equipment identifier or an Equipment Group identifier is specified, if not error -10309 is returned;  4. if the specified piece of Equipment exists, if not, error -10859 is returned;  5. if the specified Equipment Group exists, if not, error -10860 is returned;  6. when both are specified, if the piece of Equipment belongs to the Equipment Group, If not error -10861 is returned. </description>
+                        <assembly>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.AddEquipmentSpecificationsToWorkMasterOperationHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PICore_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.AddMaterialSpecificationsToWorkMasterOperationFromMaterial</name>
+                        <shortname>AddMaterialSpecificationsToWorkMasterOperationFromMaterial</shortname>
+                        <description>Adds a list of Operation Material Specifications to a Work Master Operation, taking data from the Material given as input.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.AddMaterialSpecificationsToWorkMasterOperationFromMaterialHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PICore_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.AddParameterSpecificationsToWorkMasterOperationFromCatalog</name>
+                        <shortname>AddParameterSpecificationsToWorkMasterOperationFromCatalog</shortname>
+                        <description>Adds a set of Parameter Specifications to the Work Master Operation given as input, from a set of Catalog parameters. The argument ParameterSpecifcations is a collection of ParameterSpecificationFromCatalog. This Parameter Type has a property ParameterNId that is the natural identifier of a Catalog Parameter. The Parameter Specifications can inherit the same property values than the respective Catalog Parameters. In which case, simply fill the ParameterNId of each element of ParameterSpecifcations list. If you want to override a Catalaog Parameter property, fill the necessary property of the respective ParameterSpecificationFromCatalog element.  Checks if the given WorkMasterOperationId exists, otherwise it throws the error 10300. Checks if the Work Master associated to the given Work Master Operation Parameter Specification is not locked, otherwise it throws the error 10813. The command performs a serie of controls on thecontent of ParamerSpecifications.  If one control fails, the command is cancelled for all parameters: no Parameter Specificaiton will be added. For each element of ParameterSpecifcations list: - Checks if the ParameterNId does not match with an existing Work Master Operation Parameter Specification, otherwise no parameter is added and it throws the error 10837. - Checks if the ParameterNId matches with an existing Catalog Parameter, otherwise it throws the error 10814. - Checks if the given ParameterUoMNId exists, otherwise it throws the error 11210. - Checks if the given ParameterTargetValue, ParameterToleranceLow, ParameterToleranceHigh, ParameterLimitLow, ParameterLimitHigh values are of the same type than the given ParameterType value, otherwise it throws the error code 10835. - In case the given Process Definition is different from an already defined Process Definition of the Catalog Parameter, the command checks: - if the given ProcessDefinitionNId exists, otherwise it throws the error 11210; - if the given argument SetToUseCurrentRevisionOfProcessDefinition is set to true, the property ProcessDefinitionRevision of the to-be-created Parameter Specification will be deleted; if not and if you pass a Revision to override the Catalog Parameter property, then the command controls that the ProcessDefinitionRevision exists for the given ProcessDefinitionNId; otherwise it throws the error 10895.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.AddParameterSpecificationsToWorkMasterOperationFromCatalogHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PICore_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.CreateAndAssociateProcessParameterToWorkMasterOperation</name>
+                        <shortname>CreateAndAssociateProcessParameterToWorkMasterOperation</shortname>
+                        <description>Create a process parameter and associates it to a Work Master. Whenever you define a new parameter, the system stores it into a catalog allowing you to assign this parameter to other Work Masters, to Parameter Specification and Work Orders. </description>
+                        <assembly>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.CreateAndAssociateProcessParameterToWorkMasterOperationHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PICore_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.AssociateProcessDefinitionsWithOperation</name>
+                        <shortname>AssociateProcessDefinitionsWithOperation</shortname>
+                        <description>Associates an Operation to one or more Process Definitions.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.AssociateProcessDefinitionsWithOperationHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PICore_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.DisassociateProcessDefinitionsFromOperation</name>
+                        <shortname>DisassociateProcessDefinitionsFromOperation</shortname>
+                        <description>Removes the link between the Operation and a list of Process Definitions.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.DisassociateProcessDefinitionsFromOperationHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PICore_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.AssociateProcessDefinitionParameterWithOperationParameterSpecification</name>
+                        <shortname>AssociateProcessDefinitionParameterWithOperationParameterSpecification</shortname>
+                        <description>Assaigns a Process Definition Parameter to an Operation Parameter Specification</description>
+                        <assembly>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.AssociateProcessDefinitionParameterWithOperationParameterSpecificationHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PICore_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.AddParameterSpecificationsToWorkMasterOperationFromProcessDefinition</name>
+                        <shortname>AddParameterSpecificationsToWorkMasterOperationFromProcessDefinition</shortname>
+                        <description>Adds a set of Parameter Specifications to a Work Master Operation by copying all the parameters of a Process Definition. You can override the target value of each parameter. This command creates one Parameter Specification per Process Definition Parameter except if this Process Definition Parameter resulted from importing a Catalog Parameter to the Process Definition. When importing a Catalog Parameter in a Process Definition, a set of Process Definition parameters can be generated, representing the limits and tolerances of the imported Catalog Parameter. If it is the case, this command creates only one Parameter Specification that will be defined with the target values of the related Process Definition parameters, each target value being either a limit or a tolerance of the Parameter Specification to be created.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.AddParameterSpecificationsToWorkMasterOperationFromProcessDefinitionHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PICore_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.AddAllParameterSpecificationsToWorkMasterOperationFromProcessDefinition</name>
+                        <shortname>AddAllParameterSpecificationsToWorkMasterOperationFromProcessDefinition</shortname>
+                        <description>Adds a set of Parameter Specifications to a Work Master Operation by copying all the Parameters of a Process Definition. This command creates one Parameter Specification per Process Definition Parameter except if this Process Definition Parameter resulted from being imported from a Catalog Parameter, see the description of the sub-command AddParameterSpecificationsToWorkMasterOperationFromProcessDefinition. The command checks:  1. if the given Process Definition with the given Process Definition Revision exists, if not error 10811 is returned; 2. if there is a Revision set as current for the given Process Definition (when the Revision of the Process Definition is empty), if not error 10889 is returned; 3. if the Process Definition has at least one Parameter, if not error 10897 is returned. If the sub command AddParameterSpecificationsToWorkMasterOperationFromProcessDefinition fails to execute, this command will return it.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.AddAllParameterSpecificationsToWorkMasterOperationFromProcessDefinitionHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PICore_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.DisassociateProcessDefinitionParameterFromOperationParameterSpecification</name>
+                        <shortname>DisassociateProcessDefinitionParameterFromOperationParameterSpecification</shortname>
+                        <description>Removes the associations of the Process Definition Parameter to the Operation Parameter Specification.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.DisassociateProcessDefinitionParameterFromOperationParameterSpecificationHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PICore_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.AssociateEntityWithProcessDefinition</name>
+                        <shortname>AssociateEntityWithProcessDefinition</shortname>
+                        <description>Associates the specified Entity to a Process Definition.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.AssociateEntityWithProcessDefinitionHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PICore_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.AddWorkMasterOperationFromWorkMasterOperation</name>
+                        <shortname>AddWorkMasterOperationFromWorkMasterOperation</shortname>
+                        <description>Adds a Work Master Operation to a Work Master by copying a Work Master Operation from another Work Master.   The new Work Master Operation is created with all requested Specifications of the Work Master Operation of origin: Parameter Specifications, Material Specifications, and Equipment Specifications.   The AssociateOperationsToWorkMaster Command is first called to create the Work Master Operation without specifications.    The command checks if the given Work Master Operation exists, if not error 10300 is returned. </description>
+                        <assembly>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.AddWorkMasterOperationFromWorkMasterOperationHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PICore_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.AssociateEquipmentWithOperationParameterSpecification</name>
+                        <shortname>AssociateEquipmentWithOperationParameterSpecification</shortname>
+                        <description>Associates Equipment Configuration or Equipment Specification to Operation Parameter Specification.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.AssociateEquipmentWithOperationParameterSpecificationHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PICore_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.DisassociateEquipmentFromOperationParameterSpecification</name>
+                        <shortname>DisassociateEquipmentFromOperationParameterSpecification</shortname>
+                        <description>Disassociates Equipment From Operation Parameter Specification.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.DisassociateEquipmentFromOperationParameterSpecificationHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PICore_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.AddWorkMasterOperation</name>
+                        <shortname>AddWorkMasterOperation</shortname>
+                        <description>Creates a Work Master Operation from scratch and associates it to the Work Master.   The new Work Master Operation is created without Specifications and Process Definitions.  The AssociateOperationsToWorkMaster Command is first called to create the Work Master Operation without specifications.  The command may return the following error codes, if some checks on input parameters fail: * Error -10300: the State Machine, identified by StateMachineNId, does not exist. * Error -11320: the State Machine does not contain statuses. * Error -10984: the initial status does not exist in the State Machine. * Error -10300: the Equipment Configuration, identified by EquipmentNId, does not exist. * Error -10316: the Name parameter is empty.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.AddWorkMasterOperationHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PICore_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.DisassociateProcessDefinitionsFromWorkMasterOperation</name>
+                        <shortname>DisassociateProcessDefinitionsFromWorkMasterOperation</shortname>
+                        <description>Removes the link between the Work Master Operation and one or more Process Definitions. The command may return the following error codes, if some checks on input parameters fail: * Error -10300: The Work Master Operation with the specified NId does not exist. * Error -10843: There is no Process Definition with NId and revision linked to the Operation.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.DisassociateProcessDefinitionsFromWorkMasterOperationHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PICore_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.AssociateProcessDefinitionsWithWorkMasterOperation</name>
+                        <shortname>AssociateProcessDefinitionsWithWorkMasterOperation</shortname>
+                        <description>Associates a Work Master Operation to one or more Process Definitions.  The command may return the following error codes: * -10300: The Work Master Operation specified in input does not exist. * -10890: Two revisions of a Process Definition cannot be associated to the Work Master Operation. * -10889: One of the Process Definitions you are associating has no revision set to current.  * -10811: A Process Definition with specified NId and Revision  does not exist. * -10892: A Process Definition could not be found.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.AssociateProcessDefinitionsWithWorkMasterOperationHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PICore_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.SetWorkMasterOperationAsStandalone</name>
+                        <shortname>SetWorkMasterOperationAsStandalone</shortname>
+                        <description>Removes the link between the Work Master Operation and the Operation starting from which the Work Master Operation has been created. Before removing the link, the commands links the Work Master Operation to all the Process Definition that are linked to the Operation.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.SetWorkMasterOperationAsStandaloneHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PICore_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.CreateBillOfMaterialsWithMaterialAssociation</name>
+                        <shortname>CreateBillOfMaterialsWithMaterialAssociation</shortname>
+                        <description></description>
+                        <assembly>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.CreateBillOfMaterialsWithMaterialAssociationHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PICore_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.UpdateBillOfMaterialsWithMaterialAssociation</name>
+                        <shortname>UpdateBillOfMaterialsWithMaterialAssociation</shortname>
+                        <description></description>
+                        <assembly>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.UpdateBillOfMaterialsWithMaterialAssociationHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PICore_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.CreateBoMWithSegregationTags</name>
+                        <shortname>CreateBoMWithSegregationTags</shortname>
+                        <description>Creates a new Bill of Materials with Bill of Material Items and assigns to it a list of Segregation Tags. If you call the Command with the same __NId__ and __Revision__ the Command deletes the old ones and creates again the Entity with the new data. If __TemplateNId__ is null or empty, the Command uses the BoM Template marked as Default. If __MaterialRevision__ is null or empty when this Entity will be used at runtime, the system will search for the Current Revision of the Material in that moment.  The Command performs the following checks: * If BoM Material does not exists, it returns the error -10806 * If __TemplateNId__ does not exists, it returns the error -3 * If __BoMItemNId__ does not exists, it returns the error -2</description>
+                        <assembly>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.CreateBoMWithSegregationTagsHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PICore_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.AssociateInspectionDefinitionWithOperationMaterialSpecification</name>
+                        <shortname>AssociateInspectionDefinitionWithOperationMaterialSpecification</shortname>
+                        <description>Associates an Inspection Definition (Sample Definition) with the Material Specification of the Work Master Operation..</description>
+                        <assembly>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.AssociateInspectionDefinitionWithOperationMaterialSpecificationHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PICore_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.DisassociateInspectionDefinitionFromOperationMaterialSpecification</name>
+                        <shortname>DisassociateInspectionDefinitionFromOperationMaterialSpecification</shortname>
+                        <description>Disassociates an Inspection Definition (Sample Definition) from the Material Specification of the Work Master Operation.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.DisassociateInspectionDefinitionFromOperationMaterialSpecificationHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PICore_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.CreateFullWorkMaster</name>
+                        <shortname>CreateFullWorkMaster</shortname>
+                        <description>Creates a Work Master data including Parameters and Work Master Operations. Each Work Master Operation can include Parameter Specifications, Material Specifications, Equipment Specifications and Process Definitions. If a Work Master, with the same NId and Revision, already exists, the Work Master is updated (parameters and operations are deleted and recreated), if not locked.  If a Work Master, with the same NId and different Revision, already exists, a new Work Master Revision is created.. After the Work Master creation, the command raises the FullWorkMasterCreated event.  The command may call from these commands and one of them raise an error, it will be returned in the message of error 11350:   CreateWorkMasterV2 / UpdateWorkMasterV2   CreateAndAssociateProcessParametersToWorkMaster / AddProcessParametersToWorkMasterHeader / DeleteWorkMasterHeaderParameter   AddWorkMasterOperation / AssociateOperationsToWorkMaster / DeleteWorkMasterOperations     CreateAndAssociateProcessParameterToWorkMasterOperation / AddParameterSpecificationsToWorkMasterOperationFromCatalog     AddMaterialSpecificationsToWorkMasterOperationFromMaterial     AddEquipmentSpecificationsToWorkMasterOperation     AssociateProcessDefinitionsWithWorkMasterOperation  If one of above commands raise an error, it will be returned in the reason part of the message with error code 11350. The command may return the following error codes, during its execution: * Error -11350: The execution of CreateFullWorkMaster with specified NId and Revision has failed, for the following reason. * Error -11308: Segregation tag(s) does/do not exist.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.CreateFullWorkMasterHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PICore_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.AssociateInspectionMasterPlanWithWorkMaster</name>
+                        <shortname>AssociateInspectionMasterPlanWithWorkMaster</shortname>
+                        <description>Associates the Inspection Master Plan to a Work Master.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.AssociateInspectionMasterPlanWithWorkMasterHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PICore_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.DisassociateInspectionMasterPlanFromWorkMaster</name>
+                        <shortname>DisassociateInspectionMasterPlanFromWorkMaster</shortname>
+                        <description>Disassociates the Inspection Master Plan from a Work Master.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.DisassociateInspectionMasterPlanFromWorkMasterHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PICore_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.SetWorkMasterOperationToProcessDefinitionExecution</name>
+                        <shortname>SetWorkMasterOperationToProcessDefinitionExecution</shortname>
+                        <description>Sets the **IsForManualExecution** property of the **WorkMasterOperationToProcessDefinition** entity.  The command may return the following error codes: * -1: Association between Work Master Operation and Process Definition does not exist. * -2: The Process Definition with selected NId and set as current does not exist. </description>
+                        <assembly>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.SetWorkMasterOperationToProcessDefinitionExecutionHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PICore_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command></commands>
+    <commandActions><commandAction>
+                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.CheckMaterialSpecificationWithSameMaterialAndSequenceHandlerShell</name>
+                        <shortname>CheckMaterialSpecificationWithSameMaterialAndSequenceHandlerShell</shortname>
+                        <description>Checks if the Work Master is already associated with a Material Specification with the same NId, Revision and Sequence of the Material that is chosen that is going to be added as new Material Specification.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.PICore_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <target_cpu>AnyCPU</target_cpu>
+                        <targetframework>netstandard2.0</targetframework>
+                        <command>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.AddMaterialSpecificationsToWorkMasterOperationFromMaterial</command>
+                        <type>PreCheck</type>
+                        <is_enabled>true</is_enabled>
+                        <alias>CheckMaterialSpecificationWithSameMaterialAndSequence</alias>
+                </commandAction><commandAction>
+                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.CheckMaterialSpecificationWithSameMaterialAndSequenceAlreadyExistsHandlerShell</name>
+                        <shortname>CheckMaterialSpecificationWithSameMaterialAndSequenceAlreadyExistsHandlerShell</shortname>
+                        <description>Checks if the Work Master is already associated with a Material Specification with the same NId, Revision and Sequence of the Material that is chosen, from a BoM, as new Material Specification.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.PICore_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <target_cpu>AnyCPU</target_cpu>
+                        <targetframework>netstandard2.0</targetframework>
+                        <command>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.AddMaterialSpecificationsToWorkMasterOperationFromBoM</command>
+                        <type>PreCheck</type>
+                        <is_enabled>true</is_enabled>
+                        <alias>CheckMaterialSpecificationWithSameMaterialAndSequenceAlreadyExists</alias>
+                </commandAction><commandAction>
+                        <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.CheckMaterialSpecificationSameMaterialAndSequenceOnUpdateOperationMaterialSpecificationHandlerShell</name>
+                        <shortname>CheckMaterialSpecificationSameMaterialAndSequenceOnUpdateOperationMaterialSpecificationHandlerShell</shortname>
+                        <description>Checks if the Sequence that you are setting for the Material Specification is already assigned to another Work Master Material Specification, with the same NId and Revision.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.PICore_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <target_cpu>AnyCPU</target_cpu>
+                        <targetframework>netstandard2.0</targetframework>
+                        <command>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.UpdateOperationMaterialSpecification</command>
+                        <type>PreCheck</type>
+                        <is_enabled>true</is_enabled>
+                        <alias>CheckMaterialSpecificationSameMaterialAndSequenceOnUpdateOperationMaterialSpecification</alias>
+                </commandAction></commandActions>
+    <events><event>
+                <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Events.MaterialStorageConfigurationPropertiesAdded</name>
+                <shortname>MaterialStorageConfigurationPropertiesAdded</shortname>
+                <description> This event is fired by the AddEquipmentConfigurationPropertiesToStorageHierarchy to notify that one or more Equipment Configurations have been updated with the provided set of properties.</description>
+                <assembly>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Events, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                <dotneteventtype></dotneteventtype>
+                <eventtype>Application</eventtype>
+                <domain>MasterData</domain>
+                <taglist>
+                </taglist>
+                <securable>true</securable>
+        </event><event>
+                <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Events.FullWorkMasterCreated</name>
+                <shortname>FullWorkMasterCreated</shortname>
+                <description> This event is fired when a WorkMaster is created using CreateFullWorkMaster command</description>
+                <assembly>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Events, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                <dotneteventtype></dotneteventtype>
+                <eventtype>Application</eventtype>
+                <domain>MasterData</domain>
+                <taglist>
+                </taglist>
+                <securable>true</securable>
+        </event></events>
+    <event_handlers></event_handlers>
+    <signals></signals>
+    <readingFunctions></readingFunctions>
+    <entities><entity>
+      <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.DataModel.ReadingModel.ParametersCatalogue</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.DataModel.ReadingModel.WorkMaster</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.DataModel.ReadingModel.WorkMasterHeaderParameter</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.DataModel.ReadingModel.OperationParameterSpecification</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.DataModel.ReadingModel.OperationMaterialSpecification</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.DataModel.ReadingModel.OperationMaterialSpecificationDirection</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.DataModel.ReadingModel.OperationMaterialSpecificationUsage</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.DataModel.ReadingModel.OperationEquipmentSpecification</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.DataModel.ReadingModel.StorageHierarchy</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.DataModel.ReadingModel.WorkMasterOperation</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.DataModel.ReadingModel.OperationToProcessDefinition</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.DataModel.ReadingModel.WorkMasterOperationToProcessDefinition</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.DataModel.ReadingModel.OperationMaterialSpecificationInspectionDefinition</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.DataModel.ReadingModel.WorkMasterToInspectionMasterPlan</name>
+      <securable>true</securable>
+    </entity></entities>
+    <datamodels><datamodel>
+      <assembly>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>WR</mode>
+      <domain>MasterData</domain>
+    </datamodel><datamodel>
+      <assembly>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.ReadingModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>RD</mode>
+      <domain>MasterData</domain>
+    </datamodel><datamodel>
+      <assembly>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Types, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>WR</mode>
+      <domain>MasterData</domain>
+    </datamodel><datamodel>
+      <assembly>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Types.ReadingModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>RD</mode>
+      <domain>MasterData</domain>
+    </datamodel></datamodels>
+    <externaldatamodels></externaldatamodels>
+    <appdatamodels></appdatamodels>
+    <uimodules></uimodules>
+    <uicomponents></uicomponents>
+    <wr_entities><wr_entity>
+      <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.DataModel.ParametersCatalogue</name>
+      <shortname>ParametersCatalogue</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity></parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity></root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.DataModel.WorkMaster</name>
+      <shortname>WorkMaster</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity></parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity></root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.DataModel.WorkMasterHeaderParameter</name>
+      <shortname>WorkMasterHeaderParameter</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.DataModel.WorkMaster</parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.DataModel.WorkMaster</root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.DataModel.OperationParameterSpecification</name>
+      <shortname>OperationParameterSpecification</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.DataModel.WorkMasterOperation</parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.DataModel.WorkMaster</root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.DataModel.OperationMaterialSpecification</name>
+      <shortname>OperationMaterialSpecification</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.DataModel.WorkMasterOperation</parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.DataModel.WorkMaster</root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.DataModel.OperationMaterialSpecificationDirection</name>
+      <shortname>OperationMaterialSpecificationDirection</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity></parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity></root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.DataModel.OperationMaterialSpecificationUsage</name>
+      <shortname>OperationMaterialSpecificationUsage</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity></parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity></root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.DataModel.OperationEquipmentSpecification</name>
+      <shortname>OperationEquipmentSpecification</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.DataModel.WorkMasterOperation</parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.DataModel.WorkMaster</root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.DataModel.StorageHierarchy</name>
+      <shortname>StorageHierarchy</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity></parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity></root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.DataModel.WorkMasterOperation</name>
+      <shortname>WorkMasterOperation</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.DataModel.WorkMaster</parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.DataModel.WorkMaster</root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.DataModel.OperationToProcessDefinition</name>
+      <shortname>OperationToProcessDefinition</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity>Siemens.SimaticIT.MasterData.UDM_MS.MSModel.DataModel.Operation</parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity>Siemens.SimaticIT.MasterData.UDM_MS.MSModel.DataModel.Operation</root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.DataModel.ProcessDefinitionEntityAssociation</name>
+      <shortname>ProcessDefinitionEntityAssociation</shortname>
+      <haslogicalkey>false</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity></parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity></root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.DataModel.WorkMasterOperationToProcessDefinition</name>
+      <shortname>WorkMasterOperationToProcessDefinition</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.DataModel.WorkMasterOperation</parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.DataModel.WorkMaster</root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.DataModel.OperationMaterialSpecificationInspectionDefinition</name>
+      <shortname>OperationMaterialSpecificationInspectionDefinition</shortname>
+      <haslogicalkey>false</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.DataModel.OperationMaterialSpecification</parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.DataModel.WorkMaster</root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.DataModel.WorkMasterToInspectionMasterPlan</name>
+      <shortname>WorkMasterToInspectionMasterPlan</shortname>
+      <haslogicalkey>false</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.DataModel.WorkMaster</parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.DataModel.WorkMaster</root_entity>
+      <base_entity></base_entity>
+    </wr_entity></wr_entities>
+    <wr_facets><wr_facet>
+      <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.DataModel.BillOfMaterialsExtended</name>
+      <shortname>BillOfMaterialsExtended</shortname>
+      <parententity></parententity>
+      <root_entity>Siemens.SimaticIT.MasterData.UDM_MS.MSModel.DataModel.BillOfMaterials</root_entity>
+    </wr_facet><wr_facet>
+      <name>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.DataModel.ProcessDefinitionParametersMapping</name>
+      <shortname>ProcessDefinitionParametersMapping</shortname>
+      <parententity>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.DataModel.OperationParameterSpecification</parententity>
+      <root_entity>Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.DataModel.WorkMaster</root_entity>
+    </wr_facet></wr_facets>
+  </artifacts>
+  <security>
+    <roles></roles>
+  </security>
+  <runtime>
+    <event_subscriptions></event_subscriptions>
+    <handlergroups></handlergroups>
+  </runtime>
+</projectmanifest>

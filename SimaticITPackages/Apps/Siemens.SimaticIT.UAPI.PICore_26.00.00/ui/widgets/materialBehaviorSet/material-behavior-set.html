@@ -1,0 +1,34 @@
+﻿<div style="float:right">
+    <button ng-click="vm.save()" title="{{vm.translatedSave}}" class="btn btn-default active" ng-show="vm.validInputs && vm.notCanceled && !vm.alreadySet">{{vm.translatedSave}}</button>
+    <button ng-click="vm.cancel()" title="{{vm.translatedCancel}}" class="btn btn-default">{{vm.translatedCancel}}</button>
+</div>
+<div style="float:clear">
+</div>
+<div class="pi-component-title">
+    {{vm.Title}}
+</div>
+<div>
+    <sit-property-grid sit-id="matBehSetProperty"
+                       sit-layout="Vertical"
+                       sit-type="Fluid"
+                       sit-mode="edit"
+                       sit-columns="1">
+        <sit-property sit-widget="sit-pi-select-xor"
+                      sit-widget-attributes="vm.widgetAttributesPlace"
+                      sit-value="vm.currentData.Place"
+                      sit-validation="{required: true}"
+                      sit-change="vm.onChange"
+                      ng-readonly="vm.ngReadonly">
+            {{vm.translatedPlace}}:
+        </sit-property>
+        <sit-property sit-widget="sit-select"
+                      sit-widget-attributes="vm.widgetAttributesBehaviors"
+                      sit-value="vm.currentData.BehaviorType"
+                      sit-validation="{required: true}"
+                      sit-change="vm.onBehaviorChange"
+                      ng-disabled="!vm.selectIsEnabled"
+                      ng-readonly="vm.ngReadonly">
+            {{vm.translatedBehavior}}:
+        </sit-property>
+    </sit-property-grid>
+</div>

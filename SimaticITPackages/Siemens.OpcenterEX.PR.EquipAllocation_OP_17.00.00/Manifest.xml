@@ -1,0 +1,507 @@
+﻿<?xml version="1.0" encoding="utf-8"?><projectmanifest>
+  <header>
+    <manifestversion>11.0</manifestversion>
+    <platformversion>11.0</platformversion>
+    <type>Library</type>
+    <name>Siemens.OpcenterEX.PR.EquipAllocation_OP</name>
+    <shortname>EquipAllocation_OP</shortname>
+    <description>Equipment Allocation Operational Data</description>
+    <version>17.00.00</version>
+    <companyname>Siemens.OpcenterEX.PR</companyname>
+    <author>Siemens.OpcenterEX.PR</author>
+    <hash>/nwOzleo7rd1IlmfdYmpTItspnC5nGsCmiq7dShlRPc=</hash>
+    <modelHash>I8Hf/niEacoXB0W5KzkFjXcNwdEhnsKpyyrxtAq5qZ8=</modelHash>
+    <modelHashSections>
+      <modelHashSection>
+        <name>projectConfigModelHash</name>
+        <hash>z3ixMyDtn6zgqQWrYBdfKgkMx60CHpqHEfqSjowqvO4=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>dataModelHash</name>
+        <hash>CQvdBDO5hRuwusQUXCEK2AKg3f2DK5zCa+BrGT2z4ew=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>commandModelHash</name>
+        <hash>j0Y9z4AuxEF5QW9Mv5aWmAg6MQm6oMgom8mYLBKxCsk=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>aliasModelHash</name>
+        <hash>cdWtFof25lUoH+wgMZZEtJGL5k7aBVT7Ae5HtNcbGxs=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>eventModelHash</name>
+        <hash>vTySge4j6ilkzRYyaIltcDm/WQDSeU/I2OYhwhBdFhc=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>typeModelHash</name>
+        <hash>LyXQT9A6atoRfj/AEScofNZpWbhlttMdvL7tRJiqXf4=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>securityModelHash</name>
+        <hash>cdWtFof25lUoH+wgMZZEtJGL5k7aBVT7Ae5HtNcbGxs=</hash>
+      </modelHashSection>
+    </modelHashSections>
+    <uiHash>na</uiHash>
+    <canbeextended>false</canbeextended>
+    <domain>OperationalData</domain>
+  </header>
+  <reference>
+    <functionalblocks>
+      <functionalblock>
+        <name>Siemens.SimaticIT.UDM_RF</name>
+        <version>07.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.TSK_MS</name>
+        <version>09.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.EQU_MS</name>
+        <version>08.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.TSK_OP</name>
+        <version>11.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.OpcenterEX.PR.EquipAllocation_MS</name>
+        <version>14.00.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.EQU_OP</name>
+        <version>08.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.BPF_MS</name>
+        <version>06.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.BPF_OP</name>
+        <version>09.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.MAT_MS</name>
+        <version>05.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.MAT_OP</name>
+        <version>06.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.UAPI.PITnT_OP</name>
+        <version>19.00.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.OpcenterEX.Maintenance_OP</name>
+        <version>12.00.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.CHR_MS</name>
+        <version>10.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.CHR_OP</name>
+        <version>14.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.UAPI.PIMaterial_OP</name>
+        <version>19.00.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.ES_SD</name>
+        <version>05.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.UAPI.PIEquipment_OP</name>
+        <version>17.00.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.OpcenterEX.FN.DEF_MS</name>
+        <version>05.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.ES_MS</name>
+        <version>05.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.UAPI.PIMaterial_MS</name>
+        <version>15.00.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.OpcenterEX.FN.NUM_OP</name>
+        <version>02.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.UAPI.PIEquipment_MS</name>
+        <version>16.00.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.OpcenterEX.Configuration_RF</name>
+        <version>12.00.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.ALG_MS</name>
+        <version>02.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.ALG_OP</name>
+        <version>02.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.OpcenterEX.PR.ApplicationLogExt</name>
+        <version>14.00.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.OpcenterEX.FN.ProductionHistory_MS</name>
+        <version>10.00.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.OpcenterEX.FN.ProductionHistory_OP</name>
+        <version>11.00.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.UAPI.ProductionContext_RF</name>
+        <version>15.00.00</version>
+        <type>Library</type>
+      </functionalblock>
+    </functionalblocks>
+    <extensions><extension>
+      <name>Siemens.SimaticIT.TSK_OP</name>
+    </extension><extension>
+      <name>Siemens.SimaticIT.EQU_OP</name>
+    </extension></extensions>
+  </reference>
+  <artifacts>
+    <commands><command>
+                        <name>Siemens.OpcenterEX.PR.OperationalData.EquipAllocation_OP.OPModel.Commands.AllocateEquipmentFromTask</name>
+                        <shortname>AllocateEquipmentFromTask</shortname>
+                        <description>The command will allocate Equipment to the Work Order related to the given task. The command performs the folllowing checks: 1. if the given Task exist, if not error 11613 is returned; 2. if the Work Order Context related to the Task exists, if not error 11700 is returned; 3. if the Task Parameter with NId "EquipmentToAllocate" exists, if not error 11702 is returned. If the Task is configured to allocate equipment through a Work Order Operation Equipment Requirement: 1. if the Task Parameter with NId "RequirementTag" exists, if not error 11702 is returned; 2. if the execution of the command GetWorkOrderOperationEquipmentRequirementsFromTags succeed, if not error 11709 is returned; 3. if the command GetWorkOrderOperationEquipmentRequirementsFromTags returns a Work Order Operation Equipment Requirement, if not error 11703 is returned. Then the command checks: 1. if the piece of Equipment identify by the Task Parameter with NId "EquipmentToAllocate" exists, if not error 11706 is returned; 2. if the Equipment facet Equipment Allocation Properties exists, if not error 11707 is returned. If the piece of Equipment to allocated is already allocated to the same entity: 1. if the Task Context "EquipmentAllocationTaskContextDefinition" exists, if not error 11707 is returned; 2. if the Task Context User Field "AllowAllocationToSameEntity" exists, if not error 11707 is returned; 3. if the value of the Task Context User Field "AllowAllocationToSameEntity" is set to true, if not error 11708 is returned. Then the command checks: 1. if the execution of the command AllocateEquipment succeed, if not error 11704 is returned; 2. if the Task Parameter with NId "AllocatedEquipment" exists, if not error 11702 is returned; 3. if the execution of the command UpdateTaskParameter succeed, if not error 11705 is returned.</description>
+                        <assembly>Siemens.OpcenterEX.PR.OperationalData.EquipAllocation_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.OpcenterEX.PR.OperationalData.EquipAllocation_OP.OPModel.Commands.AllocateEquipmentFromTaskHandlerShell</name>
+                                        <assembly>Siemens.OpcenterEX.PR.EquipAllocation_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.OpcenterEX.PR.OperationalData.EquipAllocation_OP.OPModel.Commands.AllocateEquipment</name>
+                        <shortname>AllocateEquipment</shortname>
+                        <description>This command will: 1. retrieve (from the given Equipment) the associated State Machine which is configured to manage the allocation; 2. check if the current Status and the target Status are the expected ones; 3. allocate the given Equipment to the Entity. The command performs the following checks on the given Equipment: 1. if it exists, if not error 11600 is returned; 2. if it has the standard Process Properties, if not error 11601 is returned; 3. if it its Allocation State Machine is configured, if not error 11607 is returned; The command performs the following checks on the configured Allocation State Machine of the given Equipment: 1.  if it is associated to the Equipment, if not error 11602 is returned; 2. if it exists, if not error 11603 is returned; 3. if the Behavior of the current Equipment Allocation Status equals “IsNotUsed”, if not error 11604 is returned; 4. if a Transition exists toward the Status configured with the Status Behavior equal to “IsInUse”, if not error 11605 is returned. The command checks if the Status Transition has been done, if not error 11606 is returned.</description>
+                        <assembly>Siemens.OpcenterEX.PR.OperationalData.EquipAllocation_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.OpcenterEX.PR.OperationalData.EquipAllocation_OP.OPModel.Commands.AllocateEquipmentHandlerShell</name>
+                                        <assembly>Siemens.OpcenterEX.PR.EquipAllocation_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.OpcenterEX.PR.OperationalData.EquipAllocation_OP.OPModel.Commands.ReleaseEquipment</name>
+                        <shortname>ReleaseEquipment</shortname>
+                        <description>The command will: 1. retrieve the State Machine which is configured to manage the allocation; 2. check if the current Status and the target Status are the expected ones; 3. release the Equipment from the Entity. The command performs the following checks on the given Equipment: 1. if it exist, if not error 11608 is returned; 2. if it has the standard Process properties, if not, error 11609 is returned; 3. if its Allocation State Machine is configured, if not 11607 is returned. The command performs the following checks on the configured Allocation State Machine of the given Equipment: 1. if it is associated to the Equipment, if not error 11602 is returned; 2. if it exists, if not error 11603 is returned; 3. if the Status Behavior of the current Equipment Allocation Status equals “IsInUse”, if not error 11610 is returned; 4. if a Transition exists  toward the Status configured with the Status Behavior equals to “IsNotUsed”, if not error 11611 is returned. The command checks if the Status Transition has been done, If not error 11612 is returned.</description>
+                        <assembly>Siemens.OpcenterEX.PR.OperationalData.EquipAllocation_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.OpcenterEX.PR.OperationalData.EquipAllocation_OP.OPModel.Commands.ReleaseEquipmentHandlerShell</name>
+                                        <assembly>Siemens.OpcenterEX.PR.EquipAllocation_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.OpcenterEX.PR.OperationalData.EquipAllocation_OP.OPModel.Commands.ReleaseEquipmentFromTask</name>
+                        <shortname>ReleaseEquipmentFromTask</shortname>
+                        <description>The command will release the allocated Equipment related to this task. The command performs the folllowing checks: 1. if the given Task exist, if not error 11613 is returned; 2. if the Work Order Context related to the Task exists, if not error 11700 is returned; 3. if the Task Parameter with NId "EquipmentToRelease" exists, if not error 11702 is returned; 4. if the value of the Task Parameter with NId "EquipmentToRelease" is not empty, if not error 11711 is returned; 5. if the piece of Equipment identify by the Task Parameter with NId "EquipmentToRelease" exists, if not error 11706 is returned; 6. if the execution of the command ReleaseEquipment succeed, if not error 11710 is returned; 7. if the Task Parameter with NId "ReleasedEquipment" exists, if not error 11702 is returned; 8. if the execution of the command UpdateTaskParameter succeed, if nor error 11705 is returned.</description>
+                        <assembly>Siemens.OpcenterEX.PR.OperationalData.EquipAllocation_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.OpcenterEX.PR.OperationalData.EquipAllocation_OP.OPModel.Commands.ReleaseEquipmentFromTaskHandlerShell</name>
+                                        <assembly>Siemens.OpcenterEX.PR.EquipAllocation_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.OpcenterEX.PR.OperationalData.EquipAllocation_OP.OPModel.Commands.CreateEquipmentAllocationProperties</name>
+                        <shortname>CreateEquipmentAllocationProperties</shortname>
+                        <description>Creates extended Equipment Allocation properties for the given Equipment if none exists. The command performs the following checks:  1. if the given Equipment NId exist, if not error 10300 is returned;  2. if the respective Equipment is not Frozen, if it is, error 10992 is returned. </description>
+                        <assembly>Siemens.OpcenterEX.PR.OperationalData.EquipAllocation_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.OpcenterEX.PR.OperationalData.EquipAllocation_OP.OPModel.Commands.CreateEquipmentAllocationPropertiesHandlerShell</name>
+                                        <assembly>Siemens.OpcenterEX.PR.EquipAllocation_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.OpcenterEX.PR.OperationalData.EquipAllocation_OP.OPModel.Commands.SynchronizeEquipmentAllocationProperties</name>
+                        <shortname>SynchronizeEquipmentAllocationProperties</shortname>
+                        <description>Synchronizes allocation properties with allocation properties of the given Equipment Configuration. The command performs the following checks the given Equipment Configuration:  1. if the given Id exists, if not error 10300 is returned;  2. if the EquipmentAllocationPropertiesConfiguration (related to it) exists, if not error 10996 is returned;  3. if the respective Equipment entity exists, if not the error 10996 is returned;  4. if the EquipmentAllocationProperties (related to the Equipment entity) exists, if not error 10996 is returned;  5. if the respective Equipment entity is not Frozen, if so error 10992 is returned; The command updates the following attributes:  - AllocationStateMachineNId.</description>
+                        <assembly>Siemens.OpcenterEX.PR.OperationalData.EquipAllocation_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.OpcenterEX.PR.OperationalData.EquipAllocation_OP.OPModel.Commands.SynchronizeEquipmentAllocationPropertiesHandlerShell</name>
+                                        <assembly>Siemens.OpcenterEX.PR.EquipAllocation_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.OpcenterEX.PR.OperationalData.EquipAllocation_OP.OPModel.Commands.MigrateEquipmentCreateAllocationProperties</name>
+                        <shortname>MigrateEquipmentCreateAllocationProperties</shortname>
+                        <description>This command will add an EquipmentAllocationProperties Facet to all Equipments Entities, to add allocation properties.</description>
+                        <assembly>Siemens.OpcenterEX.PR.OperationalData.EquipAllocation_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.OpcenterEX.PR.OperationalData.EquipAllocation_OP.OPModel.Commands.MigrateEquipmentCreateAllocationPropertiesHandlerShell</name>
+                                        <assembly>Siemens.OpcenterEX.PR.EquipAllocation_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.OpcenterEX.PR.OperationalData.EquipAllocation_OP.OPModel.Commands.PushTaskContextToEquipment</name>
+                        <shortname>PushTaskContextToEquipment</shortname>
+                        <description>Given a piece of Equipment and a Task, the command matches a Task Context and an Equipment Property which share the same identifier and it copies values from the Task Context User Fields to corresponding Equipment Property Attributes. The command performs the folllowing checks: 1. if the given Task exists; otherwise error -11613 is returned 2. if the given piece of Equipment exists; otherwise error -11706is returned</description>
+                        <assembly>Siemens.OpcenterEX.PR.OperationalData.EquipAllocation_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.OpcenterEX.PR.OperationalData.EquipAllocation_OP.OPModel.Commands.PushTaskContextToEquipmentHandlerShell</name>
+                                        <assembly>Siemens.OpcenterEX.PR.EquipAllocation_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.OpcenterEX.PR.OperationalData.EquipAllocation_OP.OPModel.Commands.GetWorkOrderOperationEquipmentRequirementsFromTags_Interface</name>
+                        <shortname>GetWorkOrderOperationEquipmentRequirementsFromTags_Interface</shortname>
+                        <description>This command is empty; it is meant to be implemented via a dedicated post action to return, from a Task, the list of identifiers of its Work Order Operation Equipment Requirements which have a Requirement Tag matching any value of list of Requirement Tag values passed as argument.</description>
+                        <assembly>Siemens.OpcenterEX.PR.OperationalData.EquipAllocation_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.OpcenterEX.PR.OperationalData.EquipAllocation_OP.OPModel.Commands.GetWorkOrderOperationEquipmentRequirementsFromTags_InterfaceHandlerShell</name>
+                                        <assembly>Siemens.OpcenterEX.PR.EquipAllocation_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command></commands>
+    <commandActions><commandAction>
+                        <name>Siemens.OpcenterEX.PR.OperationalData.EquipAllocation_OP.OPModel.Commands.CreateEquipmentAllocationTaskFacetHandlerShell</name>
+                        <shortname>CreateEquipmentAllocationTaskFacetHandlerShell</shortname>
+                        <description>Adds an EquipmentAllocationTask facet to the Task if it is of EquipmentAllocationTaskType, retrieving the data of the EquipmentAllocationTaskDefinition facet of the Task Definition (respective to this Task).</description>
+                        <assembly>Siemens.OpcenterEX.PR.EquipAllocation_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <target_cpu>AnyCPU</target_cpu>
+                        <targetframework>netstandard2.0</targetframework>
+                        <command>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.Commands.CreateTask</command>
+                        <type>Post</type>
+                        <is_enabled>true</is_enabled>
+                        <is_optional>false</is_optional>
+                </commandAction><commandAction>
+                        <name>Siemens.OpcenterEX.PR.OperationalData.EquipAllocation_OP.OPModel.Commands.SyncEquipmentAllocationHandlerShell</name>
+                        <shortname>SyncEquipmentAllocationHandlerShell</shortname>
+                        <description>Updates the Equipment Allocation Properties of a piece of Equipment Allocation, after Equipment Synchronization</description>
+                        <assembly>Siemens.OpcenterEX.PR.EquipAllocation_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <target_cpu>AnyCPU</target_cpu>
+                        <targetframework>netstandard2.0</targetframework>
+                        <command>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.Commands.SynchronizeEquipment</command>
+                        <type>Post</type>
+                        <is_enabled>true</is_enabled>
+                        <is_optional>false</is_optional>
+                </commandAction><commandAction>
+                        <name>Siemens.OpcenterEX.PR.OperationalData.EquipAllocation_OP.OPModel.Commands.CreateAllocationPropertiesHandlerShell</name>
+                        <shortname>CreateAllocationPropertiesHandlerShell</shortname>
+                        <description>Creates extended Equipment Allocation Properties for the given piece of equipment if none exists.  List of properties:      - AllocationStateMachineNId: The identifier of the State Machine on which the system will rely on, in order to manage the allocation state of the piece of equipment. </description>
+                        <assembly>Siemens.OpcenterEX.PR.EquipAllocation_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <target_cpu>AnyCPU</target_cpu>
+                        <targetframework>netstandard2.0</targetframework>
+                        <command>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.Commands.CreateEquipment</command>
+                        <type>Post</type>
+                        <is_enabled>true</is_enabled>
+                        <is_optional>true</is_optional>
+                </commandAction><commandAction>
+                        <name>Siemens.OpcenterEX.PR.OperationalData.EquipAllocation_OP.OPModel.Commands.AddEquipmentAllocationPropertiesHandlerShell</name>
+                        <shortname>AddEquipmentAllocationPropertiesHandlerShell</shortname>
+                        <description>Updates the given EquipmentOperationTracking record, by adding the information of the allocated entity - if any.</description>
+                        <assembly>Siemens.OpcenterEX.PR.EquipAllocation_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <target_cpu>AnyCPU</target_cpu>
+                        <targetframework>netstandard2.0</targetframework>
+                        <command>Siemens.SimaticIT.UAPI.OperationalData.PITnT_OP.OPModel.Commands.CreateEquipmentOperationTracking</command>
+                        <type>Post</type>
+                        <is_enabled>true</is_enabled>
+                        <is_optional>true</is_optional>
+                </commandAction></commandActions>
+    <events></events>
+    <event_handlers><event_handler>
+<name>Siemens.OpcenterEX.PR.OperationalData.EquipAllocation_OP.OPModel.Events.OnEquipmentUpdated_EquipmentAllocationShell</name>
+<assembly>Siemens.OpcenterEX.PR.EquipAllocation_OP.EventHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+<event_name>Siemens.SimaticIT.SystemData.Foundation.Events.CommittedEvent</event_name>
+<target_cpu>AnyCPU</target_cpu>
+<targetframework>netstandard2.0</targetframework>
+<dependencies></dependencies>
+</event_handler><event_handler>
+<name>Siemens.OpcenterEX.PR.OperationalData.EquipAllocation_OP.OPModel.Events.OnAllocationPropertiesConfigurationUpdatedShell</name>
+<assembly>Siemens.OpcenterEX.PR.EquipAllocation_OP.EventHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+<event_name>Siemens.OpcenterEX.PR.MasterData.EquipAllocation_MS.MSModel.Events.EquipmentAllocationPropertiesConfigurationUpdated</event_name>
+<target_cpu>AnyCPU</target_cpu>
+<targetframework>netstandard2.0</targetframework>
+<dependencies></dependencies>
+</event_handler></event_handlers>
+    <signals></signals>
+    <readingFunctions></readingFunctions>
+    <entities></entities>
+    <datamodels><datamodel>
+      <assembly>Siemens.OpcenterEX.PR.OperationalData.EquipAllocation_OP.OPModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>WR</mode>
+      <domain>OperationalData</domain>
+    </datamodel><datamodel>
+      <assembly>Siemens.OpcenterEX.PR.OperationalData.EquipAllocation_OP.OPModel.ReadingModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>RD</mode>
+      <domain>OperationalData</domain>
+    </datamodel><datamodel>
+      <assembly>Siemens.OpcenterEX.PR.OperationalData.EquipAllocation_OP.OPModel.Types, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>WR</mode>
+      <domain>OperationalData</domain>
+    </datamodel><datamodel>
+      <assembly>Siemens.OpcenterEX.PR.OperationalData.EquipAllocation_OP.OPModel.Types.ReadingModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>RD</mode>
+      <domain>OperationalData</domain>
+    </datamodel></datamodels>
+    <externaldatamodels></externaldatamodels>
+    <appdatamodels></appdatamodels>
+    <uimodules></uimodules>
+    <uicomponents></uicomponents>
+    <wr_entities></wr_entities>
+    <wr_facets><wr_facet>
+      <name>Siemens.OpcenterEX.PR.OperationalData.EquipAllocation_OP.OPModel.DataModel.EquipmentAllocationTask</name>
+      <shortname>EquipmentAllocationTask</shortname>
+      <parententity></parententity>
+      <root_entity>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.DataModel.Task</root_entity>
+    </wr_facet><wr_facet>
+      <name>Siemens.OpcenterEX.PR.OperationalData.EquipAllocation_OP.OPModel.DataModel.EquipmentAllocationProperties</name>
+      <shortname>EquipmentAllocationProperties</shortname>
+      <parententity></parententity>
+      <root_entity>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.DataModel.Equipment</root_entity>
+    </wr_facet></wr_facets>
+  </artifacts>
+  <security>
+    <roles></roles>
+  </security>
+  <runtime>
+    <event_subscriptions></event_subscriptions>
+    <handlergroups></handlergroups>
+  </runtime>
+</projectmanifest>

@@ -1,0 +1,11 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <g id="g851">
+    <path id="polyline4" d="M1,3V23H17V20.375H16V22H2V4H7.418V3Z" class="aw-theme-iconOutline" fill="#464646"/>
+    <path id="polygon6" d="M6.984,1V21h16V6.229L17.668,1Zm1,1h9.274l4.726,4.648V20h-14Z" class="aw-theme-iconOutline" fill="#464646"/>
+    <path id="line8" d="M4,7V8H7.457V7Z" class="aw-theme-iconOutline" fill="#464646"/>
+    <path id="line10" d="M4,12v1H7.457V12Z" class="aw-theme-iconOutline" fill="#464646"/>
+    <path id="line12" d="M4,17v1H7.457V17Z" class="aw-theme-iconOutline" fill="#464646"/>
+    <path id="polyline14" d="M15.92,5.146l-.707.708L16.859,7.5l-1.65,1.652.707.707L18.273,7.5Z" class="aw-theme-iconOutline" fill="#464646"/>
+    <path id="path16" d="M14.9,7a4.519,4.519,0,0,0-4.5,4.5v0A4.519,4.519,0,0,0,14.9,16h0a4.518,4.518,0,0,0,4.5-4.5l-1,0a3.5,3.5,0,1,1-7,0v0A3.506,3.506,0,0,1,14.9,8h2.542V7Z" class="aw-theme-iconOutline" fill="#464646"/>
+  </g>
+</svg>

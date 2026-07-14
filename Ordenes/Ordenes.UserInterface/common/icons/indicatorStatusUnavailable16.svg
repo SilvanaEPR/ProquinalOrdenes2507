@@ -1,0 +1,12 @@
+<svg id="Image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+  <g id="g829">
+    <path id="rect4" d="M1,1H15V15H1Z" fill="#fbeeed"/>
+    <path id="rect819" d="M0,0H1V16H0Z" fill="#dc0000"/>
+    <path id="rect819-5" d="M15,0h1V16H15Z" fill="#dc0000"/>
+    <path id="rect836" d="M1,15H15v1H1Z" fill="#dc0000"/>
+    <path id="rect838" d="M1,0H15V1H1Z" fill="#dc0000"/>
+    <g id="g823">
+      <path id="path820" d="M3,3.031C4.706,6.331,6.356,9.665,8.01,13,9.647,9.659,11.324,6.345,13,3.031,9.667,2.977,6.333,3.006,3,3.031Z" fill="#dc0000"/>
+    </g>
+  </g>
+</svg>

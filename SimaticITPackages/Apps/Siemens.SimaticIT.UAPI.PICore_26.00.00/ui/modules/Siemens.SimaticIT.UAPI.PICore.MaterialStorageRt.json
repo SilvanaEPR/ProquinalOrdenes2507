@@ -1,0 +1,348 @@
+{
+  "name": "Siemens.SimaticIT.UAPI.PICore.MaterialStorageRt",
+  "functionalBlock": "Siemens.SimaticIT.UAPI.PICore",
+  "type": "mashup",
+  "title": "Material Storage Runtime",
+  "header": "picore.titles.materialStorageRt",
+  "icon": "svg cmdPartStorage24",
+  "manifestVersion": "01.01.00",
+  "dependencies": [],
+  "states": [
+    {
+      "id": "home.Siemens_SimaticIT_UAPI_PICore_MaterialStorageRt_runtime",
+      "name": "runtime",
+      "title": "Material Storage Runtime",
+      "header": "picore.titles.materialStorageRt",
+      "icon": "svg typePartStorage48",
+      "securable": true,
+      "contents": [],
+      "parameters": [
+        {
+          "name": "isActionEnabled",
+          "type": "boolean",
+          "value": "false"
+        }
+      ],
+      "context": []
+    }
+  ],
+  "components": [
+    {
+      "name": "mashup",
+      "title": "Mashup System Component",
+      "description": "Mashup System Component",
+      "type": "ui",
+      "source": "sit-mashup",
+      "version": "1.0.0",
+      "contracts": {
+        "methods": [
+          "setContext",
+          "navigateTo",
+          "display",
+          "setPosition"
+        ],
+        "events": [
+          "onLoad",
+          "onContextChanged"
+        ],
+        "dpc": {
+
+        }
+      },
+      "functionalBlock": "",
+      "category": "internal"
+    },
+    {
+      "name": "storagehierarchylist",
+      "title": "Display Storage Hierarchy List",
+      "description": "",
+      "type": "ui",
+      "source": "storagehierarchylist",
+      "version": "1.0.0",
+      "contracts": {
+        "methods": [ "setActionBarVisibility" ],
+        "events": [ "onStorageHierarchySelected" ],
+        "dpc": {
+
+        }
+      },
+      "functionalBlock": "Siemens.SimaticIT.UAPI.PICore"
+    },
+    {
+      "name": "storagehierarchyequipmentcontent",
+      "title": "Display Storage Hierarchy Equipment Details",
+      "description": "",
+      "type": "ui",
+      "source": "storagehierarchyequipmentcontent",
+      "version": "1.0.0",
+      "contracts": {
+        "methods": [ "setStorageHierarchyEquipmentContext" ],
+        "events": [
+          "onMtuSelected",
+          "onMaterialLotSelected",
+          "onMaterialSelected"
+        ],
+        "dpc": {
+
+        }
+      },
+      "functionalBlock": "Siemens.SimaticIT.UAPI.PICore"
+    },
+    {
+      "name": "storagehierarchydetails",
+      "title": "Display Storage Hierarchy Details",
+      "description": "",
+      "type": "ui",
+      "source": "storagehierarchydetails",
+      "version": "1.0.0",
+      "contracts": {
+        "methods": [
+          "setStorageHierarchyId",
+          "setActionBarVisibility"
+        ],
+        "events": [ "onEquipmentGraphNodeSelected" ],
+        "dpc": {
+          "storageHierarchyEquipmentProperties": {
+            "node": "data",
+            "type": "Array",
+            "category": "Extensibility",
+            "description": "",
+            "permission": "rw",
+            "default": [
+              {
+                "NId": "ActualQuantity",
+                "Label": "picore.labels.actualQuantity",
+                "PropertyType": "Decimal",
+                "PropertyValue": null,
+                "Attributes": [
+                  {
+                    "NId": "UoM",
+                    "PropertyType": "String",
+                    "PropertyValue": ""
+                  }
+                ]
+              },
+              {
+                "NId": "Capacity",
+                "Label": "picore.labels.capacity",
+                "PropertyType": "Decimal",
+                "PropertyValue": null,
+                "Attributes": [
+                  {
+                    "NId": "UoM",
+                    "PropertyType": "String",
+                    "PropertyValue": ""
+                  }
+                ]
+              },
+              {
+                "NId": "IsEmpty",
+                "Label": "picore.labels.isEmpty",
+                "PropertyType": "Bool",
+                "PropertyValue": "false",
+                "Attributes": []
+              },
+              {
+                "NId": "InputLocked",
+                "Label": "picore.labels.inputLocked",
+                "PropertyType": "Bool",
+                "PropertyValue": "false",
+                "Attributes": []
+              },
+              {
+                "NId": "OutputLocked",
+                "Label": "picore.labels.outputLocked",
+                "PropertyType": "Bool",
+                "PropertyValue": "false",
+                "Attributes": []
+              }
+            ]
+          }
+        }
+      },
+      "functionalBlock": "Siemens.SimaticIT.UAPI.PICore"
+    }
+  ],
+  "componentInstances": [
+    {
+      "name": "runtime_mashup_1",
+      "type": "mashup",
+      "state": "home.Siemens_SimaticIT_UAPI_PICore_MaterialStorageRt_runtime",
+      "status": false,
+      "layout": {
+        "left": 0,
+        "top": 0,
+        "rows": 2,
+        "columns": 2
+      },
+      "dpc": {
+
+      }
+    },
+    {
+      "name": "runtime_storagehierarchylist_2",
+      "type": "storagehierarchylist",
+      "state": "home.Siemens_SimaticIT_UAPI_PICore_MaterialStorageRt_runtime",
+      "status": false,
+      "layout": {
+        "left": 0,
+        "top": 0,
+        "rows": 5,
+        "columns": 12
+      },
+      "dpc": {
+
+      },
+      "app": "Siemens.SimaticIT.UAPI.PICore"
+    },
+    {
+      "name": "runtime_storagehierarchydetails_4",
+      "type": "storagehierarchydetails",
+      "state": "home.Siemens_SimaticIT_UAPI_PICore_MaterialStorageRt_runtime",
+      "status": false,
+      "layout": {
+        "left": 0,
+        "top": 5,
+        "rows": 12,
+        "columns": 6
+      },
+      "dpc": {
+
+      },
+      "app": "Siemens.SimaticIT.UAPI.PICore"
+    },
+    {
+      "name": "runtime_storagehierarchyequipmentcontent_3",
+      "type": "storagehierarchyequipmentcontent",
+      "state": "home.Siemens_SimaticIT_UAPI_PICore_MaterialStorageRt_runtime",
+      "status": false,
+      "layout": {
+        "left": 6,
+        "top": 5,
+        "rows": 12,
+        "columns": 6
+      },
+      "dpc": {
+
+      },
+      "app": "Siemens.SimaticIT.UAPI.PICore"
+    }
+  ],
+  "wires": [
+    {
+      "name": "DisableActions",
+      "state": "home.Siemens_SimaticIT_UAPI_PICore_MaterialStorageRt_runtime",
+      "description": "",
+      "input": {
+        "component": "runtime_mashup_1",
+        "api": "onLoad"
+      },
+      "output": [
+        {
+          "component": "runtime_storagehierarchydetails_4",
+          "api": "setActionBarVisibility",
+          "parameters": [ "isActionEnabled" ],
+          "converter": "function(input) {\n\tvar evtObj = input[0];\n\tvar result = [];\n\tresult.push(evtObj[\"isActionEnabled\"]);\n\treturn result;\n}",
+          "customConverter": false
+        },
+        {
+          "component": "runtime_storagehierarchylist_2",
+          "api": "setActionBarVisibility",
+          "parameters": [ "isActionEnabled" ],
+          "converter": "function(input) {\n\tvar evtObj = input[0];\n\tvar result = [];\n\tresult.push(evtObj[\"isActionEnabled\"]);\n\treturn result;\n}",
+          "customConverter": false
+        }
+      ]
+    },
+    {
+      "name": "onSelectionChanged",
+      "state": "home.Siemens_SimaticIT_UAPI_PICore_MaterialStorageRt_runtime",
+      "description": "",
+      "input": {
+        "component": "runtime_storagehierarchydetails_4",
+        "api": "onEquipmentGraphNodeSelected"
+      },
+      "output": [
+        {
+          "component": "runtime_storagehierarchyequipmentcontent_3",
+          "api": "setStorageHierarchyEquipmentContext",
+          "parameters": [
+            "storageHierarchyId",
+            "equipmentId"
+          ],
+          "converter": "function(input) {\n\tvar evtObj = input[0];\n\tvar result = [];\n\tresult.push(evtObj[\"storageHierarchyId\"]);\n\tresult.push(evtObj[\"equipmentId\"]);\n\treturn result;\n}",
+          "customConverter": false
+        }
+      ]
+    },
+    {
+      "name": "selectItem",
+      "state": "home.Siemens_SimaticIT_UAPI_PICore_MaterialStorageRt_runtime",
+      "description": "",
+      "input": {
+        "component": "runtime_storagehierarchylist_2",
+        "api": "onStorageHierarchySelected"
+      },
+      "output": [
+        {
+          "component": "runtime_storagehierarchydetails_4",
+          "api": "setStorageHierarchyId",
+          "parameters": [ "StorageHierarchyId" ],
+          "converter": "function(input) {\n\tvar evtObj = input[0];\n\tvar result = [];\n\tresult.push(evtObj[\"StorageHierarchyId\"]);\n\treturn result;\n}",
+          "customConverter": false
+        }
+      ]
+    }
+  ],
+  "stateLayoutList": [
+    {
+      "state": "home.Siemens_SimaticIT_UAPI_PICore_MaterialStorageRt_runtime",
+      "layoutProperties": {
+        "columns": 12,
+        "pushing": false,
+        "floating": false,
+        "swapping": false,
+        "width": "auto",
+        "colWidth": "auto",
+        "rowHeight": "match",
+        "outerMargin": true,
+        "isMobile": true,
+        "mobileBreakPoint": 768,
+        "tabletBreakPoint": 1024,
+        "mobileModeEnabled": true,
+        "minColumns": 12,
+        "minRows": 12,
+        "maxRows": 100,
+        "defaultSizeX": 3,
+        "defaultSizeY": 3,
+        "resizable": {
+          "enabled": false,
+          "handles": [
+            "n",
+            "e",
+            "s",
+            "w",
+            "ne",
+            "se",
+            "sw",
+            "nw"
+          ]
+        },
+        "margins": [
+          5,
+          5
+        ],
+        "draggable": {
+          "enabled": false,
+          "handle": ".editorSmallComponent"
+        }
+      },
+      "engineeringGridConfig": {
+        "pushing": true,
+        "swapping": true,
+        "floating": true,
+        "isGridLinesVisible": true
+      }
+    }
+  ]
+}

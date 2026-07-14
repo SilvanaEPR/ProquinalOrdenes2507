@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- This file is used to define Application Log messages. You should follow below instructions while defining messages: 
+    - The <message> structure should be repeated for each Application Log message.
+    - The <id> attribute is mandatory and should be unique in this file.
+    - The <short> attribute represents the short text message and should be less than or up to 100 characters.
+    - The <long> attribute represents the long text message and should be less than or up to 400 characters.
+    - The <level> attribute is mandatory and its value should be one of: Verbose | Error | Warning | Critical | Informational.
+    - The <param> structure should be repeated for each parameter of the Application Log message.
+    - The <key> attribute represents the unique identifier for a parameter that repeats multiple times in the message text.
+    - The <type> attribute represents the datatype of the parameter and its value should be one of the primitive types: string | byte | int | decimal | float | double | long | boolean | Guid | Datetime | Timespan.  -->
+<messages>
+  <message>
+    <id>-12000</id>
+    <short>Material does not exist.</short>
+    <long>The Material (NId %NId%, Revision %Revision%) does not exist.</long>
+    <level>Error</level>
+    <params>
+      <param>
+        <key>NId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>Revision</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>-12001</id>
+    <short>The Material is Frozen.</short>
+    <long>The Material (NId: %NId%, Revision: %Revision%) is Frozen.</long>
+    <level>Error</level>
+    <params>
+      <param>
+        <key>NId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>Revision</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>-12002</id>
+    <short>Material not found.</short>
+    <long>The Material (Id %Id%) was not found.</long>
+    <level>Error</level>
+    <params>
+      <param>
+        <key>Id</key>
+        <type>Guid</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>-12003</id>
+    <short>Error: The UoM does not exist.</short>
+    <long>There is no UoM with NId %NId%.</long>
+    <level>Error</level>
+    <params>
+      <param>
+        <key>NId</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>-12004</id>
+    <short>Error: The UoM does not belong to Time dimension.</short>
+    <long>The following UoM does not belong to Time dimension: %NId%.</long>
+    <level>Error</level>
+    <params>
+      <param>
+        <key>NId</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>-12005</id>
+    <short>Error: The UoM is mandatory.</short>
+    <long>The UoM is mandatory for the following property : %Property%.</long>
+    <level>Error</level>
+    <params>
+      <param>
+        <key>Property</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>-12006</id>
+    <short>Material Property not found.</short>
+    <long>The Material Property (Id %Id%) was not found.</long>
+    <level>Error</level>
+    <params>
+      <param>
+        <key>Id</key>
+        <type>Guid</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>-12007</id>
+    <short>The Material is Locked.</short>
+    <long>The Material (NId: %NId%, Revision: %Revision%) is Locked.</long>
+    <level>Error</level>
+    <params>
+      <param>
+        <key>NId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>Revision</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>-12008</id>
+    <short>Material Property Attribute not found.</short>
+    <long>The Material Property Attribute (Id %Id%) was not found.</long>
+    <level>Error</level>
+    <params>
+      <param>
+        <key>Id</key>
+        <type>Guid</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>-12009</id>
+    <short>Material Property Attribute value not valid.</short>
+    <long>The Material Property Attribute value was not valid.</long>
+    <level>Error</level>
+    <params>
+    </params>
+  </message>
+  <message>
+    <id>-12010</id>
+    <short>Error: The MaterialProperty is mandatory.</short>
+    <long>The MaterialProperty in the MaterialPropertyExtendedType Parameter Type is mandatory.</long>
+    <level>Error</level>
+    <params>
+    </params>
+  </message>
+</messages>

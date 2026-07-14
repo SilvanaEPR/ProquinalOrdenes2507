@@ -1,0 +1,15 @@
+<div class="modal overlay-modal" id={{overlayCtrl.modalid}} tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-bs-backdrop="static">
+    <div class="modal-dialog overlay-dialog">
+        <div class="modal-content overlay-content">
+            <div class="modal-header overlay-header">
+                <span data-internal-type="modal-header-content overlay-header-content" class="modal-title overlay-title">{{overlayCtrl.title}}</span>
+            </div>
+            <div data-internal-type="modal-text-contnet overlay-text-content" class="modal-body overlay-body" style="white-space:pre-wrap">{{overlayCtrl.modaltext}}</div>
+            <div class="modal-footer overlay-footer">
+                <div data-internal-type="modal-buttons-content overlay-buttons-content" class="modal-div-button overlay-div-button" ng-repeat="button in overlayCtrl.buttons">
+                    <sit-dialog-button sit-button="button" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

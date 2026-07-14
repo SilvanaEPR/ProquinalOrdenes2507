@@ -1,0 +1,92 @@
+<style>
+
+    #custom-radio .AppRejLabel 
+    {
+        color: #464646;text-align: left;text-decoration: none !important;font-family: 'Segoe UI',Arial;font-size: 10.5pt;font-style: normal;font-weight: 400;line-height: 0px;
+        display:inline-block;
+        vertical-align:middle;
+    }
+
+    #custom-radio input[type="radio"] {
+        visibility: hidden;
+        text-align:center !important;
+        vertical-align:middle;
+    }
+
+    #custom-radio label input[type="radio"] ~ em.fa.radio-off {
+        /*color: #c8c8c8;*/
+        display:inline-block;
+        text-align:center !important;
+        vertical-align:middle;
+    }
+
+    #custom-radio label input[type="radio"] ~ em.fa.radio-on {
+        display: none;
+        text-align:center !important;
+        vertical-align:middle;
+    }
+
+    #custom-radio  label input[type="radio"]:checked ~ em.fa.radio-off {
+        display: none;
+    }
+
+    #custom-radio label input[type="radio"]:checked ~ em.fa.radio-on {
+        color: #197695;
+        text-align:center !important;
+        display:inline-block;
+        vertical-align:middle;
+    }
+
+    #custom-radio label:hover input[type="radio"] ~ em.fa {
+        color: #197695;
+        text-align:center !important;
+        vertical-align:middle;
+    }
+
+
+</style>
+<div id="custom-radio">
+    <div class="label label-property-grid-control-readonly property-value-ellipsis" ng-if="richRadioCtrl.readOnly || richRadioCtrl.ngReadonly">
+        {{richRadioCtrl.value}}
+    </div>
+
+    <div class="sit-radio">
+        <ng-form ng-if="!(richRadioCtrl.readOnly || richRadioCtrl.ngReadonly)" name="radioForm" ng-class="{'isrequired' :(richRadioCtrl.validation.required) && richRadioCtrl.value===undefined}">
+            <table style="width:60%;">
+                <tr>
+                    <td ng-repeat="val in richRadioCtrl.options">
+                        <label class="AppRejLabel">
+                            <input type='radio'
+                                   name='{{richRadioCtrl.name}}'
+                                   ng-model='richRadioCtrl.value'
+                                   ng-required="richRadioCtrl.validation.required"
+                                   ng-value='val.value'
+                                   ng-blur="richRadioCtrl.ngBlur()"
+                                   sit-change="richRadioCtrl.sitChange"
+                                   ng-disabled="richRadioCtrl.ngDisabled"
+                                   ng-focus="richRadioCtrl.ngFocus()"
+                                   ng-readonly="richRadioCtrl.ngReadOnly"
+                                   shared-model="true"
+                                   sit-form-input-validator
+                                   style="vertical-align:top;z-index:10000;" />
+                            <em class="fa radio-off">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 48 48">
+                                    <path d="M24 4C12.95 4 4 12.95 4 24s8.95 20 20 20 20-8.95 20-20S35.05 4 24 4zm0 36c-8.84 0-16-7.16-16-16S15.16 8 24 8s16 7.16 16 16-7.16 16-16 16z" />
+                                    <path d="M0 0h48v48H0z" fill="none" />
+                                </svg>
+                            </em>
+                            <em class="fa radio-on">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 48 48">
+                                    <path d="M24 14c-5.52 0-10 4.48-10 10s4.48 10 10 10 10-4.48 10-10-4.48-10-10-10zm0-10C12.95 4 4 12.95 4 24s8.95 20 20 20 20-8.95 20-20S35.05 4 24 4zm0 36c-8.84 0-16-7.16-16-16S15.16 8 24 8s16 7.16 16 16-7.16 16-16 16z" style="fill:#197695 !important;" />
+                                    <path d="M0 0h48v48H0z" fill="none" />
+                                </svg>
+                            </em>
+                            <span>{{val.label}}</span>
+                        </label>
+                    </td>
+                </tr>
+            </table>
+        </ng-form>
+    </div>
+</div>
+

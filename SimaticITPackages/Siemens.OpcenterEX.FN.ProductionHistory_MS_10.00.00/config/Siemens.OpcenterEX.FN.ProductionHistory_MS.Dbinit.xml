@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sections>
+  <Section engineeringLevel="LibraryFunctionalBlock" implementationName="ProductionHistory" domainName="MasterData">
+
+    <!-- Equipment -->
+    <Entity type="Siemens.OpcenterEX.FN.MasterData.ProductionHistory_MS.MSModel.DataModel.ContextAliasAssociationWithEntity">
+      <Property name="EntityFullName" kind="Plain" value="Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.DataModel.Equipment" />
+      <Property name="SourceEntityType" kind="Plain" value="Equipment" />
+      <Property name="ContextFieldNId" kind="Plain" value="EquipmentNId" />
+    </Entity>
+
+    <Entity type="Siemens.OpcenterEX.FN.MasterData.ProductionHistory_MS.MSModel.DataModel.ContextAliasAssociationWithEntity">
+      <Property name="EntityFullName" kind="Plain" value="Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.DataModel.Equipment" />
+      <Property name="SourceEntityType" kind="Plain" value="Equipment" />
+      <Property name="ContextFieldNId" kind="Plain" value="SourceEquipmentNId" />
+    </Entity>
+
+    <Entity type="Siemens.OpcenterEX.FN.MasterData.ProductionHistory_MS.MSModel.DataModel.ContextAliasAssociationWithEntity">
+      <Property name="EntityFullName" kind="Plain" value="Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.DataModel.Equipment" />
+      <Property name="SourceEntityType" kind="Plain" value="Equipment" />
+      <Property name="ContextFieldNId" kind="Plain" value="DestinationEquipmentNId" />
+    </Entity>
+
+    <Entity type="Siemens.OpcenterEX.FN.MasterData.ProductionHistory_MS.MSModel.DataModel.ContextAliasAssociationWithEntity">
+      <Property name="EntityFullName" kind="Plain" value="Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.DataModel.Equipment" />
+      <Property name="SourceEntityType" kind="Plain" value="Equipment" />
+      <Property name="ContextFieldNId" kind="Plain" value="EquipmentRequirementNId" />
+    </Entity>
+
+    <Entity type="Siemens.OpcenterEX.FN.MasterData.ProductionHistory_MS.MSModel.DataModel.ContextAliasAssociationWithEntity">
+      <Property name="EntityFullName" kind="Plain" value="Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.DataModel.Equipment" />
+      <Property name="SourceEntityType" kind="Plain" value="Equipment" />
+      <Property name="ContextFieldNId" kind="Plain" value="ActualEquipmentNId" />
+    </Entity>
+
+    <Entity type="Siemens.OpcenterEX.FN.MasterData.ProductionHistory_MS.MSModel.DataModel.ContextAliasAssociationWithEntity">
+      <Property name="EntityFullName" kind="Plain" value="Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.DataModel.Equipment" />
+      <Property name="SourceEntityType" kind="Plain" value="Equipment" />
+      <Property name="ContextFieldNId" kind="Plain" value="PlannedActualEquipmentNId" />
+    </Entity>
+
+    <Entity type="Siemens.OpcenterEX.FN.MasterData.ProductionHistory_MS.MSModel.DataModel.ContextAliasAssociationWithEntity">
+      <Property name="EntityFullName" kind="Plain" value="Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.DataModel.Equipment" />
+      <Property name="SourceEntityType" kind="Plain" value="Equipment" />
+      <Property name="ContextFieldNId" kind="Plain" value="RequiredActualEquipmentNId" />
+    </Entity>
+
+    <Entity type="Siemens.OpcenterEX.FN.MasterData.ProductionHistory_MS.MSModel.DataModel.ContextAliasAssociationWithEntity">
+      <Property name="EntityFullName" kind="Plain" value="Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.DataModel.Equipment" />
+      <Property name="SourceEntityType" kind="Plain" value="Equipment" />
+      <Property name="ContextFieldNId" kind="Plain" value="MaterialRequirementEquipmentNId" />
+    </Entity>
+
+    <Entity type="Siemens.OpcenterEX.FN.MasterData.ProductionHistory_MS.MSModel.DataModel.ContextAliasAssociationWithEntity">
+      <Property name="EntityFullName" kind="Plain" value="Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.DataModel.Equipment" />
+      <Property name="SourceEntityType" kind="Plain" value="Equipment" />
+      <Property name="ContextFieldNId" kind="Plain" value="ActualMaterialEquipmentNId" />
+    </Entity>
+
+    <!-- Material Tracking Unit -->
+    <Entity type="Siemens.OpcenterEX.FN.MasterData.ProductionHistory_MS.MSModel.DataModel.ContextAliasAssociationWithEntity">
+      <Property name="EntityFullName" kind="Plain" value="Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.DataModel.MaterialTrackingUnit" />
+      <Property name="SourceEntityType" kind="Plain" value="MaterialTrackingUnit" />
+      <Property name="ContextFieldNId" kind="Plain" value="MTUNId" />
+    </Entity>
+
+    <Entity type="Siemens.OpcenterEX.FN.MasterData.ProductionHistory_MS.MSModel.DataModel.ContextAliasAssociationWithEntity">
+      <Property name="EntityFullName" kind="Plain" value="Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.DataModel.MaterialTrackingUnit" />
+      <Property name="SourceEntityType" kind="Plain" value="MaterialTrackingUnit" />
+      <Property name="ContextFieldNId" kind="Plain" value="SourceMTUNId" />
+    </Entity>
+
+    <Entity type="Siemens.OpcenterEX.FN.MasterData.ProductionHistory_MS.MSModel.DataModel.ContextAliasAssociationWithEntity">
+      <Property name="EntityFullName" kind="Plain" value="Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.DataModel.MaterialTrackingUnit" />
+      <Property name="ContextFieldNId" kind="Plain" value="DestinationMTUNId" />
+    </Entity>
+
+    <!-- Material Lot -->
+    <Entity type="Siemens.OpcenterEX.FN.MasterData.ProductionHistory_MS.MSModel.DataModel.ContextAliasAssociationWithEntity">
+      <Property name="EntityFullName" kind="Plain" value="Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.DataModel.MaterialLot" />
+      <Property name="SourceEntityType" kind="Plain" value="MaterialLot" />
+      <Property name="ContextFieldNId" kind="Plain" value="MaterialLotNId" />
+    </Entity>
+
+    <Entity type="Siemens.OpcenterEX.FN.MasterData.ProductionHistory_MS.MSModel.DataModel.ContextAliasAssociationWithEntity">
+      <Property name="EntityFullName" kind="Plain" value="Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.DataModel.MaterialLot" />
+      <Property name="SourceEntityType" kind="Plain" value="MaterialLot" />
+      <Property name="ContextFieldNId" kind="Plain" value="LotNId" />
+    </Entity>
+
+    <Entity type="Siemens.OpcenterEX.FN.MasterData.ProductionHistory_MS.MSModel.DataModel.ContextAliasAssociationWithEntity">
+      <Property name="EntityFullName" kind="Plain" value="Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.DataModel.MaterialLot" />
+      <Property name="SourceEntityType" kind="Plain" value="MaterialLot" />
+      <Property name="ContextFieldNId" kind="Plain" value="SourceLotNId" />
+    </Entity>
+
+    <Entity type="Siemens.OpcenterEX.FN.MasterData.ProductionHistory_MS.MSModel.DataModel.ContextAliasAssociationWithEntity">
+      <Property name="EntityFullName" kind="Plain" value="Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.DataModel.MaterialLot" />
+      <Property name="SourceEntityType" kind="Plain" value="MaterialLot" />
+      <Property name="ContextFieldNId" kind="Plain" value="DestinationLotNId" />
+    </Entity>
+
+    <!-- Order -->
+    <Entity type="Siemens.OpcenterEX.FN.MasterData.ProductionHistory_MS.MSModel.DataModel.ContextAliasAssociationWithEntity">
+      <Property name="EntityFullName" kind="Plain" value="Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.DataModel.Order" />
+      <Property name="SourceEntityType" kind="Plain" value="Order" />
+      <Property name="ContextFieldNId" kind="Plain" value="OrderNId" />
+    </Entity>
+
+    <Entity type="Siemens.OpcenterEX.FN.MasterData.ProductionHistory_MS.MSModel.DataModel.ContextAliasAssociationWithEntity">
+      <Property name="EntityFullName" kind="Plain" value="Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.DataModel.Order" />
+      <Property name="SourceEntityType" kind="Plain" value="Order" />
+      <Property name="ContextFieldNId" kind="Plain" value="SourceOrderNId" />
+    </Entity>
+
+    <Entity type="Siemens.OpcenterEX.FN.MasterData.ProductionHistory_MS.MSModel.DataModel.ContextAliasAssociationWithEntity">
+      <Property name="EntityFullName" kind="Plain" value="Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.DataModel.Order" />
+      <Property name="SourceEntityType" kind="Plain" value="Order" />
+      <Property name="ContextFieldNId" kind="Plain" value="DestinationOrderNId" />
+    </Entity>
+
+    <!-- Work Order -->
+    <Entity type="Siemens.OpcenterEX.FN.MasterData.ProductionHistory_MS.MSModel.DataModel.ContextAliasAssociationWithEntity">
+      <Property name="EntityFullName" kind="Plain" value="Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.DataModel.WorkOrder" />
+      <Property name="SourceEntityType" kind="Plain" value="WorkOrder" />
+      <Property name="ContextFieldNId" kind="Plain" value="WorkOrderNId" />
+    </Entity>
+
+    <Entity type="Siemens.OpcenterEX.FN.MasterData.ProductionHistory_MS.MSModel.DataModel.ContextAliasAssociationWithEntity">
+      <Property name="EntityFullName" kind="Plain" value="Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.DataModel.WorkOrder" />
+      <Property name="SourceEntityType" kind="Plain" value="WorkOrder" />
+      <Property name="ContextFieldNId" kind="Plain" value="SourceWorkOrderNId" />
+    </Entity>
+
+    <Entity type="Siemens.OpcenterEX.FN.MasterData.ProductionHistory_MS.MSModel.DataModel.ContextAliasAssociationWithEntity">
+      <Property name="EntityFullName" kind="Plain" value="Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.DataModel.WorkOrder" />
+      <Property name="SourceEntityType" kind="Plain" value="WorkOrder" />
+      <Property name="ContextFieldNId" kind="Plain" value="DestinationWorkOrderNId" />
+    </Entity>
+
+    <Entity type="Siemens.OpcenterEX.FN.MasterData.ProductionHistory_MS.MSModel.DataModel.ContextAliasAssociationWithEntity">
+      <Property name="EntityFullName" kind="Plain" value="Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.DataModel.WorkOrder" />
+      <Property name="SourceEntityType" kind="Plain" value="WorkOrder" />
+      <Property name="ContextFieldNId" kind="Plain" value="AllocatedEntity" />
+    </Entity>
+
+    <Entity type="Siemens.OpcenterEX.FN.MasterData.ProductionHistory_MS.MSModel.DataModel.ContextAliasAssociationWithEntity">
+      <Property name="EntityFullName" kind="Plain" value="Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.DataModel.WorkOrder" />
+      <Property name="SourceEntityType" kind="Plain" value="WorkOrder" />
+      <Property name="ContextFieldNId" kind="Plain" value="TriggeringEntity" />
+    </Entity>
+
+    <!-- Work Order Operation -->
+    <Entity type="Siemens.OpcenterEX.FN.MasterData.ProductionHistory_MS.MSModel.DataModel.ContextAliasAssociationWithEntity">
+      <Property name="EntityFullName" kind="Plain" value="Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.DataModel.WorkOrderOperation" />
+      <Property name="SourceEntityType" kind="Plain" value="WorkOrderOperation" />
+      <Property name="ContextFieldNId" kind="Plain" value="WorkOrderOperationNId" />
+    </Entity>
+
+    <Entity type="Siemens.OpcenterEX.FN.MasterData.ProductionHistory_MS.MSModel.DataModel.ContextAliasAssociationWithEntity">
+      <Property name="EntityFullName" kind="Plain" value="Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.DataModel.WorkOrderOperation" />
+      <Property name="SourceEntityType" kind="Plain" value="WorkOrderOperation" />
+      <Property name="ContextFieldNId" kind="Plain" value="SourceWorkOrderOperationNId" />
+    </Entity>
+
+    <Entity type="Siemens.OpcenterEX.FN.MasterData.ProductionHistory_MS.MSModel.DataModel.ContextAliasAssociationWithEntity">
+      <Property name="EntityFullName" kind="Plain" value="Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.DataModel.WorkOrderOperation" />
+      <Property name="SourceEntityType" kind="Plain" value="WorkOrderOperation" />
+      <Property name="ContextFieldNId" kind="Plain" value="DestinationWorkOrderOperationNId" />
+    </Entity>
+
+    <!-- Sample -->
+    <Entity type="Siemens.OpcenterEX.FN.MasterData.ProductionHistory_MS.MSModel.DataModel.ContextAliasAssociationWithEntity">
+      <Property name="EntityFullName" kind="Plain" value="Siemens.OpcenterEX.PR.OperationalData.Sampling_OP.OPModel.DataModel.Sample" />
+      <Property name="SourceEntityType" kind="Plain" value="Sample" />
+      <Property name="ContextFieldNId" kind="Plain" value="SampleNId" />
+    </Entity>
+
+    <!-- MaterialTrackingUnitAggregate -->
+    <Entity type="Siemens.OpcenterEX.FN.MasterData.ProductionHistory_MS.MSModel.DataModel.ContextAliasAssociationWithEntity">
+      <Property name="EntityFullName" kind="Plain" value="Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.DataModel.MaterialTrackingUnitAggregate" />
+      <Property name="SourceEntityType" kind="Plain" value="MaterialTrackingUnitAggregate" />
+      <Property name="ContextFieldNId" kind="Plain" value="MTUANId" />
+    </Entity>
+
+    <Entity type="Siemens.OpcenterEX.FN.MasterData.ProductionHistory_MS.MSModel.DataModel.ContextAliasAssociationWithEntity">
+      <Property name="EntityFullName" kind="Plain" value="Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.DataModel.MaterialTrackingUnitAggregate" />
+      <Property name="SourceEntityType" kind="Plain" value="MaterialTrackingUnitAggregate" />
+      <Property name="ContextFieldNId" kind="Plain" value="DestinationMTUANId" />
+    </Entity>
+    
+    <Entity type="Siemens.OpcenterEX.FN.MasterData.ProductionHistory_MS.MSModel.DataModel.ContextAliasAssociationWithEntity">
+      <Property name="EntityFullName" kind="Plain" value="Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.DataModel.MaterialTrackingUnitAggregate" />
+      <Property name="SourceEntityType" kind="Plain" value="MaterialTrackingUnitAggregate" />
+      <Property name="ContextFieldNId" kind="Plain" value="ParentMTUANId" />
+    </Entity>
+    
+    <!-- Order Operation -->
+    <Entity type="Siemens.OpcenterEX.FN.MasterData.ProductionHistory_MS.MSModel.DataModel.ContextAliasAssociationWithEntity">
+      <Property name="EntityFullName" kind="Plain" value="Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.DataModel.OrderOperation" />
+      <Property name="SourceEntityType" kind="Plain" value="OrderOperation" />
+      <Property name="ContextFieldNId" kind="Plain" value="OrderOperationNId" />
+    </Entity>
+
+    <!-- Inspection Order -->
+    <Entity type="Siemens.OpcenterEX.FN.MasterData.ProductionHistory_MS.MSModel.DataModel.ContextAliasAssociationWithEntity">
+      <Property name="EntityFullName" kind="Plain" value="Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.DataModel.InspectionOrder" />
+      <Property name="SourceEntityType" kind="Plain" value="InspectionOrder" />
+      <Property name="ContextFieldNId" kind="Plain" value="InspectionOrderNId" />
+    </Entity>
+
+    <!-- Inspection Order Operation -->
+    <Entity type="Siemens.OpcenterEX.FN.MasterData.ProductionHistory_MS.MSModel.DataModel.ContextAliasAssociationWithEntity">
+      <Property name="EntityFullName" kind="Plain" value="Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.DataModel.InspectionOrderOperation" />
+      <Property name="SourceEntityType" kind="Plain" value="InspectionOrderOperation" />
+      <Property name="ContextFieldNId" kind="Plain" value="InspectionOrderOperationNId" />
+    </Entity>
+
+  </Section>
+</Sections>

@@ -1,0 +1,8 @@
+{
+  "OR_Ordenes_WorkOrderConfiguration_Copy": "OR.Ordenes.WorkOrderConfiguration_Copy",
+  "Siemens_SimaticIT_UAPI_PICore_common": "Siemens.SimaticIT.UAPI.PICore.common",
+  "Siemens_SimaticIT_UAPI_PICore_Operation": "Siemens.SimaticIT.UAPI.PICore.Operation",
+  "Siemens_SimaticIT_UAPI_PICore_OperatorTask_common": "Siemens.SimaticIT.UAPI.PICore.OperatorTask.common",
+  "Siemens_SimaticIT_UAPI_PICore_WorkMasterConfiguration": "Siemens.SimaticIT.UAPI.PICore.WorkMasterConfiguration",
+  "Siemens_SimaticIT_UAPI_PICore_WorkOrderConfiguration": "Siemens.SimaticIT.UAPI.PICore.WorkOrderConfiguration"
+}

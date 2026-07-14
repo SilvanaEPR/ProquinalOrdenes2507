@@ -1,0 +1,73 @@
+﻿<style type="text/css">
+    /*uncomment the below style snippet if you want the component to be displayed covering all the available space*/
+    /*uncomment the below style snippet if you want the component to be displayed covering all the available space*/
+    div[name^="{{vm.compName}}"] {
+        height: 100% !important;
+    }
+
+    div[data-task-side-panel] div[data-internal-type="property-area-container"],
+    div[data-task-side-panel] div[data-internal-type="property-area-container-modal"] {
+        width: calc(100% - 80px) !important;
+        box-shadow: none;
+        border-radius: 12px 0px 0px 0px;
+    }
+
+</style>
+<sit-side-panel class="otl-task-visibility-panel">
+    <div class="otl-sidePanel-mainContainer shopfloor-typo">
+        <div class="pi-ux-shopfloor content-area otl-sidePanel-header">
+            <pi-optsk-context on-register-api="vm.onTaskContextRegisterApi(api); vm.updateTaskContextInfo();" ng-if="vm.displayStandardTaskDetail"></pi-optsk-context>
+            <div id="taskContextComponent"></div>
+        </div>
+        <div id="tabContent" class="otl-sidePanel-content side-panel-property-area-body tab-view" style="height: 100%">
+            <sit-tabset ng-show="true">
+                <sit-tab id="tabOverview" heading="{{ 'Siemens.SimaticIT.UAPI.PICore.OperatorTask.common.overview' | translate }}" active=true select="vm.onTabSelected(0)">
+                    <div>
+                        <sit-property-grid id="propertyGridFormPart1"
+                                           sit-layout="Horizontal"
+                                           sit-type="Fixed"
+                                           sit-columns="1"
+                                           sit-mode="list">
+                            <sit-property sit-id="workOrder_id"
+                                          sit-widget="sit-text"
+                                          sit-value="vm.workOrder"
+                                          sit-read-only="true">
+                                {{ 'Siemens.SimaticIT.UAPI.PICore.OperatorTask.common.WorkOrder' | translate }}
+                            </sit-property>
+                            <sit-property sit-id="workOrderOperation_id"
+                                          sit-widget="sit-text"
+                                          sit-value="vm.workOrderOperation"
+                                          sit-read-only="true">
+                                {{ 'Siemens.SimaticIT.UAPI.PICore.OperatorTask.common.WorkOrderOperation' | translate }}
+                            </sit-property>
+                            <sit-property sit-id="workOrderOperation_Name"
+                                          sit-widget="sit-text"
+                                          sit-value="vm.workOrderOperationName"
+                                          sit-read-only="true">
+                                {{ 'Siemens.SimaticIT.UAPI.PICore.OperatorTask.common.WorkOrderOperationName' | translate }}
+                            </sit-property>
+                            <sit-property sit-id="workOrderOperation_Sequence"
+                                          sit-widget="sit-text"
+                                          sit-value="vm.workOrderOperationSequence"
+                                          sit-read-only="true">
+                                {{ 'Siemens.SimaticIT.UAPI.PICore.OperatorTask.common.Sequence' | translate }}
+                            </sit-property>
+                        </sit-property-grid>
+                    </div>
+                </sit-tab>
+                <sit-tab id="tabParameters" heading="{{ 'Siemens.SimaticIT.UAPI.PICore.OperatorTask.common.Parameters' | translate }}" active=false select="vm.onTabSelected(1)">
+                    <workorderoperationparamlist />
+                </sit-tab>
+                <sit-tab id="tabMaterials" heading="{{ 'Siemens.SimaticIT.UAPI.PICore.OperatorTask.common.materialOverview' | translate }}" active=false select="vm.onTabSelected(2)">
+                    <workorderoperationmaterialdetails />
+                </sit-tab>
+                <sit-tab id="tabCustom" heading="{{ 'Siemens.SimaticIT.UAPI.PICore.OperatorTask.common.additionalInformation' | translate }}" active=false select="vm.onTabSelected(3)" ng-if="vm.displayCustomView">
+                    <sit-container sit-isswac="false">
+                        <sit-component sit-name="{{vm.name}}" sit-componentname="{{vm.name}}" sit-type="ui" sit-source="{{vm.source}}" sit-left="0" sit-top="0" sit-cols="12" sit-rows="12" sit-flavor="ui" sit-dpc="vm.dpc">
+                        </sit-component>
+                    </sit-container>
+                </sit-tab>
+            </sit-tabset>
+        </div>
+    </div>
+</sit-side-panel>

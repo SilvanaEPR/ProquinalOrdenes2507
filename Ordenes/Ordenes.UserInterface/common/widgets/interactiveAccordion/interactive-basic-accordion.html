@@ -1,0 +1,75 @@
+    <div class="sit-interactive-accordion">
+        <div class="tree-section">
+
+            <script type="text/ng-template" id="nodes_renderer.html">
+                <div ui-tree-handle class="row" ng-mouseover="node.isMouseHover=true" ng-mouseleave="node.isMouseHover=false" ng-class="{'styled' : interactiveBasicAccordionCtrl.options.accordionstyle === 'Styled'}">
+                    <div class="header" ng-class="{'styled' : interactiveBasicAccordionCtrl.options.accordionstyle === 'Styled',
+                                                'selected' :node.selected }">
+                        <div class="header-left">
+                            <div ng-if="node.gripperVisible" class="icon gripper-cursor" sit-class="svg-icon" sit-mom-icon="{path:'common/icons/cmdGripper16.svg'}">
+                            </div>
+                            <div ng-if="collapsed" class="icon" sit-class="svg-icon" ng-click="interactiveBasicAccordionCtrl.toggle(this, node, $event)"
+                                 sit-mom-icon="{path:'common/icons/miscRightArrow16.svg'}" data-nodrag>
+                            </div>
+                            <div ng-if="!collapsed" class="icon" sit-class="svg-icon" ng-click="interactiveBasicAccordionCtrl.toggle(this, node, $event)"
+                                 sit-mom-icon="{path:'common/icons/miscDownArrow16.svg'}" data-nodrag>
+                            </div>
+
+                            <div ng-if="node.svgIcon" class="img-icon" sit-class="img-svg-icon" sit-mom-icon="node.svgIcon">
+                            </div>
+                            <div class="accordion-checkbox" ng-if="node.checkbox">
+                                <input type="checkbox" id="C{{$index}}" style="margin:0;height:0;width:0;">
+                                <label for="C{{$index}}" ng-click="interactiveBasicAccordionCtrl.selectNode(node)"></label>
+                            </div>
+                             
+                        </div>
+                        <div class="title title-elipsis">
+                            <span title="{{node.headerData[0].title}}" class="text-elipsis text-title-elipsis">{{node.headerData[0].title}}</span>
+                            <span title="{{node.headerData[0].desc}}" class="text-elipsis text-desc-elipsis">{{node.headerData[0].desc}}</span>
+                        </div>
+                        <div class="title title-elipsis" ng-if="(node.cellLayout=='double' && node.headerData)">
+                            <span title="{{node.headerData[1].title}}" class="text-elipsis text-title-elipsis">{{node.headerData[1].title}}</span>
+                            <span title="{{node.headerData[1].desc}}" class="text-elipsis text-desc-elipsis">{{node.headerData[1].desc}}</span>
+                        </div>
+                        <div class="interactive-accordion-action">
+                            <div ng-if="(node.commands.length<=3 && !node.indicatorIcon)" ng-repeat="action in node.commands">
+                                <div data-nodrag class="action-icon" sit-class="action-svg-icon" sit-mom-icon="action.svgIcon" ng-click="interactiveBasicAccordionCtrl.executeAction(action, node)"></div>
+                            </div>
+                        </div>
+                        <div ng-if="(node.commands.length>3 || (node.commands.length && node.indicatorIcon))">
+                            <div class="dropdown">
+                                <button data-nodrag sit-class="action-svg-icon" sit-mom-icon="{path:'common/icons/cmdMoreVertical24.svg'}" class="btn btn-secondary dropdown-toggle action-icon" ng-class="{'selected' :(node.selected)}" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                                    <div ng-repeat="action in node.commands" class="menu-height" ng-click="interactiveBasicAccordionCtrl.executeAction(action, node)">
+                                        <a class="dropdown-item" data-nodrag>
+                                            <em data-nodrag class="context-icon" sit-class="context-svg-icon" sit-mom-icon="action.svgIcon"></em>
+                                            <span class="menu-text" ng-bind-html="action.name"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="indicator-action">
+                            <div ng-if="interactiveBasicAccordionCtrl.checkIndicator(node.indicatorIcon)" class="indicator-icon" sit-class="indicator-svg-icon" sit-mom-icon="{path:'common/icons/' + node.indicatorIcon + '.svg'}">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="body" data-nodrag>
+
+                    </div>
+                </div>
+            </script>
+
+
+            <div class="row main-row">
+
+                <div ui-tree id="tree-root" class="angular-ui-tree" data-drag-delay="200">
+                    <ol ui-tree-nodes="" ng-model="interactiveBasicAccordionCtrl.options.dataSource" class="angular-ui-tree-nodes">
+                        <li ui-tree-node ng-repeat="node in interactiveBasicAccordionCtrl.options.dataSource" ng-include="'nodes_renderer.html'" data-collapsed="true"></li>
+                    </ol>
+                </div>
+
+            </div>
+
+        </div>
+    </div>

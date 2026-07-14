@@ -1,0 +1,823 @@
+﻿<?xml version="1.0" encoding="utf-8"?><projectmanifest>
+  <header>
+    <manifestversion>11.0</manifestversion>
+    <platformversion>11.0</platformversion>
+    <type>Library</type>
+    <name>Siemens.SimaticIT.BPF_OP</name>
+    <shortname>BPF_OP</shortname>
+    <description>Business Process Flow Operational Data Domain Functional Block</description>
+    <version>09.04.00</version>
+    <companyname>Siemens.SimaticIT</companyname>
+    <author>Siemens.SimaticIT</author>
+    <hash>kOisnv/W+pChKWfP/XDa3buuPuzY++HJ6MtdpvE2q9g=</hash>
+    <modelHash>KhgMv9D9lh4WWrUetsWrKendC5s8IWz580pd8+m/1KM=</modelHash>
+    <modelHashSections>
+      <modelHashSection>
+        <name>projectConfigModelHash</name>
+        <hash>JEEuL/LFTJonSBMJyphJ8uIqrz4rAilDTLZ5mep+LhI=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>dataModelHash</name>
+        <hash>8qJmHI9qmUCCAMwaPox6x+t2jQW6PH2VFyyycRnwo3o=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>commandModelHash</name>
+        <hash>U9pjzpkTvZAfFkeyVyCxyeS/ojXe5n+qj7D46iNVGlc=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>aliasModelHash</name>
+        <hash>cdWtFof25lUoH+wgMZZEtJGL5k7aBVT7Ae5HtNcbGxs=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>eventModelHash</name>
+        <hash>7dUWzaycVM+1+3YIJ/uhtE7pSRDvl/vuw1KyTNNaJto=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>typeModelHash</name>
+        <hash>Wrb8Ufp78hajRBTjvfHyxkFgUSeBqvf+F/R7PpQMM2c=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>securityModelHash</name>
+        <hash>cdWtFof25lUoH+wgMZZEtJGL5k7aBVT7Ae5HtNcbGxs=</hash>
+      </modelHashSection>
+    </modelHashSections>
+    <uiHash>na</uiHash>
+    <canbeextended>false</canbeextended>
+    <domain>OperationalData</domain>
+  </header>
+  <reference>
+    <functionalblocks>
+      <functionalblock>
+        <name>Siemens.SimaticIT.UDM_RF</name>
+        <version>07.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.TSK_MS</name>
+        <version>09.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.BPF_MS</name>
+        <version>06.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.EQU_MS</name>
+        <version>08.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.EQU_OP</name>
+        <version>08.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.OpcenterEX.FN.NUM_OP</name>
+        <version>02.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.TSK_OP</name>
+        <version>11.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+    </functionalblocks>
+    <extensions></extensions>
+  </reference>
+  <artifacts>
+    <commands><command>
+                        <name>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.Commands.PauseWorkProcess</name>
+                        <shortname>PauseWorkProcess</shortname>
+                        <description>Pauses a Work Process.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.Commands.PauseWorkProcessHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.BPF_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.Commands.ResumeWorkProcess</name>
+                        <shortname>ResumeWorkProcess</shortname>
+                        <description>Resumes a Work Process.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.Commands.ResumeWorkProcessHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.BPF_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.Commands.EnterElement</name>
+                        <shortname>EnterElement</shortname>
+                        <description>FOR INTERNAL USE ONLY. Element of Enters a private Work Process Flow Element.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>false</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.Commands.EnterElementHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.BPF_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.Commands.StartNewWorkProcess</name>
+                        <shortname>StartNewWorkProcess</shortname>
+                        <description>Creates and runs a new Work Process.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.Commands.StartNewWorkProcessHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.BPF_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.Commands.ExitElement</name>
+                        <shortname>ExitElement</shortname>
+                        <description>FOR INTERNAL USE ONLY.  Exits a private Work Process Flow Element.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>false</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.Commands.ExitElementHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.BPF_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.Commands.CreateWorkProcess</name>
+                        <shortname>CreateWorkProcess</shortname>
+                        <description>Creates a new Work Process.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.Commands.Internal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Private</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>false</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.Commands.CreateWorkProcessHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.BPF_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.Commands.PauseElement</name>
+                        <shortname>PauseElement</shortname>
+                        <description>FOR INTERNAL USE ONLY.  Pauses a private Work Process Flow Element.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>false</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.Commands.PauseElementHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.BPF_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.Commands.CancelElement</name>
+                        <shortname>CancelElement</shortname>
+                        <description>FOR INTERNAL USE ONLY.  Cancels the execution of a private Work Process Flow Element.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>false</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.Commands.CancelElementHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.BPF_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.Commands.FailToken</name>
+                        <shortname>FailToken</shortname>
+                        <description>FOR INTERNAL USE ONLY.  Sets the error status on a Token.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.Commands.FailTokenHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.BPF_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.Commands.AbortWorkProcess</name>
+                        <shortname>AbortWorkProcess</shortname>
+                        <description>Terminates a Work Process. Termination is a general verb causing either the cancelation or abort of the Work Process, depending on its current status.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.Commands.AbortWorkProcessHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.BPF_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.Commands.ResumeElement</name>
+                        <shortname>ResumeElement</shortname>
+                        <description>Resume the single execution of element</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.Commands.ResumeElementHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.BPF_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.Commands.DeleteWorkProcess</name>
+                        <shortname>DeleteWorkProcess</shortname>
+                        <description>Deletes an existing Work Process.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.Commands.DeleteWorkProcessHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.BPF_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.Commands.UpdateWorkProcess</name>
+                        <shortname>UpdateWorkProcess</shortname>
+                        <description>Updates an existing Work Process.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.Commands.UpdateWorkProcessHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.BPF_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.Commands.FailWorkProcess</name>
+                        <shortname>FailWorkProcess</shortname>
+                        <description>Aborts and Sets the failed status of a WorkProcess.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.Commands.FailWorkProcessHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.BPF_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.Commands.CompleteWorkProcess</name>
+                        <shortname>CompleteWorkProcess</shortname>
+                        <description>FOR INTERNAL USE ONLY.  Aborts and Sets the failed status of a WorkProcess.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>false</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.Commands.CompleteWorkProcessHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.BPF_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.Commands.SkipElement</name>
+                        <shortname>SkipElement</shortname>
+                        <description>Skips the execution of Work Process Flow Element.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.Commands.SkipElementHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.BPF_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.Commands.ErrorWorkProcess</name>
+                        <shortname>ErrorWorkProcess</shortname>
+                        <description>FOR INTERNAL USE ONLY.  Aborts and Sets the failed status of a WorkProcess.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>false</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.Commands.ErrorWorkProcessHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.BPF_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.Commands.InProgressWorkProcess</name>
+                        <shortname>InProgressWorkProcess</shortname>
+                        <description>FOR INTERNAL USE ONLY.  Aborts and Sets the failed status of a WorkProcess.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>false</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.Commands.InProgressWorkProcessHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.BPF_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.Commands.FailElement</name>
+                        <shortname>FailElement</shortname>
+                        <description>FOR INTERNAL USE ONLY.  Cancels the execution of a private Work Process Flow Element.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>false</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.Commands.FailElementHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.BPF_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.Commands.StartWorkProcess</name>
+                        <shortname>StartWorkProcess</shortname>
+                        <description>It Starts the Work Process from created state.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.Commands.StartWorkProcessHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.BPF_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.Commands.CancelWorkProcess</name>
+                        <shortname>CancelWorkProcess</shortname>
+                        <description>It cancels the  selected Work Process</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.Commands.CancelWorkProcessHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.BPF_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.Commands.CreateOnlyWorkProcess</name>
+                        <shortname>CreateOnlyWorkProcess</shortname>
+                        <description>It only creates the work process and actualize the context user fields</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.Commands.CreateOnlyWorkProcessHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.BPF_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command></commands>
+    <commandActions></commandActions>
+    <events><event>
+                <name>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.Events.WorkProcessTokenStatusChanged</name>
+                <shortname>WorkProcessTokenStatusChanged</shortname>
+                <description> Indicates that the status of a Work Process Flow Element _token_ has changed and the Work Process has proceeded.</description>
+                <assembly>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.Events, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                <dotneteventtype></dotneteventtype>
+                <eventtype>Application</eventtype>
+                <domain>OperationalData</domain>
+                <taglist>
+                </taglist>
+                <securable>true</securable>
+        </event><event>
+                <name>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.Events.CorrelatedEntityStatusChanged</name>
+                <shortname>CorrelatedEntityStatusChanged</shortname>
+                <description> Indicates that a status has been changed for entities involved in a work process (wrapped in a CallActivity or UserTask).</description>
+                <assembly>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.Events, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                <dotneteventtype></dotneteventtype>
+                <eventtype>Application</eventtype>
+                <domain>OperationalData</domain>
+                <taglist>
+                </taglist>
+                <securable>true</securable>
+        </event></events>
+    <event_handlers><event_handler>
+<name>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.Events.ExitElementOnTaskStatusChangedShell</name>
+<assembly>Siemens.SimaticIT.BPF_OP.EventHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+<event_name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Events.StatusChanged</event_name>
+<target_cpu>AnyCPU</target_cpu>
+<targetframework>netstandard2.0</targetframework>
+<dependencies></dependencies>
+</event_handler><event_handler>
+<name>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.Events.ExitElementOnWorkProcessStatusChangedShell</name>
+<assembly>Siemens.SimaticIT.BPF_OP.EventHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+<event_name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Events.StatusChanged</event_name>
+<target_cpu>AnyCPU</target_cpu>
+<targetframework>netstandard2.0</targetframework>
+<dependencies></dependencies>
+</event_handler><event_handler>
+<name>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.Events.ForwardEventOnTaskStatusChangedShell</name>
+<assembly>Siemens.SimaticIT.BPF_OP.EventHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+<event_name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Events.StatusChanged</event_name>
+<target_cpu>AnyCPU</target_cpu>
+<targetframework>netstandard2.0</targetframework>
+<dependencies></dependencies>
+</event_handler><event_handler>
+<name>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.Events.ForwardEventOnWorkProcessStatusChangedShell</name>
+<assembly>Siemens.SimaticIT.BPF_OP.EventHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+<event_name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Events.StatusChanged</event_name>
+<target_cpu>AnyCPU</target_cpu>
+<targetframework>netstandard2.0</targetframework>
+<dependencies></dependencies>
+</event_handler><event_handler>
+<name>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.Events.ExitElementOnTimerEventShell</name>
+<assembly>Siemens.SimaticIT.BPF_OP.EventHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+<event_name>Siemens.SimaticIT.SystemData.Foundation.Events.TimerEvent</event_name>
+<target_cpu>AnyCPU</target_cpu>
+<targetframework>netstandard2.0</targetframework>
+<dependencies></dependencies>
+</event_handler><event_handler>
+<name>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.Events.EnterElementOnStandardLoopShell</name>
+<assembly>Siemens.SimaticIT.BPF_OP.EventHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+<event_name>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.Events.WorkProcessTokenStatusChanged</event_name>
+<target_cpu>AnyCPU</target_cpu>
+<targetframework>netstandard2.0</targetframework>
+<dependencies></dependencies>
+</event_handler><event_handler>
+<name>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.Events.EnterElementOnTokenReadyShell</name>
+<assembly>Siemens.SimaticIT.BPF_OP.EventHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+<event_name>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.Events.WorkProcessTokenStatusChanged</event_name>
+<target_cpu>AnyCPU</target_cpu>
+<targetframework>netstandard2.0</targetframework>
+<dependencies></dependencies>
+</event_handler><event_handler>
+<name>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.Events.ExitProcessOnLastEndEventShell</name>
+<assembly>Siemens.SimaticIT.BPF_OP.EventHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+<event_name>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.Events.WorkProcessTokenStatusChanged</event_name>
+<target_cpu>AnyCPU</target_cpu>
+<targetframework>netstandard2.0</targetframework>
+<dependencies></dependencies>
+</event_handler><event_handler>
+<name>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.Events.FailWorkProcessOnTokenErrorShell</name>
+<assembly>Siemens.SimaticIT.BPF_OP.EventHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+<event_name>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.Events.WorkProcessTokenStatusChanged</event_name>
+<target_cpu>AnyCPU</target_cpu>
+<targetframework>netstandard2.0</targetframework>
+<dependencies></dependencies>
+</event_handler><event_handler>
+<name>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.Events.WorkProcessInProgressOnTokenCompletedShell</name>
+<assembly>Siemens.SimaticIT.BPF_OP.EventHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+<event_name>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.Events.WorkProcessTokenStatusChanged</event_name>
+<target_cpu>AnyCPU</target_cpu>
+<targetframework>netstandard2.0</targetframework>
+<dependencies></dependencies>
+</event_handler></event_handlers>
+    <signals></signals>
+    <readingFunctions></readingFunctions>
+    <entities><entity>
+      <name>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.DataModel.ReadingModel.WorkProcess</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.DataModel.ReadingModel.WorkProcessElement</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.DataModel.ReadingModel.WorkProcessModel</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.DataModel.ReadingModel.WorkProcessContext</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.DataModel.ReadingModel.WorkProcessContextUserField</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.DataModel.ReadingModel.WorkProcessLink</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.DataModel.ReadingModel.WorkProcessVariable</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.DataModel.ReadingModel.WorkProcessElementDataAssociation</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.DataModel.ReadingModel.WorkProcessSequenceFlowToken</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.DataModel.ReadingModel.WorkProcessFlowElementToken</name>
+      <securable>true</securable>
+    </entity></entities>
+    <datamodels><datamodel>
+      <assembly>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>WR</mode>
+      <domain>OperationalData</domain>
+    </datamodel><datamodel>
+      <assembly>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.ReadingModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>RD</mode>
+      <domain>OperationalData</domain>
+    </datamodel><datamodel>
+      <assembly>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.Types, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>WR</mode>
+      <domain>OperationalData</domain>
+    </datamodel><datamodel>
+      <assembly>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.Types.ReadingModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>RD</mode>
+      <domain>OperationalData</domain>
+    </datamodel></datamodels>
+    <externaldatamodels></externaldatamodels>
+    <appdatamodels></appdatamodels>
+    <uimodules></uimodules>
+    <uicomponents></uicomponents>
+    <wr_entities><wr_entity>
+      <name>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.DataModel.WorkProcess</name>
+      <shortname>WorkProcess</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity></parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity></root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.DataModel.WorkProcessElement</name>
+      <shortname>WorkProcessElement</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity></parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity></root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.DataModel.WorkProcessModel</name>
+      <shortname>WorkProcessModel</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity></parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity></root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.DataModel.WorkProcessContext</name>
+      <shortname>WorkProcessContext</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity></parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity></root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.DataModel.WorkProcessContextUserField</name>
+      <shortname>WorkProcessContextUserField</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.DataModel.WorkProcessContext</parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.DataModel.WorkProcessContext</root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.DataModel.WorkProcessLink</name>
+      <shortname>WorkProcessLink</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity></parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity></root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.DataModel.WorkProcessVariable</name>
+      <shortname>WorkProcessVariable</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.DataModel.WorkProcess</parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.DataModel.WorkProcess</root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.DataModel.WorkProcessElementDataAssociation</name>
+      <shortname>WorkProcessElementDataAssociation</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.DataModel.WorkProcessElement</parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.DataModel.WorkProcessElement</root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.DataModel.WorkProcessSequenceFlowToken</name>
+      <shortname>WorkProcessSequenceFlowToken</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity></parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity></root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.DataModel.WorkProcessFlowElementToken</name>
+      <shortname>WorkProcessFlowElementToken</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity></parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity></root_entity>
+      <base_entity></base_entity>
+    </wr_entity></wr_entities>
+    <wr_facets></wr_facets>
+  </artifacts>
+  <security>
+    <roles></roles>
+  </security>
+  <runtime>
+    <event_subscriptions></event_subscriptions>
+    <handlergroups></handlergroups>
+  </runtime>
+</projectmanifest>

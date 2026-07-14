@@ -1,0 +1,26 @@
+<svg id="svg37" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="linear-gradient" x1="17.222" y1="23.024" x2="49.048" y2="-8.803" gradientTransform="matrix(0.959, 0, 0, -0.959, -15.191, 32.505)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#bebdbd"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="27.868" y1="769.868" x2="44.132" y2="786.132" gradientTransform="translate(0 -742)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7fb8cd"/>
+      <stop offset="0.175" stop-color="#72b0c8"/>
+      <stop offset="0.457" stop-color="#559eb8"/>
+      <stop offset="0.809" stop-color="#2982a1"/>
+      <stop offset="1" stop-color="#0e7191"/>
+    </linearGradient>
+  </defs>
+  <g id="g874">
+    <path id="path20" d="M22.559,22.038V20.979A3.151,3.151,0,0,1,25.7,17.837h0a3.152,3.152,0,0,1,3.141,3.142s-.086,3.374,0,3.459v-.671a3.149,3.149,0,0,1,3.913-3.048,3.281,3.281,0,0,1,2.369,3.244v.65a36.273,36.273,0,0,1-1.988,12.1c-2.989,8.458-6.217,7.805-6.217,7.805H13.729a2.832,2.832,0,0,1-2.24-1.1l-1.1-1.422A56.3,56.3,0,0,1,1.626,25.656L.965,23.7a3.549,3.549,0,0,1,6.23-3.4L9.19,23.565V4.026A3.558,3.558,0,0,1,12.736.479h0a3.559,3.559,0,0,1,3.547,3.547V19.641A3.151,3.151,0,0,1,19.424,16.5h0a3.15,3.15,0,0,1,3.141,3.142v2.364" stroke="#464646" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.959" fill="url(#linear-gradient)"/>
+    <g id="g26">
+      <path id="circle22" d="M47.5,36A11.5,11.5,0,0,1,36,47.5h0A11.5,11.5,0,0,1,24.5,36h0a11.5,11.5,0,0,1,23,0Z" fill="url(#linear-gradient-2)"/>
+      <path id="path24" d="M36,25A11,11,0,1,1,25,36,11,11,0,0,1,36,25m0-1A12,12,0,1,0,48,36,12,12,0,0,0,36,24Z" fill="#4e4a48"/>
+    </g>
+    <g id="g32">
+      <path id="path28" d="M36,27.375a8.625,8.625,0,0,0,0,17.25,8.524,8.524,0,0,0,6.25-2.708v2h.958V40.125H39.417v.958h2.329A7.672,7.672,0,1,1,43.667,36a7.537,7.537,0,0,1-.487,2.788l-.043.111.869.386.046-.127A9.426,9.426,0,0,0,44.625,36,8.636,8.636,0,0,0,36,27.375Z" fill="#fff"/>
+      <path id="polygon30" d="M36.833,30.208h-.958v5.667h-4.25v.958h5.208Z" fill="#fff"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sections>
+  <Section engineeringLevel="LibraryFunctionalBlock" implementationName="2017-3-3-11-46-45" domainName="OperationalData">
+    <Entity type="Siemens.SimaticIT.UAPI.OperationalData.PITnT_OP.OPModel.DataModel.MTUOperationType">
+      <Property name="NId" kind="Plain" value="Create" />
+      <Property name="Name" kind="Plain" value="Create" />
+      <Property name="Description" kind="Plain" value="Create" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.UAPI.OperationalData.PITnT_OP.OPModel.DataModel.MTUOperationType">
+      <Property name="NId" kind="Plain" value="Delete" />
+      <Property name="Name" kind="Plain" value="Delete" />
+      <Property name="Description" kind="Plain" value="Delete" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.UAPI.OperationalData.PITnT_OP.OPModel.DataModel.MTUOperationType">
+      <Property name="NId" kind="Plain" value="Move" />
+      <Property name="Name" kind="Plain" value="Move" />
+      <Property name="Description" kind="Plain" value="Move" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.UAPI.OperationalData.PITnT_OP.OPModel.DataModel.MTUOperationType">
+      <Property name="NId" kind="Plain" value="CreateIdentity" />
+      <Property name="Name" kind="Plain" value="CreateIdentity" />
+      <Property name="Description" kind="Plain" value="CreateIdentity" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.UAPI.OperationalData.PITnT_OP.OPModel.DataModel.MTUOperationType">
+      <Property name="NId" kind="Plain" value="RemoveIdentity" />
+      <Property name="Name" kind="Plain" value="RemoveIdentity" />
+      <Property name="Description" kind="Plain" value="RemoveIdentity" />
+    </Entity>
+  </Section>
+</Sections>

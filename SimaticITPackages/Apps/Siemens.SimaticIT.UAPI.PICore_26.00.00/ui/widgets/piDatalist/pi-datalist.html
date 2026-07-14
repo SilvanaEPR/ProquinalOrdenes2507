@@ -1,0 +1,24 @@
+﻿<div class="label label-property-grid-control-readonly property-value-ellipsis" ng-if="piDlCtrl.readOnly || piDlCtrl.ngReadonly">
+    {{piDlCtrl.readValue}}
+</div>
+<ng-form name='dataListForm' ng-if="!(piDlCtrl.readOnly || piDlCtrl.ngReadonly)" ng-class="{'isrequired' : (piDlCtrl.validation.required) && piDlCtrl.value===undefined}">
+    <div class='property-grid-input-group'>
+        <input type="text" list="list" ng-model="piDlCtrl.value" ng-class='((piDlCtrl.$invalid && piDlCtrl.$dirty) || (piDlCtrl.$invalid && piDlCtrl.$visited)) ? "validator-control-invalid" : "validator-control"'>
+        <datalist id="list"
+                  ng-class='((piDlCtrl.$invalid && piDlCtrl.$dirty) || (piDlCtrl.$invalid && piDlCtrl.$visited)) ? "validator-control-invalid" : "validator-control"'
+                  sit-options='piDlCtrl.options'
+                  sit-to-keep='piDlCtrl.toKeep'
+                  sit-to-display='piDlCtrl.toDisplay'
+                  sit-change="piDlCtrl.onSelectionChange"
+                  ng-model='piDlCtrl.value'
+                  ng-required='piDlCtrl.validation.required'
+                  ng-blur="piDlCtrl.ngBlur()"
+                  ng-disabled="piDlCtrl.ngDisabled"
+                  ng-focus="piDlCtrl.ngFocus()"
+                  ng-selected="piDlCtrl.ngSelected"
+                  sit-form-input-validator>
+            <option ng-repeat='opt in piDlCtrl.options track by $index'>
+                {{opt[piDlCtrl.toDisplay]}}
+        </datalist>
+    </div>
+</ng-form>

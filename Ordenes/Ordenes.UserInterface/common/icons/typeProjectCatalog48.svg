@@ -1,0 +1,27 @@
+<svg id="Image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="linear-gradient" x1="4.936" y1="48.522" x2="45.499" y2="6.032" gradientTransform="matrix(1, 0, 0, -1, 0, 50)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#dcdcdc"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="192.63" y1="-189.08" x2="213.893" y2="-210.343" gradientTransform="matrix(0.614, -0.001, 0.001, -0.609, -94.735, -105.262)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#afd7e1"/>
+      <stop offset="1" stop-color="#73b4c8"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="186.09" y1="-153.858" x2="197.34" y2="-163.674" gradientTransform="matrix(0.652, 0, 0, -0.652, -84.391, -87.67)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#bebdbd"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-4" x1="161.975" y1="-161.157" x2="181.715" y2="-179.243" xlink:href="#linear-gradient-3"/>
+    <linearGradient id="linear-gradient-5" x1="174.058" y1="-178.901" x2="192.846" y2="-198.24" gradientTransform="matrix(0.652, 0, 0, -0.652, -84.391, -87.67)" xlink:href="#linear-gradient"/>
+  </defs>
+  <g id="g890">
+    <path id="rect16" d="M5.437,1h42V47h-42Z" fill="url(#linear-gradient)"/>
+    <path id="path18" d="M5.438,1V11.062H1.5a.5.5,0,0,0,0,1H5.438v24H1.5a.5.5,0,0,0,0,1H5.438V47h42V1Zm41,45h-40V37.062h4.874a.5.5,0,0,0,0-1H6.438v-24h4.874a.5.5,0,0,0,0-1H6.438V2h40Z" fill="#464646"/>
+    <path id="polygon20" d="M40.118,18.751H18.324l-.88-3.343,20.722-4.89Z" fill="url(#linear-gradient-2)"/>
+    <path id="polygon22" d="M43.348,18.75V15.489H40.01l.781,3.261Z" fill="url(#linear-gradient-3)"/>
+    <path id="path24" d="M23.766,13.364l-.481-1.155a2.08,2.08,0,0,0-1.927-1.285H15.732A1.081,1.081,0,0,0,14.652,12V18.75h3l-.885-3.711Z" fill="url(#linear-gradient-4)"/>
+    <path id="rect26" d="M14,18.751H44V39H14Z" fill="url(#linear-gradient-5)"/>
+    <path id="path28" d="M39.853,14.837l.157.652h3.338V18.75H40.789L38.652,9.808,16.767,15.045l.885,3.705h-3V12a1.08,1.08,0,0,1,1.082-1.079h5.629a2.082,2.082,0,0,1,1.927,1.285l.482,1.155.642-.154-.522-1.252a2.738,2.738,0,0,0-2.529-1.686H15.737A1.73,1.73,0,0,0,14.005,12h0v6.748H14V39H44V14.837Zm-1.687-4.243,1.952,8.157H18.324l-.771-3.223Zm5.182,27.753h-28.7V19.4h3.157v.006L40.9,19.4h2.452Z" fill="#464646"/>
+  </g>
+</svg>

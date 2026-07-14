@@ -1,0 +1,80 @@
+﻿<style type="text/css">
+    .pi-ux-shopfloor .cockpit-taskDetail-container.normalSize {
+        min-height: 100px;
+    }
+</style>
+<div class="cockpit-taskDetail-container" ng-class="vm.isCollapsed  ? 'reduce' : 'normalSize'">
+    <h3>{{ 'Siemens.SimaticIT.UAPI.PICore.OperatorTask.common.details' | translate }}</h3>
+    <em id="collapseButton" ng-click="vm.collapseDetail()" class="collapse-btn down" data-target="#expr-task-detail" data-toggle="collapse" aria-expanded="true"></em>
+    <div id="expr-task-detail" class=" collapse in emptyItemHeader expr-task-detail-to-collapse" ng-show="vm.displayEmptyDetailPlaceholder" ng-class="vm.isCollapsed  ? 'collapsed' : 'notCollapsed'">
+        <span>
+            {{ 'Siemens.SimaticIT.UAPI.PICore.OperatorTask.common.emptyTaskDetailPlaceholder' | translate }}
+        </span>
+    </div>
+    <div id="expr-task-detail" ng-show="!vm.displayEmptyDetailPlaceholder" class="collapse in expr-task-detail-to-collapse" ng-class="vm.isCollapsed ? 'collapsed' : 'notCollapsed'">
+        <sit-property-grid id="taskDetailpg"
+                           sit-layout="Horizontal"
+                           sit-type="Fluid"
+                           sit-columns="4"
+                           sit-mode="list">
+            <sit-property sit-id="workOrder_type"
+                          sit-widget="sit-text"
+                          sit-value="vm.workOrder.Facets[0].Type"
+                          sit-read-only="true">
+                {{ 'Siemens.SimaticIT.UAPI.PICore.OperatorTask.common.WorkOrderType' | translate }}
+            </sit-property>
+            <sit-property sit-id="workOrder_NId"
+                          sit-widget="sit-text"
+                          sit-value="vm.workOrder.NId"
+                          sit-read-only="true">
+                {{ 'Siemens.SimaticIT.UAPI.PICore.OperatorTask.common.WorkOrder' | translate }}
+            </sit-property>
+            <sit-property sit-id="workOrder_MaterialNId"
+                          sit-widget="sit-text"
+                          sit-value="vm.material.NId"
+                          ng-readonly="true">
+                {{ 'Siemens.SimaticIT.UAPI.PICore.OperatorTask.common.MaterialNId' | translate }}
+            </sit-property>
+            <sit-property sit-id="workOrder_MaterialName"
+                          sit-widget="sit-text"
+                          sit-value="vm.material.Name"
+                          ng-readonly="true">
+                {{ 'Siemens.SimaticIT.UAPI.PICore.OperatorTask.common.MaterialName' | translate }}
+            </sit-property>
+            <sit-property sit-id="workOrder_Quantity"
+                          sit-widget="sit-text"
+                          sit-value="vm.workOrder.QuantityAndUoM"
+                          ng-readonly="true">
+                {{ 'Siemens.SimaticIT.UAPI.PICore.OperatorTask.common.WorkOrderQuantity' | translate }}
+            </sit-property>
+            <sit-property sit-id="workOrder_MaterialLot"
+                          sit-widget="sit-text"
+                          sit-value="vm.workOrder.LotNId"
+                          ng-readonly="true">
+                {{ 'Siemens.SimaticIT.UAPI.PICore.OperatorTask.common.MaterialLot' | translate }}
+            </sit-property>
+            <sit-property sit-id="task_Equipment"
+                          sit-widget="sit-text"
+                          sit-value="vm.equipment.NId"
+                          ng-readonly="true">
+                {{ 'Siemens.SimaticIT.UAPI.PICore.OperatorTask.common.Equipment' | translate }}
+            </sit-property>
+            <sit-property sit-id="task_EquipmentName"
+                          sit-widget="sit-text"
+                          sit-value="vm.equipment.Name"
+                          ng-readonly="true">
+                {{ 'Siemens.SimaticIT.UAPI.PICore.OperatorTask.common.EquipmentName' | translate }}
+            </sit-property>
+            <sit-property sit-id="task_EquipmentStatus"
+                          sit-widget="sit-text"
+                          sit-value="vm.equipmentMainStateMachine.Status.StatusNId"
+                          ng-readonly="true">
+                {{ 'Siemens.SimaticIT.UAPI.PICore.OperatorTask.common.EquipmentStatus' | translate }}
+            </sit-property>
+        </sit-property-grid>
+        <div class="cockpit-taskDetail-operations">
+            <div id="operationList" class="standard-label-progress-stepper">
+            </div>
+        </div>
+    </div>
+</div>

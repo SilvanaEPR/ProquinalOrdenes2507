@@ -1,0 +1,21 @@
+﻿<div class="label label-property-grid-control-readonly property-value-ellipsis" ng-if="selectCtrl.readOnly || selectCtrl.ngReadonly">
+    {{selectCtrl.readValue}}
+</div>
+
+<ng-form ng-if="!(selectCtrl.readOnly || selectCtrl.ngReadonly)" name='selectForm' ng-class="{'isrequired' : (selectCtrl.validation.required) && selectCtrl.value===undefined}">
+    <div class='property-grid-input-group'>
+        <select ng-model='selectCtrl.value'
+                ng-class='((selectForm.$invalid && selectForm.$dirty) || (selectForm.$invalid && selectForm.$visited)) ? "validator-control-invalid" : "validator-control"'
+                ng-options='val["{{selectCtrl.toDisplay}}"] group by val["{{selectCtrl.sitToGroup}}"] for val in selectCtrl.options track by val["{{selectCtrl.toKeep}}"]'
+                ng-required='selectCtrl.validation.required'
+                ng-blur="selectCtrl.ngBlur()"
+                sit-change="selectCtrl.sitChange"
+                ng-disabled="selectCtrl.ngDisabled"
+                ng-focus="selectCtrl.ngFocus()"
+                ng-selected="selectCtrl.ngSelected"
+                sit-form-input-validator >
+            <option value=""></option>    
+        </select>
+    </div>
+</ng-form>
+

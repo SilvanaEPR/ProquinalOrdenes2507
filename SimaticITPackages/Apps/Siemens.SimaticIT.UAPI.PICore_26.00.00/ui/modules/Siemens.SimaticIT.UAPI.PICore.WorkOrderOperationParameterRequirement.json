@@ -1,0 +1,375 @@
+{
+  "name": "Siemens.SimaticIT.UAPI.PICore.WorkOrderOperationParameterRequirement",
+  "functionalBlock": "Siemens.SimaticIT.UAPI.PICore",
+  "type": "standard",
+  "title": "Work Order Operation Parameter Requirements",
+  "header": "picore.titles.WorkOrderOperationParameterRequirement",
+  "icon": "svg typeParameter48",
+  "manifestVersion": "01.01.00",
+  "dependencies": [
+    "Siemens.SimaticIT.UAPI.PICore"
+  ],
+  "states": [
+    {
+      "id": "home.Siemens_SimaticIT_UAPI_PICore_WorkOrderOperationParameterRequirement_home",
+      "name": "home",
+      "title": "home screen",
+      "icon": "svg typeParameter48",
+      "securable": true,
+      "contents": [],
+      "parameters": [],
+      "context": []
+    }
+  ],
+  "components": [
+    {
+      "name": "mashup",
+      "title": "Mashup System Component",
+      "description": "Mashup System Component",
+      "type": "ui",
+      "source": "sit-mashup",
+      "version": "1.0.0",
+      "contracts": {
+        "methods": [
+          "setContext",
+          "navigateTo",
+          "display",
+          "setPosition"
+        ],
+        "events": [
+          "onLoad",
+          "onContextChanged"
+        ],
+        "dpc": {}
+      },
+      "functionalBlock": "",
+      "category": "internal"
+    },
+    {
+      "name": "workorderoperationparamlist",
+      "title": "Display Work Order Operation Parameter Requirement List",
+      "description": "Display Work Order Operation Parameter Requirement List",
+      "type": "ui",
+      "source": "workorderoperationparamlist",
+      "version": "1.0.0",
+      "contracts": {
+        "methods": [
+          "setWorkOrderOperationId",
+          "setActionBarVisibility"
+        ],
+        "events": [],
+        "dpc": {
+          "EntityNames": {
+            "node": "data",
+            "type": "Array",
+            "category": "Extensibility",
+            "description": "",
+            "permission": "rw",
+            "default": []
+          },
+          "FacetNames": {
+            "node": "data",
+            "type": "Array",
+            "category": "Extensibility",
+            "description": "",
+            "permission": "rw",
+            "default": []
+          },
+          "Properties": {
+            "node": "data",
+            "type": "Array",
+            "category": "Extensibility",
+            "description": "",
+            "permission": "rw",
+            "default": [
+              {
+                "PropertyName": "ParameterNId",
+                "DataType": "string",
+                "DisplayName": "picore.headers.tables.nId",
+                "QuickSearch": true,
+                "CanBeSorted": true,
+                "IsSortDefault": true,
+                "CanBeFiltered": true,
+                "IsVisible": true
+              },
+              {
+                "PropertyName": "ParameterName",
+                "DataType": "string",
+                "DisplayName": "picore.headers.tables.name",
+                "QuickSearch": false,
+                "CanBeSorted": true,
+                "IsSortDefault": false,
+                "CanBeFiltered": true,
+                "IsVisible": true
+              },
+              {
+                "PropertyName": "ParameterDescription",
+                "DataType": "string",
+                "DisplayName": "picore.headers.tables.description",
+                "QuickSearch": false,
+                "CanBeSorted": true,
+                "IsSortDefault": false,
+                "CanBeFiltered": true,
+                "IsVisible": true
+              },
+              {
+                "PropertyName": "ParameterTargetValue",
+                "DataType": "string",
+                "DisplayName": "picore.headers.tables.targetValue",
+                "QuickSearch": false,
+                "CanBeSorted": true,
+                "IsSortDefault": false,
+                "CanBeFiltered": true,
+                "IsVisible": true
+              },
+              {
+                "PropertyName": "ParameterType",
+                "DataType": "string",
+                "DisplayName": "picore.headers.tables.type",
+                "QuickSearch": false,
+                "CanBeSorted": true,
+                "IsSortDefault": false,
+                "CanBeFiltered": true,
+                "IsVisible": true
+              },
+              {
+                "PropertyName": "ParameterUoMNId",
+                "DataType": "string",
+                "DisplayName": "picore.headers.tables.uoM",
+                "QuickSearch": false,
+                "CanBeSorted": true,
+                "IsSortDefault": false,
+                "CanBeFiltered": true,
+                "IsVisible": true
+              },
+              {
+                "PropertyName": "TaskParameterNId",
+                "DataType": "string",
+                "DisplayName": "picore.headers.tables.taskParamNId",
+                "QuickSearch": false,
+                "CanBeSorted": true,
+                "IsSortDefault": false,
+                "CanBeFiltered": true,
+                "IsVisible": true
+              },
+              {
+                "PropertyName": "WorkProcessVariableNId",
+                "DataType": "string",
+                "DisplayName": "picore.headers.tables.wpVariableNId",
+                "QuickSearch": false,
+                "CanBeSorted": true,
+                "IsSortDefault": false,
+                "CanBeFiltered": true,
+                "IsVisible": true
+              }
+            ]
+          },
+          "PageSizes": {
+            "node": "data",
+            "type": "Array",
+            "category": "Visibility",
+            "description": "",
+            "permission": "rw",
+            "default": [
+              5,
+              10,
+              30,
+              50
+            ]
+          },
+          "PageSizeDefault": {
+            "node": "data",
+            "type": "Number",
+            "category": "Visibility",
+            "description": "",
+            "permission": "rw",
+            "default": 5
+          },
+          "IsTitleVisible": {
+            "node": "data",
+            "type": "Boolean",
+            "category": "Visibility",
+            "description": "",
+            "permission": "rw",
+            "default": true
+          }
+        }
+      },
+      "functionalBlock": "Siemens.SimaticIT.UAPI.PICore"
+    }
+  ],
+  "componentInstances": [
+    {
+      "name": "home_mashup_1",
+      "type": "mashup",
+      "state": "home.PISolution_WOOParameterRequirement_home",
+      "status": false,
+      "layout": {
+        "left": 0,
+        "top": 0,
+        "rows": 2,
+        "columns": 2
+      },
+      "dpc": {}
+    },
+    {
+      "name": "home_workorderoperationparamlist_2",
+      "type": "workorderoperationparamlist",
+      "state": "home.PISolution_WOOParameterRequirement_home",
+      "status": false,
+      "layout": {
+        "left": 0,
+        "top": 0,
+        "rows": 12,
+        "columns": 12
+      },
+      "dpc": {
+        "EntityNames": [],
+        "FacetNames": [],
+        "Properties": [
+          {
+            "PropertyName": "ParameterNId",
+            "DataType": "string",
+            "DisplayName": "picore.headers.tables.nId",
+            "QuickSearch": true,
+            "CanBeSorted": true,
+            "IsSortDefault": true,
+            "CanBeFiltered": true,
+            "IsVisible": true
+          },
+          {
+            "PropertyName": "ParameterName",
+            "DataType": "string",
+            "DisplayName": "picore.headers.tables.name",
+            "QuickSearch": false,
+            "CanBeSorted": true,
+            "IsSortDefault": false,
+            "CanBeFiltered": true,
+            "IsVisible": true
+          },
+          {
+            "PropertyName": "ParameterDescription",
+            "DataType": "string",
+            "DisplayName": "picore.headers.tables.description",
+            "QuickSearch": false,
+            "CanBeSorted": true,
+            "IsSortDefault": false,
+            "CanBeFiltered": true,
+            "IsVisible": true
+          },
+          {
+            "PropertyName": "ParameterTargetValue",
+            "DataType": "string",
+            "DisplayName": "picore.headers.tables.targetValue",
+            "QuickSearch": false,
+            "CanBeSorted": true,
+            "IsSortDefault": false,
+            "CanBeFiltered": true,
+            "IsVisible": true
+          },
+          {
+            "PropertyName": "ParameterType",
+            "DataType": "string",
+            "DisplayName": "picore.headers.tables.type",
+            "QuickSearch": false,
+            "CanBeSorted": true,
+            "IsSortDefault": false,
+            "CanBeFiltered": true,
+            "IsVisible": true
+          },
+          {
+            "PropertyName": "ParameterUoMNId",
+            "DataType": "string",
+            "DisplayName": "picore.headers.tables.uoM",
+            "QuickSearch": false,
+            "CanBeSorted": true,
+            "IsSortDefault": false,
+            "CanBeFiltered": true,
+            "IsVisible": true
+          },
+          {
+            "PropertyName": "TaskParameterNId",
+            "DataType": "string",
+            "DisplayName": "picore.headers.tables.taskParamNId",
+            "QuickSearch": false,
+            "CanBeSorted": true,
+            "IsSortDefault": false,
+            "CanBeFiltered": true,
+            "IsVisible": true
+          },
+          {
+            "PropertyName": "WorkProcessVariableNId",
+            "DataType": "string",
+            "DisplayName": "picore.headers.tables.wpVariableNId",
+            "QuickSearch": false,
+            "CanBeSorted": true,
+            "IsSortDefault": false,
+            "CanBeFiltered": true,
+            "IsVisible": true
+          }
+        ],
+        "PageSizes": [
+          5,
+          10,
+          30,
+          50
+        ],
+        "PageSizeDefault": 5,
+        "IsTitleVisible": true
+      },
+      "app": "Siemens.SimaticIT.UAPI.PICore"
+    }
+  ],
+  "wires": [],
+  "stateLayoutList": [
+    {
+      "state": "home.PISolution_WOOParameterRequirement_home",
+      "layoutProperties": {
+        "columns": 12,
+        "pushing": false,
+        "floating": false,
+        "swapping": false,
+        "width": "auto",
+        "colWidth": "auto",
+        "rowHeight": "match",
+        "outerMargin": true,
+        "isMobile": true,
+        "mobileBreakPoint": 768,
+        "tabletBreakPoint": 1024,
+        "mobileModeEnabled": true,
+        "minColumns": 12,
+        "minRows": 12,
+        "maxRows": 100,
+        "defaultSizeX": 3,
+        "defaultSizeY": 3,
+        "resizable": {
+          "enabled": false,
+          "handles": [
+            "n",
+            "e",
+            "s",
+            "w",
+            "ne",
+            "se",
+            "sw",
+            "nw"
+          ]
+        },
+        "margins": [
+          5,
+          5
+        ],
+        "draggable": {
+          "enabled": false,
+          "handle": ".editorSmallComponent"
+        }
+      },
+      "engineeringGridConfig": {
+        "pushing": true,
+        "swapping": true,
+        "floating": true,
+        "isGridLinesVisible": true
+      }
+    }
+  ]
+}

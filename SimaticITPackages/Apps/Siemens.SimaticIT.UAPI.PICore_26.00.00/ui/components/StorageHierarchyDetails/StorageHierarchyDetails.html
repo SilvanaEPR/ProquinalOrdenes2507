@@ -1,0 +1,24 @@
+﻿<div class="content-area content-area-relative component-box" id="storageHierarchyDetails">
+    <div class="tool-bar" style="float: right;">
+        <span sit-table-button style="height: 38px; visibility:hidden;"></span><!--An empty button to prevent the toolbar from collapsing when no button is visible-->
+        <span sit-table-button
+              ng-repeat="(key,value) in vm.toolbarButtons"
+              sit-icon="{{value.icon}}"
+              sit-cmd-icon="{{value.cmdIcon}}"
+              sit-label="{{value.label}}"
+              ng-click="vm.onActionClicked(value.name)"
+              ng-show="value.isPrimaryAction || value.visibility"
+              style="height: 34px; width: 34px;"></span>
+    </div>
+    <sit-pi-hierarchy-tree id="eqHierarchyTree" read-only="true" show-detail="false" no-data-template-value="vm.noData"
+                           on-hierarchy-selected-api="vm.onHierarchySelectedApi(api)"
+                           on-selection-changed="vm.onSelectionChanged(item)">
+    </sit-pi-hierarchy-tree>
+    <sit-dialog sit-title="vm.addStoragePropertiesTitle"
+                sit-templatedata="vm.addStoragePropertiesData"
+                sit-templateuri="vm.addStoragePropertiesTemplate"
+                sit-modalid="addStoragePropertiesModalId"
+                sit-buttons="vm.addStoragePropertiesButtonsList">
+    </sit-dialog>
+</div>
+

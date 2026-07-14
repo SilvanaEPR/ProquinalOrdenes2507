@@ -1,0 +1,27 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="linear-gradient" x1="27.876" y1="26.124" x2="27.876" y2="26.124" gradientTransform="matrix(1, 0, 0, -1, 0, 50)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#73b4c8"/>
+      <stop offset="0.175" stop-color="#6aaec3"/>
+      <stop offset="0.457" stop-color="#529eb5"/>
+      <stop offset="0.809" stop-color="#2c839f"/>
+      <stop offset="1" stop-color="#147391"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="-11.306" y1="719.975" x2="6.372" y2="737.652" gradientTransform="translate(35.846 -815.787) scale(1.154)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#73b4c8"/>
+      <stop offset="1" stop-color="#177491"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="-108.725" y1="167.107" x2="-90.452" y2="152.807" gradientTransform="matrix(1.912, 0, 0, -1.656, 217.566, 290.183)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="0.221" stop-color="#f8f8f8"/>
+      <stop offset="0.541" stop-color="#e5e5e5"/>
+      <stop offset="0.92" stop-color="#c6c6c6"/>
+      <stop offset="1" stop-color="#bebebe"/>
+    </linearGradient>
+  </defs>
+  <polygon id="circle77" points="27.876 23.876 27.876 23.876 27.876 23.876 27.876 23.876 27.876 23.876" stroke="#464646" stroke-linejoin="round" stroke-width="1.536" fill="url(#linear-gradient)"/>
+  <g id="g854">
+    <path id="circle32" d="M47.423,25.152A14.423,14.423,0,0,1,33,39.575h0A14.423,14.423,0,0,1,18.577,25.152h0A14.422,14.422,0,0,1,33,10.729h0A14.422,14.422,0,0,1,47.423,25.152Z" stroke="#474647" fill="url(#linear-gradient-2)"/>
+    <path id="path79" d="M39.681,25.424,27.253,14.662v5.756c-.615.111-1.176.212-1.807.287-9.881,1.187-15.243-1.49-21.23-7.568,3.374,10.6,10.393,17.133,23.037,17.1v5.945Z" stroke="#464646" stroke-linejoin="round" fill="url(#linear-gradient-3)"/>
+  </g>
+</svg>

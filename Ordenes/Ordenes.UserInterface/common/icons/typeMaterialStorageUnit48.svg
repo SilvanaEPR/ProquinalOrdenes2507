@@ -1,0 +1,47 @@
+<svg id="Image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="linear-gradient" x1="1.853" y1="24.208" x2="17.137" y2="9.047" gradientTransform="matrix(1, 0, 0, -1, 1.036, 49.503)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f2f2f2"/>
+      <stop offset="0.5" stop-color="#ccc"/>
+      <stop offset="0.63" stop-color="#c7c7c7"/>
+      <stop offset="0.779" stop-color="#b9b9b9"/>
+      <stop offset="0.938" stop-color="#a2a2a2"/>
+      <stop offset="0.99" stop-color="#999"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="5.565" y1="18.672" x2="13.047" y2="18.672" gradientTransform="matrix(1, 0, 0, -1, 1.036, 49.503)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#bfdee8"/>
+      <stop offset="0.159" stop-color="#b3d6e2"/>
+      <stop offset="0.706" stop-color="#8ec1d3"/>
+      <stop offset="1" stop-color="#7fb8cd"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="34.79" y1="17.444" x2="18.979" y2="32.872" gradientTransform="matrix(1, 0, 0, -1, 1.036, 49.503)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="0.221" stop-color="#f8f8f8"/>
+      <stop offset="0.541" stop-color="#e5e5e5"/>
+      <stop offset="0.92" stop-color="#c6c6c6"/>
+      <stop offset="1" stop-color="#bebebe"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-4" x1="23.049" y1="34.657" x2="31.218" y2="19.736" xlink:href="#linear-gradient"/>
+  </defs>
+  <g id="g1537">
+    <path id="path5051" d="M4.132,27.058l3.284-7.074,19.992-8.419,15.223,3.419" fill="none" stroke="#147391"/>
+    <path id="path23586" d="M3.614,26.5v7.865l13.811,5.954V31.36l-4.051-1.166-.185,3.621L7.036,31.36l.261-3.5Z" fill="url(#linear-gradient)"/>
+    <path id="path24084" d="M7.114,27.969l.06,3.33,6.138,2.394.246-3.561Z" fill="url(#linear-gradient-2)"/>
+    <path id="path3272-9" d="M7.131,31.39l.066.4,6.44,2.709.045-3.55" fill="none" stroke="#6e6e6e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.019"/>
+    <path id="path8615" d="M3.43,26.5l13.933,4.734,3.131-6.506L44.538,14.5l-17.126-4L6.6,19.319Z" fill="url(#linear-gradient-3)"/>
+    <path id="path5166-3" d="M12.036,29.381,20.2,25.276" fill="none" stroke="#464646" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="path19053" d="M17.355,31.5l3.082-6.522L44.351,14.5,44.177,27.37,17.616,40.389l-.261-9.2.008.05" fill="url(#linear-gradient-4)"/>
+    <path id="path1966" d="M17.73,40.378l26.635-13,.074-12.7" fill="none" stroke="#147391" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="path21178" d="M27.351,10.57v11" fill="none" stroke="#464646" stroke-width="0.96"/>
+    <path id="path29149-4" d="M4.518,26.332l2.842-6.6,20-8.286" fill="none" stroke="#464646" stroke-linecap="round"/>
+    <path id="path49863" d="M27.422,12.362,40.108,15.2" fill="none" stroke="#6e6e6e" stroke-linecap="round" stroke-width="0.9"/>
+    <path id="path3268-9" d="M5.645,26.8l11.76,4.289h0" fill="none" stroke="#6e6e6e" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="path29149-4-0" d="M16.618,30.835l3.108-6.5L42.775,14.5H42.9" fill="none" stroke="#464646" stroke-width="0.7"/>
+    <path id="path29149" d="M5.412,26.676l2.676-6.228,19.2-8.058" fill="none" stroke="#6e6e6e" stroke-linecap="round" stroke-width="0.9"/>
+    <path id="path29149-6" d="M16.145,30.7l3.2-6.771,22.633-9.7H42.1" fill="none" stroke="#6e6e6e" stroke-width="0.5"/>
+    <path id="path46558" d="M27.34,11.416,41.605,14.55" fill="none" stroke="#464646" stroke-linecap="round"/>
+    <path id="path3268" d="M3.5,26.47,17.283,31.5h0" fill="none" stroke="#147391" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="path1642" d="M6.6,19.319,27.283,10.5l17.168,3.949L20.381,24.843l-2.946,6.139.11,9.4L3.623,34.5,3.5,26.47Z" fill="none" stroke="#147391" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="path3272" d="M7.114,27.969v3.376l6.169,2.6.092-3.647" fill="none" stroke="#147391" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

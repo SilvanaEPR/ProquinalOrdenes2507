@@ -1,0 +1,15 @@
+﻿<div class="pi-component-title">{{vm.billOfOperationsItemParameterSpecificationAssociationComponentTitle}}</div>
+<div style="float:right">
+    <button ng-click="vm.associate()" title="{{vm.translatedAssociate}}" class="btn btn-default active" ng-show="vm.isParamSelected">{{vm.translatedAssociate}}</button>
+    <button ng-click="vm.cancel()" title="{{vm.translatedCancel}}" class="btn btn-default">{{vm.translatedCancel}}</button>
+</div>
+<div>
+    <div>
+        <div class="pi-insidecomponent-title" style="padding-top: 20px;">{{vm.taskDefTableTitle}} </div>
+        <sit-pi-table sit-pi-table-id="taskDefs" sit-config="vm.taskDefTableConfig" sit-pi-config="vm.taskDefDataConfig" sit-view-mode="grid"></sit-pi-table>
+    </div>
+    <div ng-show="vm.selectedTaskDefinition!=null">
+        <div class="pi-insidecomponent-title">{{vm.taskDefParamTableTitle}} </div>
+        <sit-pi-table sit-pi-table-id="taskDefParams" sit-config="vm.taskDefParamTableConfig" sit-pi-config="vm.taskDefParamDataConfig" sit-view-mode="grid"></sit-pi-table>
+    </div>
+</div>

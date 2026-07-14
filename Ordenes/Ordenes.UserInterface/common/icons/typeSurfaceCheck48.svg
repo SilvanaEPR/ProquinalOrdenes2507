@@ -1,0 +1,23 @@
+<svg id="Image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="linear-gradient" x1="7.625" y1="44.612" x2="38.449" y2="12.325" gradientTransform="matrix(1, 0, 0, -1, -6, 45.028)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#bebdbd"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="26.161" y1="23.839" x2="43.839" y2="6.161" gradientTransform="matrix(1, 0, 0, -1, 0, 50)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#73b4c8"/>
+      <stop offset="0.175" stop-color="#6aaec3"/>
+      <stop offset="0.457" stop-color="#529eb5"/>
+      <stop offset="0.809" stop-color="#2c839f"/>
+      <stop offset="1" stop-color="#147391"/>
+    </linearGradient>
+  </defs>
+  <g id="g890">
+    <path id="path819" d="M12.224,33.8V30.078H6.412v-5.7H.5V.509L4.183.571c2.025.035,6.371.063,9.657.063h5.975l.063,3.11c.035,1.711.091,3.822.124,4.691l.06,1.58,5.976-.038c3.287-.02,6.754-.053,7.705-.072l1.729-.036V37.391H26.629c-4.864,0-10.1.029-11.624.063l-2.781.063V33.8Zm15.407-1.781,2.229-.06V17.066H19.94V32.12l2.73-.022c1.5-.011,3.735-.049,4.961-.082Zm-16.133-15a5.941,5.941,0,0,0,4.381-4.08,6.971,6.971,0,0,0,0-2.848A5.855,5.855,0,0,0,11.97,6.181a6.67,6.67,0,0,0-3.4-.094,5.907,5.907,0,0,0-3.74,2.918,4.908,4.908,0,0,0-.619,2.584,5.023,5.023,0,0,0,1.7,3.866A6.052,6.052,0,0,0,8.681,17.01a7.56,7.56,0,0,0,2.817.007Z" stroke="#464646" fill="url(#linear-gradient)"/>
+    <g id="g1488">
+      <path id="circle94" d="M47.5,35A12.5,12.5,0,1,1,35,22.5,12.5,12.5,0,0,1,47.5,35Z" stroke="#464646" stroke-linecap="round" stroke-linejoin="round" fill="url(#linear-gradient-2)"/>
+      <path id="polygon96" d="M28.756,34.571l3.73,4.482,9.2-11.376,2.334,1.884-11.5,14.228-6.074-7.3Z" fill="#fff"/>
+      <path id="path98" d="M41.763,28.38l1.557,1.256L32.513,43l-5.362-6.449,1.54-1.276,3.8,4.566,9.27-11.461m-.15-1.406-.628.777-8.5,10.514-3.022-3.63-.638-.767-.768.637-1.54,1.276-.771.639.64.77,5.362,6.449.78.938.767-.948L44.1,30.264l.629-.778-.779-.629L42.391,27.6Z" fill="#147391"/>
+    </g>
+  </g>
+</svg>

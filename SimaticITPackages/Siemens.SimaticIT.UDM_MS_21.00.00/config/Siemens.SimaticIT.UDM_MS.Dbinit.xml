@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sections>
+  <Section engineeringLevel="LibraryFunctionalBlock" implementationName="2021-6-23-10-58-00" domainName="MasterData">
+    <Entity type="Siemens.SimaticIT.MasterData.UDM_MS.MSModel.DataModel.Operation">
+      <Property name="NId" kind="Plain" value="DEFAULT" />
+      <Property name="Revision" kind="Plain" value="1.0" />
+      <Property name="Name" kind="Plain" value="DEFAULT" />
+      <Property name="Description" kind="Plain" value="Defines the default Catalog Operation to be linked to Order Operation automatically created during Order download" />
+    </Entity>
+  </Section>
+</Sections>

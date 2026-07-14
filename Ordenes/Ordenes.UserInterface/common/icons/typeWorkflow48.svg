@@ -1,0 +1,26 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="linear-gradient" x1="-132.899" y1="577.162" x2="-127.438" y2="583.982" gradientTransform="translate(210.363 -795.239) scale(1.422 1.413)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#74b3c7"/>
+      <stop offset="0.177" stop-color="#6badc2"/>
+      <stop offset="0.464" stop-color="#539db4"/>
+      <stop offset="0.822" stop-color="#2d839d"/>
+      <stop offset="1" stop-color="#177490"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="-146.112" y1="576.94" x2="-138.998" y2="585.143" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-3" x1="-120.376" y1="576.525" x2="-113.575" y2="585.658" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-4" x1="-74.778" y1="-578.211" x2="-68.406" y2="-588.434" gradientTransform="matrix(1.313, 0, 0, -1.305, 118.097, -752.358)" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-5" x1="-132.949" y1="588.008" x2="-127.707" y2="594.328" xlink:href="#linear-gradient"/>
+  </defs>
+  <g id="g841">
+    <path id="line53" d="M8.7,24H21.185" fill="none" stroke="#464646" stroke-miterlimit="10" stroke-width="1.04"/>
+    <path id="line55" d="M26.027,24H38.368" fill="none" stroke="#464646" stroke-miterlimit="10" stroke-width="1.034"/>
+    <path id="polyline59" d="M21.15,8.7H15.438V39.306H21.25" fill="none" stroke="#464646" stroke-miterlimit="13.533"/>
+    <path id="rect45" d="M21.214,18.264h5.775V29.746H21.214Z" stroke="#147391" stroke-miterlimit="10" fill="url(#linear-gradient)"/>
+    <path id="rect47" d="M1.959,16.351h7.7v15.3h-7.7Z" stroke="#147391" stroke-miterlimit="10" fill="url(#linear-gradient-2)"/>
+    <path id="rect49" d="M38.542,16.351h7.7v15.3h-7.7Z" stroke="#147391" stroke-miterlimit="10" fill="url(#linear-gradient-3)"/>
+    <path id="polyline57" d="M26.95,8.7h5.814V39.306H27.05" fill="none" stroke="#464646" stroke-miterlimit="13.533"/>
+    <path id="rect43" d="M21.214,2.959h5.775V14.438H21.214Z" stroke="#147391" stroke-miterlimit="10" fill="url(#linear-gradient-4)"/>
+    <path id="rect51" d="M21.214,33.563h5.775V45.041H21.214Z" stroke="#147391" stroke-miterlimit="10" fill="url(#linear-gradient-5)"/>
+  </g>
+</svg>

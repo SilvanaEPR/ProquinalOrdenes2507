@@ -1,0 +1,18 @@
+<svg id="Image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <g id="g852">
+    <path id="path841" d="M5.323,3h-1.5V17H5.323Z" class="aw-theme-iconOutline" fill="#464646"/>
+    <path id="path839" d="M6.572,3h-.5V17h.5Z" class="aw-theme-iconOutline" fill="#464646"/>
+    <path id="path837" d="M8.317,3h-.5V17h.5Z" class="aw-theme-iconOutline" fill="#464646"/>
+    <path id="path835" d="M10.313,3h-1V17h1Z" class="aw-theme-iconOutline" fill="#464646"/>
+    <path id="path833" d="M11.815,3h-.5V14h.5Z" class="aw-theme-iconOutline" fill="#464646"/>
+    <path id="path827" d="M14.877,11h.5V3h-.5Z" class="aw-theme-iconOutline" fill="#464646"/>
+    <path id="path825" d="M16.623,11h.5V3h-.5Z" class="aw-theme-iconOutline" fill="#464646"/>
+    <path id="path823" d="M13.65,12V3h-.5v9Z" class="aw-theme-iconOutline" fill="#464646"/>
+    <path id="path821" d="M19.063,11V3h-.995v8Z" class="aw-theme-iconOutline" fill="#464646"/>
+    <path id="rect836" d="M0,0V20H8.982l0-1.018H1.036V1H21.764V11.972a7.7,7.7,0,0,1,1.036.641V0Z" class="aw-theme-iconOutline" fill="#464646"/>
+    <path id="rect2" d="M11,22h5v1H11Z" class="aw-theme-iconOutline" fill="#464646"/>
+    <path id="rect4" d="M22,22h2v1H22Z" class="aw-theme-iconOutline" fill="#464646"/>
+    <path id="path6" d="M20,24H18a1,1,0,0,1-1-1V22a1,1,0,0,1,1-1h2a1,1,0,0,1,1,1v1A1,1,0,0,1,20,24Zm-2-2v1h2V22Z" class="aw-theme-iconOutline" fill="#464646"/>
+    <path id="polygon8" d="M12,20H11V18.264l1.991-.79L12.2,15.505l1.324-1.315,1.986.788.8-1.978H18.7l.8,1.978,1.986-.788L22.8,15.505l-.793,1.969,1.991.79V20H23V18.943l-2.294-.911.92-2.284-.389-.387-2.3.914L18.02,14H16.98l-.916,2.275-2.3-.914-.389.387.92,2.284L12,18.943Z" class="aw-theme-iconOutline" fill="#464646"/>
+  </g>
+</svg>

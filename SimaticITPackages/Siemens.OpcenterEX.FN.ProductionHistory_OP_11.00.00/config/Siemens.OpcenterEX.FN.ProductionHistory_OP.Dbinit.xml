@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sections>
+  <Section engineeringLevel="LibraryFunctionalBlock" implementationName="ProductionHistory" domainName="ReferenceData">
+    <Entity type="Siemens.OpcenterEX.ReferenceData.Configuration_RF.RFModel.DataModel.ConfigurationAppDomain">
+      <Property name="NId" kind="Plain" value="ProductionHistoryConfiguration" />
+      <Property name="Name" kind="Plain" value="Production History Configuration" />
+      <Property name="Description" kind="Plain" value="Defines configuration for Production History tracing." />
+      <Property name="IsSystemDefined" kind="Plain" value="true" />
+    </Entity>
+    <Entity type="Siemens.OpcenterEX.ReferenceData.Configuration_RF.RFModel.DataModel.ConfigurationKey">
+      <Property name="NId" kind="Plain" value="EnableEventBasedTracing" />
+      <Property name="Name" kind="Plain" value="Event based tracing" />
+      <Property name="Description" kind="Plain" value="Enable Event driven tracing of Production History." />
+      <Property name="Type" kind="Plain" value="System.Boolean" />
+      <Property name="Val" kind="Plain" value="false" />
+      <Property name="IsProtected" kind="Plain" value="false" />
+      <Property name="Category" kind="Plain" value="Engineering" />
+      <Property name="IsMultiValue" kind="Plain" value="false" />
+      <Property name="ConfigurationAppDomain" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.OpcenterEX.ReferenceData.Configuration_RF.RFModel.DataModel.ConfigurationAppDomain">
+          <Property name="NId" kind="Plain" value="ProductionHistoryConfiguration" />
+        </LogicalKey>
+      </Property>
+      <Property name="IsSystemDefined" kind="Plain" value="true" />
+    </Entity>
+    <Entity type="Siemens.OpcenterEX.ReferenceData.Configuration_RF.RFModel.DataModel.ConfigurationKey">
+      <Property name="NId" kind="Plain" value="EnableProductionHistoryTracing" />
+      <Property name="Name" kind="Plain" value="Enable Production History Tracing" />
+      <Property name="Description" kind="Plain" value="Enable tracing of Production History." />
+      <Property name="Type" kind="Plain" value="System.Boolean" />
+      <Property name="Val" kind="Plain" value="false" />
+      <Property name="IsProtected" kind="Plain" value="false" />
+      <Property name="Category" kind="Plain" value="Engineering" />
+      <Property name="IsMultiValue" kind="Plain" value="false" />
+      <Property name="IsSystemDefined" kind="Plain" value="true" />
+      <Property name="ConfigurationAppDomain" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.OpcenterEX.ReferenceData.Configuration_RF.RFModel.DataModel.ConfigurationAppDomain">
+          <Property name="NId" kind="Plain" value="ProductionHistoryConfiguration" />
+        </LogicalKey>
+      </Property>
+    </Entity>
+    <Entity type="Siemens.OpcenterEX.ReferenceData.Configuration_RF.RFModel.DataModel.ConfigurationKey">
+      <Property name="NId" kind="Plain" value="EnableUpdateHistoryTracing" />
+      <Property name="Name" kind="Plain" value="Enable Update History Tracing" />
+      <Property name="Description" kind="Plain" value="Enable tracing of Change Details showing old and new values." />
+      <Property name="Type" kind="Plain" value="System.Boolean" />
+      <Property name="Val" kind="Plain" value="true" />
+      <Property name="IsProtected" kind="Plain" value="false" />
+      <Property name="Category" kind="Plain" value="Engineering" />
+      <Property name="IsMultiValue" kind="Plain" value="true" />
+      <Property name="IsSystemDefined" kind="Plain" value="true" />
+      <Property name="ConfigurationAppDomain" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.OpcenterEX.ReferenceData.Configuration_RF.RFModel.DataModel.ConfigurationAppDomain">
+          <Property name="NId" kind="Plain" value="ProductionHistoryConfiguration" />
+        </LogicalKey>
+      </Property>
+    </Entity>
+    <Entity type="Siemens.OpcenterEX.ReferenceData.Configuration_RF.RFModel.DataModel.ConfigurationKeyMultiValue">
+      <Property name="NId" kind="Plain" value="Equipment" />
+      <Property name="Name" kind="Plain" value="Enable Equipment" />
+      <Property name="Description" kind="Plain" value="Enable tracing of Equipment updates." />
+      <Property name="Type" kind="Plain" value="System.Boolean" />
+      <Property name="Val" kind="Plain" value="true" />
+      <Property name="IsSystemDefined" kind="Plain" value="true" />
+      <Property name="ConfigurationKey" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.OpcenterEX.ReferenceData.Configuration_RF.RFModel.DataModel.ConfigurationKey">
+          <Property name="NId" kind="Plain" value="EnableUpdateHistoryTracing" />
+          <Property name="ConfigurationAppDomain" kind="SingleReferenceToParent">
+            <LogicalKey entityType="Siemens.OpcenterEX.ReferenceData.Configuration_RF.RFModel.DataModel.ConfigurationAppDomain">
+              <Property name="NId" kind="Plain" value="ProductionHistoryConfiguration" />
+            </LogicalKey>
+          </Property>
+        </LogicalKey>
+      </Property>
+    </Entity>
+    <Entity type="Siemens.OpcenterEX.ReferenceData.Configuration_RF.RFModel.DataModel.ConfigurationKeyMultiValue">
+      <Property name="NId" kind="Plain" value="MaterialLot" />
+      <Property name="Name" kind="Plain" value="Material Lot" />
+      <Property name="Description" kind="Plain" value="Enable tracing of Material Lot updates." />
+      <Property name="Type" kind="Plain" value="System.Boolean" />
+      <Property name="Val" kind="Plain" value="true" />
+      <Property name="IsSystemDefined" kind="Plain" value="true" />
+      <Property name="ConfigurationKey" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.OpcenterEX.ReferenceData.Configuration_RF.RFModel.DataModel.ConfigurationKey">
+          <Property name="NId" kind="Plain" value="EnableUpdateHistoryTracing" />
+          <Property name="ConfigurationAppDomain" kind="SingleReferenceToParent">
+            <LogicalKey entityType="Siemens.OpcenterEX.ReferenceData.Configuration_RF.RFModel.DataModel.ConfigurationAppDomain">
+              <Property name="NId" kind="Plain" value="ProductionHistoryConfiguration" />
+            </LogicalKey>
+          </Property>
+        </LogicalKey>
+      </Property>
+    </Entity>
+    <Entity type="Siemens.OpcenterEX.ReferenceData.Configuration_RF.RFModel.DataModel.ConfigurationKeyMultiValue">
+      <Property name="NId" kind="Plain" value="MaterialTrackingUnit" />
+      <Property name="Name" kind="Plain" value="Material Tracking Unit" />
+      <Property name="Description" kind="Plain" value="Enable tracing of Material Tracking Unit updates." />
+      <Property name="Type" kind="Plain" value="System.Boolean" />
+      <Property name="Val" kind="Plain" value="true" />
+      <Property name="IsSystemDefined" kind="Plain" value="true" />
+      <Property name="ConfigurationKey" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.OpcenterEX.ReferenceData.Configuration_RF.RFModel.DataModel.ConfigurationKey">
+          <Property name="NId" kind="Plain" value="EnableUpdateHistoryTracing" />
+          <Property name="ConfigurationAppDomain" kind="SingleReferenceToParent">
+            <LogicalKey entityType="Siemens.OpcenterEX.ReferenceData.Configuration_RF.RFModel.DataModel.ConfigurationAppDomain">
+              <Property name="NId" kind="Plain" value="ProductionHistoryConfiguration" />
+            </LogicalKey>
+          </Property>
+        </LogicalKey>
+      </Property>
+    </Entity>
+    <Entity type="Siemens.OpcenterEX.ReferenceData.Configuration_RF.RFModel.DataModel.ConfigurationKeyMultiValue">
+      <Property name="NId" kind="Plain" value="MaterialTrackingUnitAggregate" />
+      <Property name="Name" kind="Plain" value="Material Tracking Unit Aggregate" />
+      <Property name="Description" kind="Plain" value="Enable tracing of Material Tracking Unit Aggregate updates." />
+      <Property name="Type" kind="Plain" value="System.Boolean" />
+      <Property name="Val" kind="Plain" value="true" />
+      <Property name="IsSystemDefined" kind="Plain" value="true" />
+      <Property name="ConfigurationKey" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.OpcenterEX.ReferenceData.Configuration_RF.RFModel.DataModel.ConfigurationKey">
+          <Property name="NId" kind="Plain" value="EnableUpdateHistoryTracing" />
+          <Property name="ConfigurationAppDomain" kind="SingleReferenceToParent">
+            <LogicalKey entityType="Siemens.OpcenterEX.ReferenceData.Configuration_RF.RFModel.DataModel.ConfigurationAppDomain">
+              <Property name="NId" kind="Plain" value="ProductionHistoryConfiguration" />
+            </LogicalKey>
+          </Property>
+        </LogicalKey>
+      </Property>
+    </Entity>
+    <Entity type="Siemens.OpcenterEX.ReferenceData.Configuration_RF.RFModel.DataModel.ConfigurationKeyMultiValue">
+      <Property name="NId" kind="Plain" value="Order" />
+      <Property name="Name" kind="Plain" value="Order" />
+      <Property name="Description" kind="Plain" value="Enable tracing of Order updates." />
+      <Property name="Type" kind="Plain" value="System.Boolean" />
+      <Property name="Val" kind="Plain" value="true" />
+      <Property name="IsSystemDefined" kind="Plain" value="true" />
+      <Property name="ConfigurationKey" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.OpcenterEX.ReferenceData.Configuration_RF.RFModel.DataModel.ConfigurationKey">
+          <Property name="NId" kind="Plain" value="EnableUpdateHistoryTracing" />
+          <Property name="ConfigurationAppDomain" kind="SingleReferenceToParent">
+            <LogicalKey entityType="Siemens.OpcenterEX.ReferenceData.Configuration_RF.RFModel.DataModel.ConfigurationAppDomain">
+              <Property name="NId" kind="Plain" value="ProductionHistoryConfiguration" />
+            </LogicalKey>
+          </Property>
+        </LogicalKey>
+      </Property>
+    </Entity>
+    <Entity type="Siemens.OpcenterEX.ReferenceData.Configuration_RF.RFModel.DataModel.ConfigurationKeyMultiValue">
+      <Property name="NId" kind="Plain" value="OrderOperation" />
+      <Property name="Name" kind="Plain" value="Order Operation" />
+      <Property name="Description" kind="Plain" value="Enable tracing of Order Operation updates." />
+      <Property name="Type" kind="Plain" value="System.Boolean" />
+      <Property name="Val" kind="Plain" value="true" />
+      <Property name="IsSystemDefined" kind="Plain" value="true" />
+      <Property name="ConfigurationKey" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.OpcenterEX.ReferenceData.Configuration_RF.RFModel.DataModel.ConfigurationKey">
+          <Property name="NId" kind="Plain" value="EnableUpdateHistoryTracing" />
+          <Property name="ConfigurationAppDomain" kind="SingleReferenceToParent">
+            <LogicalKey entityType="Siemens.OpcenterEX.ReferenceData.Configuration_RF.RFModel.DataModel.ConfigurationAppDomain">
+              <Property name="NId" kind="Plain" value="ProductionHistoryConfiguration" />
+            </LogicalKey>
+          </Property>
+        </LogicalKey>
+      </Property>
+    </Entity>
+    <Entity type="Siemens.OpcenterEX.ReferenceData.Configuration_RF.RFModel.DataModel.ConfigurationKeyMultiValue">
+      <Property name="NId" kind="Plain" value="Sample" />
+      <Property name="Name" kind="Plain" value="Sample" />
+      <Property name="Description" kind="Plain" value="Enable tracing of Sample updates." />
+      <Property name="Type" kind="Plain" value="System.Boolean" />
+      <Property name="Val" kind="Plain" value="true" />
+      <Property name="IsSystemDefined" kind="Plain" value="true" />
+      <Property name="ConfigurationKey" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.OpcenterEX.ReferenceData.Configuration_RF.RFModel.DataModel.ConfigurationKey">
+          <Property name="NId" kind="Plain" value="EnableUpdateHistoryTracing" />
+          <Property name="ConfigurationAppDomain" kind="SingleReferenceToParent">
+            <LogicalKey entityType="Siemens.OpcenterEX.ReferenceData.Configuration_RF.RFModel.DataModel.ConfigurationAppDomain">
+              <Property name="NId" kind="Plain" value="ProductionHistoryConfiguration" />
+            </LogicalKey>
+          </Property>
+        </LogicalKey>
+      </Property>
+    </Entity>
+    <Entity type="Siemens.OpcenterEX.ReferenceData.Configuration_RF.RFModel.DataModel.ConfigurationKeyMultiValue">
+      <Property name="NId" kind="Plain" value="WorkOrder" />
+      <Property name="Name" kind="Plain" value="Work Order" />
+      <Property name="Description" kind="Plain" value="Enable tracing of Work Order updates." />
+      <Property name="Type" kind="Plain" value="System.Boolean" />
+      <Property name="Val" kind="Plain" value="true" />
+      <Property name="IsSystemDefined" kind="Plain" value="true" />
+      <Property name="ConfigurationKey" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.OpcenterEX.ReferenceData.Configuration_RF.RFModel.DataModel.ConfigurationKey">
+          <Property name="NId" kind="Plain" value="EnableUpdateHistoryTracing" />
+          <Property name="ConfigurationAppDomain" kind="SingleReferenceToParent">
+            <LogicalKey entityType="Siemens.OpcenterEX.ReferenceData.Configuration_RF.RFModel.DataModel.ConfigurationAppDomain">
+              <Property name="NId" kind="Plain" value="ProductionHistoryConfiguration" />
+            </LogicalKey>
+          </Property>
+        </LogicalKey>
+      </Property>
+    </Entity>
+    <Entity type="Siemens.OpcenterEX.ReferenceData.Configuration_RF.RFModel.DataModel.ConfigurationKeyMultiValue">
+      <Property name="NId" kind="Plain" value="WorkOrderOperation" />
+      <Property name="Name" kind="Plain" value="Work Order Operation" />
+      <Property name="Description" kind="Plain" value="Enable tracing of Work Order Operation updates." />
+      <Property name="Type" kind="Plain" value="System.Boolean" />
+      <Property name="Val" kind="Plain" value="true" />
+      <Property name="IsSystemDefined" kind="Plain" value="true" />
+      <Property name="ConfigurationKey" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.OpcenterEX.ReferenceData.Configuration_RF.RFModel.DataModel.ConfigurationKey">
+          <Property name="NId" kind="Plain" value="EnableUpdateHistoryTracing" />
+          <Property name="ConfigurationAppDomain" kind="SingleReferenceToParent">
+            <LogicalKey entityType="Siemens.OpcenterEX.ReferenceData.Configuration_RF.RFModel.DataModel.ConfigurationAppDomain">
+              <Property name="NId" kind="Plain" value="ProductionHistoryConfiguration" />
+            </LogicalKey>
+          </Property>
+        </LogicalKey>
+      </Property>      
+    </Entity>
+    <Entity type="Siemens.OpcenterEX.ReferenceData.Configuration_RF.RFModel.DataModel.ConfigurationKeyMultiValue">
+      <Property name="NId" kind="Plain" value="InspectionOrder" />
+      <Property name="Name" kind="Plain" value="Inspection Order" />
+      <Property name="Description" kind="Plain" value="Enable tracing of Inspection Order updates." />
+      <Property name="Type" kind="Plain" value="System.Boolean" />
+      <Property name="Val" kind="Plain" value="true" />
+      <Property name="IsSystemDefined" kind="Plain" value="true" />
+      <Property name="ConfigurationKey" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.OpcenterEX.ReferenceData.Configuration_RF.RFModel.DataModel.ConfigurationKey">
+          <Property name="NId" kind="Plain" value="EnableUpdateHistoryTracing" />
+          <Property name="ConfigurationAppDomain" kind="SingleReferenceToParent">
+            <LogicalKey entityType="Siemens.OpcenterEX.ReferenceData.Configuration_RF.RFModel.DataModel.ConfigurationAppDomain">
+              <Property name="NId" kind="Plain" value="ProductionHistoryConfiguration" />
+            </LogicalKey>
+          </Property>
+        </LogicalKey>
+      </Property>
+    </Entity>
+  </Section>
+</Sections>

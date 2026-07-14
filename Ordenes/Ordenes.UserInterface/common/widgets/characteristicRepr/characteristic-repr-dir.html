@@ -1,0 +1,383 @@
+<div class=" characteristic-repr" style="height: 100%">
+    <div id="tmpImagePlaceholder"></div>
+    <div ng-show="!vm.isenabled" style="width:100%">
+        <h4>This directive requires Workinstrucion App installed and running</h4>
+    </div>
+    <div id="repritemlist" ng-if="!vm.hideICV && vm.isloaded" style="min-width: 290px; height: 100%; float:left">
+        <sit-item-collection-viewer sit-data="vm.viewerData" sit-options="vm.viewerOptions"></sit-item-collection-viewer>
+    </div>
+
+    <div style="height: 100%; overflow-y: visible;">
+        <div ng-show="vm.IsVisual" class="visual-full-screen-parent" ng-if="!vm.isGenericCharDetails && !vm.isContextCharDetails">
+            <div style="justify-content: space-between; display: flex">
+                <p class="medium-title-display" style="display:inline-block; margin-left: -5px;">{{'characteristicRepr.Defect'|translate}} : {{vm.Label}} </p>
+                <!--<p class="medium-title-display" style="display:inline-block">{{vm.Label}}</p>-->
+                <button style="min-width: 90px;" type="button" ng-show="vm.isQualityInspectionSelected && (vm.IsAttributive || vm.IsVariable || vm.IsVisual)"
+                        ng-disabled="!vm.showConfirmSample"
+                        class="bottom-action-button last-action-button primary-dialog-button pl-button-dialog defaultBtnBorder acquire-button"
+                        ng-click="vm.ConfirmSample()">
+                    {{'instanceViewer.sample.button' | translate}}
+                </button>
+            </div>
+            <button type="button" class="pl-button-square" ng-click="vm.onButtonClick(0)" style="display:inline-block; float:right;" ng-show="!vm.HasImage" ng-disabled="vm.onPreview">
+                <span class="svg-icon" sit-class="svg-icon" sit-mom-icon="vm.addIcon"></span>
+            </button>
+            <div class="visual-full-screen">
+                <div ng-repeat="failureReference in vm.Representation.CharacteristicSpecification.FailureReferences" style="margin-bottom: 8px; position: relative" ng-if="!vm.HasImage">
+                    <div>
+                        <label class="property-label" for="failure_{{failureReference.Failure.NId}}" style="max-width: 45%; margin-bottom: 16px; float:unset !important">{{failureReference.Failure.Name?failureReference.Failure.Name:failureReference.Failure.NId}}</label>
+                        <span ng-if="failureReference.Failure.Description" class="fa fa-question-circle-o icon-tooltip" ng-mouseover="vm.SetTooltipPosition()"></span>
+                        <div class="icon-container">
+                            <p class="icon-text">{{failureReference.Failure.Description}}</p>
+                            <div class="icon-arrow"></div>
+                        </div>
+                        <sup ng-if="failure.Description" class="icon-star">*</sup>
+                    </div>
+                    <div style="display:flex;">
+                        <input class="ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required ng-valid-pattern ng-valid-minlength ng-valid-maxlength validator-control"
+                               type="number"
+                               id="failure_{{failureReference.Failure.NId | removeSpaces}}"
+                               ng-blur="vm.SaveVisualSample()"
+                               style="display:inline-block; width:192px !important; margin-right:16px; margin-top:-8px;" />
+                        <button type="button" class="pl-button-square" ng-click="vm.onButtonClick(2, failureReference.Failure.NId)"
+                                style="display:inline-block; margin: unset;"
+                                ng-if="failureReference.Failure.Attachments.length > 0">
+                            <span class="svg-icon" sit-class="svg-icon" sit-mom-icon="vm.attachmentIcon"></span>
+                        </button>
+                        <button type="button" class="pl-button-command"
+                                ng-click="vm.CreateSample()"
+                                ng-if="vm.IsAddSampleBtnVisible"
+                                ng-disabled="vm.onPreview"
+                                style="margin-top: 16px;
+                                               margin-left: 8px;
+                                               float: left;">
+                            <span class="svg-icon" sit-class="svg-icon" sit-mom-icon="vm.sampleIcon"></span>
+                        </button>
+                        <div ng-if="vm.IsNoFailureIconVisible" style="margin-top: 24px;
+                                       margin-left: 8px;
+                                       float: left; height: 24px; width: 24px;">
+                            <span class="svg-icon" sit-class="svg-icon" sit-mom-icon="vm.noFailureIcon"></span>
+                        </div>
+                    </div>
+                </div>
+                <div ng-if="vm.HasImage">
+                    <div style="width:100%;display:flex;">
+                        <div style=" float:left; width: 42%">
+                            <sit-property-grid sit-id="failures_form"
+                                               sit-layout="Horizontal"
+                                               sit-type="Fixed"
+                                               sit-mode="edit"
+                                               sit-columns="1">
+                                <sit-property sit-widget="sit-select"
+                                              sit-value="vm.chosenFailure"
+                                              sit-widget-attributes="vm.FailuresOptions"
+                                              sit-change="vm.selectFailure">{{'characteristicRepr.PotentialFailures'|translate}}</sit-property>
+                            </sit-property-grid>
+                        </div>
+                        <button type="button" class="pl-button-square" ng-click="vm.onButtonClick(2, vm.chosenFailure.label)"
+                                style="margin-top: 19px !important; margin-left: 8px !important; float:left;" ng-if="vm.chosenFailure.hasAttachments">
+                            <span class="svg-icon" sit-class="svg-icon" sit-mom-icon="vm.attachmentIcon"></span>
+                        </button>
+                        <button type="button" class="pl-button-square" ng-click="vm.onButtonClick(0)"
+                                style="margin-top: 19px !important; margin-left: 8px !important; float:left;" ng-disabled="vm.onPreview">
+                            <span class="svg-icon" sit-class="svg-icon" sit-mom-icon="vm.addIcon"></span>
+                        </button>
+                        <button type="button" class="pl-button-command"
+                                ng-click="vm.CreateSample()"
+                                ng-disabled="vm.onPreview"
+                                ng-if="vm.IsAddSampleBtnVisible"
+                                style="margin-top: 16px;
+                                               margin-left: 8px;
+                                               float: left;">
+                            <span class="svg-icon" sit-class="svg-icon" sit-mom-icon="vm.sampleIcon"></span>
+                        </button>
+                        <div ng-if="vm.IsNoFailureIconVisible" style="margin-top: 24px;
+                                       margin-left: 8px;
+                                       float: left; height: 24px; width: 24px;">
+                            <span class="svg-icon" sit-class="svg-icon" sit-mom-icon="vm.noFailureIcon"></span>
+                        </div>
+                    </div>
+
+                    <div class="char-rep-img">
+                        <sit-image-grid gheight="vm.canvasHeight" gwidth="vm.canvasWidth" on-register-api="vm.onImageUploadRegisterApi(api)" imageid="{{vm.ImageId}}" pointscolor="vm.defaultColor" editable="vm.editable"></sit-image-grid>
+                    </div>
+                    <sit-failures-legenda options="vm.FailuresLegenda"></sit-failures-legenda>
+
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-20 col-sm-20 col-lg-20" ng-style="{'min-width': (vm.IsVisual) ? '645px' : '500px'}">
+                <div ng-show="vm.IsVariable" class="column-container">
+                    <div style="justify-content: space-between; display: flex">
+                        <p class="medium-title-display">{{vm.Label}}</p>
+                        <button style="min-width: 90px;" type="button" ng-show="vm.isQualityInspectionSelected && (vm.IsAttributive || vm.IsVariable || vm.IsVisual)"
+                                ng-disabled="!vm.showConfirmSample"
+                                class="bottom-action-button last-action-button primary-dialog-button pl-button-dialog defaultBtnBorder acquire-button"
+                                ng-click="vm.ConfirmSample()">
+                            {{'instanceViewer.sample.button' | translate}}
+                        </button>
+                    </div>
+                    <div class="column-form-content">
+                        <label class="property-label" for="quantitysample">{{'characteristicRepr.value'|translate}}</label>
+                        <div style="position: relative; float: left; width: 100%; white-space:nowrap;">
+                            <div>
+                                <input type="number" id="quantitysample"
+                                       ng-model="vm.Quantity" step="{{vm.stepValue}}"
+                                       ng-blur="vm.SaveSample()"
+                                       ng-change="vm.ValueChanged()"
+                                       class="ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required ng-valid-pattern ng-valid-minlength ng-valid-maxlength validator-control"
+                                       style="display: inline-block; width:192px !important; vertical-align: middle;" />
+                                <span style="margin-left: 8px; margin-right: 8px;">{{vm.Representation.CharacteristicSpecification.NominalValue.UoMNId}}</span>
+                                <button style="margin-top: 8px;" type="button" ng-if="vm.isSemiAutomatic" class="pl-button-dialog defaultBtnBorder acquire-button" ng-click="vm.getAcquireCharacteristicValues()">
+                                    {{'instanceViewer.acquire.button' | translate}}
+                                </button>
+                                <img alt="{{vm.changesIcon.path}}" class="svg-icon" ng-src="{{vm.changesIcon.path}}" height="16" width="16" ng-show="vm.DisplayInfoBadge" style="margin-left:8px; margin-right: 8px;">
+                                <button type="button" class="pl-button-square" ng-click="vm.onButtonClick(1)" style="display:inline-block; vertical-align:middle;" ng-show="vm.DisplayInfoBadge && !vm.HasFailure" ng-disabled="vm.onPreview">
+                                    <span class="svg-icon" sit-class="svg-icon" sit-mom-icon="vm.addIcon"></span>
+                                </button>
+                                <button type="button" ng-show="vm.HasFailure" class="pl-button-square" ng-click="vm.removeFailure()" style="display:inline-block">
+                                    <span class="svg-icon" sit-class="svg-icon" sit-mom-icon="vm.deleteIcon"></span>
+                                </button>
+                            </div>
+                            <div class="tile tags-disabled" style="overflow: hidden;  border-width: 4px;position: relative;top: 0;left: 0;height: 50px;text-align: center;color: #1e1e1e;background-color: #f0f0f0;padding-top: 16px; padding-left: 8px; padding-right: 8px; padding-bottom: 16px;" ng-if="vm.HasFailure">
+                                <div class="medium-item-text medium-title-display" style="text-overflow: ellipsis; overflow: hidden; white-space: nowrap; display: inline-block; width: 200px;">
+                                    {{vm.FailureNId}}
+                                </div>
+                            </div>
+                            <div class="property-label property-label-ellipsis">
+                                <span>{{vm.UpperTolerance}}: {{vm.Representation.CharacteristicSpecification.UpperTolerance.QuantityValue}}  {{vm.Representation.CharacteristicSpecification.UpperTolerance.UoMNId}}</span></br>
+                                <span>{{vm.NominalValue}}: {{vm.Representation.CharacteristicSpecification.NominalValue.QuantityValue}}  {{vm.Representation.CharacteristicSpecification.NominalValue.UoMNId}}</span></br>
+                                <span>{{vm.LowerTolerance}}: {{vm.Representation.CharacteristicSpecification.LowerTolerance.QuantityValue}}  {{vm.Representation.CharacteristicSpecification.LowerTolerance.UoMNId}}</span>
+                            </div>
+                        </div>
+                    </div>
+                    <fieldset ng-show="vm.IsVariable && vm.notifyViolations" id="legend" style="background-color: unset; border: 0px; margin-top: 4px; padding: 0px; width: 310px; position: fixed; bottom: 20px;">
+                        <legend style="border: 0px; background: none; border-bottom: 0px; font-weight: bold; padding: 0px; margin-bottom: 16px">Legenda</legend>
+                        <img alt="{{vm.changesIcon.path}}" class="svg-icon" ng-src="{{vm.changesIcon.path}}" height="16" width="16">
+                        <span style="font-size: 12px; margin-left: 3px;">{{vm.IsVariable?('characteristicRepr.LegendaMessage'|translate):('characteristicRepr.LegendaMessage2'|translate)}}</span>
+                    </fieldset>
+                </div>
+
+                <div ng-show="vm.IsAttributive" class="column-container">
+                    <div style="justify-content: space-between; display: flex">
+                        <p class="medium-title-display">{{vm.Label}}</p>
+                        <button style="min-width: 90px;" type="button" ng-show="vm.isQualityInspectionSelected && (vm.IsAttributive || vm.IsVariable || vm.IsVisual)"
+                                ng-disabled="!vm.showConfirmSample"
+                                class="bottom-action-button last-action-button primary-dialog-button pl-button-dialog defaultBtnBorder acquire-button"
+                                ng-click="vm.ConfirmSample()">
+                            {{'instanceViewer.sample.button' | translate}}
+                        </button>
+                    </div>
+                    <div class="column-form-content">
+                        <table>
+                            <tr>
+                                <td rowspan="3" style="width:24px">
+                                    <img alt="{{vm.changesIcon.path}}" class="svg-icon" ng-src="{{vm.changesIcon.path}}" height="16" width="16" ng-style="{'display': (vm.HasAttribute == null)? 'block' : 'none'}" style="margin-top: 8px">
+                                </td>
+                                <td>
+                                    <label class="radio-container" style="padding-left: 24px !important;">
+                                        <input type="radio" id="okdescriptionid" ng-model="vm.HasAttribute" ng-value="true" ng-change="vm.SaveSample()" />
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </td>
+                                <td>
+                                    <p class="light-title-display" style="margin: 10px 0 0 0;min-width: 100px">{{vm.Representation.CharacteristicSpecification.OKDescription}}</p>
+                                </td>
+                                <td>
+                                    <label class="radio-container" style="padding-left: 24px !important;">
+                                        <input type="radio" id="notokdescriptionid" ng-model="vm.HasAttribute" ng-value="false" ng-change="vm.SaveSample()" />
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </td>
+                                <td>
+                                    <p class="light-title-display" style="margin: 10px 0 0 0; min-width: 100px">{{vm.Representation.CharacteristicSpecification.NOKDescription}}</p>
+                                </td>
+                                <td>
+                                    <button type="button" class="pl-button-square" ng-click="vm.onButtonClick(1)" style="display:inline-block; vertical-align:middle;  margin-left: 24px; margin-top: 8px" ng-show="vm.HasAttribute === false && !vm.HasFailure" ng-disabled="vm.onPreview">
+                                        <span class="svg-icon" sit-class="svg-icon" sit-mom-icon="vm.addIcon"></span>
+                                    </button>
+                                    <button type="button" ng-show="vm.HasFailure" class="pl-button-square" ng-click="vm.removeFailure()" style="display:inline-block;  vertical-align:middle; margin-left: 24px; margin-top: 8px">
+                                        <span class="svg-icon" sit-class="svg-icon" sit-mom-icon="vm.deleteIcon"></span>
+                                    </button>
+                                </td>
+                                <td style="position: relative; width:200px;" ng-if="vm.HasFailure">
+                                    <div class="tile tags-disabled" style="overflow: hidden;  border-width: 4px;position: absolute;top: 0;left: 0;height: 50px;text-align: center;color: #1e1e1e;background-color: #f0f0f0;padding-top: 16px; padding-left: 8px; padding-right: 8px; padding-bottom: 16px;">
+                                        <div class="medium-item-text medium-title-display" style="text-overflow: ellipsis; overflow: hidden; white-space: nowrap; display: inline-block; width: 200px;">
+                                            {{vm.FailureNId}}
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="confirm-button-type" ng-if="vm.isSemiAutomatic">
+                                        <button class="pl-button-dialog defaultBtnBorder acquire-button" ng-click="vm.getAcquireCharacteristicValues()">
+                                            {{'instanceViewer.acquire.button' | translate}}
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <fieldset ng-show="vm.IsAttributive && vm.notifyViolations" id="legend" style="background-color: unset; border: 0px; margin-top: 4px; padding: 0px; width: 310px; position: fixed; bottom: 20px;">
+                        <legend style="border: 0px; background: none; border-bottom: 0px; font-weight: bold; padding: 0px; margin-bottom: 16px">Legenda</legend>
+                        <img alt="{{vm.changesIcon.path}}" class="svg-icon" ng-src="{{vm.changesIcon.path}}" height="16" width="16">
+                        <span style="font-size: 12px; margin-left: 3px;">{{vm.IsVariable?('characteristicRepr.LegendaMessage'|translate):('characteristicRepr.LegendaMessage2'|translate)}}</span>
+                    </fieldset>
+                </div>
+
+                <div ng-show="vm.IsVisual" class="column-container" ng-if="vm.isGenericCharDetails || vm.isContextCharDetails">
+                    <div style="justify-content: space-between; display: flex">
+                        <p class="medium-title-display" style="display:inline-block">{{'characteristicRepr.Defect'|translate}} : {{vm.Label}}</p>
+                        <!-- <p class="medium-title-display" style="display:inline-block">{{vm.Label}}</p> -->
+                        <button style="min-width: 90px; " type="button" ng-show="vm.isQualityInspectionSelected && (vm.IsAttributive || vm.IsVariable || vm.IsVisual)"
+                                ng-disabled="!vm.showConfirmSample"
+                                class="bottom-action-button last-action-button primary-dialog-button pl-button-dialog defaultBtnBorder acquire-button"
+                                ng-click="vm.ConfirmSample()">
+                            {{'instanceViewer.sample.button' | translate}}
+                        </button>
+                    </div>
+                    <button type="button" class="pl-button-square" ng-click="vm.onButtonClick(0)" style="display:inline-block; float:right;" ng-show="!vm.HasImage" ng-disabled="vm.onPreview">
+                        <span class="svg-icon" sit-class="svg-icon" sit-mom-icon="vm.addIcon"></span>
+                    </button>
+                    <div class="column-form-content">
+                        <div ng-repeat="failureReference in vm.Representation.CharacteristicSpecification.FailureReferences" style="margin-bottom: 8px; position: relative" ng-if="!vm.HasImage">
+                            <div>
+                                <label class="property-label" for="failure_{{failureReference.Failure.NId}}" style="max-width: 45%; margin-bottom: 16px; float:unset !important">{{failureReference.Failure.Name?failureReference.Failure.Name:failureReference.Failure.NId}}</label>
+                                <span ng-if="failureReference.Failure.Description" class="fa fa-question-circle-o icon-tooltip" ng-mouseover="vm.SetTooltipPosition()"></span>
+                                <div class="icon-container">
+                                    <p class="icon-text">{{failureReference.Failure.Description}}</p>
+                                    <div class="icon-arrow"></div>
+                                </div>
+                                <sup ng-if="failure.Description" class="icon-star">*</sup>
+                            </div>
+                            <div style="display:flex;">
+                                <input class="ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required ng-valid-pattern ng-valid-minlength ng-valid-maxlength validator-control"
+                                       type="number"
+                                       id="failure_{{failureReference.Failure.NId | removeSpaces}}"
+                                       ng-blur="vm.SaveVisualSample()"
+                                       style="display:inline-block; width:192px !important; margin-right:16px; margin-top:-8px;" />
+                                <button type="button" class="pl-button-square" ng-click="vm.onButtonClick(2, failureReference.Failure.NId)"
+                                        style="display:inline-block; margin: unset;"
+                                        ng-if="failureReference.Failure.Attachments.length > 0">
+                                    <span class="svg-icon" sit-class="svg-icon" sit-mom-icon="vm.attachmentIcon"></span>
+                                </button>
+                                <button type="button" class="pl-button-command"
+                                        ng-click="vm.CreateSample()"
+                                        ng-if="vm.IsAddSampleBtnVisible"
+                                        ng-disabled="vm.onPreview"
+                                        style="margin-top: 16px;
+                                               margin-left: 8px;
+                                               float: left;">
+                                    <span class="svg-icon" sit-class="svg-icon" sit-mom-icon="vm.sampleIcon"></span>
+                                </button>
+                                <div ng-if="vm.IsNoFailureIconVisible" style="margin-top: 24px;
+                                            margin-left: 8px;
+                                            float: left; height: 24px; width: 24px;">
+                                    <span class="svg-icon" sit-class="svg-icon" sit-mom-icon="vm.noFailureIcon"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div ng-if="vm.HasImage">
+                            <div style="width:100%;display:flex;">
+                                <div style=" float:left; width:80%">
+                                    <sit-property-grid sit-id="failures_form"
+                                                       sit-layout="Horizontal"
+                                                       sit-type="Fixed"
+                                                       sit-mode="edit"
+                                                       sit-columns="1">
+                                        <sit-property sit-widget="sit-select"
+                                                      sit-value="vm.chosenFailure"
+                                                      sit-widget-attributes="vm.FailuresOptions"
+                                                      sit-change="vm.selectFailure">{{'characteristicRepr.PotentialFailures'|translate}}</sit-property>
+                                    </sit-property-grid>
+                                </div>
+                                <button type="button" class="pl-button-square" ng-click="vm.onButtonClick(2, vm.chosenFailure.label)"
+                                        style="margin-top: 19px !important; margin-left: 8px !important; float:left;" ng-if="vm.chosenFailure.hasAttachments">
+                                    <span class="svg-icon" sit-class="svg-icon" sit-mom-icon="vm.attachmentIcon"></span>
+                                </button>
+                                <button type="button" class="pl-button-square" ng-click="vm.onButtonClick(0)"
+                                        style="margin-top: 19px !important; margin-left: 8px !important; float:left;" ng-disabled="vm.onPreview">
+                                    <span class="svg-icon" sit-class="svg-icon" sit-mom-icon="vm.addIcon"></span>
+                                </button>
+                                <button type="button" class="pl-button-command"
+                                        ng-click="vm.CreateSample()"
+                                        ng-if="vm.IsAddSampleBtnVisible"
+                                         ng-disabled="vm.onPreview"
+                                        style="margin-top: 16px;
+                                               margin-left: 8px;
+                                               float: left;">
+                                    <span class="svg-icon" sit-class="svg-icon" sit-mom-icon="vm.sampleIcon"></span>
+                                </button>
+                                <div ng-if="vm.IsNoFailureIconVisible" style="margin-top: 24px;
+                                       margin-left: 8px;
+                                       float: left; height: 24px; width: 24px;">
+                                    <span class="svg-icon" sit-class="svg-icon" sit-mom-icon="vm.noFailureIcon"></span>
+                                </div>
+                            </div>
+
+                            <sit-image-grid gheight="vm.canvasHeight" gwidth="vm.canvasWidth" on-register-api="vm.onImageUploadRegisterApi(api)" imageid="{{vm.ImageId}}" pointscolor="vm.defaultColor" editable="vm.editable"></sit-image-grid>
+                            <sit-failures-legenda options="vm.FailuresLegenda"></sit-failures-legenda>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-10 col-sm-10" ng-if="(vm.IsSignButtonVisible && (vm.IsAttributive || vm.IsVariable || vm.IsVisual))" style="min-width:100%  !important; height: 100% !important; margin-top:5px !important; float:left;">
+                    <div ng-style="(vm.scenarioInstance.ScenarioInstanceId  || vm.IsSignaturePending)  ? {} : {'pointer-events':'none','opacity':'0.4'}" class="rt-sign-button-container float-left wi-es-sign-button">
+                        <sit-rt-signatures sit-scenario-instance="vm.scenarioInstance"></sit-rt-signatures>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-10 col-sm-10" ng-if="!vm.hideDetails && (vm.isGenericCharDetails || vm.isContextCharDetails)" ng-show="vm.IsAttributive || vm.IsVariable || vm.IsVisual">
+                <div class="column-container">
+                    <p class="medium-title-display" style="margin-top: 16px">{{'characteristicRepr.Details'|translate}}</p>
+                    <div class="column-form-content">
+                        <sit-property-grid id="propertyGridForm"
+                                           sit-data="vm.propertyGridData"
+                                           sit-layout="Vertical"
+                                           sit-type="Fixed"
+                                           sit-mode="list">
+                        </sit-property-grid>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <style>
+        .sign-icon {
+            width: 24px;
+            height: 24px;
+            left: -3px;
+            top: 1px;
+            position: relative;
+        }
+
+        .sign-status {
+            width: 16px;
+            height: 16px;
+            position: relative;
+            left: 1px;
+            top: 1px;
+        }
+
+        .confirm-button-type {
+            float: right;
+        }
+
+        .medium-item-indicators.indicator-section {
+            float: right;
+            margin-right: 16px;
+        }
+
+        .visual-full-screen-parent {
+            height: 100%;
+            width: 100%;
+            margin: 26px 0 0 5px;
+        }
+
+        .visual-full-screen {
+            text-align: center;
+        }
+    </style>
+</div>

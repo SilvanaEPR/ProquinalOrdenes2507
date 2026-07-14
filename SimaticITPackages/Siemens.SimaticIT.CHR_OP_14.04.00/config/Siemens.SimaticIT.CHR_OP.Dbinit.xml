@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sections>
+  <Section engineeringLevel="LibraryFunctionalBlock" implementationName="QualityExecutionOperationalData" domainName="OperationalData">
+    <Entity type="Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.DataModel.PartBasedInspectionExecutionCriteria">
+      <Property name="NId" kind="Plain" value="Default" />
+      <Property name="Name" kind="Plain" value="Default" />
+      <Property name="Description" kind="Plain" value="The Inspection will be executed as soon as a part will be made available." />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.DataModel.PartBasedInspectionExecutionCriteria">
+      <Property name="NId" kind="Plain" value="Serial" />
+      <Property name="Name" kind="Plain" value="Serial" />
+      <Property name="Description" kind="Plain" value="The Inspection will be executed as soon as a specific serialized part will be made available." />
+    </Entity>
+  </Section>
+  <Section engineeringLevel="LibraryFunctionalBlock" implementationName="QualityExecutionOperationalData" domainName="ReferenceData">
+    <!-- ***************** Status Machine ***************** -->
+    <Entity type="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.StateMachine">
+      <Property name="NId" kind="Plain" value="InspectionOrderStateMachine" />
+      <Property name="Name" kind="Plain" value="Inspection Order Management State Machine" />
+      <Property name="Description" kind="Plain" value="State Machine representing a typical Inspection Order life cycle" />
+      <Property name="IsHidden" kind="Plain" value="False" />
+      <Property name="IsSystemDefined" kind="Plain" value="True" />
+    </Entity>
+
+    <!-- ***************** Start - Statuses ***************** -->
+    <!-- ***************** 1. In Editing ***************** -->
+    <Entity type="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.Status">
+      <Property name="NId" kind="Plain" value="InEditing" />
+      <Property name="Name" kind="Plain" value="In Editing" />
+      <Property name="Description" kind="Plain" value="In Editing" />
+      <Property name="Color" kind="Plain" value="#647D2D" />
+      <Property name="IsInitial" kind="Plain" value="True" />
+      <Property name="IsHidden" kind="Plain" value="False" />
+      <Property name="IsSystemDefined" kind="Plain" value="True" />
+      <Property name="Outcome" kind="Plain" value="1" />
+      <Property name="StateMachine" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.StateMachine">
+          <Property name="NId" kind="Plain" value="InspectionOrderStateMachine" />
+        </LogicalKey>
+      </Property>
+      <Property name="StatusBehaviorDefinitions" kind="ManyToManyReference">
+      </Property>
+    </Entity>
+    <!--***************** 2. Active ***************** -->
+    <Entity type="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.Status">
+      <Property name="NId" kind="Plain" value="Active" />
+      <Property name="Name" kind="Plain" value="Active" />
+      <Property name="Description" kind="Plain" value="Active" />
+      <Property name="Color" kind="Plain" value="#FFFFFF" />
+      <Property name="IsInitial" kind="Plain" value="False" />
+      <Property name="IsHidden" kind="Plain" value="False" />
+      <Property name="IsSystemDefined" kind="Plain" value="True" />
+      <Property name="Outcome" kind="Plain" value="2" />
+      <Property name="StateMachine" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.StateMachine">
+          <Property name="NId" kind="Plain" value="InspectionOrderStateMachine" />
+        </LogicalKey>
+      </Property>
+      <Property name="StatusBehaviorDefinitions" kind="ManyToManyReference">
+      </Property>
+
+    </Entity>
+    <!-- ***************** 3. Completed ***************** -->
+    <Entity type="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.Status">
+      <Property name="NId" kind="Plain" value="Completed" />
+      <Property name="Name" kind="Plain" value="Completed" />
+      <Property name="Description" kind="Plain" value="Completed" />
+      <Property name="Color" kind="Plain" value="#28E632" />
+      <Property name="IsInitial" kind="Plain" value="False" />
+      <Property name="IsHidden" kind="Plain" value="False" />
+      <Property name="IsSystemDefined" kind="Plain" value="True" />
+      <Property name="Outcome" kind="Plain" value="3" />
+      <Property name="StateMachine" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.StateMachine">
+          <Property name="NId" kind="Plain" value="InspectionOrderStateMachine" />
+        </LogicalKey>
+      </Property>
+      <Property name="StatusBehaviorDefinitions" kind="ManyToManyReference">
+      </Property>
+    </Entity>
+
+    <!-- ***************** End - Statuses ***************** -->
+    <!-- ***************** Status Transitions ***************** -->
+    <!--Release-->
+    <Entity type="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.StatusTransition">
+      <Property name="SourceStatus" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.Status">
+          <Property name="NId" kind="Plain" value="InEditing" />
+          <Property name="StateMachine" kind="SingleReferenceToParent">
+            <LogicalKey entityType="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.StateMachine">
+              <Property name="NId" kind="Plain" value="InspectionOrderStateMachine" />
+            </LogicalKey>
+          </Property>
+        </LogicalKey>
+      </Property>
+      <Property name="TargetStatus" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.Status">
+          <Property name="NId" kind="Plain" value="Active" />
+          <Property name="StateMachine" kind="SingleReferenceToParent">
+            <LogicalKey entityType="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.StateMachine">
+              <Property name="NId" kind="Plain" value="InspectionOrderStateMachine" />
+            </LogicalKey>
+          </Property>
+        </LogicalKey>
+      </Property>
+      <Property name="Verb" kind="Plain" value="Release" />
+      <Property name="DoRaiseEvent" kind="Plain" value="True"/>
+      <Property name="IsHidden" kind="Plain" value="False" />
+      <Property name="IsSystemDefined" kind="Plain" value="True" />
+    </Entity>
+    <!--Complete-->
+    <Entity type="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.StatusTransition">
+      <Property name="SourceStatus" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.Status">
+          <Property name="NId" kind="Plain" value="Active" />
+          <Property name="StateMachine" kind="SingleReferenceToParent">
+            <LogicalKey entityType="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.StateMachine">
+              <Property name="NId" kind="Plain" value="InspectionOrderStateMachine" />
+            </LogicalKey>
+          </Property>
+        </LogicalKey>
+      </Property>
+      <Property name="TargetStatus" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.Status">
+          <Property name="NId" kind="Plain" value="Completed" />
+          <Property name="StateMachine" kind="SingleReferenceToParent">
+            <LogicalKey entityType="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.StateMachine">
+              <Property name="NId" kind="Plain" value="InspectionOrderStateMachine" />
+            </LogicalKey>
+          </Property>
+        </LogicalKey>
+      </Property>
+      <Property name="Verb" kind="Plain" value="Complete" />
+      <Property name="DoRaiseEvent" kind="Plain" value="True"/>
+      <Property name="IsHidden" kind="Plain" value="False" />
+      <Property name="IsSystemDefined" kind="Plain" value="True" />
+    </Entity>
+  </Section>
+</Sections>

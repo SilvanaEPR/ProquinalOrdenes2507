@@ -1,0 +1,304 @@
+﻿<?xml version="1.0" encoding="utf-8"?><projectmanifest>
+  <header>
+    <manifestversion>11.0</manifestversion>
+    <platformversion>11.0</platformversion>
+    <type>Library</type>
+    <name>Siemens.OpcenterEX.FN.ProductionHistory_OP</name>
+    <shortname>ProductionHistory_OP</shortname>
+    <description>Production History Operational Data Domain Functional Block</description>
+    <version>11.00.00</version>
+    <companyname>Siemens.OpcenterEX.FN</companyname>
+    <author>Siemens.OpcenterEX.FN</author>
+    <hash>IdfJOaZUxaZH4ymt6FcMwZmWi1CKpk0AjN6hb8g4F4U=</hash>
+    <modelHash>nHII2j005p4dSvlYmwuUVhCwxt99D8WIzQR8kOUEyzk=</modelHash>
+    <modelHashSections>
+      <modelHashSection>
+        <name>projectConfigModelHash</name>
+        <hash>fodQVpjTEfKH8udpXHGf1VdFZLvgb/ddYJcGF3+FW1A=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>dataModelHash</name>
+        <hash>mtVuzKQzLgktyc+PgavYm2Azm5Xag2M0sPqcjcHXDEM=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>commandModelHash</name>
+        <hash>J2lyhtz/6ayuAJg3MZ7/4hjbMBuYxH4MSwsmOZrw5Yc=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>aliasModelHash</name>
+        <hash>cdWtFof25lUoH+wgMZZEtJGL5k7aBVT7Ae5HtNcbGxs=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>eventModelHash</name>
+        <hash>0JVNvOGXlhHuKr0PfywiTfl8zbh4nbQuxc644fuhK48=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>typeModelHash</name>
+        <hash>BQ2KAQSgK56hN0Pto11xvpCN82nGZFqhxscfda8JRNk=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>securityModelHash</name>
+        <hash>cdWtFof25lUoH+wgMZZEtJGL5k7aBVT7Ae5HtNcbGxs=</hash>
+      </modelHashSection>
+    </modelHashSections>
+    <uiHash>na</uiHash>
+    <canbeextended>false</canbeextended>
+    <domain>OperationalData</domain>
+  </header>
+  <reference>
+    <functionalblocks>
+      <functionalblock>
+        <name>Siemens.OpcenterEX.Configuration_RF</name>
+        <version>12.00.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.ALG_MS</name>
+        <version>02.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.ALG_OP</name>
+        <version>02.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.UDM_RF</name>
+        <version>07.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.OpcenterEX.PR.ApplicationLogExt</name>
+        <version>14.00.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.OpcenterEX.FN.ProductionHistory_MS</name>
+        <version>10.00.00</version>
+        <type>Library</type>
+      </functionalblock>
+    </functionalblocks>
+    <extensions></extensions>
+  </reference>
+  <artifacts>
+    <commands><command>
+                        <name>Siemens.OpcenterEX.FN.OperationalData.ProductionHistory_OP.OPModel.Commands.CreateProductionRecord</name>
+                        <shortname>CreateProductionRecord</shortname>
+                        <description>Creates a Production History Record based on the details of the transaction that is triggered. The command takes all the details of the triggered transaction as input. It checks the value set for Configuration Key: EnableEventBasedTracing. If it is set to True, the TraceProductionRecord event is fired. If it is set to False, the AddProductionTraces internal command is called.</description>
+                        <assembly>Siemens.OpcenterEX.FN.OperationalData.ProductionHistory_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.OpcenterEX.FN.OperationalData.ProductionHistory_OP.OPModel.Commands.CreateProductionRecordHandlerShell</name>
+                                        <assembly>Siemens.OpcenterEX.FN.ProductionHistory_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.OpcenterEX.FN.OperationalData.ProductionHistory_OP.OPModel.Commands.MigrateApplicationLogMessageToProductionHistoryRecord</name>
+                        <shortname>MigrateApplicationLogMessageToProductionHistoryRecord</shortname>
+                        <description>Migrates Application Log Messages to Production History Records. During migration, the command deletes or retains the Application Log messages depending on the input property configuration. The command takes the following input: - A True / False value for the DeleteMigratedApplicationLogMessages input property. A True value indicates deleting of messages as Apllication Logs after migration to Production History. A False value indicates messages are retained as Application Logs also along with Production History. - A List of messages to be migrated. The MessageIdOwnerList property takes the input in the form of a combination of message Id and Owner.</description>
+                        <assembly>Siemens.OpcenterEX.FN.OperationalData.ProductionHistory_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.OpcenterEX.FN.OperationalData.ProductionHistory_OP.OPModel.Commands.MigrateApplicationLogMessageToProductionHistoryRecordHandlerShell</name>
+                                        <assembly>Siemens.OpcenterEX.FN.ProductionHistory_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.OpcenterEX.FN.OperationalData.ProductionHistory_OP.OPModel.Commands.AddProductionTraces</name>
+                        <shortname>AddProductionTraces</shortname>
+                        <description>This is an internal command that actually generates a Production History Record based on the details of the transaction. The command takes all the details of the triggered transaction as input.</description>
+                        <assembly>Siemens.OpcenterEX.FN.OperationalData.ProductionHistory_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.OpcenterEX.FN.OperationalData.ProductionHistory_OP.OPModel.Commands.AddProductionTracesHandlerShell</name>
+                                        <assembly>Siemens.OpcenterEX.FN.ProductionHistory_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.OpcenterEX.FN.OperationalData.ProductionHistory_OP.OPModel.Commands.AddProductionTracesList</name>
+                        <shortname>AddProductionTracesList</shortname>
+                        <description>This is an internal command that generates a list of Production History Records based on the details of the transaction. The command takes all the details of the triggered transactions as input.</description>
+                        <assembly>Siemens.OpcenterEX.FN.OperationalData.ProductionHistory_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.OpcenterEX.FN.OperationalData.ProductionHistory_OP.OPModel.Commands.AddProductionTracesListHandlerShell</name>
+                                        <assembly>Siemens.OpcenterEX.FN.ProductionHistory_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command></commands>
+    <commandActions><commandAction>
+                        <name>Siemens.OpcenterEX.FN.OperationalData.ProductionHistory_OP.OPModel.Commands.WriteETWMessageHandlerShell</name>
+                        <shortname>WriteETWMessageHandlerShell</shortname>
+                        <description>Writes an ETW message once the Production History Trace is generated.</description>
+                        <assembly>Siemens.OpcenterEX.FN.ProductionHistory_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <target_cpu>AnyCPU</target_cpu>
+                        <targetframework>netstandard2.0</targetframework>
+                        <command>Siemens.OpcenterEX.FN.OperationalData.ProductionHistory_OP.OPModel.Commands.AddProductionTraces</command>
+                        <type>Post</type>
+                        <is_enabled>true</is_enabled>
+                        <is_optional>true</is_optional>
+                </commandAction></commandActions>
+    <events><event>
+                <name>Siemens.OpcenterEX.FN.OperationalData.ProductionHistory_OP.OPModel.Events.TraceProductionRecord</name>
+                <shortname>TraceProductionRecord</shortname>
+                <description> Event to log a Production History Record. This event when fired logs a Production History Record for a committed transaction. Note: This event is fired only if the Configuration Key: EnableEventBasedTracing is set to True.</description>
+                <assembly>Siemens.OpcenterEX.FN.OperationalData.ProductionHistory_OP.OPModel.Events, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                <dotneteventtype></dotneteventtype>
+                <eventtype>Application</eventtype>
+                <domain>OperationalData</domain>
+                <taglist>
+                </taglist>
+                <securable>true</securable>
+        </event><event>
+                <name>Siemens.OpcenterEX.FN.OperationalData.ProductionHistory_OP.OPModel.Events.PHRDetailsStored</name>
+                <shortname>PHRDetailsStored</shortname>
+                <description> Event to store the details of the entity, the action that triggered the transaction on that entity, the context information related to the transaction and the record that traced the transaction.</description>
+                <assembly>Siemens.OpcenterEX.FN.OperationalData.ProductionHistory_OP.OPModel.Events, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                <dotneteventtype></dotneteventtype>
+                <eventtype>Application</eventtype>
+                <domain>OperationalData</domain>
+                <taglist>
+                </taglist>
+                <securable>true</securable>
+        </event><event>
+                <name>Siemens.OpcenterEX.FN.OperationalData.ProductionHistory_OP.OPModel.Events.TraceProductionRecordsList</name>
+                <shortname>TraceProductionRecordsList</shortname>
+                <description> Event to log a list of Production History Records. This event when fired logs multiple Production History Records for the committed transaction.</description>
+                <assembly>Siemens.OpcenterEX.FN.OperationalData.ProductionHistory_OP.OPModel.Events, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                <dotneteventtype></dotneteventtype>
+                <eventtype>Application</eventtype>
+                <domain>OperationalData</domain>
+                <taglist>
+                </taglist>
+                <securable>true</securable>
+        </event></events>
+    <event_handlers><event_handler>
+<name>Siemens.OpcenterEX.FN.OperationalData.ProductionHistory_OP.OPModel.Events.TraceProductionRecordEventHandlerShell</name>
+<assembly>Siemens.OpcenterEX.FN.ProductionHistory_OP.EventHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+<event_name>Siemens.OpcenterEX.FN.OperationalData.ProductionHistory_OP.OPModel.Events.TraceProductionRecord</event_name>
+<target_cpu>AnyCPU</target_cpu>
+<targetframework>netstandard2.0</targetframework>
+<dependencies></dependencies>
+</event_handler><event_handler>
+<name>Siemens.OpcenterEX.FN.OperationalData.ProductionHistory_OP.OPModel.Events.TraceProductionRecordsListEventHandlerShell</name>
+<assembly>Siemens.OpcenterEX.FN.ProductionHistory_OP.EventHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+<event_name>Siemens.OpcenterEX.FN.OperationalData.ProductionHistory_OP.OPModel.Events.TraceProductionRecordsList</event_name>
+<target_cpu>AnyCPU</target_cpu>
+<targetframework>netstandard2.0</targetframework>
+<dependencies></dependencies>
+</event_handler></event_handlers>
+    <signals></signals>
+    <readingFunctions></readingFunctions>
+    <entities><entity>
+      <name>Siemens.OpcenterEX.FN.OperationalData.ProductionHistory_OP.OPModel.DataModel.ReadingModel.ProductionHistoryRecord</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.OpcenterEX.FN.OperationalData.ProductionHistory_OP.OPModel.DataModel.ReadingModel.ContextFields</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.OpcenterEX.FN.OperationalData.ProductionHistory_OP.OPModel.DataModel.ReadingModel.ProductionHistoryRecordUpdateDetails</name>
+      <securable>true</securable>
+    </entity></entities>
+    <datamodels><datamodel>
+      <assembly>Siemens.OpcenterEX.FN.OperationalData.ProductionHistory_OP.OPModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>WR</mode>
+      <domain>OperationalData</domain>
+    </datamodel><datamodel>
+      <assembly>Siemens.OpcenterEX.FN.OperationalData.ProductionHistory_OP.OPModel.ReadingModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>RD</mode>
+      <domain>OperationalData</domain>
+    </datamodel><datamodel>
+      <assembly>Siemens.OpcenterEX.FN.OperationalData.ProductionHistory_OP.OPModel.Types, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>WR</mode>
+      <domain>OperationalData</domain>
+    </datamodel><datamodel>
+      <assembly>Siemens.OpcenterEX.FN.OperationalData.ProductionHistory_OP.OPModel.Types.ReadingModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>RD</mode>
+      <domain>OperationalData</domain>
+    </datamodel></datamodels>
+    <externaldatamodels></externaldatamodels>
+    <appdatamodels></appdatamodels>
+    <uimodules></uimodules>
+    <uicomponents></uicomponents>
+    <wr_entities><wr_entity>
+      <name>Siemens.OpcenterEX.FN.OperationalData.ProductionHistory_OP.OPModel.DataModel.ProductionHistoryRecord</name>
+      <shortname>ProductionHistoryRecord</shortname>
+      <haslogicalkey>false</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity></parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity></root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.OpcenterEX.FN.OperationalData.ProductionHistory_OP.OPModel.DataModel.ContextFields</name>
+      <shortname>ContextFields</shortname>
+      <haslogicalkey>false</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity>Siemens.OpcenterEX.FN.OperationalData.ProductionHistory_OP.OPModel.DataModel.ProductionHistoryRecord</parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity>Siemens.OpcenterEX.FN.OperationalData.ProductionHistory_OP.OPModel.DataModel.ProductionHistoryRecord</root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.OpcenterEX.FN.OperationalData.ProductionHistory_OP.OPModel.DataModel.ProductionHistoryRecordUpdateDetails</name>
+      <shortname>ProductionHistoryRecordUpdateDetails</shortname>
+      <haslogicalkey>false</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity>Siemens.OpcenterEX.FN.OperationalData.ProductionHistory_OP.OPModel.DataModel.ProductionHistoryRecord</parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity>Siemens.OpcenterEX.FN.OperationalData.ProductionHistory_OP.OPModel.DataModel.ProductionHistoryRecord</root_entity>
+      <base_entity></base_entity>
+    </wr_entity></wr_entities>
+    <wr_facets></wr_facets>
+  </artifacts>
+  <security>
+    <roles></roles>
+  </security>
+  <runtime>
+    <event_subscriptions></event_subscriptions>
+    <handlergroups></handlergroups>
+  </runtime>
+</projectmanifest>

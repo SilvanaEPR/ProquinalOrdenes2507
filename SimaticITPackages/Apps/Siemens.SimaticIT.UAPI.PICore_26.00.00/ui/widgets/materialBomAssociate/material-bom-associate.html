@@ -1,0 +1,21 @@
+﻿<div class="pi-component-title">{{vm.materialBoMAssociationComponentTitle}}</div>
+<div style="float:right">
+    <button ng-click="vm.cancel()" title="{{vm.translatedCancel}}" class="btn btn-default">{{vm.translatedCancel}}</button>
+</div>
+<div>
+    <div class="pi-insidecomponent-title" style="padding-top: 20px;">{{vm.materialTableTitle}} </div>
+    <sit-pi-table sit-pi-table-id="mats" sit-config="vm.matTableConfig" sit-pi-config="vm.matDataConfig"></sit-pi-table>
+
+    <div ng-show="vm.isMatSelected">
+        <div class="pi-insidecomponent-title">{{vm.boMTableTitle}} </div>
+        <sit-pi-table sit-pi-table-id="boms" sit-config="vm.bomTableConfig" sit-pi-config="vm.bomDataConfig" sit-pi-toolbar-buttons="vm.toolbarButtons" sit-pi-toolbar-visible="true" on-command-clicked="vm.onActionClicked(command)"  sit-view-mode="grid"></sit-pi-table>
+    </div>
+</div>
+<div>
+    <sit-dialog sit-title="vm.associateBoMTitle"
+                sit-templatedata="vm.associateBoMData"
+                sit-templateuri="vm.associateBoMTemplate"
+                sit-modalid=""
+                sit-buttons="vm.associateBoMButtonsList">
+    </sit-dialog>
+</div>

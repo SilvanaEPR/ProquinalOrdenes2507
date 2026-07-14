@@ -1,0 +1,362 @@
+{
+  "name": "Siemens.SimaticIT.UAPI.PICore.WorkOrderHeaderParameters",
+  "functionalBlock": "Siemens.SimaticIT.UAPI.PICore",
+  "type": "standard",
+  "title": "Work Order Header Parameters",
+  "header": "picore.titles.WorkOrderHeaderParameters",
+  "icon": "svg typeParameter48",
+  "manifestVersion": "01.01.00",
+  "dependencies": [
+    "Siemens.SimaticIT.UAPI.PICore"
+  ],
+  "states": [
+    {
+      "id": "home.Siemens_SimaticIT_UAPI_PICore_WorkOrderHeaderParameters_home",
+      "name": "home",
+      "title": "home screen",
+      "icon": "svg typeParameter48",
+      "securable": true,
+      "contents": [],
+      "parameters": [
+        {
+          "name": "WorkOrderId",
+          "type": "string",
+          "value": ""
+        }
+      ],
+      "context": []
+    }
+  ],
+  "components": [
+    {
+      "name": "mashup",
+      "title": "Mashup System Component",
+      "description": "Mashup System Component",
+      "type": "ui",
+      "source": "sit-mashup",
+      "version": "1.0.0",
+      "contracts": {
+        "methods": [
+          "setContext",
+          "navigateTo",
+          "display",
+          "setPosition"
+        ],
+        "events": [
+          "onLoad",
+          "onContextChanged"
+        ],
+        "dpc": {}
+      },
+      "functionalBlock": "",
+      "category": "internal"
+    },
+    {
+      "name": "workorderheaderparameterlist",
+      "title": "Display Work Order Parameter List",
+      "description": "Display Work Order Parameter List",
+      "type": "ui",
+      "source": "workorderheaderparameterlist",
+      "version": "1.0.0",
+      "contracts": {
+        "methods": [
+          "setActionBarVisibility",
+          "setWorkOrderId"
+        ],
+        "events": [],
+        "dpc": {
+          "EntityNames": {
+            "node": "data",
+            "type": "Array",
+            "category": "Extensibility",
+            "description": "",
+            "permission": "rw",
+            "default": []
+          },
+          "FacetNames": {
+            "node": "data",
+            "type": "Array",
+            "category": "Extensibility",
+            "description": "",
+            "permission": "rw",
+            "default": []
+          },
+          "Properties": {
+            "node": "data",
+            "type": "Array",
+            "category": "Extensibility",
+            "description": "",
+            "permission": "rw",
+            "default": [
+              {
+                "PropertyName": "ParameterNId",
+                "DataType": "string",
+                "DisplayName": "picore.headers.tables.nId",
+                "QuickSearch": true,
+                "CanBeSorted": true,
+                "IsSortDefault": true,
+                "CanBeFiltered": true,
+                "IsVisible": true
+              },
+              {
+                "PropertyName": "ParameterName",
+                "DataType": "string",
+                "DisplayName": "picore.headers.tables.name",
+                "QuickSearch": false,
+                "CanBeSorted": true,
+                "IsSortDefault": false,
+                "CanBeFiltered": true,
+                "IsVisible": true
+              },
+              {
+                "PropertyName": "ParameterDescription",
+                "DataType": "string",
+                "DisplayName": "picore.headers.tables.description",
+                "QuickSearch": false,
+                "CanBeSorted": true,
+                "IsSortDefault": false,
+                "CanBeFiltered": true,
+                "IsVisible": true
+              },
+              {
+                "PropertyName": "ParameterTargetValue",
+                "DataType": "string",
+                "DisplayName": "picore.headers.tables.targetValue",
+                "QuickSearch": false,
+                "CanBeSorted": true,
+                "IsSortDefault": false,
+                "CanBeFiltered": true,
+                "IsVisible": true
+              },
+              {
+                "PropertyName": "ParameterType",
+                "DataType": "string",
+                "DisplayName": "picore.headers.tables.type",
+                "QuickSearch": false,
+                "CanBeSorted": true,
+                "IsSortDefault": false,
+                "CanBeFiltered": true,
+                "IsVisible": true
+              },
+              {
+                "PropertyName": "ParameterUoMNId",
+                "DataType": "string",
+                "DisplayName": "picore.headers.tables.uoM",
+                "QuickSearch": false,
+                "CanBeSorted": true,
+                "IsSortDefault": false,
+                "CanBeFiltered": true,
+                "IsVisible": true
+              }
+            ]
+          },
+          "PageSizes": {
+            "node": "data",
+            "type": "Array",
+            "category": "Visibility",
+            "description": "",
+            "permission": "rw",
+            "default": [
+              5,
+              10,
+              30,
+              50
+            ]
+          },
+          "PageSizeDefault": {
+            "node": "data",
+            "type": "Number",
+            "category": "Visibility",
+            "description": "",
+            "permission": "rw",
+            "default": 5
+          },
+          "IsTitleVisible": {
+            "node": "data",
+            "type": "Boolean",
+            "category": "Visibility",
+            "description": "",
+            "permission": "rw",
+            "default": false
+          }
+        }
+      },
+      "functionalBlock": "Siemens.SimaticIT.UAPI.PICore"
+    }
+  ],
+  "componentInstances": [
+    {
+      "name": "home_mashup_1",
+      "type": "mashup",
+      "state": "home.Siemens_SimaticIT_UAPI_PICore_WorkOrderHeaderParameters_home",
+      "status": false,
+      "layout": {
+        "left": 0,
+        "top": 0,
+        "rows": 2,
+        "columns": 2
+      },
+      "dpc": {}
+    },
+    {
+      "name": "home_workorderheaderparameterlist_2",
+      "type": "workorderheaderparameterlist",
+      "state": "home.Siemens_SimaticIT_UAPI_PICore_WorkOrderHeaderParameters_home",
+      "status": false,
+      "layout": {
+        "left": 0,
+        "top": 0,
+        "rows": 12,
+        "columns": 12
+      },
+      "dpc": {
+        "EntityNames": [],
+        "FacetNames": [],
+        "Properties": [
+          {
+            "PropertyName": "ParameterNId",
+            "DataType": "string",
+            "DisplayName": "picore.headers.tables.nId",
+            "QuickSearch": true,
+            "CanBeSorted": true,
+            "IsSortDefault": true,
+            "CanBeFiltered": true,
+            "IsVisible": true
+          },
+          {
+            "PropertyName": "ParameterName",
+            "DataType": "string",
+            "DisplayName": "picore.headers.tables.name",
+            "QuickSearch": false,
+            "CanBeSorted": true,
+            "IsSortDefault": false,
+            "CanBeFiltered": true,
+            "IsVisible": true
+          },
+          {
+            "PropertyName": "ParameterDescription",
+            "DataType": "string",
+            "DisplayName": "picore.headers.tables.description",
+            "QuickSearch": false,
+            "CanBeSorted": true,
+            "IsSortDefault": false,
+            "CanBeFiltered": true,
+            "IsVisible": true
+          },
+          {
+            "PropertyName": "ParameterTargetValue",
+            "DataType": "string",
+            "DisplayName": "picore.headers.tables.targetValue",
+            "QuickSearch": false,
+            "CanBeSorted": true,
+            "IsSortDefault": false,
+            "CanBeFiltered": true,
+            "IsVisible": true
+          },
+          {
+            "PropertyName": "ParameterType",
+            "DataType": "string",
+            "DisplayName": "picore.headers.tables.type",
+            "QuickSearch": false,
+            "CanBeSorted": true,
+            "IsSortDefault": false,
+            "CanBeFiltered": true,
+            "IsVisible": true
+          },
+          {
+            "PropertyName": "ParameterUoMNId",
+            "DataType": "string",
+            "DisplayName": "picore.headers.tables.uoM",
+            "QuickSearch": false,
+            "CanBeSorted": true,
+            "IsSortDefault": false,
+            "CanBeFiltered": true,
+            "IsVisible": true
+          }
+        ],
+        "PageSizes": [
+          5,
+          10,
+          30,
+          50
+        ],
+        "PageSizeDefault": 5,
+        "IsTitleVisible": false
+      },
+      "app": "Siemens.SimaticIT.UAPI.PICore"
+    }
+  ],
+  "wires": [
+    {
+      "name": "onLoad",
+      "state": "home.Siemens_SimaticIT_UAPI_PICore_WorkOrderHeaderParameters_home",
+      "description": "",
+      "input": {
+        "component": "home_mashup_1",
+        "api": "onLoad"
+      },
+      "output": [
+        {
+          "component": "home_workorderheaderparameterlist_2",
+          "api": "setWorkOrderId",
+          "parameters": [
+            "WorkOrderId"
+          ],
+          "converter": "function(input) {\n\tvar evtObj = input[0];\n\tvar result = [];\n\tresult.push(evtObj[\"WorkOrderId\"]);\n\treturn result;\n}",
+          "customConverter": false
+        }
+      ]
+    }
+  ],
+  "stateLayoutList": [
+    {
+      "state": "home.Siemens_SimaticIT_UAPI_PICore_WorkOrderHeaderParameters_home",
+      "layoutProperties": {
+        "columns": 12,
+        "pushing": false,
+        "floating": false,
+        "swapping": false,
+        "width": "auto",
+        "colWidth": "auto",
+        "rowHeight": "match",
+        "outerMargin": true,
+        "isMobile": true,
+        "mobileBreakPoint": 768,
+        "tabletBreakPoint": 1024,
+        "mobileModeEnabled": true,
+        "minColumns": 12,
+        "minRows": 12,
+        "maxRows": 100,
+        "defaultSizeX": 3,
+        "defaultSizeY": 3,
+        "resizable": {
+          "enabled": false,
+          "handles": [
+            "n",
+            "e",
+            "s",
+            "w",
+            "ne",
+            "se",
+            "sw",
+            "nw"
+          ]
+        },
+        "margins": [
+          5,
+          5
+        ],
+        "draggable": {
+          "enabled": false,
+          "handle": ".editorSmallComponent"
+        }
+      },
+      "engineeringGridConfig": {
+        "pushing": true,
+        "swapping": true,
+        "floating": true,
+        "isGridLinesVisible": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,542 @@
+﻿<?xml version="1.0" encoding="utf-8"?><projectmanifest>
+  <header>
+    <manifestversion>11.0</manifestversion>
+    <platformversion>11.0</platformversion>
+    <type>Library</type>
+    <name>Siemens.SimaticIT.PRM_MS</name>
+    <shortname>PRM_MS</shortname>
+    <description>Personnel Master Data Domain Functional Block</description>
+    <version>03.04.00</version>
+    <companyname>Siemens.SimaticIT</companyname>
+    <author>Siemens.SimaticIT</author>
+    <hash>AAqBrSabmZbiq/G5rrPwlNuyIchOFBcGraieMCVwFk0=</hash>
+    <modelHash>bXIEYmdJECaJePgeNS1HGrT3jNhmfg9TUhHSOgFZHXQ=</modelHash>
+    <modelHashSections>
+      <modelHashSection>
+        <name>projectConfigModelHash</name>
+        <hash>Prz6eXexsJmavebIiVeZjexNVqnZDUirk0GZQMcnbiA=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>dataModelHash</name>
+        <hash>OROtG4G89yfYd/zTH9yElJABlOqQxENHXATbeyvfbPs=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>commandModelHash</name>
+        <hash>47B8o9ekWPaVVdQ7kWkxklVJKgLu3WkmcKIYN2YqGwc=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>aliasModelHash</name>
+        <hash>cdWtFof25lUoH+wgMZZEtJGL5k7aBVT7Ae5HtNcbGxs=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>eventModelHash</name>
+        <hash>Od9KbXDskLYQLuGlIhCZ1laY7his8nfvdTxrKcwmCsM=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>typeModelHash</name>
+        <hash>F9WsLKeFB0tvb/QWo9YQYrV2dmNDOk3i5tqGbSjT7MQ=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>securityModelHash</name>
+        <hash>cdWtFof25lUoH+wgMZZEtJGL5k7aBVT7Ae5HtNcbGxs=</hash>
+      </modelHashSection>
+    </modelHashSections>
+    <uiHash>na</uiHash>
+    <canbeextended>false</canbeextended>
+    <domain>MasterData</domain>
+  </header>
+  <reference>
+    <functionalblocks></functionalblocks>
+    <extensions></extensions>
+  </reference>
+  <artifacts>
+    <commands><command>
+                        <name>Siemens.SimaticIT.MasterData.PRM_MS.MSModel.Commands.CreatePerson</name>
+                        <shortname>CreatePerson</shortname>
+                        <description>Creates a Person.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.PRM_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.PRM_MS.MSModel.Commands.CreatePersonHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.PRM_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.PRM_MS.MSModel.Commands.AssignUserToPerson</name>
+                        <shortname>AssignUserToPerson</shortname>
+                        <description>Associates an UMC user to a Person</description>
+                        <assembly>Siemens.SimaticIT.MasterData.PRM_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.PRM_MS.MSModel.Commands.AssignUserToPersonHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.PRM_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.PRM_MS.MSModel.Commands.UnassignUserFromPerson</name>
+                        <shortname>UnassignUserFromPerson</shortname>
+                        <description>Removes the association between an UMC user and a Person</description>
+                        <assembly>Siemens.SimaticIT.MasterData.PRM_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.PRM_MS.MSModel.Commands.UnassignUserFromPersonHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.PRM_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.PRM_MS.MSModel.Commands.DeletePerson</name>
+                        <shortname>DeletePerson</shortname>
+                        <description>Deletes one or more Persons</description>
+                        <assembly>Siemens.SimaticIT.MasterData.PRM_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.PRM_MS.MSModel.Commands.DeletePersonHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.PRM_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.PRM_MS.MSModel.Commands.UpdatePerson</name>
+                        <shortname>UpdatePerson</shortname>
+                        <description>Updates a Person.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.PRM_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.PRM_MS.MSModel.Commands.UpdatePersonHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.PRM_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.PRM_MS.MSModel.Commands.ManageSegregationTagsToPersonsAssociation</name>
+                        <shortname>ManageSegregationTagsToPersonsAssociation</shortname>
+                        <description>Manage the association between one or more PersonTags to a list Person. A flag on each PersonTag is used to decide if the association with each Person in input must be added or removed.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.PRM_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.PRM_MS.MSModel.Commands.ManageSegregationTagsToPersonsAssociationHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.PRM_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.PRM_MS.MSModel.Commands.SetCanViewUnsegregatedData</name>
+                        <shortname>SetCanViewUnsegregatedData</shortname>
+                        <description>Sets the value of CanViewUnsegregatedData field.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.PRM_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.PRM_MS.MSModel.Commands.SetCanViewUnsegregatedDataHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.PRM_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.PRM_MS.MSModel.Commands.PopulateSessionSegregationTag</name>
+                        <shortname>PopulateSessionSegregationTag</shortname>
+                        <description>Populate Session Segregation Tags table with Segregation Tags received in input.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.PRM_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.PRM_MS.MSModel.Commands.PopulateSessionSegregationTagHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.PRM_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.PRM_MS.MSModel.Commands.ImportUsersByGroup</name>
+                        <shortname>ImportUsersByGroup</shortname>
+                        <description>Creates a new Person from each User belonging to the Group given in input</description>
+                        <assembly>Siemens.SimaticIT.MasterData.PRM_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.PRM_MS.MSModel.Commands.ImportUsersByGroupHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.PRM_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.PRM_MS.MSModel.Commands.ImportUsers</name>
+                        <shortname>ImportUsers</shortname>
+                        <description>Creates Persons from Users given in input.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.PRM_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>false</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.PRM_MS.MSModel.Commands.ImportUsersHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.PRM_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.PRM_MS.MSModel.Commands.ImportUsersByUserList</name>
+                        <shortname>ImportUsersByUserList</shortname>
+                        <description>Creates a new Person for each User in input List</description>
+                        <assembly>Siemens.SimaticIT.MasterData.PRM_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.PRM_MS.MSModel.Commands.ImportUsersByUserListHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.PRM_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.PRM_MS.MSModel.Commands.CreatePersonGroup</name>
+                        <shortname>CreatePersonGroup</shortname>
+                        <description>Creates a Person Group.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.PRM_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.PRM_MS.MSModel.Commands.CreatePersonGroupHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.PRM_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.PRM_MS.MSModel.Commands.UpdatePersonGroup</name>
+                        <shortname>UpdatePersonGroup</shortname>
+                        <description>Updates a Person Group.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.PRM_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.PRM_MS.MSModel.Commands.UpdatePersonGroupHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.PRM_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.PRM_MS.MSModel.Commands.DeletePersonGroup</name>
+                        <shortname>DeletePersonGroup</shortname>
+                        <description>Deletes one or more Person Groups.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.PRM_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.PRM_MS.MSModel.Commands.DeletePersonGroupHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.PRM_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.PRM_MS.MSModel.Commands.AssociatePersonsWithPersonGroup</name>
+                        <shortname>AssociatePersonsWithPersonGroup</shortname>
+                        <description>Associates a list of Persons with a PersonGroup.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.PRM_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.PRM_MS.MSModel.Commands.AssociatePersonsWithPersonGroupHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.PRM_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.PRM_MS.MSModel.Commands.DisassociatePersonsFromPersonGroup</name>
+                        <shortname>DisassociatePersonsFromPersonGroup</shortname>
+                        <description>Removes the association between one or more Persons and Person Group.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.PRM_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.PRM_MS.MSModel.Commands.DisassociatePersonsFromPersonGroupHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.PRM_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.PRM_MS.MSModel.Commands.ManageSegregationTagsToPersonGroupsAssociation</name>
+                        <shortname>ManageSegregationTagsToPersonGroupsAssociation</shortname>
+                        <description>Manage the association between one or more PersonTags to a list PersonGroup. A flag on each PersonGroupTag is used to decide if the association with each PersonGroup in input must be added or removed.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.PRM_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.PRM_MS.MSModel.Commands.ManageSegregationTagsToPersonGroupsAssociationHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.PRM_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command></commands>
+    <commandActions></commandActions>
+    <events><event>
+                <name>Siemens.SimaticIT.MasterData.PRM_MS.MSModel.Events.StartUserImport</name>
+                <shortname>StartUserImport</shortname>
+                <description> This event is raised when starting the Import of Users.</description>
+                <assembly>Siemens.SimaticIT.MasterData.PRM_MS.MSModel.Events, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                <dotneteventtype></dotneteventtype>
+                <eventtype>Application</eventtype>
+                <domain>MasterData</domain>
+                <taglist>
+                </taglist>
+                <securable>true</securable>
+        </event><event>
+                <name>Siemens.SimaticIT.MasterData.PRM_MS.MSModel.Events.UserImportCompleted</name>
+                <shortname>UserImportCompleted</shortname>
+                <description> This event is fired when the User Import has been completed</description>
+                <assembly>Siemens.SimaticIT.MasterData.PRM_MS.MSModel.Events, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                <dotneteventtype></dotneteventtype>
+                <eventtype>Application</eventtype>
+                <domain>MasterData</domain>
+                <taglist>
+                </taglist>
+                <securable>true</securable>
+        </event></events>
+    <event_handlers><event_handler>
+<name>Siemens.SimaticIT.MasterData.PRM_MS.MSModel.Events.StartUserImport_EventHandlerShell</name>
+<assembly>Siemens.SimaticIT.PRM_MS.EventHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+<event_name>Siemens.SimaticIT.MasterData.PRM_MS.MSModel.Events.StartUserImport</event_name>
+<target_cpu>AnyCPU</target_cpu>
+<targetframework>netstandard2.0</targetframework>
+<dependencies></dependencies>
+</event_handler></event_handlers>
+    <signals></signals>
+    <readingFunctions></readingFunctions>
+    <entities><entity>
+      <name>Siemens.SimaticIT.MasterData.PRM_MS.MSModel.DataModel.ReadingModel.Person</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.MasterData.PRM_MS.MSModel.DataModel.ReadingModel.PersonSegregationTag</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.MasterData.PRM_MS.MSModel.DataModel.ReadingModel.PersonGroup</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.MasterData.PRM_MS.MSModel.DataModel.ReadingModel.PersonGroupSegregationTag</name>
+      <securable>true</securable>
+    </entity></entities>
+    <datamodels><datamodel>
+      <assembly>Siemens.SimaticIT.MasterData.PRM_MS.MSModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>WR</mode>
+      <domain>MasterData</domain>
+    </datamodel><datamodel>
+      <assembly>Siemens.SimaticIT.MasterData.PRM_MS.MSModel.ReadingModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>RD</mode>
+      <domain>MasterData</domain>
+    </datamodel><datamodel>
+      <assembly>Siemens.SimaticIT.MasterData.PRM_MS.MSModel.Types, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>WR</mode>
+      <domain>MasterData</domain>
+    </datamodel><datamodel>
+      <assembly>Siemens.SimaticIT.MasterData.PRM_MS.MSModel.Types.ReadingModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>RD</mode>
+      <domain>MasterData</domain>
+    </datamodel></datamodels>
+    <externaldatamodels></externaldatamodels>
+    <appdatamodels></appdatamodels>
+    <uimodules></uimodules>
+    <uicomponents></uicomponents>
+    <wr_entities><wr_entity>
+      <name>Siemens.SimaticIT.MasterData.PRM_MS.MSModel.DataModel.Person</name>
+      <shortname>Person</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity></parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity></root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.MasterData.PRM_MS.MSModel.DataModel.PersonSegregationTag</name>
+      <shortname>PersonSegregationTag</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity></parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity></root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.MasterData.PRM_MS.MSModel.DataModel.PersonGroup</name>
+      <shortname>PersonGroup</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity></parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity></root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.MasterData.PRM_MS.MSModel.DataModel.PersonGroupSegregationTag</name>
+      <shortname>PersonGroupSegregationTag</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity></parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity></root_entity>
+      <base_entity></base_entity>
+    </wr_entity></wr_entities>
+    <wr_facets></wr_facets>
+  </artifacts>
+  <security>
+    <roles></roles>
+  </security>
+  <runtime>
+    <event_subscriptions></event_subscriptions>
+    <handlergroups></handlergroups>
+  </runtime>
+</projectmanifest>

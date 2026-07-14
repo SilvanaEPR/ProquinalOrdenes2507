@@ -1,0 +1,12 @@
+<svg id="Image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+  <g id="g867">
+    <path id="rect4" d="M1,1H15V15H1Z" fill="#3c91af"/>
+    <path id="rect819" d="M0,0H1V15H0Z" class="aw-theme-iconOutline" fill="#464646"/>
+    <path id="rect819-5" d="M14,0h1V15H14Z" class="aw-theme-iconOutline" fill="#464646"/>
+    <path id="rect836" d="M1,14H15v1H1Z" class="aw-theme-iconOutline" fill="#464646"/>
+    <path id="rect838" d="M1,0H15V1H1Z" class="aw-theme-iconOutline" fill="#464646"/>
+    <path id="path2" d="M12.4,3.877H9.782V3.206a1.077,1.077,0,0,0-.977-1.117H6.191a1.084,1.084,0,0,0-.983,1.117l0,.671H2.591l0,.745h.654l.245,7.044a1.109,1.109,0,0,0,1.048,1.043h5.883a1.016,1.016,0,0,0,.984-1.043l.344-7.044H12.4ZM5.861,3.206a.339.339,0,0,1,.291-.372H8.8a.325.325,0,0,1,.326.33.294.294,0,0,1,0,.042l0,.671H5.859Zm4.882,8.385a.339.339,0,0,1-.29.372.241.241,0,0,1-.038,0H4.531a.324.324,0,0,1-.326-.329.309.309,0,0,1,0-.043L3.9,4.622h7.192Z" fill="#fff" stroke="#fff" stroke-width="0.177"/>
+    <path id="polygon4" d="M5.5,6.154,5.726,11H6.5L6.264,6.154Z" fill="#fff" stroke="#fff" stroke-width="0.19"/>
+    <path id="polygon4-9" d="M8.495,11,8.726,6.14h.769L9.264,11Z" fill="#fff" stroke="#fff" stroke-width="0.19"/>
+  </g>
+</svg>

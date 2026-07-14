@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<messages>
+  <message>
+    <id></id>
+    <short></short>
+    <long></long>
+    <level></level>
+    <params>
+      <param>
+        <key></key>
+        <type></type>
+      </param>
+    </params>
+  </message>
+</messages>

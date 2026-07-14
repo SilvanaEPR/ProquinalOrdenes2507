@@ -1,0 +1,42 @@
+<svg id="Artwork" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 16 16">
+  <defs>
+    <linearGradient id="linear-gradient" x1="724.195" y1="-492.538" x2="734.755" y2="-499.725" gradientTransform="matrix(1.111, 0, 0, -1.11, 108.624, 76.846)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#cde6eb"/>
+      <stop offset="0.221" stop-color="#c6e2e8"/>
+      <stop offset="0.542" stop-color="#b3d8e1"/>
+      <stop offset="0.921" stop-color="#93c7d5"/>
+      <stop offset="1" stop-color="#8cc3d2"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="778.034" y1="-987.558" x2="787.838" y2="-999.339" gradientTransform="matrix(1.111, 0, 0, -1.111, 108.624, 76.979)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#afd7e1"/>
+      <stop offset="0.159" stop-color="#a4d0dc"/>
+      <stop offset="0.706" stop-color="#80bcce"/>
+      <stop offset="1" stop-color="#73b4c8"/>
+    </linearGradient>
+  </defs>
+  <g id="g954">
+    <path id="rect14407-8-0" d="M5.594,6.621h4.537a.439.439,0,0,1,.44.44v.02a.439.439,0,0,1-.44.44H5.594a.439.439,0,0,1-.439-.44v-.02A.439.439,0,0,1,5.594,6.621Z" fill="#3c91af"/>
+    <g id="g37310">
+      <path id="rect837-7-6-3-0-6" d="M12.032,8.166l-4.09,2.382-.071,5.158,4.277-2.574Z" fill="#3c91af"/>
+      <path id="rect837-7-6-8-3-6-2" d="M4.6,7.626,3.785,7.9l4.089,2.674,4.042-2.682-1.011-.283Z" fill="url(#linear-gradient)"/>
+      <path id="rect837-7-5-8-2" d="M3.972,8.229,7.72,10.721l.131,5.272-4.085-3.1Z" fill="url(#linear-gradient-2)"/>
+      <path id="rect845-6-9-9-3-6" d="M3.442,7.862l.009-.009a.311.311,0,0,1,.424-.111h0l.011.008,4.05,2.567a.333.333,0,0,1,.111.444v.009a.31.31,0,0,1-.424.111h0l-.011-.007L3.549,8.31A.335.335,0,0,1,3.442,7.862Z" fill="#147391"/>
+      <path id="rect845-6-7-2-2-1-6" d="M12.178,8.085V8.078a.333.333,0,0,0-.458-.111h0L7.839,10.3a.32.32,0,0,0-.111.438h0v.007a.341.341,0,0,0,.46.111l3.879-2.332a.321.321,0,0,0,.112-.441v0Z" fill="#147391"/>
+      <path id="rect845-8-5-8-0-9" d="M7.854,10.339a.345.345,0,0,1,.344.346h0v4.606a.344.344,0,0,1-.688,0h0v-4.6a.344.344,0,0,1,.339-.349h0Z" fill="#147391"/>
+      <path id="rect845-9-1-5" d="M3.707,7.774h.077a.3.3,0,0,1,.305.305h0v5.043a.3.3,0,0,1-.305.3H3.707a.3.3,0,0,1-.3-.3h0V8.079a.3.3,0,0,1,.3-.305h0Z" class="aw-theme-iconOutline" fill="#464646"/>
+      <path id="rect845-6-7-24-1-3" d="M12.258,13.05a.334.334,0,0,0-.455-.111L7.694,15.382a.311.311,0,0,0-.12.423h0l.009.014a.332.332,0,0,0,.454.105l4.11-2.443a.311.311,0,0,0,.111-.424Z" class="aw-theme-iconOutline" fill="#464646"/>
+      <path id="rect845-6-7-2-5-5-7-5" d="M3.683,7.611l-.121.062a.342.342,0,0,0-.111.469l.011.015a.347.347,0,0,0,.473.111l1.1-.657Z" class="aw-theme-iconOutline" fill="#464646"/>
+      <path id="rect845-6-6-8-3-3" d="M10.427,7.611l1.41.88.022.013a.288.288,0,0,0,.391-.11l.023-.042a.324.324,0,0,0-.1-.431l-.537-.31Z" class="aw-theme-iconOutline" fill="#464646"/>
+      <path id="rect845-8-6-1-2" d="M11.934,7.931h.055a.333.333,0,0,1,.333.333h0v4.864a.333.333,0,0,1-.333.333h-.055a.333.333,0,0,1-.333-.333h0V8.258A.334.334,0,0,1,11.934,7.931Z" class="aw-theme-iconOutline" fill="#464646"/>
+      <path id="rect845-6-9-9-6-2-3" d="M3.444,12.978h0a.316.316,0,0,1,.431-.119h0l.011.007L7.975,15.4a.324.324,0,0,1,.111.444h0a.318.318,0,0,1-.435.112H7.642L3.555,13.421A.325.325,0,0,1,3.444,12.978Z" class="aw-theme-iconOutline" fill="#464646"/>
+    </g>
+    <path id="rect14407-1-1" d="M9.325,5.107a.449.449,0,0,0-.449-.45H6.594a.45.45,0,0,0,0,.9H8.876A.449.449,0,0,0,9.325,5.107Z" fill="#3c91af"/>
+    <path id="rect1581" d="M5,0h8V3H5Z" class="aw-theme-iconOutline" fill="#464646"/>
+    <path id="rect1583" d="M0,1H5.4V2H0Z" class="aw-theme-iconOutline" fill="#464646"/>
+    <path id="rect1583-8" d="M11.779,1H16V2H11.779Z" class="aw-theme-iconOutline" fill="#464646"/>
+    <path id="rect1709" d="M6,1h6V2H6Z" fill="#dfdfdf"/>
+    <path id="rect38468" d="M8.909,4.263a.59.59,0,0,1,.539.633.59.59,0,0,1-.539.632A.59.59,0,0,1,8.371,4.9.59.59,0,0,1,8.909,4.263Z" fill="#3c91af"/>
+    <path id="rect1711" d="M7,3h4L9.37,4.482H8.48Z" class="aw-theme-iconOutline" fill="#464646"/>
+    <path id="rect14407" d="M6.087,5.638H9.812a.45.45,0,1,1,0,.9H6.087a.45.45,0,0,1,0-.9Z" fill="#3c91af"/>
+  </g>
+</svg>

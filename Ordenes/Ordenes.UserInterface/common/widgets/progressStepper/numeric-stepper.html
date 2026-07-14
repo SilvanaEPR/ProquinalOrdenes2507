@@ -1,0 +1,10 @@
+<div class="numeric-stepper-container">
+    <ul class="numeric-progress-stepper" ng-class="{vertical:numericStepperCtrl.isVertical}" ng-if="!numericStepperCtrl.isSmallMode">
+        <li class="step" ng-repeat="step in numericStepperCtrl.steps track by $index" title="{{step.label}}" ng-class="{active: $index === numericStepperCtrl.activeStepIndex }"></li>
+    </ul>
+    <ul class="numeric-progress-stepper" ng-class="{vertical:numericStepperCtrl.isVertical}" ng-if="numericStepperCtrl.isSmallMode">
+        <li class="step small-mode" ng-repeat="step in numericStepperCtrl.smallModeSteps track by $index" data-step-id="{{step.initialStepIndex}}" title="{{step.label}}" ng-class="{active: step.isActive,minimized:step.isMinimized}">
+            <div class="minimized-numeric-steps" ng-repeat="step in numericStepperCtrl.minimizedDivs track by $index"></div>
+        </li>
+    </ul>
+</div>

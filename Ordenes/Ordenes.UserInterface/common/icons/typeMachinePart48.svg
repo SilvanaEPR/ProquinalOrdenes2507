@@ -1,0 +1,22 @@
+<svg id="Image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="linear-gradient" x1="-56.996" y1="4.572" x2="-28.669" y2="-23.755" gradientTransform="matrix(0.987, -0.162, -0.162, -0.987, 67.131, 0.322)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#bebdbd"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="14.416" y1="19.704" x2="35.586" y2="-1.466" gradientTransform="matrix(1, 0, 0, -1, -6.475, 53.475)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#73b4c8"/>
+      <stop offset="1" stop-color="#177492"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="5.749" y1="44.105" x2="15.019" y2="34.835" gradientTransform="matrix(1, 0, 0, -1, -2.939, 46.862)" xlink:href="#linear-gradient-2"/>
+    <linearGradient id="linear-gradient-4" x1="29.865" y1="42.568" x2="36.059" y2="36.373" gradientTransform="matrix(1, 0, 0, -1, 7.27, 47.52)" xlink:href="#linear-gradient-2"/>
+    <linearGradient id="linear-gradient-5" x1="22.005" y1="57.316" x2="55.273" y2="24.048" gradientTransform="matrix(1, 0, 0, -1, 0.329, 59.917)" xlink:href="#linear-gradient"/>
+  </defs>
+  <g id="g835">
+    <path id="path18" d="M33.541,3.707,19.623,5.968c.74,1.193,3.78,10.49-7.21,10.949L28,36l11.248-2.792L22.089,12.231,34.6,10.175Z" stroke="#464646" fill="url(#linear-gradient)"/>
+    <path id="path20" d="M2.82,39.853H34.232a2.32,2.32,0,0,1,2.32,2.32V47.5H.5V42.175a2.32,2.32,0,0,1,2.318-2.322Z" stroke="#464646" fill="url(#linear-gradient-2)"/>
+    <path id="path22" d="M14,7.392A6.555,6.555,0,1,1,7.445.837,6.555,6.555,0,0,1,14,7.392ZM7.445,4.662A2.732,2.732,0,1,0,10.176,7.4h0a2.731,2.731,0,0,0-2.73-2.732Z" stroke="#464646" fill="url(#linear-gradient-3)"/>
+    <path id="rect24" d="M38.5,3.587h3.463v8.925H38.5Z" stroke="#464646" fill="url(#linear-gradient-4)"/>
+    <path id="path32" d="M35.518,22.607V20.673l.261.216,4.748,2.59L43,22.126l2.043-.032-1.173,1.415-3.338,1.83Zm0-4.39,5.008-2.73,3.341,1.83,1.173,1.415L43,18.7l-2.471-1.353L35.52,20.079Z" stroke="#464646" fill="url(#linear-gradient-5)"/>
+  </g>
+</svg>

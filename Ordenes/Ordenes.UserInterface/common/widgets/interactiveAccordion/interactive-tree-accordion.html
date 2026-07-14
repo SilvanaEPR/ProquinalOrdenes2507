@@ -1,0 +1,52 @@
+    <div class="sit-interactive-tree-accordion">
+
+        <div class="tree-accordion">
+            <script type="text/ng-template" id="tree_nodes_renderer.html">
+
+                <div ui-tree-handle class="row equipment-tree-node-content" ng-mouseover="node.isMouseHover=true" ng-mouseleave="node.isMouseHover=false" ng-class="interactiveTreeAccordionCtrl.options.accordionstyle === 'Basic'? 'basic' : 'styled'">
+                    <div class="header" ng-class="{'basic' : interactiveTreeAccordionCtrl.options.accordionstyle === 'Basic',
+                                               'styled' : interactiveTreeAccordionCtrl.options.accordionstyle === 'Styled' }">
+                        <div class="header-left">
+                            <div ng-if="node.gripperVisible" class="icon gripper-cursor" sit-class="svg-icon" sit-mom-icon="{path:'common/icons/cmdGripper16.svg'}">
+                            </div>
+                            <div ng-if="(collapsed && node.childrenNodes.length)" class="icon" sit-class="svg-icon" ng-click="interactiveTreeAccordionCtrl.toggle(this, node)"
+                                 sit-mom-icon="{path:'common/icons/miscRightArrow16.svg'}" data-nodrag>
+                            </div>
+                            <div ng-if="(!collapsed && node.childrenNodes.length)" class="icon" sit-class="svg-icon" ng-click="interactiveTreeAccordionCtrl.toggle(this, node)"
+                                 sit-mom-icon="{path:'common/icons/miscDownArrow16.svg'}" data-nodrag>
+                            </div>
+
+                            <div ng-if="node.svgIcon" class="img-icon" sit-class="img-svg-icon" sit-mom-icon="node.svgIcon">
+                            </div>
+                        </div>
+                        <div class="title title-elipsis">
+                            <span title="{{node.title}}" class="text-elipsis">{{node.title}}</span>
+                        </div>
+                        <div class="tree-node-action">
+                            <div class="action-icon" sit-class="tree-node-action-icon" sit-mom-icon="{path:'common/icons/cmdTrash24.svg'}" data-nodrag ng-click="interactiveTreeAccordionCtrl.remove(this, node)">
+                            </div>
+                            <div class="action-icon" sit-class="tree-node-action-icon" sit-mom-icon="{path:'common/icons/cmdAdd24.svg'}" data-nodrag ng-click="interactiveTreeAccordionCtrl.addNewNode(node)">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <ol ui-tree-nodes ng-model="node.childrenNodes" ng-class="{hidden: collapsed}">
+                        <li ui-tree-node ng-repeat="node in node.childrenNodes" data-expand-on-hover="200" ng-include="'tree_nodes_renderer.html'" data-collapsed="false">
+                        </li>
+                    </ol>
+                </div>
+            </script>
+
+            <div class="row main-row">
+
+                <div ui-tree="interactiveTreeAccordionCtrl" id="tree-root" class="angular-ui-tree" data-drag-delay="200">
+                    <ol ui-tree-nodes="" ng-model="interactiveTreeAccordionCtrl.options.dataSource" class="angular-ui-tree-nodes">
+                        <li ui-tree-node ng-repeat="node in interactiveTreeAccordionCtrl.options.dataSource" data-expand-on-hover="200" ng-include="'tree_nodes_renderer.html'" data-collapsed="false"></li>
+                    </ol>
+                </div>
+
+            </div>
+        </div>
+
+    </div>

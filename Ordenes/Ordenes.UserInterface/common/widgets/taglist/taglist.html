@@ -1,0 +1,27 @@
+
+<div class="taglist-container">
+    <ul class="tags-list">
+        <li class="tag-list-item" ng-repeat="tag in taglistCtrl.tags track by $index" ng-show="$index<=taglistCtrl.visibleTags - 1 && tag && tag.Name.length!== 0">
+            <div ng-style="::tag.style" class="tagbullet"></div>
+            <span class="taglabel" title="{{::tag.Name}}">
+                {{::tag.ShortName}}
+            </span>
+        </li>
+        <li class="btn-group tag-list-menu dropdown" ng-if="taglistCtrl.displayDropdownTags">
+
+            <button class="dropdown-toggle tag-list-button" aria-haspopup="true" aria-expanded="false" type="button" data-bs-toggle="dropdown" ng-click="taglistCtrl.dropDownFixPosition($event)">
+                <span sit-mom-icon="{ path: 'common/icons/miscDownArrow16.svg' , size: '16px' }" sit-class="svg-icon" ></span>
+            </button>
+
+            <ul class="dropdown-menu tag-menu" role="menu">
+                <li class="dropdown-item tag-list-item" ng-repeat="tag in taglistCtrl.tags track by $index" ng-if="$index>taglistCtrl.visibleTags - 1  && tag && tag.Name.length!== 0">
+                    <div ng-style="::tag.style" class="tagbullet"></div>
+                    <span class="taglabel" title="{{::tag.Name}}">
+                        {{::tag.ShortName}}
+                    </span>
+                </li>
+            </ul>
+
+        </li>
+    </ul>
+</div>

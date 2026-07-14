@@ -1,0 +1,4 @@
+﻿<div class="pi-otl-tag-element" ng-repeat="tag in vm.tags">
+    <span class="pi-otl-tag-element-inside" title="{{tag.FieldValue}}">{{tag.FieldValue}}</span>
+    <em class="pi-otl-close-button" style="cursor: pointer;" ng-if="tag.IsOverriden" ng-click="vm.remove(tag);"></em>
+</div>

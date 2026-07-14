@@ -1,0 +1,26 @@
+<div style="width: 100%; height: 100%" class="row">
+    <div class="col-md-40 col-sm-40" ng-show="vm.displayMode == 0 || vm.displayMode == 1">
+        <button type="button" class="pl-button-square" ng-click="vm.onButtonClick()" style="display:inline-block;" ng-show="vm.displayMode == 0">
+            <span class="svg-icon" sit-class="svg-icon" sit-mom-icon="vm.homeIcon"></span>
+        </button>
+        <button type="button" class="pl-button-square" ng-click="vm.onGoBackClick()" style="display:inline-block;" ng-show="vm.NavigatingHierarchy">
+            <span class="svg-icon" sit-class="svg-icon" sit-mom-icon="vm.backIcon"></span>
+        </button>
+        <button type="button" class="pl-button-square" ng-click="vm.onButtonClick()" style="display:inline-block;" ng-show="vm.displayMode == 1">
+            <span class="svg-icon" sit-class="svg-icon" sit-mom-icon="vm.browseIcon"></span>
+        </button>
+    </div>
+    <div class="col-md-20 col-sm-20" style="padding-left: 10px; height: 90%;" ng-if="!vm.attachmentsOnly">
+        <div id="div_{{vm.name}}" ng-if="vm.ready" style="height: 100%; width:100%">
+            <sit-item-collection-viewer sit-data="vm.viewerData" sit-options="vm.viewerOptions"></sit-item-collection-viewer>
+        </div>
+    </div>
+    <div ng-class="{'col-md-40 col-sm-40': vm.attachmentsOnly, 'col-sm-20 col-md-20': !vm.attachmentsOnly}" style="padding-left: 10px; height: 90%;">
+        <sit-document-viewer ng-if="vm.hasAttachments"
+                             sit-data="vm.attachmentData"
+                             sit-categories="vm.categories"
+                             sit-actions="vm.actions"
+                             sit-config="vm.config">
+        </sit-document-viewer>
+    </div>
+</div>

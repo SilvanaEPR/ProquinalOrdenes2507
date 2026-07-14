@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sections>
+  <Section engineeringLevel="LibraryFunctionalBlock" implementationName="2019-3-14-08-58-19" domainName="OperationalData">
+    <Entity type="Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.DataModel.Equipment">
+      <Property name="NId" kind="Plain" value="n/a" />
+      <Property name="Name" kind="Plain" value="n/a" />
+      <Property name="Description" kind="Plain" value="n/a" />
+      <Property name="WorkCalendarNId" kind="Plain" value="NULL" />
+      <Property name="EquipmentConfigurationId" kind="Plain" value="NULL" />
+      <Property name="LevelNId" kind="Plain" value="NULL" />
+      <Property name="Status" kind="Complex">
+        <Property name="StateMachineNId" kind="Plain" value="NULL" />
+        <Property name="StatusNId" kind="Plain" value="NULL" />
+      </Property>
+      <Property name="EquipmentGroups" kind="ManyToManyReference" />
+    </Entity>
+  </Section>
+</Sections>

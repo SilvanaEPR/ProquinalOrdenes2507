@@ -1,0 +1,25 @@
+﻿<div ng-if="vm.readOnly || vm.ngReadonly" class="label-property-grid-control-readonly property-value-ellipsis"> {{vm.value}} </div>
+<ng-form name="entityPickerForm" ng-if="!(vm.readOnly || vm.ngReadonly)" ng-class="{'isrequired' : (vm.validation.required) && vm.value===undefined}">
+    <div data-internal-type="entity-picker-container" id="entity-picker-container" class="property-grid-input-group entity-picker-container">
+        <div style="display:inline-block;width:100%;">
+            <input ng-required="vm.required"
+                   type="text" ng-model="vm.value" ng-value="vm.valueToShow"
+                   placeholder={{vm.placeholder}}
+                   class="entityPicker-control"
+                   sit-form-input-validator="{{vm.label}}"
+                   uib-typeahead="entity as entity[vm.selectedAttributeToDisplay] for entity in vm.dialogTableData  | filter:$viewValue"
+                   typeahead-template-url={{vm.typeaheadTemplateUri}}
+                   typeahead-on-select='vm.onSelect($item, $model, $label)'
+                   ng-class='((entityPickerForm.$invalid && entityPickerForm.$dirty) || (entityPickerForm.$invalid && entityPickerForm.$visited)) ? "validator-control-invalid" : "validator-control"'
+                   ng-blur="vm.ngBlur()"
+                   sit-change="vm.sitChange"
+                   ng-disabled="!vm.dialogTableData"
+                   ng-focus="vm.ngFocus()"
+                   autocomplete="off"
+                   ng-change="vm.setDropDownHeight()" />
+        </div>
+        <div class="btn property-grid-addon-icon" ng-click="vm.ngDisabled || vm.showPopup()" ng-disabled="vm.ngDisabled">
+            <em class="fa fa-ellipsis-h fa-1x"></em>
+        </div>
+    </div>
+</ng-form>

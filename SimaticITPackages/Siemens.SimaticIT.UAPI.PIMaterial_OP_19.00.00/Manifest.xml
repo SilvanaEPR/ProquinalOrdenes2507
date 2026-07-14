@@ -1,0 +1,1490 @@
+﻿<?xml version="1.0" encoding="utf-8"?><projectmanifest>
+  <header>
+    <manifestversion>11.0</manifestversion>
+    <platformversion>11.0</platformversion>
+    <type>Library</type>
+    <name>Siemens.SimaticIT.UAPI.PIMaterial_OP</name>
+    <shortname>PIMaterial_OP</shortname>
+    <description>SIMATIC IT Process Industries Material Operational Data Extension</description>
+    <version>19.00.00</version>
+    <companyname>Siemens.SimaticIT.UAPI</companyname>
+    <author>Siemens.SimaticIT.UAPI</author>
+    <hash>61dQOlRhL2MTl0rtF790Ey6IkFQSMH8dv2w2IJxsKzE=</hash>
+    <modelHash>TZ28lkErr1cWoJn3YAByhu1MnD/TguX+IcgBTjNth7g=</modelHash>
+    <modelHashSections>
+      <modelHashSection>
+        <name>projectConfigModelHash</name>
+        <hash>jR0iC57ZOhPh2fpD/Lb500EQmI0fLEFxdwg445y4PYE=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>dataModelHash</name>
+        <hash>zTx8aFMkbQR2iZf+eclV4Do3OmqFE95RP7tOqIN6aEM=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>commandModelHash</name>
+        <hash>RvL16rFrEW7Kep5z1CEavisRvyQfh6EBqtbWhVkSmkw=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>aliasModelHash</name>
+        <hash>cdWtFof25lUoH+wgMZZEtJGL5k7aBVT7Ae5HtNcbGxs=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>eventModelHash</name>
+        <hash>/y/3iShyEFdkeNSIh9lzkVeiDgFTK5i1o5g0GbHpeZw=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>typeModelHash</name>
+        <hash>bbtmxiHFlN25KS7O11hFS1iY4QJsBgtthMazMPGanmU=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>securityModelHash</name>
+        <hash>cdWtFof25lUoH+wgMZZEtJGL5k7aBVT7Ae5HtNcbGxs=</hash>
+      </modelHashSection>
+    </modelHashSections>
+    <uiHash>na</uiHash>
+    <canbeextended>false</canbeextended>
+    <domain>OperationalData</domain>
+  </header>
+  <reference>
+    <functionalblocks>
+      <functionalblock>
+        <name>Siemens.SimaticIT.UDM_RF</name>
+        <version>07.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.EQU_MS</name>
+        <version>08.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.EQU_OP</name>
+        <version>08.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.MAT_MS</name>
+        <version>05.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.MAT_OP</name>
+        <version>06.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.UAPI.PITnT_OP</name>
+        <version>19.00.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.UAPI.PIEquipment_MS</name>
+        <version>16.00.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.TSK_OP</name>
+        <version>11.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.OpcenterEX.FN.NUM_OP</name>
+        <version>02.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.UAPI.PIEquipment_OP</name>
+        <version>17.00.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.UAPI.PIMaterial_MS</name>
+        <version>15.00.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.OpcenterEX.Configuration_RF</name>
+        <version>12.00.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.ALG_MS</name>
+        <version>02.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.ALG_OP</name>
+        <version>02.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.OpcenterEX.PR.ApplicationLogExt</name>
+        <version>14.00.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.OpcenterEX.FN.ProductionHistory_OP</name>
+        <version>11.00.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.UAPI.ProductionContext_RF</name>
+        <version>15.00.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.TSK_MS</name>
+        <version>09.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.OpcenterEX.FN.DEF_MS</name>
+        <version>05.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.ES_MS</name>
+        <version>05.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.ES_SD</name>
+        <version>05.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.CHR_MS</name>
+        <version>10.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.BPF_MS</name>
+        <version>06.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.CHR_OP</name>
+        <version>14.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.OpcenterEX.Maintenance_OP</name>
+        <version>12.00.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.OpcenterEX.FN.ProductionHistory_MS</name>
+        <version>10.00.00</version>
+        <type>Library</type>
+      </functionalblock>
+    </functionalblocks>
+    <extensions><extension>
+      <name>Siemens.SimaticIT.MAT_OP</name>
+    </extension></extensions>
+  </reference>
+  <artifacts>
+    <commands><command>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.CreateIdentity</name>
+                        <shortname>CreateIdentity</shortname>
+                        <description>Assigns a specific Material to a specific MTU according to the Unit of Measure.  If the MTU Quantity Property is not set, it is mandatory to: set the **Quantity** input, if the UoM of the Material, identified by MaterialNId, is defined,otherwise set also the **UoM** input.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.CreateIdentityHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PIMaterial_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.ReleaseMTU</name>
+                        <shortname>ReleaseMTU</shortname>
+                        <description>Creates an MTU as derived from a specific Lot.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.ReleaseMTUHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PIMaterial_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.DeclareMTU</name>
+                        <shortname>DeclareMTU</shortname>
+                        <description>Declares a list of MTUs that will be logically grouped in a Material Lot.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.DeclareMTUHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PIMaterial_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.RemoveIdentity</name>
+                        <shortname>RemoveIdentity</shortname>
+                        <description>Removes a Material from an MTU.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.RemoveIdentityHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PIMaterial_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.MoveMTU</name>
+                        <shortname>MoveMTU</shortname>
+                        <description>This command registers the Movement which has involved the MTU specified as input of the command. A total move is performed when the entire quantity of the MTU is moved from a piece of Equipment to another. If you specify a Source Quantity which is greater than the actual Source MTU Quantity, the system will move the Source MTU entirely and the missing Quantity will be provided at the destination. If the Destination Equipment has either a FIFO or MIXING Material Behavior (without any content yet in terms of MTU) the move operation results in changing the location of the MTU from one piece of Equipment to another. If the Destination Equipment has a MIXING Material Behavior and already contains an MTU, the quantity of the existing MTU is changed, adding the source quantity in accordance with the mixing action. The source MTU is deleted. A partial move is performed when a partial quantity of the MTU, is moved from one piece of Equipment to another. The Source MTU Quantity is updated by subtracting the partial Quantity, which must be less than the total Quantity of the Source MTU. If the Destination Equipment, with either FIFO or MIXING Behavior (in this case without any content yet in terms of MTU) the move operation results in creating a new MTU inside the Destination location, with the same characteristicts as the Source MTU. If the Destination Equipment has a MIXING Material Behavior and already contains an MTU, the quantity of the existing MTU is changed, adding the quantity in accordance with the mixing action.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.MoveMTUHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PIMaterial_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.MoveMTUFromSource</name>
+                        <shortname>MoveMTUFromSource</shortname>
+                        <description>Moves the entire or a partial quantity of an MTU from a specific source (Equipment or MTU) to a specific destination Equipment, according to the Material Behavior of the source and destination: * FIFO (First In, First Out): the specified piece of Equipment receives the MTUs in input and stores them as individual entities. Whenever an MTU must be picked from the piece of Equipment, by default, the system will pick the MTU that was received in input and stored first. If a SourceQuantity is set as input of the command and the first MTU does not have enough quantity, subsequent MTUs are chosen untill the requested quantity is reached. * Mixing: the specified piece of Equipment receives the MTUs in input and combines them to form a single MTU, so it can contain one only MTU.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.MoveMTUFromSourceHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PIMaterial_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.Move</name>
+                        <shortname>Move</shortname>
+                        <description>This command registers a single Movement which has happened in the system, involving one single Source MTU specified by MTUId input field. If no source exists in the system, MTUId can be left empty: for tracing purposes it is still possible to specify the SourceEquipmentNId value, but in this case no algorithm will be executed to retrieve a possible MTU from the specified source (use the MoveMTUFromSource command for this particular behavior instead). Use the DestinationEquipmentNId input field to set the natural identifier of the piece of Equipment that is the end point of the move operation. How the Equipment has been configured will ultimately affect how the MTU will move forward during the process execution:  * FIFO (First In, First Out): the specified piece of Equipment receives the MTUs in input and stores them as individual entities.  * Mixing: the specified piece of Equipment receives the MTUs in input and combines them to form a single MTU. The Quantity of the MTU is determined by the incoming contributions: the first contribution would set the reference Unit of Measure for the MTU, and all the other contributions will add up to its Quantity, their value being converted into the reference Unit of Measure, as long as each contribution of Material Quantity is expressed with a mutually compatible Unit of Measure. The first contribution whose Quantity would be eventually expressed with a Unit of Measure which is not compatible with the one already associated with the MTU, will cause the entire Quantity of the MTU to be reset (the Quantity will be set equal to NULL). If a the contribution of the source MTU is associated with a Material or a Material Lot which is different from the one already (optionally) associated with the MTU inside a Mixing piece of Equipment, the MTU will lose its Identity.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>false</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.MoveHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PIMaterial_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.CreateMaterialLotWithSegregationTags</name>
+                        <shortname>CreateMaterialLotWithSegregationTags</shortname>
+                        <description>Creates and/or updates a Material Lot and, if required, it creates and/or update the relative MTU in UAPI environment. Furthermore it allows to assign a list of segregation tags to the Material Lot and/or MTU.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.CreateMaterialLotWithSegregationTagsHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PIMaterial_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.MoveMTUFromExternalSystem</name>
+                        <shortname>MoveMTUFromExternalSystem</shortname>
+                        <description>Moves the entire or a partial quantity of an MTU from a specific source (Equipment or MTU) to a specific destination Equipment, according to the Material Behavior of the source and destination: * FIFO (First In, First Out): the specified piece of Equipment receives the MTUs in input and stores them as individual entities. Whenever an MTU must be picked from the piece of Equipment, by default, the system will pick the MTU that was received in input and stored first. If a SourceQuantity is set as input of the command and the first MTU does not have enough quantity, subsequent MTUs are chosen untill the requested quantity is reached. * Mixing: the specified piece of Equipment receives the MTUs in input and combines them to form a single MTU, so it can contain one only MTU.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.MoveMTUFromExternalSystemHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PIMaterial_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.CreateSampleMTUFromSource</name>
+                        <shortname>CreateSampleMTUFromSource</shortname>
+                        <description>This command creates a Sample MTU from the specified Source MTU.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.CreateSampleMTUFromSourceHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PIMaterial_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.GetDestinationEquipmetFromSourceEquipment</name>
+                        <shortname>GetDestinationEquipmetFromSourceEquipment</shortname>
+                        <description>Starting from a Source Equipment, that must be included in an Equipment Flow, the command retrieves all the Equipment, contained in the flow, that can be used as destination for a move operation. Furthermore, specifying a Material or a Material Group, you can retrieve the list of destination Equipment that handle a specific Material or group of materials. ### Return codes * -10859: The piece of Equipment, identified by SourceEquipmentNId, does not exist * -10856: The Equipment Flow, identified by EquipmentFlowNId, does not exist * -11100: The source Equipment, specified by SourceEquipmentNId, does not belong to the Equipment Flow, identified by EquipmentFlowNId </description>
+                        <assembly>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.GetDestinationEquipmetFromSourceEquipmentHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PIMaterial_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.SplitMTU</name>
+                        <shortname>SplitMTU</shortname>
+                        <description>Takes part of the source Material Tracking Unit quantity (source quantity) to create a new MTU, which inherits Material, Material Lot, State Machine and Properties from the source. If an MTU Template is specified as input, the new MTU inherits its state machine and properties. If no quantity is specified as input (SplitQuantity.QuantityValue =0 or SplitQuantity.QuantityValue = NULL), the entire source Material Tracking Unit quantity is taken, setting the source MTU quantity to zero. The quantity that must be taken must be expressed with the same Unit of Measure of the source quantity. It is possible to use a different Unit of Measure only if it belongs to the same dimension. The command: 1. Decreases the source Material Tracking Unit quantity by the quantity given as input. 2. Creates a new Material Tracking Unit with the quantity given as input. The new Material Tracking Unit inherits the Material, Material Lot and Properties of the source and can be located in the same location (Equipment or Material Tracking Unit Aggregate) as the source. The command may return the following error codes, if some checks on input parameters fail: * Error -12100: the MTU, identified by NId, does not exist. * Error -12101: no quantity is specified for source MTU (NULL or zero). * Error -12102: the Unit of Measure used to express the SplitQuantity.QuantityValue is not compatible with the source quantity. * Error -12103: the quantity specified as input exceeds the source MTU quantity. The command may return the following error codes, during its execution: * Error -12104: If the creation of the new Material Tracking Unit fails. * Error -12105: If a failure occurs when decreasing the source Material Tracking Unit quantity.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.SplitMTUHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PIMaterial_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.CreateMaterialLotProcessAdditionalProperties</name>
+                        <shortname>CreateMaterialLotProcessAdditionalProperties</shortname>
+                        <description>Adds a Facet to the given MaterialLot Entity, adding process-related properties. This command checks if the MaterialLot exists, if not the error 12108 is returned. In case the command cannot calculate the value of the ExpiryDate attribute, error 12109 is returned. In case the command cannot calculate the value of the DLU attribute, error 12110 is returned.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.CreateMaterialLotProcessAdditionalPropertiesHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PIMaterial_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.UpdateMaterialLotProcessAdditionalProperties</name>
+                        <shortname>UpdateMaterialLotProcessAdditionalProperties</shortname>
+                        <description>Updates the process-related Facet to the given MaterialLot Entity. If the respective Facet does not exist, this command creates it for the Material Lot. This command checks the MaterialLot 1. If it exists, if not the error 12108 is returned. 2. If it is Frozen, if so error 12111 is raised.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.UpdateMaterialLotProcessAdditionalPropertiesHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PIMaterial_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.ConsumeMTU</name>
+                        <shortname>ConsumeMTU</shortname>
+                        <description>A part of the source Material Tracking Unit quantity is detached in order to be consumed in the production process. If the input quantity is not specified (ConsumeQuantity.QuantityValue = 0 or ConsumeQuantity.QuantityValue = NULL), the entire source Material Tracking Unit quantity is taken, setting the source MTU quantity to zero. The quantity that is going to be decreased must be expressed with the same Unit of Measure as the Material Tracking Unit quantity. You can use a different Unit of Measure only if it belongs to the same dimension. The command: *Decreases the source Material Tracking Unit quantity by the given input quantity. *Converts the UoM of the input quantity if different from MTU UoM, but belonging to the same dimension. *When completing,  the command rises the event MTUOperationCompleted with the info about the quantity that has been decreased and the info about source MTU. The command may return the following error codes, **if some checks on input parameters fail**: *Error -12100: the MTU, identified by NId, does not exist. *Error -12101: no quantity is specified for source MTU (NULL or zero). *Error -12102: the Unit of Measure used to express the ConsumeQuantity.QuantityValue is not compatible with that of source quantity. *Error -12103: the specified input quantity exceeds the source MTU quantity. The command may return the following **error codes, during its execution**: *Error -12105: a failure is occurred when decreasing the source Material Tracking Unit quantity.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.ConsumeMTUHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PIMaterial_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.SupplyMTU</name>
+                        <shortname>SupplyMTU</shortname>
+                        <description>Adds a quantity of material to a Material Tracking Unit. The quantity that is going to be added must be expressed with the same Unit of Measure as the Material Tracking Unit quantity. You can use a different Unit of Measure only if it belongs to the same dimension. The command: * Increases the Material Tracking Unit quantity by the given input quantity. * Converts the UoM of the input quantity if different from MTU UoM, but belonging to the same dimension. * Upon completion, raises the event MTUOperationCompleted which contains the info on the destination MTU and its new quantity. The command may return the following **error codes, if some checks on input parameters fail**: * Error -12100: the MTU, identified by NId, does not exist. * Error -12107: the action on the Material Tracking Unit (NId %MTUNId%) failed: the Supply quantity in input is null, or lower or equal to zero. * Error -12102: the Unit of Measure used to express the SupplyQuantity.QuantityValue is not compatible with that of source quantity. The command may return the following **error codes, during its execution**: * Error -12106: a failure occurred when increasing the Material Tracking Unit quantity.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.SupplyMTUHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PIMaterial_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.MigrateMaterialLotCreateAdditionalProperties</name>
+                        <shortname>MigrateMaterialLotCreateAdditionalProperties</shortname>
+                        <description>This command will add a MaterialLotProcessAdditionalProperties Facet to all MaterialLots, to add process properties.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.MigrateMaterialLotCreateAdditionalPropertiesHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PIMaterial_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.MoveMTUsToMTUAggregate</name>
+                        <shortname>MoveMTUsToMTUAggregate</shortname>
+                        <description>Moves one or more Material Tracking Units to a Material Tracking Unit Aggregate.    The Command executes the following steps:  1. Retrieves the Material Tracking Units identified by their natural identifiers found in MaterialTrackingUnitNIds input parameter.  2. Retrieves the MTU Aggregate by the given natural identifier MaterialTrackingUnitAggregateNId.  3. Calls the MoveMaterialTrackingUnitToMaterialTrackingUnitAggregate Command for each MTU.  4. Fires an MTUOperationCompleted Event after each MTU moved to the Material Tracking Aggregate.    The command checks:  1. if the MTU Aggregate exists, if not it returns the error -12113.  2. if each of the Material Tracking Units exists, if not it returns the error -12114.  3. if each MTU moving is successful: if one fails, it returns error -12241. </description>
+                        <assembly>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.MoveMTUsToMTUAggregateHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PIMaterial_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.CallMoveMTUsToMTUAggregate</name>
+                        <shortname>CallMoveMTUsToMTUAggregate</shortname>
+                        <description>Wraps the Command MoveMTUsToMTUAggregate with mandatory Parameters in order to: - track and trace (TnT App) the MTU Movement into an MTUA, - generate Production History Records. It is used for an MDUI operaiton, in the [Material Tracking Units] and [Material Tracking Unit] pages.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.CallMoveMTUsToMTUAggregateHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PIMaterial_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.CreateMaterialTrackingUnit_Interface</name>
+                        <shortname>CreateMaterialTrackingUnit_Interface</shortname>
+                        <description>This is an empty command. Its purpose is to be implemented via a post action to customize the logic for creating a new Material Tracking Unit, based on the specific scenario.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.CreateMaterialTrackingUnit_InterfaceHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PIMaterial_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.ManageMTUOperationCompleted</name>
+                        <shortname>ManageMTUOperationCompleted</shortname>
+                        <description>This command aims at managing the tracing of a manufacturing operation that involves an MTU (such as Move, CreateIdentity or RemoveIdentity). The command does not perform any action on its own: it is meant to be implemented via specific post-actions.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.ManageMTUOperationCompletedHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PIMaterial_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.CreateMTUOperationTrackingOnMTUOperationCompleted</name>
+                        <shortname>CreateMTUOperationTrackingOnMTUOperationCompleted</shortname>
+                        <description>Create a new instance of the MTUOperationTracking entity every time an operation is performed on a Material Tracking Unit.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.CreateMTUOperationTrackingOnMTUOperationCompletedHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PIMaterial_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.DeleteMaterialTrackingUnit_Interface</name>
+                        <shortname>DeleteMaterialTrackingUnit_Interface</shortname>
+                        <description>This is an empty command with the same signature as the DeleteMaterialTrackingUnit command. Its purpose is to be implemented via a post action to customize the logic for deleting a Material Tracking Unit, based on the specific scenario. The command also allows for defining a Material in input, in case there is the need to change the identity of the MTU, prior to remove it. Custom Fields are also foreseen for further customization. </description>
+                        <assembly>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.DeleteMaterialTrackingUnit_InterfaceHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PIMaterial_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.DecreaseMTUQuantity_Interface</name>
+                        <shortname>DecreaseMTUQuantity_Interface</shortname>
+                        <description>This is an empty command. Its purpose is to be implemented via a post action to customize the logic for decreasing the quantity of a Material Tracking Unit, based on the specific scenario.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.DecreaseMTUQuantity_InterfaceHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PIMaterial_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.SplitMTU_Interface</name>
+                        <shortname>SplitMTU_Interface</shortname>
+                        <description>This is an empty command with the same signature as the SplitMTU command. Its purpose is to be implemented via a post action to customize the logic for splitting a Material Tracking Unit, based on the specific scenario. In addition to the original SplitMTU command, the RemainingMTUQuantity input field is provided in case it is necessary to express source and target MTU Quantity with a different Unit of Measure.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.SplitMTU_InterfaceHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PIMaterial_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.SetMaterialTrackingUnitMaterial_Interface</name>
+                        <shortname>SetMaterialTrackingUnitMaterial_Interface</shortname>
+                        <description>This is an empty command. Its purpose is to be implemented via a post action to customize the logic for changing a Material Tracking Unit Material, based on the specific scenario.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.SetMaterialTrackingUnitMaterial_InterfaceHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PIMaterial_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.UpdateMaterialTrackingUnit_Interface</name>
+                        <shortname>UpdateMaterialTrackingUnit_Interface</shortname>
+                        <description>This is an empty command. Its purpose is to be implemented via a post action to customize the logic for changing a Material Tracking Unit characteristics, based on the specific scenario.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.UpdateMaterialTrackingUnit_InterfaceHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PIMaterial_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.GetOrderedMTUListInFIFO_Interface</name>
+                        <shortname>GetOrderedMTUListInFIFO_Interface</shortname>
+                        <description>This is an empty command. Its purpose is to be implemented via a post action to customize the logic for getting the list Material Tracking Unit which are contained in a FIFO piece of Equipment, ordered by their insertion date, based on the specific scenario.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.GetOrderedMTUListInFIFO_InterfaceHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PIMaterial_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.GetMaterialDensityHook</name>
+                        <shortname>GetMaterialDensityHook</shortname>
+                        <description>Hook command to retrieve the correct Material density via Post Action</description>
+                        <assembly>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.GetMaterialDensityHookHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PIMaterial_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command></commands>
+    <commandActions><commandAction>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.CreateMaterialTrackingUnitPHRHandlerShell</name>
+                        <shortname>CreateMaterialTrackingUnitPHRHandlerShell</shortname>
+                        <description>Creates Production History Record when Material Tracking Unit is created.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.PIMaterial_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <target_cpu>AnyCPU</target_cpu>
+                        <targetframework>netstandard2.0</targetframework>
+                        <command>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.CreateMaterialTrackingUnit</command>
+                        <type>Post</type>
+                        <is_enabled>true</is_enabled>
+                        <is_optional>true</is_optional>
+                </commandAction><commandAction>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.FreezeMaterialTrackingUnitPHRHandlerShell</name>
+                        <shortname>FreezeMaterialTrackingUnitPHRHandlerShell</shortname>
+                        <description>Creates Production History Record when Material Tracking Unit is frozen.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.PIMaterial_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <target_cpu>AnyCPU</target_cpu>
+                        <targetframework>netstandard2.0</targetframework>
+                        <command>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.FreezeMaterialTrackingUnit</command>
+                        <type>Post</type>
+                        <is_enabled>true</is_enabled>
+                        <is_optional>true</is_optional>
+                </commandAction><commandAction>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.UnfreezeMaterialTrackingUnitPHRHandlerShell</name>
+                        <shortname>UnfreezeMaterialTrackingUnitPHRHandlerShell</shortname>
+                        <description>Creates Production History Record when Material Tracking Unit is unfrozen.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.PIMaterial_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <target_cpu>AnyCPU</target_cpu>
+                        <targetframework>netstandard2.0</targetframework>
+                        <command>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.UnfreezeMaterialTrackingUnit</command>
+                        <type>Post</type>
+                        <is_enabled>true</is_enabled>
+                        <is_optional>true</is_optional>
+                </commandAction><commandAction>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.SetMaterialTrackingUnitStatusPHRHandlerShell</name>
+                        <shortname>SetMaterialTrackingUnitStatusPHRHandlerShell</shortname>
+                        <description>Creates Production History Record when status of Material Tracking Unit is changed.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.PIMaterial_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <target_cpu>AnyCPU</target_cpu>
+                        <targetframework>netstandard2.0</targetframework>
+                        <command>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.SetMaterialTrackingUnitStatus</command>
+                        <type>Post</type>
+                        <is_enabled>true</is_enabled>
+                        <is_optional>true</is_optional>
+                </commandAction><commandAction>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.SetMaterialTrackingUnitQuantityPHRHandlerShell</name>
+                        <shortname>SetMaterialTrackingUnitQuantityPHRHandlerShell</shortname>
+                        <description>Creates Production History Record when Quantity is set to Material Tracking Unit.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.PIMaterial_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <target_cpu>AnyCPU</target_cpu>
+                        <targetframework>netstandard2.0</targetframework>
+                        <command>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.SetMaterialTrackingUnitQuantity</command>
+                        <type>Post</type>
+                        <is_enabled>true</is_enabled>
+                        <is_optional>true</is_optional>
+                </commandAction><commandAction>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.SetMaterialTrackingUnitMaterialPHRHandlerShell</name>
+                        <shortname>SetMaterialTrackingUnitMaterialPHRHandlerShell</shortname>
+                        <description>Creates Production History Record when Material is set to Material Tracking Unit.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.PIMaterial_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <target_cpu>AnyCPU</target_cpu>
+                        <targetframework>netstandard2.0</targetframework>
+                        <command>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.SetMaterialTrackingUnitMaterial</command>
+                        <type>Post</type>
+                        <is_enabled>true</is_enabled>
+                        <is_optional>true</is_optional>
+                </commandAction><commandAction>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.MoveMTUToMTUAggregatePHRHandlerShell</name>
+                        <shortname>MoveMTUToMTUAggregatePHRHandlerShell</shortname>
+                        <description>Creates Production History Record when Material Tracking Unit is moved to Material Tracking Unit Aggregate. </description>
+                        <assembly>Siemens.SimaticIT.UAPI.PIMaterial_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <target_cpu>AnyCPU</target_cpu>
+                        <targetframework>netstandard2.0</targetframework>
+                        <command>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.MoveMaterialTrackingUnitToMaterialTrackingUnitAggregate</command>
+                        <type>Post</type>
+                        <is_enabled>false</is_enabled>
+                        <is_optional>true</is_optional>
+                </commandAction><commandAction>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.MoveMTUToEquipmentPHRHandlerShell</name>
+                        <shortname>MoveMTUToEquipmentPHRHandlerShell</shortname>
+                        <description>Creates Production History Record when Material Tracking Unit is moved to Equipment.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.PIMaterial_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <target_cpu>AnyCPU</target_cpu>
+                        <targetframework>netstandard2.0</targetframework>
+                        <command>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.MoveMaterialTrackingUnitToEquipment</command>
+                        <type>Post</type>
+                        <is_enabled>false</is_enabled>
+                        <is_optional>true</is_optional>
+                </commandAction><commandAction>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.AssociateMTUWithMaterialLotPHRHandlerShell</name>
+                        <shortname>AssociateMTUWithMaterialLotPHRHandlerShell</shortname>
+                        <description>Creates Production History Record when Material Tracking Unit is associated with Material Lot.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.PIMaterial_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <target_cpu>AnyCPU</target_cpu>
+                        <targetframework>netstandard2.0</targetframework>
+                        <command>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.AssociateMaterialTrackingUnitsWithMaterialLot</command>
+                        <type>Post</type>
+                        <is_enabled>true</is_enabled>
+                        <is_optional>true</is_optional>
+                </commandAction><commandAction>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.DisassociateMTUFromMaterialLotPHRHandlerShell</name>
+                        <shortname>DisassociateMTUFromMaterialLotPHRHandlerShell</shortname>
+                        <description>Creates Production History Record when Material Tracking Unit is disassociated from Material Lot.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.PIMaterial_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <target_cpu>AnyCPU</target_cpu>
+                        <targetframework>netstandard2.0</targetframework>
+                        <command>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.DisassociateMaterialTrackingUnitsFromMaterialLot</command>
+                        <type>Post</type>
+                        <is_enabled>true</is_enabled>
+                        <is_optional>true</is_optional>
+                </commandAction><commandAction>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.CreateMaterialLotPHRHandlerShell</name>
+                        <shortname>CreateMaterialLotPHRHandlerShell</shortname>
+                        <description>Creates Production History Record when Material Lot is created.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.PIMaterial_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <target_cpu>AnyCPU</target_cpu>
+                        <targetframework>netstandard2.0</targetframework>
+                        <command>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.CreateMaterialLot</command>
+                        <type>Post</type>
+                        <is_enabled>true</is_enabled>
+                        <is_optional>true</is_optional>
+                </commandAction><commandAction>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.CreateMaterialLotPropertiesPHRHandlerShell</name>
+                        <shortname>CreateMaterialLotPropertiesPHRHandlerShell</shortname>
+                        <description>Creates Production History Record when Material Lot Property is created.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.PIMaterial_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <target_cpu>AnyCPU</target_cpu>
+                        <targetframework>netstandard2.0</targetframework>
+                        <command>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.CreateMaterialLotProperties</command>
+                        <type>Post</type>
+                        <is_enabled>true</is_enabled>
+                        <is_optional>true</is_optional>
+                </commandAction><commandAction>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.FreezeMaterialLotPHRHandlerShell</name>
+                        <shortname>FreezeMaterialLotPHRHandlerShell</shortname>
+                        <description>Creates Production History Record when Material Lot is frozen.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.PIMaterial_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <target_cpu>AnyCPU</target_cpu>
+                        <targetframework>netstandard2.0</targetframework>
+                        <command>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.FreezeMaterialLot</command>
+                        <type>Post</type>
+                        <is_enabled>true</is_enabled>
+                        <is_optional>true</is_optional>
+                </commandAction><commandAction>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.UnfreezeMaterialLotPHRHandlerShell</name>
+                        <shortname>UnfreezeMaterialLotPHRHandlerShell</shortname>
+                        <description>Creates Production History Record when Material Lot is unfrozen.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.PIMaterial_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <target_cpu>AnyCPU</target_cpu>
+                        <targetframework>netstandard2.0</targetframework>
+                        <command>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.UnfreezeMaterialLot</command>
+                        <type>Post</type>
+                        <is_enabled>true</is_enabled>
+                        <is_optional>true</is_optional>
+                </commandAction><commandAction>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.UpdateMaterialLotPHRHandlerShell</name>
+                        <shortname>UpdateMaterialLotPHRHandlerShell</shortname>
+                        <description>Creates Production History Record when Material lot is updated.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.PIMaterial_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <target_cpu>AnyCPU</target_cpu>
+                        <targetframework>netstandard2.0</targetframework>
+                        <command>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.UpdateMaterialLot</command>
+                        <type>Post</type>
+                        <is_enabled>true</is_enabled>
+                        <is_optional>true</is_optional>
+                </commandAction><commandAction>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.UpdateMaterialLotPropertiesPHRHandlerShell</name>
+                        <shortname>UpdateMaterialLotPropertiesPHRHandlerShell</shortname>
+                        <description>Creates Production History Record when Material Lot Property is updated.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.PIMaterial_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <target_cpu>AnyCPU</target_cpu>
+                        <targetframework>netstandard2.0</targetframework>
+                        <command>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.UpdateMaterialLotProperties</command>
+                        <type>Post</type>
+                        <is_enabled>true</is_enabled>
+                        <is_optional>true</is_optional>
+                </commandAction><commandAction>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.SetMaterialLotMaterialPHRHandlerShell</name>
+                        <shortname>SetMaterialLotMaterialPHRHandlerShell</shortname>
+                        <description>Creates Production History Record when Material is set to Material Lot. </description>
+                        <assembly>Siemens.SimaticIT.UAPI.PIMaterial_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <target_cpu>AnyCPU</target_cpu>
+                        <targetframework>netstandard2.0</targetframework>
+                        <command>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.SetMaterialLotMaterial</command>
+                        <type>Post</type>
+                        <is_enabled>true</is_enabled>
+                        <is_optional>true</is_optional>
+                </commandAction><commandAction>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.SetMaterialLotQuantityPHRHandlerShell</name>
+                        <shortname>SetMaterialLotQuantityPHRHandlerShell</shortname>
+                        <description>Creates Production History Record when Quantity is set to Material Lot.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.PIMaterial_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <target_cpu>AnyCPU</target_cpu>
+                        <targetframework>netstandard2.0</targetframework>
+                        <command>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.SetMaterialLotQuantity</command>
+                        <type>Post</type>
+                        <is_enabled>true</is_enabled>
+                        <is_optional>true</is_optional>
+                </commandAction><commandAction>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.SetMaterialLotStateMachinePHRHandlerShell</name>
+                        <shortname>SetMaterialLotStateMachinePHRHandlerShell</shortname>
+                        <description>Creates Production History Record when State Machine is set to Material Lot.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.PIMaterial_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <target_cpu>AnyCPU</target_cpu>
+                        <targetframework>netstandard2.0</targetframework>
+                        <command>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.SetMaterialLotStateMachine</command>
+                        <type>Post</type>
+                        <is_enabled>true</is_enabled>
+                        <is_optional>true</is_optional>
+                </commandAction><commandAction>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.SetMaterialLotStatusPHRHandlerShell</name>
+                        <shortname>SetMaterialLotStatusPHRHandlerShell</shortname>
+                        <description>Creates Production History Record when status of Material Lot is changed.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.PIMaterial_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <target_cpu>AnyCPU</target_cpu>
+                        <targetframework>netstandard2.0</targetframework>
+                        <command>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.SetMaterialLotStatus</command>
+                        <type>Post</type>
+                        <is_enabled>true</is_enabled>
+                        <is_optional>true</is_optional>
+                </commandAction><commandAction>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.RetrieveSourceAndDestinationInformationOfMTUAHandlerShell</name>
+                        <shortname>RetrieveSourceAndDestinationInformationOfMTUAHandlerShell</shortname>
+                        <description>This Post-Command retrieves the Source and Destination information of the MTUA Movement from the main Command. Then it calls a dedicated Event MTUAOperationCompleted.  The result inside the TNT model is one record for each MTU inside the MTUA, with the information about the Source Equipment and Destination Equipment.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.PIMaterial_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <target_cpu>AnyCPU</target_cpu>
+                        <targetframework>netstandard2.0</targetframework>
+                        <command>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.LoadMaterialTrackingUnitAggregateToMaterialTrackingUnitAggregate</command>
+                        <type>Post</type>
+                        <is_enabled>true</is_enabled>
+                        <is_optional>true</is_optional>
+                </commandAction><commandAction>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.TraceMTUAMovementHandlerShell</name>
+                        <shortname>TraceMTUAMovementHandlerShell</shortname>
+                        <description>Moves the actual MTUA to a piece of Equipment from command, calls the dedicated event(MTUAOperationCompleted) and creates phr messages for all the MTU-s of the actual MTUA.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.PIMaterial_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <target_cpu>AnyCPU</target_cpu>
+                        <targetframework>netstandard2.0</targetframework>
+                        <command>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.LoadMaterialTrackingUnitAggregateToEquipment</command>
+                        <type>Post</type>
+                        <is_enabled>true</is_enabled>
+                        <is_optional>true</is_optional>
+                </commandAction><commandAction>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.CreateMTUAggregatePHRHandlerShell</name>
+                        <shortname>CreateMTUAggregatePHRHandlerShell</shortname>
+                        <description>Creates Production History Record when Material Tracking Unit Aggregate is created.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.PIMaterial_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <target_cpu>AnyCPU</target_cpu>
+                        <targetframework>netstandard2.0</targetframework>
+                        <command>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.CreateMaterialTrackingUnitAggregate</command>
+                        <type>Post</type>
+                        <is_enabled>true</is_enabled>
+                        <is_optional>true</is_optional>
+                </commandAction><commandAction>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.DeleteMTUAggregatePHRHandlerShell</name>
+                        <shortname>DeleteMTUAggregatePHRHandlerShell</shortname>
+                        <description>Creates Production History Record when Material Tracking Unit Aggregate is deleted.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.PIMaterial_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <target_cpu>AnyCPU</target_cpu>
+                        <targetframework>netstandard2.0</targetframework>
+                        <command>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.DeleteMaterialTrackingUnitAggregate</command>
+                        <type>Post</type>
+                        <is_enabled>true</is_enabled>
+                        <is_optional>true</is_optional>
+                </commandAction><commandAction>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.UnfreezeMaterialTrackingUnitAggregatePHRHandlerShell</name>
+                        <shortname>UnfreezeMaterialTrackingUnitAggregatePHRHandlerShell</shortname>
+                        <description>Creates Production History Record when Material Tracking Unit Aggregate is unfrozen.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.PIMaterial_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <target_cpu>AnyCPU</target_cpu>
+                        <targetframework>netstandard2.0</targetframework>
+                        <command>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.UnfreezeMaterialTrackingUnitAggregate</command>
+                        <type>Post</type>
+                        <is_enabled>true</is_enabled>
+                        <is_optional>true</is_optional>
+                </commandAction><commandAction>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.SetMaterialTrackingUnitAggregateMaterialPHRHandlerShell</name>
+                        <shortname>SetMaterialTrackingUnitAggregateMaterialPHRHandlerShell</shortname>
+                        <description>Creates Production History Record when a Material is set or unset to a Material Tracking Unit Aggregate.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.PIMaterial_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <target_cpu>AnyCPU</target_cpu>
+                        <targetframework>netstandard2.0</targetframework>
+                        <command>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.SetMaterialTrackingUnitAggregateMaterial</command>
+                        <type>Post</type>
+                        <is_enabled>true</is_enabled>
+                        <is_optional>true</is_optional>
+                </commandAction><commandAction>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.CreateMaterialTrackingUnitAggregatePropertiesPHRHandlerShell</name>
+                        <shortname>CreateMaterialTrackingUnitAggregatePropertiesPHRHandlerShell</shortname>
+                        <description>Creates Production History Record when a Property is created for Material Tracking Unit Aggregate.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.PIMaterial_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <target_cpu>AnyCPU</target_cpu>
+                        <targetframework>netstandard2.0</targetframework>
+                        <command>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.CreateMaterialTrackingUnitAggregateProperties</command>
+                        <type>Post</type>
+                        <is_enabled>true</is_enabled>
+                        <is_optional>true</is_optional>
+                </commandAction><commandAction>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.DeleteMaterialTrackingUnitAggregatePropertiesPHRHandlerShell</name>
+                        <shortname>DeleteMaterialTrackingUnitAggregatePropertiesPHRHandlerShell</shortname>
+                        <description>Creates Production History Record when a Property of Material Tracking Unit Aggregate is deleted.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.PIMaterial_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <target_cpu>AnyCPU</target_cpu>
+                        <targetframework>netstandard2.0</targetframework>
+                        <command>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.DeleteMaterialTrackingUnitAggregateProperties</command>
+                        <type>Post</type>
+                        <is_enabled>true</is_enabled>
+                        <is_optional>true</is_optional>
+                </commandAction><commandAction>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.SetMaterialTrackingUnitAggregateStateMachineHandlerShell</name>
+                        <shortname>SetMaterialTrackingUnitAggregateStateMachineHandlerShell</shortname>
+                        <description>Creates Production History Record when a State Machine is set to a Material Tracking Unit Aggregate.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.PIMaterial_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <target_cpu>AnyCPU</target_cpu>
+                        <targetframework>netstandard2.0</targetframework>
+                        <command>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.SetMaterialTrackingUnitAggregateStateMachine</command>
+                        <type>Post</type>
+                        <is_enabled>true</is_enabled>
+                        <is_optional>true</is_optional>
+                </commandAction><commandAction>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.SetMaterialTrackingUnitAggregateQuantityPHRHandlerShell</name>
+                        <shortname>SetMaterialTrackingUnitAggregateQuantityPHRHandlerShell</shortname>
+                        <description>Creates Production History Record when Quantity of Material Tracking Unit Aggregate is changed.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.PIMaterial_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <target_cpu>AnyCPU</target_cpu>
+                        <targetframework>netstandard2.0</targetframework>
+                        <command>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.SetMaterialTrackingUnitAggregateQuantity</command>
+                        <type>Post</type>
+                        <is_enabled>true</is_enabled>
+                        <is_optional>true</is_optional>
+                </commandAction><commandAction>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.SetMaterialTrackingUnitAggregateStatusPHRHandlerShell</name>
+                        <shortname>SetMaterialTrackingUnitAggregateStatusPHRHandlerShell</shortname>
+                        <description>Creates Production History Record when Status of Material Tracking Unit Aggregate is changed.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.PIMaterial_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <target_cpu>AnyCPU</target_cpu>
+                        <targetframework>netstandard2.0</targetframework>
+                        <command>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.SetMaterialTrackingUnitAggregateStatus</command>
+                        <type>Post</type>
+                        <is_enabled>true</is_enabled>
+                        <is_optional>true</is_optional>
+                </commandAction><commandAction>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.DeleteMaterialTrackingUnitPHRHandlerShell</name>
+                        <shortname>DeleteMaterialTrackingUnitPHRHandlerShell</shortname>
+                        <description></description>
+                        <assembly>Siemens.SimaticIT.UAPI.PIMaterial_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <target_cpu>AnyCPU</target_cpu>
+                        <targetframework>netstandard2.0</targetframework>
+                        <command>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.DeleteMaterialTrackingUnit</command>
+                        <type>Post</type>
+                        <is_enabled>true</is_enabled>
+                        <is_optional>true</is_optional>
+                </commandAction><commandAction>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.CreateMaterialTrackingUnitPropertiesPHRHandlerShell</name>
+                        <shortname>CreateMaterialTrackingUnitPropertiesPHRHandlerShell</shortname>
+                        <description></description>
+                        <assembly>Siemens.SimaticIT.UAPI.PIMaterial_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <target_cpu>AnyCPU</target_cpu>
+                        <targetframework>netstandard2.0</targetframework>
+                        <command>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.CreateMaterialTrackingUnitProperties</command>
+                        <type>Post</type>
+                        <is_enabled>true</is_enabled>
+                        <is_optional>true</is_optional>
+                </commandAction><commandAction>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.DeleteMaterialTrackingUnitPropertiesHandlerShell</name>
+                        <shortname>DeleteMaterialTrackingUnitPropertiesHandlerShell</shortname>
+                        <description></description>
+                        <assembly>Siemens.SimaticIT.UAPI.PIMaterial_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <target_cpu>AnyCPU</target_cpu>
+                        <targetframework>netstandard2.0</targetframework>
+                        <command>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.DeleteMaterialTrackingUnitProperties</command>
+                        <type>Post</type>
+                        <is_enabled>true</is_enabled>
+                        <is_optional>true</is_optional>
+                </commandAction><commandAction>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.FreezeMaterialTrackingUnitAggregatePHRHandlerShell</name>
+                        <shortname>FreezeMaterialTrackingUnitAggregatePHRHandlerShell</shortname>
+                        <description>Creates Production History Record when Material Tracking Unit Aggregate is frozen.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.PIMaterial_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <target_cpu>AnyCPU</target_cpu>
+                        <targetframework>netstandard2.0</targetframework>
+                        <command>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.FreezeMaterialTrackingUnitAggregate</command>
+                        <type>Post</type>
+                        <is_enabled>true</is_enabled>
+                        <is_optional>true</is_optional>
+                </commandAction><commandAction>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.SetMaterialTrackingUnitStateMachinePHRHandlerShell</name>
+                        <shortname>SetMaterialTrackingUnitStateMachinePHRHandlerShell</shortname>
+                        <description></description>
+                        <assembly>Siemens.SimaticIT.UAPI.PIMaterial_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <target_cpu>AnyCPU</target_cpu>
+                        <targetframework>netstandard2.0</targetframework>
+                        <command>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.SetMaterialTrackingUnitStateMachine</command>
+                        <type>Post</type>
+                        <is_enabled>true</is_enabled>
+                        <is_optional>true</is_optional>
+                </commandAction><commandAction>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.DeleteMaterialLotPHRHandlerShell</name>
+                        <shortname>DeleteMaterialLotPHRHandlerShell</shortname>
+                        <description></description>
+                        <assembly>Siemens.SimaticIT.UAPI.PIMaterial_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <target_cpu>AnyCPU</target_cpu>
+                        <targetframework>netstandard2.0</targetframework>
+                        <command>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.DeleteMaterialLot</command>
+                        <type>Post</type>
+                        <is_enabled>true</is_enabled>
+                        <is_optional>true</is_optional>
+                </commandAction><commandAction>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.DeleteMaterialLotPropertiesPHRHandlerShell</name>
+                        <shortname>DeleteMaterialLotPropertiesPHRHandlerShell</shortname>
+                        <description></description>
+                        <assembly>Siemens.SimaticIT.UAPI.PIMaterial_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <target_cpu>AnyCPU</target_cpu>
+                        <targetframework>netstandard2.0</targetframework>
+                        <command>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.DeleteMaterialLotProperties</command>
+                        <type>Post</type>
+                        <is_enabled>true</is_enabled>
+                        <is_optional>true</is_optional>
+                </commandAction><commandAction>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.UpdateMaterialTrackingUnitPropertiesPHRHandlerShell</name>
+                        <shortname>UpdateMaterialTrackingUnitPropertiesPHRHandlerShell</shortname>
+                        <description></description>
+                        <assembly>Siemens.SimaticIT.UAPI.PIMaterial_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <target_cpu>AnyCPU</target_cpu>
+                        <targetframework>netstandard2.0</targetframework>
+                        <command>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.UpdateMaterialTrackingUnitProperties</command>
+                        <type>Post</type>
+                        <is_enabled>true</is_enabled>
+                        <is_optional>true</is_optional>
+                </commandAction><commandAction>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.UpdateMaterialTrackingUnitPHRHandlerShell</name>
+                        <shortname>UpdateMaterialTrackingUnitPHRHandlerShell</shortname>
+                        <description></description>
+                        <assembly>Siemens.SimaticIT.UAPI.PIMaterial_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <target_cpu>AnyCPU</target_cpu>
+                        <targetframework>netstandard2.0</targetframework>
+                        <command>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.UpdateMaterialTrackingUnit</command>
+                        <type>Post</type>
+                        <is_enabled>true</is_enabled>
+                        <is_optional>true</is_optional>
+                </commandAction><commandAction>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.UpdateMaterialTrackingUnitAggregatePHRHandlerShell</name>
+                        <shortname>UpdateMaterialTrackingUnitAggregatePHRHandlerShell</shortname>
+                        <description>Creates Production History Record when Material Tracking Unit Aggregate is updated.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.PIMaterial_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <target_cpu>AnyCPU</target_cpu>
+                        <targetframework>netstandard2.0</targetframework>
+                        <command>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.UpdateMaterialTrackingUnitAggregate</command>
+                        <type>Post</type>
+                        <is_enabled>true</is_enabled>
+                        <is_optional>true</is_optional>
+                </commandAction><commandAction>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.UpdateMaterialTrackingUnitAggregatePropertiesPHRHandlerShell</name>
+                        <shortname>UpdateMaterialTrackingUnitAggregatePropertiesPHRHandlerShell</shortname>
+                        <description>Creates Production History Record when a Property of Material Tracking Unit Aggregate is updated.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.PIMaterial_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <target_cpu>AnyCPU</target_cpu>
+                        <targetframework>netstandard2.0</targetframework>
+                        <command>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.UpdateMaterialTrackingUnitAggregateProperties</command>
+                        <type>Post</type>
+                        <is_enabled>true</is_enabled>
+                        <is_optional>true</is_optional>
+                </commandAction><commandAction>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.TagForMaintenanceMaterialTrackingUnitsHandlerShell</name>
+                        <shortname>TagForMaintenanceMaterialTrackingUnitsHandlerShell</shortname>
+                        <description>This Post-Action is triggered after the execution of the TagForMaintenanceMaterialTrackingUnits Command. It marks for cleaning each Material Tracking Unit and all the entities in composition with it.  Please note the base command does not contain any business logic but is used only as root for the post actions. This because at project level, it is possible to enable/disable each post action according to the project needs.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.PIMaterial_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <target_cpu>AnyCPU</target_cpu>
+                        <targetframework>netstandard2.0</targetframework>
+                        <command>Siemens.OpcenterEX.OperationalData.Maintenance_OP.OPModel.Commands.TagForMaintenanceMaterialTrackingUnits</command>
+                        <type>Post</type>
+                        <is_enabled>true</is_enabled>
+                        <is_optional>true</is_optional>
+                </commandAction><commandAction>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.TagForMaintenanceMTUProductionHistoryRecordsHandlerShell</name>
+                        <shortname>TagForMaintenanceMTUProductionHistoryRecordsHandlerShell</shortname>
+                        <description>This Post-Action is triggered after the execution of the TagForMaintenanceMaterialTrackingUnits Command. It marks for cleaning all the ProductionHistoryRecord, PHRMessageParameters, ContextFields, ProductionHistoryRecordUpdateDetails Entities related to the respective Material Tracking Unit.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.PIMaterial_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <target_cpu>AnyCPU</target_cpu>
+                        <targetframework>netstandard2.0</targetframework>
+                        <command>Siemens.OpcenterEX.OperationalData.Maintenance_OP.OPModel.Commands.TagForMaintenanceMaterialTrackingUnits</command>
+                        <type>Post</type>
+                        <is_enabled>true</is_enabled>
+                        <is_optional>true</is_optional>
+                </commandAction><commandAction>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.TagForMaintenanceMaterialLotsHandlerShell</name>
+                        <shortname>TagForMaintenanceMaterialLotsHandlerShell</shortname>
+                        <description>This Post-Action is triggered after the execution of the TagForMaintenanceMaterialLots Command. It marks for cleaning each Material Lot and all the entities in composition with it.  Please note the base command does not contain any business logic but is used only as root for the post actions. This because at project level, it is possible to enable/disable each post action according to the project needs.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.PIMaterial_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <target_cpu>AnyCPU</target_cpu>
+                        <targetframework>netstandard2.0</targetframework>
+                        <command>Siemens.OpcenterEX.OperationalData.Maintenance_OP.OPModel.Commands.TagForMaintenanceMaterialLots</command>
+                        <type>Post</type>
+                        <is_enabled>true</is_enabled>
+                        <is_optional>true</is_optional>
+                </commandAction><commandAction>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.TagForMaintenanceLotProductionHistoryRecordsHandlerShell</name>
+                        <shortname>TagForMaintenanceLotProductionHistoryRecordsHandlerShell</shortname>
+                        <description>This Post-Action is triggered after the execution of the TagForMaintenanceMaterialLots Command. It marks for cleaning all the ProductionHistoryRecord, PHRMessageParameters, ContextFields, ProductionHistoryRecordUpdateDetails Entities related to the respective Material Lot.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.PIMaterial_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <target_cpu>AnyCPU</target_cpu>
+                        <targetframework>netstandard2.0</targetframework>
+                        <command>Siemens.OpcenterEX.OperationalData.Maintenance_OP.OPModel.Commands.TagForMaintenanceMaterialLots</command>
+                        <type>Post</type>
+                        <is_enabled>true</is_enabled>
+                        <is_optional>true</is_optional>
+                </commandAction><commandAction>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.TagForMaintenanceMaterialTrackingUnitAggregatesHandlerShell</name>
+                        <shortname>TagForMaintenanceMaterialTrackingUnitAggregatesHandlerShell</shortname>
+                        <description>This Post-Action is triggered after the execution of the TagForMaintenanceMaterialTrackingUnitAggregates Command. It marks for cleaning each Material Tracking Unit Aggregate and all the entities in composition with it.  Please note the base command does not contain any business logic but is used only as root for the post actions. This because at project level, it is possible to enable/disable each post action according to the project needs.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.PIMaterial_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <target_cpu>AnyCPU</target_cpu>
+                        <targetframework>netstandard2.0</targetframework>
+                        <command>Siemens.OpcenterEX.OperationalData.Maintenance_OP.OPModel.Commands.TagForMaintenanceMaterialTrackingUnitAggregates</command>
+                        <type>Post</type>
+                        <is_enabled>true</is_enabled>
+                        <is_optional>true</is_optional>
+                </commandAction><commandAction>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.TagForMaintenanceMTUAProductionHistoryRecordsHandlerShell</name>
+                        <shortname>TagForMaintenanceMTUAProductionHistoryRecordsHandlerShell</shortname>
+                        <description>This Post-Action is triggered after the execution of the TagForMaintenanceMaterialTrackingUnitAggregates Command. It marks for cleaning all the ProductionHistoryRecord, PHRMessageParameters, ContextFields, ProductionHistoryRecordUpdateDetails Entities related to the respective Material Tracking Unit Aggregate.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.PIMaterial_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <target_cpu>AnyCPU</target_cpu>
+                        <targetframework>netstandard2.0</targetframework>
+                        <command>Siemens.OpcenterEX.OperationalData.Maintenance_OP.OPModel.Commands.TagForMaintenanceMaterialTrackingUnitAggregates</command>
+                        <type>Post</type>
+                        <is_enabled>true</is_enabled>
+                        <is_optional>true</is_optional>
+                </commandAction><commandAction>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.FireMTUOperationCompletedOnCreateMTUHandlerShell</name>
+                        <shortname>FireMTUOperationCompletedOnCreateMTUHandlerShell</shortname>
+                        <description>Fires the MTUOperationCompleted event once a new MTU is created in the system. The event is fired on transaction Commit.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.PIMaterial_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <target_cpu>AnyCPU</target_cpu>
+                        <targetframework>netstandard2.0</targetframework>
+                        <command>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.CreateMaterialTrackingUnit</command>
+                        <type>Post</type>
+                        <is_enabled>true</is_enabled>
+                        <is_optional>true</is_optional>
+                </commandAction><commandAction>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.FireMTUOperationCompletedOnDeleteMTUHandlerShell</name>
+                        <shortname>FireMTUOperationCompletedOnDeleteMTUHandlerShell</shortname>
+                        <description>Fires the MTUOperationCompleted event once an MTU is deleted. The event is fired on transaction Commit.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.PIMaterial_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <target_cpu>AnyCPU</target_cpu>
+                        <targetframework>netstandard2.0</targetframework>
+                        <command>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.DeleteMaterialTrackingUnit</command>
+                        <type>Post</type>
+                        <is_enabled>true</is_enabled>
+                        <is_optional>true</is_optional>
+                </commandAction><commandAction>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.CreateMTUOperationTrackingHandlerShell</name>
+                        <shortname>CreateMTUOperationTrackingHandlerShell</shortname>
+                        <description>Create a new instance of the MTUOperationTracking entity every time an operation is performed on a Material Tracking Unit.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.PIMaterial_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <target_cpu>AnyCPU</target_cpu>
+                        <targetframework>netstandard2.0</targetframework>
+                        <command>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.ManageMTUOperationCompleted</command>
+                        <type>Post</type>
+                        <is_enabled>true</is_enabled>
+                        <is_optional>true</is_optional>
+                </commandAction><commandAction>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.CheckMaterialBehaviorConsistencyOnCreateMTUHandlerShell</name>
+                        <shortname>CheckMaterialBehaviorConsistencyOnCreateMTUHandlerShell</shortname>
+                        <description>Check if the equipment in wich will be create the material tracking unit has material behavior MIXING and one material tracking unit already present. If yes the MTU will not created.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.PIMaterial_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <target_cpu>AnyCPU</target_cpu>
+                        <targetframework>netstandard2.0</targetframework>
+                        <command>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.CreateMaterialTrackingUnit</command>
+                        <type>PreCheck</type>
+                        <is_enabled>true</is_enabled>
+                        <alias>CheckMaterialBehaviorConsistencyOnCreateMTU</alias>
+                </commandAction><commandAction>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.CheckMaterialBehaviorConsistencyOnMoveMTUHandlerShell</name>
+                        <shortname>CheckMaterialBehaviorConsistencyOnMoveMTUHandlerShell</shortname>
+                        <description>Check if the equipment in wich will be move the material tracking unit has material behavior MIXING and one material tracking unit already present. If yes the MTU will not moved.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.PIMaterial_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <target_cpu>AnyCPU</target_cpu>
+                        <targetframework>netstandard2.0</targetframework>
+                        <command>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.MoveMaterialTrackingUnitToEquipment</command>
+                        <type>PreCheck</type>
+                        <is_enabled>true</is_enabled>
+                        <alias>CheckMaterialBehaviorConsistencyOnMoveMTU</alias>
+                </commandAction><commandAction>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.CheckMaterialExistHandlerShell</name>
+                        <shortname>CheckMaterialExistHandlerShell</shortname>
+                        <description>Check Material Exists</description>
+                        <assembly>Siemens.SimaticIT.UAPI.PIMaterial_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <target_cpu>AnyCPU</target_cpu>
+                        <targetframework>netstandard2.0</targetframework>
+                        <command>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.CreateMaterialLotWithSegregationTags</command>
+                        <type>PreCheck</type>
+                        <is_enabled>true</is_enabled>
+                        <alias>CheckMaterialExist</alias>
+                </commandAction></commandActions>
+    <events><event>
+                <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Events.MTUOperationCompleted</name>
+                <shortname>MTUOperationCompleted</shortname>
+                <description> This event is fired when a manufacturing operation that involves an MTU (such as Move, CreateIdentity or RemoveIdentity) is completed. This event is fired with a specific envelope, on which you can filter while configuring the event subscription from Solution Studio: * Category: contains the identifier of the Functional Transaction * Topic: contains the identifier of the base Action (for example: Move, Create, Split, ...) * UserField1, ..., UserField10: the value of the first 10 Custom Fields, in the same order as they are passed as input to the Functional Transaction.</description>
+                <assembly>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Events, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                <dotneteventtype></dotneteventtype>
+                <eventtype>Application</eventtype>
+                <domain>OperationalData</domain>
+                <taglist>
+                </taglist>
+                <securable>true</securable>
+        </event><event>
+                <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Events.MoveOnCustomBehaviorRequested</name>
+                <shortname>MoveOnCustomBehaviorRequested</shortname>
+                <description> This event is fired when the move operation involves a destination with a custom Material Behavior.</description>
+                <assembly>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Events, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                <dotneteventtype></dotneteventtype>
+                <eventtype>Application</eventtype>
+                <domain>OperationalData</domain>
+                <taglist>
+                </taglist>
+                <securable>true</securable>
+        </event></events>
+    <event_handlers><event_handler>
+<name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Events.OnMaterialLotUpdatedShell</name>
+<assembly>Siemens.SimaticIT.UAPI.PIMaterial_OP.EventHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+<event_name>Siemens.SimaticIT.SystemData.Foundation.Events.CommittedEvent</event_name>
+<target_cpu>AnyCPU</target_cpu>
+<targetframework>netstandard2.0</targetframework>
+<dependencies></dependencies>
+</event_handler></event_handlers>
+    <signals></signals>
+    <readingFunctions></readingFunctions>
+    <entities></entities>
+    <datamodels><datamodel>
+      <assembly>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>WR</mode>
+      <domain>OperationalData</domain>
+    </datamodel><datamodel>
+      <assembly>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.ReadingModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>RD</mode>
+      <domain>OperationalData</domain>
+    </datamodel><datamodel>
+      <assembly>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Types, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>WR</mode>
+      <domain>OperationalData</domain>
+    </datamodel><datamodel>
+      <assembly>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Types.ReadingModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>RD</mode>
+      <domain>OperationalData</domain>
+    </datamodel></datamodels>
+    <externaldatamodels></externaldatamodels>
+    <appdatamodels></appdatamodels>
+    <uimodules></uimodules>
+    <uicomponents></uicomponents>
+    <wr_entities></wr_entities>
+    <wr_facets><wr_facet>
+      <name>Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.DataModel.MaterialLotProcessAdditionalProperties</name>
+      <shortname>MaterialLotProcessAdditionalProperties</shortname>
+      <parententity></parententity>
+      <root_entity>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.DataModel.MaterialLot</root_entity>
+    </wr_facet></wr_facets>
+  </artifacts>
+  <security>
+    <roles></roles>
+  </security>
+  <runtime>
+    <event_subscriptions></event_subscriptions>
+    <handlergroups></handlergroups>
+  </runtime>
+</projectmanifest>

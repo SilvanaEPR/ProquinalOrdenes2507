@@ -1,0 +1,55 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" y1="48.5" x2="36.5" y2="12.5" gradientTransform="matrix(1, 0, 0, -1, 0, 52)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="0.232" stop-color="#fafafa"/>
+      <stop offset="0.496" stop-color="#ededed"/>
+      <stop offset="0.775" stop-color="#d6d6d6"/>
+      <stop offset="1" stop-color="#bebebe"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="8.25" y1="59.25" x2="28.75" y2="38.75" gradientTransform="matrix(1, 0, 0, -1, 0, 52)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#b1b1b1"/>
+      <stop offset="1" stop-color="#7d7d7d"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="24.471" y1="9.254" x2="28.13" y2="5.595" gradientTransform="matrix(1, 0, 0, -1, 0, 52)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#147391"/>
+      <stop offset="0.191" stop-color="#2c839f"/>
+      <stop offset="0.543" stop-color="#529eb5"/>
+      <stop offset="0.825" stop-color="#6aaec3"/>
+      <stop offset="1" stop-color="#73b4c8"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-4" x1="36.75" y1="4.5" x2="36.75" y2="31.5" gradientTransform="matrix(1, 0, 0, -1, 0, 52)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#afd7e1"/>
+      <stop offset="1" stop-color="#73b4c8"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-5" x1="38.25" y1="26.5" x2="38.25" y2="31.5" xlink:href="#linear-gradient-3"/>
+  </defs>
+  <g id="g1011">
+    <rect id="_Rectangle_" data-name=" Rectangle " y="4" width="37" height="35" fill="url(#linear-gradient)"/>
+    <rect id="_Rectangle_2" data-name=" Rectangle 2" y="1" width="37" height="4" fill="url(#linear-gradient-2)"/>
+    <line id="line20" x1="12.473" y1="0.2" x2="12.473" y2="39.2" fill="none" stroke="#6e6e6e" stroke-miterlimit="10"/>
+    <line id="line22" x1="24.487" y1="0.2" x2="24.487" y2="39.2" fill="none" stroke="#6e6e6e" stroke-miterlimit="10"/>
+    <line id="line24" x1="13" y1="4.5" y2="4.5" fill="none" stroke="#6e6e6e" stroke-miterlimit="10"/>
+    <line id="line26" x1="37" y1="4.5" x2="25" y2="4.5" fill="none" stroke="#6e6e6e" stroke-miterlimit="10"/>
+    <line id="line28" x1="13" y1="16.5" y2="16.5" fill="none" stroke="#6e6e6e" stroke-miterlimit="10"/>
+    <line id="line30" x1="37" y1="16.5" x2="25" y2="16.5" fill="none" stroke="#6e6e6e" stroke-miterlimit="10"/>
+    <line id="line32" x1="13" y1="27.5" y2="27.5" fill="none" stroke="#6e6e6e" stroke-miterlimit="10"/>
+    <line id="line34" x1="37" y1="27.5" x2="25" y2="27.5" fill="none" stroke="#6e6e6e" stroke-miterlimit="10"/>
+    <line id="_Path_" data-name=" Path " x1="13" y1="4.5" x2="25" y2="4.5" fill="none" stroke="#6e6e6e" stroke-miterlimit="10"/>
+    <line id="_Path_2" data-name=" Path 2" x1="13" y1="16.5" x2="25" y2="16.5" fill="none" stroke="#6e6e6e" stroke-miterlimit="10"/>
+    <line id="_Path_3" data-name=" Path 3" x1="13" y1="27.5" x2="25" y2="27.5" fill="none" stroke="#6e6e6e" stroke-miterlimit="10"/>
+    <rect id="_Rectangle_4" data-name=" Rectangle 4" x="0.5" y="0.5" width="37" height="39" fill="none" stroke="#464646" stroke-miterlimit="10"/>
+    <polyline id="polyline52" points="15.8 11.2 18.3 13.6 22 7.5" fill="none" stroke="#6e6e6e" stroke-miterlimit="10"/>
+    <polyline id="polyline54" points="3.5 22.8 5.9 25.2 9.6 19.1" fill="none" stroke="#6e6e6e" stroke-miterlimit="10"/>
+    <polyline id="polyline56" points="28.2 34.3 30.7 36.8 34.4 30.6" fill="none" stroke="#6e6e6e" stroke-miterlimit="10"/>
+    <g id="g116">
+      <path id="path73" d="M28.5,42.5H24.8A3.127,3.127,0,0,0,23.5,45a2.5,2.5,0,0,0,5,0Z" stroke="#464646" stroke-linejoin="round" fill="url(#linear-gradient-3)"/>
+      <path id="path93" d="M47.5,45A2.476,2.476,0,0,1,45,47.5H26A2.476,2.476,0,0,0,28.5,45l-2-22A2.476,2.476,0,0,1,29,20.5h3.8l12.7,5Z" stroke="#464646" stroke-linejoin="round" fill="url(#linear-gradient-4)"/>
+      <path id="path106" d="M45,20.5H29a2.5,2.5,0,0,1,0,5H45a2.5,2.5,0,0,0,0-5Z" stroke="#464646" stroke-linejoin="round" fill="url(#linear-gradient-5)"/>
+      <line id="line108" x1="43" y1="40.5" x2="31" y2="40.5" fill="none" stroke="#fff" stroke-linejoin="round"/>
+      <line id="line110" x1="43" y1="37.5" x2="31" y2="37.5" fill="none" stroke="#fff" stroke-linejoin="round"/>
+      <line id="line112" x1="42" y1="34.5" x2="30" y2="34.5" fill="none" stroke="#fff" stroke-linejoin="round"/>
+      <line id="line114" x1="37" y1="31.5" x2="30" y2="31.5" fill="none" stroke="#fff" stroke-linejoin="round"/>
+    </g>
+  </g>
+</svg>

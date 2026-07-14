@@ -1,0 +1,35 @@
+<svg version="1.1" id="Livello_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	  viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+<path class="aw-theme-iconOutline" fill="#464646" d="M18.58,24h-2.164l-0.746-2.111l-1.998,0.947l-1.527-1.529l0.949-2.002l-2.095-0.744v-2.162l2.095-0.744
+	l-0.949-2l1.527-1.529l2.006,0.953L16.416,11h2.162l0.742,2.078l2.004-0.953l1.529,1.529l-0.951,2l2.096,0.744v2.164l-2.096,0.742
+	l0.951,2l-1.529,1.531l-1.998-0.949L18.58,24z M17.072,23.07h0.852l0.605-1.717c0.143-0.396,0.6-0.588,0.967-0.416l1.635,0.777
+	l0.604-0.604l-0.777-1.633c-0.084-0.178-0.09-0.385-0.014-0.568c0.074-0.186,0.229-0.33,0.418-0.398l1.709-0.605v-0.852
+	l-1.709-0.605c-0.191-0.068-0.344-0.213-0.42-0.396c-0.076-0.186-0.07-0.393,0.016-0.574l0.775-1.631l-0.602-0.602l-1.633,0.775
+	c-0.363,0.176-0.832-0.018-0.967-0.393l-0.607-1.701h-0.852l-0.605,1.699c-0.141,0.379-0.611,0.568-0.973,0.391l-1.629-0.773
+	l-0.602,0.602l0.775,1.635c0.084,0.18,0.09,0.387,0.014,0.572c-0.076,0.184-0.229,0.326-0.416,0.396l-1.709,0.605v0.852l1.708,0.607
+	c0.189,0.066,0.344,0.209,0.422,0.395c0.074,0.186,0.068,0.393-0.018,0.572l-0.775,1.633l0.602,0.604l1.635-0.775
+	c0.357-0.17,0.826,0.021,0.965,0.41L17.072,23.07z"/>
+<path class="aw-theme-iconOutline" fill="#464646" d="M17.498,19.357c-1.023,0-1.857-0.834-1.857-1.857c0-1.025,0.834-1.857,1.857-1.857s1.857,0.832,1.857,1.857
+	C19.355,18.523,18.521,19.357,17.498,19.357z M17.498,16.572c-0.514,0-0.928,0.414-0.928,0.928c0,0.512,0.414,0.93,0.928,0.93
+	c0.512,0,0.928-0.418,0.928-0.93C18.426,16.986,18.01,16.572,17.498,16.572z"/>
+<rect x="1" y="4.072" class="aw-theme-iconOutline" fill="#464646" width="21.252" height="1"/>
+<rect x="2" y="4.713" class="aw-theme-iconOutline" fill="#464646" width="1" height="15.9"/>
+<rect x="6" y="4.856" class="aw-theme-iconOutline" fill="#464646" width="1" height="15.956"/>
+<polygon class="aw-theme-iconOutline" fill="#464646" points="10,15.041 11,14.042 11,4.748 10,4.748 "/>
+<polygon class="aw-theme-iconOutline" fill="#464646" points="14,10.579 15,9.984 15,4.785 14,4.785 "/>
+<rect x="1" y="8.071" class="aw-theme-iconOutline" fill="#464646" width="21" height="1.001"/>
+<rect x="1" y="12.073" class="aw-theme-iconOutline" fill="#464646" width="9.5" height="0.999"/>
+<polygon class="aw-theme-iconOutline" fill="#464646" points="22,9.984 23,10.579 23,3.072 22,3.072 "/>
+<rect x="18" y="4.677" class="aw-theme-iconOutline" fill="#464646" width="1" height="5.307"/>
+<rect x="1" y="16.072" class="aw-theme-iconOutline" fill="#464646" width="9" height="1"/>
+<polygon class="aw-theme-iconOutline" fill="#464646" points="1.9,20.949 10.499,20.951 10,19.949 1.9,19.949 "/>
+<rect x="1" y="3.072" class="aw-theme-iconOutline" fill="#464646" width="21.252" height="1.092"/>
+<rect x="1" y="5.049" class="aw-theme-iconOutline" fill="#464646" width="1.179" height="15.9"/>
+<circle class="aw-theme-iconOutline" fill="#464646" cx="4.437" cy="6.563" r="1"/>
+<circle class="aw-theme-iconOutline" fill="#464646" cx="8.46" cy="6.563" r="1"/>
+<circle class="aw-theme-iconOutline" fill="#464646" cx="4.437" cy="10.58" r="1"/>
+<circle class="aw-theme-iconOutline" fill="#464646" cx="8.46" cy="10.58" r="1"/>
+<circle class="aw-theme-iconOutline" fill="#464646" cx="12.461" cy="6.563" r="1"/>
+<circle class="aw-theme-iconOutline" fill="#464646" cx="16.477" cy="6.563" r="1"/>
+<circle class="aw-theme-iconOutline" fill="#464646" cx="20.461" cy="6.563" r="1"/>
+</svg>

@@ -1,0 +1,7 @@
+<div id="data-cell-container" class="ngCellText md-command-column-cell">
+    <div ng-class="'md-command-column-text'">
+        <sit-column-interpolater sit-row="vm.row" sit-expression="{{vm.fieldName}}" sit-fieldsource="{{vm.fieldSource}}"></sit-column-interpolater>
+    </div>
+    <img alt="Command" title="{{vm.tooltip}}" ng-if="vm.isVisible && vm.isSvg" ng-src="{{vm.svgIcon}}" class="md-command-column-icon" ng-click="vm.onCommandClick()" />
+    <em  title="{{vm.tooltip}}" ng-if="vm.isVisible && !vm.isSvg" class="fa {{vm.faIcon}} md-command-column-fa-icon" ng-click="vm.onCommandClick()" />
+</div>

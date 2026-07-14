@@ -1,0 +1,575 @@
+﻿<?xml version="1.0" encoding="utf-8"?><projectmanifest>
+  <header>
+    <manifestversion>11.0</manifestversion>
+    <platformversion>11.0</platformversion>
+    <type>Library</type>
+    <name>Siemens.SimaticIT.TSK_MS</name>
+    <shortname>TSK_MS</shortname>
+    <description>Task Master Data Domain Functional Block</description>
+    <version>09.04.00</version>
+    <companyname>Siemens.SimaticIT</companyname>
+    <author>Siemens.SimaticIT</author>
+    <hash>pfiImjKn/gMuD3M+Puydt0FxmXytzOtv4cOw7XYc7kU=</hash>
+    <modelHash>uRwHA7gbDqqeuUKQQYXb4s1/lbJ/gEWUWXt3t8SBATw=</modelHash>
+    <modelHashSections>
+      <modelHashSection>
+        <name>projectConfigModelHash</name>
+        <hash>7Mh2LLqeIEfRm3IYhLrisGjuvRfHmzvukyIAjSBbxfA=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>dataModelHash</name>
+        <hash>tB8FJavIbRPPu4TND9tjfq5O5laMfF4iVaTZljB1Ofs=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>commandModelHash</name>
+        <hash>7qp4Ij9BJslBvmwXfrBR3G/15utre3G2Nnt4kcm4/f8=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>aliasModelHash</name>
+        <hash>FCE0KMXJjmDlnki7ue9cotrur1tAAXlmG5Tm782yrrs=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>eventModelHash</name>
+        <hash>1pCUQMeMV1zI9wPwd+zPXfSRUhyKxTb/4j3YyV+SOBI=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>typeModelHash</name>
+        <hash>KcQ3xfa4yg7+g8sJrLP9ClxSRRnOCWLm6SOLvpKm6oQ=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>securityModelHash</name>
+        <hash>HBCAwH1bPzPLFZ0nja4tQ6QtcIjsQ44hwxLWV6Kg8e4=</hash>
+      </modelHashSection>
+    </modelHashSections>
+    <uiHash>na</uiHash>
+    <canbeextended>false</canbeextended>
+    <domain>MasterData</domain>
+  </header>
+  <reference>
+    <functionalblocks>
+      <functionalblock>
+        <name>Siemens.SimaticIT.UDM_RF</name>
+        <version>07.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+    </functionalblocks>
+    <extensions></extensions>
+  </reference>
+  <artifacts>
+    <commands><command>
+                        <name>Siemens.SimaticIT.MasterData.TSK_MS.MSModel.Commands.CreateTaskDefinition</name>
+                        <shortname>CreateTaskDefinition</shortname>
+                        <description>Creates a new Task Definition.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.TSK_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.TSK_MS.MSModel.Commands.CreateTaskDefinitionHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.TSK_MS.TSK_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.TSK_MS.MSModel.Commands.UpdateTaskDefinition</name>
+                        <shortname>UpdateTaskDefinition</shortname>
+                        <description>Updates an existing Task Definition.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.TSK_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.TSK_MS.MSModel.Commands.UpdateTaskDefinitionHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.TSK_MS.TSK_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.TSK_MS.MSModel.Commands.DeleteTaskDefinition</name>
+                        <shortname>DeleteTaskDefinition</shortname>
+                        <description>Deletes an existing Task Definition.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.TSK_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.TSK_MS.MSModel.Commands.DeleteTaskDefinitionHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.TSK_MS.TSK_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.TSK_MS.MSModel.Commands.UpdateTaskDefinitionParameter</name>
+                        <shortname>UpdateTaskDefinitionParameter</shortname>
+                        <description>Updates an existing Task Definition Parameter.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.TSK_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.TSK_MS.MSModel.Commands.UpdateTaskDefinitionParameterHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.TSK_MS.TSK_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.TSK_MS.MSModel.Commands.DeleteTaskDefinitionParameter</name>
+                        <shortname>DeleteTaskDefinitionParameter</shortname>
+                        <description>Deletes an existing Task Definition Parameter.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.TSK_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.TSK_MS.MSModel.Commands.DeleteTaskDefinitionParameterHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.TSK_MS.TSK_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.TSK_MS.MSModel.Commands.LockTaskDefinition</name>
+                        <shortname>LockTaskDefinition</shortname>
+                        <description>Locks a Task Definition.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.TSK_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.TSK_MS.MSModel.Commands.LockTaskDefinitionHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.TSK_MS.TSK_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.TSK_MS.MSModel.Commands.UnlockTaskDefinition</name>
+                        <shortname>UnlockTaskDefinition</shortname>
+                        <description>Unlocks a Task Definition.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.TSK_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.TSK_MS.MSModel.Commands.UnlockTaskDefinitionHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.TSK_MS.TSK_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.TSK_MS.MSModel.Commands.SetTaskDefinitionRevisionCurrent</name>
+                        <shortname>SetTaskDefinitionRevisionCurrent</shortname>
+                        <description>Sets a Task Definition revision to Current.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.TSK_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.TSK_MS.MSModel.Commands.SetTaskDefinitionRevisionCurrentHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.TSK_MS.TSK_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.TSK_MS.MSModel.Commands.UnsetTaskDefinitionRevisionCurrent</name>
+                        <shortname>UnsetTaskDefinitionRevisionCurrent</shortname>
+                        <description>Removes the setting as Current from a Task Definition revision.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.TSK_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.TSK_MS.MSModel.Commands.UnsetTaskDefinitionRevisionCurrentHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.TSK_MS.TSK_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.TSK_MS.MSModel.Commands.CopyTaskDefinitionRevision</name>
+                        <shortname>CopyTaskDefinitionRevision</shortname>
+                        <description>Copies a Task Definition revision.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.TSK_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.TSK_MS.MSModel.Commands.CopyTaskDefinitionRevisionHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.TSK_MS.TSK_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.TSK_MS.MSModel.Commands.CreateNewTaskDefinitionRevision</name>
+                        <shortname>CreateNewTaskDefinitionRevision</shortname>
+                        <description>Creates a new Task Definition revision.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.TSK_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.TSK_MS.MSModel.Commands.CreateNewTaskDefinitionRevisionHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.TSK_MS.TSK_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.TSK_MS.MSModel.Commands.AssociateTaskContextDefinitionsWithTaskDefinition</name>
+                        <shortname>AssociateTaskContextDefinitionsWithTaskDefinition</shortname>
+                        <description>Associates a Task Definition to a list of Task Context Definitions.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.TSK_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.TSK_MS.MSModel.Commands.AssociateTaskContextDefinitionsWithTaskDefinitionHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.TSK_MS.TSK_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.TSK_MS.MSModel.Commands.DisassociateTaskContextDefinitionsFromTaskDefinition</name>
+                        <shortname>DisassociateTaskContextDefinitionsFromTaskDefinition</shortname>
+                        <description>Removes the association between one or more Task Context Definitions and a Task Definition.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.TSK_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.TSK_MS.MSModel.Commands.DisassociateTaskContextDefinitionsFromTaskDefinitionHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.TSK_MS.TSK_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.TSK_MS.MSModel.Commands.CreateTaskContextDefinition</name>
+                        <shortname>CreateTaskContextDefinition</shortname>
+                        <description>Creates a new Task Context Definition.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.TSK_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.TSK_MS.MSModel.Commands.CreateTaskContextDefinitionHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.TSK_MS.TSK_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.TSK_MS.MSModel.Commands.UpdateTaskContextDefinition</name>
+                        <shortname>UpdateTaskContextDefinition</shortname>
+                        <description>Updates a Task Context Definition and optionally adds User Fields to it.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.TSK_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.TSK_MS.MSModel.Commands.UpdateTaskContextDefinitionHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.TSK_MS.TSK_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.TSK_MS.MSModel.Commands.DeleteTaskContextDefinition</name>
+                        <shortname>DeleteTaskContextDefinition</shortname>
+                        <description>Deletes an existing Task Context Defintion.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.TSK_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.TSK_MS.MSModel.Commands.DeleteTaskContextDefinitionHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.TSK_MS.TSK_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.TSK_MS.MSModel.Commands.UpdateTaskContextDefinitionUserField</name>
+                        <shortname>UpdateTaskContextDefinitionUserField</shortname>
+                        <description>Updates a Task Context Defintion User Field.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.TSK_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.TSK_MS.MSModel.Commands.UpdateTaskContextDefinitionUserFieldHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.TSK_MS.TSK_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.TSK_MS.MSModel.Commands.DeleteTaskContextDefinitionUserField</name>
+                        <shortname>DeleteTaskContextDefinitionUserField</shortname>
+                        <description>Deletes an existing Task Context Defintion User Field</description>
+                        <assembly>Siemens.SimaticIT.MasterData.TSK_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.TSK_MS.MSModel.Commands.DeleteTaskContextDefinitionUserFieldHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.TSK_MS.TSK_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.TSK_MS.MSModel.Commands.UpdateTaskDefinitionLastUpdatedOn</name>
+                        <shortname>UpdateTaskDefinitionLastUpdatedOn</shortname>
+                        <description>Update LastUpdatedOn in Taskdefinition for Caching purpose</description>
+                        <assembly>Siemens.SimaticIT.MasterData.TSK_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.TSK_MS.MSModel.Commands.UpdateTaskDefinitionLastUpdatedOnHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.TSK_MS.TSK_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command></commands>
+    <commandActions></commandActions>
+    <events></events>
+    <event_handlers></event_handlers>
+    <signals></signals>
+    <readingFunctions></readingFunctions>
+    <entities><entity>
+      <name>Siemens.SimaticIT.MasterData.TSK_MS.MSModel.DataModel.ReadingModel.TaskDefinitionParameter</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.MasterData.TSK_MS.MSModel.DataModel.ReadingModel.TaskType</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.MasterData.TSK_MS.MSModel.DataModel.ReadingModel.TaskDefinition</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.MasterData.TSK_MS.MSModel.DataModel.ReadingModel.TaskContextDefinition</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.MasterData.TSK_MS.MSModel.DataModel.ReadingModel.TaskContextDefinitionUserField</name>
+      <securable>true</securable>
+    </entity></entities>
+    <datamodels><datamodel>
+      <assembly>Siemens.SimaticIT.MasterData.TSK_MS.MSModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>WR</mode>
+      <domain>MasterData</domain>
+    </datamodel><datamodel>
+      <assembly>Siemens.SimaticIT.MasterData.TSK_MS.MSModel.ReadingModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>RD</mode>
+      <domain>MasterData</domain>
+    </datamodel><datamodel>
+      <assembly>Siemens.SimaticIT.MasterData.TSK_MS.MSModel.Types, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>WR</mode>
+      <domain>MasterData</domain>
+    </datamodel><datamodel>
+      <assembly>Siemens.SimaticIT.MasterData.TSK_MS.MSModel.Types.ReadingModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>RD</mode>
+      <domain>MasterData</domain>
+    </datamodel></datamodels>
+    <externaldatamodels></externaldatamodels>
+    <appdatamodels></appdatamodels>
+    <uimodules></uimodules>
+    <uicomponents></uicomponents>
+    <wr_entities><wr_entity>
+      <name>Siemens.SimaticIT.MasterData.TSK_MS.MSModel.DataModel.TaskDefinitionParameter</name>
+      <shortname>TaskDefinitionParameter</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity>Siemens.SimaticIT.MasterData.TSK_MS.MSModel.DataModel.TaskDefinition</parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity>Siemens.SimaticIT.MasterData.TSK_MS.MSModel.DataModel.TaskDefinition</root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.MasterData.TSK_MS.MSModel.DataModel.TaskType</name>
+      <shortname>TaskType</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity></parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity></root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.MasterData.TSK_MS.MSModel.DataModel.TaskDefinition</name>
+      <shortname>TaskDefinition</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity></parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity></root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.MasterData.TSK_MS.MSModel.DataModel.TaskContextDefinition</name>
+      <shortname>TaskContextDefinition</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity></parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity></root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.MasterData.TSK_MS.MSModel.DataModel.TaskContextDefinitionUserField</name>
+      <shortname>TaskContextDefinitionUserField</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity>Siemens.SimaticIT.MasterData.TSK_MS.MSModel.DataModel.TaskContextDefinition</parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity>Siemens.SimaticIT.MasterData.TSK_MS.MSModel.DataModel.TaskContextDefinition</root_entity>
+      <base_entity></base_entity>
+    </wr_entity></wr_entities>
+    <wr_facets></wr_facets>
+  </artifacts>
+  <security>
+    <roles></roles>
+  </security>
+  <runtime>
+    <event_subscriptions></event_subscriptions>
+    <handlergroups></handlergroups>
+  </runtime>
+</projectmanifest>

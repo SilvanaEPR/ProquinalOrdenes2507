@@ -1,0 +1,56 @@
+<div class="unauth-message" ng-if="!homeCardCtrl.cards.length">
+    <h1>{{'common.unauthorize.title'| translate}}</h1>
+    <h6>{{'common.unauthorize.message'| translate}}</h6>
+</div>
+<div class="home-card-screen-container" ng-if="homeCardCtrl.homeType!=='single' && homeCardCtrl.cards.length">
+    <div class="home-card"
+         ng-repeat="card in homeCardCtrl.cards | orderBy : '+': true">
+        <sit-home-card options="card">
+        </sit-home-card>
+    </div>
+</div>
+<div class="single-runtime-page" ng-if="homeCardCtrl.homeType==='single' && homeCardCtrl.cards.length">
+    <div class="search-container">
+        <sit-generic-search sit-search-value=""
+                            sit-placeholder="{{'common.homePageWithSearch.placeholder'|translate}}"
+                            sit-change="homeCardCtrl.change"
+                            ng-click="homeCardCtrl.change" ng-autofocus="true"></sit-generic-search>
+    </div>
+    <div class="home-card-tile-container" ng-init="homeCardCtrl.singlePageLoadComplete()">
+        <div style="display:flex; align-items: center; justify-content: center; min-height: calc(100vh - 64px);" ng-if="!homeCardCtrl.isTilesSearchOn">
+            <div class="home-card-container" ng-if="!homeCardCtrl.isTilesSearchOn">
+                <div class="home-card" ng-repeat="card in homeCardCtrl.cards| orderBy : '+': true">
+                    <sit-home-card options="card">
+                    </sit-home-card>
+                </div>
+            </div>
+        </div>
+        <div class="home-tile-container" id="{{tileConfig.id}}" ng-repeat="tileConfig in homeCardCtrl.tileConfig" ng-if="!homeCardCtrl.isTilesSearchOn">
+            <div>
+                <span class="home-tile-heading">{{tileConfig.title}}</span>
+            </div>
+            <div class="home-tile-section">
+                <div class="home-tile" ng-repeat="tile in tileConfig.tiles">
+                    <sit-home-tile options="tile"></sit-home-tile>
+                </div>
+            </div>
+        </div>
+        <button class="pl-button-floating scroll-up-floating-button"
+                ng-if="homeCardCtrl.showMoveUpButton && !homeCardCtrl.isTilesSearchOn"
+                sit-mom-icon="homeCardCtrl.moveTopIcon"
+                ng-click="homeCardCtrl.scrollToTop()"></button>
+
+
+        <div class="home-tile-container" ng-if="homeCardCtrl.isTilesSearchOn">
+            <div>
+                <span class="home-tile-heading">{{'common.homePageWithSearch.searchResults' | translate}}</span>
+            </div>
+            <div class="home-tile-section">
+                <div class="home-tile" ng-repeat="tile in homeCardCtrl.tiles | filter: {title: homeCardCtrl.searchText}">
+                    <sit-home-tile options="tile"></sit-home-tile>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sections>
+  <Section engineeringLevel="LibraryFunctionalBlock" implementationName="Sampling" domainName="MasterData">
+    <!-- Default Characteristic Specification -->
+    <Entity type="Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.AttributiveCharacteristicSpecification">
+      <Property name="NId" kind="Plain" value="n/a" />
+      <Property name="UId" kind="Plain" value="n/a" />
+      <Property name="Name" kind="Plain" value="n/a" />
+      <Property name="Description" kind="Plain" value="n/a" />
+      <Property name="Revision" kind="Plain" value="n/a" />
+      <Property name="Type" kind="Plain" value="10" />
+      <Property name="Context" kind="Plain" value="10" />
+      <Property name="CriticalityNId" kind="Plain" value="Minor" />
+      <Property name="OKDescription" kind="Plain" value="n/a" />
+      <Property name="NOKDescription" kind="Plain" value="n/a" />
+    </Entity>
+    
+    <!-- Process Context Definition - PISampleDefinitionContext -->
+    <Entity type="Siemens.SimaticIT.MasterData.BPF_MS.MSModel.DataModel.ProcessContextDefinition">
+      <Property name="NId" kind="Plain" value="PISampleDefinitionContext" />
+      <Property name="Name" kind="Plain" value="PISampleDefinitionContext" />
+      <Property name="Description" kind="Plain" value="Defines the relevant information of Sample for quality execution." />
+      <Property name="ContextEntityType" kind="Plain" value="Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.DataModel.IWorkProcessContext" />
+      <Property name="ProcessDefinitions" kind="ManyToManyReference" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.MasterData.BPF_MS.MSModel.DataModel.ProcessContextDefinitionUserField">
+      <Property name="NId" kind="Plain" value="SampleDefinitionId" />
+      <Property name="UserFieldValue" kind="Plain" value="" />
+      <Property name="UserFieldType" kind="Plain" value="String" />
+      <Property name="ProcessContextDefinition" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.SimaticIT.MasterData.BPF_MS.MSModel.DataModel.ProcessContextDefinition">
+          <Property name="NId" kind="Plain" value="PISampleDefinitionContext" />
+        </LogicalKey>
+      </Property>
+    </Entity>
+    <Entity type="Siemens.SimaticIT.MasterData.BPF_MS.MSModel.DataModel.ProcessContextDefinitionUserField">
+      <Property name="NId" kind="Plain" value="SampleDefinitionName" />
+      <Property name="UserFieldValue" kind="Plain" value="" />
+      <Property name="UserFieldType" kind="Plain" value="String" />
+      <Property name="ProcessContextDefinition" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.SimaticIT.MasterData.BPF_MS.MSModel.DataModel.ProcessContextDefinition">
+          <Property name="NId" kind="Plain" value="PISampleDefinitionContext" />
+        </LogicalKey>
+      </Property>
+    </Entity>
+    <Entity type="Siemens.SimaticIT.MasterData.BPF_MS.MSModel.DataModel.ProcessContextDefinitionUserField">
+      <Property name="NId" kind="Plain" value="SampleDefinitionRevision" />
+      <Property name="UserFieldValue" kind="Plain" value="" />
+      <Property name="UserFieldType" kind="Plain" value="String" />
+      <Property name="ProcessContextDefinition" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.SimaticIT.MasterData.BPF_MS.MSModel.DataModel.ProcessContextDefinition">
+          <Property name="NId" kind="Plain" value="PISampleDefinitionContext" />
+        </LogicalKey>
+      </Property>
+    </Entity>
+    <Entity type="Siemens.SimaticIT.MasterData.BPF_MS.MSModel.DataModel.ProcessContextDefinitionUserField">
+      <Property name="NId" kind="Plain" value="SampleDefinitionDescription" />
+      <Property name="UserFieldValue" kind="Plain" value="" />
+      <Property name="UserFieldType" kind="Plain" value="String" />
+      <Property name="ProcessContextDefinition" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.SimaticIT.MasterData.BPF_MS.MSModel.DataModel.ProcessContextDefinition">
+          <Property name="NId" kind="Plain" value="PISampleDefinitionContext" />
+        </LogicalKey>
+      </Property>
+    </Entity>
+    <Entity type="Siemens.SimaticIT.MasterData.BPF_MS.MSModel.DataModel.ProcessContextDefinitionUserField">
+      <Property name="NId" kind="Plain" value="SampleDefinitionSampleSize" />
+      <Property name="UserFieldValue" kind="Plain" value="" />
+      <Property name="UserFieldType" kind="Plain" value="Int" />
+      <Property name="ProcessContextDefinition" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.SimaticIT.MasterData.BPF_MS.MSModel.DataModel.ProcessContextDefinition">
+          <Property name="NId" kind="Plain" value="PISampleDefinitionContext" />
+        </LogicalKey>
+      </Property>
+    </Entity>
+    <Entity type="Siemens.SimaticIT.MasterData.BPF_MS.MSModel.DataModel.ProcessContextDefinitionUserField">
+      <Property name="NId" kind="Plain" value="SampleDefinitionFrequency" />
+      <Property name="UserFieldValue" kind="Plain" value="" />
+      <Property name="UserFieldType" kind="Plain" value="String" />
+      <Property name="ProcessContextDefinition" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.SimaticIT.MasterData.BPF_MS.MSModel.DataModel.ProcessContextDefinition">
+          <Property name="NId" kind="Plain" value="PISampleDefinitionContext" />
+        </LogicalKey>
+      </Property>
+    </Entity>
+    <Entity type="Siemens.SimaticIT.MasterData.BPF_MS.MSModel.DataModel.ProcessContextDefinitionUserField">
+      <Property name="NId" kind="Plain" value="SampleDefinitionFrequencyValue" />
+      <Property name="UserFieldValue" kind="Plain" value="" />
+      <Property name="UserFieldType" kind="Plain" value="Decimal" />
+      <Property name="ProcessContextDefinition" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.SimaticIT.MasterData.BPF_MS.MSModel.DataModel.ProcessContextDefinition">
+          <Property name="NId" kind="Plain" value="PISampleDefinitionContext" />
+        </LogicalKey>
+      </Property>
+    </Entity>
+    <Entity type="Siemens.SimaticIT.MasterData.BPF_MS.MSModel.DataModel.ProcessContextDefinitionUserField">
+      <Property name="NId" kind="Plain" value="SampleDefinitionIsCurrent" />
+      <Property name="UserFieldValue" kind="Plain" value="" />
+      <Property name="UserFieldType" kind="Plain" value="Bool" />
+      <Property name="ProcessContextDefinition" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.SimaticIT.MasterData.BPF_MS.MSModel.DataModel.ProcessContextDefinition">
+          <Property name="NId" kind="Plain" value="PISampleDefinitionContext" />
+        </LogicalKey>
+      </Property>
+    </Entity>
+    <Entity type="Siemens.SimaticIT.MasterData.BPF_MS.MSModel.DataModel.ProcessContextDefinitionUserField">
+      <Property name="NId" kind="Plain" value="SampleDefinitionMaterialId" />
+      <Property name="UserFieldValue" kind="Plain" value="" />
+      <Property name="UserFieldType" kind="Plain" value="String" />
+      <Property name="ProcessContextDefinition" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.SimaticIT.MasterData.BPF_MS.MSModel.DataModel.ProcessContextDefinition">
+          <Property name="NId" kind="Plain" value="PISampleDefinitionContext" />
+        </LogicalKey>
+      </Property>
+    </Entity>
+    <Entity type="Siemens.SimaticIT.MasterData.BPF_MS.MSModel.DataModel.ProcessContextDefinitionUserField">
+      <Property name="NId" kind="Plain" value="SampleDefinitionMaterialRevision" />
+      <Property name="UserFieldValue" kind="Plain" value="" />
+      <Property name="UserFieldType" kind="Plain" value="String" />
+      <Property name="ProcessContextDefinition" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.SimaticIT.MasterData.BPF_MS.MSModel.DataModel.ProcessContextDefinition">
+          <Property name="NId" kind="Plain" value="PISampleDefinitionContext" />
+        </LogicalKey>
+      </Property>
+    </Entity>
+    <Entity type="Siemens.SimaticIT.MasterData.BPF_MS.MSModel.DataModel.ProcessContextDefinitionUserField">
+      <Property name="NId" kind="Plain" value="SampleDefinitionSampleType" />
+      <Property name="UserFieldValue" kind="Plain" value="" />
+      <Property name="UserFieldType" kind="Plain" value="String" />
+      <Property name="ProcessContextDefinition" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.SimaticIT.MasterData.BPF_MS.MSModel.DataModel.ProcessContextDefinition">
+          <Property name="NId" kind="Plain" value="PISampleDefinitionContext" />
+        </LogicalKey>
+      </Property>
+    </Entity>
+    <Entity type="Siemens.SimaticIT.MasterData.BPF_MS.MSModel.DataModel.ProcessContextDefinitionUserField">
+      <Property name="NId" kind="Plain" value="SampleDefinitionSampleQuantity" />
+      <Property name="UserFieldValue" kind="Plain" value="" />
+      <Property name="UserFieldType" kind="Plain" value="Decimal" />
+      <Property name="ProcessContextDefinition" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.SimaticIT.MasterData.BPF_MS.MSModel.DataModel.ProcessContextDefinition">
+          <Property name="NId" kind="Plain" value="PISampleDefinitionContext" />
+        </LogicalKey>
+      </Property>
+    </Entity>
+    <Entity type="Siemens.SimaticIT.MasterData.BPF_MS.MSModel.DataModel.ProcessContextDefinitionUserField">
+      <Property name="NId" kind="Plain" value="SampleDefinitionSampleQuantityUoM" />
+      <Property name="UserFieldValue" kind="Plain" value="" />
+      <Property name="UserFieldType" kind="Plain" value="String" />
+      <Property name="ProcessContextDefinition" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.SimaticIT.MasterData.BPF_MS.MSModel.DataModel.ProcessContextDefinition">
+          <Property name="NId" kind="Plain" value="PISampleDefinitionContext" />
+        </LogicalKey>
+      </Property>
+    </Entity>
+    <Entity type="Siemens.SimaticIT.MasterData.BPF_MS.MSModel.DataModel.ProcessContextDefinitionUserField">
+      <Property name="NId" kind="Plain" value="ProducedMTUId" />
+      <Property name="UserFieldValue" kind="Plain" value="" />
+      <Property name="UserFieldType" kind="Plain" value="String" />
+      <Property name="ProcessContextDefinition" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.SimaticIT.MasterData.BPF_MS.MSModel.DataModel.ProcessContextDefinition">
+          <Property name="NId" kind="Plain" value="PISampleDefinitionContext" />
+        </LogicalKey>
+      </Property>
+    </Entity>
+
+    <!-- Process Context Definition - PIInspectionDefinitionContext -->
+    <Entity type="Siemens.SimaticIT.MasterData.BPF_MS.MSModel.DataModel.ProcessContextDefinition">
+      <Property name="NId" kind="Plain" value="PIInspectionDefinitionContext" />
+      <Property name="Name" kind="Plain" value="PIInspectionDefinitionContext" />
+      <Property name="Description" kind="Plain" value="Defines the relevant information of inspection for quality execution." />
+      <Property name="ContextEntityType" kind="Plain" value="Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.DataModel.IWorkProcessContext" />
+      <Property name="ProcessDefinitions" kind="ManyToManyReference" />
+    </Entity>    
+    <Entity type="Siemens.SimaticIT.MasterData.BPF_MS.MSModel.DataModel.ProcessContextDefinitionUserField">
+      <Property name="NId" kind="Plain" value="InspectionDefinitionFrequency" />
+      <Property name="UserFieldValue" kind="Plain" value="" />
+      <Property name="UserFieldType" kind="Plain" value="String" />
+      <Property name="ProcessContextDefinition" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.SimaticIT.MasterData.BPF_MS.MSModel.DataModel.ProcessContextDefinition">
+          <Property name="NId" kind="Plain" value="PIInspectionDefinitionContext" />
+        </LogicalKey>
+      </Property>
+    </Entity>
+    <Entity type="Siemens.SimaticIT.MasterData.BPF_MS.MSModel.DataModel.ProcessContextDefinitionUserField">
+      <Property name="NId" kind="Plain" value="InspectionDefinitionFrequencyValue" />
+      <Property name="UserFieldValue" kind="Plain" value="" />
+      <Property name="UserFieldType" kind="Plain" value="Decimal" />
+      <Property name="ProcessContextDefinition" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.SimaticIT.MasterData.BPF_MS.MSModel.DataModel.ProcessContextDefinition">
+          <Property name="NId" kind="Plain" value="PIInspectionDefinitionContext" />
+        </LogicalKey>
+      </Property>
+    </Entity>    
+    <Entity type="Siemens.SimaticIT.MasterData.BPF_MS.MSModel.DataModel.ProcessContextDefinitionUserField">
+      <Property name="NId" kind="Plain" value="InspectionDefinitionMaterialId" />
+      <Property name="UserFieldValue" kind="Plain" value="" />
+      <Property name="UserFieldType" kind="Plain" value="String" />
+      <Property name="ProcessContextDefinition" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.SimaticIT.MasterData.BPF_MS.MSModel.DataModel.ProcessContextDefinition">
+          <Property name="NId" kind="Plain" value="PIInspectionDefinitionContext" />
+        </LogicalKey>
+      </Property>
+    </Entity>
+    <Entity type="Siemens.SimaticIT.MasterData.BPF_MS.MSModel.DataModel.ProcessContextDefinitionUserField">
+      <Property name="NId" kind="Plain" value="InspectionDefinitionMaterialRevision" />
+      <Property name="UserFieldValue" kind="Plain" value="" />
+      <Property name="UserFieldType" kind="Plain" value="String" />
+      <Property name="ProcessContextDefinition" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.SimaticIT.MasterData.BPF_MS.MSModel.DataModel.ProcessContextDefinition">
+          <Property name="NId" kind="Plain" value="PIInspectionDefinitionContext" />
+        </LogicalKey>
+      </Property>
+    </Entity>    
+    <Entity type="Siemens.SimaticIT.MasterData.BPF_MS.MSModel.DataModel.ProcessContextDefinitionUserField">
+      <Property name="NId" kind="Plain" value="InspectionDefinitionSampleQuantity" />
+      <Property name="UserFieldValue" kind="Plain" value="" />
+      <Property name="UserFieldType" kind="Plain" value="Decimal" />
+      <Property name="ProcessContextDefinition" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.SimaticIT.MasterData.BPF_MS.MSModel.DataModel.ProcessContextDefinition">
+          <Property name="NId" kind="Plain" value="PIInspectionDefinitionContext" />
+        </LogicalKey>
+      </Property>
+    </Entity>
+    <Entity type="Siemens.SimaticIT.MasterData.BPF_MS.MSModel.DataModel.ProcessContextDefinitionUserField">
+      <Property name="NId" kind="Plain" value="InspectionDefinitionSampleQuantityUoM" />
+      <Property name="UserFieldValue" kind="Plain" value="" />
+      <Property name="UserFieldType" kind="Plain" value="String" />
+      <Property name="ProcessContextDefinition" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.SimaticIT.MasterData.BPF_MS.MSModel.DataModel.ProcessContextDefinition">
+          <Property name="NId" kind="Plain" value="PIInspectionDefinitionContext" />
+        </LogicalKey>
+      </Property>
+    </Entity>
+    <Entity type="Siemens.SimaticIT.MasterData.BPF_MS.MSModel.DataModel.ProcessContextDefinitionUserField">
+      <Property name="NId" kind="Plain" value="InspectionDefinitionEquipment" />
+      <Property name="UserFieldValue" kind="Plain" value="" />
+      <Property name="UserFieldType" kind="Plain" value="String" />
+      <Property name="ProcessContextDefinition" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.SimaticIT.MasterData.BPF_MS.MSModel.DataModel.ProcessContextDefinition">
+          <Property name="NId" kind="Plain" value="PIInspectionDefinitionContext" />
+        </LogicalKey>
+      </Property>
+    </Entity>
+    <Entity type="Siemens.SimaticIT.MasterData.BPF_MS.MSModel.DataModel.ProcessContextDefinitionUserField">
+      <Property name="NId" kind="Plain" value="ProducedMTUId" />
+      <Property name="UserFieldValue" kind="Plain" value="" />
+      <Property name="UserFieldType" kind="Plain" value="String" />
+      <Property name="ProcessContextDefinition" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.SimaticIT.MasterData.BPF_MS.MSModel.DataModel.ProcessContextDefinition">
+          <Property name="NId" kind="Plain" value="PIInspectionDefinitionContext" />
+        </LogicalKey>
+      </Property>
+    </Entity>
+    <Entity type="Siemens.SimaticIT.MasterData.BPF_MS.MSModel.DataModel.ProcessContextDefinitionUserField">
+      <Property name="NId" kind="Plain" value="RuntimeContainerId" />
+      <Property name="UserFieldValue" kind="Plain" value="" />
+      <Property name="UserFieldType" kind="Plain" value="String" />
+      <Property name="ProcessContextDefinition" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.SimaticIT.MasterData.BPF_MS.MSModel.DataModel.ProcessContextDefinition">
+          <Property name="NId" kind="Plain" value="PIInspectionDefinitionContext" />
+        </LogicalKey>
+      </Property>
+    </Entity>
+    <!-- Added Recurring Time Based Frequency -->
+    <Entity type="Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.CharacteristicRepresentationFrequency">
+      <Property name="NId" kind="Plain" value="RecurringTimeBased" />
+      <Property name="Name" kind="Plain" value="Recurring Time Based" />
+      <Property name="Description" kind="Plain" value="The Inspection will be executed in a recurring manner in the specified time interval." />
+    </Entity>
+  </Section>
+ </Sections>
+

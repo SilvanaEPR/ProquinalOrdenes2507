@@ -1,0 +1,48 @@
+﻿
+<div class="label label-property-grid-control-readonly" ng-if="piXorCtrl.readOnly || piXorCtrl.ngReadonly">
+{{piXorCtrl.selectionEntityName.nid}}: {{piXorCtrl.selectionValue.nid}}
+</div>
+<ng-form class="form-group"
+         ng-if="!(piXorCtrl.readOnly || piXorCtrl.ngReadonly)"
+         name='selectXorForm'>
+
+    <div class='property-grid-input-group'
+         ng-class='((selectXorForm.$invalid && selectXorForm.$dirty) || (selectXorForm.$invalid && selectXorForm.$visited)) ? "validator-control-invalid" : "validator-control"'>
+        <span class="input-group-btn xor-select">
+            <sit-select ng-model='piXorCtrl.selectionEntityName'
+                        class="btn"
+                        sit-value="piXorCtrl.selectionEntityName"
+                        sit-change="piXorCtrl.onEntityChange"
+                        sit-options="piXorCtrl.options"
+                        sit-to-keep="piXorCtrl.toKeep"
+                        sit-to-display="piXorCtrl.toDisplay"
+                        style="width:100%; padding:0"
+                        ng-required='piXorCtrl.validation.required' />
+        </span>
+        <span class="input-group-btn xor-select" ng-if="!piXorCtrl.isRuntimeEntity">
+            <sit-select ng-model='piXorCtrl.selectionValue'
+                        class="btn"
+                        sit-value="piXorCtrl.selectionValue"
+                        sit-change="piXorCtrl.sitChange"
+                        sit-options="piXorCtrl.entityValueOptions"
+                        sit-to-keep="piXorCtrl.toKeep"
+                        sit-to-display="piXorCtrl.toDisplay"
+                        style="width:100%; padding:0"
+                        ng-required='piXorCtrl.validation.required' />
+        </span>
+        <span class="input-group-btn xor-select" ng-if="piXorCtrl.isRuntimeEntity">
+            <sit-pi-entity-browser ng-model='piXorCtrl.selectionValue'
+                        sit-dialog-table-template-uri = "piXorCtrl.dialogTemplateUri"
+                        sit-dialog-table-fields =  "piXorCtrl.fields"
+                        sit-dialog-server-data-options = "piXorCtrl.serverDataOptions"
+                        sit-selected-attribute-to-display = "piXorCtrl.attrToDisplay",
+                        sit-dialog-config = "piXorCtrl.dialogConfig"
+                        sit-value="piXorCtrl.selectionValue"  
+                        class="btn"                                            
+                        style="width:100%; padding:0"
+                        ng-required='piXorCtrl.validation.required' />
+        </span>
+        <input type="hidden" ng-model="piXorCtrl.selectionValue" ng-required="piXorCtrl.validation.required" sit-form-input-validator />
+    </div>
+
+</ng-form>

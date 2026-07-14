@@ -1,0 +1,120 @@
+﻿<style>
+    tr.visibilityData:hover {
+        background-color: #daecf0 !important;
+    }
+
+    #visibilityHeaderMaterial {
+        height: 24px !important;
+        margin-bottom: 0px !important;
+        border: 0 !important;
+        width: calc(100% - 1.5em);
+    }
+
+        #visibilityHeaderMaterial > th {
+            padding-bottom: 3px !important;
+        }
+
+    tr.visibilityHeaderMTU {
+        height: 24px !important;
+        background-color: #e6e6e6 !important;
+        border-top: 1px solid #dcdcdc !important;
+        border-right: 1px solid #dcdcdc !important;
+        border-left: 1px solid #dcdcdc !important;
+        border-bottom: 0 !important;
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+        border-collapse: separate;
+    }
+
+    .customTitle {
+        margin-left: 8px;
+        font-size: 24px;
+        line-height: 28.5px;
+    }
+
+    .titleContainer {
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+
+    .tableBody {
+        overflow-y: overlay !important;
+        width: calc(100% - 1.5em) !important;
+        border-top: 0px !important;
+    }
+
+</style>
+
+<table aria-describedby="sitOperationDetails" sit-table="sitOperationDetails" sit-config="vm.config" class="table" style="height:100%; margin-bottom: 0px;">
+    <thead>
+        <tr id="visibilityHeaderMaterial">
+            <th scope="col" style="width:26px"></th>
+            <th scope="col" sit-field="MaterialNId" title="{{vm.config.fields.MaterialNId.displayName}}">{{vm.config.fields.MaterialNId.displayName}}</th>
+            <th scope="col" sit-field="MaterialName" title="{{vm.config.fields.MaterialName.displayName}}">{{vm.config.fields.MaterialName.displayName}}</th>
+            <th scope="col" sit-field="MaterialRevision" title="{{vm.config.fields.Materialrevision.displayName}}">{{vm.config.fields.MaterialRevision.displayName}}</th>
+            <th ng-hide="vm.isHideColumns" scope="col" sit-field="Sequence" title="{{vm.config.fields.Sequence.displayName}}">{{vm.config.fields.Sequence.displayName}}</th>
+            <th scope="col" sit-field="QuantityRequired" title="{{vm.config.fields.QuantityRequired.displayName}}">{{vm.config.fields.QuantityRequired.displayName}}</th>
+            <th scope="col" sit-field="QuantityActual" title="{{vm.config.fields.QuantityActual.displayName}}">{{vm.config.fields.QuantityActual.displayName}}</th>
+            <th scope="col" sit-field="UoM" title="{{vm.config.fields.UoM.displayName}}">{{vm.config.fields.UoM.displayName}}</th>
+            <th scope="col" sit-field="Direction" title="{{vm.config.fields.Direction.displayName}}">{{vm.config.fields.Direction.displayName}}</th>
+            <th scope="col" sit-field="Usage" title="{{vm.config.fields.Usage.displayName}}">{{vm.config.fields.Usage.displayName}}</th>
+            <th ng-hide="vm.isHideColumns" scope="col" sit-field="RequirementTag" title="{{vm.config.fields.RequirementTag.displayName}}">{{vm.config.fields.RequirementTag.displayName}}</th>
+            <th ng-hide="vm.isHideColumns" scope="col" sit-field="ActualTag" title="{{vm.config.fields.ActualTag.displayName}}">{{vm.config.fields.ActualTag.displayName}}</th>
+        </tr>
+    </thead>
+    <tbody class="tableBody">
+        <tr ng-if="vm.config.data.length == 0" class="titleContainer">
+            <td>
+                <span class="customTitle"> {{'picore.labels.noData'|translate}} </span>
+            </td>
+        </tr>
+
+        <tr ng-repeat-start="matRow in vm.config.data" class="visibilityData" style="height:32px;" ng-style="matRow.expanded ? {'border-bottom':'none'}:{'border-bottom':'1px solid #dcdcdc'}">
+            <td style="width:26px">
+                <em ng-if="matRow.LotsMTUs[0] && matRow.expanded" ng-click="matRow.expanded=false" sit-mom-icon="{path:'common/icons/miscDownArrow16.svg', size: '16px'}" style="padding:inherit"></em>
+                <em ng-if="matRow.LotsMTUs[0] && !matRow.expanded" ng-click="matRow.expanded=true" sit-mom-icon="{path:'common/icons/miscRightArrow16.svg', size: '16px'}" style="padding:inherit"></em>
+            </td>
+            <td sit-field="MaterialNId" title="{{matRow.MaterialNId}} {{matRow.MaterialRevision}}">{{matRow.MaterialNId}} {{matRow.MaterialRevision}}</td>
+            <td sit-field="MaterialName" title="{{matRow.MaterialName}}">{{matRow.MaterialName}}</td>
+            <td sit-field="MaterialRevision" title="{{matRow.MaterialRevision}}">{{matRow.MaterialRevision}}</td>
+            <td ng-hide="vm.isHideColumns" sit-field="Sequence" title="{{matRow.Sequence}}">{{matRow.Sequence}}</td>
+            <td sit-field="QuantityRequired" title="{{matRow.QuantityRequired}}">{{matRow.QuantityRequired}}</td>
+            <td sit-field="QuantityActual" title="{{matRow.QuantityActual}}">{{matRow.QuantityActual}}</td>
+            <td sit-field="UoM" title="{{matRow.UoM}}">{{matRow.UoM}}</td>
+            <td sit-field="Direction" title="{{matRow.Direction}}">{{matRow.Direction}}</td>
+            <td sit-field="Usage" title="{{matRow.Usage}}">{{matRow.Usage}}</td>
+            <td ng-hide="vm.isHideColumns" sit-field="RequirementTag" title="{{matRow.RequirementTag}}">{{matRow.RequirementTag}}</td>
+            <td ng-hide="vm.isHideColumns" sit-field="RequirementTag" title="{{matRow.ActualTag}}">{{matRow.ActualTag}}</td>
+        </tr>
+        <tr sit-freez ng-repeat-end ng-show="matRow.expanded">
+            <td style="padding-bottom: 16px">
+                <table aria-describedby="HeaderMTU" style="margin-left:32px; margin-right:32px">
+                    <thead>
+                        <tr class="visibilityHeaderMTU">
+                            <th scope="col" style="width:26px"></th>
+                            <th scope="col">{{'picore.headers.tables.MTUNId'|translate}}</th>
+                            <th scope="col">{{'picore.headers.tables.requiredQty'|translate}}</th>
+                            <th scope="col">{{'picore.headers.tables.actualQty'|translate}}</th>
+                            <th scope="col">{{'picore.headers.tables.uoM'|translate}}</th>
+                            <th scope="col">{{'picore.headers.tables.materialLotNId'|translate}}</th>
+                            <th scope="col">{{'picore.headers.tables.equipmentNId'|translate}}</th>
+                            <th scope="col">{{'picore.headers.tables.MTUAggregateNId'|translate}}</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr sit-freez ng-repeat="mtuRow in matRow.LotsMTUs" class="visibilityData" style="height:32px;width: calc(100% - 8px);" ng-style="$last ? {'border-bottom':'none'} : {}">
+                            <td style="width:26px"></td>
+                            <td title="{{mtuRow.MTUNId}}">{{mtuRow.MTUNId}}</td>
+                            <td title="{{mtuRow.QuantityRequired}}">{{mtuRow.QuantityRequired}}</td>
+                            <td title="{{mtuRow.QuantityActual}}">{{mtuRow.QuantityActual}}</td>
+                            <td title="{{mtuRow.UoMNId}}">{{mtuRow.UoMNId}}</td>
+                            <td title="{{mtuRow.MaterialLotNId}}">{{mtuRow.MaterialLotNId}}</td>
+                            <td title="{{mtuRow.EquipmentNId}}">{{mtuRow.EquipmentNId}}</td>
+                            <td title="{{mtuRow.MTUAggregateNId}}">{{mtuRow.MTUAggregateNId}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </tbody>
+</table>

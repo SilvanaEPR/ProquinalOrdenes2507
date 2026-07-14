@@ -1,0 +1,1682 @@
+﻿<?xml version="1.0" encoding="utf-8"?><projectmanifest>
+  <header>
+    <manifestversion>11.0</manifestversion>
+    <platformversion>11.0</platformversion>
+    <type>Library</type>
+    <name>Siemens.SimaticIT.CHR_MS</name>
+    <shortname>CHR_MS</shortname>
+    <description>Characteristic Management</description>
+    <version>10.04.00</version>
+    <companyname>Siemens.SimaticIT</companyname>
+    <author>Siemens.SimaticIT</author>
+    <hash>7k8d9gVGJwMGB/kthItZPfLPfTCz2dmfbN2CvtUc/Ds=</hash>
+    <modelHash>HL8mnR9qXu1P8a2I0EE9W1tcAOcf3uLG110dhHJR+so=</modelHash>
+    <modelHashSections>
+      <modelHashSection>
+        <name>projectConfigModelHash</name>
+        <hash>pWzj4DNN463MqXJgaKcvQqUbsWRhX8V9wEJeUWUNH3M=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>dataModelHash</name>
+        <hash>YgWrKq9+HS3gKKn9DeS9Ra82xEjEc/0LX83KZXvJB/M=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>commandModelHash</name>
+        <hash>IcAwli5RLFamftDarTRHM14VWicW4G6NHT+ys/sKlMA=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>aliasModelHash</name>
+        <hash>cdWtFof25lUoH+wgMZZEtJGL5k7aBVT7Ae5HtNcbGxs=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>eventModelHash</name>
+        <hash>qhg75MAQ01WdYmrBChutlSWgD96XF0NCQfTfQmxVtzw=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>typeModelHash</name>
+        <hash>gaUueaj87+5C3ouVBLX173Y0uw28hr5gCYY8e43hkGc=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>securityModelHash</name>
+        <hash>cdWtFof25lUoH+wgMZZEtJGL5k7aBVT7Ae5HtNcbGxs=</hash>
+      </modelHashSection>
+    </modelHashSections>
+    <uiHash>na</uiHash>
+    <canbeextended>false</canbeextended>
+    <domain>MasterData</domain>
+  </header>
+  <reference>
+    <functionalblocks>
+      <functionalblock>
+        <name>Siemens.SimaticIT.UDM_RF</name>
+        <version>07.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.OpcenterEX.FN.DEF_MS</name>
+        <version>05.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.ES_MS</name>
+        <version>05.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.TSK_MS</name>
+        <version>09.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.BPF_MS</name>
+        <version>06.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.MAT_MS</name>
+        <version>05.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+    </functionalblocks>
+    <extensions><extension>
+      <name>Siemens.SimaticIT.CHR_MS</name>
+    </extension></extensions>
+  </reference>
+  <artifacts>
+    <commands><command>
+                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.CreateCharacteristicSpecification</name>
+                        <shortname>CreateCharacteristicSpecification</shortname>
+                        <description>Creates a Characteristic Specification.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.CreateCharacteristicSpecificationHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.CHR_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.CreateAttributiveCharacteristicSpecification</name>
+                        <shortname>CreateAttributiveCharacteristicSpecification</shortname>
+                        <description>Creates an Attributive Characteristic Specification.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.CreateAttributiveCharacteristicSpecificationHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.CHR_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.CreateVariableCharacteristicSpecification</name>
+                        <shortname>CreateVariableCharacteristicSpecification</shortname>
+                        <description>Creates a Variable Characteristic Specification.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.CreateVariableCharacteristicSpecificationHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.CHR_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.UpdateCharacteristicSpecification</name>
+                        <shortname>UpdateCharacteristicSpecification</shortname>
+                        <description>Updates the Characteristic Specification.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.UpdateCharacteristicSpecificationHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.CHR_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.UpdateAttributiveCharacteristicSpecification</name>
+                        <shortname>UpdateAttributiveCharacteristicSpecification</shortname>
+                        <description>Updates the Characteristic Specification.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.UpdateAttributiveCharacteristicSpecificationHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.CHR_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.UpdateVariableCharacteristicSpecification</name>
+                        <shortname>UpdateVariableCharacteristicSpecification</shortname>
+                        <description>Updates the Variable Characteristic Specification.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.UpdateVariableCharacteristicSpecificationHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.CHR_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.DeleteCharacteristicSpecification</name>
+                        <shortname>DeleteCharacteristicSpecification</shortname>
+                        <description>Deletes a list of Characteristic Specifications.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.DeleteCharacteristicSpecificationHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.CHR_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.CreateCriticality</name>
+                        <shortname>CreateCriticality</shortname>
+                        <description>Creates a Criticality.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.CreateCriticalityHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.CHR_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.CreateVisualCharacteristicSpecification</name>
+                        <shortname>CreateVisualCharacteristicSpecification</shortname>
+                        <description>Creates a Visual Characteristic Specification.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.CreateVisualCharacteristicSpecificationHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.CHR_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.UpdateCharacteristicFailureAssociation</name>
+                        <shortname>UpdateCharacteristicFailureAssociation</shortname>
+                        <description>Updates an existing Characteristic Failure Association.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.UpdateCharacteristicFailureAssociationHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.CHR_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.UpdateVisualCharacteristicSpecification</name>
+                        <shortname>UpdateVisualCharacteristicSpecification</shortname>
+                        <description>Updates the Visual Characteristic Specification.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.UpdateVisualCharacteristicSpecificationHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.CHR_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.CreateCharacteristicRepresentation</name>
+                        <shortname>CreateCharacteristicRepresentation</shortname>
+                        <description>Creates a new Characteristic Representation.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.CreateCharacteristicRepresentationHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.CHR_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.DeleteCharacteristicRepresentation</name>
+                        <shortname>DeleteCharacteristicRepresentation</shortname>
+                        <description>Deletes a list of Characteristic Representations.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.DeleteCharacteristicRepresentationHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.CHR_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.UpdateCharacteristicRepresentation</name>
+                        <shortname>UpdateCharacteristicRepresentation</shortname>
+                        <description>Updates an existing Characteristic Failure Association.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.UpdateCharacteristicRepresentationHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.CHR_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.DeleteCharacteristicFailureAssociation</name>
+                        <shortname>DeleteCharacteristicFailureAssociation</shortname>
+                        <description>Deletes a list of Characteristic Failure Associations.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.DeleteCharacteristicFailureAssociationHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.CHR_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.AssociateFailuresWithCharacteristicSpecification</name>
+                        <shortname>AssociateFailuresWithCharacteristicSpecification</shortname>
+                        <description></description>
+                        <assembly>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.AssociateFailuresWithCharacteristicSpecificationHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.CHR_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.DisassociateFailuresFromCharacteristicSpecification</name>
+                        <shortname>DisassociateFailuresFromCharacteristicSpecification</shortname>
+                        <description>Disassociates a list of Failures.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.DisassociateFailuresFromCharacteristicSpecificationHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.CHR_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.CreateCharacteristicRepresentationRevision</name>
+                        <shortname>CreateCharacteristicRepresentationRevision</shortname>
+                        <description>Creates a new revision of the Characteristic Representation.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.CreateCharacteristicRepresentationRevisionHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.CHR_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.SetCurrentCharacteristicRepresentation</name>
+                        <shortname>SetCurrentCharacteristicRepresentation</shortname>
+                        <description>Sets the Characteristic Representation as the one to be used.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.SetCurrentCharacteristicRepresentationHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.CHR_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.LockCharacteristicRepresentation</name>
+                        <shortname>LockCharacteristicRepresentation</shortname>
+                        <description>Locks the Characteristic Representation.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.LockCharacteristicRepresentationHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.CHR_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.UnlockCharacteristicRepresentation</name>
+                        <shortname>UnlockCharacteristicRepresentation</shortname>
+                        <description>Unlocks the Characteristic Representation.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.UnlockCharacteristicRepresentationHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.CHR_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.UnsetCurrentCharacteristicRepresentation</name>
+                        <shortname>UnsetCurrentCharacteristicRepresentation</shortname>
+                        <description>Unsets the **Current** setting for a Characteristic Representation.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.UnsetCurrentCharacteristicRepresentationHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.CHR_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.AssignESScenarioToCharacteristicRepresentation</name>
+                        <shortname>AssignESScenarioToCharacteristicRepresentation</shortname>
+                        <description>Creates a CharacteristicRepresentation_ESScenario entity representing the association between Characteristic Representation and Electronic Signature Scenario.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.AssignESScenarioToCharacteristicRepresentationHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.CHR_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.DeleteESScenarioFromCharacteristicRepresentation</name>
+                        <shortname>DeleteESScenarioFromCharacteristicRepresentation</shortname>
+                        <description>Deletes the CharacteristicRepresentation_ESScenario that contains information on the Electronic Signature Scenario assigned to the Characteristic Representation.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.DeleteESScenarioFromCharacteristicRepresentationHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.CHR_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.CopyCharacteristicRepresentationRevision</name>
+                        <shortname>CopyCharacteristicRepresentationRevision</shortname>
+                        <description>Copies a Characteristic Represetntation Revision.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.CopyCharacteristicRepresentationRevisionHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.CHR_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.CreateBillOfQuality</name>
+                        <shortname>CreateBillOfQuality</shortname>
+                        <description>Creates the Bill of Quality (also known as Inspection Master Plan).</description>
+                        <assembly>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.CreateBillOfQualityHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.CHR_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.UpdateBillOfQuality</name>
+                        <shortname>UpdateBillOfQuality</shortname>
+                        <description>Updates the properties of the Bill of Quality.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.UpdateBillOfQualityHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.CHR_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.DeleteBillOfQuality</name>
+                        <shortname>DeleteBillOfQuality</shortname>
+                        <description>Deletes the Bill of Quality.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.DeleteBillOfQualityHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.CHR_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.CreateInspectionOperation</name>
+                        <shortname>CreateInspectionOperation</shortname>
+                        <description>Creates an Inspection Operation.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.CreateInspectionOperationHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.CHR_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.UpdateInspectionOperation</name>
+                        <shortname>UpdateInspectionOperation</shortname>
+                        <description>Updates an Inspection Operation.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.UpdateInspectionOperationHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.CHR_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.DeleteInspectionOperation</name>
+                        <shortname>DeleteInspectionOperation</shortname>
+                        <description>Deletes an Inspection Operation.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.DeleteInspectionOperationHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.CHR_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.AssociateCharacteristicRepresentationsToInspectionOperation</name>
+                        <shortname>AssociateCharacteristicRepresentationsToInspectionOperation</shortname>
+                        <description>Associates one or more Characteristic Representations (also called Inspection Definitions) to an Inspection Operation.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.AssociateCharacteristicRepresentationsToInspectionOperationHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.CHR_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.DisassociateCharacteristicRepresentationsFromInspectionOperation</name>
+                        <shortname>DisassociateCharacteristicRepresentationsFromInspectionOperation</shortname>
+                        <description>Removes the association between one or more Characteristic Representations (also called Inspection Definitions) and an Inspection Operation.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.DisassociateCharacteristicRepresentationsFromInspectionOperationHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.CHR_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.AssociateReferencedMaterialsToCharacteristicRepresentation</name>
+                        <shortname>AssociateReferencedMaterialsToCharacteristicRepresentation</shortname>
+                        <description>Associates one or more Materials to a Characteristic Representation.  These Materials will be used as reference during the execution of a Quality Inspection. **Note** This command does not verify if the Material is also available in the system.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.AssociateReferencedMaterialsToCharacteristicRepresentationHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.CHR_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.DisassociateReferencedMaterialsFromCharacteristicRepresentation</name>
+                        <shortname>DisassociateReferencedMaterialsFromCharacteristicRepresentation</shortname>
+                        <description>Removes the association between one or more referenced Materials and a Characteristic Representation.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.DisassociateReferencedMaterialsFromCharacteristicRepresentationHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.CHR_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.AssociateReferencedEquipmentConfigurationsToCharacteristicRepresentation</name>
+                        <shortname>AssociateReferencedEquipmentConfigurationsToCharacteristicRepresentation</shortname>
+                        <description>Associates one or more pieces of Equipment to a Characteristic Representation. These pieces of Equipment will be used as reference during the execution of a Quality Inspection. **Note** This command does not verify if Equipment is also available in the system.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.AssociateReferencedEquipmentConfigurationsToCharacteristicRepresentationHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.CHR_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.DisassociateReferencedEquipmentConfigurationsFromCharacteristicRepresentation</name>
+                        <shortname>DisassociateReferencedEquipmentConfigurationsFromCharacteristicRepresentation</shortname>
+                        <description>Removes the association between one or more referenced pieces of Equipment and a Characteristic Representation.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.DisassociateReferencedEquipmentConfigurationsFromCharacteristicRepresentationHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.CHR_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.AssociateInspectionOperationsWithBillOfQuality</name>
+                        <shortname>AssociateInspectionOperationsWithBillOfQuality</shortname>
+                        <description>Associates multiple Inspection Operations to one Bill of Quality.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.AssociateInspectionOperationsWithBillOfQualityHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.CHR_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.DiassociateInspectionOperationsFromBillOfQuality</name>
+                        <shortname>DiassociateInspectionOperationsFromBillOfQuality</shortname>
+                        <description>Diassociates or delete the link between Inspection Operations and BillOfQuality.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.DiassociateInspectionOperationsFromBillOfQualityHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.CHR_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.CreateInspectionOperationRevision</name>
+                        <shortname>CreateInspectionOperationRevision</shortname>
+                        <description>Creates a new revision of the Inspection Operation.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.CreateInspectionOperationRevisionHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.CHR_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.SetInspectionOperationRevisionCurrent</name>
+                        <shortname>SetInspectionOperationRevisionCurrent</shortname>
+                        <description>Sets the Inspection Operation as the one to be used.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.SetInspectionOperationRevisionCurrentHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.CHR_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.UnsetInspectionOperationRevisionCurrent</name>
+                        <shortname>UnsetInspectionOperationRevisionCurrent</shortname>
+                        <description>Unsets the **Current** setting for an Inspection Operation.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.UnsetInspectionOperationRevisionCurrentHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.CHR_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.CopyInspectionOperationRevision</name>
+                        <shortname>CopyInspectionOperationRevision</shortname>
+                        <description>Creates a copy of an Inspection Operation revision.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.CopyInspectionOperationRevisionHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.CHR_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.CreateBillOfQualityRevision</name>
+                        <shortname>CreateBillOfQualityRevision</shortname>
+                        <description>Creates a new revision of the Bill Of Quality.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.CreateBillOfQualityRevisionHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.CHR_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.SetBillOfQualityRevisionCurrent</name>
+                        <shortname>SetBillOfQualityRevisionCurrent</shortname>
+                        <description>Sets the Bill Of Quality as the one to be used.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.SetBillOfQualityRevisionCurrentHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.CHR_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.UnsetBillOfQualityRevisionCurrent</name>
+                        <shortname>UnsetBillOfQualityRevisionCurrent</shortname>
+                        <description>Unsets the **Current** setting for a Bill Of Quality.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.UnsetBillOfQualityRevisionCurrentHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.CHR_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.CopyBillOfQualityRevision</name>
+                        <shortname>CopyBillOfQualityRevision</shortname>
+                        <description></description>
+                        <assembly>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.CopyBillOfQualityRevisionHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.CHR_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.AssociateProcessDefinitionToInspectionOperation</name>
+                        <shortname>AssociateProcessDefinitionToInspectionOperation</shortname>
+                        <description>Associates the Process Definition to an Inspection Operation.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.AssociateProcessDefinitionToInspectionOperationHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.CHR_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.DisassociateProcessDefinitionFromInspectionOperation</name>
+                        <shortname>DisassociateProcessDefinitionFromInspectionOperation</shortname>
+                        <description>Disassociates the Process Definition from an Inspection Operation.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.DisassociateProcessDefinitionFromInspectionOperationHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.CHR_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.CreateControlMethod</name>
+                        <shortname>CreateControlMethod</shortname>
+                        <description>Creates a new Control Method.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.CreateControlMethodHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.CHR_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.UpdateControlMethod</name>
+                        <shortname>UpdateControlMethod</shortname>
+                        <description>Updates an existing Control Method.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.UpdateControlMethodHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.CHR_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.DeleteControlMethod</name>
+                        <shortname>DeleteControlMethod</shortname>
+                        <description>Deletes a list of existing Control Methods.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.DeleteControlMethodHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.CHR_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.LockControlMethod</name>
+                        <shortname>LockControlMethod</shortname>
+                        <description>Locks a Control Method.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.LockControlMethodHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.CHR_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.UnlockControlMethod</name>
+                        <shortname>UnlockControlMethod</shortname>
+                        <description>Unlocks a Control Method.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.UnlockControlMethodHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.CHR_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.SetControlMethodRevisionCurrent</name>
+                        <shortname>SetControlMethodRevisionCurrent</shortname>
+                        <description>Sets a Control Method Revision to **Current**.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.SetControlMethodRevisionCurrentHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.CHR_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.UnsetControlMethodRevisionCurrent</name>
+                        <shortname>UnsetControlMethodRevisionCurrent</shortname>
+                        <description>Unsets the **Current** setting for a Control Method Revision.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.UnsetControlMethodRevisionCurrentHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.CHR_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.CreateControlMethodRevision</name>
+                        <shortname>CreateControlMethodRevision</shortname>
+                        <description>Creates a new revision of the Control Method.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.CreateControlMethodRevisionHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.CHR_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.CopyControlMethodRevision</name>
+                        <shortname>CopyControlMethodRevision</shortname>
+                        <description>Copies a Control Method Revision.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.CopyControlMethodRevisionHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.CHR_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command></commands>
+    <commandActions><commandAction>
+                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.CheckReferencedMaterialUoMCompatibilityHandlerShell</name>
+                        <shortname>CheckReferencedMaterialUoMCompatibilityHandlerShell</shortname>
+                        <description>Checks if the UoM of Referenced Material is compatible with UoM of Sample Quantity, when linking the Referenced Material with Inspection Definition.</description>
+                        <assembly>Siemens.SimaticIT.CHR_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <target_cpu>AnyCPU</target_cpu>
+                        <targetframework>netstandard2.0</targetframework>
+                        <command>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.AssociateReferencedMaterialsToCharacteristicRepresentation</command>
+                        <type>PreCheck</type>
+                        <is_enabled>true</is_enabled>
+                        <alias>CheckReferencedMaterialUoMCompatibility</alias>
+                </commandAction><commandAction>
+                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.CheckSampleSizeInVisualCharOnCreateCharRepresHandlerShell</name>
+                        <shortname>CheckSampleSizeInVisualCharOnCreateCharRepresHandlerShell</shortname>
+                        <description>Checks that the sample size in the Visual Characteristic is equal to 1.</description>
+                        <assembly>Siemens.SimaticIT.CHR_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <target_cpu>AnyCPU</target_cpu>
+                        <targetframework>netstandard2.0</targetframework>
+                        <command>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.CreateCharacteristicRepresentation</command>
+                        <type>PreCheck</type>
+                        <is_enabled>true</is_enabled>
+                        <alias>CheckSampleSizeInVisualCharOnCreateCharRepres</alias>
+                </commandAction><commandAction>
+                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.CheckSampleSizeInVisualCharOnUpdateCharRepresHandlerShell</name>
+                        <shortname>CheckSampleSizeInVisualCharOnUpdateCharRepresHandlerShell</shortname>
+                        <description>Checks that the sample size in the Visual Characteristic is equal to 1.</description>
+                        <assembly>Siemens.SimaticIT.CHR_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <target_cpu>AnyCPU</target_cpu>
+                        <targetframework>netstandard2.0</targetframework>
+                        <command>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.UpdateCharacteristicRepresentation</command>
+                        <type>PreCheck</type>
+                        <is_enabled>true</is_enabled>
+                        <alias>CheckSampleSizeInVisualCharOnUpdateCharRepres</alias>
+                </commandAction><commandAction>
+                        <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.CheckNotLinkedToCharacteristicRepresentationHandlerShell</name>
+                        <shortname>CheckNotLinkedToCharacteristicRepresentationHandlerShell</shortname>
+                        <description>Checks that the Control Method is not linked to any Characteristic Representation.</description>
+                        <assembly>Siemens.SimaticIT.CHR_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <target_cpu>AnyCPU</target_cpu>
+                        <targetframework>netstandard2.0</targetframework>
+                        <command>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.DeleteControlMethod</command>
+                        <type>PreCheck</type>
+                        <is_enabled>true</is_enabled>
+                        <alias>CheckNotLinkedToCharacteristicRepresentation</alias>
+                </commandAction></commandActions>
+    <events></events>
+    <event_handlers><event_handler>
+<name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Events.UnassignESScenarioFromCharacteristicRepresentationShell</name>
+<assembly>Siemens.SimaticIT.CHR_MS.EventHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+<event_name>Siemens.SimaticIT.MasterData.ES_MS.MSModel.Events.ScenarioConfigurationDeleted</event_name>
+<target_cpu>AnyCPU</target_cpu>
+<targetframework>netstandard2.0</targetframework>
+<dependencies></dependencies>
+</event_handler></event_handlers>
+    <signals></signals>
+    <readingFunctions></readingFunctions>
+    <entities><entity>
+      <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.ReadingModel.CharacteristicSpecification</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.ReadingModel.Criticality</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.ReadingModel.CharacteristicFailureAssociation</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.ReadingModel.CharacteristicRepresentation</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.ReadingModel.FailureReference</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.ReadingModel.CharacteristicRepresentation_ESScenario</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.ReadingModel.CharacteristicRepresentationFrequency</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.ReadingModel.BillOfQuality</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.ReadingModel.InspectionOperation</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.ReadingModel.CharacteristicRepresentationReferencedMaterial</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.ReadingModel.CharacteristicRepresentationReferencedEquipment</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.ReadingModel.BoQInspectionOperationLink</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.ReadingModel.InspectionOperationProcessDefintionLink</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.ReadingModel.CharacteristicSpecificationType</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.ReadingModel.ChartType</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.ReadingModel.IndustryRule</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.ReadingModel.ControlMethod</name>
+      <securable>true</securable>
+    </entity></entities>
+    <datamodels><datamodel>
+      <assembly>Siemens.SimaticIT.MasterData.CHR_MS.MSModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>WR</mode>
+      <domain>MasterData</domain>
+    </datamodel><datamodel>
+      <assembly>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.ReadingModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>RD</mode>
+      <domain>MasterData</domain>
+    </datamodel><datamodel>
+      <assembly>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Types, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>WR</mode>
+      <domain>MasterData</domain>
+    </datamodel><datamodel>
+      <assembly>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Types.ReadingModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>RD</mode>
+      <domain>MasterData</domain>
+    </datamodel></datamodels>
+    <externaldatamodels></externaldatamodels>
+    <appdatamodels></appdatamodels>
+    <uimodules></uimodules>
+    <uicomponents></uicomponents>
+    <wr_entities><wr_entity>
+      <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.CharacteristicSpecification</name>
+      <shortname>CharacteristicSpecification</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity></parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity></root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.AttributiveCharacteristicSpecification</name>
+      <shortname>AttributiveCharacteristicSpecification</shortname>
+      <haslogicalkey>false</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity></parententity>
+      <derivefromentity>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.CharacteristicSpecification</derivefromentity>
+      <root_entity></root_entity>
+      <base_entity>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.CharacteristicSpecification</base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.VariableCharacteristicSpecification</name>
+      <shortname>VariableCharacteristicSpecification</shortname>
+      <haslogicalkey>false</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity></parententity>
+      <derivefromentity>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.CharacteristicSpecification</derivefromentity>
+      <root_entity></root_entity>
+      <base_entity>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.CharacteristicSpecification</base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.VisualCharacteristicSpecification</name>
+      <shortname>VisualCharacteristicSpecification</shortname>
+      <haslogicalkey>false</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity></parententity>
+      <derivefromentity>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.CharacteristicSpecification</derivefromentity>
+      <root_entity></root_entity>
+      <base_entity>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.CharacteristicSpecification</base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.Criticality</name>
+      <shortname>Criticality</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity></parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity></root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.CharacteristicFailureAssociation</name>
+      <shortname>CharacteristicFailureAssociation</shortname>
+      <haslogicalkey>false</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.CharacteristicSpecification</parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.CharacteristicSpecification</root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.CharacteristicRepresentation</name>
+      <shortname>CharacteristicRepresentation</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity></parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity></root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.FailureReference</name>
+      <shortname>FailureReference</shortname>
+      <haslogicalkey>false</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.CharacteristicSpecification</parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.CharacteristicSpecification</root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.CharacteristicRepresentation_ESScenario</name>
+      <shortname>CharacteristicRepresentation_ESScenario</shortname>
+      <haslogicalkey>false</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity></parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity></root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.CharacteristicRepresentationFrequency</name>
+      <shortname>CharacteristicRepresentationFrequency</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity></parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity></root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.BillOfQuality</name>
+      <shortname>BillOfQuality</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity></parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity></root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.InspectionOperation</name>
+      <shortname>InspectionOperation</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity></parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity></root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.CharacteristicRepresentationReferencedMaterial</name>
+      <shortname>CharacteristicRepresentationReferencedMaterial</shortname>
+      <haslogicalkey>false</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.CharacteristicRepresentation</parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.CharacteristicRepresentation</root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.CharacteristicRepresentationReferencedEquipment</name>
+      <shortname>CharacteristicRepresentationReferencedEquipment</shortname>
+      <haslogicalkey>false</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.CharacteristicRepresentation</parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.CharacteristicRepresentation</root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.BoQInspectionOperationLink</name>
+      <shortname>BoQInspectionOperationLink</shortname>
+      <haslogicalkey>false</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.BillOfQuality</parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.BillOfQuality</root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.InspectionOperationProcessDefintionLink</name>
+      <shortname>InspectionOperationProcessDefintionLink</shortname>
+      <haslogicalkey>false</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.InspectionOperation</parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.InspectionOperation</root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.CharacteristicSpecificationType</name>
+      <shortname>CharacteristicSpecificationType</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity></parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity></root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.ChartType</name>
+      <shortname>ChartType</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity></parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity></root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.IndustryRule</name>
+      <shortname>IndustryRule</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity></parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity></root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.ControlMethod</name>
+      <shortname>ControlMethod</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity></parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity></root_entity>
+      <base_entity></base_entity>
+    </wr_entity></wr_entities>
+    <wr_facets></wr_facets>
+  </artifacts>
+  <security>
+    <roles></roles>
+  </security>
+  <runtime>
+    <event_subscriptions></event_subscriptions>
+    <handlergroups></handlergroups>
+  </runtime>
+</projectmanifest>

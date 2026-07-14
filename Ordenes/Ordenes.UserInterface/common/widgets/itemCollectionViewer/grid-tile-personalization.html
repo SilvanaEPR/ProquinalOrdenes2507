@@ -1,0 +1,22 @@
+<div class="grid-tile-personalization">
+    <div class="radio-buttons">
+        <sit-property-grid sit-id="propertyGrid_verticalNew" sit-layout="Horizontal" sit-type="Fixed" sit-mode="Edit"
+                           sit-columns="1">
+            <sit-property sit-widget="sit-radio" sit-value="Dialog.templatedata.radio.value" sit-options="Dialog.templatedata.radio.options"
+                          sit-change="Dialog.templatedata.radio.onChange">{{'userPrefrences.defaultViewModeHeading'|translate}}:</sit-property>
+        </sit-property-grid>
+    </div>
+    <div style="clear:both"></div>
+    <div>
+        <sit-tabset>
+            <sit-tab heading="{{'userPrefrences.columnConfigurator.heading'|translate}}" active="Dialog.templatedata.grid.isGridActive"
+                     select="Dialog.templatedata.selectTab(Dialog.templatedata, 'grid')">
+                <sit-column-configurator sit-config="Dialog.templatedata.grid"></sit-column-configurator>
+            </sit-tab>
+            <sit-tab heading="{{'userPrefrences.tileConfigurator.heading'|translate}}" active="Dialog.templatedata.tile.isTileActve"
+                     select="Dialog.templatedata.selectTab(Dialog.templatedata, 'tile')">
+                <sit-tile-configurator sit-config="Dialog.templatedata.tile"></sit-tile-configurator>
+            </sit-tab>
+        </sit-tabset>
+    </div>
+</div>

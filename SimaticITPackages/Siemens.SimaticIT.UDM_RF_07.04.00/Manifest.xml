@@ -1,0 +1,1747 @@
+﻿<?xml version="1.0" encoding="utf-8"?><projectmanifest>
+  <header>
+    <manifestversion>11.0</manifestversion>
+    <platformversion>11.0</platformversion>
+    <type>Library</type>
+    <name>Siemens.SimaticIT.UDM_RF</name>
+    <shortname>UDM_RF</shortname>
+    <description>UDM Reference Data Domain Functional Block </description>
+    <version>07.04.00</version>
+    <companyname>Siemens.SimaticIT</companyname>
+    <author>Siemens.SimaticIT</author>
+    <hash>RhMtnRNwgmWMr1IBb8PfEBhRsGq9An9H5olIoGW3MIs=</hash>
+    <modelHash>jRpJv/OCU22VwTxynXUCPBRFIB3tuog+fsn5iX+iSGc=</modelHash>
+    <modelHashSections>
+      <modelHashSection>
+        <name>projectConfigModelHash</name>
+        <hash>xqMrkhcXCjrwmfXhlWaBDrtMAvfQeSK1LYSwHnBpTOM=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>dataModelHash</name>
+        <hash>vMpSHK5kcXJ8y60hz4RiElLADJn7LSDHnPQJyZSOzcY=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>commandModelHash</name>
+        <hash>Xzaxf27Fic2L0H4ETsnnOgs4mARJHt0D2htjRi9ICGg=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>aliasModelHash</name>
+        <hash>FCE0KMXJjmDlnki7ue9cotrur1tAAXlmG5Tm782yrrs=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>eventModelHash</name>
+        <hash>SP7eDJUxa0X+plEmdrlyTJDw87+nnEZG77CGshZ7tNM=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>typeModelHash</name>
+        <hash>ZqIT8ITyXCj8qJHEgRqVvP/Nhky/i0/MNrCjfoZhyzM=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>securityModelHash</name>
+        <hash>HBCAwH1bPzPLFZ0nja4tQ6QtcIjsQ44hwxLWV6Kg8e4=</hash>
+      </modelHashSection>
+    </modelHashSections>
+    <uiHash>na</uiHash>
+    <canbeextended>false</canbeextended>
+    <domain>ReferenceData</domain>
+  </header>
+  <reference>
+    <functionalblocks></functionalblocks>
+    <extensions></extensions>
+  </reference>
+  <artifacts>
+    <commands><command>
+                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.CreateUoM</name>
+                        <shortname>CreateUoM</shortname>
+                        <description>Creates a new Unit of Measure.</description>
+                        <assembly>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.Internal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>ReferenceData</domain>
+                        <visibility>Private</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>false</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.CreateUoMHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UDM_RF.UOM_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.DeleteUoM</name>
+                        <shortname>DeleteUoM</shortname>
+                        <description>Deletes an existing Unit of Measure.</description>
+                        <assembly>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>ReferenceData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.DeleteUoMHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UDM_RF.UOM_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.UpdateUoM</name>
+                        <shortname>UpdateUoM</shortname>
+                        <description>Updates a Unit of Measure.</description>
+                        <assembly>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>ReferenceData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.UpdateUoMHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UDM_RF.UOM_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.CreateUoMFactor</name>
+                        <shortname>CreateUoMFactor</shortname>
+                        <description>Creates a new UoM Factor which defines the conversion between a source Unit of Measure and a target Unit of Measure.</description>
+                        <assembly>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>ReferenceData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.CreateUoMFactorHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UDM_RF.UOM_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.UpdateUoMFactor</name>
+                        <shortname>UpdateUoMFactor</shortname>
+                        <description>Updates a UoM Factor.</description>
+                        <assembly>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>ReferenceData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.UpdateUoMFactorHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UDM_RF.UOM_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.DeleteUoMFactor</name>
+                        <shortname>DeleteUoMFactor</shortname>
+                        <description>Deletes an existing UoM Factor.</description>
+                        <assembly>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>ReferenceData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.DeleteUoMFactorHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UDM_RF.UOM_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.HideUoM</name>
+                        <shortname>HideUoM</shortname>
+                        <description>Hides the specified Unit of Measure (UoM), and in case of a base UoM, also all its related UoMs and UoM Factors by setting the attribute IsHidden to True.</description>
+                        <assembly>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>ReferenceData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.HideUoMHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UDM_RF.UOM_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.CreateStateMachine</name>
+                        <shortname>CreateStateMachine</shortname>
+                        <description>Creates a new State Machine.</description>
+                        <assembly>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>ReferenceData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.CreateStateMachineHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UDM_RF.STM_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.UpdateStateMachine</name>
+                        <shortname>UpdateStateMachine</shortname>
+                        <description>Updates the name and/or description of the specified State Machine. </description>
+                        <assembly>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>ReferenceData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.UpdateStateMachineHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UDM_RF.STM_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.HideStateMachine</name>
+                        <shortname>HideStateMachine</shortname>
+                        <description>Hides the specified State Machine and all the Statuses and the State Transitions related to that State Machine by setting the attribute IsHidden to True.</description>
+                        <assembly>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>ReferenceData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.HideStateMachineHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UDM_RF.STM_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.UnhideStateMachine</name>
+                        <shortname>UnhideStateMachine</shortname>
+                        <description>Unhides the specified State Machine, all the Statuses and the State Transitions related to that State Machine by setting the attribute IsHidden to False.</description>
+                        <assembly>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>ReferenceData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.UnhideStateMachineHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UDM_RF.STM_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.DeleteStateMachine</name>
+                        <shortname>DeleteStateMachine</shortname>
+                        <description>Deletes an existing State Machine.</description>
+                        <assembly>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>ReferenceData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.DeleteStateMachineHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UDM_RF.STM_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.FreezeStateMachine</name>
+                        <shortname>FreezeStateMachine</shortname>
+                        <description>Configures the State Machine to be read-only by setting the attribute IsFrozen to True.</description>
+                        <assembly>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>ReferenceData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.FreezeStateMachineHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UDM_RF.STM_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.UnfreezeStateMachine</name>
+                        <shortname>UnfreezeStateMachine</shortname>
+                        <description>Removes the read-only setting from the State Machine by setting the attribute IsFrozen to False.</description>
+                        <assembly>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>ReferenceData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.UnfreezeStateMachineHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UDM_RF.STM_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.CreateStatus</name>
+                        <shortname>CreateStatus</shortname>
+                        <description>Creates a new Status.</description>
+                        <assembly>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>ReferenceData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.CreateStatusHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UDM_RF.STM_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.UnhideUoM</name>
+                        <shortname>UnhideUoM</shortname>
+                        <description>Unhides the specified Unit of Measure and the related UoM Dimension by setting the attribute IsHidden to False. In case of a base UoM, the IsHidden setting is also removed from the UoM Factors defined between the base UoM and the other base UoMs not hidden. In case of a multiple/submultiple UoM, the IsHidden setting is also removed from the related base UoM, if hidden.</description>
+                        <assembly>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>ReferenceData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.UnhideUoMHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UDM_RF.UOM_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.DeleteStatus</name>
+                        <shortname>DeleteStatus</shortname>
+                        <description>Deletes an existing Status.</description>
+                        <assembly>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>ReferenceData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.DeleteStatusHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UDM_RF.STM_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.UpdateStatus</name>
+                        <shortname>UpdateStatus</shortname>
+                        <description>Updates the name and/or the description and/or the color of a Status. </description>
+                        <assembly>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>ReferenceData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.UpdateStatusHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UDM_RF.STM_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.CreateStatusDefinition</name>
+                        <shortname>CreateStatusDefinition</shortname>
+                        <description>Creates a new Status Definition.</description>
+                        <assembly>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>ReferenceData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.CreateStatusDefinitionHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UDM_RF.STM_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.UnhideStatusDefinition</name>
+                        <shortname>UnhideStatusDefinition</shortname>
+                        <description>Unhides a Status Definition by setting the attribute IsHidden to False.</description>
+                        <assembly>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>ReferenceData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.UnhideStatusDefinitionHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UDM_RF.STM_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.FreezeStatusDefinition</name>
+                        <shortname>FreezeStatusDefinition</shortname>
+                        <description>Configures theStatus Definition to be read-only by setting the attribute IsFrozen to True.</description>
+                        <assembly>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>ReferenceData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.FreezeStatusDefinitionHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UDM_RF.STM_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.HideStatusDefinition</name>
+                        <shortname>HideStatusDefinition</shortname>
+                        <description>Hides the Status Definition by setting the attribute IsHidden to True.</description>
+                        <assembly>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>ReferenceData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.HideStatusDefinitionHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UDM_RF.STM_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.UnfreezeStatusDefinition</name>
+                        <shortname>UnfreezeStatusDefinition</shortname>
+                        <description>Removes the read-only setting from the Status Definition by setting the attribute IsFrozen to False.</description>
+                        <assembly>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>ReferenceData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.UnfreezeStatusDefinitionHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UDM_RF.STM_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.DeleteStatusDefinition</name>
+                        <shortname>DeleteStatusDefinition</shortname>
+                        <description>Deletes an existing Status Definition.</description>
+                        <assembly>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>ReferenceData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.DeleteStatusDefinitionHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UDM_RF.STM_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.UpdateStatusDefinition</name>
+                        <shortname>UpdateStatusDefinition</shortname>
+                        <description>Updates the name and/or description and/or color of a Status Definition.</description>
+                        <assembly>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>ReferenceData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.UpdateStatusDefinitionHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UDM_RF.STM_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.CreateStatusTransition</name>
+                        <shortname>CreateStatusTransition</shortname>
+                        <description>Creates a new Status Transition, which defines an allowed status change within a specific lifecycle.</description>
+                        <assembly>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>ReferenceData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.CreateStatusTransitionHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UDM_RF.STM_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.DeleteStatusTransition</name>
+                        <shortname>DeleteStatusTransition</shortname>
+                        <description>Deletes an existing Status Transition.</description>
+                        <assembly>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>ReferenceData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.DeleteStatusTransitionHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UDM_RF.STM_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.UpdateStatusTransition</name>
+                        <shortname>UpdateStatusTransition</shortname>
+                        <description>Updates a Status Transition.</description>
+                        <assembly>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>ReferenceData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.UpdateStatusTransitionHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UDM_RF.STM_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.ConvertQuantity</name>
+                        <shortname>ConvertQuantity</shortname>
+                        <description>Converts a given quantity (value and UoM)  into the corresponding quantity, expressed in the target UoM.</description>
+                        <assembly>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>ReferenceData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.ConvertQuantityHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UDM_RF.UOM_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.CreateStatusTransitionDefinition</name>
+                        <shortname>CreateStatusTransitionDefinition</shortname>
+                        <description>Creates a Status Transition Definition.</description>
+                        <assembly>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>ReferenceData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.CreateStatusTransitionDefinitionHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UDM_RF.STM_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.DeleteStatusTransitionDefinition</name>
+                        <shortname>DeleteStatusTransitionDefinition</shortname>
+                        <description>Deletes an existing Status Transition Definition.</description>
+                        <assembly>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>ReferenceData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.DeleteStatusTransitionDefinitionHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UDM_RF.STM_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.HideStatusTransitionDefinition</name>
+                        <shortname>HideStatusTransitionDefinition</shortname>
+                        <description>Hides the Status Transition Definition by setting the attribute IsHidden to True.</description>
+                        <assembly>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>ReferenceData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.HideStatusTransitionDefinitionHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UDM_RF.STM_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.UnhideStatusTransitionDefinition</name>
+                        <shortname>UnhideStatusTransitionDefinition</shortname>
+                        <description>Unhides the Status Transition Definition by setting the attribute IsHidden to False.</description>
+                        <assembly>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>ReferenceData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.UnhideStatusTransitionDefinitionHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UDM_RF.STM_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.FreezeStatusTransitionDefinition</name>
+                        <shortname>FreezeStatusTransitionDefinition</shortname>
+                        <description>Configures a Status Transition Definition to be read-only by setting the attribute IsFrozen to True.</description>
+                        <assembly>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>ReferenceData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.FreezeStatusTransitionDefinitionHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UDM_RF.STM_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.UnfreezeStatusTransitionDefinition</name>
+                        <shortname>UnfreezeStatusTransitionDefinition</shortname>
+                        <description>Removes the read-only setting from the State Transition Definition by setting the attribute IsFrozen to False.</description>
+                        <assembly>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>ReferenceData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.UnfreezeStatusTransitionDefinitionHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UDM_RF.STM_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.CreateUoMDimension</name>
+                        <shortname>CreateUoMDimension</shortname>
+                        <description>Creates a Unit of Measure Dimension.</description>
+                        <assembly>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>ReferenceData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.CreateUoMDimensionHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UDM_RF.UOM_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.DeleteUoMDimension</name>
+                        <shortname>DeleteUoMDimension</shortname>
+                        <description>Deletes an existing Unit of Measure Dimension (UoM Dimension).</description>
+                        <assembly>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>ReferenceData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.DeleteUoMDimensionHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UDM_RF.UOM_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.FreezeUoMDimension</name>
+                        <shortname>FreezeUoMDimension</shortname>
+                        <description>Configures a Unit of Measure Dimension to be read-only by setting the attribute IsFrozen to True.</description>
+                        <assembly>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>ReferenceData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.FreezeUoMDimensionHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UDM_RF.UOM_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.HideUoMDimension</name>
+                        <shortname>HideUoMDimension</shortname>
+                        <description>Hides a Unit of Measure Dimension by setting the attribute IsHidden to True.</description>
+                        <assembly>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>ReferenceData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.HideUoMDimensionHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UDM_RF.UOM_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.UnfreezeUoMDimension</name>
+                        <shortname>UnfreezeUoMDimension</shortname>
+                        <description>Removes the read-only setting from a Unit of Measure Dimension by setting the attribute IsFrozen to False.</description>
+                        <assembly>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>ReferenceData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.UnfreezeUoMDimensionHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UDM_RF.UOM_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.UnhideUoMDimension</name>
+                        <shortname>UnhideUoMDimension</shortname>
+                        <description>Unhides a Unit of Measure Dimension by setting the attribute IsHidden to False.</description>
+                        <assembly>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>ReferenceData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.UnhideUoMDimensionHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UDM_RF.UOM_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.UpdateUoMDimension</name>
+                        <shortname>UpdateUoMDimension</shortname>
+                        <description>Updates a Unit of Measure Dimension.</description>
+                        <assembly>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>ReferenceData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.UpdateUoMDimensionHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UDM_RF.UOM_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.SetStatusAsInitial</name>
+                        <shortname>SetStatusAsInitial</shortname>
+                        <description>Sets the status IsInitial flag to True.</description>
+                        <assembly>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>ReferenceData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.SetStatusAsInitialHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UDM_RF.STM_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.CreateNumberingPattern</name>
+                        <shortname>CreateNumberingPattern</shortname>
+                        <description>Creates a Numbering Pattern.</description>
+                        <assembly>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>ReferenceData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.CreateNumberingPatternHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UDM_RF.CIS_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.UpdateNumberingPatternPart</name>
+                        <shortname>UpdateNumberingPatternPart</shortname>
+                        <description>Updates the Numbering Pattern Part.</description>
+                        <assembly>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>ReferenceData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.UpdateNumberingPatternPartHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UDM_RF.CIS_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.DeleteNumberingPatternPart</name>
+                        <shortname>DeleteNumberingPatternPart</shortname>
+                        <description>Deletes an existing Numbering Pattern Part.</description>
+                        <assembly>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>ReferenceData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.DeleteNumberingPatternPartHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UDM_RF.CIS_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.UpdateNumberingPattern</name>
+                        <shortname>UpdateNumberingPattern</shortname>
+                        <description>Updates the Numbering Pattern.</description>
+                        <assembly>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>ReferenceData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.UpdateNumberingPatternHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UDM_RF.CIS_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.DeleteNumberingPattern</name>
+                        <shortname>DeleteNumberingPattern</shortname>
+                        <description>Deletes an existing Numbering Pattern.</description>
+                        <assembly>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>ReferenceData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.DeleteNumberingPatternHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UDM_RF.CIS_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.CreateCounter</name>
+                        <shortname>CreateCounter</shortname>
+                        <description>Creates a new Counter based on the specified arguments.</description>
+                        <assembly>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>ReferenceData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.CreateCounterHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UDM_RF.CIS_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.UpdateCounter</name>
+                        <shortname>UpdateCounter</shortname>
+                        <description>Updates functional paramenter of an existing Counter.</description>
+                        <assembly>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>ReferenceData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.UpdateCounterHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UDM_RF.CIS_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.DeleteCounter</name>
+                        <shortname>DeleteCounter</shortname>
+                        <description>Deletes an existing instance of the Counter.</description>
+                        <assembly>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>ReferenceData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.DeleteCounterHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UDM_RF.CIS_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.ResetCounter</name>
+                        <shortname>ResetCounter</shortname>
+                        <description>Resets an existing instance of the Counter in the platform enviroment.</description>
+                        <assembly>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>ReferenceData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.ResetCounterHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UDM_RF.CIS_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.IncrementCounter</name>
+                        <shortname>IncrementCounter</shortname>
+                        <description>Increments the previous value of the Counter. Only positive values are supported.</description>
+                        <assembly>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>ReferenceData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.IncrementCounterHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UDM_RF.CIS_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.MoveNumberingPatternPart</name>
+                        <shortname>MoveNumberingPatternPart</shortname>
+                        <description>Moves a Numbering Pattern Part within the Numbering Pattern sequence in accordance to the specified shift value.</description>
+                        <assembly>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>ReferenceData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.MoveNumberingPatternPartHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UDM_RF.CIS_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.FreezeCounter</name>
+                        <shortname>FreezeCounter</shortname>
+                        <description>Configures the given Counter to be read-only by setting the attribute IsFrozen to True.</description>
+                        <assembly>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>ReferenceData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.FreezeCounterHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UDM_RF.CIS_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.UnfreezeCounter</name>
+                        <shortname>UnfreezeCounter</shortname>
+                        <description>Removes the read-only setting from the given Counter by setting the attribute IsFrozen to False.</description>
+                        <assembly>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>ReferenceData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.UnfreezeCounterHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UDM_RF.CIS_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.FreezeNumberingPattern</name>
+                        <shortname>FreezeNumberingPattern</shortname>
+                        <description>Configures the given Numbering Pattern to be read-only by setting the attribute IsFrozen to True.</description>
+                        <assembly>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>ReferenceData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.FreezeNumberingPatternHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UDM_RF.CIS_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.UnfreezeNumberingPattern</name>
+                        <shortname>UnfreezeNumberingPattern</shortname>
+                        <description>Removes the read-only setting from the given Numbering Pattern by setting the attribute IsFrozen to False.</description>
+                        <assembly>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>ReferenceData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.UnfreezeNumberingPatternHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UDM_RF.CIS_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.HideCounter</name>
+                        <shortname>HideCounter</shortname>
+                        <description>Hides the given Counter by setting the attribute IsHidden to True.</description>
+                        <assembly>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>ReferenceData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.HideCounterHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UDM_RF.CIS_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.UnhideCounter</name>
+                        <shortname>UnhideCounter</shortname>
+                        <description>Unhides the given Counter by setting the attribute IsHidden to False.</description>
+                        <assembly>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>ReferenceData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.UnhideCounterHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UDM_RF.CIS_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.CreateStatusBehaviorDefinition</name>
+                        <shortname>CreateStatusBehaviorDefinition</shortname>
+                        <description>Creates a new Status Behavior Definition.</description>
+                        <assembly>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>ReferenceData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.CreateStatusBehaviorDefinitionHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UDM_RF.STM_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.AssociateStatusBehaviorDefinitionsWithStatus</name>
+                        <shortname>AssociateStatusBehaviorDefinitionsWithStatus</shortname>
+                        <description>Associates a Status Behavior Definition to a Status.</description>
+                        <assembly>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>ReferenceData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.AssociateStatusBehaviorDefinitionsWithStatusHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UDM_RF.STM_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.DeleteStatusBehaviorDefinition</name>
+                        <shortname>DeleteStatusBehaviorDefinition</shortname>
+                        <description>Deletes a specified Status Behavior Definition.</description>
+                        <assembly>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>ReferenceData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.DeleteStatusBehaviorDefinitionHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UDM_RF.STM_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.DisassociateStatusBehaviorDefinitionsFromStatus</name>
+                        <shortname>DisassociateStatusBehaviorDefinitionsFromStatus</shortname>
+                        <description>Removes the association between Status Behaviors Definition and a Status.</description>
+                        <assembly>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>ReferenceData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.DisassociateStatusBehaviorDefinitionsFromStatusHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UDM_RF.STM_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.UpdateStatusBehaviorDefinition</name>
+                        <shortname>UpdateStatusBehaviorDefinition</shortname>
+                        <description>Updates the name and/or description of a Status Behavior Definition.</description>
+                        <assembly>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>ReferenceData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.UpdateStatusBehaviorDefinitionHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UDM_RF.STM_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command></commands>
+    <commandActions></commandActions>
+    <events><event>
+                <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Events.StatusChanged</name>
+                <shortname>StatusChanged</shortname>
+                <description> Indicates that a status has been changed.</description>
+                <assembly>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Events, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                <dotneteventtype></dotneteventtype>
+                <eventtype>Application</eventtype>
+                <domain>ReferenceData</domain>
+                <taglist>
+                </taglist>
+                <securable>true</securable>
+        </event><event>
+                <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Events.StatusForced</name>
+                <shortname>StatusForced</shortname>
+                <description> Indicates that a status has been forced.</description>
+                <assembly>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Events, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                <dotneteventtype></dotneteventtype>
+                <eventtype>Application</eventtype>
+                <domain>ReferenceData</domain>
+                <taglist>
+                </taglist>
+                <securable>true</securable>
+        </event></events>
+    <event_handlers></event_handlers>
+    <signals></signals>
+    <readingFunctions></readingFunctions>
+    <entities><entity>
+      <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.ReadingModel.UoMDimension</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.ReadingModel.UoM</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.ReadingModel.UoMFactor</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.ReadingModel.StateMachine</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.ReadingModel.Status</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.ReadingModel.StatusDefinition</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.ReadingModel.StatusTransition</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.ReadingModel.StatusTransitionDefinition</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.ReadingModel.NumberingPatternEntity</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.ReadingModel.NumberingPatternParameter</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.ReadingModel.NumberingPattern</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.ReadingModel.NumberingPatternPart</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.ReadingModel.Counter</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.ReadingModel.StatusBehaviorDefinition</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.ReadingModel.NumberingPatternEntityInfo</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.ReadingModel.PrefilledRegularExpression</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.ReadingModel.CustomPart</name>
+      <securable>true</securable>
+    </entity></entities>
+    <datamodels><datamodel>
+      <assembly>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>WR</mode>
+      <domain>ReferenceData</domain>
+    </datamodel><datamodel>
+      <assembly>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.ReadingModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>RD</mode>
+      <domain>ReferenceData</domain>
+    </datamodel><datamodel>
+      <assembly>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Types, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>WR</mode>
+      <domain>ReferenceData</domain>
+    </datamodel><datamodel>
+      <assembly>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Types.ReadingModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>RD</mode>
+      <domain>ReferenceData</domain>
+    </datamodel></datamodels>
+    <externaldatamodels></externaldatamodels>
+    <appdatamodels></appdatamodels>
+    <uimodules></uimodules>
+    <uicomponents></uicomponents>
+    <wr_entities><wr_entity>
+      <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.UoMDimension</name>
+      <shortname>UoMDimension</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity></parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity></root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.UoM</name>
+      <shortname>UoM</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>true</autoreference>
+      <parententity>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.UoMDimension</parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.UoMDimension</root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.UoMFactor</name>
+      <shortname>UoMFactor</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity></parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity></root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.StateMachine</name>
+      <shortname>StateMachine</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity></parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity></root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.Status</name>
+      <shortname>Status</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.StateMachine</parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.StateMachine</root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.StatusDefinition</name>
+      <shortname>StatusDefinition</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity></parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity></root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.StatusTransition</name>
+      <shortname>StatusTransition</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity></parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity></root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.StatusTransitionDefinition</name>
+      <shortname>StatusTransitionDefinition</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity></parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity></root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.NumberingPatternEntity</name>
+      <shortname>NumberingPatternEntity</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity></parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity></root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.NumberingPatternParameter</name>
+      <shortname>NumberingPatternParameter</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.NumberingPatternEntity</parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.NumberingPatternEntity</root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.NumberingPattern</name>
+      <shortname>NumberingPattern</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity></parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity></root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.NumberingPatternPart</name>
+      <shortname>NumberingPatternPart</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.NumberingPattern</parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.NumberingPattern</root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.Counter</name>
+      <shortname>Counter</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity></parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity></root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.StatusBehaviorDefinition</name>
+      <shortname>StatusBehaviorDefinition</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity></parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity></root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.NumberingPatternEntityInfo</name>
+      <shortname>NumberingPatternEntityInfo</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity></parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity></root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.PrefilledRegularExpression</name>
+      <shortname>PrefilledRegularExpression</shortname>
+      <haslogicalkey>false</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity></parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity></root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.CustomPart</name>
+      <shortname>CustomPart</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity></parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity></root_entity>
+      <base_entity></base_entity>
+    </wr_entity></wr_entities>
+    <wr_facets></wr_facets>
+  </artifacts>
+  <security>
+    <roles></roles>
+  </security>
+  <runtime>
+    <event_subscriptions></event_subscriptions>
+    <handlergroups></handlergroups>
+  </runtime>
+</projectmanifest>

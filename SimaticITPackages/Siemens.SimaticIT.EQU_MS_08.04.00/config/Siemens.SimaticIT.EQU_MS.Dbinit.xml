@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--created on Tuesday, 24 October 2017 08:20:37 (UTC)-->
+<!--GUID values are formatted like '0b0e9810-096f-4864-b8e0-0dca91f6ff0f'; ALL OTHER VALUES FOLLOW .NET System.Globalization.CultureInfo.InvariantCulture FORMAT-->
+<Sections>
+  <Section engineeringLevel="LibraryFunctionalBlock" implementationName="2017-10-24-10-20-32" domainName="MasterData">
+    <Entity type="Siemens.SimaticIT.MasterData.EQU_MS.MSModel.DataModel.EquipmentGraphType">
+      <Property name="NId" kind="Plain" value="Hierarchy" />
+      <Property name="Description" kind="Plain" value="Hierarchy" />
+      <Property name="Name" kind="Plain" value="Hierarchy" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.MasterData.EQU_MS.MSModel.DataModel.EquipmentGraphType">
+      <Property name="NId" kind="Plain" value="Flow" />
+      <Property name="Description" kind="Plain" value="Flow" />
+      <Property name="Name" kind="Plain" value="Flow" />
+    </Entity>
+    <!-- ***************** Equipment Configuration Level ***************** -->
+    <Entity type="Siemens.SimaticIT.MasterData.EQU_MS.MSModel.DataModel.EquipmentLevel">
+      <Property name="NId" kind="Plain" value="Enterprise" />
+      <Property name="Name" kind="Plain" value="Enterprise" />
+      <Property name="Description" kind="Plain" value="Enterprise" />
+      <Property name="Level" kind="Plain" value="100" />
+      <Property name="IsSystemDefined" kind="Plain" value="True" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.MasterData.EQU_MS.MSModel.DataModel.EquipmentLevel">
+      <Property name="NId" kind="Plain" value="Site" />
+      <Property name="Name" kind="Plain" value="Site" />
+      <Property name="Description" kind="Plain" value="Site" />
+      <Property name="Level" kind="Plain" value="200" />
+      <Property name="IsSystemDefined" kind="Plain" value="True" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.MasterData.EQU_MS.MSModel.DataModel.EquipmentLevel">
+      <Property name="NId" kind="Plain" value="Area" />
+      <Property name="Name" kind="Plain" value="Area" />
+      <Property name="Description" kind="Plain" value="Area" />
+      <Property name="Level" kind="Plain" value="300" />
+      <Property name="IsSystemDefined" kind="Plain" value="True" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.MasterData.EQU_MS.MSModel.DataModel.EquipmentLevel">
+      <Property name="NId" kind="Plain" value="WorkCenter" />
+      <Property name="Name" kind="Plain" value="WorkCenter" />
+      <Property name="Description" kind="Plain" value="WorkCenter" />
+      <Property name="Level" kind="Plain" value="400" />
+      <Property name="IsSystemDefined" kind="Plain" value="True" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.MasterData.EQU_MS.MSModel.DataModel.EquipmentLevel">
+      <Property name="NId" kind="Plain" value="ProcessCell" />
+      <Property name="Name" kind="Plain" value="ProcessCell" />
+      <Property name="Description" kind="Plain" value="ProcessCell" />
+      <Property name="Level" kind="Plain" value="500" />
+      <Property name="IsSystemDefined" kind="Plain" value="True" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.MasterData.EQU_MS.MSModel.DataModel.EquipmentLevel">
+      <Property name="NId" kind="Plain" value="ProductionLine" />
+      <Property name="Name" kind="Plain" value="ProductionLine" />
+      <Property name="Description" kind="Plain" value="ProductionLine" />
+      <Property name="Level" kind="Plain" value="500" />
+      <Property name="IsSystemDefined" kind="Plain" value="True" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.MasterData.EQU_MS.MSModel.DataModel.EquipmentLevel">
+      <Property name="NId" kind="Plain" value="StorageZone" />
+      <Property name="Name" kind="Plain" value="StorageZone" />
+      <Property name="Description" kind="Plain" value="StorageZone" />
+      <Property name="Level" kind="Plain" value="500" />
+      <Property name="IsSystemDefined" kind="Plain" value="True" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.MasterData.EQU_MS.MSModel.DataModel.EquipmentLevel">
+      <Property name="NId" kind="Plain" value="WorkUnit" />
+      <Property name="Name" kind="Plain" value="WorkUnit" />
+      <Property name="Description" kind="Plain" value="WorkUnit" />
+      <Property name="Level" kind="Plain" value="600" />
+      <Property name="IsSystemDefined" kind="Plain" value="True" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.MasterData.EQU_MS.MSModel.DataModel.EquipmentLevel">
+      <Property name="NId" kind="Plain" value="Unit" />
+      <Property name="Name" kind="Plain" value="Unit" />
+      <Property name="Description" kind="Plain" value="Unit" />
+      <Property name="Level" kind="Plain" value="700" />
+      <Property name="IsSystemDefined" kind="Plain" value="True" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.MasterData.EQU_MS.MSModel.DataModel.EquipmentLevel">
+      <Property name="NId" kind="Plain" value="WorkCell" />
+      <Property name="Name" kind="Plain" value="WorkCell" />
+      <Property name="Description" kind="Plain" value="WorkCell" />
+      <Property name="Level" kind="Plain" value="700" />
+      <Property name="IsSystemDefined" kind="Plain" value="True" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.MasterData.EQU_MS.MSModel.DataModel.EquipmentLevel">
+      <Property name="NId" kind="Plain" value="StorageUnit" />
+      <Property name="Name" kind="Plain" value="StorageUnit" />
+      <Property name="Description" kind="Plain" value="StorageUnit" />
+      <Property name="Level" kind="Plain" value="700" />
+      <Property name="IsSystemDefined" kind="Plain" value="True" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.MasterData.EQU_MS.MSModel.DataModel.EquipmentLevel">
+      <Property name="NId" kind="Plain" value="ProductionUnit" />
+      <Property name="Name" kind="Plain" value="ProductionUnit" />
+      <Property name="Description" kind="Plain" value="ProductionUnit" />
+      <Property name="Level" kind="Plain" value="800" />
+      <Property name="IsSystemDefined" kind="Plain" value="True" />
+    </Entity>
+    <!-- ******************** Equipment Configuration ******************** -->
+    <Entity type="Siemens.SimaticIT.MasterData.EQU_MS.MSModel.DataModel.EquipmentConfiguration">
+      <Property name="NId" kind="Plain" value="n/a" />
+      <Property name="Name" kind="Plain" value="n/a" />
+      <Property name="Description" kind="Plain" value="n/a" />
+      <Property name="EquipmentTypeNId" kind="Plain" value="NULL" />
+      <Property name="LevelNId" kind="Plain" value="NULL" />
+      <Property name="EquipmentGroupConfigurations" kind="ManyToManyReference" />
+    </Entity>
+  </Section>
+</Sections>

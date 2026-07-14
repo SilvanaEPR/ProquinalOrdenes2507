@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?><projectmanifest>
+  <header>
+    <manifestversion>11.0</manifestversion>
+    <platformversion>11.0</platformversion>
+    <type>Library</type>
+    <name>Siemens.SimaticIT.AGW_MS</name>
+    <shortname>AGW_MS</shortname>
+    <description>Automation Gateway Master Data Domain Functional Block</description>
+    <version>09.02.00</version>
+    <companyname>Siemens.SimaticIT</companyname>
+    <author>Siemens.SimaticIT</author>
+    <hash>k8gjVnNS2ctwBYK3DFqMDDT65YycUJY+2p6do+FdOJc=</hash>
+    <modelHash>/GVPboM83ZRf7ZmrNlCj0C0k7JqWOSxCpD5WKKqQrT4=</modelHash>
+    <modelHashSections>
+      <modelHashSection>
+        <name>projectConfigModelHash</name>
+        <hash>oZfnT711Y27aQauYxoqnb8I7Ub420Qw4HCwJ9CDP5MQ=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>dataModelHash</name>
+        <hash>LyXQT9A6atoRfj/AEScofNZpWbhlttMdvL7tRJiqXf4=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>commandModelHash</name>
+        <hash>2YyIdWcZH8laGNEVIvBaNlcv3NBIB7fkfprT4ClHOwo=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>aliasModelHash</name>
+        <hash>cdWtFof25lUoH+wgMZZEtJGL5k7aBVT7Ae5HtNcbGxs=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>eventModelHash</name>
+        <hash>66NRxyWXHgUF0r1cxpvOo1TpVl6WK3E39g9LyZoejYo=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>typeModelHash</name>
+        <hash>DTFVHclAfsxIJA5biEtka4iVTlHB8ZRVaHGc1qJQ0+c=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>securityModelHash</name>
+        <hash>cdWtFof25lUoH+wgMZZEtJGL5k7aBVT7Ae5HtNcbGxs=</hash>
+      </modelHashSection>
+    </modelHashSections>
+    <uiHash>na</uiHash>
+    <canbeextended>false</canbeextended>
+    <domain>MasterData</domain>
+  </header>
+  <reference>
+    <functionalblocks>
+      <functionalblock>
+        <name>Siemens.SimaticIT.UDM_RF</name>
+        <version>07.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.ATN_MS</name>
+        <version>08.02.00</version>
+        <type>Library</type>
+      </functionalblock>
+    </functionalblocks>
+    <extensions></extensions>
+  </reference>
+  <artifacts>
+    <commands><command>
+                        <name>Siemens.SimaticIT.MasterData.AGW_MS.MSModel.Commands.Deploy</name>
+                        <shortname>Deploy</shortname>
+                        <description>Deploys the current configuration of types and instances to CPM.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.AGW_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.AGW_MS.MSModel.Commands.DeployHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.AGW_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>x64</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                        <handlergroup>Siemens.SimaticIT.MasterData.AGW_MS.MSModel.HandlerGroups.AutomationGroup</handlergroup>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.AGW_MS.MSModel.Commands.DeployAutomationChannels</name>
+                        <shortname>DeployAutomationChannels</shortname>
+                        <description>Deploys the current configuration of automation channels to CPM</description>
+                        <assembly>Siemens.SimaticIT.MasterData.AGW_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.AGW_MS.MSModel.Commands.DeployAutomationChannelsHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.AGW_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>x64</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                        <handlergroup>Siemens.SimaticIT.MasterData.AGW_MS.MSModel.HandlerGroups.AutomationGroup</handlergroup>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.AGW_MS.MSModel.Commands.ResetEnvironmentOnServer</name>
+                        <shortname>ResetEnvironmentOnServer</shortname>
+                        <description>Reset the environment on the Automation Gateway Server.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.AGW_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.AGW_MS.MSModel.Commands.ResetEnvironmentOnServerHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.AGW_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>x64</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                        <handlergroup>Siemens.SimaticIT.MasterData.AGW_MS.MSModel.HandlerGroups.AutomationGroup</handlergroup>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.AGW_MS.MSModel.Commands.WriteAutomationNodeParameters</name>
+                        <shortname>WriteAutomationNodeParameters</shortname>
+                        <description>Sends the modified values of the Automation Node Paramenter to the Automation Gateway Server.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.AGW_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.AGW_MS.MSModel.Commands.WriteAutomationNodeParametersHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.AGW_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>x64</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command></commands>
+    <commandActions></commandActions>
+    <events></events>
+    <event_handlers><event_handler>
+<name>Siemens.SimaticIT.MasterData.AGW_MS.MSModel.Events.AutomationReadyForCPMHandlerShell</name>
+<assembly>Siemens.SimaticIT.AGW_MS.EventHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+<event_name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Events.AutomationReadyForCPM</event_name>
+<target_cpu>AnyCPU</target_cpu>
+<targetframework>netstandard2.0</targetframework>
+<dependencies></dependencies>
+</event_handler></event_handlers>
+    <signals></signals>
+    <readingFunctions></readingFunctions>
+    <entities></entities>
+    <datamodels><datamodel>
+      <assembly>Siemens.SimaticIT.MasterData.AGW_MS.MSModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>WR</mode>
+      <domain>MasterData</domain>
+    </datamodel><datamodel>
+      <assembly>Siemens.SimaticIT.MasterData.AGW_MS.MSModel.ReadingModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>RD</mode>
+      <domain>MasterData</domain>
+    </datamodel><datamodel>
+      <assembly>Siemens.SimaticIT.MasterData.AGW_MS.MSModel.Types, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>WR</mode>
+      <domain>MasterData</domain>
+    </datamodel><datamodel>
+      <assembly>Siemens.SimaticIT.MasterData.AGW_MS.MSModel.Types.ReadingModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>RD</mode>
+      <domain>MasterData</domain>
+    </datamodel></datamodels>
+    <externaldatamodels></externaldatamodels>
+    <appdatamodels></appdatamodels>
+    <uimodules></uimodules>
+    <uicomponents></uicomponents>
+    <wr_entities></wr_entities>
+    <wr_facets></wr_facets>
+  </artifacts>
+  <security>
+    <roles></roles>
+  </security>
+  <runtime>
+    <event_subscriptions></event_subscriptions>
+    <handlergroups><handlergroup>
+                        <name>Siemens.SimaticIT.MasterData.AGW_MS.MSModel.HandlerGroups.AutomationGroup</name>
+                        <shortname>AutomationGroup</shortname>
+                        <attributes>
+                                <NotParallelExecution>true</NotParallelExecution>
+                        </attributes>
+                </handlergroup></handlergroups>
+  </runtime>
+</projectmanifest>

@@ -1,0 +1,25 @@
+<div class="tree">
+    <div class="tree-node"
+         ng-style="{'padding-left': 8 + node.level*16}"
+         ng-repeat="node in treeCtrl.modifiedData track by node.id"
+         ng-if="node.visible"
+         ng-class="{'tree-node-with-image': treeCtrl.isNodeWithImage ,'tree-node-selected':  node.selected }"
+         ng-click="treeCtrl.selectNode(node, !node.selected, true)">
+        <span class="tree-node-arrow-button">
+            <span ng-show="node.hasChildren"
+                  ng-class="node.expanded ? 'tree-node-expand' : 'tree-node-collapse'"
+                  sit-mom-icon="treeCtrl.arrowSvgIcon"
+                  ng-click="treeCtrl.toggleNode(node, !node.expanded);$event.stopPropagation();">
+            </span>
+        </span>
+        <span class="checkbox-container" ng-if="treeCtrl.options.enableMultiselection">
+            <input type="checkbox" ng-model="node.selected" ng-class="node.selected ? 'checked': ''"  />
+            <span class="checkmark" ng-click="node.selected = !node.selected;$event.stopPropagation();"></span>
+        </span>
+        <span ng-if="treeCtrl.isNodeWithImage" class="tree-node-icon-container">
+            <span class="icon" sit-mom-icon="{prefix: 'type', name: node.icon,suffix: 48}">
+            </span>
+        </span>
+        <span class="tree-node-label" title="{{node.label | translate}}">{{node.label | translate}}</span>
+    </div>
+</div>

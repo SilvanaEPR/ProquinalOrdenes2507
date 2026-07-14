@@ -1,0 +1,30 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+  <g id="g888">
+    <path id="path886-1" d="M1.984,9.977C1.906,9.85.062,5.452.081,5.435s.856-.379.865-.367C.968,5.1,2.87,9.594,2.87,9.615a2.291,2.291,0,0,1-.408.2C1.962,10.023,2,10.008,1.984,9.977Z" class="aw-theme-iconOutline" fill="#464646"/>
+    <path id="path886" d="M7.969,5C7.89,4.873,6.047.475,6.065.458s.856-.379.866-.366C6.952.12,8.855,4.617,8.854,4.639a2.374,2.374,0,0,1-.408.2C7.946,5.046,7.989,5.032,7.969,5Z" fill="#005f87"/>
+    <path id="rect870" d="M14,5h1v6H14Z" fill="#005f87"/>
+    <path id="rect872" d="M7,10h7v1H7Z" fill="#005f87"/>
+    <path id="rect870-7" d="M6,0H7V11H6Z" fill="#005f87"/>
+    <path id="rect872-5" d="M7,0h7.281V1H7Z" fill="#005f87"/>
+    <path id="rect868-6" d="M8,4h8V5H8Z" fill="#005f87"/>
+    <path id="rect1087" d="M8,6h4V7H8Z" fill="#005f87"/>
+    <path id="rect1089" d="M8,8h5V9H8Z" fill="#005f87"/>
+    <path id="rect1091" d="M9,2h4V3H9Z" fill="#005f87"/>
+    <path id="rect870-20" d="M11,11h1v3H11Z" fill="#14915a"/>
+    <path id="rect872-6" d="M4,13h7v1H4Z" fill="#14915a"/>
+    <path id="rect870-7-91" d="M3,3H4V14H3Z" fill="#14915a"/>
+    <path id="rect872-5-2" d="M4,3H6V4H4Z" fill="#14915a"/>
+    <path id="rect868-6-0" d="M5,7H6V8H5Z" fill="#14915a"/>
+    <path id="rect1087-64" d="M5,9H6v1H5Z" fill="#14915a"/>
+    <path id="rect1089-7" d="M5,11h5v1H5Z" fill="#14915a"/>
+    <path id="rect870-20-7" d="M8,14H9v2H8Z" class="aw-theme-iconOutline" fill="#464646"/>
+    <path id="rect872-6-4" d="M1,15H8v1H1Z" class="aw-theme-iconOutline" fill="#464646"/>
+    <path id="rect870-7-91-3" d="M0,5H1V16H0Z" class="aw-theme-iconOutline" fill="#464646"/>
+    <path id="rect872-5-2-7" d="M1,5H3V6H1Z" class="aw-theme-iconOutline" fill="#464646"/>
+    <path id="rect868-6-0-0" d="M2,9H3v1H2Z" class="aw-theme-iconOutline" fill="#464646"/>
+    <path id="rect1087-64-2" d="M2,11H3v1H2Z" class="aw-theme-iconOutline" fill="#464646"/>
+    <path id="rect1089-7-7" d="M2,13H3v1H2Z" class="aw-theme-iconOutline" fill="#464646"/>
+    <path id="path932" d="M14.219,2.408c-.467-1.1-.847-1.994-.845-2s.921-.391.934-.394,1.71,3.967,1.7,3.98-.218.1-.474.206l-.464.2Z" fill="#005f87"/>
+    <path id="path838" d="M4.652,7.167c-.625-1.462-1.54-3.666-1.54-3.71a6.251,6.251,0,0,1,.829-.369c.01.011.909,2.121,1.494,3.509.372.881.416,1,.373,1.038s-.772.353-.8.352C5.005,7.987,4.845,7.618,4.652,7.167Z" fill="#14915a"/>
+  </g>
+</svg>

@@ -1,0 +1,1230 @@
+﻿<?xml version="1.0" encoding="utf-8"?><projectmanifest>
+  <header>
+    <manifestversion>11.0</manifestversion>
+    <platformversion>11.0</platformversion>
+    <type>Library</type>
+    <name>Siemens.SimaticIT.ATN_MS</name>
+    <shortname>ATN_MS</shortname>
+    <description>Automation Node Master Data Domain Functional Block</description>
+    <version>08.02.00</version>
+    <companyname>Siemens.SimaticIT</companyname>
+    <author>Siemens.SimaticIT</author>
+    <hash>nGJY6qGmSikbjblCklz1/S0RKVarPtyNUyprurNkmd8=</hash>
+    <modelHash>kxuJgTNFnBp3AMdvA+1fOJc/AobWlhHYMjMT5cBqe3o=</modelHash>
+    <modelHashSections>
+      <modelHashSection>
+        <name>projectConfigModelHash</name>
+        <hash>EogtJrrYnVTz+/H5YSEZwyNHaHatsjRmuq+2KVtAz+w=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>dataModelHash</name>
+        <hash>qegxx0gDU3UbsDNxi66fqxhlHI0vqovhfcB2GyMXdqU=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>commandModelHash</name>
+        <hash>rlvx7m/LHSYbBikUZ5yPcy75VdTdlsr4p2zhuXsEKU8=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>aliasModelHash</name>
+        <hash>FCE0KMXJjmDlnki7ue9cotrur1tAAXlmG5Tm782yrrs=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>eventModelHash</name>
+        <hash>RDzLY71KatiyXIU+FR8q7BrE8fj0TBJM6mTTna/WnYI=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>typeModelHash</name>
+        <hash>UUyQmV4OR8DExjrYU8HlsFGnXMRsxO09zmVAW6zniks=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>securityModelHash</name>
+        <hash>HBCAwH1bPzPLFZ0nja4tQ6QtcIjsQ44hwxLWV6Kg8e4=</hash>
+      </modelHashSection>
+    </modelHashSections>
+    <uiHash>na</uiHash>
+    <canbeextended>false</canbeextended>
+    <domain>MasterData</domain>
+  </header>
+  <reference>
+    <functionalblocks>
+      <functionalblock>
+        <name>Siemens.SimaticIT.UDM_RF</name>
+        <version>07.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+    </functionalblocks>
+    <extensions></extensions>
+  </reference>
+  <artifacts>
+    <commands><command>
+                        <name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands.CreateAutomationNodeType</name>
+                        <shortname>CreateAutomationNodeType</shortname>
+                        <description>Creates an Automation Node Type entity.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands.CreateAutomationNodeTypeHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.ATN_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands.UpdateAutomationNodeTypeParameter</name>
+                        <shortname>UpdateAutomationNodeTypeParameter</shortname>
+                        <description>Updates an automation parameter of an Automation Node Type.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands.UpdateAutomationNodeTypeParameterHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.ATN_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands.DeleteAutomationNodeTypeParameter</name>
+                        <shortname>DeleteAutomationNodeTypeParameter</shortname>
+                        <description>Deletes an automation parameter of a Automation Node Type.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands.DeleteAutomationNodeTypeParameterHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.ATN_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands.UpdateAutomationNodeType</name>
+                        <shortname>UpdateAutomationNodeType</shortname>
+                        <description>Updates an Automation Node Type entity.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands.UpdateAutomationNodeTypeHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.ATN_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands.CreateAutomationNodeInstance</name>
+                        <shortname>CreateAutomationNodeInstance</shortname>
+                        <description>Creates an Automation Node Instance entity.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands.CreateAutomationNodeInstanceHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.ATN_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands.UpdateAutomationNodeInstance</name>
+                        <shortname>UpdateAutomationNodeInstance</shortname>
+                        <description>Updates an Automation Node Instance entity.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands.UpdateAutomationNodeInstanceHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.ATN_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands.DeleteAutomationNodeInstance</name>
+                        <shortname>DeleteAutomationNodeInstance</shortname>
+                        <description>Deletes an Automation Node Instance.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands.DeleteAutomationNodeInstanceHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.ATN_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands.DeleteAutomationNodeType</name>
+                        <shortname>DeleteAutomationNodeType</shortname>
+                        <description>Deletes an Automation Node Type.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands.DeleteAutomationNodeTypeHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.ATN_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands.ApproveAutomationNodeType</name>
+                        <shortname>ApproveAutomationNodeType</shortname>
+                        <description>Sets the status of the Automation Node Type to Approved so that the Automation Node Type can be activated to the Automation Gateway Server.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands.ApproveAutomationNodeTypeHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.ATN_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands.ApproveAutomationNodeInstance</name>
+                        <shortname>ApproveAutomationNodeInstance</shortname>
+                        <description>Sets the status of the Automation Node Instance to Approved so that the Automation Node Instance can be activated to the Automation Gateway Server.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands.ApproveAutomationNodeInstanceHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.ATN_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands.UpdateAutomationNodeInstanceParameter</name>
+                        <shortname>UpdateAutomationNodeInstanceParameter</shortname>
+                        <description>Updates an automation parameter of an Automation Node Instance.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands.UpdateAutomationNodeInstanceParameterHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.ATN_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands.Activate</name>
+                        <shortname>Activate</shortname>
+                        <description>Fires an event to activate the Automation Gateway configuration to the Automation Gateways server.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands.ActivateHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.ATN_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands.CreateAutomationChannel</name>
+                        <shortname>CreateAutomationChannel</shortname>
+                        <description>Creates an Automation Channel entity.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands.CreateAutomationChannelHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.ATN_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands.UpdateAutomationChannel</name>
+                        <shortname>UpdateAutomationChannel</shortname>
+                        <description>Updates an Automation Channel entity. You can use the current command only if the Server Redundancy Failover is disabled. Use the UpdateOpcUaAutomationChannel if the Server Redundancy Failover is enabled.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands.UpdateAutomationChannelHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.ATN_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands.DeleteAutomationChannel</name>
+                        <shortname>DeleteAutomationChannel</shortname>
+                        <description>Deletes an Automation Channel.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands.DeleteAutomationChannelHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.ATN_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands.ApproveAutomationChannel</name>
+                        <shortname>ApproveAutomationChannel</shortname>
+                        <description>Sets the status of the Automation Channel to Approved so that the Automation Channel can be activated to the Automation Gateway Server.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands.ApproveAutomationChannelHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.ATN_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands.AlignActivatedEntities</name>
+                        <shortname>AlignActivatedEntities</shortname>
+                        <description>FOR INTERNAL USE ONLY. Aligns the status of the entities activated on the Automation layer. </description>
+                        <assembly>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands.AlignActivatedEntitiesHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.ATN_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands.FreezeAutomationNodeType</name>
+                        <shortname>FreezeAutomationNodeType</shortname>
+                        <description>Configures the Automation Node Type to be read-only by setting the attribute IsLocked to True.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands.FreezeAutomationNodeTypeHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.ATN_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands.UnfreezeAutomationNodeType</name>
+                        <shortname>UnfreezeAutomationNodeType</shortname>
+                        <description>Removes the read-only setting from the Automation Node Type by setting the attribute IsLocked to False.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands.UnfreezeAutomationNodeTypeHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.ATN_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands.FreezeAutomationNodeInstance</name>
+                        <shortname>FreezeAutomationNodeInstance</shortname>
+                        <description>Configures the Automation Node Instance to be read-only by setting the attribute IsLocked to True.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands.FreezeAutomationNodeInstanceHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.ATN_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands.UnfreezeAutomationNodeInstance</name>
+                        <shortname>UnfreezeAutomationNodeInstance</shortname>
+                        <description>Removes the read-only setting from the Automation Node Instance by setting the attribute IsLocked to False.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands.UnfreezeAutomationNodeInstanceHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.ATN_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands.ActivateAutomationChannel</name>
+                        <shortname>ActivateAutomationChannel</shortname>
+                        <description>Fires an event to activate the Automation Gateway Channel configuration to the Automation Gateways Server.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands.ActivateAutomationChannelHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.ATN_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands.AlignActivatedAutomationChannels</name>
+                        <shortname>AlignActivatedAutomationChannels</shortname>
+                        <description>FOR INTERNAL USE ONLY. Aligns the status of the Automation Channels activated on the Automation layer. </description>
+                        <assembly>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands.AlignActivatedAutomationChannelsHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.ATN_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands.ExportAutomationConfig</name>
+                        <shortname>ExportAutomationConfig</shortname>
+                        <description>Exports the current Automation Configuration in CSV format.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands.ExportAutomationConfigHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.ATN_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands.ImportAutomationConfig</name>
+                        <shortname>ImportAutomationConfig</shortname>
+                        <description>Imports an Automation Configuration in CSV format.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands.ImportAutomationConfigHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.ATN_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands.ResetEnvironment</name>
+                        <shortname>ResetEnvironment</shortname>
+                        <description>Clears the configuration on the Automation Gateway Server.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands.ResetEnvironmentHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.ATN_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands.Deactivate</name>
+                        <shortname>Deactivate</shortname>
+                        <description>FOR INTERNAL USE ONLY. Reverts all the entities in the Automation Gateway which are in Pending status to their previous Approved or Dismissed status.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands.DeactivateHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.ATN_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands.DeleteHistory</name>
+                        <shortname>DeleteHistory</shortname>
+                        <description>FOR INTERNAL USE ONLY. Deletes the records of the Activation History.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands.DeleteHistoryHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.ATN_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands.AlignEntitiesToBeReset</name>
+                        <shortname>AlignEntitiesToBeReset</shortname>
+                        <description>FOR INTERNAL USE ONLY. Aligns the status of the entities on the automation layer for the reset operation.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands.AlignEntitiesToBeResetHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.ATN_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands.RevertAutomationNodeType</name>
+                        <shortname>RevertAutomationNodeType</shortname>
+                        <description>Reverts the selected Automation Node Type and its instances to the activated version.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands.RevertAutomationNodeTypeHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.ATN_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands.RevertAutomationNodeInstance</name>
+                        <shortname>RevertAutomationNodeInstance</shortname>
+                        <description>Reverts the selected Automation Node Instance to the activated version.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands.RevertAutomationNodeInstanceHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.ATN_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands.CopyAutomationNodeInstance</name>
+                        <shortname>CopyAutomationNodeInstance</shortname>
+                        <description>Makes a copy of the given Automation Node Instance.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands.CopyAutomationNodeInstanceHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.ATN_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands.MigrateAutomation</name>
+                        <shortname>MigrateAutomation</shortname>
+                        <description>Migrates the automation entities from the previous version to the current version. </description>
+                        <assembly>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands.MigrateAutomationHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.ATN_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands.ManageFailureOfImportWithReset</name>
+                        <shortname>ManageFailureOfImportWithReset</shortname>
+                        <description>FOR INTERNAL USE ONLY. Manage the failure of the Import With Reset command.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands.ManageFailureOfImportWithResetHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.ATN_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands.ApproveAllAutomationNodeTypes</name>
+                        <shortname>ApproveAllAutomationNodeTypes</shortname>
+                        <description>Approves all Automation Node Types and related Instances which are in **To Be Approved** status.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands.ApproveAllAutomationNodeTypesHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.ATN_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands.ApproveAllAutomationNodeInstances</name>
+                        <shortname>ApproveAllAutomationNodeInstances</shortname>
+                        <description>Approves all Automation Node Instances which are in **To Be Approved** status.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands.ApproveAllAutomationNodeInstancesHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.ATN_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands.IsMigrationNecessary</name>
+                        <shortname>IsMigrationNecessary</shortname>
+                        <description>True if the data of Automation Gateway need to be migrated, false otherwise.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands.IsMigrationNecessaryHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.ATN_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands.UpdateAutomationNodeTypeAndSingleInstances</name>
+                        <shortname>UpdateAutomationNodeTypeAndSingleInstances</shortname>
+                        <description>Updates an Automation Node Type entity. Using this command, any Automation Node Instances present will be updated one by one with no optimizations in terms of performance.  This command should be used instead of UpdateAutomationNodeType, if any of the aforementioned Automation Node Instances linked to the Automation Node Type must be submitted in the same transaction.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands.UpdateAutomationNodeTypeAndSingleInstancesHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.ATN_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands.DeleteAutomationNodeTypeAndSingleInstances</name>
+                        <shortname>DeleteAutomationNodeTypeAndSingleInstances</shortname>
+                        <description>Deletes an Automation Node Type entity. Using this command, any Automation Node Instances present will be updated one by one, with no optimizations in terms of performance.  This command should be used instead of DeleteAutomationNodeType, if any of the aforementioned Automation Node Instances linked to the Automation Node Type must be submitted in the same transaction. </description>
+                        <assembly>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands.DeleteAutomationNodeTypeAndSingleInstancesHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.ATN_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands.ExportAutomationConfigBeforeMigrate</name>
+                        <shortname>ExportAutomationConfigBeforeMigrate</shortname>
+                        <description>Exports the Automation Configuration from previous version in CSV format before migration.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands.ExportAutomationConfigBeforeMigrateHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.ATN_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands.CreateOpcUaAutomationChannel</name>
+                        <shortname>CreateOpcUaAutomationChannel</shortname>
+                        <description>Creates an OPC UA Automation Channel entity.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands.CreateOpcUaAutomationChannelHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.ATN_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands.UpdateOpcUaAutomationChannel</name>
+                        <shortname>UpdateOpcUaAutomationChannel</shortname>
+                        <description>Updates an OPC UA Automation Channel entity.</description>
+                        <assembly>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands.UpdateOpcUaAutomationChannelHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.ATN_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands.RetrieveAutomationChannel</name>
+                        <shortname>RetrieveAutomationChannel</shortname>
+                        <description>Retrieves an Automation Channel</description>
+                        <assembly>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands.RetrieveAutomationChannelHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.ATN_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command></commands>
+    <commandActions></commandActions>
+    <events><event>
+                <name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Events.AutomationReadyForCPM</name>
+                <shortname>AutomationReadyForCPM</shortname>
+                <description> FOR INTERNAL USE ONLY. This event is fired to activate all the approved entities to the Automation Gateway Server.   </description>
+                <assembly>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Events, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                <dotneteventtype></dotneteventtype>
+                <eventtype>Application</eventtype>
+                <domain>MasterData</domain>
+                <taglist>
+                </taglist>
+                <securable>true</securable>
+        </event><event>
+                <name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Events.AutomationUpdatedOnCPM</name>
+                <shortname>AutomationUpdatedOnCPM</shortname>
+                <description> FOR INTERNAL USE ONLY. This event is fired when all the entities have been activated to Automation Gateway Server.</description>
+                <assembly>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Events, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                <dotneteventtype></dotneteventtype>
+                <eventtype>Application</eventtype>
+                <domain>MasterData</domain>
+                <taglist>
+                </taglist>
+                <securable>true</securable>
+        </event><event>
+                <name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Events.AutomationActivated</name>
+                <shortname>AutomationActivated</shortname>
+                <description> FOR INTERNAL USE ONLY. This event is fired when the Operational domain has been aligned with the Automation Gateway Server.</description>
+                <assembly>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Events, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                <dotneteventtype></dotneteventtype>
+                <eventtype>Application</eventtype>
+                <domain>MasterData</domain>
+                <taglist>
+                </taglist>
+                <securable>true</securable>
+        </event><event>
+                <name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Events.ActivateFinished</name>
+                <shortname>ActivateFinished</shortname>
+                <description> This event is fired once the Activate procedure has updated the status on ATN_MS for all the entities activated to the Automation Gateway Server. This event is associated to the signal ActivateFinishedSignal.</description>
+                <assembly>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Events, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                <dotneteventtype></dotneteventtype>
+                <eventtype>Application</eventtype>
+                <domain>MasterData</domain>
+                <taglist>
+                </taglist>
+                <securable>true</securable>
+        </event><event>
+                <name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Events.ResetEnvironmentDone</name>
+                <shortname>ResetEnvironmentDone</shortname>
+                <description> FOR INTERNAL USE ONLY. This event is fired when the reset of the configuration on the Automation Gateway Server has finished.</description>
+                <assembly>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Events, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                <dotneteventtype></dotneteventtype>
+                <eventtype>Application</eventtype>
+                <domain>MasterData</domain>
+                <taglist>
+                </taglist>
+                <securable>true</securable>
+        </event><event>
+                <name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Events.ResetFinished</name>
+                <shortname>ResetFinished</shortname>
+                <description> This event is fired when the reset of the configuration on the Automation Gate Server has finished. This event is associated to the signal ResetFinishedSignal.</description>
+                <assembly>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Events, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                <dotneteventtype></dotneteventtype>
+                <eventtype>Application</eventtype>
+                <domain>MasterData</domain>
+                <taglist>
+                </taglist>
+                <securable>true</securable>
+        </event><event>
+                <name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Events.ImportFinished</name>
+                <shortname>ImportFinished</shortname>
+                <description> This event is fired once the Import procedure has completed. This event is associated to the signal ImportFinishedSignal.</description>
+                <assembly>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Events, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                <dotneteventtype></dotneteventtype>
+                <eventtype>Application</eventtype>
+                <domain>MasterData</domain>
+                <taglist>
+                </taglist>
+                <securable>true</securable>
+        </event></events>
+    <event_handlers><event_handler>
+<name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Events.AutomationActivatedHandlerShell</name>
+<assembly>Siemens.SimaticIT.ATN_MS.EventHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+<event_name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Events.AutomationActivated</event_name>
+<target_cpu>AnyCPU</target_cpu>
+<targetframework>netstandard2.0</targetframework>
+<dependencies></dependencies>
+</event_handler><event_handler>
+<name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Events.ResetEnvironmentDoneHandlerShell</name>
+<assembly>Siemens.SimaticIT.ATN_MS.EventHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+<event_name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Events.ResetEnvironmentDone</event_name>
+<target_cpu>AnyCPU</target_cpu>
+<targetframework>netstandard2.0</targetframework>
+<dependencies></dependencies>
+</event_handler></event_handlers>
+    <signals></signals>
+    <readingFunctions></readingFunctions>
+    <entities><entity>
+      <name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.DataModel.ReadingModel.AutomationNodeType</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.DataModel.ReadingModel.AutomationNodeTypeParameter</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.DataModel.ReadingModel.AutomationNodeInstance</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.DataModel.ReadingModel.AutomationNodeInstanceParameter</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.DataModel.ReadingModel.AcquisitionCycle</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.DataModel.ReadingModel.AutomationChannel</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.DataModel.ReadingModel.ActivationHistory</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.DataModel.ReadingModel.VersionHistory</name>
+      <securable>true</securable>
+    </entity></entities>
+    <datamodels><datamodel>
+      <assembly>Siemens.SimaticIT.MasterData.ATN_MS.MSModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>WR</mode>
+      <domain>MasterData</domain>
+    </datamodel><datamodel>
+      <assembly>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.ReadingModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>RD</mode>
+      <domain>MasterData</domain>
+    </datamodel><datamodel>
+      <assembly>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Types, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>WR</mode>
+      <domain>MasterData</domain>
+    </datamodel><datamodel>
+      <assembly>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Types.ReadingModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>RD</mode>
+      <domain>MasterData</domain>
+    </datamodel></datamodels>
+    <externaldatamodels></externaldatamodels>
+    <appdatamodels></appdatamodels>
+    <uimodules></uimodules>
+    <uicomponents></uicomponents>
+    <wr_entities><wr_entity>
+      <name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.DataModel.AutomationNodeType</name>
+      <shortname>AutomationNodeType</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity></parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity></root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.DataModel.AutomationNodeTypeParameter</name>
+      <shortname>AutomationNodeTypeParameter</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.DataModel.AutomationNodeType</parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.DataModel.AutomationNodeType</root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.DataModel.AutomationNodeInstance</name>
+      <shortname>AutomationNodeInstance</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity></parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity></root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.DataModel.AutomationNodeInstanceParameter</name>
+      <shortname>AutomationNodeInstanceParameter</shortname>
+      <haslogicalkey>false</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.DataModel.AutomationNodeInstance</parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.DataModel.AutomationNodeInstance</root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.DataModel.AcquisitionCycle</name>
+      <shortname>AcquisitionCycle</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity></parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity></root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.DataModel.AutomationChannel</name>
+      <shortname>AutomationChannel</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity></parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity></root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.DataModel.ActivationHistory</name>
+      <shortname>ActivationHistory</shortname>
+      <haslogicalkey>false</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity></parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity></root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.MasterData.ATN_MS.MSModel.DataModel.VersionHistory</name>
+      <shortname>VersionHistory</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity></parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity></root_entity>
+      <base_entity></base_entity>
+    </wr_entity></wr_entities>
+    <wr_facets></wr_facets>
+  </artifacts>
+  <security>
+    <roles></roles>
+  </security>
+  <runtime>
+    <event_subscriptions></event_subscriptions>
+    <handlergroups></handlergroups>
+  </runtime>
+</projectmanifest>

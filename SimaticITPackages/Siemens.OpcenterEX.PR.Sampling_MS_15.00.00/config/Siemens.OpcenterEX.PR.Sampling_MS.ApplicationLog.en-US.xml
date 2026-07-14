@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- This file is used to define Application Log messages. You should follow below instructions while defining messages: 
+    - The <message> structure should be repeated for each Application Log message.
+    - The <id> attribute is mandatory and should be unique in this file.
+    - The <short> attribute represents the short text message and should be less than or up to 100 characters.
+    - The <long> attribute represents the long text message and should be less than or up to 400 characters.
+    - The <level> attribute is mandatory and its value should be one of: Verbose | Error | Warning | Critical | Informational.
+    - The <param> structure should be repeated for each parameter of the Application Log message.
+    - The <key> attribute represents the unique identifier for a parameter that repeats multiple times in the message text.
+    - The <type> attribute represents the datatype of the parameter and its value should be one of the primitive types: string | byte | int | decimal | float | double | long | boolean | Guid | Datetime | Timespan.  -->
+<messages>
+  <message>
+    <id>-10101</id>
+    <short>The system falied to update the Sampling Task Definition.</short>
+    <long>The system failed to update the parameters of Sampling Task Definition %NId%.</long>
+    <level>Error</level>
+    <params>
+      <param>
+        <key>NId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>Id</key>
+        <type>Guid</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>-10102</id>
+    <short>The system failed to associate the Context for Sampling Task Definition.</short>
+    <long>The system failed to associate the Context for Sampling Task Definition %NId%.</long>
+    <level>Error</level>
+    <params>
+      <param>
+        <key>NId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>Id</key>
+        <type>Guid</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>-10103</id>
+    <short>Material does not exist.</short>
+    <long>Material %MaterialNId% %MaterialRevision% does not exist.</long>
+    <level>Error</level>
+    <params>
+      <param>
+        <key>MaterialNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>MaterialRevision</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>-10104</id>
+    <short>Referenced Material cannot be linked to Inspection Definition.</short>
+    <long>The Material %MaterialNId% %MaterialRevision% %MaterialName% cannot be linked to Inspection Definition %InspectionDefinitionNId% because the UoM %SourceUoMNId% of Referenced Material is not compatible with UoM %TargetUoMNId% of Sample Quantity, based on Material density.</long>
+    <level>Error</level>
+    <params>
+      <param>
+        <key>MaterialNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>MaterialRevision</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>MaterialName</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>InspectionDefinitionNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>SourceUoMNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>TargetUoMNId</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+</messages>

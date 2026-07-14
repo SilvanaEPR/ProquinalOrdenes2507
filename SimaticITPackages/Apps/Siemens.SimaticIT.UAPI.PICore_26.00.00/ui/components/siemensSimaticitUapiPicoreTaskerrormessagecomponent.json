@@ -1,0 +1,44 @@
+{
+  "manifestVersion": "02.00.00",
+  "uiComponent": {
+    "identity": {
+      "name": "siemensSimaticitUapiPicoreTaskerrormessagecomponent",
+      "version": "1.0.0",
+      "title": "Task Error Message Component",
+      "source": "siemens-simaticit-uapi-picore-taskerrormessagecomponent",
+      "dependencies": [ ]
+    },
+    "metadata": {
+      "description": "",
+      "icon": "fa-puzzle-piece",
+      "image": "null",
+      "size": {
+        "default": {
+          "rows": 6,
+          "columns": 6
+        },
+        "min": {
+          "rows": 6,
+          "columns": 6
+        },
+        "max": {
+          "rows": 6,
+          "columns": 6
+        }
+      }
+    },
+    "contracts": {
+      "api": {
+        "methods": {
+          
+        },
+        "events": {
+          
+        }
+      },
+      "dpc": {
+        
+      }
+    }
+  }
+}

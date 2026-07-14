@@ -1,0 +1,1005 @@
+﻿<?xml version="1.0" encoding="utf-8"?><projectmanifest>
+  <header>
+    <manifestversion>11.0</manifestversion>
+    <platformversion>11.0</platformversion>
+    <type>Library</type>
+    <name>Siemens.SimaticIT.UDM_OP</name>
+    <shortname>UDM_OP</shortname>
+    <description>UDM Operational Data Domain Functional Block</description>
+    <version>22.00.00</version>
+    <companyname>Siemens.SimaticIT</companyname>
+    <author>Siemens.SimaticIT</author>
+    <hash>FSm2LBcKFX5YAjac+xz5ByBK2xekEHOobkSrqT5ghM0=</hash>
+    <modelHash>XR8HlGc5VmZfVpqf6x5Sbq7fXVP5OAMDc5hhLdty/kQ=</modelHash>
+    <modelHashSections>
+      <modelHashSection>
+        <name>projectConfigModelHash</name>
+        <hash>AVAXJNm9DGsje55qS7zP3xVxxddg2pTuosaoPPb4CuY=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>dataModelHash</name>
+        <hash>GGZ4WkkAtYNPEkeQPNcc2CoBKUwUX2g2ZScTuWb0qZI=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>commandModelHash</name>
+        <hash>7ywfBwg/iuTj7AxP9bTREBRkbsziZNJWfa91DBxVVZ0=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>aliasModelHash</name>
+        <hash>FCE0KMXJjmDlnki7ue9cotrur1tAAXlmG5Tm782yrrs=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>eventModelHash</name>
+        <hash>1pCUQMeMV1zI9wPwd+zPXfSRUhyKxTb/4j3YyV+SOBI=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>typeModelHash</name>
+        <hash>c99IpfhMywRol1jrwTzyJycmY8iL5CX9pEUFvC2Lun0=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>securityModelHash</name>
+        <hash>HBCAwH1bPzPLFZ0nja4tQ6QtcIjsQ44hwxLWV6Kg8e4=</hash>
+      </modelHashSection>
+    </modelHashSections>
+    <uiHash>na</uiHash>
+    <canbeextended>false</canbeextended>
+    <domain>OperationalData</domain>
+  </header>
+  <reference>
+    <functionalblocks>
+      <functionalblock>
+        <name>Siemens.SimaticIT.UDM_RF</name>
+        <version>07.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.EQU_MS</name>
+        <version>08.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.EQU_OP</name>
+        <version>08.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.TSK_MS</name>
+        <version>09.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.UDM_MS</name>
+        <version>21.00.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.TSK_OP</name>
+        <version>11.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.OpcenterEX.Configuration_RF</name>
+        <version>12.00.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.ALG_MS</name>
+        <version>02.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.ALG_OP</name>
+        <version>02.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.OpcenterEX.PR.ApplicationLogExt</name>
+        <version>14.00.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.OpcenterEX.FN.ProductionHistory_MS</name>
+        <version>10.00.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.OpcenterEX.FN.ProductionHistory_OP</name>
+        <version>11.00.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.UAPI.ProductionContext_RF</name>
+        <version>15.00.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.MAT_MS</name>
+        <version>05.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.OpcenterEX.FN.NUM_OP</name>
+        <version>02.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.MAT_OP</name>
+        <version>06.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+    </functionalblocks>
+    <extensions><extension>
+      <name>Siemens.SimaticIT.UDM_OP</name>
+    </extension></extensions>
+  </reference>
+  <artifacts>
+    <commands><command>
+                        <name>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.Commands.CreateOperationalDataTemplate</name>
+                        <shortname>CreateOperationalDataTemplate</shortname>
+                        <description>Creates an Operational Data Template.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.Commands.Internal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Private</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>false</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.Commands.CreateOperationalDataTemplateHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UDM_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.Commands.CreateWorkOrderTemplate</name>
+                        <shortname>CreateWorkOrderTemplate</shortname>
+                        <description>Creates a Work Order Template.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.Commands.CreateWorkOrderTemplateHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UDM_OP.WOP_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.Commands.DeleteWorkOrderTemplate</name>
+                        <shortname>DeleteWorkOrderTemplate</shortname>
+                        <description>Deletes an existing Work Order Template.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.Commands.DeleteWorkOrderTemplateHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UDM_OP.WOP_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.Commands.UpdateWorkOrderTemplate</name>
+                        <shortname>UpdateWorkOrderTemplate</shortname>
+                        <description>Updates one or more properties of a Work Order Template.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.Commands.UpdateWorkOrderTemplateHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UDM_OP.WOP_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.Commands.DeleteWorkOrder</name>
+                        <shortname>DeleteWorkOrder</shortname>
+                        <description>Deletes an existing Work Order.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.Commands.DeleteWorkOrderHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UDM_OP.WOP_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.Commands.FreezeWorkOrder</name>
+                        <shortname>FreezeWorkOrder</shortname>
+                        <description>Configures a Work Order to read-only by setting the attribute IsFrozen to True.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.Commands.FreezeWorkOrderHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UDM_OP.WOP_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.Commands.UnfreezeWorkOrder</name>
+                        <shortname>UnfreezeWorkOrder</shortname>
+                        <description>Removes the read-only setting from a Work Order by setting the attribute IsFrozen to False.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.Commands.UnfreezeWorkOrderHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UDM_OP.WOP_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.Commands.SetWorkOrderStatus</name>
+                        <shortname>SetWorkOrderStatus</shortname>
+                        <description>Sets the status of a Work Order, checking the validity of the transition.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.Commands.SetWorkOrderStatusHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UDM_OP.WOP_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.Commands.ForceWorkOrderStatus</name>
+                        <shortname>ForceWorkOrderStatus</shortname>
+                        <description>Sets the status of the Work Order, without checking the validity of the transition.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.Commands.ForceWorkOrderStatusHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UDM_OP.WOP_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.Commands.UpdateWorkOrderUserField</name>
+                        <shortname>UpdateWorkOrderUserField</shortname>
+                        <description>Updates a Work Order User Field.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.Commands.UpdateWorkOrderUserFieldHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UDM_OP.WOP_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.Commands.SetWorkOrderQuantity</name>
+                        <shortname>SetWorkOrderQuantity</shortname>
+                        <description>Sets the quantity property value of the Work Order. If you set this value to 0, also the quantity values of the Material Requirements are set to 0, due to scaling effect.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.Commands.SetWorkOrderQuantityHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UDM_OP.WOP_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.Commands.SetWorkOrderOperationStatus</name>
+                        <shortname>SetWorkOrderOperationStatus</shortname>
+                        <description>Sets the status of a Work Order Operation, checking the validity of the transition. </description>
+                        <assembly>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.Commands.SetWorkOrderOperationStatusHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UDM_OP.WOP_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.Commands.AddWorkOrderOperation</name>
+                        <shortname>AddWorkOrderOperation</shortname>
+                        <description>FOR INTERNAL USE ONLY</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.Commands.Internal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Private</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>false</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.Commands.AddWorkOrderOperationHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UDM_OP.WOP_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.Commands.ForceWorkOrderOperationStatus</name>
+                        <shortname>ForceWorkOrderOperationStatus</shortname>
+                        <description>Sets the status of the Work Order Operation, without checking the validity of the transition.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.Commands.ForceWorkOrderOperationStatusHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UDM_OP.WOP_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.Commands.UpdateWorkOrderOperationUserField</name>
+                        <shortname>UpdateWorkOrderOperationUserField</shortname>
+                        <description>Updates a Work Order Operation User Field.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.Commands.UpdateWorkOrderOperationUserFieldHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UDM_OP.WOP_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.Commands.CreateTasksFromWorkProcedure</name>
+                        <shortname>CreateTasksFromWorkProcedure</shortname>
+                        <description>Given a Work Procedure, creates instances of a Task that can be linked to a Work Order Operation.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.Commands.Internal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Private</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>false</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.Commands.CreateTasksFromWorkProcedureHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UDM_OP.TSK_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.Commands.DeleteOperationalDataTemplateUserField</name>
+                        <shortname>DeleteOperationalDataTemplateUserField</shortname>
+                        <description>Deletes an existing Operational Data Template User Field.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.Commands.DeleteOperationalDataTemplateUserFieldHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UDM_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.Commands.UpdateOperationalDataTemplateUserField</name>
+                        <shortname>UpdateOperationalDataTemplateUserField</shortname>
+                        <description>Updates one or more properties of an Operational Data Template User Field.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.Commands.UpdateOperationalDataTemplateUserFieldHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UDM_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.Commands.FreezeWorkOrderTemplate</name>
+                        <shortname>FreezeWorkOrderTemplate</shortname>
+                        <description>Configures a Work Order Template to read-only by setting the attribute IsFrozen to True.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.Commands.FreezeWorkOrderTemplateHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UDM_OP.WOP_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.Commands.UnfreezeWorkOrderTemplate</name>
+                        <shortname>UnfreezeWorkOrderTemplate</shortname>
+                        <description>Removes the read-only setting from an Work Order Template by setting the attribute IsFrozen to False.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.Commands.UnfreezeWorkOrderTemplateHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UDM_OP.WOP_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.Commands.UpdateWorkOrderTemplateUserField</name>
+                        <shortname>UpdateWorkOrderTemplateUserField</shortname>
+                        <description>Updates a Work Order Template User Field.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.Commands.UpdateWorkOrderTemplateUserFieldHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UDM_OP.WOP_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.Commands.DeleteWorkOrderTemplateUserField</name>
+                        <shortname>DeleteWorkOrderTemplateUserField</shortname>
+                        <description>Deletes an existing Work Order Data Template User Field.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.Commands.DeleteWorkOrderTemplateUserFieldHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UDM_OP.WOP_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.Commands.UpdateWorkOrder</name>
+                        <shortname>UpdateWorkOrder</shortname>
+                        <description>Updates one or more properties of a Work Order.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.Commands.UpdateWorkOrderHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UDM_OP.WOP_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.Commands.UpdateWorkOrderOperation</name>
+                        <shortname>UpdateWorkOrderOperation</shortname>
+                        <description>Updates one or more properties of a Work Order Operation.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.Commands.UpdateWorkOrderOperationHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UDM_OP.WOP_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.Commands.UpdateWorkOrderOperationMaterialRequirement</name>
+                        <shortname>UpdateWorkOrderOperationMaterialRequirement</shortname>
+                        <description>Updates one or more properties of a Work Order Operation Material Requirement.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.Commands.UpdateWorkOrderOperationMaterialRequirementHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UDM_OP.WOP_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.Commands.CreateWorkOrder</name>
+                        <shortname>CreateWorkOrder</shortname>
+                        <description>Create a Work Order.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>false</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.Commands.CreateWorkOrderHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UDM_OP.WOP_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.Commands.SetWorkOrderTemplateAsDefault</name>
+                        <shortname>SetWorkOrderTemplateAsDefault</shortname>
+                        <description>Set a Work Order Template as Default.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.Commands.SetWorkOrderTemplateAsDefaultHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UDM_OP.WOP_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.Commands.CreateWorkOrderTask</name>
+                        <shortname>CreateWorkOrderTask</shortname>
+                        <description>Given a Task Definition, creates an instance of a Task that can be linked to a Work Order Operation.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.Commands.CreateWorkOrderTaskHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UDM_OP.TSK_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.Commands.DeleteWorkOrderOperationMaterialRequirement</name>
+                        <shortname>DeleteWorkOrderOperationMaterialRequirement</shortname>
+                        <description>Deletes an existing Work Order Operation Material Requirement.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.Commands.DeleteWorkOrderOperationMaterialRequirementHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UDM_OP.WOP_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.Commands.DeleteWorkOrderOperation</name>
+                        <shortname>DeleteWorkOrderOperation</shortname>
+                        <description>Deletes an existing Work Order Operation.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.Commands.DeleteWorkOrderOperationHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UDM_OP.WOP_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.Commands.UpdateWorkOrderContext</name>
+                        <shortname>UpdateWorkOrderContext</shortname>
+                        <description>Updates one or more properties of a Work Order Context.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.Commands.UpdateWorkOrderContextHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UDM_OP.TSK_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.Commands.AddWorkOrderOperations</name>
+                        <shortname>AddWorkOrderOperations</shortname>
+                        <description>Adds work order operations to a work order as defined in the related operation</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.Commands.AddWorkOrderOperationsHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UDM_OP.WOP_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.Commands.CreateWorkOrderContext</name>
+                        <shortname>CreateWorkOrderContext</shortname>
+                        <description>Associates an existing Task to the specified Work Order and Work Order Operation by creating a WorkOrderContext Entity.   Formerly you could optionally indicate the Work Procedure (Deprecated) in which the Task has been instantiated. Due to deprecation of Work Procedure, we recommend you to not use this option.   Please avoid using the Command arguments WorkProcedureNId and WorkProcedureRevision.  The command performs the following checks: 1. if the given Task exists, if not error -3 is returned; 2. if the given Work Order exists, if not error -3 is returned; 3. if the given Work Order Operation exists, if not error -3 is returned; 4. when a Work Procedure is specified, checks if it exists, if not error -3 is returned.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.Commands.CreateWorkOrderContextHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UDM_OP.WOP_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command></commands>
+    <commandActions></commandActions>
+    <events></events>
+    <event_handlers></event_handlers>
+    <signals></signals>
+    <readingFunctions></readingFunctions>
+    <entities><entity>
+      <name>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.DataModel.ReadingModel.OperationalDataTemplate</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.DataModel.ReadingModel.OperationalDataTemplateUserField</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.DataModel.ReadingModel.WorkOrder</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.DataModel.ReadingModel.WorkOrderUserField</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.DataModel.ReadingModel.WorkOrderOperation</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.DataModel.ReadingModel.WorkOrderOperationUserField</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.DataModel.ReadingModel.WorkOrderOperationMaterialRequirement</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.DataModel.ReadingModel.WorkOrderContext</name>
+      <securable>true</securable>
+    </entity></entities>
+    <datamodels><datamodel>
+      <assembly>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>WR</mode>
+      <domain>OperationalData</domain>
+    </datamodel><datamodel>
+      <assembly>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.ReadingModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>RD</mode>
+      <domain>OperationalData</domain>
+    </datamodel><datamodel>
+      <assembly>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.Types, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>WR</mode>
+      <domain>OperationalData</domain>
+    </datamodel><datamodel>
+      <assembly>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.Types.ReadingModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>RD</mode>
+      <domain>OperationalData</domain>
+    </datamodel></datamodels>
+    <externaldatamodels></externaldatamodels>
+    <appdatamodels></appdatamodels>
+    <uimodules></uimodules>
+    <uicomponents></uicomponents>
+    <wr_entities><wr_entity>
+      <name>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.DataModel.OperationalDataTemplate</name>
+      <shortname>OperationalDataTemplate</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity></parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity></root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.DataModel.WorkOrderTemplate</name>
+      <shortname>WorkOrderTemplate</shortname>
+      <haslogicalkey>false</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity></parententity>
+      <derivefromentity>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.DataModel.OperationalDataTemplate</derivefromentity>
+      <root_entity></root_entity>
+      <base_entity>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.DataModel.OperationalDataTemplate</base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.DataModel.OperationalDataTemplateUserField</name>
+      <shortname>OperationalDataTemplateUserField</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.DataModel.OperationalDataTemplate</parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.DataModel.OperationalDataTemplate</root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.DataModel.WorkOrder</name>
+      <shortname>WorkOrder</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity></parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity></root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.DataModel.WorkOrderUserField</name>
+      <shortname>WorkOrderUserField</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.DataModel.WorkOrder</parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.DataModel.WorkOrder</root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.DataModel.WorkOrderOperation</name>
+      <shortname>WorkOrderOperation</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.DataModel.WorkOrder</parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.DataModel.WorkOrder</root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.DataModel.WorkOrderOperationUserField</name>
+      <shortname>WorkOrderOperationUserField</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.DataModel.WorkOrderOperation</parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.DataModel.WorkOrder</root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.DataModel.WorkOrderOperationMaterialRequirement</name>
+      <shortname>WorkOrderOperationMaterialRequirement</shortname>
+      <haslogicalkey>false</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.DataModel.WorkOrderOperation</parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.DataModel.WorkOrder</root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.DataModel.WorkOrderContext</name>
+      <shortname>WorkOrderContext</shortname>
+      <haslogicalkey>false</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.DataModel.Task</parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity>Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.DataModel.Task</root_entity>
+      <base_entity></base_entity>
+    </wr_entity></wr_entities>
+    <wr_facets></wr_facets>
+  </artifacts>
+  <security>
+    <roles></roles>
+  </security>
+  <runtime>
+    <event_subscriptions></event_subscriptions>
+    <handlergroups></handlergroups>
+  </runtime>
+</projectmanifest>

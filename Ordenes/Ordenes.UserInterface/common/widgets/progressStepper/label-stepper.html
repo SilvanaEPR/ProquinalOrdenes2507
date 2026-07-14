@@ -1,0 +1,7 @@
+<div class="standard-label-progress-stepper">
+    <ul class="list">
+        <li class="list-item" ng-repeat="step in labelStepperCtrl.options.steps track by $index" ng-class="labelStepperCtrl.getClassByStatus($index)">
+            <label class="list-item-label" title="{{step.label  | translate}}">{{step.label || step.id | translate}}</label>
+        </li>
+    </ul>
+</div>

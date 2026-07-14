@@ -1,0 +1,15 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 16 16">
+  <defs>
+    <linearGradient id="linear-gradient" x1="1811.703" y1="-1000.815" x2="1832.703" y2="-1021.815" gradientTransform="matrix(0.346, 0, 0, -0.346, -622.372, -341.543)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#73b4c8"/>
+      <stop offset="0.175" stop-color="#6aaec3"/>
+      <stop offset="0.457" stop-color="#529eb5"/>
+      <stop offset="0.809" stop-color="#2c839f"/>
+      <stop offset="1" stop-color="#147391"/>
+    </linearGradient>
+  </defs>
+  <g id="g1245">
+    <path id="polygon13" d="M1.621,8,7.847.742,14.072,8,7.847,15.258Z" fill="url(#linear-gradient)"/>
+    <path id="path1021" d="M4.418,12.012C2.538,9.818,1,8.013,1,8S7.827,0,7.847,0s6.847,7.976,6.847,8-6.827,8-6.847,8S6.3,14.205,4.418,12.012Zm9-4.012c0-.021-5.548-6.5-5.566-6.5S2.28,7.978,2.28,8s1.253,1.478,2.784,3.263l2.785,3.246,2.782-3.244C12.161,9.48,13.413,8.011,13.413,8Z" class="aw-theme-iconOutline" fill="#464646"/>
+  </g>
+</svg>

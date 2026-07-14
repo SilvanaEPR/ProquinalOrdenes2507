@@ -1,0 +1,85 @@
+<svg id="Image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.617" y1="746.276" x2="45.035" y2="784.694" gradientTransform="translate(0 -740)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="0.221" stop-color="#fbfbfc"/>
+      <stop offset="0.541" stop-color="#ececec"/>
+      <stop offset="0.92" stop-color="#d0cecd"/>
+      <stop offset="1" stop-color="#c9c6c5"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" y1="49" x2="45" y2="4" gradientTransform="matrix(1, 0, 0, -1, 0, 50)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="0.228" stop-color="#fafafa"/>
+      <stop offset="0.488" stop-color="#ededed"/>
+      <stop offset="0.762" stop-color="#d7d6d6"/>
+      <stop offset="1" stop-color="#bdbcbc"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="13.461" y1="35.164" x2="36.953" y2="12.436" gradientTransform="matrix(1, 0, 0, -1, 0, 50)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#73b4c8"/>
+      <stop offset="0.175" stop-color="#6aaec3"/>
+      <stop offset="0.457" stop-color="#529eb5"/>
+      <stop offset="0.809" stop-color="#2c839f"/>
+      <stop offset="1" stop-color="#147391"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-4" x1="277.275" y1="1102.015" x2="290.107" y2="1115.738" gradientTransform="translate(-175.485 -742.211) scale(0.688)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="0.248" stop-color="#f8f8f8"/>
+      <stop offset="0.606" stop-color="#e5e5e5"/>
+      <stop offset="1" stop-color="#c8c8c8"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-5" x1="280.464" y1="1104.79" x2="285.091" y2="1109.671" gradientTransform="translate(-175.485 -742.211) scale(0.688)" xlink:href="#linear-gradient-3"/>
+  </defs>
+  <g id="g1024">
+    <path id="path35" d="M1.5,43h45V10h-27L16.094,4.891A2,2,0,0,0,14.43,4H3.5a2,2,0,0,0-2,2Z" fill="url(#linear-gradient)"/>
+    <path id="path37" d="M47,43.5H1V6A2.5,2.5,0,0,1,3.5,3.5H14.43a2.493,2.493,0,0,1,2.08,1.114L19.768,9.5H47Zm-45-1H46v-32H19.232L15.678,5.168A1.5,1.5,0,0,0,14.43,4.5H3.5A1.5,1.5,0,0,0,2,6Z" fill="#4e4a48"/>
+    <path id="rect13" d="M13.587,14.587H36.413V37.413H13.587Z" stroke="#464646" stroke-linecap="round" stroke-miterlimit="10" stroke-width="0.507" fill="url(#linear-gradient-2)"/>
+    <path id="path26" d="M34.891,16.109h-9.13v9.13h9.13ZM24.239,26.761h-9.13v9.13h9.13Zm10.652,0h-9.13v9.13h9.13Z" stroke="#147391" stroke-miterlimit="10" stroke-width="0.507" fill="url(#linear-gradient-3)"/>
+    <g id="g1009">
+      <path id="path22" d="M20.176,15.956a1,1,0,0,1-2.008,0H16.16l-1.2,1.2v8.232h9.436V15.956Z" stroke="#464646" stroke-miterlimit="2.921" stroke-width="0.201" fill="url(#linear-gradient-4)"/>
+      <path id="rect24-2" d="M17.767,17.963h2.61v3.213h-2.61Z" stroke="#147391" stroke-miterlimit="2.921" stroke-width="0.201" fill="url(#linear-gradient-5)"/>
+      <path id="polyline26" d="M17.365,18.365h-.6l-.5-.5" fill="none" stroke="#147391" stroke-linejoin="round" stroke-width="0.201"/>
+      <path id="polyline28" d="M17.365,20.774h-.6l-.8.8v.4" fill="none" stroke="#147391" stroke-linejoin="round" stroke-width="0.201"/>
+      <path id="polyline30" d="M17.365,19.57h-.6l-.5-.5" fill="none" stroke="#147391" stroke-linejoin="round" stroke-width="0.201"/>
+      <path id="rect32" d="M17.365,18.164h.4v.4h-.4Z" fill="none" stroke="#147391" stroke-miterlimit="2.921" stroke-width="0.201"/>
+      <path id="rect34" d="M17.365,19.369h.4v.4h-.4Z" fill="none" stroke="#147391" stroke-miterlimit="2.921" stroke-width="0.201"/>
+      <path id="rect36" d="M17.365,20.573h.4v.4h-.4Z" fill="none" stroke="#147391" stroke-miterlimit="2.921" stroke-width="0.201"/>
+      <path id="circle38" d="M16.361,22.381a.4.4,0,1,1-.4-.4.4.4,0,0,1,.4.4Z" fill="none" stroke="#147391" stroke-miterlimit="2.921" stroke-width="0.201"/>
+      <path id="circle40" d="M16.361,23.987a.4.4,0,1,1-.4-.4.4.4,0,0,1,.4.4Z" fill="none" stroke="#147391" stroke-miterlimit="2.921" stroke-width="0.201"/>
+      <path id="circle42" d="M18.77,23.987a.4.4,0,1,1-.4-.4A.4.4,0,0,1,18.77,23.987Z" fill="none" stroke="#147391" stroke-miterlimit="2.921" stroke-width="0.201"/>
+      <path id="circle44" d="M16.361,18.767a.4.4,0,1,1-.4-.4.4.4,0,0,1,.4.4Z" fill="none" stroke="#147391" stroke-miterlimit="2.921" stroke-width="0.201"/>
+      <path id="circle46" d="M16.361,17.562a.4.4,0,1,1-.4-.4.4.4,0,0,1,.4.4Z" fill="none" stroke="#147391" stroke-miterlimit="2.921" stroke-width="0.201"/>
+      <path id="polyline48" d="M20.778,19.57h1.606l1.2-1.205v-1" fill="none" stroke="#147391" stroke-linejoin="round" stroke-width="0.201"/>
+      <path id="polyline50" d="M23.389,22.381v-.8l-.8-.8H20.778" fill="none" stroke="#147391" stroke-linejoin="round" stroke-width="0.201"/>
+      <path id="circle52" d="M23.991,16.959a.4.4,0,1,1-.4-.4.4.4,0,0,1,.4.4Z" fill="none" stroke="#147391" stroke-miterlimit="2.921" stroke-width="0.201"/>
+      <path id="polyline54" d="M20.778,18.365h1l.6-.6v-.4" fill="none" stroke="#147391" stroke-linejoin="round" stroke-width="0.201"/>
+      <path id="circle56" d="M22.786,16.959a.4.4,0,1,1-.4-.4.4.4,0,0,1,.4.4Z" fill="none" stroke="#147391" stroke-miterlimit="2.921" stroke-width="0.201"/>
+      <path id="circle58" d="M23.79,22.782a.4.4,0,1,1-.4-.4A.4.4,0,0,1,23.79,22.782Z" fill="none" stroke="#147391" stroke-miterlimit="2.921" stroke-width="0.201"/>
+      <path id="circle60" d="M17.967,22.381a.4.4,0,1,1-.4-.4A.4.4,0,0,1,17.967,22.381Z" fill="none" stroke="#147391" stroke-miterlimit="2.921" stroke-width="0.201"/>
+      <path id="circle62" d="M20.778,23.987a.4.4,0,1,1-.4-.4A.4.4,0,0,1,20.778,23.987Z" fill="none" stroke="#147391" stroke-miterlimit="2.921" stroke-width="0.201"/>
+      <path id="polyline64" d="M20.093,23.7,18.77,22.381h-.8" fill="none" stroke="#147391" stroke-linejoin="round" stroke-width="0.201"/>
+      <path id="rect66" d="M20.377,18.164h.4v.4h-.4Z" fill="none" stroke="#147391" stroke-miterlimit="2.921" stroke-width="0.201"/>
+      <path id="rect68" d="M20.377,19.369h.4v.4h-.4Z" fill="none" stroke="#147391" stroke-miterlimit="2.921" stroke-width="0.201"/>
+      <path id="rect70" d="M20.377,20.573h.4v.4h-.4Z" fill="none" stroke="#147391" stroke-miterlimit="2.921" stroke-width="0.201"/>
+      <path id="line72" d="M16.361,23.987h1.606" fill="none" stroke="#147391" stroke-linejoin="round" stroke-width="0.201"/>
+      <path id="circle74" d="M22.384,21.778a.4.4,0,1,1-.4-.4h0a.4.4,0,0,1,.4.4Z" fill="none" stroke="#147391" stroke-miterlimit="2.921" stroke-width="0.201"/>
+      <path id="circle76" d="M22.384,23.987a.4.4,0,1,1-.4-.4A.4.4,0,0,1,22.384,23.987Z" fill="none" stroke="#147391" stroke-miterlimit="2.921" stroke-width="0.201"/>
+      <path id="line78" d="M21.983,22.18v1.405" fill="none" stroke="#147391" stroke-linejoin="round" stroke-width="0.201"/>
+    </g>
+    <path id="rect1041-80-6-0" d="M11.431,16.667h.736V12.583h-.736Z" fill="#147391"/>
+    <path id="rect1041-8-9-4-3" d="M15.667,13.167v-.812H11.583v.812Z" fill="#147391"/>
+    <path id="rect1041-80-6-0-5" d="M11,16.667h.583V12H11Z" fill="#147391"/>
+    <path id="rect1041-8-9-4-3-8" d="M15.667,12.583V12H11v.583Z" fill="#147391"/>
+    <path id="rect1041-80-6-0-4" d="M11.482,35.333h.685v4.084h-.685Z" fill="#147391"/>
+    <path id="rect1041-8-9-4-3-1" d="M15.667,38.833v.736H11.583v-.736Z" fill="#147391"/>
+    <path id="rect1041-80-6-0-5-7" d="M11,35.333h.583V40H11Z" fill="#147391"/>
+    <path id="rect1041-8-9-4-3-8-2" d="M15.667,39.417V40H11v-.583Z" fill="#147391"/>
+    <path id="rect1041-80-6-0-1" d="M38.544,16.667h-.711V12.583h.711Z" fill="#147391"/>
+    <path id="rect1041-8-9-4-3-7" d="M34.333,13.167v-.711h4.084v.711Z" fill="#147391"/>
+    <path id="rect1041-80-6-0-5-2" d="M39,16.667h-.583V12H39Z" fill="#147391"/>
+    <path id="rect1041-8-9-4-3-8-3" d="M34.333,12.583V12H39v.583Z" fill="#147391"/>
+    <path id="rect1041-80-6-0-46" d="M38.569,35.333h-.736v4.084h.736Z" fill="#147391"/>
+    <path id="rect1041-8-9-4-3-13" d="M34.333,38.833v.838h4.084v-.838Z" fill="#147391"/>
+    <path id="rect1041-80-6-0-5-4" d="M39,35.333h-.583V40H39Z" fill="#147391"/>
+    <path id="rect1041-8-9-4-3-8-21" d="M34.333,39.417V40H39v-.583Z" fill="#147391"/>
+  </g>
+</svg>

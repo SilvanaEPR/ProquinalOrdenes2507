@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sections>
+  <Section engineeringLevel="LibraryFunctionalBlock" implementationName="OTL" domainName="ReferenceData">
+    <Entity type="Siemens.OpcenterEX.ReferenceData.Configuration_RF.RFModel.DataModel.ConfigurationAppDomain">
+      <Property name="NId" kind="Plain" value="OTLConfiguration" />
+      <Property name="Name" kind="Plain" value="OTL Configuration" />
+      <Property name="Description" kind="Plain" value="Defines configuration for Operator Task List." />
+      <Property name="IsSystemDefined" kind="Plain" value="true" />
+    </Entity>
+    <Entity type="Siemens.OpcenterEX.ReferenceData.Configuration_RF.RFModel.DataModel.ConfigurationKey">
+      <Property name="NId" kind="Plain" value="EnableTimeBasedQualityExecutionOTLVisualization" />
+      <Property name="Name" kind="Plain" value="Enable Time Based Quality Execution OTL Visualization" />
+      <Property name="Description" kind="Plain" value="Enables visualization of delayed Time based quality execution on Operator Task List." />
+      <Property name="Type" kind="Plain" value="System.Boolean" />
+      <Property name="Val" kind="Plain" value="false" />
+      <Property name="IsProtected" kind="Plain" value="false" />
+      <Property name="Category" kind="Plain" value="Engineering" />
+      <Property name="IsMultiValue" kind="Plain" value="false" />
+      <Property name="ConfigurationAppDomain" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.OpcenterEX.ReferenceData.Configuration_RF.RFModel.DataModel.ConfigurationAppDomain">
+          <Property name="NId" kind="Plain" value="OTLConfiguration" />
+        </LogicalKey>
+      </Property>
+      <Property name="IsSystemDefined" kind="Plain" value="true" />
+    </Entity>
+    <Entity type="Siemens.OpcenterEX.ReferenceData.Configuration_RF.RFModel.DataModel.ConfigurationKey">
+      <Property name="NId" kind="Plain" value="EnableTaskVisualizationByEquipmentHierarchy" />
+      <Property name="Name" kind="Plain" value="Enable Task Visualization By Equipment Hierarchy" />
+      <Property name="Description" kind="Plain" value="Enables the possibility to monitor Tasks executed on Equipment that are children of the one set in the Production Context." />
+      <Property name="Type" kind="Plain" value="System.Boolean" />
+      <Property name="Val" kind="Plain" value="true" />
+      <Property name="IsProtected" kind="Plain" value="false" />
+      <Property name="Category" kind="Plain" value="Engineering" />
+      <Property name="IsMultiValue" kind="Plain" value="false" />
+      <Property name="ConfigurationAppDomain" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.OpcenterEX.ReferenceData.Configuration_RF.RFModel.DataModel.ConfigurationAppDomain">
+          <Property name="NId" kind="Plain" value="OTLConfiguration" />
+        </LogicalKey>
+      </Property>
+      <Property name="IsSystemDefined" kind="Plain" value="true" />
+    </Entity>
+    <Entity type="Siemens.OpcenterEX.ReferenceData.Configuration_RF.RFModel.DataModel.ConfigurationKey">
+      <Property name="NId" kind="Plain" value="CompletedTasksTimeSpan" />
+      <Property name="Name" kind="Plain" value="Completed Tasks Time Span" />
+      <Property name="Description" kind="Plain" value="Define the number of days that will be considered during the query of completed tasks." />
+      <Property name="Type" kind="Plain" value="System.Int16" />
+      <Property name="Val" kind="Plain" value="7" />
+      <Property name="IsProtected" kind="Plain" value="false" />
+      <Property name="Category" kind="Plain" value="Runtime" />
+      <Property name="IsMultiValue" kind="Plain" value="false" />
+      <Property name="ConfigurationAppDomain" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.OpcenterEX.ReferenceData.Configuration_RF.RFModel.DataModel.ConfigurationAppDomain">
+          <Property name="NId" kind="Plain" value="OTLConfiguration" />
+        </LogicalKey>
+      </Property>
+      <Property name="IsSystemDefined" kind="Plain" value="true" />
+    </Entity>
+  </Section>
+</Sections>

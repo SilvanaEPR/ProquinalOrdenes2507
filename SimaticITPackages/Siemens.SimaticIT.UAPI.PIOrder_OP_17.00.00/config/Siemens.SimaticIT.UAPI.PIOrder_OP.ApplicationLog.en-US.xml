@@ -1,0 +1,372 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- This file is used to define Application Log messages. You should follow below instructions while defining messages: 
+    - The <message> structure should be repeated for each Application Log message.
+    - The <id> attribute is mandatory and should be unique in this file.
+    - The <short> attribute represents the short text message and should be less than or up to 100 characters.
+    - The <long> attribute represents the long text message and should be less than or up to 400 characters.
+    - The <level> attribute is mandatory and its value should be one of: Verbose | Error | Warning | Critical | Informational.
+    - The <param> structure should be repeated for each parameter of the Application Log message.
+    - The <key> attribute represents the unique identifier for a parameter that repeats multiple times in the message text.
+    - The <type> attribute represents the datatype of the parameter and its value should be one of the primitive types: string | byte | int | decimal | float | double | long | boolean | Guid | Datetime | Timespan.  -->
+<messages>
+  <message>
+    <id>10900</id>
+    <short>Order Creation</short>
+    <long>A new Order %OrderNId% has been created.</long>
+    <level>Informational</level>
+    <params>
+      <param>
+        <key>OrderNId</key>
+        <type>String</type>
+      </param>
+     <param>
+        <key>PHR</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>10901</id>
+    <short>Freezing Order</short>
+    <long>The Order %OrderNId% has been frozen.</long>
+    <level>Informational</level>
+    <params>
+      <param>
+        <key>OrderNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>PHR</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>10902</id>
+    <short>Unfreezing Order</short>
+    <long>The Order %OrderNId% has been unfrozen.</long>
+    <level>Informational</level>
+    <params>
+      <param>
+        <key>OrderNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>PHR</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>10903</id>
+    <short>Order Update</short>
+    <long>The State Machine %StateMachineNId% has been set to order %OrderNId%.</long>
+    <level>Informational</level>
+    <params>
+      <param>
+        <key>StateMachineNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>OrderNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>PHR</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>10904</id>
+    <short>Order Status Change</short>
+    <long>The status of Order %OrderNId% has been changed from %SourceStatusNId% to %TargetStatusNId% for State Machine %StateMachineNId%.</long>
+    <level>Informational</level>
+    <params>
+      <param>
+        <key>PHR</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>OrderNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>SourceStatusNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>TargetStatusNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>StateMachineNId</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>10905</id>
+    <short>Order Deletion</short>
+    <long>The Order %OrderNId% has been deleted.</long>
+    <level>Informational</level>
+    <params>
+      <param>
+        <key>OrderNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>PHR</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>10906</id>
+    <short>Order User Field Creation</short>
+    <long>A new User Field  %UserfieldNId% has been created for Order %OrderNId%.</long>
+    <level>Informational</level>
+    <params>
+      <param>
+        <key>OrderNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>UserfieldNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>PHR</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>10907</id>
+    <short>Order User Field Deletion</short>
+    <long>The User Field  %UserfieldNId% of Order %OrderNId% has been deleted.</long>
+    <level>Informational</level>
+    <params>
+      <param>
+        <key>OrderNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>UserfieldNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>PHR</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>10908</id>
+    <short>Order Operation Creation</short>
+    <long>A new Order Operation %OrderOperationNId% has been created for %OrderNId%.</long>
+    <level>Informational</level>
+    <params>
+      <param>
+        <key>OrderNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>OrderOperationNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>PHR</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>10909</id>
+    <short>Order Operation Deletion</short>
+    <long>The Order Operation %OrderOperationNId% of %OrderNId% has been deleted.</long>
+    <level>Informational</level>
+    <params>
+      <param>
+        <key>OrderNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>OrderOperationNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>PHR</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>10910</id>
+    <short>Order Operation Parameter Creation</short>
+    <long>A new Parameter %ParameterNId% has been created for Order Operation %OrderOperationNId% of %OrderNId%.</long>
+    <level>Informational</level>
+    <params>
+      <param>
+        <key>ParameterNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>OrderOperationNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>OrderNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>PHR</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>10911</id>
+    <short>Order Operation Equipment Requirement Creation</short>
+    <long>A new Equipment Requirement has been created for Order Operation %OrderOperationNId% of %OrderNId% from Equipment %EquipReqNId%.</long>
+    <level>Informational</level>
+    <params>
+      <param>
+        <key>EquipReqNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>OrderOperationNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>OrderNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>PHR</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>10912</id>
+    <short>Order Operation Equipment Requirement Creation</short>
+    <long>A new Equipment Requirement has been created for Order Operation %OrderOperationNId% of %OrderNId% from Equipment Group %EquipGrpNId%.</long>
+    <level>Informational</level>
+    <params>
+      <param>
+        <key>EquipGrpNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>OrderOperationNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>OrderNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>PHR</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>10913</id>
+    <short>Order Operation Equipment Requirement Creation</short>
+    <long>A new Equipment Requirement has been created for Order Operation %OrderOperationNId% of %OrderNId% from Equipment %EquipNId% and %EquipGrpNId%.</long>
+    <level>Informational</level>
+    <params>
+      <param>
+        <key>EquipNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>EquipGrpNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>OrderOperationNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>OrderNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>PHR</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>10914</id>
+    <short>Order Operation Material Requirement Creation</short>
+    <long>A new Material Requirement has been created for Order Operation %OrderOperationNId% of %OrderNId% from Material %MatReqNId% %MatReqRev% %MatReqName%.</long>
+    <level>Informational</level>
+    <params>
+      <param>
+        <key>MatReqNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>MatReqRev</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>MatReqName</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>OrderOperationNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>OrderNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>PHR</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>10915</id>
+    <short>Order Update</short>
+    <long>The Order %OrderNId% has been updated.</long>
+    <level>Informational</level>
+    <params>
+      <param>
+        <key>OrderNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>PHR</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>10916</id>
+    <short>Order User Field Update</short>
+    <long>The User Field  %UserfieldNId% of Order %OrderNId% has been updated.</long>
+    <level>Informational</level>
+    <params>
+      <param>
+        <key>UserfieldNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>OrderNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>PHR</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+</messages>

@@ -1,0 +1,10 @@
+<div id="image-tab-container" class="image-upload-tab">
+    <sit-tabset>
+        <sit-tab heading="{{Dialog.templatedata[0].tabHeadingtext}}">
+            <sit-property-grid sit-id="dialogPopup" sit-layout="Vertical" sit-type="Fixed" sit-mode="edit" sit-columns="1">
+                <sit-property sit-id="imageUpload" sit-widget="sit-file-uploader" sit-value="Dialog.templatedata[0].value" sit-autofocus=true
+                              sit-widget-attributes="Dialog.templatedata[0].widgetAttributes">{{Dialog.templatedata[0].browseText}}</sit-property>
+            </sit-property-grid>
+        </sit-tab>
+    </sit-tabset>
+</div>

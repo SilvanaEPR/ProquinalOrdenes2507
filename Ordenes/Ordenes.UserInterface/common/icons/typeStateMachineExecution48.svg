@@ -1,0 +1,34 @@
+<svg id="Image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="linear-gradient" x1="-270.044" y1="-72.525" x2="-255.301" y2="-107.184" gradientTransform="matrix(0.809, -0.588, -0.57, -0.821, 186.311, -190.564)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#dcdcdc"/>
+    </linearGradient>
+    <radialGradient id="radial-gradient" cx="350.893" cy="-396.923" r="17.546" gradientTransform="matrix(0.815, 0, 0, -0.815, -277.245, -299.042)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7fbbcc"/>
+      <stop offset="0.195" stop-color="#64a8bd"/>
+      <stop offset="0.554" stop-color="#3b8ba5"/>
+      <stop offset="0.835" stop-color="#207a97"/>
+      <stop offset="1" stop-color="#187491"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient-2" cx="383.321" cy="-406.933" r="17.765" gradientTransform="matrix(0.805, 0, 0, -0.805, -277.304, -303.094)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="0.355" stop-color="#e2e2e2"/>
+      <stop offset="0.76" stop-color="#c8c8c8"/>
+      <stop offset="1" stop-color="#bfbebe"/>
+    </radialGradient>
+    <linearGradient id="linear-gradient-2" x1="678.794" y1="102.064" x2="692.856" y2="116.126" gradientTransform="matrix(0.682, 0.479, 0.479, -0.682, -495.958, -238.589)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="0.221" stop-color="#f7f8f8"/>
+      <stop offset="0.541" stop-color="#e5e5e5"/>
+      <stop offset="0.92" stop-color="#c7c6c6"/>
+      <stop offset="1" stop-color="#bfbebe"/>
+    </linearGradient>
+  </defs>
+  <g id="g993">
+    <path id="rect864" d="M1.421,37l22.635-9.579,22.523,9.613L24.147,46.579Z" stroke="#464646" stroke-linejoin="round" stroke-width="0.841" fill="url(#linear-gradient)"/>
+    <path id="circle46" d="M21.083,29.25a8.333,8.333,0,0,1-8.333,8.333h0A8.333,8.333,0,0,1,4.417,29.25h0a8.333,8.333,0,0,1,16.666,0Z" stroke="#474747" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.833" fill="url(#radial-gradient)"/>
+    <path id="circle11" d="M43.583,29.25a8.333,8.333,0,0,1-8.333,8.333h0a8.333,8.333,0,0,1-8.333-8.333h0a8.333,8.333,0,0,1,16.666,0Z" stroke="#474747" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.833" fill="url(#radial-gradient-2)"/>
+    <path id="path60" d="M26.278,18.644l-.43-2.462,2.251-.395-.259-.181a6.257,6.257,0,0,0-8.706,1.522l-1.2,1.7L15.891,17.4l1.2-1.7a8.76,8.76,0,0,1,12.19-2.132l.254.178-.4-2.243,2.462-.433,1.136,6.454Z" stroke="#474747" stroke-miterlimit="10" stroke-width="0.833" fill="url(#linear-gradient-2)"/>
+  </g>
+</svg>

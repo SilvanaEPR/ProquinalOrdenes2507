@@ -1,0 +1,284 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--created on Wednesday, 24 May 2017 15:52:29 (UTC)-->
+<!--GUID values are formatted like '0b0e9810-096f-4864-b8e0-0dca91f6ff0f'; ALL OTHER VALUES FOLLOW .NET System.Globalization.CultureInfo.InvariantCulture FORMAT-->
+<Sections>
+  <Section engineeringLevel="LibraryFunctionalBlock" implementationName="2018-5-14-15-52-14" domainName="ReferenceData">
+    <!-- WorkProcess autonumbering pattern: WM_PIWorkProcessCounter" -->
+    <Entity type="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.NumberingPatternEntity">
+      <Property name="NId" kind="Plain" value="WorkProcess" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.Counter">
+      <Property name="NId" kind="Plain" value="PIWorkProcessCounter" />
+      <Property name="Name" kind="Plain" value="PI Work Process Counter" />
+      <Property name="Description" kind="Plain" value="PI Work Process counter, 9 digit" />
+      <Property name="Seed" kind="Plain" value="1" />
+      <Property name="Increment" kind="Plain" value="1" />
+      <Property name="MaxValue" kind="Plain" value="99999999999" />
+      <Property name="LeadingZeros" kind="Plain" value="True" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.NumberingPattern">
+      <Property name="NId" kind="Plain" value="NId" />
+      <Property name="Name" kind="Plain" value="PI Work Process NId Numbering Pattern" />
+      <Property name="Description" kind="Plain" value="PI Work Process Numbering Pattern: WM_PIWorkProcessCounter" />
+      <Property name="EntityTypeNId" kind="Plain" value="WorkProcess" />
+      <Property name="DestinationProperty" kind="Plain" value="NId" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.NumberingPatternPart">
+      <Property name="Counter" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.Counter">
+          <Property name="NId" kind="Plain" value="PIWorkProcessCounter" />
+        </LogicalKey>
+      </Property>
+      <Property name="NumberingPattern" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.NumberingPattern">
+          <Property name="NId" kind="Plain" value="NId" />
+          <Property name="EntityTypeNId" kind="Plain" value="WorkProcess" />
+        </LogicalKey>
+      </Property>
+      <Property name="Sequence" kind="Plain" value="2" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.NumberingPatternPart">
+      <Property name="Constant" kind="Plain" value="WP_" />
+      <Property name="Counter" kind="SingleReferenceToParent" />
+      <Property name="NumberingPattern" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.NumberingPattern">
+          <Property name="NId" kind="Plain" value="NId" />
+          <Property name="EntityTypeNId" kind="Plain" value="WorkProcess" />
+        </LogicalKey>
+      </Property>
+      <Property name="Sequence" kind="Plain" value="1" />
+    </Entity>
+  </Section>
+  <Section engineeringLevel="LibraryFunctionalBlock" implementationName="2024-01-15-17-13-00" domainName="ReferenceData">
+    <!-- ***************** Status Begavior Definition ***************** -->
+    <Entity type="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.StatusBehaviorDefinition">
+      <Property name="Name" kind="Plain" value="AllowWorkOrderOperationCompletion" />
+      <Property name="Description" kind="Plain" value="Used to trigger the completion of a Work Order Operation" />
+      <Property name="NId" kind="Plain" value="AllowWorkOrderOperationCompletion" />
+      <Property name="Statuses" kind="ManyToManyReference">
+        <LogicalKey entityType="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.Status">
+          <Property name="NId" kind="Plain" value="Completed" />
+          <Property name="StateMachine" kind="SingleReferenceToParent">
+            <LogicalKey entityType="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.StateMachine">
+              <Property name="NId" kind="Plain" value="WorkProcessStateMachine" />
+            </LogicalKey>
+          </Property>
+        </LogicalKey>
+      </Property>
+    </Entity>
+    <Entity type="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.StatusBehaviorDefinition">
+      <Property name="Name" kind="Plain" value="AllowWorkOrderOperationCompletion" />
+      <Property name="Description" kind="Plain" value="Used to trigger the completion of a Work Order Operation" />
+      <Property name="NId" kind="Plain" value="AllowWorkOrderOperationCompletion" />
+      <Property name="Statuses" kind="ManyToManyReference">
+        <LogicalKey entityType="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.Status">
+          <Property name="NId" kind="Plain" value="Completed" />
+          <Property name="StateMachine" kind="SingleReferenceToParent">
+            <LogicalKey entityType="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.StateMachine">
+              <Property name="NId" kind="Plain" value="TaskStateMachine" />
+            </LogicalKey>
+          </Property>
+        </LogicalKey>
+      </Property>
+    </Entity>
+    <!-- ***************** Status Definition ***************** -->
+    <Entity type="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.StatusDefinition">
+      <Property name="NId" kind="Plain" value="IsInProgress" />
+      <Property name="Name" kind="Plain" value="IsInProgress" />
+      <Property name="Description" kind="Plain" value="" />
+      <Property name="Color" kind="Plain" value="#005F87" />
+      <Property name="IsHidden" kind="Plain" value="False" />
+      <Property name="IsSystemDefined" kind="Plain" value="False" />
+      <Property name="Outcome" kind="Plain" value="0" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.StatusDefinition">
+      <Property name="NId" kind="Plain" value="IsCompleted" />
+      <Property name="Name" kind="Plain" value="IsCompleted" />
+      <Property name="Description" kind="Plain" value="" />
+      <Property name="Color" kind="Plain" value="#28E632" />
+      <Property name="IsHidden" kind="Plain" value="False" />
+      <Property name="IsSystemDefined" kind="Plain" value="False" />
+      <Property name="Outcome" kind="Plain" value="0" />
+    </Entity>
+    <!-- Counter for PIMTU-->
+    <!--<Entity type="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.Counter">
+      <Property name="NId" kind="Plain" value="PIMTUCounter" />
+      <Property name="Name" kind="Plain" value="PI Material Tracking Unit Counter" />
+      <Property name="Description" kind="Plain" value="PI Material Tracking Unit counter, 9 digit" />
+      <Property name="Seed" kind="Plain" value="1" />
+      <Property name="Increment" kind="Plain" value="1" />
+      <Property name="MaxValue" kind="Plain" value="99999999999" />
+      <Property name="LeadingZeros" kind="Plain" value="True" />
+    </Entity>-->
+    <!-- Numbering Pattern for Task-->
+    <!--<Entity type="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.NumberingPattern">
+      <Property name="NId" kind="Plain" value="NId" />
+      <Property name="Name" kind="Plain" value="PI Material Tracking Unit NId Numbering Pattern" />
+      <Property name="Description" kind="Plain" value="PI Material Tracking Unit Numbering Pattern: MTU_PIMTUCounter" />
+      <Property name="EntityTypeNId" kind="Plain" value="MaterialTrackingUnit" />
+      <Property name="DestinationProperty" kind="Plain" value="NId" />
+    </Entity>-->
+    <!-- Numbering Pattern Parts for PI MTU -->
+    <!--<Entity type="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.NumberingPatternPart">
+      <Property name="Counter" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.Counter">
+          <Property name="NId" kind="Plain" value="PIMTUCounter" />
+        </LogicalKey>
+      </Property>
+      <Property name="NumberingPattern" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.NumberingPattern">
+          <Property name="NId" kind="Plain" value="NId" />
+          <Property name="EntityTypeNId" kind="Plain" value="MaterialTrackingUnit" />
+        </LogicalKey>
+      </Property>
+      <Property name="Sequence" kind="Plain" value="2" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.NumberingPatternPart">
+      <Property name="Constant" kind="Plain" value="MTU_" />
+      <Property name="Counter" kind="SingleReferenceToParent" />
+      <Property name="NumberingPattern" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.NumberingPattern">
+          <Property name="NId" kind="Plain" value="NId" />
+          <Property name="EntityTypeNId" kind="Plain" value="MaterialTrackingUnit" />
+        </LogicalKey>
+      </Property>
+      <Property name="Sequence" kind="Plain" value="1" />
+    </Entity>-->
+    <!-- Numbering Pattern Parts for PI WorkOrder -->
+    <!-- Counter for PI WorkOrder-->
+    <Entity type="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.Counter">
+      <Property name="NId" kind="Plain" value="PIWorkOrderCounter" />
+      <Property name="Name" kind="Plain" value="PI Work Order Counter" />
+      <Property name="Description" kind="Plain" value="PI Work Order counter, 9 digit" />
+      <Property name="Seed" kind="Plain" value="1" />
+      <Property name="Increment" kind="Plain" value="1" />
+      <Property name="MaxValue" kind="Plain" value="99999999999" />
+      <Property name="LeadingZeros" kind="Plain" value="True" />
+    </Entity>
+    <!-- Numbering Pattern for Work Order-->
+    <Entity type="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.NumberingPattern">
+      <Property name="NId" kind="Plain" value="NId" />
+      <Property name="Name" kind="Plain" value="PI Work Order NId Numbering Pattern" />
+      <Property name="Description" kind="Plain" value="PI Work Order Numbering Pattern: PIWorkOrderCounter" />
+      <Property name="EntityTypeNId" kind="Plain" value="WorkOrder" />
+      <Property name="DestinationProperty" kind="Plain" value="NId" />
+    </Entity>
+    <!-- Numbering Pattern Parts for PI Work Order -->
+    <Entity type="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.NumberingPatternPart">
+      <Property name="Counter" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.Counter">
+          <Property name="NId" kind="Plain" value="PIWorkOrderCounter" />
+        </LogicalKey>
+      </Property>
+      <Property name="NumberingPattern" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.NumberingPattern">
+          <Property name="NId" kind="Plain" value="NId" />
+          <Property name="EntityTypeNId" kind="Plain" value="WorkOrder" />
+        </LogicalKey>
+      </Property>
+      <Property name="Sequence" kind="Plain" value="2" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.NumberingPatternPart">
+      <Property name="Constant" kind="Plain" value="WO_" />
+      <Property name="Counter" kind="SingleReferenceToParent" />
+      <Property name="NumberingPattern" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.NumberingPattern">
+          <Property name="NId" kind="Plain" value="NId" />
+          <Property name="EntityTypeNId" kind="Plain" value="WorkOrder" />
+        </LogicalKey>
+      </Property>
+      <Property name="Sequence" kind="Plain" value="1" />
+    </Entity>    
+    <Entity type="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.NumberingPatternParameter">
+      <Property name="NId" kind="Plain" value="MaterialNId" />
+      <Property name="NumberingPatternEntity" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.NumberingPatternEntity">
+          <Property name="NId" kind="Plain" value="WorkOrder" />
+        </LogicalKey>
+      </Property>
+    </Entity>
+    <Entity type="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.NumberingPatternParameter">
+      <Property name="NId" kind="Plain" value="MaterialRevision" />
+      <Property name="NumberingPatternEntity" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.NumberingPatternEntity">
+          <Property name="NId" kind="Plain" value="WorkOrder" />
+        </LogicalKey>
+      </Property>
+    </Entity>
+    <Entity type="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.NumberingPatternParameter">
+      <Property name="NId" kind="Plain" value="OrderNId" />
+      <Property name="NumberingPatternEntity" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.NumberingPatternEntity">
+          <Property name="NId" kind="Plain" value="WorkOrder" />
+        </LogicalKey>
+      </Property>
+    </Entity>
+    <!-- Inspection Order autonumbering pattern: WO_InspectionOrderCounter" -->
+    <Entity type="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.NumberingPatternEntity">
+      <Property name="NId" kind="Plain" value="WorkInstruction.InspectionOrder" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.Counter">
+      <Property name="NId" kind="Plain" value="PIWOInspectionOrderCounter" />
+      <Property name="Name" kind="Plain" value="PI Work Order Inspection Order Counter" />
+      <Property name="Description" kind="Plain" value="PI Work Order Inspection Order Counter, 9 digit" />
+      <Property name="Seed" kind="Plain" value="1" />
+      <Property name="Increment" kind="Plain" value="1" />
+      <Property name="MaxValue" kind="Plain" value="99999999999" />
+      <Property name="LeadingZeros" kind="Plain" value="True" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.NumberingPattern">
+      <Property name="NId" kind="Plain" value="NId" />
+      <Property name="Name" kind="Plain" value="PI Work Order Inspection Order NId Numbering Pattern" />
+      <Property name="Description" kind="Plain" value="PI Work Order Inspection Order Numbering Pattern: PIWOInspectionOrderCounter" />
+      <Property name="EntityTypeNId" kind="Plain" value="WorkInstruction.InspectionOrder" />
+      <Property name="DestinationProperty" kind="Plain" value="NId" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.NumberingPatternPart">
+      <Property name="Counter" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.Counter">
+          <Property name="NId" kind="Plain" value="PIWOInspectionOrderCounter" />
+        </LogicalKey>
+      </Property>
+      <Property name="NumberingPattern" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.NumberingPattern">
+          <Property name="NId" kind="Plain" value="NId" />
+          <Property name="EntityTypeNId" kind="Plain" value="WorkInstruction.InspectionOrder" />
+        </LogicalKey>
+      </Property>
+      <Property name="Sequence" kind="Plain" value="2" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.NumberingPatternPart">
+      <Property name="Constant" kind="Plain" value="IO_" />
+      <Property name="Counter" kind="SingleReferenceToParent" />
+      <Property name="NumberingPattern" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.NumberingPattern">
+          <Property name="NId" kind="Plain" value="NId" />
+          <Property name="EntityTypeNId" kind="Plain" value="WorkInstruction.InspectionOrder" />
+        </LogicalKey>
+      </Property>
+      <Property name="Sequence" kind="Plain" value="1" />
+    </Entity>
+    <Entity type="Siemens.OpcenterEX.ReferenceData.Configuration_RF.RFModel.DataModel.ConfigurationAppDomain">
+      <Property name="NId" kind="Plain" value="ProcessDesignConfiguration" />
+      <Property name="Name" kind="Plain" value="Opcenter Process Design Configuration" />
+      <Property name="Description" kind="Plain" value="Defines configuration for Opcenter Process Design." />
+      <Property name="IsSystemDefined" kind="Plain" value="true" />
+    </Entity>
+    <Entity type="Siemens.OpcenterEX.ReferenceData.Configuration_RF.RFModel.DataModel.ConfigurationKey">
+      <Property name="NId" kind="Plain" value="EnableLegacyParameterBinding" />
+      <Property name="Name" kind="Plain" value="Enable Legacy Parameter Binding" />
+      <Property name="Description" kind="Plain" value="Enable the legacy parameter binding method." />
+      <Property name="Type" kind="Plain" value="System.Boolean" />
+      <Property name="Val" kind="Plain" value="false" />
+      <Property name="IsProtected" kind="Plain" value="false" />
+      <Property name="Category" kind="Plain" value="Engineering" />
+      <Property name="IsMultiValue" kind="Plain" value="false" />
+      <Property name="ConfigurationAppDomain" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.OpcenterEX.ReferenceData.Configuration_RF.RFModel.DataModel.ConfigurationAppDomain">
+          <Property name="NId" kind="Plain" value="ProcessDesignConfiguration" />
+        </LogicalKey>
+      </Property>
+      <Property name="IsSystemDefined" kind="Plain" value="true" />
+    </Entity>
+  </Section>
+</Sections>

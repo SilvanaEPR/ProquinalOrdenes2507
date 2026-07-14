@@ -1,0 +1,9 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <g id="g870">
+    <path id="path2" d="M12,17H1V7H12V6H1c-.414,0-1,.336-1,.75v10.5c0,.414.586.75,1,.75H12Z" class="aw-theme-iconOutline" fill="#464646"/>
+    <path id="rect4" d="M9,10h1v4H9Z" class="aw-theme-iconOutline" fill="#464646"/>
+    <path id="rect6" d="M6,10H7v4H6Z" class="aw-theme-iconOutline" fill="#464646"/>
+    <path id="rect8" d="M3,10H4v4H3Z" class="aw-theme-iconOutline" fill="#464646"/>
+    <path id="path10" d="M23.25,6H16.5V3.75C16.5,2.508,17.508,1,18.75,1H21V0H18.75a3.735,3.735,0,0,0-3,1.523A3.287,3.287,0,0,0,13,0H10.75V1H13c1.242,0,2.249,1.508,2.25,2.75v16.5C15.249,21.492,14.242,23,13,23H10.75v1H13a3.287,3.287,0,0,0,2.75-1.523,3.735,3.735,0,0,0,3,1.523H21V23H18.75c-1.242,0-2.249-1.508-2.25-2.75V18h6.75a.75.75,0,0,0,.75-.75V6.75A.75.75,0,0,0,23.25,6ZM23,17H16.5V7H23Z" class="aw-theme-iconOutline" fill="#464646"/>
+  </g>
+</svg>

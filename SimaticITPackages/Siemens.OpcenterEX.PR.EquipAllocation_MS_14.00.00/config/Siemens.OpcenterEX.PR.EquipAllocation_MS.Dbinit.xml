@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sections>
+  <Section engineeringLevel="LibraryFunctionalBlock" implementationName="2018-7-26-11-08-05" domainName="MasterData">    
+    <Entity type="Siemens.SimaticIT.MasterData.TSK_MS.MSModel.DataModel.TaskContextDefinition">
+      <Property name="NId" kind="Plain" value="EquipmentAllocationTaskContextDefinition" />
+      <Property name="Name" kind="Plain" value="Equipment Allocation Task Context Definition" />
+      <Property name="Description" kind="Plain" value="Common task context definition provided by default for Equipment Allocation Tasks." />
+      <Property name="ContextEntityType" kind="Plain" value="Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.DataModel.ITaskContext" />
+      <Property name="TaskDefinitions" kind="ManyToManyReference" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.MasterData.TSK_MS.MSModel.DataModel.TaskContextDefinitionUserField">
+      <Property name="NId" kind="Plain" value="AllowAllocationToSameEntity" />
+      <Property name="UserFieldValue" kind="Plain" value="True" />
+      <Property name="UserFieldType" kind="Plain" value="Bool" />
+      <Property name="TaskContextDefinition" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.SimaticIT.MasterData.TSK_MS.MSModel.DataModel.TaskContextDefinition">
+          <Property name="NId" kind="Plain" value="EquipmentAllocationTaskContextDefinition" />
+        </LogicalKey>
+      </Property>
+    </Entity>
+  </Section>
+</Sections>

@@ -1,0 +1,22 @@
+﻿<div class="pi-command-bar-side-panel" style="float: left;">
+    <span sit-table-button
+          ng-repeat="(key,value) in vm.toolbarButtons"
+          sit-icon="{{value.icon}}"
+          sit-label="{{value.label}}"
+          ng-click="vm.commandClick(value.name)"
+          ng-show="value.visibility"
+          style="height: 34px; width: 34px;"
+          class="fa fa-lg"></span>
+</div>
+<div class="pi-component-title">{{vm.componentContextTitle}}</div>
+
+<div style="padding-top: 7px;;padding-left:8px" >
+    <sit-property-grid sit-id="workMasterContextPropertyGrid"
+                       sit-layout="Horizontal"
+                       sit-type="Fixed"
+                       sit-mode="edit"
+                       sit-columns="3"
+                       sit-rows="2"
+                       sit-data="vm.workMasterContextPropertyGridData">
+    </sit-property-grid>
+</div>

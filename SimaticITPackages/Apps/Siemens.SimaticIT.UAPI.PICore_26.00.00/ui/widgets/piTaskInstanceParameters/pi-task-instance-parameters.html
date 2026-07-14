@@ -1,0 +1,36 @@
+﻿<div class="dataTable" ng-if="vm.taskParameterConfig.data.length > 0">
+    <table aria-describedby="TaskParameterTable" sit-table="configTaskParameterTable" sit-config="vm.taskParameterConfig" class="table table-striped" sit-col-resize>
+        <thead>
+            <tr>
+                <th scope="col">{{'SIT.TSK.propertyGrid.id'|translate}}</th>
+                <th scope="col">{{'SIT.TSK.propertyGrid.type'|translate}}</th>
+                <th scope="col">{{'SIT.TSK.propertyGrid.value'|translate}}</th>
+                <th scope="col">{{'SIT.TSK.propertyGrid.uom'|translate}}</th>
+                <th scope="col">{{'SIT.TSK.propertyGrid.direction'|translate}}</th>
+                <th scope="col">{{'SIT.TSK.propertyGrid.isReadOnly'|translate}}</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr st-select-mode="single" ng-repeat="item in vm.taskParameterConfig.data">
+                <td>{{item.NId}}</td>
+                <td>{{item.ParameterType}}</td>
+                <td class="parameter-table" ng-click="vm.onRowClick(item,vm.taskParameterConfig.data)">
+                    <div ng-if="item.edit && vm.editMode">
+                        <sit-text id="parameterTable_{{$index}}" sit-id="parameterTable_{{$index}}" ng-init="vm.focusInputElement('parameterTable_' + $index)" ng-blur="vm.onRowBlur(item)" data-sit-value="item.ParameterValue" data-sit-validation="(vm.validationList|filter:{type:item.ParameterType}:true)[0].validationPattern"></sit-text>
+                    </div>
+                    <span ng-if="!item.edit || !vm.editMode">{{item.ParameterValue}}</span>
+                </td>
+                <td class="parameter-table">
+                    <sit-select sit-value="item.uomNId" sit-options="vm.uomOptions" sit-to-display="'NId'" sit-to-keep="'NId'" ng-readonly="false" ng-blur="vm.onBlur(item)" ng-disabled="item.IsReadOnly || !vm.editMode" ng-show="item.ParameterType==='Quantity'" sit-validation="vm.validation"></sit-select>
+                </td>
+                <td>{{item.Direction}}</td>
+                <td>
+                    <input type='checkbox' disabled ng-checked='item.IsReadOnly'>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div id="noDataDiv" ng-if="!(vm.taskParameterConfig.data.length > 0)" class="process-nodata">
+    {{'SIT.TSK.common.noData' | translate}}
+</div>

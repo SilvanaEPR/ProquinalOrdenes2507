@@ -1,0 +1,17 @@
+<svg id="Image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+  <g id="g865">
+    <path id="rect4" d="M1,1H15V15H1Z" fill="#3c91af"/>
+    <path id="rect819" d="M0,0H1V15H0Z" class="aw-theme-iconOutline" fill="#464646"/>
+    <path id="rect819-5" d="M14,0h1V15H14Z" class="aw-theme-iconOutline" fill="#464646"/>
+    <path id="rect836" d="M0,14H15v1H0Z" class="aw-theme-iconOutline" fill="#464646"/>
+    <path id="rect838" d="M0,0H15V1H0Z" class="aw-theme-iconOutline" fill="#464646"/>
+    <path id="rect822" d="M7,2H8V5.5H7Z" fill="#fff"/>
+    <path id="rect824" d="M7,9.5H8V13H7Z" fill="#fff"/>
+    <path id="rect826" d="M2,7H5.5V8H2Z" fill="#fff"/>
+    <path id="rect826-6" d="M9.5,7H13V8H9.5Z" fill="#fff"/>
+    <path id="path880" d="M9.854,9.152l-.708.709,3,2.993.708-.708Z" fill="#fff"/>
+    <path id="path882" d="M5.135,9.146,2.146,12.139l.708.707L5.842,9.854Z" fill="#fff"/>
+    <path id="path884" d="M12.127,2.146,9.146,5.139l.708.705,2.982-2.99Z" fill="#fff"/>
+    <path id="path886" d="M2.854,2.146l-.708.708,3,3.009.708-.7Z" fill="#fff"/>
+  </g>
+</svg>

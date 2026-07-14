@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- This file is used to define Application Log messages. You should follow below instructions while defining messages: 
+    - The <message> structure should be repeated for each Application Log message.
+    - The <id> attribute is mandatory and should be unique in this file.
+    - The <short> attribute represents the short text message and should be less than or up to 100 characters.
+    - The <long> attribute represents the long text message and should be less than or up to 400 characters.
+    - The <level> attribute is mandatory and its value should be one of: Verbose | Error | Warning | Critical | Informational.
+    - The <param> structure should be repeated for each parameter of the Application Log message.
+    - The <key> attribute represents the unique identifier for a parameter that repeats multiple times in the message text.
+    - The <type> attribute represents the datatype of the parameter and its value should be one of the primitive types: string | byte | int | decimal | float | double | long | boolean | Guid | Datetime | Timespan.  -->
+<messages>
+  <message>
+    <id>11800</id>
+    <short>Equipment Update.</short>
+    <long>Material behavior %MaterialBehaviorNId% has been associated with Equipment %EquipmentNId%.</long>
+    <level>Informational</level>
+    <params>
+      <param>
+        <key>EquipmentNId</key>
+        <type>string</type>
+      </param>
+      <param>
+        <key>MaterialBehaviorNId</key>
+        <type>string</type>
+      </param>
+      <param>
+        <key>PHR</key>
+        <type>string</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>11801</id>
+    <short>Equipment Update.</short>
+    <long>The Material behavior %MaterialBehaviorNId% has been disassociated from Equipment %EquipmentNId%.</long>
+    <level>Informational</level>
+    <params>
+      <param>
+        <key>EquipmentNId</key>
+        <type>string</type>
+      </param>
+      <param>
+        <key>MaterialBehaviorNId</key>
+        <type>string</type>
+      </param>
+      <param>
+        <key>PHR</key>
+        <type>string</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>11802</id>
+    <short>Equipment Update.</short>
+    <long>The quantity of Equipment %EquipmentNId% has been adjusted to %Quanity% %UoM%.</long>
+    <level>Informational</level>
+    <params>
+      <param>
+        <key>EquipmentNId</key>
+        <type>string</type>
+      </param>
+      <param>
+        <key>Quanity</key>
+        <type>Decimal</type>
+      </param>
+      <param>
+        <key>UoM</key>
+        <type>string</type>
+      </param>
+      <param>
+        <key>PHR</key>
+        <type>string</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>11803</id>
+    <short>Equipment Status Change.</short>
+    <long>The status of Equipment %EquipmentNid% has been changed to %StatusNid% for State Machine %StateMachineNid%.</long>
+    <level>Informational</level>
+    <params>
+      <param>
+        <key>EquipmentNid</key>
+        <type>string</type>
+      </param>
+      <param>
+        <key>StatusNid</key>
+        <type>string</type>
+      </param>
+      <param>
+        <key>StateMachineNid</key>
+        <type>string</type>
+      </param>
+      <param>
+        <key>PHR</key>
+        <type>string</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>11804</id>
+    <short>Equipment Update</short>
+    <long>The Property %PropertyNId% for Equipment %EquipmentNId%  has been updated.</long>
+    <level>Informational</level>
+    <params>
+      <param>
+        <key>PropertyNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>EquipmentNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>PHR</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>11805</id>
+    <short>Equipment Update</short>
+    <long>The Attribute %AttributeNId%  of Property %PropertyNId% for Equipment %EquipmentNId%  has been updated.</long>
+    <level>Informational</level>
+    <params>
+      <param>
+        <key>AttributeNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>PropertyNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>EquipmentNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>PHR</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+</messages>

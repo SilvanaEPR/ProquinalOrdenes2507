@@ -1,0 +1,21 @@
+﻿<style type="text/css">
+    div[data-task-side-panel] div[data-internal-type="property-area-container"],
+    div[data-task-side-panel] div[data-internal-type="property-area-container-modal"] {
+        width: calc(100% - 80px) !important;
+        box-shadow: none;
+        border-radius: 12px 0px 0px 0px;
+    }
+</style>
+<sit-side-panel class="otl-task-execution-panel">
+    <div class="otl-sidePanel-mainContainer">
+        <div class="pi-ux-shopfloor content-area otl-sidePanel-header">
+            <pi-optsk-context on-register-api="vm.onTaskContextRegisterApi(api); vm.updateTaskContextInfo();" ng-if="vm.displayStandardTaskDetail"></pi-optsk-context>
+            <div id="taskContextComponent"></div>
+        </div>
+        <div class="otl-sidePanel-content">
+            <sit-container sit-isswac="false">
+                <sit-component sit-name="{{vm.name}}" sit-componentname="{{vm.name}}" sit-type="ui" sit-source="{{vm.source}}" sit-left="0" sit-top="0" sit-cols="12" sit-rows="12" sit-flavor="ui" sit-dpc="vm.dpc"></sit-component>
+            </sit-container>
+        </div>
+    </div>
+</sit-side-panel>

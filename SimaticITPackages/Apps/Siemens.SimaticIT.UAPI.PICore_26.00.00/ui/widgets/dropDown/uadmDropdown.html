@@ -1,0 +1,23 @@
+﻿<div class="uadm-dropdown-container">
+    <div class="uadm-dropdown-selected" ng-click="dropDownVisible = !dropDownVisible">
+        <div class="uadm-dropdown-selected-icon">
+            <div class="fa {{selected.icon}}"></div>
+        </div>
+        <div class="uadm-dropdown-selected-text">
+            {{selected.text}}
+        </div>
+        <div class="uadm-dropdown-selected-arrow">
+            <div class="fa fa-caret-down"></div>
+        </div>
+    </div>
+    <div class="uadm-dropdown-panel" ng-show="dropDownVisible">
+        <div ng-repeat="item in dropdownConfig.items" class="uadm-dropdown-item-container" ng-click="select(item)">
+            <div class="uadm-dropdown-item-icon">
+                <div class="fa {{item.icon}}" ng-style="item.style"></div>
+            </div>
+            <div class="uadm-dropdown-item-text">
+                {{item.text}}
+            </div>
+        </div>
+    </div>
+</div>

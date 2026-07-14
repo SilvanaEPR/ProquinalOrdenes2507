@@ -1,0 +1,399 @@
+﻿<?xml version="1.0" encoding="utf-8"?><projectmanifest>
+  <header>
+    <manifestversion>11.0</manifestversion>
+    <platformversion>11.0</platformversion>
+    <type>Library</type>
+    <name>Siemens.SimaticIT.UAPI.PIEquipment_OP</name>
+    <shortname>PIEquipment_OP</shortname>
+    <description>SIMATIC IT Process Industries Material Operational Data Extension</description>
+    <version>17.00.00</version>
+    <companyname>Siemens.SimaticIT.UAPI</companyname>
+    <author>Siemens.SimaticIT.UAPI</author>
+    <hash>ajYrM9e7EnQ+RFTC7A+SyV0iW+yiLh3SFMBvOLUQw/Y=</hash>
+    <modelHash>aL3+KT5zzLfl+uHF6vJ2XFNucXSKgTHSVB/k7zjgUz4=</modelHash>
+    <modelHashSections>
+      <modelHashSection>
+        <name>projectConfigModelHash</name>
+        <hash>re0C9EtCeWSb3VVbA5ASXBcxQHTjlpSVwtLBLvedzII=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>dataModelHash</name>
+        <hash>the/xvZfwWXnNNLbFfR5CHkFiKMFq2qV76A8TpP0LFQ=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>commandModelHash</name>
+        <hash>focDUuPl1p8zVDinEDwgfBLhjD0tJCc7RPstZtuE88Q=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>aliasModelHash</name>
+        <hash>cdWtFof25lUoH+wgMZZEtJGL5k7aBVT7Ae5HtNcbGxs=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>eventModelHash</name>
+        <hash>4EiIT10gPWgQHb++dY9ek6Je7GqY4DJvSEqpJgUBiZQ=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>typeModelHash</name>
+        <hash>1pCUQMeMV1zI9wPwd+zPXfSRUhyKxTb/4j3YyV+SOBI=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>securityModelHash</name>
+        <hash>cdWtFof25lUoH+wgMZZEtJGL5k7aBVT7Ae5HtNcbGxs=</hash>
+      </modelHashSection>
+    </modelHashSections>
+    <uiHash>na</uiHash>
+    <canbeextended>false</canbeextended>
+    <domain>OperationalData</domain>
+  </header>
+  <reference>
+    <functionalblocks>
+      <functionalblock>
+        <name>Siemens.SimaticIT.UDM_RF</name>
+        <version>07.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.EQU_MS</name>
+        <version>08.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.EQU_OP</name>
+        <version>08.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.MAT_MS</name>
+        <version>05.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.UAPI.PIEquipment_MS</name>
+        <version>16.00.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.TSK_MS</name>
+        <version>09.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.TSK_OP</name>
+        <version>11.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.OpcenterEX.FN.NUM_OP</name>
+        <version>02.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.MAT_OP</name>
+        <version>06.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.OpcenterEX.Configuration_RF</name>
+        <version>12.00.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.ALG_MS</name>
+        <version>02.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.ALG_OP</name>
+        <version>02.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.OpcenterEX.PR.ApplicationLogExt</name>
+        <version>14.00.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.OpcenterEX.FN.ProductionHistory_MS</name>
+        <version>10.00.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.OpcenterEX.FN.ProductionHistory_OP</name>
+        <version>11.00.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.UAPI.ProductionContext_RF</name>
+        <version>15.00.00</version>
+        <type>Library</type>
+      </functionalblock>
+    </functionalblocks>
+    <extensions><extension>
+      <name>Siemens.SimaticIT.EQU_OP</name>
+    </extension></extensions>
+  </reference>
+  <artifacts>
+    <commands><command>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIEquipment_OP.OPModel.Commands.AssociateMaterialBehaviorToEquipment</name>
+                        <shortname>AssociateMaterialBehaviorToEquipment</shortname>
+                        <description>Associates a Material Behavior Configuration to the Equipment.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.OperationalData.PIEquipment_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIEquipment_OP.OPModel.Commands.AssociateMaterialBehaviorToEquipmentHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PIEquipment_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIEquipment_OP.OPModel.Commands.DisassociateMaterialBehaviorFromEquipment</name>
+                        <shortname>DisassociateMaterialBehaviorFromEquipment</shortname>
+                        <description>Removes the association between the Material Behavior Configuration to the Equipment.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.OperationalData.PIEquipment_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIEquipment_OP.OPModel.Commands.DisassociateMaterialBehaviorFromEquipmentHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PIEquipment_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIEquipment_OP.OPModel.Commands.CreateProcessAdditionalProperties</name>
+                        <shortname>CreateProcessAdditionalProperties</shortname>
+                        <description>Creates extended process properties for the given piece of Equipment if none exists. List of properties:     - MinQuantity: The smallest quantity the piece of Equipment can handle.    - MinLevel: The smallest quantity which is recommended for the piece of Equipment.    - Quantity: The quantity that is stored in the piece of Equipment.    - MaxLevel: The biggest quantity recommended for the piece of Equipment.    - MaxQuantity: The biggest quantity the piece of Equipment can handle.    - IsSingleLot: A flag that indicates if the piece of Equipment should only handle a Material issued from a single lot.    - IsSingleMaterial: A flag that indicates if the piece of Equipment should only handle one kind of Material.    - AllocationStateMachineNId: The identifier of the State Machine on which the system will rely on, in order to manage the allocation state of the piece of Equipment.     - AllowedMaterialGroupNId: The Material Group allowed to be used with the piece of Equipment.    - AllowedMaterialNId: The Material allowed to be used with the piece of Equipment.   The command returns the following error codes in case of check failures: * 10300: the Equipment, identified by the given NId, does not exist; * 10992: the Equipment is frozen. </description>
+                        <assembly>Siemens.SimaticIT.UAPI.OperationalData.PIEquipment_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIEquipment_OP.OPModel.Commands.CreateProcessAdditionalPropertiesHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PIEquipment_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIEquipment_OP.OPModel.Commands.AdjustEquipmentQuantity</name>
+                        <shortname>AdjustEquipmentQuantity</shortname>
+                        <description>Updates the Quantity stored in the Equipment. Checks if : - the given Equipment Id exists, otherwise it throws the error 10300 "Equipment with Id: { Id } does not exist."; - the given Equipment isn't frozen, otherwise it throws the error 10992 "Equipment with NId { Eqp.NId } is Frozen"; - the related ProcessAdditionalProperties exists, if it is the case, no error is thrown.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.OperationalData.PIEquipment_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIEquipment_OP.OPModel.Commands.AdjustEquipmentQuantityHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PIEquipment_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIEquipment_OP.OPModel.Commands.SynchronizeProcessAdditionalProperties</name>
+                        <shortname>SynchronizeProcessAdditionalProperties</shortname>
+                        <description>Synchronizes process properties with the process properties of the given Equipment Configuration. The command returns the following checks the given Equipment Configuration:  1. if the given Id exists, if not error 10300 is returned;  2. if the ProcessAdditionalPropertiesConfiguration (related to it) exists, if not error 10996 is returned;  3. if the respective Equipment entity exists, if not the error 10996 is returned;  4. if the ProcessAdditionalProperties (related to the Equipment entity) exists, if not error 10996 is returned;  5. if the respective Equipment entity is not Frozen, if so error 10992 is returned; The command updates the following attributes:  - AllowedMaterialGroupNId,  - AllowedMaterialNId,  - IsSingleLot,  - IsSingleMaterial,  - MaxLevel,  - MinLevel,  - MaxQuantity,  - MinQuantity,  - Quantity.UoMNId, - MainStateMachineNId.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.OperationalData.PIEquipment_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIEquipment_OP.OPModel.Commands.SynchronizeProcessAdditionalPropertiesHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PIEquipment_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIEquipment_OP.OPModel.Commands.MigrateEquipmentCreateAdditionalProperties</name>
+                        <shortname>MigrateEquipmentCreateAdditionalProperties</shortname>
+                        <description>This command will add a ProcessAdditionalProperties Facet to all Equipments Entities, to add process properties.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.OperationalData.PIEquipment_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIEquipment_OP.OPModel.Commands.MigrateEquipmentCreateAdditionalPropertiesHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.UAPI.PIEquipment_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command></commands>
+    <commandActions><commandAction>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIEquipment_OP.OPModel.Commands.SyncPIEquipmentHandlerShell</name>
+                        <shortname>SyncPIEquipmentHandlerShell</shortname>
+                        <description>Updates the Material Behavior and the Process Additional Properties of a piece of Equipment, after Equipment Synchronization</description>
+                        <assembly>Siemens.SimaticIT.UAPI.PIEquipment_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <target_cpu>AnyCPU</target_cpu>
+                        <targetframework>netstandard2.0</targetframework>
+                        <command>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.Commands.SynchronizeEquipment</command>
+                        <type>Post</type>
+                        <is_enabled>true</is_enabled>
+                        <is_optional>false</is_optional>
+                </commandAction><commandAction>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIEquipment_OP.OPModel.Commands.SetEquipmentStatusPHRHandlerShell</name>
+                        <shortname>SetEquipmentStatusPHRHandlerShell</shortname>
+                        <description>Creates Production History Record on changing Equipment Status.</description>
+                        <assembly>Siemens.SimaticIT.UAPI.PIEquipment_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <target_cpu>AnyCPU</target_cpu>
+                        <targetframework>netstandard2.0</targetframework>
+                        <command>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.Commands.SetEquipmentStatus</command>
+                        <type>Post</type>
+                        <is_enabled>true</is_enabled>
+                        <is_optional>true</is_optional>
+                </commandAction><commandAction>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIEquipment_OP.OPModel.Commands.CreateAdditionalPropertiesHandlerShell</name>
+                        <shortname>CreateAdditionalPropertiesHandlerShell</shortname>
+                        <description>Creates extended process Properties for the given piece of equipment if none exists.  List of properties:    - MinQuantity: The smallest quantity the piece of equipment can handle.     - MinLevel: The smallest quantity which is recommended for the piece of equipment.     - Quantity: The quantity that is stored in the piece of equipment.     - MaxLevel: The biggest quantity recommended for the piece of equipment.     - MaxQuantity: The biggest quantity the piece of equipment can handle.     - IsSingleLot: A flag that indicates if the piece of equipment should only handle a Material issued from a single lot.     - IsSingleMaterial: A flag that indicates if the piece of equipment should only handle one kind of Material.     - AllocationStateMachineNId: The identifier of the State Machine on which the system will rely on, in order to manage the allocation state of the piece of equipment.      - AllowedMaterialGroupNId: The Material Group allowed to be used with the piece of equipment.     - AllowedMaterialNId: The Material allowed to be used with the piece of equipment.  </description>
+                        <assembly>Siemens.SimaticIT.UAPI.PIEquipment_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <target_cpu>AnyCPU</target_cpu>
+                        <targetframework>netstandard2.0</targetframework>
+                        <command>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.Commands.CreateEquipment</command>
+                        <type>Post</type>
+                        <is_enabled>true</is_enabled>
+                        <is_optional>true</is_optional>
+                </commandAction><commandAction>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIEquipment_OP.OPModel.Commands.SetEquipmentPropertyValuePHRHandlerShell</name>
+                        <shortname>SetEquipmentPropertyValuePHRHandlerShell</shortname>
+                        <description></description>
+                        <assembly>Siemens.SimaticIT.UAPI.PIEquipment_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <target_cpu>AnyCPU</target_cpu>
+                        <targetframework>netstandard2.0</targetframework>
+                        <command>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.Commands.SetEquipmentPropertyValue</command>
+                        <type>Post</type>
+                        <is_enabled>true</is_enabled>
+                        <is_optional>false</is_optional>
+                </commandAction><commandAction>
+                        <name>Siemens.SimaticIT.UAPI.OperationalData.PIEquipment_OP.OPModel.Commands.SetEquipmentPropertyAttributeValuePHRHandlerShell</name>
+                        <shortname>SetEquipmentPropertyAttributeValuePHRHandlerShell</shortname>
+                        <description></description>
+                        <assembly>Siemens.SimaticIT.UAPI.PIEquipment_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <target_cpu>AnyCPU</target_cpu>
+                        <targetframework>netstandard2.0</targetframework>
+                        <command>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.Commands.SetEquipmentPropertyAttributeValue</command>
+                        <type>Post</type>
+                        <is_enabled>true</is_enabled>
+                        <is_optional>false</is_optional>
+                </commandAction></commandActions>
+    <events></events>
+    <event_handlers><event_handler>
+<name>Siemens.SimaticIT.UAPI.OperationalData.PIEquipment_OP.OPModel.Events.OnEquipmentUpdatedShell</name>
+<assembly>Siemens.SimaticIT.UAPI.PIEquipment_OP.EventHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+<event_name>Siemens.SimaticIT.SystemData.Foundation.Events.CommittedEvent</event_name>
+<target_cpu>AnyCPU</target_cpu>
+<targetframework>netstandard2.0</targetframework>
+<dependencies></dependencies>
+</event_handler><event_handler>
+<name>Siemens.SimaticIT.UAPI.OperationalData.PIEquipment_OP.OPModel.Events.OnMaterialBehaviorAssociatedShell</name>
+<assembly>Siemens.SimaticIT.UAPI.PIEquipment_OP.EventHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+<event_name>Siemens.SimaticIT.UAPI.MasterData.PIEquipment_MS.MSModel.Events.MaterialBehaviorAssociatedToEquipmentConfiguration</event_name>
+<target_cpu>AnyCPU</target_cpu>
+<targetframework>netstandard2.0</targetframework>
+<dependencies></dependencies>
+</event_handler><event_handler>
+<name>Siemens.SimaticIT.UAPI.OperationalData.PIEquipment_OP.OPModel.Events.OnMaterialBehaviorDisassociatedShell</name>
+<assembly>Siemens.SimaticIT.UAPI.PIEquipment_OP.EventHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+<event_name>Siemens.SimaticIT.UAPI.MasterData.PIEquipment_MS.MSModel.Events.MaterialBehaviorDisassociatedFromEquipmentConfiguration</event_name>
+<target_cpu>AnyCPU</target_cpu>
+<targetframework>netstandard2.0</targetframework>
+<dependencies></dependencies>
+</event_handler><event_handler>
+<name>Siemens.SimaticIT.UAPI.OperationalData.PIEquipment_OP.OPModel.Events.OnAdditionalPropertiesConfigurationUpdatedShell</name>
+<assembly>Siemens.SimaticIT.UAPI.PIEquipment_OP.EventHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+<event_name>Siemens.SimaticIT.UAPI.MasterData.PIEquipment_MS.MSModel.Events.ProcessAdditionalPropertiesConfigurationUpdated</event_name>
+<target_cpu>AnyCPU</target_cpu>
+<targetframework>netstandard2.0</targetframework>
+<dependencies></dependencies>
+</event_handler></event_handlers>
+    <signals></signals>
+    <readingFunctions></readingFunctions>
+    <entities></entities>
+    <datamodels><datamodel>
+      <assembly>Siemens.SimaticIT.UAPI.OperationalData.PIEquipment_OP.OPModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>WR</mode>
+      <domain>OperationalData</domain>
+    </datamodel><datamodel>
+      <assembly>Siemens.SimaticIT.UAPI.OperationalData.PIEquipment_OP.OPModel.ReadingModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>RD</mode>
+      <domain>OperationalData</domain>
+    </datamodel><datamodel>
+      <assembly>Siemens.SimaticIT.UAPI.OperationalData.PIEquipment_OP.OPModel.Types, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>WR</mode>
+      <domain>OperationalData</domain>
+    </datamodel><datamodel>
+      <assembly>Siemens.SimaticIT.UAPI.OperationalData.PIEquipment_OP.OPModel.Types.ReadingModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>RD</mode>
+      <domain>OperationalData</domain>
+    </datamodel></datamodels>
+    <externaldatamodels></externaldatamodels>
+    <appdatamodels></appdatamodels>
+    <uimodules></uimodules>
+    <uicomponents></uicomponents>
+    <wr_entities></wr_entities>
+    <wr_facets><wr_facet>
+      <name>Siemens.SimaticIT.UAPI.OperationalData.PIEquipment_OP.OPModel.DataModel.MaterialBehavior</name>
+      <shortname>MaterialBehavior</shortname>
+      <parententity></parententity>
+      <root_entity>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.DataModel.Equipment</root_entity>
+    </wr_facet><wr_facet>
+      <name>Siemens.SimaticIT.UAPI.OperationalData.PIEquipment_OP.OPModel.DataModel.ProcessAdditionalProperties</name>
+      <shortname>ProcessAdditionalProperties</shortname>
+      <parententity></parententity>
+      <root_entity>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.DataModel.Equipment</root_entity>
+    </wr_facet></wr_facets>
+  </artifacts>
+  <security>
+    <roles></roles>
+  </security>
+  <runtime>
+    <event_subscriptions></event_subscriptions>
+    <handlergroups></handlergroups>
+  </runtime>
+</projectmanifest>

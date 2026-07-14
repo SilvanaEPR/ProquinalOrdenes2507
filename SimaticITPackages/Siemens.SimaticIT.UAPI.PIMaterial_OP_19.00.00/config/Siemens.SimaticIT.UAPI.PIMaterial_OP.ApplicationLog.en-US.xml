@@ -1,0 +1,2486 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- This file is used to define Application Log messages. You should follow below instructions while defining messages: 
+    - The <message> structure should be repeated for each Application Log message.
+    - The <id> attribute is mandatory and should be unique in this file.
+    - The <short> attribute represents the short text message and should be less than or up to 100 characters.
+    - The <long> attribute represents the long text message and should be less than or up to 400 characters.
+    - The <level> attribute is mandatory and its value should be one of: Verbose | Error | Warning | Critical | Informational.
+    - The <param> structure should be repeated for each parameter of the Application Log message.
+    - The <key> attribute represents the unique identifier for a parameter that repeats multiple times in the message text.
+- The <type> attribute represents the datatype of the parameter.  -->
+<messages>
+  <message>
+    <id>-2</id>
+    <short>Source does not contain MTUs.</short>
+    <long>The Source Equipment does not contain MTUs.</long>
+    <level>Warning</level>
+  </message>
+  <message>
+    <id>-3</id>
+    <short>Source does not contain MTUs that have been correctly tracked.</short>
+    <long>The Source Equipment does not contain MTUs that have been correctly tracked.</long>
+    <level>Warning</level>
+  </message>
+  <message>
+    <id>-4</id>
+    <short>Source contains more then one MTU. MIXING Behavior.</short>
+    <long>The Source Equipment contains more then one MTU. MIXING Behavior.</long>
+    <level>Warning</level>
+  </message>
+  <message>
+    <id>-5</id>
+    <short>MTU not found.</short>
+    <long>The Source MTU (Id %sourceMTUNId%) was not found.</long>
+    <level>Warning</level>
+    <params>
+      <param>
+        <key>sourceMTUNId</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>-6</id>
+    <short>MTU quantity is not sufficient.</short>
+    <long>Quantity in MTU %sourceMTUNId% is not sufficient. The required quantity is %sourceQuantity%.</long>
+    <level>Warning</level>
+    <params>
+      <param>
+        <key>sourceMTUNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>sourceQuantity</key>
+        <type>Decimal</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>-7</id>
+    <short>MTU quantity does not satisfy the required quantity.</short>
+    <long>The MTU quantity in Source Equipment %SourceEquipmentNId% is insufficient to satisfy the required quantity %SourceQuantity%.</long>
+    <level>Warning</level>
+    <params>
+      <param>
+        <key>SourceEquipmentNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>SourceQuantity</key>
+        <type>Decimal</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>-8</id>
+    <short>UoM conversion failed.</short>
+    <long>UoM conversion failed: Source UoM %sourceUoMNId% destination UoM %destinationUoMNId%.</long>
+    <level>Warning</level>
+    <params>
+      <param>
+        <key>sourceUoMNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>destinationUoMNId</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>-9</id>
+    <short>Source MTUs have not been tracked.</short>
+    <long>MTUs contained in the Source Equipment have not been tracked according to the UoM %UoMNId% of the MTU currently contained in the destination.</long>
+    <level>Warning</level>
+    <params>
+      <param>
+        <key>UoMNId</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>-10</id>
+    <short>MTU is frozen.</short>
+    <long>The MTU %sourceMTUNId% involved in the move operation, is frozen.</long>
+    <level>Warning</level>
+    <params>
+      <param>
+        <key>sourceMTUNId</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>-11</id>
+    <short>MTU quantity does not satisfy the requirement.</short>
+    <long>The MTU quantity, expressed by UoM %sourceUoMNId%, in Source Equipment %sourceEquipmentNId% does not satisfy the requested quantity %sourceQuantity%.</long>
+    <level>Warning</level>
+    <params>
+      <param>
+        <key>sourceEquipmentNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>sourceQuantity</key>
+        <type>Decimal</type>
+      </param>
+      <param>
+        <key>sourceUoMNId</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>-12</id>
+    <short>MTU quantity has not been set.</short>
+    <long>The quantity of the MTU %sourceMTUNId%, involved in the move operation, has not been set.</long>
+    <level>Warning</level>
+    <params>
+      <param>
+        <key>sourceMTUNId</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>-13</id>
+    <short>Material cannot be assigned to destination MTU.</short>
+    <long>Material %destinationMaterialNId%, Revision: %destinationMaterialRevision% cannot be assigned to destination MTU. Reason : %destinationMaterialRevision%.</long>
+    <level>Warning</level>
+    <params>
+      <param>
+        <key>destinationMaterialNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>destinationMaterialRevision</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>destinationMaterialRevision</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>-14</id>
+    <short>Material Lot cannot be assigned to destination MTU.</short>
+    <long>Material Lot %destinationLotNId% cannot be assigned to MTU %destinationMTUNId%. Reason: %errorMessage%.</long>
+    <level>Warning</level>
+    <params>
+      <param>
+        <key>destinationLotNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>destinationMTUNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>errorMessage</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>-15</id>
+    <short>Material Lot does not exist.</short>
+    <long>Material Lot %materialLotNId% does not exist. Material Lot %materialLotNId% cannot be created because the input Material does not exist.</long>
+    <level>Warning</level>
+    <params>
+      <param>
+        <key>materialLotNId</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>-16</id>
+    <short>Material Lot does not exist.</short>
+    <long>Material Lot %materialLotNId% does not exist and its creation failed. Reason: %errorMessage%.</long>
+    <level>Warning</level>
+    <params>
+      <param>
+        <key>materialLotNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>errorMessage</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>-17</id>
+    <short>Material cannot be assigned to the MTU.</short>
+    <long>Material %materialNId%, Revision: %materialRevision% cannot be assigned to the MTU because the Material does not exist, or the Material is not compatible with the Material Lot.</long>
+    <level>Warning</level>
+    <params>
+      <param>
+        <key>materialNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>materialRevision</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>-18</id>
+    <short>Material quantity has fallen under the minimal quantity.</short>
+    <long>The quantity of Material contained in the piece of Equipment %sourceEquipmentNId% has fallen under the minimal quantity %sourceEquipmentMinQuantity%.</long>
+    <level>Warning</level>
+    <params>
+      <param>
+        <key>sourceEquipmentNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>sourceEquipmentMinQuantity</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>-19</id>
+    <short>Material quantity has fallen under the minimal level.</short>
+    <long>The quantity of Material contained in the piece of Equipment %sourceEquipmentNId% has fallen under the minimal level %sourceEquipmentMinLevel%.</long>
+    <level>Warning</level>
+    <params>
+      <param>
+        <key>sourceEquipmentNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>sourceEquipmentMinLevel</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>-20</id>
+    <short>MinimalQuantity and MinimalLimit cannot be evaluated.</short>
+    <long>MinimalQuantity and MinimalLimit cannot be evaluated since the piece of Equipment %sourceEquipmentNId% manages MTUs with different UoM.</long>
+    <level>Warning</level>
+    <params>
+      <param>
+        <key>sourceEquipmentNId</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>-21</id>
+    <short>MaximalQuantity has been exceeded.</short>
+    <long>The MaximalQuantity %destinationEquipmentMaxQuantity% of the piece of Equipment %destinationEquipmentNId% has been exceeded.</long>
+    <level>Warning</level>
+    <params>
+      <param>
+        <key>destinationEquipmentMaxQuantity</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>destinationEquipmentNId</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>-22</id>
+    <short>MaximalLevel has been exceeded.</short>
+    <long>The MaximalLevel %destinationEquipmentMaxLevel% of the piece of Equipment %destinationEquipmentNId% has been exceeded.</long>
+    <level>Warning</level>
+    <params>
+      <param>
+        <key>destinationEquipmentMaxLevel</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>destinationEquipmentNId</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>-23</id>
+    <short>MaximalQuantity and MaximalLimit cannot be evaluated.</short>
+    <long>MaximalQuantity and MaximalLimit cannot be evaluated since the piece of Equipment %destinationEquipmentNId% manages MTUs with different UoM.</long>
+    <level>Warning</level>
+    <params>
+      <param>
+        <key>destinationEquipmentNId</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>-24</id>
+    <short>Destination Equipment contains an MTU with a different Material.</short>
+    <long>The Destination Equipment %destinationEquipmentNId% contains an MTU with a different Material. It is not possible to handle other Materials, since the IsSingleMaterial property of the Destination Equipment is set to True.</long>
+    <level>Warning</level>
+    <params>
+      <param>
+        <key>destinationEquipmentNId</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>-25</id>
+    <short>Material Lot differs from Equipment Equipment MTU Lot.</short>
+    <long>The Destination Equipment %destinationEquipmentNId% contains an MTU with a different Lot than you want to move. It is not possible to handle other Lots, since the IsSingleLot property of the Destination Equipment is set to True.</long>
+    <level>Warning</level>
+    <params>
+      <param>
+        <key>destinationEquipmentNId</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>-26</id>
+    <short>Material is not allowed.</short>
+    <long>The AllowedMaterial property of the destination Equipment %destinationEquipmentNId% is %allowedMaterilaNId%  and it is different from the Material of the MTU you are moving in.</long>
+    <level>Warning</level>
+    <params>
+      <param>
+        <key>destinationEquipmentNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>allowedMaterilaNId</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>-27</id>
+    <short>Material does not belong to the Allowed Material Group.</short>
+    <long>The AllowedMaterialGroup property of the destination Equipment %destinationEquipmentNId% is %destinationEquipmentAllowedMaterialGroup%  and the Material of the MTU you are moving in does not belong to that group.</long>
+    <level>Warning</level>
+    <params>
+      <param>
+        <key>destinationEquipmentNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>destinationEquipmentAllowedMaterialGroup</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>12100</id>
+    <short>Split Material Tracking Unit succeeded.</short>
+    <long>Material Tracking Unit identified by %MTUNId% has been successfully split. A new Material Tracking Unit (%NewNId%) has been created with quantity: %QuantityValue% %UoMNId%.</long>
+    <level>Informational</level>
+    <params>
+      <param>
+        <key>MTUNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>NewNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>QuantityValue</key>
+        <type>Decimal</type>
+      </param>
+      <param>
+        <key>UoMNId</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>-12100</id>
+    <short>The action on Material Tracking Unit failed.</short>
+    <long>The action on the Material Tracking Unit (NId %MTUNId%) has failed: the Material Tracking Unit does not exist.</long>
+    <level>Error</level>
+    <params>
+      <param>
+        <key>MTUNId</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>-12101</id>
+    <short>The action on Material Tracking Unit failed.</short>
+    <long>The action on the Material Tracking Unit (NId %MTUNId%) has failed: the Material Tracking Unit quantity is not defined.</long>
+    <level>Error</level>
+    <params>
+      <param>
+        <key>MTUNId</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>-12102</id>
+    <short>The action on Material Tracking Unit failed.</short>
+    <long>The action on the Material Tracking Unit (NId %MTUNId%) has failed: the Unit of Measure (%SourceUoMNId%) used to express the source Material Tracking Unit quantity is not compatible with %TargetUoMNId%.</long>
+    <level>Error</level>
+    <params>
+      <param>
+        <key>MTUNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>SourceUoMNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>TargetUoMNId</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>-12103</id>
+    <short>The action on Material Tracking Unit failed.</short>
+    <long>The action on the Material Tracking Unit (NId %MTUNId%) has failed: the Material Tracking Unit quantity is not enough to meet the request.</long>
+    <level>Error</level>
+    <params>
+      <param>
+        <key>MTUNId</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>-12104</id>
+    <short>The action on Material Tracking Unit failed.</short>
+    <long>The action on the Material Tracking Unit (NId %MTUNId%) has failed: the new portion of Material Tracking Unit was not created.</long>
+    <level>Error</level>
+    <params>
+      <param>
+        <key>MTUNId</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>-12105</id>
+    <short>The action on Material Tracking Unit failed.</short>
+    <long>The action on the Material Tracking Unit (NId %MTUNId%) has failed: it was not possible to decrease the Material Tracking Unit quantity.</long>
+    <level>Error</level>
+    <params>
+      <param>
+        <key>MTUNId</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>-12106</id>
+    <short>The action on Material Tracking Unit failed.</short>
+    <long>The action on the Material Tracking Unit (NId %MTUNId%) has failed: it was not possible to increase the Material Tracking Unit quantity.</long>
+    <level>Error</level>
+    <params>
+      <param>
+        <key>MTUNId</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>-12107</id>
+    <short>The action on Material Tracking Unit failed.</short>
+    <long>The action on the Material Tracking Unit (NId %MTUNId%) has failed: the Supply quantity in input is null, or lower or equal to zero.</long>
+    <level>Error</level>
+    <params>
+      <param>
+        <key>MTUNId</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>-12108</id>
+    <short>Error: Material Lot cannot be found.</short>
+    <long>The Material Lot %NId% does not exist.</long>
+    <level>Error</level>
+    <params>
+      <param>
+        <key>NId</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>-12109</id>
+    <short>Error: Cannot calculate the Expiry Date of the Material Lot.</short>
+    <long>The Expiry Date for the Material Lot %NId% cannot be calculated: impossible to convert the value of the Material attribute Validity into seconds.</long>
+    <level>Error</level>
+    <params>
+      <param>
+        <key>NId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>MaterialNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>MaterialRevision</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>Validity</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>-12110</id>
+    <short>Error: Cannot calculate the LDU of the Material Lot.</short>
+    <long>The LDU for the Material Lot %NId% cannot be calculated: impossible to convert the value of the Material attribute Use Before into seconds.</long>
+    <level>Error</level>
+    <params>
+      <param>
+        <key>NId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>MaterialNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>MaterialRevision</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>UseBefore</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>-12111</id>
+    <short>Error: Frozen Material Lot.</short>
+    <long>Material Lot %NId% is Frozen.</long>
+    <level>Error</level>
+    <params>
+      <param>
+        <key>NId</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>-12112</id>
+    <short>Error: Material Lot cannot be found.</short>
+    <long>The Material Lot %Id% does not exist.</long>
+    <level>Error</level>
+    <params>
+      <param>
+        <key>Id</key>
+        <type>Guid</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>-10930</id>
+    <short>Material Move</short>
+    <long>The Material could not be moved as there is no Material Behaviour for Equipment %SourceEquipmentNId%</long>
+    <level>Error</level>
+    <params>
+      <param>
+        <key>SourceEquipmentNId</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>12200</id>
+    <short>MTU Creation</short>
+    <long>The MTU %MTUId% has been created.</long>
+    <level>Informational</level>
+    <params>
+      <param>
+        <key>MTUId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>PHR</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>12201</id>
+    <short>Freezing MTU</short>
+    <long>The MTU %MTUId% has been frozen.</long>
+    <level>Informational</level>
+    <params>
+      <param>
+        <key>MTUId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>PHR</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>12202</id>
+    <short>Unfreezing MTU</short>
+    <long>The MTU %MTUId% has been unfrozen.</long>
+    <level>Informational</level>
+    <params>
+      <param>
+        <key>MTUId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>PHR</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>12203</id>
+    <short>MTU Update</short>
+    <long>The quantity of MTU %MTUId% has been changed to %Quantity% %UOMNId%.</long>
+    <level>Informational</level>
+    <params>
+      <param>
+        <key>MTUId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>Quantity</key>
+        <type>Decimal</type>
+      </param>
+      <param>
+        <key>UOMNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>PHR</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>12204</id>
+    <short>MTU Status Change</short>
+    <long>The status of MTU %MTUId% has been changed from %SourceStatus% to %TargetStatus% (State Machine: %MTUStateMachineId%).</long>
+    <level>Informational</level>
+    <params>
+      <param>
+        <key>MTUId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>SourceStatus</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>TargetStatus</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>MTUStateMachineId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>PHR</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>12205</id>
+    <short>MTU Update</short>
+    <long>The Material %MaterialId% has been set to MTU %MTUId%.</long>
+    <level>Informational</level>
+    <params>
+      <param>
+        <key>MaterialId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>MTUId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>PHR</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>12206</id>
+    <short>MTU Update</short>
+    <long>The Material Lot %MaterialLotId% has been associated to MTU %MTUId%.</long>
+    <level>Informational</level>
+    <params>
+      <param>
+        <key>MaterialLotId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>MTUId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>PHR</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>12207</id>
+    <short>MTU Update</short>
+    <long>The Material Lot %MaterialLotId% has been disassociated from MTU %MTUId%.</long>
+    <level>Informational</level>
+    <params>
+      <param>
+        <key>MaterialLotId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>MTUId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>PHR</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>12208</id>
+    <short>MTU Movement</short>
+    <long>The MTU %MTUId% has been moved to MTUA %MTUAId%.</long>
+    <level>Informational</level>
+    <params>
+      <param>
+        <key>MTUId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>MTUAId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>PHR</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>12209</id>
+    <short>MTU Movement</short>
+    <long>The MTU %MTUId% has been moved to Equipment %EquipmentId%.</long>
+    <level>Informational</level>
+    <params>
+      <param>
+        <key>MTUId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>EquipmentId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>PHR</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>12210</id>
+    <short>Material Lot Update.</short>
+    <long>The Material Lot %MatLot% has been updated.</long>
+    <level>Informational</level>
+    <params>
+      <param>
+        <key>MatLot</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>PHR</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>12211</id>
+    <short>Material Lot Creation</short>
+    <long>A new Material Lot %MatLot% has been created.</long>
+    <level>Informational</level>
+    <params>
+      <param>
+        <key>MatLot</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>PHR</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>12212</id>
+    <short>Freezing Material Lot</short>
+    <long>The Material Lot %MatLot% has been frozen.</long>
+    <level>Informational</level>
+    <params>
+      <param>
+        <key>MatLot</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>PHR</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>12213</id>
+    <short>Unfreezing Material Lot</short>
+    <long>The Material Lot %MatLot% has been unfrozen.</long>
+    <level>Informational</level>
+    <params>
+      <param>
+        <key>MatLot</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>PHR</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>12214</id>
+    <short>Material Lot Update</short>
+    <long>The State Machine %StateMachineNID% has been set for Material Lot %MatLot%.</long>
+    <level>Informational</level>
+    <params>
+      <param>
+        <key>StateMachineNID</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>MatLot</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>PHR</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>12215</id>
+    <short>Material Lot Update</short>
+    <long>The Material %MaterialName% has been set for Material Lot %MatLot%.</long>
+    <level>Informational</level>
+    <params>
+      <param>
+        <key>MaterialName</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>MatLot</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>PHR</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>12216</id>
+    <short>Material Lot Update</short>
+    <long>The quantity %Quantity% %UoM% has been set for Material Lot %MatLot%.</long>
+    <level>Informational</level>
+    <params>
+      <param>
+        <key>Quantity</key>
+        <type>Decimal</type>
+      </param>
+      <param>
+        <key>UoM</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>MatLot</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>PHR</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>12217</id>
+    <short>Material Lot Update</short>
+    <long>The MTU %MTUNId% has been associated to Material Lot %MatLot%.</long>
+    <level>Informational</level>
+    <params>
+      <param>
+        <key>MTUNId</key>
+        <type>string</type>
+      </param>
+      <param>
+        <key>MatLot</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>PHR</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>12218</id>
+    <short>Material Lot Update</short>
+    <long>The MTU %MTUNId% has been disassociated from Material Lot %MatLot%.</long>
+    <level>Informational</level>
+    <params>
+      <param>
+        <key>MTUNId</key>
+        <type>string</type>
+      </param>
+      <param>
+        <key>MatLot</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>PHR</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>12219</id>
+    <short>Material Lot Status Change</short>
+    <long>The status of Material Lot %MatLot% has been changed.</long>
+    <level>Informational</level>
+    <params>
+      <param>
+        <key>MatLot</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>PHR</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>12220</id>
+    <short>Material Lot Property Creation</short>
+    <long>Added %Count% new Property(ies) for Material Lot %MatLot%.</long>
+    <level>Informational</level>
+    <params>
+      <param>
+        <key>Count</key>
+        <type>Int</type>
+      </param>      
+      <param>
+        <key>MatLot</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>PHR</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>12221</id>
+    <short>Material Lot Update</short>
+    <long>Updated %Count% Property(ies) of Material Lot %MatLot%.</long>
+    <level>Informational</level>
+    <params>
+      <param>
+        <key>Count</key>
+        <type>Int</type>
+      </param>
+      <param>
+        <key>MatLot</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>PHR</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>12222</id>
+    <short>Material Lot Creation</short>
+    <long>A new Material Lot %MatLot% has been created from external system.</long>
+    <level>Informational</level>
+    <params>
+      <param>
+        <key>MatLot</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>PHR</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>12223</id>
+    <short>Material Lot Update</short>
+    <long>The Material Lot %MatLot% has been updated from external system.</long>
+    <level>Informational</level>
+    <params>
+      <param>
+        <key>MatLot</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>PHR</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>12224</id>
+    <short>Material Lot Creation</short>
+    <long>A new Material Lot %MatLot% has been created for MTU %MTUNId%.</long>
+    <level>Informational</level>
+    <params>
+      <param>
+        <key>MatLot</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>MTUNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>PHR</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>12225</id>
+    <short>MTU Movement</short>
+    <long>Some Material has been moved from the source piece of equipment %SourceEquipmentNId% to the destination piece of equipment %DestinationEquipmentNId%.</long>
+    <level>Informational</level>
+    <params>
+      <param>
+        <key>PHR</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>SourceEquipmentNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>DestinationEquipmentNId</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>12226</id>
+    <short>MTU Movement Inconsistency</short>
+    <long>The MTU %MTUNId% with the Material %MaterialNId% %MaterialRevision% %MaterialName% was moved, but the quantity %SourceQuantity% in MTU %SourceMTUNId% was insufficient.</long>
+    <level>Warning</level>
+    <params>
+      <param>
+        <key>MTUNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>MaterialNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>MaterialRevision</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>MaterialName</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>sourceMTUNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>sourceQuantity</key>
+        <type>Decimal</type>
+      </param>
+      <param>
+        <key>PHR</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>12227</id>
+    <short>MTU Movement Inconsistency</short>
+    <long>The MTU %MTUNId% with the Material %MaterialNId% %MaterialRevision% %MaterialName% was moved, but conversion of UoM from %SourceUoMNId% to %DestinationUoMNId% had failed.</long>
+    <level>Warning</level>
+    <params>
+      <param>
+        <key>MTUNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>MaterialNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>MaterialRevision</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>MaterialName</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>SourceUoMNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>DestinationUoMNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>PHR</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>12228</id>
+    <short>MTU Movement Inconsistency</short>
+    <long>The MTU %MTUNId% with the Material %MaterialNId% %MaterialRevision% %MaterialName% was moved, but the Material with Revision %SourceMaterialRevision% could not be assigned to the destination MTU that specified a different Revision: %DestinationMaterialRevision%.</long>
+    <level>Warning</level>
+    <params>
+      <param>
+        <key>MTUNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>MaterialNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>MaterialRevision</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>MaterialName</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>SourceMaterialRevision</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>DestinationMaterialRevision</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>PHR</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>12229</id>
+    <short>MTU Movement Inconsistency</short>
+    <long>The MTU %MTUNId% with the Material %MaterialNId% %MaterialRevision% %MaterialName% was moved, but the Material Lot %DestinationLotNId% could not be assigned to MTU %DestinationMTUNId% due to a system failure.</long>
+    <level>Warning</level>
+    <params>
+      <param>
+        <key>MTUNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>MaterialNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>MaterialRevision</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>MaterialName</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>DestinationLotNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>DestinationMTUNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>PHR</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>12230</id>
+    <short>MTU Movement Inconsistency</short>
+    <long>The MTU %MTUNId% with the Material %MaterialNId% %MaterialRevision% %MaterialName% was moved, but the system did not recognize the specified Material Lot %MaterialLotNId%.</long>
+    <level>Warning</level>
+    <params>
+      <param>
+        <key>MTUNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>MaterialNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>MaterialRevision</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>MaterialName</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>MaterialLotNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>PHR</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>12231</id>
+    <short>MTU Movement Inconsistency</short>
+    <long>The MTU %MTUNId% with the Material %MaterialNId% %MaterialRevision% %MaterialName% was moved, but the systm did not recognized the Material Lot %MaterialLotNId% and failed to create it.</long>
+    <level>Warning</level>
+    <params>
+      <param>
+        <key>MTUNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>MaterialNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>MaterialRevision</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>MaterialName</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>MaterialLotNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>PHR</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>12232</id>
+    <short>MTU Movement Inconsistency</short>
+    <long>The MTU %MTUNId% with the Material %MaterialNId% %MaterialRevision% %MaterialName% was moved, but Material could not be assigned to the MTU since it did not exist, or was not compatible with the Material Lot %MaterialLotNId%.</long>
+    <level>Warning</level>
+    <params>
+      <param>
+        <key>MTUNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>MaterialNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>MaterialRevision</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>MaterialName</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>MaterialLotNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>PHR</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>12233</id>
+    <short>MTU Movement Inconsistency</short>
+    <long>The MTU %MTUNId% with the Material %MaterialNId% %MaterialRevision% %MaterialName% was moved, but the quantity of Material contained in the Equipment %SourceEquipmentNId% was below the Minimal Quantity %SourceEquipmentMinQuantity%.</long>
+    <level>Warning</level>
+    <params>
+      <param>
+        <key>MTUNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>MaterialNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>MaterialRevision</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>MaterialName</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>SourceEquipmentNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>SourceEquipmentMinQuantity</key>
+        <type>Decimal</type>
+      </param>
+      <param>
+        <key>PHR</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>12234</id>
+    <short>MTU Movement Inconsistency</short>
+    <long>The MTU %MTUNId% with the Material %MaterialNId% %MaterialRevision% %MaterialName% was moved, but the quantity of Material contained in the Equipment %SourceEquipmentNId% was below the Minimal Level %SourceEquipmentMinLevel%.</long>
+    <level>Warning</level>
+    <params>
+      <param>
+        <key>MTUNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>MaterialNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>MaterialRevision</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>MaterialName</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>SourceEquipmentNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>SourceEquipmentMinLevel</key>
+        <type>Decimal</type>
+      </param>
+      <param>
+        <key>PHR</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>12235</id>
+    <short>MTU Movement Inconsistency</short>
+    <long>The MTU %MTUNId% with the Material %MaterialNId% %MaterialRevision% %MaterialName% was moved, but Minimal Quantity and Minimal Limit could not be evaluated since the Equipment %SourceEquipmentNId% managed MTUs with different UoM.</long>
+    <level>Warning</level>
+    <params>
+      <param>
+        <key>MTUNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>MaterialNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>MaterialRevision</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>MaterialName</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>SourceEquipmentNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>PHR</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>12236</id>
+    <short>MTU Movement Inconsistency</short>
+    <long>The MTU %MTUNId% with the Material %MaterialNId% %MaterialRevision% %MaterialName% was moved, but the Maximal Quantity %DestinationEquipmentMaxQuantity% of the Equipment %DestinationEquipmentNId% had exceeded.</long>
+    <level>Warning</level>
+    <params>
+      <param>
+        <key>MTUNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>MaterialNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>MaterialRevision</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>MaterialName</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>DestinationEquipmentMaxQuantity</key>
+        <type>Decimal</type>
+      </param>
+      <param>
+        <key>DestinationEquipmentNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>PHR</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>12237</id>
+    <short>MTU Movement Inconsistency</short>
+    <long>The MTU %MTUNId% with the Material %MaterialNId% %MaterialRevision% %MaterialName% was moved, but the Maximal Level %DestinationEquipmentMaxLevel% of the Equipment %DestinationEquipmentNId% had exceeded.</long>
+    <level>Warning</level>
+    <params>
+      <param>
+        <key>MTUNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>MaterialNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>MaterialRevision</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>MaterialName</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>DestinationEquipmentMaxLevel</key>
+        <type>Decimal</type>
+      </param>
+      <param>
+        <key>DestinationEquipmentNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>PHR</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>12238</id>
+    <short>MTU Movement Inconsistency</short>
+    <long>The MTU %MTUNId% with the Material %MaterialNId% %MaterialRevision% %MaterialName% was moved, but Maximal Quantity and Maximal Limit could not be evaluated since the Equipment %DestinationEquipmentNId% managed MTUs with different UoM.</long>
+    <level>Warning</level>
+    <params>
+      <param>
+        <key>MTUNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>MaterialNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>MaterialRevision</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>MaterialName</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>DestinationEquipmentNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>PHR</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>12239</id>
+    <short>MTU Movement Inconsistency</short>
+    <long>The MTU %MTUNId% with the Material %MaterialNId% %MaterialRevision% %MaterialName% was moved, but the destination Equipment %DestinationEquipmentNId% contained an MTU with a different Material.</long>
+    <level>Warning</level>
+    <params>
+      <param>
+        <key>MTUNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>MaterialNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>MaterialRevision</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>MaterialName</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>DestinationEquipmentNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>PHR</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>12240</id>
+    <short>MTU Movement Inconsistency</short>
+    <long>The MTU %MTUNId% with the Material %MaterialNId% %MaterialRevision% %MaterialName% was moved, but the destination Equipment %DestinationEquipmentNId% contained an MTU with a different Material Lot than that was intended to move.</long>
+    <level>Warning</level>
+    <params>
+      <param>
+        <key>MTUNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>MaterialNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>MaterialRevision</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>MaterialName</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>DestinationEquipmentNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>PHR</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>12241</id>
+    <short>MTU Movement Inconsistency</short>
+    <long>The Allowed Material property of the destination Equipment %DestinationEquipmentNId% is %AllowedMaterialNId% and it is different from the Material of the MTU you are moving.</long>
+    <level>Warning</level>
+    <params>
+      <param>
+        <key>DestinationEquipmentNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>AllowedMaterialNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>PHR</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>12242</id>
+    <short>MTU Movement Inconsistency</short>
+    <long>The Allowed Material Group property of the destination Equipment %DestinationEquipmentNId% is %DestinationEquipmentAllowedMaterialGroup%  and the Material of the MTU you are moving in does not belong to that group.</long>
+    <level>Warning</level>
+    <params>
+      <param>
+        <key>DestinationEquipmentNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>DestinationEquipmentAllowedMaterialGroup</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>PHR</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>12243</id>
+    <short>MTU Movement Inconsistency</short>
+    <long>The MTU %MTUNId% with the Material %MaterialNId% %MaterialRevision% %MaterialName% was moved, but the source Equipment did not contain MTUs.</long>
+    <level>Warning</level>
+    <params>
+      <param>
+        <key>MTUNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>MaterialNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>MaterialRevision</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>MaterialName</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>PHR</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>12244</id>
+    <short>MTU Movement Inconsistency</short>
+    <long>The MTU %MTUNId% with the Material %MaterialNId% %MaterialRevision% %MaterialName% was moved, but the source Equipment did not contain MTUs that were correctly tracked.</long>
+    <level>Warning</level>
+    <params>
+      <param>
+        <key>MTUNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>MaterialNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>MaterialRevision</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>MaterialName</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>PHR</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>12245</id>
+    <short>MTU Movement Inconsistency</short>
+    <long>The MTU %MTUNId% with the Material %MaterialNId% %MaterialRevision% %MaterialName% was moved, but the quantity of MTU %SourceMTUNId% was not set.</long>
+    <level>Warning</level>
+    <params>
+      <param>
+        <key>MTUNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>MaterialNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>MaterialRevision</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>MaterialName</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>SourceMTUNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>PHR</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>12246</id>
+    <short>MTU Movement Inconsistency</short>
+    <long>The MTU %MTUNId% with the Material %MaterialNId% %MaterialRevision% %MaterialName% was moved, but the MTU %sourceMTUNId% was frozen.</long>
+    <level>Warning</level>
+    <params>
+      <param>
+        <key>MTUNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>MaterialNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>MaterialRevision</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>MaterialName</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>PHR</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>12247</id>
+    <short>MTU Movement Inconsistency</short>
+    <long>The MTU %MTUNId% with the Material %MaterialNId% %MaterialRevision% %MaterialName% was moved, but the MTU quantity (in UoM %SourceUoMNId%) in source Equipment %SourceEquipmentNId% did not satisfy the requested quantity %SourceQuantity%.</long>
+    <level>Warning</level>
+    <params>
+      <param>
+        <key>MTUNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>MaterialNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>MaterialRevision</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>MaterialName</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>SourceUoMNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>SourceEquipmentNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>SourceQuantity</key>
+        <type>Decimal</type>
+      </param>
+      <param>
+        <key>PHR</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>12248</id>
+    <short>MTU Movement Inconsistency</short>
+    <long>The MTU %MTUNId% with the Material %MaterialNId% %MaterialRevision% %MaterialName% was moved, but the MTU quantity in source Equipment %SourceEquipmentNId% was insufficient to satisfy the required quantity %SourceQuantity%.</long>
+    <level>Warning</level>
+    <params>
+      <param>
+        <key>MTUNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>MaterialNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>MaterialRevision</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>MaterialName</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>SourceEquipmentNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>SourceQuantity</key>
+        <type>Decimal</type>
+      </param>
+      <param>
+        <key>PHR</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>12249</id>
+    <short>MTU Movement Inconsistency</short>
+    <long>The MTU %MTUNId% with the Material %MaterialNId% %MaterialRevision% %MaterialName% was moved, but the Source Equipment %SourceEquipmentNId% with MIXING behavior managed more than one MTUs.</long>
+    <level>Warning</level>
+    <params>
+      <param>
+        <key>MTUNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>MaterialNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>MaterialRevision</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>MaterialName</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>SourceEquipmentNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>PHR</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>12250</id>
+    <short>MTU Movement Inconsistency</short>
+    <long>The MTU %MTUNId% with the Material %MaterialNId% %MaterialRevision% %MaterialName% was moved, but the source MTU %SourceMTUNId% did not exist.</long>
+    <level>Warning</level>
+    <params>
+      <param>
+        <key>MTUNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>MaterialNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>MaterialRevision</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>MaterialName</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>SourceMTUNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>PHR</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>12251</id>
+    <short>Material Lot Property Creation</short>
+    <long>New Properties have been created in the Overview tab of the Material Lot %MatLot%.</long>
+    <level>Informational</level>
+    <params>
+      <param>
+        <key>MatLot</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>PHR</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>12252</id>
+    <short>Material Lot Property Update</short>
+    <long>The Properties in the Overview tab of the Material Lot %MatLot% have been updated.</long>
+    <level>Informational</level>
+    <params>
+      <param>
+        <key>MatLot</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>PHR</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>12253</id>
+    <short>MTUA Movement</short>
+    <long> The Material Tracking Unit %SourceMTUNId% has been loaded into the MTU Aggregate "%DestinationMTUANId%".</long>
+    <level>Informational</level>
+    <params>
+      <param>
+        <key>MTUANId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>SourceMTUNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>DestinationMTUANId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>PHR</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>12254</id>
+    <short>MTUA Movement</short>
+    <long>The Material Tracking Unit %SourceMTUNId% has been loaded into the piece of equipment "%DestinationEquipmentNId%".</long>
+    <level>Informational</level>
+    <params>
+      <param>
+        <key>MTUANId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>SourceMTUNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>DestinationEquipmentNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>PHR</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>12255</id>
+    <short>MTUA Movement</short>
+    <long>The Material Tracking Unit Aggregate %SourceMTUANId% has been loaded into Material Tracking Unit Aggregate %DestinationMTUANId%.</long>
+    <level>Informational</level>
+    <params>
+      <param>
+        <key>SourceMTUANId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>DestinationMTUANId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>PHR</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>12256</id>
+    <short>MTUA Movement</short>
+    <long>The Material Tracking Unit Aggregate %SourceMTUANId% has been loaded into Equipment %DestinationEquipmentNId%.</long>
+    <level>Informational</level>
+    <params>
+      <param>
+        <key>SourceMTUANId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>DestinationEquipmentNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>PHR</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>12257</id>
+    <short>MTUA Creation</short>
+    <long>The Material Tracking Unit Aggregate %MTUANId% has been created.</long>
+    <level>Informational</level>
+    <params>
+      <param>
+        <key>MTUANId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>PHR</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>12258</id>
+    <short>MTUA Deletion</short>
+    <long>The Material Tracking Unit Aggregate %MTUANId% has been deleted.</long>
+    <level>Informational</level>
+    <params>
+      <param>
+        <key>MTUANId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>PHR</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>-12113</id>
+    <short>Material Tracking Unit Aggregate not found.</short>
+    <long>The Material Tracking Unit Aggregate %MTUANId% was not found.</long>
+    <level>Error</level>
+    <params>
+      <param>
+        <key>MTUANId</key>
+        <type>string</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>-12114</id>
+    <short>MTU does not exist.</short>
+    <long>Material Tracking Unit %MTUNId% does not exist.</long>
+    <level>Error</level>
+    <params>
+      <param>
+        <key>MTUNId</key>
+        <type>string</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>-12115</id>
+    <short>Moving Material to Aggregate failed.</short>
+    <long>Failed moving Material Tracking Unit %MTUNId% to Material Tracking Unit Aggregate %MTUANId%.</long>
+    <level>Error</level>
+    <params>
+      <param>
+        <key>MTUNId</key>
+        <type>string</type>
+      </param>
+      <param>
+        <key>MTUANId</key>
+        <type>string</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>12259</id>
+    <short>MTU Creation</short>
+    <long>The MTU %MTUId% has been created in the MTUA %MTUAId%.</long>
+    <level>Informational</level>
+    <params>
+      <param>
+        <key>MTUId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>MTUAId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>PHR</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>12260</id>
+    <short>Freezing MTUA</short>
+    <long>The MTUA %MTUANId% has been frozen.</long>
+    <level>Informational</level>
+    <params>
+      <param>
+        <key>MTUANId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>PHR</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>12261</id>
+    <short>Unfreezing MTUA</short>
+    <long>The MTUA %MTUANId% has been unfrozen.</long>
+    <level>Informational</level>
+    <params>
+      <param>
+        <key>MTUANId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>PHR</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>12262</id>
+    <short>MTUA Update</short>
+    <long>The State Machine %StateMachineNId% has been set for MTUA %MTUANId%.</long>
+    <level>Informational</level>
+    <params>
+      <param>
+        <key>StateMachineNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>MTUANId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>PHR</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>12263</id>
+    <short>MTUA Update</short>
+    <long>The quantity %QuantityValue% %UoMNId% has been set for MTUA %MTUANId%.</long>
+    <level>Informational</level>
+    <params>
+      <param>
+        <key>QuantityValue</key>
+        <type>Decimal</type>
+      </param>
+      <param>
+        <key>UoMNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>MTUANId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>PHR</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>12264</id>
+    <short>MTUA Update</short>
+    <long>The Material %MaterialNId% %MaterialRevision% %MaterialName% has been set for MTUA %MTUANId%.</long>
+    <level>Informational</level>
+    <params>
+      <param>
+        <key>MaterialNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>MaterialRevision</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>MaterialName</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>MTUANId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>PHR</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>12265</id>
+    <short>MTUA Update</short>
+    <long>The Material %MaterialNId% %MaterialRevision% %MaterialName% has been Unset for MTUA %MTUANId%.</long>
+    <level>Informational</level>
+    <params>
+      <param>
+        <key>MaterialNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>MaterialRevision</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>MaterialName</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>MTUANId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>PHR</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>12266</id>
+    <short>MTUA Property Creation</short>
+    <long>%Count% new Property(ies) added for MTUA %MTUANId%.</long>
+    <level>Informational</level>
+    <params>
+      <param>
+        <key>Count</key>
+        <type>Int</type>
+      </param>
+      <param>
+        <key>MTUANId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>PHR</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>12267</id>
+    <short>MTUA Property Deletion</short>
+    <long>%Count% Property(ies) deleted from MTUA %MTUANId%.</long>
+    <level>Informational</level>
+    <params>
+      <param>
+        <key>Count</key>
+        <type>Int</type>
+      </param>
+      <param>
+        <key>MTUANId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>PHR</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>12268</id>
+    <short>MTUA Status Change</short>
+    <long>The status of MTUA %MTUANId% has been changed.</long>
+    <level>Informational</level>
+    <params>
+      <param>
+        <key>MTUANId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>PHR</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>12269</id>
+    <short>MTU Deletion</short>
+    <long>The MTU %MTUId% has been deleted.</long>
+    <level>Informational</level>
+    <params>
+      <param>
+        <key>MTUId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>PHR</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>12270</id>
+    <short>MTU Property Creation</short>
+    <long>%Count% new Property(ies) added for MTU %MTUId%.</long>
+    <level>Informational</level>
+    <params>
+      <param>
+        <key>Count</key>
+        <type>Int</type>
+      </param>
+      <param>
+        <key>MTUId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>PHR</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>12271</id>
+    <short>MTU Property Deletion</short>
+    <long>%Count% Property(ies) deleted from MTU %MTUId%.</long>
+    <level>Informational</level>
+    <params>
+      <param>
+        <key>Count</key>
+        <type>Int</type>
+      </param>
+      <param>
+        <key>MTUId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>PHR</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>12272</id>
+    <short>MTUA Update</short>
+    <long>The State Machine %MTUStateMachineId% has been set for MTU %MTUId%.</long>
+    <level>Informational</level>
+    <params>
+      <param>
+        <key>MTUStateMachineId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>MTUNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>PHR</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>12273</id>
+    <short>Material Lot Deleted</short>
+    <long>The Material Lot %MaterialLotNId% has been deleted.</long>
+    <level>Informational</level>
+    <params>
+      <param>
+        <key>MaterialLotNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>PHR</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>12274</id>
+    <short>Material Lot Property Deletion</short>
+    <long>%Count% Property(ies) deleted from Material Lot %MaterialLotNId%.</long>
+    <level>Informational</level>
+    <params>
+      <param>
+        <key>Count</key>
+        <type>Int</type>
+      </param>
+      <param>
+        <key>MaterialLotNId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>PHR</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>12275</id>
+    <short>MTUA Update</short>
+    <long>A MTUA %MTUANId% has been updated.</long>
+    <level>Informational</level>
+    <params>
+      <param>
+        <key>MTUANId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>PHR</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>12276</id>
+    <short>MTUA Property Update</short>
+    <long>Updated %Count% Property(ies) of MTUA %MTUANId%.</long>
+    <level>Informational</level>
+    <params>
+      <param>
+        <key>Count</key>
+        <type>Int</type>
+      </param>
+      <param>
+        <key>MTUANId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>PHR</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>12277</id>
+    <short>MTU Update</short>
+    <long>The MTU %MTUId% has been updated.</long>
+    <level>Informational</level>
+    <params>
+      <param>
+        <key>MTUId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>PHR</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+  <message>
+    <id>12278</id>
+    <short>MTU Property Update</short>
+    <long>Updated %Count% Property(ies) of MTU %MTUId%.</long>
+    <level>Informational</level>
+    <params>
+      <param>
+        <key>Count</key>
+        <type>Int</type>
+      </param>
+      <param>
+        <key>MTUId</key>
+        <type>String</type>
+      </param>
+      <param>
+        <key>PHR</key>
+        <type>String</type>
+      </param>
+    </params>
+  </message>
+</messages>

@@ -1,0 +1,463 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sections>
+	<Section engineeringLevel="LibraryFunctionalBlock" implementationName="QualityExecutionMasterData" domainName="MasterData">
+		<Entity type="Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.Criticality">
+			<Property name="NId" kind="Plain" value="Main" />
+			<Property name="Name" kind="Plain" value="Main" />
+			<Property name="Description" kind="Plain" value="This value indicates the Main Characteristic" />
+			<Property name="IsSystemDefined" kind="Plain" value="true" />
+		</Entity>
+		<Entity type="Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.Criticality">
+			<Property name="NId" kind="Plain" value="Critical" />
+			<Property name="Name" kind="Plain" value="Critical" />
+			<Property name="Description" kind="Plain" value="This value indicates the Critical Characteristic" />
+			<Property name="IsSystemDefined" kind="Plain" value="true" />
+		</Entity>
+		<Entity type="Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.Criticality">
+			<Property name="NId" kind="Plain" value="Minor" />
+			<Property name="Name" kind="Plain" value="Minor" />
+			<Property name="Description" kind="Plain" value="This value indicates the Minor Characteristic" />
+			<Property name="IsSystemDefined" kind="Plain" value="true" />
+		</Entity>
+		<Entity type="Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.Criticality">
+			<Property name="NId" kind="Plain" value="Significant" />
+			<Property name="Name" kind="Plain" value="Significant" />
+			<Property name="Description" kind="Plain" value="This value indicates the Significant Characteristic" />
+			<Property name="IsSystemDefined" kind="Plain" value="true" />
+		</Entity>
+		<Entity type="Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.Criticality">
+			<Property name="NId" kind="Plain" value="Potential Critical" />
+			<Property name="Name" kind="Plain" value="Potential Critical" />
+			<Property name="Description" kind="Plain" value="This value indicates the Potential Critical Characteristic" />
+			<Property name="IsSystemDefined" kind="Plain" value="true" />
+		</Entity>
+		<Entity type="Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.Criticality">
+			<Property name="NId" kind="Plain" value="Potential Significant" />
+			<Property name="Name" kind="Plain" value="Potential Significant" />
+			<Property name="Description" kind="Plain" value="This value indicates the Potential Significant Characteristic" />
+			<Property name="IsSystemDefined" kind="Plain" value="true" />
+		</Entity>
+		<Entity type="Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.Criticality">
+			<Property name="NId" kind="Plain" value="Hexagon" />
+			<Property name="Name" kind="Plain" value="Hexagon" />
+			<Property name="Description" kind="Plain" value="This value indicates the Hexagon Visual Indicator for Characteristic" />
+			<Property name="IsSystemDefined" kind="Plain" value="true" />
+		</Entity>
+		<Entity type="Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.Criticality">
+			<Property name="NId" kind="Plain" value="Pentagon" />
+			<Property name="Name" kind="Plain" value="Pentagon" />
+			<Property name="Description" kind="Plain" value="This value indicates the Pentagon Visual Indicator for Characteristic" />
+			<Property name="IsSystemDefined" kind="Plain" value="true" />
+		</Entity>
+		<Entity type="Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.Criticality">
+			<Property name="NId" kind="Plain" value="Fit/Function" />
+			<Property name="Name" kind="Plain" value="Fit/Function" />
+			<Property name="Description" kind="Plain" value="This value indicates the Fit/Function Characteristic" />
+			<Property name="IsSystemDefined" kind="Plain" value="true" />
+		</Entity>
+		<Entity type="Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.Criticality">
+			<Property name="NId" kind="Plain" value="Safety/Compliance" />
+			<Property name="Name" kind="Plain" value="Safety/Compliance" />
+			<Property name="Description" kind="Plain" value="This value indicates the Safety/Compliance Visual Indicator for Characteristic" />
+			<Property name="IsSystemDefined" kind="Plain" value="true" />
+		</Entity>
+		<Entity type="Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.Criticality">
+			<Property name="NId" kind="Plain" value="Shield" />
+			<Property name="Name" kind="Plain" value="Shield" />
+			<Property name="Description" kind="Plain" value="This value indicates the Shield Visual Indicator for Characteristic" />
+			<Property name="IsSystemDefined" kind="Plain" value="true" />
+		</Entity>
+		<Entity type="Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.CharacteristicRepresentationFrequency">
+			<Property name="NId" kind="Plain" value="100Percent" />
+			<Property name="Name" kind="Plain" value="100 Percent" />
+			<Property name="Description" kind="Plain" value="The Inspection will be executed on every produced item." />
+		</Entity>
+		<Entity type="Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.CharacteristicRepresentationFrequency">
+			<Property name="NId" kind="Plain" value="PartBased" />
+			<Property name="Name" kind="Plain" value="Part Based" />
+			<Property name="Description" kind="Plain" value="The Inspection will be executed at specified interval of produced items." />
+		</Entity>
+		<Entity type="Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.CharacteristicRepresentationFrequency">
+			<Property name="NId" kind="Plain" value="TimeBased" />
+			<Property name="Name" kind="Plain" value="Time Based" />
+			<Property name="Description" kind="Plain" value="The Inspection will be executed after specified time interval." />
+		</Entity>
+		<Entity type="Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.CharacteristicRepresentationFrequency">
+			<Property name="NId" kind="Plain" value="UnitBased" />
+			<Property name="Name" kind="Plain" value="Unit Based" />
+			<Property name="Description" kind="Plain" value="The Inspection will be executed after specified Unit." />
+		</Entity>
+    <Entity type="Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.CharacteristicSpecificationType">
+      <Property name="NId" kind="Plain" value="Attributive" />
+      <Property name="Name" kind="Plain" value="Attributive" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.CharacteristicSpecificationType">
+      <Property name="NId" kind="Plain" value="Variable" />
+      <Property name="Name" kind="Plain" value="Variable" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.CharacteristicSpecificationType">
+      <Property name="NId" kind="Plain" value="Visual" />
+      <Property name="Name" kind="Plain" value="Visual" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.ChartType">
+      <Property name="NId" kind="Plain" value="xb_s" />
+      <Property name="Name" kind="Plain" value="xb/s chart" />
+      <Property name="Description" kind="Plain" value="xbar and standard deviation" />
+      <Property name="CharacteristicSpecificationTypes" kind="ManyToManyReference">
+        <LogicalKey entityType="Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.CharacteristicSpecificationType">
+          <Property name="NId" kind="Plain" value="Variable" />
+        </LogicalKey>
+      </Property>
+    </Entity>
+    <Entity type="Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.ChartType">
+      <Property name="NId" kind="Plain" value="mxb_ms" />
+      <Property name="Name" kind="Plain" value="mxb/ms chart" />
+      <Property name="Description" kind="Plain" value="Moving xbar and moving standard deviation" />
+      <Property name="CharacteristicSpecificationTypes" kind="ManyToManyReference">
+        <LogicalKey entityType="Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.CharacteristicSpecificationType">
+          <Property name="NId" kind="Plain" value="Variable" />
+        </LogicalKey>
+      </Property>
+    </Entity>
+    <Entity type="Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.ChartType">
+      <Property name="NId" kind="Plain" value="xb_R" />
+      <Property name="Name" kind="Plain" value="xb/R chart" />
+      <Property name="Description" kind="Plain" value="xbar and range" />
+      <Property name="CharacteristicSpecificationTypes" kind="ManyToManyReference">
+        <LogicalKey entityType="Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.CharacteristicSpecificationType">
+          <Property name="NId" kind="Plain" value="Variable" />
+        </LogicalKey>
+      </Property>
+    </Entity>
+    <Entity type="Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.ChartType">
+      <Property name="NId" kind="Plain" value="mxb" />
+      <Property name="Name" kind="Plain" value="mxb chart" />
+      <Property name="Description" kind="Plain" value="Moving xbar" />
+      <Property name="CharacteristicSpecificationTypes" kind="ManyToManyReference">
+        <LogicalKey entityType="Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.CharacteristicSpecificationType">
+          <Property name="NId" kind="Plain" value="Variable" />
+        </LogicalKey>
+      </Property>
+    </Entity>
+    <Entity type="Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.ChartType">
+      <Property name="NId" kind="Plain" value="mxb_mR" />
+      <Property name="Name" kind="Plain" value="mxb/mR chart" />
+      <Property name="Description" kind="Plain" value="Moving xbar and moving range" />
+      <Property name="CharacteristicSpecificationTypes" kind="ManyToManyReference">
+        <LogicalKey entityType="Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.CharacteristicSpecificationType">
+          <Property name="NId" kind="Plain" value="Variable" />
+        </LogicalKey>
+      </Property>
+    </Entity>
+    <Entity type="Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.ChartType">
+      <Property name="NId" kind="Plain" value="x_ms" />
+      <Property name="Name" kind="Plain" value="x/ms chart" />
+      <Property name="Description" kind="Plain" value="Single value and moving standard deviation" />
+      <Property name="CharacteristicSpecificationTypes" kind="ManyToManyReference">
+        <LogicalKey entityType="Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.CharacteristicSpecificationType">
+          <Property name="NId" kind="Plain" value="Variable" />
+        </LogicalKey>
+      </Property>
+    </Entity>
+    <Entity type="Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.ChartType">
+      <Property name="NId" kind="Plain" value="x_mR" />
+      <Property name="Name" kind="Plain" value="x/mR chart" />
+      <Property name="Description" kind="Plain" value="Single value and moving range" />
+      <Property name="CharacteristicSpecificationTypes" kind="ManyToManyReference">
+        <LogicalKey entityType="Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.CharacteristicSpecificationType">
+          <Property name="NId" kind="Plain" value="Variable" />
+        </LogicalKey>
+      </Property>
+    </Entity>
+    <Entity type="Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.ChartType">
+      <Property name="NId" kind="Plain" value="xb" />
+      <Property name="Name" kind="Plain" value="xb chart" />
+      <Property name="Description" kind="Plain" value="xbar, calculation runs with standard deviation like xb_s" />
+      <Property name="CharacteristicSpecificationTypes" kind="ManyToManyReference">
+        <LogicalKey entityType="Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.CharacteristicSpecificationType">
+          <Property name="NId" kind="Plain" value="Variable" />
+        </LogicalKey>
+      </Property>
+    </Entity>
+    <Entity type="Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.ChartType">
+      <Property name="NId" kind="Plain" value="s" />
+      <Property name="Name" kind="Plain" value="s chart" />
+      <Property name="Description" kind="Plain" value="Standard deviation, calculation runs with xbar values like xb_s" />
+      <Property name="CharacteristicSpecificationTypes" kind="ManyToManyReference">
+        <LogicalKey entityType="Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.CharacteristicSpecificationType">
+          <Property name="NId" kind="Plain" value="Variable" />
+        </LogicalKey>
+      </Property>
+    </Entity>
+    <Entity type="Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.ChartType">
+      <Property name="NId" kind="Plain" value="R" />
+      <Property name="Name" kind="Plain" value="R chart" />
+      <Property name="Description" kind="Plain" value="Range, calculation runs with xbar values like xb_R" />
+      <Property name="CharacteristicSpecificationTypes" kind="ManyToManyReference">
+        <LogicalKey entityType="Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.CharacteristicSpecificationType">
+          <Property name="NId" kind="Plain" value="Variable" />
+        </LogicalKey>
+      </Property>
+    </Entity>
+    <Entity type="Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.ChartType">
+      <Property name="NId" kind="Plain" value="ms" />
+      <Property name="Name" kind="Plain" value="ms chart" />
+      <Property name="Description" kind="Plain" value="Moving standard deviation" />
+      <Property name="CharacteristicSpecificationTypes" kind="ManyToManyReference">
+        <LogicalKey entityType="Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.CharacteristicSpecificationType">
+          <Property name="NId" kind="Plain" value="Variable" />
+        </LogicalKey>
+      </Property>
+    </Entity>
+    <Entity type="Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.ChartType">
+      <Property name="NId" kind="Plain" value="mR" />
+      <Property name="Name" kind="Plain" value="mR chart" />
+      <Property name="Description" kind="Plain" value="Moving range" />
+      <Property name="CharacteristicSpecificationTypes" kind="ManyToManyReference">
+        <LogicalKey entityType="Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.CharacteristicSpecificationType">
+          <Property name="NId" kind="Plain" value="Variable" />
+        </LogicalKey>
+      </Property>
+    </Entity>
+    <Entity type="Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.ChartType">
+      <Property name="NId" kind="Plain" value="med" />
+      <Property name="Name" kind="Plain" value="med chart" />
+      <Property name="Description" kind="Plain" value="Median single chart" />
+      <Property name="CharacteristicSpecificationTypes" kind="ManyToManyReference">
+        <LogicalKey entityType="Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.CharacteristicSpecificationType">
+          <Property name="NId" kind="Plain" value="Variable" />
+        </LogicalKey>
+      </Property>
+    </Entity>
+    <Entity type="Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.ChartType">
+      <Property name="NId" kind="Plain" value="med_R" />
+      <Property name="Name" kind="Plain" value="med_R chart" />
+      <Property name="Description" kind="Plain" value="Median and range" />
+      <Property name="CharacteristicSpecificationTypes" kind="ManyToManyReference">
+        <LogicalKey entityType="Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.CharacteristicSpecificationType">
+          <Property name="NId" kind="Plain" value="Variable" />
+        </LogicalKey>
+      </Property>
+    </Entity>
+    <Entity type="Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.ChartType">
+      <Property name="NId" kind="Plain" value="x" />
+      <Property name="Name" kind="Plain" value="x chart" />
+      <Property name="Description" kind="Plain" value="Single value" />
+      <Property name="CharacteristicSpecificationTypes" kind="ManyToManyReference">
+        <LogicalKey entityType="Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.CharacteristicSpecificationType">
+          <Property name="NId" kind="Plain" value="Variable" />
+        </LogicalKey>
+      </Property>
+    </Entity>
+    <Entity type="Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.ChartType">
+      <Property name="NId" kind="Plain" value="p" />
+      <Property name="Name" kind="Plain" value="p chart" />
+      <Property name="Description" kind="Plain" value="Proportion of deviations in a sample" />
+      <Property name="CharacteristicSpecificationTypes" kind="ManyToManyReference">
+        <LogicalKey entityType="Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.CharacteristicSpecificationType">
+          <Property name="NId" kind="Plain" value="Attributive" />
+		</LogicalKey>
+		<LogicalKey entityType="Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.CharacteristicSpecificationType">
+          <Property name="NId" kind="Plain" value="Visual" />
+        </LogicalKey>
+      </Property>
+    </Entity>
+    <Entity type="Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.ChartType">
+      <Property name="NId" kind="Plain" value="np" />
+      <Property name="Name" kind="Plain" value="np chart" />
+      <Property name="Description" kind="Plain" value="Like p chart, but number" />
+      <Property name="CharacteristicSpecificationTypes" kind="ManyToManyReference">
+        <LogicalKey entityType="Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.CharacteristicSpecificationType">
+          <Property name="NId" kind="Plain" value="Attributive" />
+		</LogicalKey>
+		<LogicalKey entityType="Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.CharacteristicSpecificationType">
+          <Property name="NId" kind="Plain" value="Visual" />
+        </LogicalKey>
+      </Property>
+    </Entity>
+    <Entity type="Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.ChartType">
+      <Property name="NId" kind="Plain" value="C" />
+      <Property name="Name" kind="Plain" value="C chart" />
+      <Property name="Description" kind="Plain" value="Count of deviations with a fixed sample size" />
+      <Property name="CharacteristicSpecificationTypes" kind="ManyToManyReference">
+        <LogicalKey entityType="Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.CharacteristicSpecificationType">
+          <Property name="NId" kind="Plain" value="Attributive" />
+		</LogicalKey>
+		<LogicalKey entityType="Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.CharacteristicSpecificationType">
+          <Property name="NId" kind="Plain" value="Visual" />
+        </LogicalKey>
+      </Property>
+    </Entity>
+    <Entity type="Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.ChartType">
+      <Property name="NId" kind="Plain" value="U" />
+      <Property name="Name" kind="Plain" value="U chart" />
+      <Property name="Description" kind="Plain" value="Count of deviations with a variable sample size" />
+      <Property name="CharacteristicSpecificationTypes" kind="ManyToManyReference">
+        <LogicalKey entityType="Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.CharacteristicSpecificationType">
+          <Property name="NId" kind="Plain" value="Attributive" />
+		</LogicalKey>
+		<LogicalKey entityType="Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.CharacteristicSpecificationType">
+          <Property name="NId" kind="Plain" value="Visual" />
+        </LogicalKey>
+      </Property>
+    </Entity>
+
+    <Entity type="Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.IndustryRule">
+      <Property name="NId" kind="Plain" value="QC_ATT" />
+      <Property name="Name" kind="Plain" value="ATT" />
+      <Property name="Description" kind="Plain" value="Typically used for X-bar, Individual, and Median charts. It is also used for R charts when the minimum subgroup size is at least 4" />
+      <Property name="CharacteristicSpecificationTypes" kind="ManyToManyReference">
+        <LogicalKey entityType="Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.CharacteristicSpecificationType">
+          <Property name="NId" kind="Plain" value="Variable" />
+        </LogicalKey>
+      </Property>
+    </Entity>
+    <Entity type="Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.IndustryRule">
+      <Property name="NId" kind="Plain" value="QC_ATTA" />
+      <Property name="Name" kind="Plain" value="ATTA" />
+      <Property name="Description" kind="Plain" value="Typically used for p, np, C, and U charts" />
+      <Property name="CharacteristicSpecificationTypes" kind="ManyToManyReference">
+        <LogicalKey entityType="Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.CharacteristicSpecificationType">
+          <Property name="NId" kind="Plain" value="Attributive" />
+		</LogicalKey>
+		<LogicalKey entityType="Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.CharacteristicSpecificationType">
+          <Property name="NId" kind="Plain" value="Visual" />
+        </LogicalKey>
+      </Property>
+    </Entity>
+    <Entity type="Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.IndustryRule">
+      <Property name="NId" kind="Plain" value="QC_ATTR" />
+      <Property name="Name" kind="Plain" value="ATTR" />
+      <Property name="Description" kind="Plain" value="Typically used for R charts when the minimum subgroup size is less than 4" />
+      <Property name="CharacteristicSpecificationTypes" kind="ManyToManyReference">
+        <LogicalKey entityType="Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.CharacteristicSpecificationType">
+          <Property name="NId" kind="Plain" value="Variable" />
+        </LogicalKey>
+      </Property>
+    </Entity>
+    <Entity type="Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.IndustryRule">
+      <Property name="NId" kind="Plain" value="QC_EXCEEDLIMITS" />
+      <Property name="Name" kind="Plain" value="EXCEEDLIMITS" />
+      <Property name="Description" kind="Plain" value="Typically used only when the user wants to know when points drop outside of the control limits" />
+      <Property name="CharacteristicSpecificationTypes" kind="ManyToManyReference">
+        <LogicalKey entityType="Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.CharacteristicSpecificationType">
+          <Property name="NId" kind="Plain" value="Attributive" />
+		</LogicalKey>
+		<LogicalKey entityType="Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.CharacteristicSpecificationType">
+          <Property name="NId" kind="Plain" value="Visual" />
+        </LogicalKey>
+		<LogicalKey entityType="Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.CharacteristicSpecificationType">
+          <Property name="NId" kind="Plain" value="Variable" />
+		</LogicalKey>
+      </Property>
+    </Entity>
+    <Entity type="Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.IndustryRule">
+      <Property name="NId" kind="Plain" value="QC_FORD1_R" />
+      <Property name="Name" kind="Plain" value="FORD1_R" />
+      <Property name="Description" kind="Plain" value="Typically used for R charts" />
+      <Property name="CharacteristicSpecificationTypes" kind="ManyToManyReference">
+        <LogicalKey entityType="Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.CharacteristicSpecificationType">
+          <Property name="NId" kind="Plain" value="Variable" />
+        </LogicalKey>
+      </Property>
+    </Entity>
+    <Entity type="Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.IndustryRule">
+      <Property name="NId" kind="Plain" value="QC_FORD1_X" />
+      <Property name="Name" kind="Plain" value="FORD1_X" />
+      <Property name="Description" kind="Plain" value="Typically used for X-Bar charts" />
+      <Property name="CharacteristicSpecificationTypes" kind="ManyToManyReference">
+        <LogicalKey entityType="Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.CharacteristicSpecificationType">
+          <Property name="NId" kind="Plain" value="Variable" />
+        </LogicalKey>
+      </Property>
+    </Entity>
+    <Entity type="Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.IndustryRule">
+      <Property name="NId" kind="Plain" value="QC_JCAHO" />
+      <Property name="Name" kind="Plain" value="JCAHO" />
+      <Property name="Description" kind="Plain" value="Typically used to evaluate data utilizing the Joint Commission on Accreditation of Healthcare Organizations (JCAHO) rules" />
+      <Property name="CharacteristicSpecificationTypes" kind="ManyToManyReference">
+        <LogicalKey entityType="Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.CharacteristicSpecificationType">
+          <Property name="NId" kind="Plain" value="Attributive" />
+		</LogicalKey>
+		<LogicalKey entityType="Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.CharacteristicSpecificationType">
+          <Property name="NId" kind="Plain" value="Visual" />
+        </LogicalKey>
+		<LogicalKey entityType="Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.CharacteristicSpecificationType">
+          <Property name="NId" kind="Plain" value="Variable" />
+		</LogicalKey>
+      </Property>
+    </Entity>
+    <Entity type="Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.IndustryRule">
+      <Property name="NId" kind="Plain" value="QC_FORDX" />
+      <Property name="Name" kind="Plain" value="FORDX" />
+      <Property name="Description" kind="Plain" value="Similar to QC_FORD1_X but contains considerably more “Out of Control” tests. Typically used for X-Bar charts" />
+      <Property name="CharacteristicSpecificationTypes" kind="ManyToManyReference">
+        <LogicalKey entityType="Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.CharacteristicSpecificationType">
+          <Property name="NId" kind="Plain" value="Variable" />
+        </LogicalKey>
+      </Property>
+    </Entity>
+    <Entity type="Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.IndustryRule">
+      <Property name="NId" kind="Plain" value="QC_LIMITTRENDS" />
+      <Property name="Name" kind="Plain" value="LIMITTRENDS" />
+      <Property name="Description" kind="Plain" value="Typically used only when the user wants to know when points drop outside of the control limits and trends" />
+      <Property name="CharacteristicSpecificationTypes" kind="ManyToManyReference">
+        <LogicalKey entityType="Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.CharacteristicSpecificationType">
+          <Property name="NId" kind="Plain" value="Attributive" />
+		</LogicalKey>
+		<LogicalKey entityType="Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.CharacteristicSpecificationType">
+          <Property name="NId" kind="Plain" value="Visual" />
+        </LogicalKey>
+		<LogicalKey entityType="Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.CharacteristicSpecificationType">
+          <Property name="NId" kind="Plain" value="Variable" />
+		</LogicalKey>
+      </Property>
+    </Entity>
+    <Entity type="Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.IndustryRule">
+      <Property name="NId" kind="Plain" value="QC_NELSON" />
+      <Property name="Name" kind="Plain" value="NELSON" />
+      <Property name="Description" kind="Plain" value="This Industry Rule contains the standard Nelson rules" />
+      <Property name="CharacteristicSpecificationTypes" kind="ManyToManyReference">
+        <LogicalKey entityType="Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.CharacteristicSpecificationType">
+          <Property name="NId" kind="Plain" value="Variable" />
+        </LogicalKey>
+      </Property>
+    </Entity>
+    <Entity type="Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.IndustryRule">
+      <Property name="NId" kind="Plain" value="QC_SIGRUL" />
+      <Property name="Name" kind="Plain" value="SIGRUL" />
+      <Property name="Description" kind="Plain" value="Typically used for the s, Moving Average, Moving Range charts" />
+      <Property name="CharacteristicSpecificationTypes" kind="ManyToManyReference">
+        <LogicalKey entityType="Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.CharacteristicSpecificationType">
+          <Property name="NId" kind="Plain" value="Variable" />
+        </LogicalKey>
+      </Property>
+    </Entity>
+    <Entity type="Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.IndustryRule">
+      <Property name="NId" kind="Plain" value="QC_SPECSONLY" />
+      <Property name="Name" kind="Plain" value="SPECSONLY" />
+      <Property name="Description" kind="Plain" value="Typically used to determine when points drop outside of the spec limits and trends" />
+      <Property name="CharacteristicSpecificationTypes" kind="ManyToManyReference">
+        <LogicalKey entityType="Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.CharacteristicSpecificationType">
+          <Property name="NId" kind="Plain" value="Attributive" />
+		</LogicalKey>
+		<LogicalKey entityType="Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.CharacteristicSpecificationType">
+          <Property name="NId" kind="Plain" value="Visual" />
+        </LogicalKey>
+		<LogicalKey entityType="Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.CharacteristicSpecificationType">
+          <Property name="NId" kind="Plain" value="Variable" />
+		</LogicalKey>
+      </Property>
+    </Entity>
+    <Entity type="Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.IndustryRule">
+      <Property name="NId" kind="Plain" value="QC_WESTINGHOUSE" />
+      <Property name="Name" kind="Plain" value="WESTINGHOUSE" />
+      <Property name="Description" kind="Plain" value="This Industry Rule contains the standard Westinghouse rules" />
+      <Property name="CharacteristicSpecificationTypes" kind="ManyToManyReference">
+        <LogicalKey entityType="Siemens.SimaticIT.MasterData.CHR_MS.MSModel.DataModel.CharacteristicSpecificationType">
+          <Property name="NId" kind="Plain" value="Variable" />
+        </LogicalKey>
+      </Property>
+    </Entity>
+  </Section>
+</Sections>

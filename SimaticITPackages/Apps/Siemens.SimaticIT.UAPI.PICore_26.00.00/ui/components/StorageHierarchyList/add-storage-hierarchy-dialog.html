@@ -1,0 +1,26 @@
+﻿<div class="row" style="width:900px; height: 700px">
+    <div class="row">
+        <div id="storageHierarchyList-container">
+            <div style="padding-top: 10px;padding-bottom:20px;padding-left: 3px" class="pi-dialog-info">{{Dialog.templatedata.addMaterialStorage}}</div>
+            <div style="padding-left: 3px">
+                <div>
+                    <sit-property-grid sit-id="storageHierarchyPropertyGrid"
+                                       sit-layout="Horizontal"
+                                       sit-type="Fixed"
+                                       sit-mode="edit"
+                                       sit-columns="1"
+                                       sit-data="Dialog.templatedata.sequenceProperty.Properties">
+                    </sit-property-grid>
+                </div>
+                <div style="padding-top: 200px">
+                    <sit-pi-table sit-pi-table-id="equipmentGraphConfigurationList"
+                                  sit-config="Dialog.templatedata.equipmentGraphConfigurationTableConfig"
+                                  sit-pi-config="Dialog.templatedata.equipmentGraphConfigurationDataConfig"
+                                  sit-view-mode="grid">
+
+                    </sit-pi-table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

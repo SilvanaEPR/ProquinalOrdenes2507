@@ -1,0 +1,28 @@
+<svg id="Image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 16 16">
+  <defs>
+    <linearGradient id="linear-gradient" x1="-114.478" y1="16.313" x2="-110.856" y2="13.554" gradientTransform="matrix(1.14, 0, 0, -1, 133.448, 18.438)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#73b4c8"/>
+      <stop offset="0.175" stop-color="#6aaec3"/>
+      <stop offset="0.457" stop-color="#529eb5"/>
+      <stop offset="0.809" stop-color="#2c839f"/>
+      <stop offset="1" stop-color="#147391"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="6.989" y1="14.19" x2="14.576" y2="8.297" gradientTransform="matrix(1, 0, 0, -1, 1.074, 18.061)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="0.335" stop-color="#f8f8f8"/>
+      <stop offset="0.82" stop-color="#e5e5e5"/>
+      <stop offset="1" stop-color="#dcdcdc"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="12.355" y1="4.359" x2="16.382" y2="1.497" gradientTransform="matrix(1, 0, 0, -1, -0.609, 17.597)" xlink:href="#linear-gradient"/>
+  </defs>
+  <g id="g1985">
+    <path id="path856" d="M9.84,4.277a6.792,6.792,0,0,0-.859-.739A6.939,6.939,0,0,0,6.135,2.467c-.145-.02-.348-.037-.367-.037s-.031-.127-.031-.541v-.54l.284.018a8.491,8.491,0,0,1,1.264.242,8.126,8.126,0,0,1,2.95,1.517,10.073,10.073,0,0,1,1.054,1.022l.086.184h-.742C9.909,4.332,9.889,4.332,9.84,4.277Z" class="aw-theme-iconOutline" fill="#464646"/>
+    <path id="rect865" d="M.556.775H6.547v3.54H.556Z" fill="url(#linear-gradient)"/>
+    <path id="rect837" d="M0,0V5H7V0ZM1,1H6V4H1Z" class="aw-theme-iconOutline" fill="#464646"/>
+    <path id="rect865-3" d="M8.329,4.307h7.28V9.5H8.329Z" fill="url(#linear-gradient-2)"/>
+    <path id="rect839" d="M8,4v6l8.026.04-.052-6.08ZM9,5h6V9H9Z" class="aw-theme-iconOutline" fill="#464646"/>
+    <path id="rect865-7" d="M9.746,11.914H15v3.539H9.746Z" fill="url(#linear-gradient-3)"/>
+    <path id="rect837-8" d="M9,11v5h7V11Zm1,1h5v3H10Z" class="aw-theme-iconOutline" fill="#464646"/>
+    <path id="path860" d="M12.845,11.245c-.018-.286-.083-.917-.111-1.073l-.015-.257h1.1l.014.246c.017.087.085.789.107,1.125l.017.714h-1.09Z" class="aw-theme-iconOutline" fill="#464646"/>
+  </g>
+</svg>

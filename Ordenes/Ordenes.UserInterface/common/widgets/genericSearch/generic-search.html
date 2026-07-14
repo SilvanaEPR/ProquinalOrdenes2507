@@ -1,0 +1,29 @@
+
+<div data-internal-type="generic-search-container" class="sit-generic-search" 
+     ng-class="genericSearchCtrl.disableSearch ? 'generic-search-disabled' : ''"
+     ng-show="genericSearchCtrl.isSearchVisible">
+
+    <input type="text" class="form-control generic-search"
+           data-internal-type="genericSearchTextBox"
+           ng-change="genericSearchCtrl.sitChange(genericSearchCtrl.genericSearchText)"
+           placeholder="{{genericSearchCtrl.placeholder}}" 
+           ng-model="genericSearchCtrl.genericSearchText"
+           ng-focus="genericSearchCtrl.focusSearch()" 
+           ng-disabled="genericSearchCtrl.disableSearch" 
+           ng-blur="genericSearchCtrl.blurSearch()" />
+
+    <em data-internal-type="genericSearchIcon" 
+        ng-class="{momIcon: genericSearchCtrl.svgIcons.search }"
+        sit-class="svg-icon"
+        sit-mom-icon="genericSearchCtrl.svgIcons.search"
+        class="fa fa-search generic-search-icon"
+        ng-click="genericSearchCtrl.clickSearch(genericSearchCtrl.genericSearchText);genericSearchCtrl.focusElement();"></em>
+
+    <em data-internal-type="genericCloseIcon" 
+        ng-show="genericSearchCtrl.genericSearchText.length > 0"
+        ng-class="{momIcon: genericSearchCtrl.svgIcons.close }" 
+        sit-class="svg-icon"
+        sit-mom-icon="genericSearchCtrl.svgIcons.close"
+        class="fa fa-close generic-close-icon"
+        ng-click="genericSearchCtrl.genericSearchText ='';genericSearchCtrl.clickSearch('');genericSearchCtrl.focusElement();"></em>
+</div>

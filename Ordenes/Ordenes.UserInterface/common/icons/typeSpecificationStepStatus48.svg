@@ -1,0 +1,47 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="linear-gradient" x1="-216.854" y1="-418.571" x2="-207.712" y2="-427.163" gradientTransform="matrix(1.422, 0, 0, -1.413, 327.486, -573.707)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#74b3c7"/>
+      <stop offset="0.177" stop-color="#6badc2"/>
+      <stop offset="0.464" stop-color="#539db4"/>
+      <stop offset="0.822" stop-color="#2d839d"/>
+      <stop offset="1" stop-color="#177490"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="282.221" y1="562.28" x2="296.83" y2="561.464" gradientTransform="translate(98.226 -469.208) rotate(35.082) scale(0.79)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="0.221" stop-color="#f8f8f8"/>
+      <stop offset="0.541" stop-color="#e5e5e5"/>
+      <stop offset="0.92" stop-color="#c6c6c6"/>
+      <stop offset="1" stop-color="#bebebe"/>
+    </linearGradient>
+    <radialGradient id="radial-gradient" cx="89.932" cy="856.429" r="17.546" gradientTransform="translate(-33.698 -626.589) scale(0.773)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7ebacc"/>
+      <stop offset="0.195" stop-color="#64a8bd"/>
+      <stop offset="0.554" stop-color="#398ba5"/>
+      <stop offset="0.835" stop-color="#1e7a97"/>
+      <stop offset="1" stop-color="#147391"/>
+    </radialGradient>
+    <linearGradient id="linear-gradient-3" x1="-154.834" y1="1285.659" x2="-147.286" y2="1292.556" gradientTransform="translate(204.59 -1675.104) scale(1.313 1.305)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="0.232" stop-color="#fafafa"/>
+      <stop offset="0.496" stop-color="#ededed"/>
+      <stop offset="0.775" stop-color="#d6d6d6"/>
+      <stop offset="1" stop-color="#bebebe"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-4" x1="-154.876" y1="1298.748" x2="-147.318" y2="1304.937" xlink:href="#linear-gradient-3"/>
+    <linearGradient id="linear-gradient-5" x1="-154.94" y1="1311.201" x2="-147.363" y2="1318.001" xlink:href="#linear-gradient-3"/>
+  </defs>
+  <g id="g898">
+    <path id="line53-4-3" d="M0,23.5H2.657" fill="none" stroke="#464646" stroke-miterlimit="10" stroke-width="1.135"/>
+    <path id="rect49-8-5" d="M20.632,14.236h9.325V32.765H20.632Z" stroke="#147391" stroke-miterlimit="10" stroke-width="1.211" fill="url(#linear-gradient)"/>
+    <path id="polyline57-7-9" d="M8.534,6.807h6.729V40.2H8.349" fill="none" stroke="#464646" stroke-miterlimit="13.533" stroke-width="1.091"/>
+    <path id="line55-8-6" d="M6.94,23.5H21.088" fill="none" stroke="#147391" stroke-miterlimit="10" stroke-width="1.128"/>
+    <path id="path60" d="M30,28.235l-.44-2.514,2.3-.4-.264-.185A6.39,6.39,0,0,0,22.7,26.688l-1.222,1.74-2.089-1.467,1.222-1.741a8.945,8.945,0,0,1,12.447-2.176l.259.182-.4-2.29,2.514-.443,1.16,6.59Z" stroke="#464646" stroke-miterlimit="10" stroke-width="0.851" fill="url(#linear-gradient-2)"/>
+    <path id="circle46" d="M47.607,39.065a8.51,8.51,0,0,1-8.51,8.51h0a8.51,8.51,0,0,1-8.509-8.51h0A8.51,8.51,0,0,1,39.1,30.556h0a8.51,8.51,0,0,1,8.51,8.509Z" stroke="#464646" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.851" fill="url(#radial-gradient)"/>
+    <path id="line53-4-9" d="M0,6.654H2.657" fill="none" stroke="#464646" stroke-miterlimit="10" stroke-width="1.135"/>
+    <path id="rect43-7-7" d="M2.688.545h6.3V13.072h-6.3Z" stroke="#147391" stroke-miterlimit="10" stroke-width="1.091" fill="url(#linear-gradient-3)"/>
+    <path id="line53-4-6" d="M0,40.146H2.657" fill="none" stroke="#464646" stroke-miterlimit="10" stroke-width="1.135"/>
+    <path id="rect43-7-1" d="M2.688,17.243h6.3V29.77h-6.3Z" stroke="#147391" stroke-miterlimit="10" stroke-width="1.091" fill="url(#linear-gradient-4)"/>
+    <path id="rect43-7-11" d="M2.688,33.928h6.3V46.455h-6.3Z" stroke="#147391" stroke-miterlimit="10" stroke-width="1.091" fill="url(#linear-gradient-5)"/>
+  </g>
+</svg>

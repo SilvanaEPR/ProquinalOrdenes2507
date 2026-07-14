@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sections>
+  <Section engineeringLevel="LibraryFunctionalBlock" implementationName="2019-7-17-10-00-00" domainName="ReferenceData">
+    <Entity type="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.StateMachine">
+      <Property name="NId" kind="Plain" value="AllocationStateMachine" />
+      <Property name="Name" kind="Plain" value="Allocation Management State Machine" />
+      <Property name="Description" kind="Plain" value="State Machine representing a typical life cycle for entity allocation." />
+      <Property name="IsHidden" kind="Plain" value="False" />
+      <Property name="IsSystemDefined" kind="Plain" value="False" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.StatusTransitionDefinition">
+      <Property name="Verb" kind="Plain" value="Allocate" />
+      <Property name="IsHidden" kind="Plain" value="false" />
+      <Property name="IsSystemDefined" kind="Plain" value="false" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.StatusTransitionDefinition">
+      <Property name="Verb" kind="Plain" value="Release" />
+      <Property name="IsHidden" kind="Plain" value="false" />
+      <Property name="IsSystemDefined" kind="Plain" value="false" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.StatusDefinition">
+      <Property name="NId" kind="Plain" value="Assigned" />
+      <Property name="Name" kind="Plain" value="Assigned" />
+      <Property name="Description" kind="Plain" value="The entity is in use and cannot be assigned for other production purpose." />
+      <Property name="Color" kind="Plain" value="#55A0B9" />
+      <Property name="Outcome" kind="Plain" value="NoOutcome" />
+      <Property name="IsHidden" kind="Plain" value="false" />
+      <Property name="IsSystemDefined" kind="Plain" value="false" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.StatusDefinition">
+      <Property name="NId" kind="Plain" value="Unassigned" />
+      <Property name="Name" kind="Plain" value="Unassigned" />
+      <Property name="Description" kind="Plain" value="The entity is not used and can be assigned for production purpose." />
+      <Property name="Color" kind="Plain" value="#28E632" />
+      <Property name="Outcome" kind="Plain" value="NoOutcome" />
+      <Property name="IsHidden" kind="Plain" value="false" />
+      <Property name="IsSystemDefined" kind="Plain" value="false" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.Status">
+      <Property name="NId" kind="Plain" value="Assigned" />
+      <Property name="Name" kind="Plain" value="Assigned" />
+      <Property name="Description" kind="Plain" value="The entity is in use and cannot be assigned for other production purpose." />
+      <Property name="Color" kind="Plain" value="#55A0B9" />
+      <Property name="Outcome" kind="Plain" value="NoOutcome" />
+      <Property name="IsInitial" kind="Plain" value="false" />
+      <Property name="IsHidden" kind="Plain" value="false" />
+      <Property name="IsSystemDefined" kind="Plain" value="false" />
+      <Property name="StateMachine" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.StateMachine">
+          <Property name="NId" kind="Plain" value="AllocationStateMachine" />
+        </LogicalKey>
+      </Property>
+      <Property name="StatusBehaviorDefinitions" kind="ManyToManyReference" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.Status">
+      <Property name="NId" kind="Plain" value="Unassigned" />
+      <Property name="Name" kind="Plain" value="Unassigned" />
+      <Property name="Description" kind="Plain" value="The entity is not used and can be assigned for production purpose." />
+      <Property name="Color" kind="Plain" value="#28E632" />
+      <Property name="Outcome" kind="Plain" value="NoOutcome" />
+      <Property name="IsInitial" kind="Plain" value="true" />
+      <Property name="IsHidden" kind="Plain" value="false" />
+      <Property name="IsSystemDefined" kind="Plain" value="false" />
+      <Property name="StateMachine" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.StateMachine">
+          <Property name="NId" kind="Plain" value="AllocationStateMachine" />
+        </LogicalKey>
+      </Property>
+      <Property name="StatusBehaviorDefinitions" kind="ManyToManyReference" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.StatusBehaviorDefinition">
+      <Property name="NId" kind="Plain" value="IsNotUsed" />
+      <Property name="Name" kind="Plain" value="Is Not Used" />
+      <Property name="Description" kind="Plain" value="The resource is not used and can be assign for production." />
+      <Property name="Statuses" kind="ManyToManyReference">
+        <LogicalKey entityType="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.Status">
+          <Property name="NId" kind="Plain" value="Unassigned" />
+          <Property name="StateMachine" kind="SingleReferenceToParent">
+            <LogicalKey entityType="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.StateMachine">
+              <Property name="NId" kind="Plain" value="AllocationStateMachine" />
+            </LogicalKey>
+          </Property>
+        </LogicalKey>
+      </Property>
+    </Entity>
+    <Entity type="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.StatusBehaviorDefinition">
+      <Property name="NId" kind="Plain" value="IsInUse" />
+      <Property name="Name" kind="Plain" value="Is In Use" />
+      <Property name="Description" kind="Plain" value="The resource is in use for production." />
+      <Property name="Statuses" kind="ManyToManyReference">
+        <LogicalKey entityType="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.Status">
+          <Property name="NId" kind="Plain" value="Assigned" />
+          <Property name="StateMachine" kind="SingleReferenceToParent">
+            <LogicalKey entityType="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.StateMachine">
+              <Property name="NId" kind="Plain" value="AllocationStateMachine" />
+            </LogicalKey>
+          </Property>
+        </LogicalKey>
+      </Property>
+    </Entity>
+    <Entity type="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.StatusTransition">
+      <Property name="Verb" kind="Plain" value="Allocate" />
+      <Property name="DoRaiseEvent" kind="Plain" value="true" />
+      <Property name="IsHidden" kind="Plain" value="false" />
+      <Property name="IsSystemDefined" kind="Plain" value="false" />
+      <Property name="TargetStatus" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.Status">
+          <Property name="NId" kind="Plain" value="Assigned" />
+          <Property name="StateMachine" kind="SingleReferenceToParent">
+            <LogicalKey entityType="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.StateMachine">
+              <Property name="NId" kind="Plain" value="AllocationStateMachine" />
+            </LogicalKey>
+          </Property>
+        </LogicalKey>
+      </Property>
+      <Property name="SourceStatus" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.Status">
+          <Property name="NId" kind="Plain" value="Unassigned" />
+          <Property name="StateMachine" kind="SingleReferenceToParent">
+            <LogicalKey entityType="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.StateMachine">
+              <Property name="NId" kind="Plain" value="AllocationStateMachine" />
+            </LogicalKey>
+          </Property>
+        </LogicalKey>
+      </Property>
+    </Entity>
+    <Entity type="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.StatusTransition">
+      <Property name="Verb" kind="Plain" value="Release" />
+      <Property name="DoRaiseEvent" kind="Plain" value="true" />
+      <Property name="IsHidden" kind="Plain" value="false" />
+      <Property name="IsSystemDefined" kind="Plain" value="false" />
+      <Property name="TargetStatus" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.Status">
+          <Property name="NId" kind="Plain" value="Unassigned" />
+          <Property name="StateMachine" kind="SingleReferenceToParent">
+            <LogicalKey entityType="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.StateMachine">
+              <Property name="NId" kind="Plain" value="AllocationStateMachine" />
+            </LogicalKey>
+          </Property>
+        </LogicalKey>
+      </Property>
+      <Property name="SourceStatus" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.Status">
+          <Property name="NId" kind="Plain" value="Assigned" />
+          <Property name="StateMachine" kind="SingleReferenceToParent">
+            <LogicalKey entityType="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.StateMachine">
+              <Property name="NId" kind="Plain" value="AllocationStateMachine" />
+            </LogicalKey>
+          </Property>
+        </LogicalKey>
+      </Property>
+    </Entity>
+  </Section>
+</Sections>

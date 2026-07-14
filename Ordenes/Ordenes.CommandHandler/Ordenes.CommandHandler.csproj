@@ -1,0 +1,839 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>5c21469d-47e2-4604-b8d8-79c2324d19a7</ProjectGuid>
+    <ProjectHandlerType>Command</ProjectHandlerType>
+    <OutputType>Library</OutputType>
+    <RootNamespace>OR.Ordenes.CommandHandler</RootNamespace>
+    <AssemblyName>OR.Ordenes.CommandHandler</AssemblyName>
+    <Name>Ordenes.CommandHandler</Name>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <FileAlignment>512</FileAlignment>
+    <FunctionalBlockType>ExtendedProject</FunctionalBlockType>
+    <FunctionalBlockVersion>01.00.00</FunctionalBlockVersion>
+    <FunctionalBlockName>Ordenes</FunctionalBlockName>
+    <FunctionalBlockPrefix>OR</FunctionalBlockPrefix>
+    <SitPlatformVersion>11.0</SitPlatformVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <StartAction>Program</StartAction>
+    <StartProgram>$(SITUnifiedVSToolingPlatformBin).net\Worker.Net.exe</StartProgram>
+    <StartArguments>/name:"%COMPUTERNAME%.Default WorkerRoleDefinition (NetCore).0" /debug:true /debugPath:"$(SolutionDir)$(SolutionName)\$(SolutionName).Installer\bin\Debug" /debugPathFile:"$(SolutionDir)$(SolutionName)Paths.xml" /registryPath:"$(SolutionDir)$(SolutionName)\$(SolutionName).Installer\bin\Debug\DebuggerNet"</StartArguments>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Siemens.SimaticIT.SystemData.Foundation">
+      <HintPath>$(SITUnifiedVSToolingPlatformBin)\Siemens.SimaticIT.SystemData.Foundation.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.SystemData.Foundation.Types">
+      <HintPath>$(SITUnifiedVSToolingPlatformBin)\Siemens.SimaticIT.SystemData.Foundation.Types.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.SystemData.Foundation.ProjectionModel">
+      <HintPath>$(SITUnifiedVSToolingPlatformBin)\Siemens.SimaticIT.SystemData.Foundation.ProjectionModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.SystemData.Foundation.ReadingModel">
+      <HintPath>$(SITUnifiedVSToolingPlatformBin)\Siemens.SimaticIT.SystemData.Foundation.ReadingModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.SystemData.Foundation.Types.ReadingModel">
+      <HintPath>$(SITUnifiedVSToolingPlatformBin)\Siemens.SimaticIT.SystemData.Foundation.Types.ReadingModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.SystemData.Foundation.Types.ProjectionModel">
+      <HintPath>$(SITUnifiedVSToolingPlatformBin)\Siemens.SimaticIT.SystemData.Foundation.Types.ProjectionModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="SimaticIT.Unified">
+      <HintPath>$(SITUnifiedVSToolingPlatformBin)\SimaticIT.Unified.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="SimaticIT.Unified.Common">
+      <HintPath>$(SITUnifiedVSToolingPlatformBin)\SimaticIT.Unified.Common.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="SimaticIT.Handler">
+      <HintPath>$(SITUnifiedVSToolingPlatformBin)\SimaticIT.Handler.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="SimaticIT.DataModel">
+      <HintPath>$(SITUnifiedVSToolingPlatformBin)\SimaticIT.DataModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="SimaticIT.SDK.Diagnostics">
+      <HintPath>$(SITUnifiedVSToolingPlatformBin)\SimaticIT.SDK.Diagnostics.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.UDM_RF_07.04.00\model\bin\Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Commands.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Types">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.UDM_RF_07.04.00\model\bin\Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Types.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Types.ReadingModel">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.UDM_RF_07.04.00\model\bin\Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Types.ReadingModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Types.ProjectionModel">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.UDM_RF_07.04.00\model\bin\Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.Types.ProjectionModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.MasterData.TSK_MS.MSModel.Commands">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.TSK_MS_09.04.00\model\bin\Siemens.SimaticIT.MasterData.TSK_MS.MSModel.Commands.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.MasterData.TSK_MS.MSModel.Types">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.TSK_MS_09.04.00\model\bin\Siemens.SimaticIT.MasterData.TSK_MS.MSModel.Types.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.MasterData.TSK_MS.MSModel.Types.ReadingModel">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.TSK_MS_09.04.00\model\bin\Siemens.SimaticIT.MasterData.TSK_MS.MSModel.Types.ReadingModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.MasterData.TSK_MS.MSModel.Types.ProjectionModel">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.TSK_MS_09.04.00\model\bin\Siemens.SimaticIT.MasterData.TSK_MS.MSModel.Types.ProjectionModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.MasterData.BPF_MS.MSModel.Commands">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.BPF_MS_06.04.00\model\bin\Siemens.SimaticIT.MasterData.BPF_MS.MSModel.Commands.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.MasterData.BPF_MS.MSModel.Types">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.BPF_MS_06.04.00\model\bin\Siemens.SimaticIT.MasterData.BPF_MS.MSModel.Types.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.MasterData.BPF_MS.MSModel.Types.ReadingModel">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.BPF_MS_06.04.00\model\bin\Siemens.SimaticIT.MasterData.BPF_MS.MSModel.Types.ReadingModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.MasterData.BPF_MS.MSModel.Types.ProjectionModel">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.BPF_MS_06.04.00\model\bin\Siemens.SimaticIT.MasterData.BPF_MS.MSModel.Types.ProjectionModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.MasterData.EQU_MS.MSModel.Commands">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.EQU_MS_08.04.00\model\bin\Siemens.SimaticIT.MasterData.EQU_MS.MSModel.Commands.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.MasterData.EQU_MS.MSModel.Types">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.EQU_MS_08.04.00\model\bin\Siemens.SimaticIT.MasterData.EQU_MS.MSModel.Types.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.MasterData.EQU_MS.MSModel.Types.ReadingModel">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.EQU_MS_08.04.00\model\bin\Siemens.SimaticIT.MasterData.EQU_MS.MSModel.Types.ReadingModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.MasterData.EQU_MS.MSModel.Types.ProjectionModel">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.EQU_MS_08.04.00\model\bin\Siemens.SimaticIT.MasterData.EQU_MS.MSModel.Types.ProjectionModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.Commands">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.EQU_OP_08.04.00\model\bin\Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.Commands.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.Types">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.EQU_OP_08.04.00\model\bin\Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.Types.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.Types.ReadingModel">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.EQU_OP_08.04.00\model\bin\Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.Types.ReadingModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.Types.ProjectionModel">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.EQU_OP_08.04.00\model\bin\Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.Types.ProjectionModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.Commands">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.TSK_OP_11.04.00\model\bin\Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.Commands.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.Types">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.TSK_OP_11.04.00\model\bin\Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.Types.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.Types.ReadingModel">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.TSK_OP_11.04.00\model\bin\Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.Types.ReadingModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.Types.ProjectionModel">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.TSK_OP_11.04.00\model\bin\Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.Types.ProjectionModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.OpcenterEX.FN.OperationalData.NUM_OP.OPModel.Commands">
+      <HintPath>..\..\SimaticITPackages\Siemens.OpcenterEX.FN.NUM_OP_02.04.00\model\bin\Siemens.OpcenterEX.FN.OperationalData.NUM_OP.OPModel.Commands.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.OpcenterEX.FN.OperationalData.NUM_OP.OPModel.Types">
+      <HintPath>..\..\SimaticITPackages\Siemens.OpcenterEX.FN.NUM_OP_02.04.00\model\bin\Siemens.OpcenterEX.FN.OperationalData.NUM_OP.OPModel.Types.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.OpcenterEX.FN.OperationalData.NUM_OP.OPModel.Types.ReadingModel">
+      <HintPath>..\..\SimaticITPackages\Siemens.OpcenterEX.FN.NUM_OP_02.04.00\model\bin\Siemens.OpcenterEX.FN.OperationalData.NUM_OP.OPModel.Types.ReadingModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.OpcenterEX.FN.OperationalData.NUM_OP.OPModel.Types.ProjectionModel">
+      <HintPath>..\..\SimaticITPackages\Siemens.OpcenterEX.FN.NUM_OP_02.04.00\model\bin\Siemens.OpcenterEX.FN.OperationalData.NUM_OP.OPModel.Types.ProjectionModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.Commands">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.BPF_OP_09.04.00\model\bin\Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.Commands.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.Types">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.BPF_OP_09.04.00\model\bin\Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.Types.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.Types.ReadingModel">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.BPF_OP_09.04.00\model\bin\Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.Types.ReadingModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.Types.ProjectionModel">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.BPF_OP_09.04.00\model\bin\Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.Types.ProjectionModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.MAT_MS_05.04.00\model\bin\Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Commands.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Types">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.MAT_MS_05.04.00\model\bin\Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Types.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Types.ReadingModel">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.MAT_MS_05.04.00\model\bin\Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Types.ReadingModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Types.ProjectionModel">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.MAT_MS_05.04.00\model\bin\Siemens.SimaticIT.MasterData.MAT_MS.MSModel.Types.ProjectionModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.MAT_OP_06.04.00\model\bin\Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Types">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.MAT_OP_06.04.00\model\bin\Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Types.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Types.ReadingModel">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.MAT_OP_06.04.00\model\bin\Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Types.ReadingModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Types.ProjectionModel">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.MAT_OP_06.04.00\model\bin\Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Types.ProjectionModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.MasterData.UDM_MS.MSModel.Commands">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.UDM_MS_21.00.00\model\bin\Siemens.SimaticIT.MasterData.UDM_MS.MSModel.Commands.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.MasterData.UDM_MS.MSModel.Types">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.UDM_MS_21.00.00\model\bin\Siemens.SimaticIT.MasterData.UDM_MS.MSModel.Types.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.MasterData.UDM_MS.MSModel.Types.ReadingModel">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.UDM_MS_21.00.00\model\bin\Siemens.SimaticIT.MasterData.UDM_MS.MSModel.Types.ReadingModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.MasterData.UDM_MS.MSModel.Types.ProjectionModel">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.UDM_MS_21.00.00\model\bin\Siemens.SimaticIT.MasterData.UDM_MS.MSModel.Types.ProjectionModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.UAPI.OperationalData.PITnT_OP.OPModel.Commands">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.UAPI.PITnT_OP_19.00.00\model\bin\Siemens.SimaticIT.UAPI.OperationalData.PITnT_OP.OPModel.Commands.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.UAPI.OperationalData.PITnT_OP.OPModel.Types">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.UAPI.PITnT_OP_19.00.00\model\bin\Siemens.SimaticIT.UAPI.OperationalData.PITnT_OP.OPModel.Types.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.UAPI.OperationalData.PITnT_OP.OPModel.Types.ReadingModel">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.UAPI.PITnT_OP_19.00.00\model\bin\Siemens.SimaticIT.UAPI.OperationalData.PITnT_OP.OPModel.Types.ReadingModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.UAPI.OperationalData.PITnT_OP.OPModel.Types.ProjectionModel">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.UAPI.PITnT_OP_19.00.00\model\bin\Siemens.SimaticIT.UAPI.OperationalData.PITnT_OP.OPModel.Types.ProjectionModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.UAPI.ReferenceData.ProductionContext_RF.RFModel.Commands">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.UAPI.ProductionContext_RF_15.00.00\model\bin\Siemens.SimaticIT.UAPI.ReferenceData.ProductionContext_RF.RFModel.Commands.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.UAPI.ReferenceData.ProductionContext_RF.RFModel.Types">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.UAPI.ProductionContext_RF_15.00.00\model\bin\Siemens.SimaticIT.UAPI.ReferenceData.ProductionContext_RF.RFModel.Types.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.UAPI.ReferenceData.ProductionContext_RF.RFModel.Types.ReadingModel">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.UAPI.ProductionContext_RF_15.00.00\model\bin\Siemens.SimaticIT.UAPI.ReferenceData.ProductionContext_RF.RFModel.Types.ReadingModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.UAPI.ReferenceData.ProductionContext_RF.RFModel.Types.ProjectionModel">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.UAPI.ProductionContext_RF_15.00.00\model\bin\Siemens.SimaticIT.UAPI.ReferenceData.ProductionContext_RF.RFModel.Types.ProjectionModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.UAPI.MasterData.PIEquipment_MS.MSModel.Commands">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.UAPI.PIEquipment_MS_16.00.00\model\bin\Siemens.SimaticIT.UAPI.MasterData.PIEquipment_MS.MSModel.Commands.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.UAPI.MasterData.PIEquipment_MS.MSModel.Types">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.UAPI.PIEquipment_MS_16.00.00\model\bin\Siemens.SimaticIT.UAPI.MasterData.PIEquipment_MS.MSModel.Types.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.UAPI.MasterData.PIEquipment_MS.MSModel.Types.ReadingModel">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.UAPI.PIEquipment_MS_16.00.00\model\bin\Siemens.SimaticIT.UAPI.MasterData.PIEquipment_MS.MSModel.Types.ReadingModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.UAPI.MasterData.PIEquipment_MS.MSModel.Types.ProjectionModel">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.UAPI.PIEquipment_MS_16.00.00\model\bin\Siemens.SimaticIT.UAPI.MasterData.PIEquipment_MS.MSModel.Types.ProjectionModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.UAPI.OperationalData.PIEquipment_OP.OPModel.Commands">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.UAPI.PIEquipment_OP_17.00.00\model\bin\Siemens.SimaticIT.UAPI.OperationalData.PIEquipment_OP.OPModel.Commands.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.UAPI.OperationalData.PIEquipment_OP.OPModel.Types">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.UAPI.PIEquipment_OP_17.00.00\model\bin\Siemens.SimaticIT.UAPI.OperationalData.PIEquipment_OP.OPModel.Types.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.UAPI.OperationalData.PIEquipment_OP.OPModel.Types.ReadingModel">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.UAPI.PIEquipment_OP_17.00.00\model\bin\Siemens.SimaticIT.UAPI.OperationalData.PIEquipment_OP.OPModel.Types.ReadingModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.UAPI.OperationalData.PIEquipment_OP.OPModel.Types.ProjectionModel">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.UAPI.PIEquipment_OP_17.00.00\model\bin\Siemens.SimaticIT.UAPI.OperationalData.PIEquipment_OP.OPModel.Types.ProjectionModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.OpcenterEX.ReferenceData.Configuration_RF.RFModel.Commands">
+      <HintPath>..\..\SimaticITPackages\Siemens.OpcenterEX.Configuration_RF_12.00.00\model\bin\Siemens.OpcenterEX.ReferenceData.Configuration_RF.RFModel.Commands.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.OpcenterEX.ReferenceData.Configuration_RF.RFModel.Types">
+      <HintPath>..\..\SimaticITPackages\Siemens.OpcenterEX.Configuration_RF_12.00.00\model\bin\Siemens.OpcenterEX.ReferenceData.Configuration_RF.RFModel.Types.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.OpcenterEX.ReferenceData.Configuration_RF.RFModel.Types.ReadingModel">
+      <HintPath>..\..\SimaticITPackages\Siemens.OpcenterEX.Configuration_RF_12.00.00\model\bin\Siemens.OpcenterEX.ReferenceData.Configuration_RF.RFModel.Types.ReadingModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.OpcenterEX.ReferenceData.Configuration_RF.RFModel.Types.ProjectionModel">
+      <HintPath>..\..\SimaticITPackages\Siemens.OpcenterEX.Configuration_RF_12.00.00\model\bin\Siemens.OpcenterEX.ReferenceData.Configuration_RF.RFModel.Types.ProjectionModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.MasterData.ALG_MS.MSModel.Commands">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.ALG_MS_02.04.00\model\bin\Siemens.SimaticIT.MasterData.ALG_MS.MSModel.Commands.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.MasterData.ALG_MS.MSModel.Types">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.ALG_MS_02.04.00\model\bin\Siemens.SimaticIT.MasterData.ALG_MS.MSModel.Types.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.MasterData.ALG_MS.MSModel.Types.ReadingModel">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.ALG_MS_02.04.00\model\bin\Siemens.SimaticIT.MasterData.ALG_MS.MSModel.Types.ReadingModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.MasterData.ALG_MS.MSModel.Types.ProjectionModel">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.ALG_MS_02.04.00\model\bin\Siemens.SimaticIT.MasterData.ALG_MS.MSModel.Types.ProjectionModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.OperationalData.ALG_OP.OPModel.Commands">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.ALG_OP_02.04.00\model\bin\Siemens.SimaticIT.OperationalData.ALG_OP.OPModel.Commands.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.OperationalData.ALG_OP.OPModel.Types">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.ALG_OP_02.04.00\model\bin\Siemens.SimaticIT.OperationalData.ALG_OP.OPModel.Types.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.OperationalData.ALG_OP.OPModel.Types.ReadingModel">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.ALG_OP_02.04.00\model\bin\Siemens.SimaticIT.OperationalData.ALG_OP.OPModel.Types.ReadingModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.OperationalData.ALG_OP.OPModel.Types.ProjectionModel">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.ALG_OP_02.04.00\model\bin\Siemens.SimaticIT.OperationalData.ALG_OP.OPModel.Types.ProjectionModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.OpcenterEX.PR.OperationalData.ApplicationLogExt.OPModel.Commands">
+      <HintPath>..\..\SimaticITPackages\Siemens.OpcenterEX.PR.ApplicationLogExt_14.00.00\model\bin\Siemens.OpcenterEX.PR.OperationalData.ApplicationLogExt.OPModel.Commands.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.OpcenterEX.PR.OperationalData.ApplicationLogExt.OPModel.Types">
+      <HintPath>..\..\SimaticITPackages\Siemens.OpcenterEX.PR.ApplicationLogExt_14.00.00\model\bin\Siemens.OpcenterEX.PR.OperationalData.ApplicationLogExt.OPModel.Types.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.OpcenterEX.PR.OperationalData.ApplicationLogExt.OPModel.Types.ReadingModel">
+      <HintPath>..\..\SimaticITPackages\Siemens.OpcenterEX.PR.ApplicationLogExt_14.00.00\model\bin\Siemens.OpcenterEX.PR.OperationalData.ApplicationLogExt.OPModel.Types.ReadingModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.OpcenterEX.PR.OperationalData.ApplicationLogExt.OPModel.Types.ProjectionModel">
+      <HintPath>..\..\SimaticITPackages\Siemens.OpcenterEX.PR.ApplicationLogExt_14.00.00\model\bin\Siemens.OpcenterEX.PR.OperationalData.ApplicationLogExt.OPModel.Types.ProjectionModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.OpcenterEX.FN.MasterData.ProductionHistory_MS.MSModel.Types">
+      <HintPath>..\..\SimaticITPackages\Siemens.OpcenterEX.FN.ProductionHistory_MS_10.00.00\model\bin\Siemens.OpcenterEX.FN.MasterData.ProductionHistory_MS.MSModel.Types.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.OpcenterEX.FN.MasterData.ProductionHistory_MS.MSModel.Types.ReadingModel">
+      <HintPath>..\..\SimaticITPackages\Siemens.OpcenterEX.FN.ProductionHistory_MS_10.00.00\model\bin\Siemens.OpcenterEX.FN.MasterData.ProductionHistory_MS.MSModel.Types.ReadingModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.OpcenterEX.FN.MasterData.ProductionHistory_MS.MSModel.Types.ProjectionModel">
+      <HintPath>..\..\SimaticITPackages\Siemens.OpcenterEX.FN.ProductionHistory_MS_10.00.00\model\bin\Siemens.OpcenterEX.FN.MasterData.ProductionHistory_MS.MSModel.Types.ProjectionModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.OpcenterEX.FN.OperationalData.ProductionHistory_OP.OPModel.Commands">
+      <HintPath>..\..\SimaticITPackages\Siemens.OpcenterEX.FN.ProductionHistory_OP_11.00.00\model\bin\Siemens.OpcenterEX.FN.OperationalData.ProductionHistory_OP.OPModel.Commands.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.OpcenterEX.FN.OperationalData.ProductionHistory_OP.OPModel.Types">
+      <HintPath>..\..\SimaticITPackages\Siemens.OpcenterEX.FN.ProductionHistory_OP_11.00.00\model\bin\Siemens.OpcenterEX.FN.OperationalData.ProductionHistory_OP.OPModel.Types.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.OpcenterEX.FN.OperationalData.ProductionHistory_OP.OPModel.Types.ReadingModel">
+      <HintPath>..\..\SimaticITPackages\Siemens.OpcenterEX.FN.ProductionHistory_OP_11.00.00\model\bin\Siemens.OpcenterEX.FN.OperationalData.ProductionHistory_OP.OPModel.Types.ReadingModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.OpcenterEX.FN.OperationalData.ProductionHistory_OP.OPModel.Types.ProjectionModel">
+      <HintPath>..\..\SimaticITPackages\Siemens.OpcenterEX.FN.ProductionHistory_OP_11.00.00\model\bin\Siemens.OpcenterEX.FN.OperationalData.ProductionHistory_OP.OPModel.Types.ProjectionModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.ReferenceData.Search_RF.RFModel.Commands">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.Search_RF_15.00.00\model\bin\Siemens.SimaticIT.ReferenceData.Search_RF.RFModel.Commands.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.ReferenceData.Search_RF.RFModel.Types">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.Search_RF_15.00.00\model\bin\Siemens.SimaticIT.ReferenceData.Search_RF.RFModel.Types.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.ReferenceData.Search_RF.RFModel.Types.ReadingModel">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.Search_RF_15.00.00\model\bin\Siemens.SimaticIT.ReferenceData.Search_RF.RFModel.Types.ReadingModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.ReferenceData.Search_RF.RFModel.Types.ProjectionModel">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.Search_RF_15.00.00\model\bin\Siemens.SimaticIT.ReferenceData.Search_RF.RFModel.Types.ProjectionModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.OpcenterEX.PR.MasterData.EquipAllocation_MS.MSModel.Commands">
+      <HintPath>..\..\SimaticITPackages\Siemens.OpcenterEX.PR.EquipAllocation_MS_14.00.00\model\bin\Siemens.OpcenterEX.PR.MasterData.EquipAllocation_MS.MSModel.Commands.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.OpcenterEX.PR.MasterData.EquipAllocation_MS.MSModel.Types">
+      <HintPath>..\..\SimaticITPackages\Siemens.OpcenterEX.PR.EquipAllocation_MS_14.00.00\model\bin\Siemens.OpcenterEX.PR.MasterData.EquipAllocation_MS.MSModel.Types.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.OpcenterEX.PR.MasterData.EquipAllocation_MS.MSModel.Types.ReadingModel">
+      <HintPath>..\..\SimaticITPackages\Siemens.OpcenterEX.PR.EquipAllocation_MS_14.00.00\model\bin\Siemens.OpcenterEX.PR.MasterData.EquipAllocation_MS.MSModel.Types.ReadingModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.OpcenterEX.PR.MasterData.EquipAllocation_MS.MSModel.Types.ProjectionModel">
+      <HintPath>..\..\SimaticITPackages\Siemens.OpcenterEX.PR.EquipAllocation_MS_14.00.00\model\bin\Siemens.OpcenterEX.PR.MasterData.EquipAllocation_MS.MSModel.Types.ProjectionModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.OpcenterEX.PR.OperationalData.EquipAllocation_OP.OPModel.Commands">
+      <HintPath>..\..\SimaticITPackages\Siemens.OpcenterEX.PR.EquipAllocation_OP_17.00.00\model\bin\Siemens.OpcenterEX.PR.OperationalData.EquipAllocation_OP.OPModel.Commands.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.OpcenterEX.PR.OperationalData.EquipAllocation_OP.OPModel.Types">
+      <HintPath>..\..\SimaticITPackages\Siemens.OpcenterEX.PR.EquipAllocation_OP_17.00.00\model\bin\Siemens.OpcenterEX.PR.OperationalData.EquipAllocation_OP.OPModel.Types.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.OpcenterEX.PR.OperationalData.EquipAllocation_OP.OPModel.Types.ReadingModel">
+      <HintPath>..\..\SimaticITPackages\Siemens.OpcenterEX.PR.EquipAllocation_OP_17.00.00\model\bin\Siemens.OpcenterEX.PR.OperationalData.EquipAllocation_OP.OPModel.Types.ReadingModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.OpcenterEX.PR.OperationalData.EquipAllocation_OP.OPModel.Types.ProjectionModel">
+      <HintPath>..\..\SimaticITPackages\Siemens.OpcenterEX.PR.EquipAllocation_OP_17.00.00\model\bin\Siemens.OpcenterEX.PR.OperationalData.EquipAllocation_OP.OPModel.Types.ProjectionModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.OpcenterEX.OperationalData.Maintenance_OP.OPModel.Commands">
+      <HintPath>..\..\SimaticITPackages\Siemens.OpcenterEX.Maintenance_OP_12.00.00\model\bin\Siemens.OpcenterEX.OperationalData.Maintenance_OP.OPModel.Commands.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.OpcenterEX.OperationalData.Maintenance_OP.OPModel.Types">
+      <HintPath>..\..\SimaticITPackages\Siemens.OpcenterEX.Maintenance_OP_12.00.00\model\bin\Siemens.OpcenterEX.OperationalData.Maintenance_OP.OPModel.Types.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.OpcenterEX.OperationalData.Maintenance_OP.OPModel.Types.ReadingModel">
+      <HintPath>..\..\SimaticITPackages\Siemens.OpcenterEX.Maintenance_OP_12.00.00\model\bin\Siemens.OpcenterEX.OperationalData.Maintenance_OP.OPModel.Types.ReadingModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.OpcenterEX.OperationalData.Maintenance_OP.OPModel.Types.ProjectionModel">
+      <HintPath>..\..\SimaticITPackages\Siemens.OpcenterEX.Maintenance_OP_12.00.00\model\bin\Siemens.OpcenterEX.OperationalData.Maintenance_OP.OPModel.Types.ProjectionModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.CHR_MS_10.04.00\model\bin\Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Commands.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Types">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.CHR_MS_10.04.00\model\bin\Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Types.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Types.ReadingModel">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.CHR_MS_10.04.00\model\bin\Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Types.ReadingModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Types.ProjectionModel">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.CHR_MS_10.04.00\model\bin\Siemens.SimaticIT.MasterData.CHR_MS.MSModel.Types.ProjectionModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.Commands">
+      <HintPath>..\..\SimaticITPackages\Siemens.OpcenterEX.FN.DEF_MS_05.04.00\model\bin\Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.Commands.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.Types">
+      <HintPath>..\..\SimaticITPackages\Siemens.OpcenterEX.FN.DEF_MS_05.04.00\model\bin\Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.Types.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.Types.ReadingModel">
+      <HintPath>..\..\SimaticITPackages\Siemens.OpcenterEX.FN.DEF_MS_05.04.00\model\bin\Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.Types.ReadingModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.Types.ProjectionModel">
+      <HintPath>..\..\SimaticITPackages\Siemens.OpcenterEX.FN.DEF_MS_05.04.00\model\bin\Siemens.OpcenterEX.FN.MasterData.DEF_MS.MSModel.Types.ProjectionModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.MasterData.ES_MS.MSModel.Commands">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.ES_MS_05.04.00\model\bin\Siemens.SimaticIT.MasterData.ES_MS.MSModel.Commands.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.MasterData.ES_MS.MSModel.Types">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.ES_MS_05.04.00\model\bin\Siemens.SimaticIT.MasterData.ES_MS.MSModel.Types.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.MasterData.ES_MS.MSModel.Types.ReadingModel">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.ES_MS_05.04.00\model\bin\Siemens.SimaticIT.MasterData.ES_MS.MSModel.Types.ReadingModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.MasterData.ES_MS.MSModel.Types.ProjectionModel">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.ES_MS_05.04.00\model\bin\Siemens.SimaticIT.MasterData.ES_MS.MSModel.Types.ProjectionModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.CHR_OP_14.04.00\model\bin\Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Commands.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Types">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.CHR_OP_14.04.00\model\bin\Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Types.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Types.ReadingModel">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.CHR_OP_14.04.00\model\bin\Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Types.ReadingModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Types.ProjectionModel">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.CHR_OP_14.04.00\model\bin\Siemens.SimaticIT.OperationalData.CHR_OP.OPModel.Types.ProjectionModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.SystemData.ES_SD.SDModel.Commands">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.ES_SD_05.04.00\model\bin\Siemens.SimaticIT.SystemData.ES_SD.SDModel.Commands.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.SystemData.ES_SD.SDModel.Types">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.ES_SD_05.04.00\model\bin\Siemens.SimaticIT.SystemData.ES_SD.SDModel.Types.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.SystemData.ES_SD.SDModel.Types.ReadingModel">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.ES_SD_05.04.00\model\bin\Siemens.SimaticIT.SystemData.ES_SD.SDModel.Types.ReadingModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.SystemData.ES_SD.SDModel.Types.ProjectionModel">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.ES_SD_05.04.00\model\bin\Siemens.SimaticIT.SystemData.ES_SD.SDModel.Types.ProjectionModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.UAPI.PIMaterial_OP_19.00.00\model\bin\Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Commands.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Types">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.UAPI.PIMaterial_OP_19.00.00\model\bin\Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Types.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Types.ReadingModel">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.UAPI.PIMaterial_OP_19.00.00\model\bin\Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Types.ReadingModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Types.ProjectionModel">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.UAPI.PIMaterial_OP_19.00.00\model\bin\Siemens.SimaticIT.UAPI.OperationalData.PIMaterial_OP.OPModel.Types.ProjectionModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.UAPI.MasterData.PIMaterial_MS.MSModel.Commands">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.UAPI.PIMaterial_MS_15.00.00\model\bin\Siemens.SimaticIT.UAPI.MasterData.PIMaterial_MS.MSModel.Commands.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.UAPI.MasterData.PIMaterial_MS.MSModel.Types">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.UAPI.PIMaterial_MS_15.00.00\model\bin\Siemens.SimaticIT.UAPI.MasterData.PIMaterial_MS.MSModel.Types.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.UAPI.MasterData.PIMaterial_MS.MSModel.Types.ReadingModel">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.UAPI.PIMaterial_MS_15.00.00\model\bin\Siemens.SimaticIT.UAPI.MasterData.PIMaterial_MS.MSModel.Types.ReadingModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.UAPI.MasterData.PIMaterial_MS.MSModel.Types.ProjectionModel">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.UAPI.PIMaterial_MS_15.00.00\model\bin\Siemens.SimaticIT.UAPI.MasterData.PIMaterial_MS.MSModel.Types.ProjectionModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.UAPI.OperationalData.PICore_OP.OPModel.Commands">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.UAPI.PICore_OP_25.00.00\model\bin\Siemens.SimaticIT.UAPI.OperationalData.PICore_OP.OPModel.Commands.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.UAPI.OperationalData.PICore_OP.OPModel.Types">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.UAPI.PICore_OP_25.00.00\model\bin\Siemens.SimaticIT.UAPI.OperationalData.PICore_OP.OPModel.Types.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.UAPI.OperationalData.PICore_OP.OPModel.Types.ReadingModel">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.UAPI.PICore_OP_25.00.00\model\bin\Siemens.SimaticIT.UAPI.OperationalData.PICore_OP.OPModel.Types.ReadingModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.UAPI.OperationalData.PICore_OP.OPModel.Types.ProjectionModel">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.UAPI.PICore_OP_25.00.00\model\bin\Siemens.SimaticIT.UAPI.OperationalData.PICore_OP.OPModel.Types.ProjectionModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.OpcenterEX.PR.MasterData.Sampling_MS.MSModel.Commands">
+      <HintPath>..\..\SimaticITPackages\Siemens.OpcenterEX.PR.Sampling_MS_15.00.00\model\bin\Siemens.OpcenterEX.PR.MasterData.Sampling_MS.MSModel.Commands.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.OpcenterEX.PR.MasterData.Sampling_MS.MSModel.Types">
+      <HintPath>..\..\SimaticITPackages\Siemens.OpcenterEX.PR.Sampling_MS_15.00.00\model\bin\Siemens.OpcenterEX.PR.MasterData.Sampling_MS.MSModel.Types.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.OpcenterEX.PR.MasterData.Sampling_MS.MSModel.Types.ReadingModel">
+      <HintPath>..\..\SimaticITPackages\Siemens.OpcenterEX.PR.Sampling_MS_15.00.00\model\bin\Siemens.OpcenterEX.PR.MasterData.Sampling_MS.MSModel.Types.ReadingModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.OpcenterEX.PR.MasterData.Sampling_MS.MSModel.Types.ProjectionModel">
+      <HintPath>..\..\SimaticITPackages\Siemens.OpcenterEX.PR.Sampling_MS_15.00.00\model\bin\Siemens.OpcenterEX.PR.MasterData.Sampling_MS.MSModel.Types.ProjectionModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.UAPI.PICore_MS_22.00.00\model\bin\Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Commands.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Types">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.UAPI.PICore_MS_22.00.00\model\bin\Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Types.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Types.ReadingModel">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.UAPI.PICore_MS_22.00.00\model\bin\Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Types.ReadingModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Types.ProjectionModel">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.UAPI.PICore_MS_22.00.00\model\bin\Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.Types.ProjectionModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.Commands">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.UDM_OP_22.00.00\model\bin\Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.Commands.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.Types">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.UDM_OP_22.00.00\model\bin\Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.Types.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.Types.ReadingModel">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.UDM_OP_22.00.00\model\bin\Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.Types.ReadingModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.Types.ProjectionModel">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.UDM_OP_22.00.00\model\bin\Siemens.SimaticIT.OperationalData.UDM_OP.OPModel.Types.ProjectionModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.Commands">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.UAPI.PIOrder_OP_17.00.00\model\bin\Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.Commands.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.Types">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.UAPI.PIOrder_OP_17.00.00\model\bin\Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.Types.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.Types.ReadingModel">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.UAPI.PIOrder_OP_17.00.00\model\bin\Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.Types.ReadingModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.Types.ProjectionModel">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.UAPI.PIOrder_OP_17.00.00\model\bin\Siemens.SimaticIT.UAPI.OperationalData.PIOrder_OP.OPModel.Types.ProjectionModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.UAPI.PICore.PICore.PIPOMModel.Commands">
+      <HintPath>..\..\SimaticITPackages\Apps\Siemens.SimaticIT.UAPI.PICore_26.00.00\model\bin\Siemens.SimaticIT.UAPI.PICore.PICore.PIPOMModel.Commands.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.UAPI.PICore.PICore.PIPOMModel.Types">
+      <HintPath>..\..\SimaticITPackages\Apps\Siemens.SimaticIT.UAPI.PICore_26.00.00\model\bin\Siemens.SimaticIT.UAPI.PICore.PICore.PIPOMModel.Types.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.UAPI.PICore.PICore.PIPOMModel.Types.ReadingModel">
+      <HintPath>..\..\SimaticITPackages\Apps\Siemens.SimaticIT.UAPI.PICore_26.00.00\model\bin\Siemens.SimaticIT.UAPI.PICore.PICore.PIPOMModel.Types.ReadingModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.UAPI.PICore.PICore.PIPOMModel.Types.ProjectionModel">
+      <HintPath>..\..\SimaticITPackages\Apps\Siemens.SimaticIT.UAPI.PICore_26.00.00\model\bin\Siemens.SimaticIT.UAPI.PICore.PICore.PIPOMModel.Types.ProjectionModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.UAPI.PICore.PICore.PIPOMModel.PublicModel">
+      <HintPath>..\..\SimaticITPackages\Apps\Siemens.SimaticIT.UAPI.PICore_26.00.00\model\bin\Siemens.SimaticIT.UAPI.PICore.PICore.PIPOMModel.PublicModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.MasterData.AGW_MS.MSModel.Commands">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.AGW_MS_09.02.00\model\bin\Siemens.SimaticIT.MasterData.AGW_MS.MSModel.Commands.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.MasterData.AGW_MS.MSModel.Types">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.AGW_MS_09.02.00\model\bin\Siemens.SimaticIT.MasterData.AGW_MS.MSModel.Types.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.MasterData.AGW_MS.MSModel.Types.ReadingModel">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.AGW_MS_09.02.00\model\bin\Siemens.SimaticIT.MasterData.AGW_MS.MSModel.Types.ReadingModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.MasterData.AGW_MS.MSModel.Types.ProjectionModel">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.AGW_MS_09.02.00\model\bin\Siemens.SimaticIT.MasterData.AGW_MS.MSModel.Types.ProjectionModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.ATN_MS_08.02.00\model\bin\Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Commands.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Types">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.ATN_MS_08.02.00\model\bin\Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Types.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Types.ReadingModel">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.ATN_MS_08.02.00\model\bin\Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Types.ReadingModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Types.ProjectionModel">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.ATN_MS_08.02.00\model\bin\Siemens.SimaticIT.MasterData.ATN_MS.MSModel.Types.ProjectionModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.SystemData.DSG_SD.SDModel.Commands">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.DSG_SD_02.04.00\model\bin\Siemens.SimaticIT.SystemData.DSG_SD.SDModel.Commands.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.SystemData.DSG_SD.SDModel.Types">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.DSG_SD_02.04.00\model\bin\Siemens.SimaticIT.SystemData.DSG_SD.SDModel.Types.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.SystemData.DSG_SD.SDModel.Types.ReadingModel">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.DSG_SD_02.04.00\model\bin\Siemens.SimaticIT.SystemData.DSG_SD.SDModel.Types.ReadingModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.SystemData.DSG_SD.SDModel.Types.ProjectionModel">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.DSG_SD_02.04.00\model\bin\Siemens.SimaticIT.SystemData.DSG_SD.SDModel.Types.ProjectionModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.MasterData.PRM_MS.MSModel.Commands">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.PRM_MS_03.04.00\model\bin\Siemens.SimaticIT.MasterData.PRM_MS.MSModel.Commands.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.MasterData.PRM_MS.MSModel.Types">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.PRM_MS_03.04.00\model\bin\Siemens.SimaticIT.MasterData.PRM_MS.MSModel.Types.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.MasterData.PRM_MS.MSModel.Types.ReadingModel">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.PRM_MS_03.04.00\model\bin\Siemens.SimaticIT.MasterData.PRM_MS.MSModel.Types.ReadingModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.MasterData.PRM_MS.MSModel.Types.ProjectionModel">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.PRM_MS_03.04.00\model\bin\Siemens.SimaticIT.MasterData.PRM_MS.MSModel.Types.ProjectionModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.UAPI.OperationalData.CT_OP.OPModel.Commands">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.UAPI.CT_OP_22.00.00\model\bin\Siemens.SimaticIT.UAPI.OperationalData.CT_OP.OPModel.Commands.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.UAPI.OperationalData.CT_OP.OPModel.Types">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.UAPI.CT_OP_22.00.00\model\bin\Siemens.SimaticIT.UAPI.OperationalData.CT_OP.OPModel.Types.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.UAPI.OperationalData.CT_OP.OPModel.Types.ReadingModel">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.UAPI.CT_OP_22.00.00\model\bin\Siemens.SimaticIT.UAPI.OperationalData.CT_OP.OPModel.Types.ReadingModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.UAPI.OperationalData.CT_OP.OPModel.Types.ProjectionModel">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.UAPI.CT_OP_22.00.00\model\bin\Siemens.SimaticIT.UAPI.OperationalData.CT_OP.OPModel.Types.ProjectionModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.UAPI.MasterData.Read_Chn.MSModel.Commands">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.UAPI.Read_Chn_18.00.00\model\bin\Siemens.SimaticIT.UAPI.MasterData.Read_Chn.MSModel.Commands.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.UAPI.MasterData.Read_Chn.MSModel.Types">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.UAPI.Read_Chn_18.00.00\model\bin\Siemens.SimaticIT.UAPI.MasterData.Read_Chn.MSModel.Types.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.UAPI.MasterData.Read_Chn.MSModel.Types.ReadingModel">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.UAPI.Read_Chn_18.00.00\model\bin\Siemens.SimaticIT.UAPI.MasterData.Read_Chn.MSModel.Types.ReadingModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.UAPI.MasterData.Read_Chn.MSModel.Types.ProjectionModel">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.UAPI.Read_Chn_18.00.00\model\bin\Siemens.SimaticIT.UAPI.MasterData.Read_Chn.MSModel.Types.ProjectionModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.UAPI.MasterData.CT_MS.MSModel.Commands">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.UAPI.CT_MS_18.00.00\model\bin\Siemens.SimaticIT.UAPI.MasterData.CT_MS.MSModel.Commands.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.UAPI.MasterData.CT_MS.MSModel.Types">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.UAPI.CT_MS_18.00.00\model\bin\Siemens.SimaticIT.UAPI.MasterData.CT_MS.MSModel.Types.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.UAPI.MasterData.CT_MS.MSModel.Types.ReadingModel">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.UAPI.CT_MS_18.00.00\model\bin\Siemens.SimaticIT.UAPI.MasterData.CT_MS.MSModel.Types.ReadingModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.UAPI.MasterData.CT_MS.MSModel.Types.ProjectionModel">
+      <HintPath>..\..\SimaticITPackages\Siemens.SimaticIT.UAPI.CT_MS_18.00.00\model\bin\Siemens.SimaticIT.UAPI.MasterData.CT_MS.MSModel.Types.ProjectionModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CommandHandler.coutput">
+      <Visible>false</Visible>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Ordenes.ORPOMModel\Ordenes.ORPOMModel.pmproj">
+      <Name>Ordenes.ORPOMModel</Name>
+      <ReferenceOutputAssembly>False</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\Ordenes.RemoteArtifacts\Ordenes.RemoteArtifacts.csproj">
+      <Name>Ordenes.RemoteArtifacts</Name>
+      <ReferenceOutputAssembly>False</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="PreBuild" BeforeTarget="PreBuildEvent">
+    <Exec Command="Do stuff in SDK style" />
+  </Target>
+  <Target Name="PostBuild" BeforeTarget="PostBuildEvent">
+    <Exec Command="Do stuff in SDK style" />
+  </Target>
+  -->
+</Project>

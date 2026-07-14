@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Sections>
+  <Section engineeringLevel="LibraryFunctionalBlock" implementationName="MasterDataTask" domainName="MasterData">
+    <Entity type="Siemens.SimaticIT.MasterData.TSK_MS.MSModel.DataModel.TaskType">
+      <Property name="NId" kind="Plain" value="TSKType" />
+      <Property name="Name" kind="Plain" value="Task Type" />
+      <Property name="Description" kind="Plain" value="Type of task" />
+      <Property name="TaskEntityType" kind="Plain" value="Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.DataModel.ITask" />
+    </Entity>
+  </Section>
+</Sections>

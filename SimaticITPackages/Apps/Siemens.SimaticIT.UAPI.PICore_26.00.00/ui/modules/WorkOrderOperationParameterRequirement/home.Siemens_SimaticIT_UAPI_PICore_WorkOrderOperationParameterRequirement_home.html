@@ -1,0 +1,21 @@
+<sit-container sit-isswac="False">
+	<div gridster="mashup.layOutOptions">
+		<sit-component style="display:none"
+				grid-max-columns="{{mashup.layOutOptions.columns}}" grid-margin="{{mashup.layOutOptions.margins[0]}}"
+				sit-name="home_mashup_1" sit-componentname="mashup"
+				sit-type="ui" sit-source="sit-mashup"
+				sit-left="0" sit-top="0"
+				sit-rows="2" sit-cols="2"
+				sit-flavor="ui"></sit-component>
+		<sit-component gridster-item ng-show="mashup.componentInstances[1].isVisible"
+				row="mashup.componentInstances[1].layout.row" col="mashup.componentInstances[1].layout.col"
+				size-x="mashup.componentInstances[1].layout.sizeX" size-y="mashup.componentInstances[1].layout.sizeY"
+				grid-max-columns="{{mashup.layOutOptions.columns}}" grid-margin="{{mashup.layOutOptions.margins[0]}}"
+				sit-name="home_workorderoperationparamlist_2" sit-componentname="workorderoperationparamlist"
+				sit-type="ui" sit-source="workorderoperationparamlist"
+				sit-left="0" sit-top="0"
+				sit-rows="12" sit-cols="12"
+				sit-flavor="ui"
+				sit-contracts="mashup.componentInstances[1].contracts"></sit-component>
+	</div>
+</sit-container>

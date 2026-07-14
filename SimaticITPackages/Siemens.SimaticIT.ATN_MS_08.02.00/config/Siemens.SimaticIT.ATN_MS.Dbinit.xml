@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sections>
+  <Section engineeringLevel="LibraryFunctionalBlock" implementationName="MasterDataATN" domainName="MasterData">
+    <Entity type="Siemens.SimaticIT.MasterData.ATN_MS.MSModel.DataModel.AcquisitionCycle">
+      <Property name="NId" kind="Plain" value="Ti100ms" />
+      <Property name="Description" kind="Plain" value="100 milliseconds" />
+      <Property name="Interval" kind="Plain" value="100" />
+      <Property name="StartOn" kind="Plain" value="2017-01-01T00:00:00" />
+      <Property name="StartingTimeKind" kind="Plain" value="Utc" />
+      <Property name="ActivationStatus" kind="Complex">
+        <Property name="Dirty" kind="Plain" value="True" />
+        <Property name="Activated" kind="Plain" value="False" />
+        <Property name="Ready" kind="Plain" value="True" />
+        <Property name="Dismissed" kind="Plain" value="False" />
+        <Property name="ConfirmedOn" kind="Plain" value="NULL" />
+      </Property>
+      <Property name="Revision" kind="Plain" value="1" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.MasterData.ATN_MS.MSModel.DataModel.AcquisitionCycle">
+      <Property name="NId" kind="Plain" value="Ti250ms" />
+      <Property name="Description" kind="Plain" value="250 milliseconds" />
+      <Property name="Interval" kind="Plain" value="250" />
+      <Property name="StartOn" kind="Plain" value="2017-01-01T00:00:00" />
+      <Property name="StartingTimeKind" kind="Plain" value="Utc" />
+      <Property name="ActivationStatus" kind="Complex">
+        <Property name="Dirty" kind="Plain" value="True" />
+        <Property name="Activated" kind="Plain" value="False" />
+        <Property name="Ready" kind="Plain" value="True" />
+        <Property name="Dismissed" kind="Plain" value="False" />
+        <Property name="ConfirmedOn" kind="Plain" value="NULL" />
+      </Property>
+      <Property name="Revision" kind="Plain" value="1" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.MasterData.ATN_MS.MSModel.DataModel.AcquisitionCycle">
+      <Property name="NId" kind="Plain" value="Ti500ms" />
+      <Property name="Description" kind="Plain" value="500 milliseconds" />
+      <Property name="Interval" kind="Plain" value="500" />
+      <Property name="StartOn" kind="Plain" value="2017-01-01T00:00:00" />
+      <Property name="StartingTimeKind" kind="Plain" value="Utc" />
+      <Property name="ActivationStatus" kind="Complex">
+        <Property name="Dirty" kind="Plain" value="True" />
+        <Property name="Activated" kind="Plain" value="False" />
+        <Property name="Ready" kind="Plain" value="True" />
+        <Property name="Dismissed" kind="Plain" value="False" />
+        <Property name="ConfirmedOn" kind="Plain" value="NULL" />
+      </Property>
+      <Property name="Revision" kind="Plain" value="1" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.MasterData.ATN_MS.MSModel.DataModel.AcquisitionCycle">
+      <Property name="NId" kind="Plain" value="Ti1s" />
+      <Property name="Description" kind="Plain" value="1 second" />
+      <Property name="Interval" kind="Plain" value="1000" />
+      <Property name="StartOn" kind="Plain" value="2017-01-01T00:00:00" />
+      <Property name="StartingTimeKind" kind="Plain" value="Utc" />
+      <Property name="ActivationStatus" kind="Complex">
+        <Property name="Dirty" kind="Plain" value="True" />
+        <Property name="Activated" kind="Plain" value="False" />
+        <Property name="Ready" kind="Plain" value="True" />
+        <Property name="Dismissed" kind="Plain" value="False" />
+        <Property name="ConfirmedOn" kind="Plain" value="NULL" />
+      </Property>
+      <Property name="Revision" kind="Plain" value="1" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.MasterData.ATN_MS.MSModel.DataModel.AcquisitionCycle">
+      <Property name="NId" kind="Plain" value="Ti2s" />
+      <Property name="Description" kind="Plain" value="2 seconds" />
+      <Property name="Interval" kind="Plain" value="2000" />
+      <Property name="StartOn" kind="Plain" value="2017-01-01T00:00:00" />
+      <Property name="StartingTimeKind" kind="Plain" value="Utc" />
+      <Property name="ActivationStatus" kind="Complex">
+        <Property name="Dirty" kind="Plain" value="True" />
+        <Property name="Activated" kind="Plain" value="False" />
+        <Property name="Ready" kind="Plain" value="True" />
+        <Property name="Dismissed" kind="Plain" value="False" />
+        <Property name="ConfirmedOn" kind="Plain" value="NULL" />
+      </Property>
+      <Property name="Revision" kind="Plain" value="1" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.MasterData.ATN_MS.MSModel.DataModel.AcquisitionCycle">
+      <Property name="NId" kind="Plain" value="Ti5s" />
+      <Property name="Description" kind="Plain" value="5 seconds" />
+      <Property name="Interval" kind="Plain" value="5000" />
+      <Property name="StartOn" kind="Plain" value="2017-01-01T00:00:00" />
+      <Property name="StartingTimeKind" kind="Plain" value="Utc" />
+      <Property name="ActivationStatus" kind="Complex">
+        <Property name="Dirty" kind="Plain" value="True" />
+        <Property name="Activated" kind="Plain" value="False" />
+        <Property name="Ready" kind="Plain" value="True" />
+        <Property name="Dismissed" kind="Plain" value="False" />
+        <Property name="ConfirmedOn" kind="Plain" value="NULL" />
+      </Property>
+      <Property name="Revision" kind="Plain" value="1" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.MasterData.ATN_MS.MSModel.DataModel.AcquisitionCycle">
+      <Property name="NId" kind="Plain" value="Ti10s" />
+      <Property name="Description" kind="Plain" value="10 seconds" />
+      <Property name="Interval" kind="Plain" value="10000" />
+      <Property name="StartOn" kind="Plain" value="2017-01-01T00:00:00" />
+      <Property name="StartingTimeKind" kind="Plain" value="Utc" />
+      <Property name="ActivationStatus" kind="Complex">
+        <Property name="Dirty" kind="Plain" value="True" />
+        <Property name="Activated" kind="Plain" value="False" />
+        <Property name="Ready" kind="Plain" value="True" />
+        <Property name="Dismissed" kind="Plain" value="False" />
+        <Property name="ConfirmedOn" kind="Plain" value="NULL" />
+      </Property>
+      <Property name="Revision" kind="Plain" value="1" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.MasterData.ATN_MS.MSModel.DataModel.AcquisitionCycle">
+      <Property name="NId" kind="Plain" value="Ti1min" />
+      <Property name="Description" kind="Plain" value="1 minute" />
+      <Property name="Interval" kind="Plain" value="60000" />
+      <Property name="StartOn" kind="Plain" value="2017-01-01T00:00:00" />
+      <Property name="StartingTimeKind" kind="Plain" value="Utc" />
+      <Property name="ActivationStatus" kind="Complex">
+        <Property name="Dirty" kind="Plain" value="True" />
+        <Property name="Activated" kind="Plain" value="False" />
+        <Property name="Ready" kind="Plain" value="True" />
+        <Property name="Dismissed" kind="Plain" value="False" />
+        <Property name="ConfirmedOn" kind="Plain" value="NULL" />
+      </Property>
+      <Property name="Revision" kind="Plain" value="1" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.MasterData.ATN_MS.MSModel.DataModel.AcquisitionCycle">
+      <Property name="NId" kind="Plain" value="Ti10min" />
+      <Property name="Description" kind="Plain" value="10 minutes" />
+      <Property name="Interval" kind="Plain" value="600000" />
+      <Property name="StartOn" kind="Plain" value="2017-01-01T00:00:00" />
+      <Property name="StartingTimeKind" kind="Plain" value="Utc" />
+      <Property name="ActivationStatus" kind="Complex">
+        <Property name="Dirty" kind="Plain" value="True" />
+        <Property name="Activated" kind="Plain" value="False" />
+        <Property name="Ready" kind="Plain" value="True" />
+        <Property name="Dismissed" kind="Plain" value="False" />
+        <Property name="ConfirmedOn" kind="Plain" value="NULL" />
+      </Property>
+      <Property name="Revision" kind="Plain" value="1" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.MasterData.ATN_MS.MSModel.DataModel.AcquisitionCycle">
+      <Property name="NId" kind="Plain" value="Ti15min" />
+      <Property name="Description" kind="Plain" value="15 minutes" />
+      <Property name="Interval" kind="Plain" value="900000" />
+      <Property name="StartOn" kind="Plain" value="2017-01-01T00:00:00" />
+      <Property name="StartingTimeKind" kind="Plain" value="Utc" />
+      <Property name="ActivationStatus" kind="Complex">
+        <Property name="Dirty" kind="Plain" value="True" />
+        <Property name="Activated" kind="Plain" value="False" />
+        <Property name="Ready" kind="Plain" value="True" />
+        <Property name="Dismissed" kind="Plain" value="False" />
+        <Property name="ConfirmedOn" kind="Plain" value="NULL" />
+      </Property>
+      <Property name="Revision" kind="Plain" value="1" />
+    </Entity>
+  </Section>
+</Sections>

@@ -1,0 +1,10 @@
+<div class="sit-toggle-button" ng-class="toggleButtonCtrl.size === 'large' ? 'large-toggle' : ''">
+    <input type="checkbox"
+           class="sit-toggle-checkbox-button"
+           id="{{toggleButtonCtrl.name + $id}}"
+           ng-change="toggleButtonCtrl.sitChange(toggleButtonCtrl.value)"
+           ng-model="toggleButtonCtrl.value"
+           ng-checked="toggleButtonCtrl.value"
+           ng-disabled="toggleButtonCtrl.ngDisabled || toggleButtonCtrl.ngReadonly || toggleButtonCtrl.readOnly" />
+    <label class="sit-toggle-button-label" for="{{toggleButtonCtrl.name + $id}}"> </label>
+</div>

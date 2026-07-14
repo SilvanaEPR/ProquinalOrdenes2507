@@ -1,0 +1,35 @@
+﻿<div class="context-table-view">
+    <div ng-repeat="context in vm.taskContextConfigData">
+        <div class="table table-striped no-context-container">
+            <table aria-describedby="TaskContextTable" sit-table="overviewTaskContextTable" sit-config="context.config" class="table table-striped" sit-col-resize>
+                <thead>
+                    <tr>
+                        <th scope="col">
+                            {{context.Context}}
+                        </th>
+                    </tr>
+                    <tr>
+                        <th scope="col">{{'SIT.TSK.grid.id'|translate}}</th>
+                        <th scope="col">{{'SIT.TSK.grid.type'|translate}}</th>
+                        <th scope="col">{{'SIT.TSK.grid.value'|translate}}</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="item in context.config.data">
+                        <td title="{{item.NId}}">{{item.NId}}</td>
+                        <td>{{item.UserFieldType}}</td>
+                        <td class="context-table" ng-click="vm.onRowClick(item,context.config.data)">
+                            <div class="input-value" ng-if="item.edit && vm.editMode">
+                                <sit-text id="contextTable_{{$index}}" sit-id="contextTable_{{$index}}" ng-blur="vm.onRowBlur(item)" ng-init="vm.focusInputElement('contextTable_' + $index)" data-sit-value="item.UserFieldValue" data-sit-validation="(vm.validationList|filter:{type:item.UserFieldType}:true)[0].validationPattern"></sit-text>
+                            </div>
+                            <span title="{{item.UserFieldValue}}" ng-if="!item.edit || !vm.editMode">{{item.UserFieldValue}}</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div ng-show="!(vm.taskContextConfigData.length > 0)" class="process-nodata">
+        {{'SIT.TSK.common.noData' | translate}}
+    </div>
+</div>

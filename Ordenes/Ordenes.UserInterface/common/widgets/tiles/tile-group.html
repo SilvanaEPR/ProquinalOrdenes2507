@@ -1,0 +1,50 @@
+<!-- header -->
+<div ng-if="!tileGrpCtrl.group.isDummy" ng-style="::rowStyle(row)" class="tile-group-header">
+
+    <div ng-style="::{height: tileGrpCtrl.group.rowheight}" class="tile-group-select" ng-if="tileGrpCtrl.selectionMode === 'multi' && tileGrpCtrl.multiSelect">
+        <div class="child-count">
+            <div class="sit-checkbox">
+                <div class="property-grid-span-group-block validator-control checkbox-noborder">
+                    <div class="group-control vertical-layout">
+                        <div class="check-box checkbox-enabled">
+                            <label>
+                                <input type="checkbox" class="tile-group-checkbox dirty-disabled"
+                                       ng-model="tileGrpCtrl.groupSelected"
+                                       ng-checked="tileGrpCtrl.groupSelected" ng-click="tileGrpCtrl.selectGroup()" />
+                                <span class="property-label-ellipsis">
+                                    <span class="check"></span>
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="group-arrow" ng-click="tileGrpCtrl.toggleGroup(tileGrpCtrl.group)">
+        <div class="icon" sit-class="tile-group-svg" ng-if="tileGrpCtrl.group.arrowStatus()"
+             sit-mom-icon="{path: 'common/icons/miscDownArrow16.svg'}"></div>
+
+        <div class="icon" sit-class="tile-group-svg" ng-if="!tileGrpCtrl.group.arrowStatus()"
+             sit-mom-icon="{path: 'common/icons/miscRightArrow16.svg'}"></div>
+    </div>
+
+    <div ng-style="{height: tileGrpCtrl.group.rowheight}" class="tile-group-text" ng-click="tileGrpCtrl.toggleGroup(tileGrpCtrl.group)">
+        <div class="child-count">{{::tileGrpCtrl.group.name}} ({{::tileGrpCtrl.group.childCount()}})</div>
+    </div>
+
+    <div class="tile-group-line-container" ng-style="::{height: tileGrpCtrl.group.rowheight}">
+        <div class="tile-group-line"></div>
+    </div>
+</div>
+
+<!-- tiles container -->
+<!-- Do not change whitespace here.  Needed to remove space between multiple inline-block elements -->
+<div data-internal-type="itemTileContainer" ng-if="tileGrpCtrl.group.expanded || (tileGrpCtrl.groupsLength <= 1 && tileGrpCtrl.group.isDummy)" class="tile-group-block">
+    <!--
+    -->
+    <sit-item-tile sit-format="tileGrpCtrl.sitFormat" ng-repeat="tile in tileGrpCtrl.group.tiles | limitTo: tileGrpCtrl.tileLimit" sit-tile-content="tile" sit-tile-options="tileGrpCtrl.tileOptions" sit-tile-template="tileGrpCtrl.tileOptions.tileTemplate" sit-last-tile></sit-item-tile>
+    <!--
+    -->
+</div>

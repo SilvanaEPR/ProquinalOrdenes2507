@@ -1,0 +1,10 @@
+<div class="progress-stepper-container">
+    <div ng-if="progressStepperCtrl.options.type.toUpperCase() === 'NUMERIC'" class="numeric-stepper-container">
+        <sit-numeric-stepper sit-options="progressStepperCtrl.options"></sit-numeric-stepper>
+    </div>
+    <div ng-if="progressStepperCtrl.options.type.toUpperCase() === 'LABEL'">
+        <sit-label-stepper sit-options="progressStepperCtrl.options"></sit-label-stepper>
+    </div>
+</div>
+
+

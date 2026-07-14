@@ -1,0 +1,6 @@
+﻿<div class="content-area content-area-relative" style="height: 100%" id="itemlist">
+    <div class="pi-component-title" ng-show="vm.isComponentTitleVisible">{{vm.workOrderHeaderParameterListComponentTitle}}</div>
+    <div>
+        <sit-pi-table class="WorkOrderParametersList" sit-pi-table-id="WorkOrderHeaderParameterList" sit-config="vm.tableConfig" sit-pi-toolbar-buttons="vm.toolbarButtons" on-command-clicked="vm.onActionClicked(command)" sit-pi-toolbar-visible="vm.toolbarVisible" sit-pi-config="vm.dataConfig" sit-view-mode="grid"></sit-pi-table>
+    </div>
+</div>

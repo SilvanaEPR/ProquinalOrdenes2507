@@ -1,0 +1,2032 @@
+﻿<?xml version="1.0" encoding="utf-8"?><projectmanifest>
+  <header>
+    <manifestversion>11.0</manifestversion>
+    <platformversion>11.0</platformversion>
+    <type>Library</type>
+    <name>Siemens.SimaticIT.MAT_OP</name>
+    <shortname>MAT_OP</shortname>
+    <description>Material Operational Data Domain Functional Block</description>
+    <version>06.04.00</version>
+    <companyname>Siemens.SimaticIT</companyname>
+    <author>Siemens.SimaticIT</author>
+    <hash>tIPWdwaGPGTtRRq7VgLRU7Bj+S8gWu6RHTMQ+Z7E+oU=</hash>
+    <modelHash>C4bQss+kmyXb/k1RJQN038nD1bSfsWO1ipWW8By80Gc=</modelHash>
+    <modelHashSections>
+      <modelHashSection>
+        <name>projectConfigModelHash</name>
+        <hash>FQ6EixbcJo4xXlUJS2RqBOn2iuSoI+OCcevosOFySw8=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>dataModelHash</name>
+        <hash>M4wvVleP9S25Dr+NjaagEwh8JABhGFBcjlkSahL01V4=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>commandModelHash</name>
+        <hash>vCJDBOwi/GLKQwB6jOnTOwtyn/KLIUZe0WZnylzDOuM=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>aliasModelHash</name>
+        <hash>cdWtFof25lUoH+wgMZZEtJGL5k7aBVT7Ae5HtNcbGxs=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>eventModelHash</name>
+        <hash>LyXQT9A6atoRfj/AEScofNZpWbhlttMdvL7tRJiqXf4=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>typeModelHash</name>
+        <hash>N6GkAmLt6EXAvWwUe8G9VxxYAsM3PcvTt/md8mLGcRg=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>securityModelHash</name>
+        <hash>cdWtFof25lUoH+wgMZZEtJGL5k7aBVT7Ae5HtNcbGxs=</hash>
+      </modelHashSection>
+    </modelHashSections>
+    <uiHash>na</uiHash>
+    <canbeextended>false</canbeextended>
+    <domain>OperationalData</domain>
+  </header>
+  <reference>
+    <functionalblocks>
+      <functionalblock>
+        <name>Siemens.SimaticIT.UDM_RF</name>
+        <version>07.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.MAT_MS</name>
+        <version>05.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.EQU_MS</name>
+        <version>08.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.EQU_OP</name>
+        <version>08.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.OpcenterEX.FN.NUM_OP</name>
+        <version>02.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+    </functionalblocks>
+    <extensions></extensions>
+  </reference>
+  <artifacts>
+    <commands><command>
+                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.CreateMaterialLotTemplate</name>
+                        <shortname>CreateMaterialLotTemplate</shortname>
+                        <description>Creates a Material Lot Template.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.CreateMaterialLotTemplateHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.SetMaterialLotTemplateAsDefault</name>
+                        <shortname>SetMaterialLotTemplateAsDefault</shortname>
+                        <description>Sets a Material Lot Template as default.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.SetMaterialLotTemplateAsDefaultHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.UnsetMaterialLotTemplateAsDefault</name>
+                        <shortname>UnsetMaterialLotTemplateAsDefault</shortname>
+                        <description>Unsets a Material Lot Template as default.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.UnsetMaterialLotTemplateAsDefaultHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.SetMaterialLotTemplateStateMachine</name>
+                        <shortname>SetMaterialLotTemplateStateMachine</shortname>
+                        <description>Sets a new State Machine to a Material Lot Template.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.SetMaterialLotTemplateStateMachineHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.UpdateMaterialLotTemplate</name>
+                        <shortname>UpdateMaterialLotTemplate</shortname>
+                        <description>Updates a Material Lot Template.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.UpdateMaterialLotTemplateHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.FreezeMaterialLotTemplate</name>
+                        <shortname>FreezeMaterialLotTemplate</shortname>
+                        <description>Configures the Material Lot Template to be read-only by setting the attribute IsFrozen to True.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.FreezeMaterialLotTemplateHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.UnfreezeMaterialLotTemplate</name>
+                        <shortname>UnfreezeMaterialLotTemplate</shortname>
+                        <description>Removes the read-only setting from the Material Lot Template by setting the attribute IsFrozen to False.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.UnfreezeMaterialLotTemplateHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.CreateMaterialLotTemplateProperties</name>
+                        <shortname>CreateMaterialLotTemplateProperties</shortname>
+                        <description>Adds Material Lot Template Properties to a Material Lot Template.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.CreateMaterialLotTemplatePropertiesHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.UpdateMaterialLotTemplateProperties</name>
+                        <shortname>UpdateMaterialLotTemplateProperties</shortname>
+                        <description>Updates Material Lot Template Properties to a Material Lot Template.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.UpdateMaterialLotTemplatePropertiesHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.DeleteMaterialLotTemplate</name>
+                        <shortname>DeleteMaterialLotTemplate</shortname>
+                        <description>Deletes an existing Material Lot Template.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.DeleteMaterialLotTemplateHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.DeleteMaterialLotTemplateProperties</name>
+                        <shortname>DeleteMaterialLotTemplateProperties</shortname>
+                        <description>Deletes Material Lot Template Properties from a Material Lot Template.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.DeleteMaterialLotTemplatePropertiesHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.CreateMaterialLot</name>
+                        <shortname>CreateMaterialLot</shortname>
+                        <description>Creates a Material Lot.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.CreateMaterialLotHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.UpdateMaterialLot</name>
+                        <shortname>UpdateMaterialLot</shortname>
+                        <description>Updates one or more properties of a Material Lot.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.UpdateMaterialLotHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.DeleteMaterialLot</name>
+                        <shortname>DeleteMaterialLot</shortname>
+                        <description>Deletes an existing Material Lot.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.DeleteMaterialLotHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.FreezeMaterialLot</name>
+                        <shortname>FreezeMaterialLot</shortname>
+                        <description>Configures the Material Lot to read-only by setting the attribute IsFrozen to True.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.FreezeMaterialLotHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.UnfreezeMaterialLot</name>
+                        <shortname>UnfreezeMaterialLot</shortname>
+                        <description>Removes the read-only setting from the Material Lot by setting the attribute IsFrozen to False.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.UnfreezeMaterialLotHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.SetMaterialLotStatus</name>
+                        <shortname>SetMaterialLotStatus</shortname>
+                        <description>Sets the status of a Material Lot, checking the validity of the transition.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.SetMaterialLotStatusHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.CreateMaterialLotProperties</name>
+                        <shortname>CreateMaterialLotProperties</shortname>
+                        <description>Adds MaterialLot Properties to a MaterialLot.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.CreateMaterialLotPropertiesHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.UpdateMaterialLotProperties</name>
+                        <shortname>UpdateMaterialLotProperties</shortname>
+                        <description>Updates MaterialLot Properties to a MaterialLot.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.UpdateMaterialLotPropertiesHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.DeleteMaterialLotProperties</name>
+                        <shortname>DeleteMaterialLotProperties</shortname>
+                        <description>Deletes MaterialLot Properties from a MaterialLot.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.DeleteMaterialLotPropertiesHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.ForceMaterialLotStatus</name>
+                        <shortname>ForceMaterialLotStatus</shortname>
+                        <description>Sets the status of a Material Lot, without checking the validity of the transition.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.ForceMaterialLotStatusHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.SetMaterialLotQuantity</name>
+                        <shortname>SetMaterialLotQuantity</shortname>
+                        <description>Sets the quantity property of a Material Lot, checking if the Unit of Measure is compatible.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.SetMaterialLotQuantityHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.CreateMaterialTrackingUnitTemplate</name>
+                        <shortname>CreateMaterialTrackingUnitTemplate</shortname>
+                        <description>Creates a Material Tracking Unit Template.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.CreateMaterialTrackingUnitTemplateHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.DeleteMaterialTrackingUnitTemplate</name>
+                        <shortname>DeleteMaterialTrackingUnitTemplate</shortname>
+                        <description>Deletes an existing Material Tracking Unit Template.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.DeleteMaterialTrackingUnitTemplateHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.UpdateMaterialTrackingUnitTemplate</name>
+                        <shortname>UpdateMaterialTrackingUnitTemplate</shortname>
+                        <description>Updates one or more properties of a Material Tracking Unit Template.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.UpdateMaterialTrackingUnitTemplateHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.CreateMaterialTrackingUnitTemplateProperties</name>
+                        <shortname>CreateMaterialTrackingUnitTemplateProperties</shortname>
+                        <description>Adds Material Tracking Unit Template Properties to a Material Tracking Unit Template.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.CreateMaterialTrackingUnitTemplatePropertiesHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.DeleteMaterialTrackingUnitTemplateProperties</name>
+                        <shortname>DeleteMaterialTrackingUnitTemplateProperties</shortname>
+                        <description>Deletes Material Tracking Unit Template Properties from a Material Tracking Unit Template.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.DeleteMaterialTrackingUnitTemplatePropertiesHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.UpdateMaterialTrackingUnitTemplateProperties</name>
+                        <shortname>UpdateMaterialTrackingUnitTemplateProperties</shortname>
+                        <description>Updates Material Tracking Unit Template Properties to a Material Tracking Unit Template.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.UpdateMaterialTrackingUnitTemplatePropertiesHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.DeleteMaterialTrackingUnitAggregateTemplateProperties</name>
+                        <shortname>DeleteMaterialTrackingUnitAggregateTemplateProperties</shortname>
+                        <description>Deletes Material Tracking Unit Template Properties from a Material Tracking Unit Template.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.DeleteMaterialTrackingUnitAggregateTemplatePropertiesHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.CreateMaterialTrackingUnitAggregateTemplateProperties</name>
+                        <shortname>CreateMaterialTrackingUnitAggregateTemplateProperties</shortname>
+                        <description>Adds Material Tracking Unit Template Properties to a Material Tracking Unit Template.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.CreateMaterialTrackingUnitAggregateTemplatePropertiesHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.UpdateMaterialTrackingUnitAggregateTemplateProperties</name>
+                        <shortname>UpdateMaterialTrackingUnitAggregateTemplateProperties</shortname>
+                        <description>Updates Material Tracking Unit Template Properties to a Material Tracking Unit Template.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.UpdateMaterialTrackingUnitAggregateTemplatePropertiesHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.CreateMaterialTrackingUnitAggregateTemplate</name>
+                        <shortname>CreateMaterialTrackingUnitAggregateTemplate</shortname>
+                        <description>Creates a Material Tracking Unit Aggregate Template.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.CreateMaterialTrackingUnitAggregateTemplateHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.DeleteMaterialTrackingUnitAggregateTemplate</name>
+                        <shortname>DeleteMaterialTrackingUnitAggregateTemplate</shortname>
+                        <description>Deletes an existing Material Tracking Unit Aggregate Template.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.DeleteMaterialTrackingUnitAggregateTemplateHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.UpdateMaterialTrackingUnitAggregateTemplate</name>
+                        <shortname>UpdateMaterialTrackingUnitAggregateTemplate</shortname>
+                        <description>Updates one or more properties of a Material Tracking Unit Aggregate Template.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.UpdateMaterialTrackingUnitAggregateTemplateHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.SetMaterialLotMaterial</name>
+                        <shortname>SetMaterialLotMaterial</shortname>
+                        <description>Sets a new Material to a Material Lot.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.SetMaterialLotMaterialHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.SetMaterialLotStateMachine</name>
+                        <shortname>SetMaterialLotStateMachine</shortname>
+                        <description>Sets a new State Machine to a Material Lot.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.SetMaterialLotStateMachineHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.CreateMaterialTrackingUnit</name>
+                        <shortname>CreateMaterialTrackingUnit</shortname>
+                        <description>Creates a Material Tracking Unit.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.CreateMaterialTrackingUnitHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.UpdateMaterialTrackingUnit</name>
+                        <shortname>UpdateMaterialTrackingUnit</shortname>
+                        <description>Updates one or more properties of a Material Tracking Unit.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.UpdateMaterialTrackingUnitHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.DeleteMaterialTrackingUnit</name>
+                        <shortname>DeleteMaterialTrackingUnit</shortname>
+                        <description>Deletes an existing Material Tracking Unit.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.DeleteMaterialTrackingUnitHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.FreezeMaterialTrackingUnit</name>
+                        <shortname>FreezeMaterialTrackingUnit</shortname>
+                        <description>Configures the Material Tracking Unit to read-only by setting the attribute IsFrozen to True.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.FreezeMaterialTrackingUnitHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.UnfreezeMaterialTrackingUnit</name>
+                        <shortname>UnfreezeMaterialTrackingUnit</shortname>
+                        <description>Removes the read-only setting from a Material Tracking Unit by setting the attribute IsFrozen to False.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.UnfreezeMaterialTrackingUnitHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.AssociateMaterialTrackingUnitsWithMaterialLot</name>
+                        <shortname>AssociateMaterialTrackingUnitsWithMaterialLot</shortname>
+                        <description>Associates Material Tracking Units to a Material Lot.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.AssociateMaterialTrackingUnitsWithMaterialLotHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.DisassociateMaterialTrackingUnitsFromMaterialLot</name>
+                        <shortname>DisassociateMaterialTrackingUnitsFromMaterialLot</shortname>
+                        <description>Removes the association between Material Tracking Units and a Material Lot.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.DisassociateMaterialTrackingUnitsFromMaterialLotHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.SetMaterialTrackingUnitStatus</name>
+                        <shortname>SetMaterialTrackingUnitStatus</shortname>
+                        <description>Sets the status of the Material Tracking Unit, checking the validity of the transition.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.SetMaterialTrackingUnitStatusHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.ForceMaterialTrackingUnitStatus</name>
+                        <shortname>ForceMaterialTrackingUnitStatus</shortname>
+                        <description>Sets the status of a Material Tracking Unit, without checking the validity of the transition.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.ForceMaterialTrackingUnitStatusHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.SetMaterialTrackingUnitQuantity</name>
+                        <shortname>SetMaterialTrackingUnitQuantity</shortname>
+                        <description>Sets the quantity property of a Material Tracking Unit, checking if the Unit of Measure is compatible with the previous Unit of Measure.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.SetMaterialTrackingUnitQuantityHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.CreateMaterialTrackingUnitProperties</name>
+                        <shortname>CreateMaterialTrackingUnitProperties</shortname>
+                        <description>Adds Properties to a MaterialTrackingUnit.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.CreateMaterialTrackingUnitPropertiesHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.UpdateMaterialTrackingUnitProperties</name>
+                        <shortname>UpdateMaterialTrackingUnitProperties</shortname>
+                        <description>Updates Properties to a MaterialTrackingUnit.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.UpdateMaterialTrackingUnitPropertiesHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.DeleteMaterialTrackingUnitProperties</name>
+                        <shortname>DeleteMaterialTrackingUnitProperties</shortname>
+                        <description>Deletes Properties from a MaterialTrackingUnit.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.DeleteMaterialTrackingUnitPropertiesHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.CreateMaterialTrackingUnitAggregate</name>
+                        <shortname>CreateMaterialTrackingUnitAggregate</shortname>
+                        <description>Creates a Material Tracking Unit Aggregate.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.CreateMaterialTrackingUnitAggregateHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.UpdateMaterialTrackingUnitAggregate</name>
+                        <shortname>UpdateMaterialTrackingUnitAggregate</shortname>
+                        <description>Updates one or more properties of a Material Tracking Unit Aggregate.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.UpdateMaterialTrackingUnitAggregateHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.LoadMaterialTrackingUnitAggregateToMaterialTrackingUnitAggregate</name>
+                        <shortname>LoadMaterialTrackingUnitAggregateToMaterialTrackingUnitAggregate</shortname>
+                        <description>Loads a Material Tracking Unit Aggregate into a given Material Tracking Unit Aggregate.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.LoadMaterialTrackingUnitAggregateToMaterialTrackingUnitAggregateHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.SetMaterialTrackingUnitAggregateQuantity</name>
+                        <shortname>SetMaterialTrackingUnitAggregateQuantity</shortname>
+                        <description>Sets the quantity property of a Material Tracking Unit Aggregate, checking if the Unit of Measure is compatible.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.SetMaterialTrackingUnitAggregateQuantityHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.SetMaterialTrackingUnitAggregateStatus</name>
+                        <shortname>SetMaterialTrackingUnitAggregateStatus</shortname>
+                        <description>Sets the status of a Material Tracking Unit Aggregate, checking the validity of the transition.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.SetMaterialTrackingUnitAggregateStatusHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.MoveMaterialTrackingUnitToMaterialTrackingUnitAggregate</name>
+                        <shortname>MoveMaterialTrackingUnitToMaterialTrackingUnitAggregate</shortname>
+                        <description>Moves a Material Tracking Unit to the given Material Tracking Unit Aggregate.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.MoveMaterialTrackingUnitToMaterialTrackingUnitAggregateHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.DeleteMaterialTrackingUnitAggregate</name>
+                        <shortname>DeleteMaterialTrackingUnitAggregate</shortname>
+                        <description>Deletes an existing Material Tracking Unit Aggregate.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.DeleteMaterialTrackingUnitAggregateHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.FreezeMaterialTrackingUnitAggregate</name>
+                        <shortname>FreezeMaterialTrackingUnitAggregate</shortname>
+                        <description>Configures the Material Tracking Unit Aggregate to read-only by setting the attribute IsFrozen to True.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.FreezeMaterialTrackingUnitAggregateHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.UnfreezeMaterialTrackingUnitAggregate</name>
+                        <shortname>UnfreezeMaterialTrackingUnitAggregate</shortname>
+                        <description>Removes the read-only setting from a Material Tracking Unit Aggregate by setting the attribute IsFrozen to False.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.UnfreezeMaterialTrackingUnitAggregateHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.CreateMaterialTrackingUnitAggregateProperties</name>
+                        <shortname>CreateMaterialTrackingUnitAggregateProperties</shortname>
+                        <description>Adds Properties to a MaterialTrackingUnitAggregate.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.CreateMaterialTrackingUnitAggregatePropertiesHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.UpdateMaterialTrackingUnitAggregateProperties</name>
+                        <shortname>UpdateMaterialTrackingUnitAggregateProperties</shortname>
+                        <description>Updates Properties to a MaterialTrackingUnitAggregate.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.UpdateMaterialTrackingUnitAggregatePropertiesHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.DeleteMaterialTrackingUnitAggregateProperties</name>
+                        <shortname>DeleteMaterialTrackingUnitAggregateProperties</shortname>
+                        <description>Deletes Properties from a MaterialTrackingUnitAggregate.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.DeleteMaterialTrackingUnitAggregatePropertiesHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.LoadMaterialTrackingUnitAggregateToEquipment</name>
+                        <shortname>LoadMaterialTrackingUnitAggregateToEquipment</shortname>
+                        <description>Loads a Material Tracking Unit Aggregate to a given Equipment.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.LoadMaterialTrackingUnitAggregateToEquipmentHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.MoveMaterialTrackingUnitToEquipment</name>
+                        <shortname>MoveMaterialTrackingUnitToEquipment</shortname>
+                        <description>Moves a Material Tracking Unit to an Equipment.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.MoveMaterialTrackingUnitToEquipmentHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.ForceMaterialTrackingUnitAggregateStatus</name>
+                        <shortname>ForceMaterialTrackingUnitAggregateStatus</shortname>
+                        <description>Sets the status of a Material Tracking Unit Aggregate, without checking the validity of the transition.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.ForceMaterialTrackingUnitAggregateStatusHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.SetMaterialTrackingUnitMaterial</name>
+                        <shortname>SetMaterialTrackingUnitMaterial</shortname>
+                        <description>Sets the material property of a Material Tracking Unit Aggregate, checking if it is compatible with the Unit of Measure and the Material Lot.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.SetMaterialTrackingUnitMaterialHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.SetMaterialTrackingUnitStateMachine</name>
+                        <shortname>SetMaterialTrackingUnitStateMachine</shortname>
+                        <description>Sets a new State Machine to a MaterialTrackingUnit.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.SetMaterialTrackingUnitStateMachineHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.SetMaterialTrackingUnitAggregateStateMachine</name>
+                        <shortname>SetMaterialTrackingUnitAggregateStateMachine</shortname>
+                        <description>Sets a new State Machine to a MaterialTrackingUnitAggregate.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.SetMaterialTrackingUnitAggregateStateMachineHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.UnfreezeMaterialTrackingUnitTemplate</name>
+                        <shortname>UnfreezeMaterialTrackingUnitTemplate</shortname>
+                        <description>Removes the read-only setting from the Material Tracking Unit Template by setting the attribute IsFrozen to False.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.UnfreezeMaterialTrackingUnitTemplateHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.UnfreezeMaterialTrackingUnitAggregateTemplate</name>
+                        <shortname>UnfreezeMaterialTrackingUnitAggregateTemplate</shortname>
+                        <description>Removes the read-only setting from the Material Tracking Unit Aggregate Template by setting the attribute IsFrozen to False.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.UnfreezeMaterialTrackingUnitAggregateTemplateHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.FreezeMaterialTrackingUnitTemplate</name>
+                        <shortname>FreezeMaterialTrackingUnitTemplate</shortname>
+                        <description>Configures the Material Tracking Unit Template to read-only by setting the attribute IsFrozen to True.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.FreezeMaterialTrackingUnitTemplateHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.FreezeMaterialTrackingUnitAggregateTemplate</name>
+                        <shortname>FreezeMaterialTrackingUnitAggregateTemplate</shortname>
+                        <description>Configures the Material Tracking Unit Aggregate Template to read-only by setting the attribute IsFrozen to True.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.FreezeMaterialTrackingUnitAggregateTemplateHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.SetMaterialTrackingUnitTemplateAsDefault</name>
+                        <shortname>SetMaterialTrackingUnitTemplateAsDefault</shortname>
+                        <description>Sets a Material Tracking Unit Template as default.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.SetMaterialTrackingUnitTemplateAsDefaultHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.SetMaterialTrackingUnitAggregateTemplateAsDefault</name>
+                        <shortname>SetMaterialTrackingUnitAggregateTemplateAsDefault</shortname>
+                        <description>Sets a Material Tracking Unit Aggregate Template as default.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.SetMaterialTrackingUnitAggregateTemplateAsDefaultHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.SetMaterialTrackingUnitAggregateMaterial</name>
+                        <shortname>SetMaterialTrackingUnitAggregateMaterial</shortname>
+                        <description>Sets the material of a Material Tracking Unit Aggregate.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.SetMaterialTrackingUnitAggregateMaterialHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.UnsetMaterialTrackingUnitTemplateAsDefault</name>
+                        <shortname>UnsetMaterialTrackingUnitTemplateAsDefault</shortname>
+                        <description>Unsets a Material Tracking Unit Template as default.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.UnsetMaterialTrackingUnitTemplateAsDefaultHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.UnsetMaterialTrackingUnitAggregateTemplateAsDefault</name>
+                        <shortname>UnsetMaterialTrackingUnitAggregateTemplateAsDefault</shortname>
+                        <description>Unsets a Material Tracking Unit Aggregate Template as default.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.UnsetMaterialTrackingUnitAggregateTemplateAsDefaultHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.MarkForCleaningMaterialTrackingUnits</name>
+                        <shortname>MarkForCleaningMaterialTrackingUnits</shortname>
+                        <description>Marks for cleaning Material Tracking Units.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.MarkForCleaningMaterialTrackingUnitsHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.MarkForCleaningMaterialLots</name>
+                        <shortname>MarkForCleaningMaterialLots</shortname>
+                        <description>Marks a list of Material Lots for cleaning. The command also searches for any Material Tracking Unit associated with any of the provided Material Lot, and calls the MarkForCleaningMaterialTrackingUnits command upon them.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.MarkForCleaningMaterialLotsHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.MarkForCleaningMaterialTrackingUnitAggregates</name>
+                        <shortname>MarkForCleaningMaterialTrackingUnitAggregates</shortname>
+                        <description>Marks a list of Material Tracking Unit Aggregates for cleaning. The command also searches for any Material Tracking Unit associated with any of the provided Material Tracking Unit Aggregate, and calls the MarkForCleaningMaterialTrackingUnits command upon them. If other Material Tracking Unit Aggregates are associated with any of those set as input of the command, the MarkForCleaningMaterialTrackingUnitAggregates command is recursively called upon them.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.MarkForCleaningMaterialTrackingUnitAggregatesHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.MAT_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command></commands>
+    <commandActions><commandAction>
+                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.IsMaterialLotEmptyHandlerShell</name>
+                        <shortname>IsMaterialLotEmptyHandlerShell</shortname>
+                        <description>Checks if all the provided Material Lots are not associated with any Material Tracking Unit, before attempting to mark each for cleaning.</description>
+                        <assembly>Siemens.SimaticIT.MAT_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <target_cpu>AnyCPU</target_cpu>
+                        <targetframework>netstandard2.0</targetframework>
+                        <command>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.MarkForCleaningMaterialLots</command>
+                        <type>PreCheck</type>
+                        <is_enabled>true</is_enabled>
+                        <alias>IsMaterialLotEmpty</alias>
+                </commandAction><commandAction>
+                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.IsMTUAggregateEmptyHandlerShell</name>
+                        <shortname>IsMTUAggregateEmptyHandlerShell</shortname>
+                        <description>Checks if all the provided Material Tracking Unit Aggregates are not associated with any Material Tracking Unit or other Aggregates, before attempting to mark each for cleaning.</description>
+                        <assembly>Siemens.SimaticIT.MAT_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <target_cpu>AnyCPU</target_cpu>
+                        <targetframework>netstandard2.0</targetframework>
+                        <command>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.MarkForCleaningMaterialTrackingUnitAggregates</command>
+                        <type>PreCheck</type>
+                        <is_enabled>true</is_enabled>
+                        <alias>IsMTUAggregateEmpty</alias>
+                </commandAction><commandAction>
+                        <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.IsMTUInContainmentHandlerShell</name>
+                        <shortname>IsMTUInContainmentHandlerShell</shortname>
+                        <description>Checks if the flag InContainment is false or not defined for the provided Material Tracking Unit before attempting to set the quantity.</description>
+                        <assembly>Siemens.SimaticIT.MAT_OP.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <target_cpu>AnyCPU</target_cpu>
+                        <targetframework>netstandard2.0</targetframework>
+                        <command>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Commands.SetMaterialTrackingUnitQuantity</command>
+                        <type>PreCheck</type>
+                        <is_enabled>true</is_enabled>
+                        <alias>IsMTUInContainment</alias>
+                </commandAction></commandActions>
+    <events></events>
+    <event_handlers></event_handlers>
+    <signals></signals>
+    <readingFunctions></readingFunctions>
+    <entities><entity>
+      <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.DataModel.ReadingModel.MaterialLotTemplate</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.DataModel.ReadingModel.MaterialLotTemplateProperty</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.DataModel.ReadingModel.MaterialLot</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.DataModel.ReadingModel.MaterialLotProperty</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.DataModel.ReadingModel.MaterialTrackingUnitTemplate</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.DataModel.ReadingModel.MaterialTrackingUnitTemplateProperty</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.DataModel.ReadingModel.MaterialTrackingUnit</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.DataModel.ReadingModel.MaterialTrackingUnitProperty</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.DataModel.ReadingModel.MaterialTrackingUnitAggregate</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.DataModel.ReadingModel.MaterialTrackingUnitAggregateTemplate</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.DataModel.ReadingModel.MaterialTrackingUnitAggregateTemplateProperty</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.DataModel.ReadingModel.MaterialTrackingUnitAggregateProperty</name>
+      <securable>true</securable>
+    </entity></entities>
+    <datamodels><datamodel>
+      <assembly>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>WR</mode>
+      <domain>OperationalData</domain>
+    </datamodel><datamodel>
+      <assembly>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.ReadingModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>RD</mode>
+      <domain>OperationalData</domain>
+    </datamodel><datamodel>
+      <assembly>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Types, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>WR</mode>
+      <domain>OperationalData</domain>
+    </datamodel><datamodel>
+      <assembly>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.Types.ReadingModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>RD</mode>
+      <domain>OperationalData</domain>
+    </datamodel></datamodels>
+    <externaldatamodels></externaldatamodels>
+    <appdatamodels></appdatamodels>
+    <uimodules></uimodules>
+    <uicomponents></uicomponents>
+    <wr_entities><wr_entity>
+      <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.DataModel.MaterialLotTemplate</name>
+      <shortname>MaterialLotTemplate</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity></parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity></root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.DataModel.MaterialLotTemplateProperty</name>
+      <shortname>MaterialLotTemplateProperty</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.DataModel.MaterialLotTemplate</parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.DataModel.MaterialLotTemplate</root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.DataModel.MaterialLot</name>
+      <shortname>MaterialLot</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity></parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity></root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.DataModel.MaterialLotProperty</name>
+      <shortname>MaterialLotProperty</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.DataModel.MaterialLot</parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.DataModel.MaterialLot</root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.DataModel.MaterialTrackingUnitTemplate</name>
+      <shortname>MaterialTrackingUnitTemplate</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity></parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity></root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.DataModel.MaterialTrackingUnitTemplateProperty</name>
+      <shortname>MaterialTrackingUnitTemplateProperty</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.DataModel.MaterialTrackingUnitTemplate</parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.DataModel.MaterialTrackingUnitTemplate</root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.DataModel.MaterialTrackingUnit</name>
+      <shortname>MaterialTrackingUnit</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity></parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity></root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.DataModel.MaterialTrackingUnitProperty</name>
+      <shortname>MaterialTrackingUnitProperty</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.DataModel.MaterialTrackingUnit</parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.DataModel.MaterialTrackingUnit</root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.DataModel.MaterialTrackingUnitAggregate</name>
+      <shortname>MaterialTrackingUnitAggregate</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity></parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity></root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.DataModel.MaterialTrackingUnitAggregateTemplate</name>
+      <shortname>MaterialTrackingUnitAggregateTemplate</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity></parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity></root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.DataModel.MaterialTrackingUnitAggregateTemplateProperty</name>
+      <shortname>MaterialTrackingUnitAggregateTemplateProperty</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.DataModel.MaterialTrackingUnitAggregateTemplate</parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.DataModel.MaterialTrackingUnitAggregateTemplate</root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.DataModel.MaterialTrackingUnitAggregateProperty</name>
+      <shortname>MaterialTrackingUnitAggregateProperty</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.DataModel.MaterialTrackingUnitAggregate</parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity>Siemens.SimaticIT.OperationalData.MAT_OP.OPModel.DataModel.MaterialTrackingUnitAggregate</root_entity>
+      <base_entity></base_entity>
+    </wr_entity></wr_entities>
+    <wr_facets></wr_facets>
+  </artifacts>
+  <security>
+    <roles></roles>
+  </security>
+  <runtime>
+    <event_subscriptions></event_subscriptions>
+    <handlergroups></handlergroups>
+  </runtime>
+</projectmanifest>

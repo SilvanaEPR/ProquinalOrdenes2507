@@ -1,0 +1,10 @@
+<div id="exportManager">
+    <div id="warningInformation" ng-if="vm.visible" style="width:100%; line-height: 200%; border: 1px solid #DB780B; border-radius: 2px; font-weight: normal; font-family: Segoe UI, Open Sans,Arial,Helvetica, sans-serif; font-size: 12px; background-color: #FFF7CD;">
+        <img ng-if="vm.visible" src="common/icons/indicatorInformationWarning16.svg" alt="{{ vm.message }}" heigth="24" width="24" style="margin-left: 16px; margin-top:8px; margin-bottom:8px;" />
+
+        <span style="display: inline-table; margin-left: 8px; color: #DB780B; width:81%">
+            <strong>{{ vm.typeOfMessageWarning }}</strong> <br> {{ vm.message }}
+        </span>
+    </div>
+    <sit-checkbox sit-value="vm.value" sit-change="vm.setDescendantsSelected" sit-layout="horizontal" ng-readonly="vm.ngReadonly" ng-blur="ngBlur"></sit-checkbox>
+</div>

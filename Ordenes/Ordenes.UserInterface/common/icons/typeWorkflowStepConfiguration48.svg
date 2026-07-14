@@ -1,0 +1,42 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="linear-gradient" x1="-146.154" y1="576.974" x2="-139.826" y2="584.049" gradientTransform="translate(208.904 -797.58) scale(1.422 1.413)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="0.232" stop-color="#fafafa"/>
+      <stop offset="0.496" stop-color="#ededed"/>
+      <stop offset="0.775" stop-color="#d6d6d6"/>
+      <stop offset="1" stop-color="#bebebe"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="-120.376" y1="576.525" x2="-113.575" y2="585.658" gradientTransform="translate(208.904 -797.58) scale(1.422 1.413)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#74b3c7"/>
+      <stop offset="0.177" stop-color="#6badc2"/>
+      <stop offset="0.464" stop-color="#539db4"/>
+      <stop offset="0.822" stop-color="#2d839d"/>
+      <stop offset="1" stop-color="#177490"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="-74.635" y1="-580.961" x2="-67.782" y2="-586.327" gradientTransform="matrix(1.313, 0, 0, -1.305, 116.637, -754.699)" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-4" x1="-134.164" y1="587.54" x2="-127.837" y2="593.2" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-5" x1="-134.06" y1="576.812" x2="-127.732" y2="582.471" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-6" x1="26.095" y1="-718.041" x2="38.218" y2="-729.93" gradientTransform="matrix(1, 0, 0, -1, -0.069, -691.887)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="0.221" stop-color="#f8f8f8"/>
+      <stop offset="0.541" stop-color="#e5e5e5"/>
+      <stop offset="0.92" stop-color="#c6c6c6"/>
+      <stop offset="1" stop-color="#bebebe"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-7" x1="32.484" y1="-724.567" x2="40.437" y2="-732.255" gradientTransform="matrix(1, 0, 0, -1, 0, -692.006)" xlink:href="#linear-gradient-6"/>
+  </defs>
+  <g id="g875">
+    <path id="line53-4" d="M7.241,21.659H19.726" fill="none" stroke="#464646" stroke-miterlimit="10" stroke-width="1.04"/>
+    <path id="polyline59-9" d="M19.691,6.358H13.978V36.966h5.813" fill="none" stroke="#464646" stroke-miterlimit="13.533"/>
+    <path id="rect47-5" d="M.5,14.01H8.2v15.3H.5Z" stroke="#147391" stroke-miterlimit="10" fill="url(#linear-gradient)"/>
+    <path id="rect49-8" d="M37.083,14.01h7.7v15.3h-7.7Z" stroke="#147391" stroke-miterlimit="10" fill="url(#linear-gradient-2)"/>
+    <path id="polyline57-7" d="M25.491,6.358H31.3V36.966H25.591" fill="none" stroke="#464646" stroke-miterlimit="13.533"/>
+    <path id="rect43-7" d="M19.754.618h5.775V12.1H19.754Z" stroke="#147391" stroke-miterlimit="10" fill="url(#linear-gradient-3)"/>
+    <path id="rect51-6" d="M19.754,31.223h5.775V42.7H19.754Z" stroke="#147391" stroke-miterlimit="10" fill="url(#linear-gradient-4)"/>
+    <path id="line55-8" d="M24.568,21.659H36.909" fill="none" stroke="#147391" stroke-miterlimit="10" stroke-width="1.034"/>
+    <path id="rect45-5" d="M19.754,15.923h5.775V27.406H19.754Z" stroke="#147391" stroke-miterlimit="10" fill="url(#linear-gradient-5)"/>
+    <path id="path50-7" d="M43.324,37.994,47.5,36.513V33.394l-4.176-1.482a.5.5,0,0,1-.314-.633h0a.549.549,0,0,1,.021-.051l1.9-4L42.723,25.02l-3.995,1.9a.5.5,0,0,1-.668-.232h0a.325.325,0,0,1-.018-.043L36.56,22.5H33.44L31.958,26.65a.507.507,0,0,1-.656.285l-.03-.013-4-1.9-2.207,2.207,1.9,4a.5.5,0,0,1-.24.665.549.549,0,0,1-.051.021L22.5,33.394v3.12l4.176,1.48a.5.5,0,0,1,.314.633h0c-.006.017-.013.035-.021.052l-1.9,4,2.207,2.208,4-1.894a.5.5,0,0,1,.663.246h0a.392.392,0,0,1,.023.06l1.482,4.2H36.56l1.482-4.2a.491.491,0,0,1,.6-.346.512.512,0,0,1,.085.032l4,1.9,2.207-2.207-1.9-4a.5.5,0,0,1,.24-.665A.429.429,0,0,1,43.324,37.994Z" stroke="#464646" stroke-linejoin="round" fill="url(#linear-gradient-6)"/>
+    <path id="circle52-9" d="M38.5,34.994a3.5,3.5,0,1,1-3.5-3.5A3.5,3.5,0,0,1,38.5,34.994Z" stroke="#464646" stroke-miterlimit="10" fill="url(#linear-gradient-7)"/>
+  </g>
+</svg>

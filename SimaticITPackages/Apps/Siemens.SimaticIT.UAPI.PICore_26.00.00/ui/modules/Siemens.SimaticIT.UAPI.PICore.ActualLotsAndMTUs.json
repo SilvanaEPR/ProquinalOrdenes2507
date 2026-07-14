@@ -1,0 +1,203 @@
+{
+  "name": "Siemens.SimaticIT.UAPI.PICore.ActualLotsAndMTUs",
+  "functionalBlock": "Siemens.SimaticIT.UAPI.PICore",
+  "type": "standard",
+  "title": "MTUs and Lots for Materials",
+  "header": "picore.titles.ActualLotsAndMTUs",
+  "icon": "sit sit-pi-work-order-operation-material-list",
+  "manifestVersion": "01.01.00",
+  "dependencies": [
+    "Siemens.SimaticIT.UAPI.PICore"
+  ],
+  "states": [
+    {
+      "id": "home.Siemens_SimaticIT_UAPI_PICore_ActualLotsAndMTUs_home",
+      "name": "home",
+      "title": "home screen",
+      "icon": "sit sit-pi-work-order-operation-material-list",
+      "securable": true,
+      "contents": [],
+      "parameters": [
+        {
+          "name": "closeButtonEnabled",
+          "type": "boolean",
+          "value": "false"
+        },
+        {
+          "name": "MatReqId",
+          "type": "string",
+          "value": ""
+        }
+      ],
+      "context": []
+    }
+  ],
+  "components": [
+    {
+      "name": "mashup",
+      "title": "Mashup System Component",
+      "description": "Mashup System Component",
+      "type": "ui",
+      "source": "sit-mashup",
+      "version": "1.0.0",
+      "contracts": {
+        "methods": [
+          "setContext",
+          "navigateTo",
+          "display",
+          "setPosition"
+        ],
+        "events": [
+          "onLoad",
+          "onContextChanged"
+        ],
+        "dpc": {}
+      },
+      "functionalBlock": "",
+      "category": "internal"
+    },
+    {
+      "name": "actualmatmaterialdetails",
+      "title": "Required Material Details",
+      "description": "Display Required Material Details",
+      "type": "ui",
+      "source": "actualmatmaterialdetails",
+      "version": "1.0.0",
+      "contracts": {
+        "methods": [
+          "setWorkOrderOperationMaterialRequirementId",
+          "enableCloseButton",
+          "setTargetStates",
+          "setActionBarVisibility"
+        ],
+        "events": [
+          "onClose"
+        ],
+        "dpc": {}
+      },
+      "functionalBlock": "Siemens.SimaticIT.UAPI.PICore"
+    }
+  ],
+  "componentInstances": [
+    {
+      "name": "home_mashup_1",
+      "type": "mashup",
+      "state": "home.Siemens_SimaticIT_UAPI_PICore_ActualLotsAndMTUs_home",
+      "status": false,
+      "layout": {
+        "left": 0,
+        "top": 0,
+        "rows": 2,
+        "columns": 2
+      },
+      "dpc": {}
+    },
+    {
+      "name": "home_actualmatmaterialdetails_2",
+      "type": "actualmatmaterialdetails",
+      "state": "home.Siemens_SimaticIT_UAPI_PICore_ActualLotsAndMTUs_home",
+      "status": false,
+      "layout": {
+        "left": 0,
+        "top": 0,
+        "rows": 12,
+        "columns": 12
+      },
+      "dpc": {},
+      "app": "Siemens.SimaticIT.UAPI.PICore"
+    }
+  ],
+  "wires": [
+    {
+      "name": "DisableCloseButton",
+      "state": "home.Siemens_SimaticIT_UAPI_PICore_ActualLotsAndMTUs_home",
+      "description": "",
+      "input": {
+        "component": "home_mashup_1",
+        "api": "onLoad"
+      },
+      "output": [
+        {
+          "component": "home_actualmatmaterialdetails_2",
+          "api": "enableCloseButton",
+          "parameters": [
+            "closeButtonEnabled"
+          ],
+          "converter": "function(input) {\n\tvar evtObj = input[0];\n\tvar result = [];\n\tresult.push(evtObj[\"closeButtonEnabled\"]);\n\treturn result;\n}",
+          "customConverter": false
+        }
+      ]
+    },
+    {
+      "name": "setMaterialRequirement",
+      "state": "home.Siemens_SimaticIT_UAPI_PICore_ActualLotsAndMTUs_home",
+      "description": "",
+      "input": {
+        "component": "home_mashup_1",
+        "api": "onLoad"
+      },
+      "output": [
+        {
+          "component": "home_actualmatmaterialdetails_2",
+          "api": "setWorkOrderOperationMaterialRequirementId",
+          "parameters": [
+            "MatReqId"
+          ],
+          "converter": "function(input) {\n\tvar evtObj = input[0];\n\tvar result = [];\n\tresult.push(evtObj[\"MatReqId\"]);\n\treturn result;\n}",
+          "customConverter": false
+        }
+      ]
+    }
+  ],
+  "stateLayoutList": [
+    {
+      "state": "home.Siemens_SimaticIT_UAPI_PICore_ActualLotsAndMTUs_home",
+      "layoutProperties": {
+        "columns": 12,
+        "pushing": false,
+        "floating": false,
+        "swapping": false,
+        "width": "auto",
+        "colWidth": "auto",
+        "rowHeight": "match",
+        "outerMargin": true,
+        "isMobile": true,
+        "mobileBreakPoint": 768,
+        "tabletBreakPoint": 1024,
+        "mobileModeEnabled": true,
+        "minColumns": 12,
+        "minRows": 12,
+        "maxRows": 100,
+        "defaultSizeX": 3,
+        "defaultSizeY": 3,
+        "resizable": {
+          "enabled": false,
+          "handles": [
+            "n",
+            "e",
+            "s",
+            "w",
+            "ne",
+            "se",
+            "sw",
+            "nw"
+          ]
+        },
+        "margins": [
+          5,
+          5
+        ],
+        "draggable": {
+          "enabled": false,
+          "handle": ".editorSmallComponent"
+        }
+      },
+      "engineeringGridConfig": {
+        "pushing": true,
+        "swapping": true,
+        "floating": true,
+        "isGridLinesVisible": true
+      }
+    }
+  ]
+}

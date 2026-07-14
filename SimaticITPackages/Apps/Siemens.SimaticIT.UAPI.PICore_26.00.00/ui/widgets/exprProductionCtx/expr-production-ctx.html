@@ -1,0 +1,50 @@
+﻿<div id="expr-Production-Ctx-Form" class="side-panel-property-area-body entity-picker-property-grid" style="height: 100%">
+    {{ 'picore.labels.WorkOrder' | translate }}:
+    <sit-entity-picker sit-id="vm.workOrderEntityPickerConfig.id"
+                       sit-datasource="vm.workOrderEntityPickerConfig.datasource"
+                       sit-limit="vm.workOrderEntityPickerConfig.limit"
+                       sit-placeholder="vm.workOrderEntityPickerConfig.placeholder"
+                       sit-selected-attribute-to-display="vm.workOrderEntityPickerConfig.attributetodisplay"
+                       sit-selected-object="vm.workOrderEntityPickerConfig.selectedObject"
+                       sit-wait-ms="vm.workOrderEntityPickerConfig.waitTime"
+                       sit-editable="vm.workOrderEntityPickerConfig.editable"
+                       sit-value="vm.workOrderEntityPickerConfig.entityValue"
+                       sit-required="vm.workOrderEntityPickerConfig.required"
+                       sit-picker-options="vm.workOrderEntityPickerConfig.icvOptions">
+    </sit-entity-picker>
+    <div class="line-group">
+        <span>{{ 'picore.labels.showTaskWithoutWorkOrder' | translate }}</span>
+        <sit-toggle-button sit-id="vm.workOrderCheckboxConfig.id"
+                           sit-value="vm.workOrderCheckboxConfig.value"
+                           ng-disabled="vm.workOrderEntityPickerConfig.entityValue == undefined || vm.workOrderEntityPickerConfig.entityValue.length == 0">
+        </sit-toggle-button>
+    </div>
+    {{ 'picore.labels.WorkOrderType' | translate }}:
+    <sit-select sit-value="vm.workOrderTypeConfig.value"
+                sit-to-display="vm.workOrderTypeConfig.toDisplay"
+                sit-to-keep="vm.workOrderTypeConfig.toKeep"
+                sit-options="vm.workOrderTypeConfig.options">
+    </sit-select>
+    <div class="margin-top"></div>
+    {{ 'picore.labels.Equipment' | translate }}:
+    <sit-entity-picker 
+                       sit-id="vm.equipmentEntityPickerConfig.id"
+                       sit-datasource="vm.equipmentEntityPickerConfig.datasource"
+                       sit-limit="vm.equipmentEntityPickerConfig.limit"
+                       sit-placeholder="vm.equipmentEntityPickerConfig.placeholder"
+                       sit-selected-attribute-to-display="vm.equipmentEntityPickerConfig.attributetodisplay"
+                       sit-selected-object="vm.equipmentEntityPickerConfig.selectedObject"
+                       sit-wait-ms="vm.equipmentEntityPickerConfig.waitTime"
+                       sit-editable="vm.equipmentEntityPickerConfig.editable"
+                       sit-value="vm.equipmentEntityPickerConfig.entityValue"
+                       sit-required="vm.equipmentEntityPickerConfig.required"
+                       sit-picker-options="vm.equipmentEntityPickerConfig.icvOptions">
+    </sit-entity-picker>
+    <div class="line-group">
+        <span>{{ 'picore.labels.showTaskWithoutEquipment' | translate }}</span>
+        <sit-toggle-button sit-id="vm.equipmentCheckboxConfig.id"
+                           sit-value="vm.equipmentCheckboxConfig.value"
+                           ng-disabled="vm.equipmentEntityPickerConfig.entityValue == undefined || vm.equipmentEntityPickerConfig.entityValue.length == 0">
+        </sit-toggle-button>
+    </div>
+</div>

@@ -1,0 +1,32 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="linear-gradient" x1="1.307" y1="1035.529" x2="46.456" y2="1066.31" gradientTransform="translate(0 -1032)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#cde6eb"/>
+      <stop offset="0.221" stop-color="#c6e2e8"/>
+      <stop offset="0.542" stop-color="#b3d8e1"/>
+      <stop offset="0.921" stop-color="#93c7d5"/>
+      <stop offset="1" stop-color="#8cc3d2"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="23.179" y1="-397.179" x2="42.821" y2="-416.821" gradientTransform="matrix(1, 0, 0, -1, 0, -374)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#6ab1c3"/>
+      <stop offset="0.175" stop-color="#64acbe"/>
+      <stop offset="0.457" stop-color="#509cb0"/>
+      <stop offset="0.809" stop-color="#31849d"/>
+      <stop offset="1" stop-color="#1f7690"/>
+    </linearGradient>
+  </defs>
+  <g id="g1031">
+    <path id="rect13-9-3-7" d="M1.5,3.5h45v31H1.5Z" stroke="#464646" stroke-miterlimit="10" fill="url(#linear-gradient)"/>
+    <path id="path15-5-6" d="M4.761,6.644l15.361,12.54a6.576,6.576,0,0,0,8.507-.108L43.114,6.644" fill="none" stroke="#6e6e6e" stroke-miterlimit="10"/>
+    <path id="line17-6-0" d="M20.2,19.3,4.761,30.722" fill="none" stroke="#6e6e6e" stroke-miterlimit="10"/>
+    <path id="line19-5-0" d="M43.842,30.668,28.768,18.95" fill="none" stroke="#6e6e6e" stroke-miterlimit="10"/>
+    <g id="g46-0">
+      <path id="circle42-9" d="M46.889,33A13.889,13.889,0,0,1,33,46.889h0A13.889,13.889,0,0,1,19.111,33h0A13.889,13.889,0,0,1,33,19.111h0A13.889,13.889,0,0,1,46.889,33Z" fill="url(#linear-gradient-2)"/>
+      <path id="path44-8" d="M33,48A15,15,0,1,1,48,33,15,15,0,0,1,33,48Zm0-28.889A13.889,13.889,0,1,0,46.89,33,13.889,13.889,0,0,0,33,19.111Z" fill="#3f4143"/>
+    </g>
+    <g id="g52-6">
+      <path id="polygon48-5" d="M31.279,25.623v4.29h2.86L24.128,39.925l2.86,2.86L37,32.774v2.86h4.29V25.623Z" fill="#fff"/>
+      <path id="path50-9" d="M30.564,24.908H42.005V36.349H36.284V34.5l-9.3,9.3-3.868-3.878,9.3-9.3H30.567Zm10.008,1.43H31.991V29.2h3.874L25.139,39.922l1.849,1.849L37.715,31.047v3.875h2.857Z" fill="#1f7690"/>
+    </g>
+  </g>
+</svg>

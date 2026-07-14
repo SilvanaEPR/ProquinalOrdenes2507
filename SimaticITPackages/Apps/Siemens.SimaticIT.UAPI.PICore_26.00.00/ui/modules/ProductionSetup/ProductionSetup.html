@@ -1,0 +1,13 @@
+﻿<div id="expr-ProductionSetup">
+    <expr-production-ctx on-register-api="vm.onProdCtxResgisterApi(api)"></expr-production-ctx>
+</div>
+
+<sit-command-bar sit-type="Tool" sit-layout="vertical" sit-vertical-autofixed="true" style="position: inherit;">
+    <sit-command cmd-icon="Save"
+                 sit-name="save"
+                 sit-tooltip="{{ 'picore.buttonsAndTooltips.save' | translate }}"
+                 ng-click="vm.save"
+                 sit-label="{{ 'picore.buttonsAndTooltips.save' | translate }}"
+                 sit-type="command">
+    </sit-command>
+</sit-command-bar>

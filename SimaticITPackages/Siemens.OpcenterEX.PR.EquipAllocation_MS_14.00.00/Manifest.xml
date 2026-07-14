@@ -1,0 +1,260 @@
+﻿<?xml version="1.0" encoding="utf-8"?><projectmanifest>
+  <header>
+    <manifestversion>11.0</manifestversion>
+    <platformversion>11.0</platformversion>
+    <type>Library</type>
+    <name>Siemens.OpcenterEX.PR.EquipAllocation_MS</name>
+    <shortname>EquipAllocation_MS</shortname>
+    <description>Equipment Allocation Master Data</description>
+    <version>14.00.00</version>
+    <companyname>Siemens.OpcenterEX.PR</companyname>
+    <author>Siemens.OpcenterEX.PR</author>
+    <hash>/d462O7jKm03uaZ38y725L9A9cNC9DLavzQ2RZER1FY=</hash>
+    <modelHash>kQM4Wk3/VndJ2JOU/sA8G53zFzsHHlvJznBL0cVTiQ0=</modelHash>
+    <modelHashSections>
+      <modelHashSection>
+        <name>projectConfigModelHash</name>
+        <hash>5TV+zP3flVIOnTX76E/idoTDjAh7fq5bL6NYECY0wr0=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>dataModelHash</name>
+        <hash>U8SlE8Z1luCm3sh8IumJNdlj9/TizzquexIsTUApqBI=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>commandModelHash</name>
+        <hash>xRvDHo7L/dDon8Ec9QeSYdRIYtX1Lgswd5B6dOXTyNc=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>aliasModelHash</name>
+        <hash>cdWtFof25lUoH+wgMZZEtJGL5k7aBVT7Ae5HtNcbGxs=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>eventModelHash</name>
+        <hash>76lozEVQnLKBijtdm6gAoUXZ3ywXiDDScVgtAOLuee8=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>typeModelHash</name>
+        <hash>1pCUQMeMV1zI9wPwd+zPXfSRUhyKxTb/4j3YyV+SOBI=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>securityModelHash</name>
+        <hash>cdWtFof25lUoH+wgMZZEtJGL5k7aBVT7Ae5HtNcbGxs=</hash>
+      </modelHashSection>
+    </modelHashSections>
+    <uiHash>na</uiHash>
+    <canbeextended>false</canbeextended>
+    <domain>MasterData</domain>
+  </header>
+  <reference>
+    <functionalblocks>
+      <functionalblock>
+        <name>Siemens.SimaticIT.UDM_RF</name>
+        <version>07.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.TSK_MS</name>
+        <version>09.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.EQU_MS</name>
+        <version>08.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+    </functionalblocks>
+    <extensions><extension>
+      <name>Siemens.SimaticIT.TSK_MS</name>
+    </extension><extension>
+      <name>Siemens.SimaticIT.EQU_MS</name>
+    </extension></extensions>
+  </reference>
+  <artifacts>
+    <commands><command>
+                        <name>Siemens.OpcenterEX.PR.MasterData.EquipAllocation_MS.MSModel.Commands.CreateEquipmentReleaseTaskDefinition</name>
+                        <shortname>CreateEquipmentReleaseTaskDefinition</shortname>
+                        <description>Creates a new Equipment Release Task Definition. Equipment Release Task Definitions are designed for instantiating Tasks that can be used to release allocated equipment. The Task Definition is created with the following Task Parameters: - EquipmentToRelease, - ReleasedEquipment.</description>
+                        <assembly>Siemens.OpcenterEX.PR.MasterData.EquipAllocation_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.OpcenterEX.PR.MasterData.EquipAllocation_MS.MSModel.Commands.CreateEquipmentReleaseTaskDefinitionHandlerShell</name>
+                                        <assembly>Siemens.OpcenterEX.PR.EquipAllocation_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.OpcenterEX.PR.MasterData.EquipAllocation_MS.MSModel.Commands.CreateEquipmentAllocationTaskDefinition</name>
+                        <shortname>CreateEquipmentAllocationTaskDefinition</shortname>
+                        <description>Creates a new Equipment Allocation Task Definition. Equipment Allocation Task Definitions are designed for instantiating Tasks used to allocate equipment during manufacturing processes. The Task Definition is created with the following Task Parameters: - RequirementTag, - EquipmentToAllocate, - AllocatedEquipment. The Task Context Definition EquipmentAllocationTaskContextDefinition is associated to the created Task Definition.</description>
+                        <assembly>Siemens.OpcenterEX.PR.MasterData.EquipAllocation_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.OpcenterEX.PR.MasterData.EquipAllocation_MS.MSModel.Commands.CreateEquipmentAllocationTaskDefinitionHandlerShell</name>
+                                        <assembly>Siemens.OpcenterEX.PR.EquipAllocation_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.OpcenterEX.PR.MasterData.EquipAllocation_MS.MSModel.Commands.UpdateEquipmentAllocationPropertiesConfiguration</name>
+                        <shortname>UpdateEquipmentAllocationPropertiesConfiguration</shortname>
+                        <description>Updates extended process properties for the given Equipment Configuration. If none exists, it creates empty ones. The command performs the following checks: 1. if the given Equipment Configuration Id exists, if not error 10300 is returned; 2. if the given Equipment Configuration is not Frozen, if it is error 10992 is returned; 3. if the given AllocationStateMachineNId exists, if not error 11210 is returned.</description>
+                        <assembly>Siemens.OpcenterEX.PR.MasterData.EquipAllocation_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.OpcenterEX.PR.MasterData.EquipAllocation_MS.MSModel.Commands.UpdateEquipmentAllocationPropertiesConfigurationHandlerShell</name>
+                                        <assembly>Siemens.OpcenterEX.PR.EquipAllocation_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.OpcenterEX.PR.MasterData.EquipAllocation_MS.MSModel.Commands.CreateEquipmentAllocationPropertiesConfiguration</name>
+                        <shortname>CreateEquipmentAllocationPropertiesConfiguration</shortname>
+                        <description>Creates extended Equipment Allocation properties for the given Equipment Configuration if none exists. List of properties:     - AllocationStateMachineNId: The identifier of the State Machine on which the system will rely on, in order to manage the allocation state of the piece of Equipment (respective to this Equipment Configuration).  The command performs a check on the Equipment Configuration Id to see if it exists. If not, error 11214 is returned.</description>
+                        <assembly>Siemens.OpcenterEX.PR.MasterData.EquipAllocation_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.OpcenterEX.PR.MasterData.EquipAllocation_MS.MSModel.Commands.CreateEquipmentAllocationPropertiesConfigurationHandlerShell</name>
+                                        <assembly>Siemens.OpcenterEX.PR.EquipAllocation_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.OpcenterEX.PR.MasterData.EquipAllocation_MS.MSModel.Commands.MigrateEquipmentCreateAllocationPropertiesConfigurations</name>
+                        <shortname>MigrateEquipmentCreateAllocationPropertiesConfigurations</shortname>
+                        <description>This command will add an EquipmentAllocationPropertiesConfiguration Facet to all EquipmentConfigurations, to add allocation properties.</description>
+                        <assembly>Siemens.OpcenterEX.PR.MasterData.EquipAllocation_MS.MSModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>MasterData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.OpcenterEX.PR.MasterData.EquipAllocation_MS.MSModel.Commands.MigrateEquipmentCreateAllocationPropertiesConfigurationsHandlerShell</name>
+                                        <assembly>Siemens.OpcenterEX.PR.EquipAllocation_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command></commands>
+    <commandActions><commandAction>
+                        <name>Siemens.OpcenterEX.PR.MasterData.EquipAllocation_MS.MSModel.Commands.CreateAllocationPropertiesHandlerShell</name>
+                        <shortname>CreateAllocationPropertiesHandlerShell</shortname>
+                        <description>Creates extended Equipment Allocation Properties for the given Equipment Configuration if none exists.  List of properties:      - AllocationStateMachineNId: The identifier of the State Machine on which the system will rely on, in order to manage the allocation state of the piece of equipment (respective to this Equipment Configuration).  </description>
+                        <assembly>Siemens.OpcenterEX.PR.EquipAllocation_MS.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <target_cpu>AnyCPU</target_cpu>
+                        <targetframework>netstandard2.0</targetframework>
+                        <command>Siemens.SimaticIT.MasterData.EQU_MS.MSModel.Commands.CreateEquipmentConfiguration</command>
+                        <type>Post</type>
+                        <is_enabled>true</is_enabled>
+                        <is_optional>true</is_optional>
+                </commandAction></commandActions>
+    <events><event>
+                <name>Siemens.OpcenterEX.PR.MasterData.EquipAllocation_MS.MSModel.Events.EquipmentAllocationPropertiesConfigurationUpdated</name>
+                <shortname>EquipmentAllocationPropertiesConfigurationUpdated</shortname>
+                <description> This event is fired when allocation properties for the given Equipment Configuration are updated.</description>
+                <assembly>Siemens.OpcenterEX.PR.MasterData.EquipAllocation_MS.MSModel.Events, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                <dotneteventtype></dotneteventtype>
+                <eventtype>Application</eventtype>
+                <domain>MasterData</domain>
+                <taglist>
+                </taglist>
+                <securable>true</securable>
+        </event></events>
+    <event_handlers><event_handler>
+<name>Siemens.OpcenterEX.PR.MasterData.EquipAllocation_MS.MSModel.Events.OnEquipmentConfigurationUpdated_AllocationPropertiesShell</name>
+<assembly>Siemens.OpcenterEX.PR.EquipAllocation_MS.EventHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+<event_name>Siemens.SimaticIT.MasterData.EQU_MS.MSModel.Events.EquipmentConfigurationUpdated</event_name>
+<target_cpu>AnyCPU</target_cpu>
+<targetframework>netstandard2.0</targetframework>
+<dependencies></dependencies>
+</event_handler></event_handlers>
+    <signals></signals>
+    <readingFunctions></readingFunctions>
+    <entities></entities>
+    <datamodels><datamodel>
+      <assembly>Siemens.OpcenterEX.PR.MasterData.EquipAllocation_MS.MSModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>WR</mode>
+      <domain>MasterData</domain>
+    </datamodel><datamodel>
+      <assembly>Siemens.OpcenterEX.PR.MasterData.EquipAllocation_MS.MSModel.ReadingModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>RD</mode>
+      <domain>MasterData</domain>
+    </datamodel><datamodel>
+      <assembly>Siemens.OpcenterEX.PR.MasterData.EquipAllocation_MS.MSModel.Types, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>WR</mode>
+      <domain>MasterData</domain>
+    </datamodel><datamodel>
+      <assembly>Siemens.OpcenterEX.PR.MasterData.EquipAllocation_MS.MSModel.Types.ReadingModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>RD</mode>
+      <domain>MasterData</domain>
+    </datamodel></datamodels>
+    <externaldatamodels></externaldatamodels>
+    <appdatamodels></appdatamodels>
+    <uimodules></uimodules>
+    <uicomponents></uicomponents>
+    <wr_entities></wr_entities>
+    <wr_facets><wr_facet>
+      <name>Siemens.OpcenterEX.PR.MasterData.EquipAllocation_MS.MSModel.DataModel.EquipmentAllocationTaskDefinition</name>
+      <shortname>EquipmentAllocationTaskDefinition</shortname>
+      <parententity></parententity>
+      <root_entity>Siemens.SimaticIT.MasterData.TSK_MS.MSModel.DataModel.TaskDefinition</root_entity>
+    </wr_facet><wr_facet>
+      <name>Siemens.OpcenterEX.PR.MasterData.EquipAllocation_MS.MSModel.DataModel.EquipmentAllocationPropertiesConfiguration</name>
+      <shortname>EquipmentAllocationPropertiesConfiguration</shortname>
+      <parententity></parententity>
+      <root_entity>Siemens.SimaticIT.MasterData.EQU_MS.MSModel.DataModel.EquipmentConfiguration</root_entity>
+    </wr_facet></wr_facets>
+  </artifacts>
+  <security>
+    <roles></roles>
+  </security>
+  <runtime>
+    <event_subscriptions></event_subscriptions>
+    <handlergroups></handlergroups>
+  </runtime>
+</projectmanifest>

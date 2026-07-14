@@ -1,0 +1,18 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 16 16">
+  <defs>
+    <linearGradient id="linear-gradient" x1="-4.382" y1="778.209" x2="4.784" y2="774.067" gradientTransform="translate(22.286 -777.15)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#73b4c8"/>
+      <stop offset="0.331" stop-color="#6aaec3"/>
+      <stop offset="0.564" stop-color="#529eb5"/>
+      <stop offset="0.809" stop-color="#2c839f"/>
+      <stop offset="1" stop-color="#147391"/>
+    </linearGradient>
+  </defs>
+  <g id="g835">
+    <path id="path826" d="M.527,1.505.7,14.425l2.829.056L7.359,6.727,9.708,9,12.3,4.3l3.188,5.257L15.556,1.7Z" fill="url(#linear-gradient)"/>
+    <path id="path822" d="M5.76,9.232,2.613,14.385l13.015.18-.048-4.327L12.3,5.261l-2.109,4.865L7.318,6.966Z" fill="#00b800"/>
+    <path id="path820" d="M5.515,10.239,6.7,11.951h.964a5.287,5.287,0,0,1,1.941.134,1.21,1.21,0,0,0,1.334-.369l1.63-1.074s1.384.839,1.507.939a6.2,6.2,0,0,0,1.408-.067L12.322,5.54,10,10.709,7.071,6.916Z" fill="#fff"/>
+    <path id="path4" d="M0,1V15H16V1ZM1,2.167H15V8.725L12.2,3.942,9.9,8.609,7.3,5.575h0L2.1,13.833H1ZM3.3,13.833l4-6.158L10,10.709h0l2.3-4.667L15,10.709v3.124Z" class="aw-theme-iconOutline" fill="#464646"/>
+    <path id="path824" d="M6.181,4.926a2,2,0,1,1-2-2A2,2,0,0,1,6.181,4.926Z" fill="#f5f146"/>
+  </g>
+</svg>

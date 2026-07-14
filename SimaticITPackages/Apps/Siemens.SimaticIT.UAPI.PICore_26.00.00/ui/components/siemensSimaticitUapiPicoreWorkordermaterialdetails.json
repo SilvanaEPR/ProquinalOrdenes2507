@@ -1,0 +1,204 @@
+﻿{
+  "manifestVersion": "02.00.00",
+  "uiComponent": {
+    "identity": {
+      "name": "siemensSimaticitUapiPicoreWorkordermaterialdetails",
+      "version": "1.0.0",
+      "title": "WorkOrderMaterialDetails",
+      "source": "siemens-simaticit-uapi-picore-workordermaterialdetails",
+      "dependencies": []
+    },
+    "metadata": {
+      "description": "",
+      "icon": "fa-puzzle-piece",
+      "image": "null",
+      "size": {
+        "default": {
+          "rows": 6,
+          "columns": 6
+        },
+        "min": {
+          "rows": 6,
+          "columns": 6
+        },
+        "max": {
+          "rows": 6,
+          "columns": 6
+        }
+      }
+    },
+    "size": {
+      "default": {
+        "rows": 6,
+        "columns": 6
+      },
+      "min": {
+        "rows": 1,
+        "columns": 1
+      },
+      "max": {
+        "rows": 12,
+        "columns": 12
+      }
+    },
+    "contracts": {
+      "api": {
+        "methods": {
+          "setWorkOrderOperationId": {
+            "description": "Sets the Work Order Operation for which the Operation Parameter Specification list is to be displayed.",
+            "parameters": {
+              "workOrderOperationId": {
+                "type": "string"
+              }
+            }
+          },
+          "setActionBarVisibility": {
+            "description": "Sets the visibility of the action bar in the list of Work Order Operation Parameter Specification.",
+            "parameters": {
+              "isActionBarVisible": {
+                "type": "Boolean"
+              }
+            }
+          }
+        },
+        "events": {}
+      },
+      "dpc": {
+        "EntityNames": {
+          "node": "data",
+          "type": "Array",
+          "category": "Extensibility",
+          "description": "",
+          "permission": "rw",
+          "default": []
+        },
+        "FacetNames": {
+          "node": "data",
+          "type": "Array",
+          "category": "Extensibility",
+          "description": "",
+          "permission": "rw",
+          "default": []
+        },
+        "Properties": {
+          "node": "data",
+          "type": "Array",
+          "category": "Extensibility",
+          "description": "",
+          "permission": "rw",
+          "default": [
+            {
+              "PropertyName": "ParameterNId",
+              "DataType": "string",
+              "DisplayName": "picore.headers.tables.nId",
+              "QuickSearch": true,
+              "CanBeSorted": true,
+              "IsSortDefault": true,
+              "CanBeFiltered": true,
+              "IsVisible": true
+            },
+            {
+              "PropertyName": "ParameterName",
+              "DataType": "string",
+              "DisplayName": "picore.headers.tables.name",
+              "QuickSearch": false,
+              "CanBeSorted": true,
+              "IsSortDefault": false,
+              "CanBeFiltered": true,
+              "IsVisible": true
+            },
+            {
+              "PropertyName": "ParameterDescription",
+              "DataType": "string",
+              "DisplayName": "picore.headers.tables.description",
+              "QuickSearch": false,
+              "CanBeSorted": true,
+              "IsSortDefault": false,
+              "CanBeFiltered": true,
+              "IsVisible": true
+            },
+            {
+              "PropertyName": "ParameterTargetValue",
+              "DataType": "string",
+              "DisplayName": "picore.headers.tables.targetValue",
+              "QuickSearch": false,
+              "CanBeSorted": true,
+              "IsSortDefault": false,
+              "CanBeFiltered": true,
+              "IsVisible": true
+            },
+            {
+              "PropertyName": "ParameterType",
+              "DataType": "string",
+              "DisplayName": "picore.headers.tables.type",
+              "QuickSearch": false,
+              "CanBeSorted": true,
+              "IsSortDefault": false,
+              "CanBeFiltered": true,
+              "IsVisible": true
+            },
+            {
+              "PropertyName": "ParameterUoMNId",
+              "DataType": "string",
+              "DisplayName": "picore.headers.tables.uoM",
+              "QuickSearch": false,
+              "CanBeSorted": true,
+              "IsSortDefault": false,
+              "CanBeFiltered": true,
+              "IsVisible": true
+            },
+            {
+              "PropertyName": "TaskParameterNId",
+              "DataType": "string",
+              "DisplayName": "picore.headers.tables.taskParamNId",
+              "QuickSearch": false,
+              "CanBeSorted": true,
+              "IsSortDefault": false,
+              "CanBeFiltered": true,
+              "IsVisible": true
+            },
+            {
+              "PropertyName": "WorkProcessVariableNId",
+              "DataType": "string",
+              "DisplayName": "picore.headers.tables.wpVariableNId",
+              "QuickSearch": false,
+              "CanBeSorted": true,
+              "IsSortDefault": false,
+              "CanBeFiltered": true,
+              "IsVisible": true
+            }
+          ]
+        },
+        "PageSizes": {
+          "node": "data",
+          "type": "Array",
+          "category": "Visibility",
+          "description": "",
+          "permission": "rw",
+          "default": [
+            5,
+            10,
+            30,
+            50
+          ]
+        },
+        "PageSizeDefault": {
+          "node": "data",
+          "type": "Number",
+          "category": "Visibility",
+          "description": "",
+          "permission": "rw",
+          "default": 5
+        },
+        "IsTitleVisible": {
+          "node": "data",
+          "type": "Boolean",
+          "category": "Visibility",
+          "description": "",
+          "permission": "rw",
+          "default": true
+        }
+      }
+    }
+  }
+}

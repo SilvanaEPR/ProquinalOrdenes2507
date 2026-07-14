@@ -1,0 +1,88 @@
+
+<div id="tableContainer" data-internal-type="tableContainer">
+
+    <div id="tableCanvas" data-internal-type="tableCanvas">
+        <div id="tableViewDiv" data-internal-type="tableViewDiv" ng-if="tableCtrl.view === undefined || tableCtrl.view === 'grid'">
+
+            <table aria-describedby="List" sit-table="piList" sit-config="tableCtrl.config" class="pi-table">
+                <thead>
+                    <tr>
+                        <th scope="col" class="pi-table-header">
+                            <div class="tool-bar">
+                                <span sit-table-filterbar></span>
+                                <span ng-if="tableCtrl.isSeparatorNeeded()" sit-table-separator></span>
+                                <div ng-hide="!tableCtrl.toolbarVisible" class="pi-action-bar">
+
+                                    <span ng-if="!value.cmdIcon" sit-table-button class="pi-action-bar-button"
+                                          ng-repeat="(key,value) in tableCtrl.toolbarButtons"
+                                          sit-icon="{{value.icon}}"
+                                          sit-label="{{value.label}}"
+                                          ng-click="tableCtrl.commandClick(value.name)"
+                                          ng-show="value.isPrimaryAction || value.visibility"></span>
+
+                                    <span ng-if="value.cmdIcon" sit-table-button class="pi-action-bar-button"
+                                          ng-repeat="(key,value) in tableCtrl.toolbarButtons"
+                                          sit-cmd-icon="{{value.cmdIcon}}"
+                                          sit-label="{{value.label}}"
+                                          ng-click="tableCtrl.commandClick(value.name)"
+                                          ng-show="value.isPrimaryAction || value.visibility"></span>
+                                </div>
+                            </div>
+                        </th>
+                        <th scope="col" ng-if="tableCtrl.NoData" ng-style="ICVController.collectionStyle" style="font-size: large; padding-left: 10px;">
+                            {{tableCtrl.translatedNoData}}
+                        </th>
+                    </tr>
+                    <tr ng-hide="tableCtrl.NoData">
+                        <th scope="col" ng-repeat="(key,value) in tableCtrl.piConfig.Headers" ng-click="tableCtrl.headerClick(value.Key)" ng-class="tableCtrl.sortClass(value.Key)">
+                            <div class="sit-pi-sort-header">{{value.DisplayName}}</div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody ng-hide="tableCtrl.NoData" style="border-top:0px!important;">
+                    <tr ng-repeat="row in tableCtrl.config.data">
+                        <td ng-repeat="(key,value) in tableCtrl.piConfig.Headers">
+                            <span ng-if="value.IsDatetime && !value.IsDuration">{{tableCtrl.setColumnData(row,value) | date:'short'}}</span>
+                            <span ng-if="value.IsDuration">{{tableCtrl.setColumnData(row,value) | durationFormatter}}</span>
+                            <span ng-if="!value.IsQty && !value.IsDatetime && !value.IsBoolean && !value.IsDuration && (!value.IsEditable || tableCtrl.readOnly)">{{tableCtrl.setColumnData(row,value)}}</span>
+                            <span ng-if="!value.IsQty && !value.IsDatetime && value.IsBoolean && !value.IsDuration && (!value.IsEditable || tableCtrl.readOnly)"><i class="fa fa-check" aria-hidden="true" ng-show="{{value.IsBoolean && tableCtrl.setColumnData(row,value)}}"></i></span>
+
+                            <div style="height: 100%; color: black !important; background-color:#fff" ng-click="$event.stopPropagation();" ng-if="value.IsEditable && !tableCtrl.readOnly && !value.IsQty && !row.isReadonly">
+                                <div id="data-cell-container">
+
+                                    <input type="text" id="text-container" ng-disabled="tableCtrl.isAllowedCellEditing(row,value)" value="{{tableCtrl.setColumnData(row,value)}}" ng-model="row[value.Key]" style="width:99.9%" />
+                                </div>
+                            </div>
+                            <span title="{{row.Quantity.QuantityValue}}" ng-if="value.IsQty && !value.IsBoolean && (!value.IsEditable || tableCtrl.readOnly)">{{tableCtrl.setColumnData(row,value)}}</span><!-- LS: BUG#94415 UI number Localization for "." and ",": Inserted "| number"-->
+
+                            <div style="height: 100%; color: black !important; background-color:#fff" ng-click="$event.stopPropagation();" ng-if="value.IsEditable && !tableCtrl.readOnly && value.IsQty && !row.isReadonly">
+                                <div id="data-cell-container">
+
+                                    <input type="number" id="number-container" value="{{tableCtrl.setColumnData(row,value) | number}}" ng-model="row.Quantity.QuantityValue" style="width:99.9%" min="0" onkeydown="javascript: return event.keyCode == 69 ? false : true" /><!-- LS: BUG#94415 UI number Localization for "." and ",": Inserted "| number"-->
+                                </div>
+                            </div>
+
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot ng-hide="tableCtrl.NoData" style="border-top:0px!important;">
+                    <tr sit-table-pager style="height: 100%;"></tr>
+                </tfoot>
+            </table>
+
+        </div>
+
+        <div id="tileViewDiv" data-internal-type="tileViewDiv" ng-if="tableCtrl.view === 'tile'">
+            <div id="topCommandBars" data-internal-type="topCommandBars" class="top-command-bars">
+                <div id="filterBar" data-internal-type="filterBar" class="filterBar-container">
+                    <sit-filter-bar sit-filter-options="tableCtrl.tileFilterOptions"></sit-filter-bar>
+                </div>
+            </div>
+            <div>
+                <div id="noDataDiv" ng-if="tableCtrl.noData" style="font-size: large; padding-left: 10px;">{{tableCtrl.translatedNoData}}</div>
+                <sit-tile-view data-sit-tiles="tableCtrl.sitData" data-sit-options="tableCtrl.tileViewOptions" ng-if="!tableCtrl.noData"></sit-tile-view>
+            </div>
+        </div>
+    </div>
+
+</div>

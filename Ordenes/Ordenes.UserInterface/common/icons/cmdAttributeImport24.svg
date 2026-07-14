@@ -1,0 +1,10 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <g id="g851">
+    <path id="rect2" d="M5.14,14.328l7-7,.707.707-7,7Z" class="aw-theme-iconOutline" fill="#464646"/>
+    <path id="rect4" d="M13,10.467,7.135,16.332l.707.707L13,11.881Z" class="aw-theme-iconOutline" fill="#464646"/>
+    <path id="rect6" d="M13,14.469,11.447,16.02h1.414L13,15.883Zm-2,2L9.141,18.326l.707.707L11,17.879V16.465Z" class="aw-theme-iconOutline" fill="#464646"/>
+    <path id="path8" d="M13.191.793,0,13.984,10.016,24,13,21.018V19.6l-2.982,2.982-8.6-8.6L13.607,1.8h7.2l1.4,1.4v6.813h1V2.777L21.221.793Zm5.424,2.738a1.773,1.773,0,1,0,1.242,3.016l.032-.033a1.9,1.9,0,0,0-.032-2.451A1.748,1.748,0,0,0,18.615,3.531Zm0,1a.757.757,0,0,1,.535.237.908.908,0,0,1-.015,1.085A.725.725,0,0,1,18.08,5.84a.773.773,0,0,1,.535-1.307Z" class="aw-theme-iconOutline" fill="#464646"/>
+    <path id="path823" d="M20.293,18.015H12v-1h8.293l-3.146-3.147.707-.707,4,4a.5.5,0,0,1,0,.707l-4,4-.707-.707Z" class="aw-theme-iconOutline" fill="#464646"/>
+    <path id="path821" d="M23.993,11V24h-10V19.667h1V23h8V12h-8v3.333h-1V11Z" class="aw-theme-iconOutline" fill="#464646"/>
+  </g>
+</svg>

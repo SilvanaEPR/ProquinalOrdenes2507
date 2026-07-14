@@ -1,0 +1,55 @@
+﻿.otl-task-execution-panel, .otl-task-overview-panel, .otl-task-visibility-panel {
+    .sit-side-panel {
+        margin-left: 6px;
+
+        .side-panel-top {
+            display: none;
+        }
+
+        .side-panel-content {
+            padding: 0px;
+
+            .side-panel-custom {
+                overflow-y: hidden;
+                width: 100%;
+                padding-right: 0px !important;
+
+                .otl-sidePanel-mainContainer {
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+
+                    .otl-sidePanel-header {
+                        background-color: #f0f0f0;
+                        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+                    }
+
+                    .otl-sidePanel-content {
+                        flex-grow: 1;
+                        height: 100%;
+                        padding: 16px;
+                        overflow: hidden !important;
+                        // UI Component is loaded in a contianer with fix height. This code makes it responsive.
+                        sit-container {
+                            sit-component {
+                                > div:first-child {
+                                    height: 100% !important;
+                                    width: 100% !important;
+                                }
+                            }
+                        }
+
+                        .pl-default-button, .pl-primary-button, .pl-default-button:hover, .pl-primary-button:hover {
+                            font-size: 15.75pt;
+                            font-weight: 600;
+                            min-height: 48px;
+                            line-height: 36px;
+                            padding: 0 16px;
+                            margin-left: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

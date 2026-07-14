@@ -1,0 +1,52 @@
+<svg id="Verb_Zone" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="linear-gradient" x1="274.103" y1="1093.49" x2="313.103" y2="1132.49" gradientTransform="translate(-273.6 -1092.99)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="0.228" stop-color="#fdfdfd"/>
+      <stop offset="0.488" stop-color="#f3f3f4"/>
+      <stop offset="0.762" stop-color="#e0dede"/>
+      <stop offset="1" stop-color="#c7c4c3"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="277.103" y1="1096.49" x2="310.103" y2="1129.49" gradientTransform="translate(-273.6 -1092.99)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7fb8cd"/>
+      <stop offset="0.175" stop-color="#73b0c7"/>
+      <stop offset="0.457" stop-color="#559eb8"/>
+      <stop offset="0.809" stop-color="#2982a1"/>
+      <stop offset="1" stop-color="#0e7191"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="-60.105" y1="-623.859" x2="-53.691" y2="-626.666" gradientTransform="matrix(1.148, 0, 0, -1.148, 87.64, -673.804)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="0.221" stop-color="#f8f8f8"/>
+      <stop offset="0.541" stop-color="#e5e5e5"/>
+      <stop offset="0.92" stop-color="#c6c6c6"/>
+      <stop offset="1" stop-color="#bebebe"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-4" x1="-189.889" y1="380.237" x2="-188.741" y2="380.237" gradientTransform="translate(2309.359 -732.299) rotate(45) scale(5.657)" gradientUnits="userSpaceOnUse">
+      <stop offset="0.5" stop-color="#cdcccc"/>
+      <stop offset="0.638" stop-color="#c8c6c7"/>
+      <stop offset="0.797" stop-color="#b7b6b6"/>
+      <stop offset="0.966" stop-color="#9e9d9d"/>
+      <stop offset="0.99" stop-color="#9a9999"/>
+      <stop offset="1" stop-color="#9a9999"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-5" x1="41.668" y1="21.106" x2="50.111" y2="24.837" gradientUnits="userSpaceOnUse">
+      <stop offset="0.069" stop-color="#f2f2f2"/>
+      <stop offset="0.5" stop-color="#cdcccc"/>
+      <stop offset="0.638" stop-color="#c8c6c7"/>
+      <stop offset="0.797" stop-color="#b7b6b6"/>
+      <stop offset="0.966" stop-color="#9e9d9d"/>
+      <stop offset="0.99" stop-color="#9a9999"/>
+      <stop offset="1" stop-color="#9a9999"/>
+    </linearGradient>
+  </defs>
+  <g id="g28">
+    <rect id="rect13" x="0.503" y="0.5" width="39" height="39" stroke="#4e4a48" stroke-linecap="round" stroke-miterlimit="10" fill="url(#linear-gradient)"/>
+    <path id="path26" d="M18.5,18.5H3.5V3.5h15Zm18-15h-15v15h15Zm-18,18H3.5v15h15Zm18,0h-15v15h15Z" stroke="#0e7191" stroke-miterlimit="10" fill="url(#linear-gradient-2)"/>
+  </g>
+  <path id="polygon105" d="M26.4,43.593l-8.037,3.444L21.807,39Z" fill="url(#linear-gradient-3)"/>
+  <path id="polygon78" d="M39.371,21.237l4.592,4.593L25.593,44.2,21,39.607Z" fill="url(#linear-gradient-4)"/>
+  <path id="polygon85" d="M47.3,22.394l-3.445,3.445-4.592-4.593L42.714,17.8Z" fill="url(#linear-gradient-5)"/>
+  <path id="line92" d="M44.007,25.686l-4.592-4.593" fill="#afd7e1" stroke="#6f6f6f" stroke-linejoin="round" stroke-width="1.148"/>
+  <path id="polygon107" d="M47.452,22.241l-4.585-4.592L21.044,39.463,17.6,47.5l8.037-3.444Z" fill="none" stroke="#464646" stroke-linejoin="round"/>
+  <path id="polygon109" d="M17.6,47.5l4.018-1.722-2.3-2.3Z" fill="#464646"/>
+</svg>

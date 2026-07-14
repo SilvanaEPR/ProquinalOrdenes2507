@@ -1,0 +1,16 @@
+<svg id="Image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+  <g id="g852">
+    <path id="rect837" d="M0,0H16V16H0Z" fill="#e3faff"/>
+    <path id="path841" d="M2,2.993H.567v9.978H2Z" fill="#005f87"/>
+    <path id="path839" d="M3.19,2.993H2.714v9.978H3.19Z" fill="#005f87"/>
+    <path id="path837" d="M4.859,2.993H4.384v9.978h.475Z" fill="#005f87"/>
+    <path id="path835" d="M6.768,2.993H5.814v9.978h.952Z" fill="#005f87"/>
+    <path id="path833" d="M8.2,2.993H7.728v9.978H8.2Z" fill="#005f87"/>
+    <path id="path827" d="M11.133,12.971h.476V2.993h-.476Z" fill="#005f87"/>
+    <path id="path825" d="M12.8,12.971h.48V2.993h-.476Z" fill="#005f87"/>
+    <path id="path823" d="M9.96,12.971V2.993H9.483v9.978Z" fill="#005f87"/>
+    <path id="path821" d="M15.136,12.971V2.993h-.951v9.978Z" fill="#005f87"/>
+    <path id="rect840" d="M0,0H16V1H0Z" fill="#005f87"/>
+    <path id="rect842" d="M0,15H16v1H0Z" fill="#005f87"/>
+  </g>
+</svg>

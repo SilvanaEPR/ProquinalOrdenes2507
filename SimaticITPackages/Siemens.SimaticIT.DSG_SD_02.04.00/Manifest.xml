@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8"?><projectmanifest>
+  <header>
+    <manifestversion>11.0</manifestversion>
+    <platformversion>11.0</platformversion>
+    <type>Library</type>
+    <name>Siemens.SimaticIT.DSG_SD</name>
+    <shortname>DSG_SD</shortname>
+    <description></description>
+    <version>02.04.00</version>
+    <companyname>Siemens.SimaticIT</companyname>
+    <author>Siemens.SimaticIT</author>
+    <hash>C50zFZBVZizgJDM94Gnomwr5mPC2p6Pu5sXWDtYATH8=</hash>
+    <modelHash>WVv+WTvCY1u7PZ9rYjOKHVDW8oin4nYt/0rvI0DcQ/4=</modelHash>
+    <modelHashSections>
+      <modelHashSection>
+        <name>projectConfigModelHash</name>
+        <hash>DLlDNk3/Q9m01PJDA8BWq6df8oAod6IpLh2b9CtZquE=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>dataModelHash</name>
+        <hash>LyXQT9A6atoRfj/AEScofNZpWbhlttMdvL7tRJiqXf4=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>commandModelHash</name>
+        <hash>I8ysUDyP+EBeBkw5GJf2QBLFnbhsGZU4WJA/x98hoNQ=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>aliasModelHash</name>
+        <hash>cdWtFof25lUoH+wgMZZEtJGL5k7aBVT7Ae5HtNcbGxs=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>eventModelHash</name>
+        <hash>cZtGzeWcv0wZIMbWgk62xlbxNQAbJhFNum6kwS0UHyk=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>typeModelHash</name>
+        <hash>MFYJhjiIZ4EuKG/qO5+uwcidsE7fq/zyEmFVMTJhMlA=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>securityModelHash</name>
+        <hash>cdWtFof25lUoH+wgMZZEtJGL5k7aBVT7Ae5HtNcbGxs=</hash>
+      </modelHashSection>
+    </modelHashSections>
+    <uiHash>na</uiHash>
+    <canbeextended>false</canbeextended>
+    <domain>SystemData</domain>
+  </header>
+  <reference>
+    <functionalblocks></functionalblocks>
+    <extensions></extensions>
+  </reference>
+  <artifacts>
+    <commands><command>
+                        <name>Siemens.SimaticIT.SystemData.DSG_SD.SDModel.Commands.CreateSegregationTag</name>
+                        <shortname>CreateSegregationTag</shortname>
+                        <description>Creates a Segregation Tag.</description>
+                        <assembly>Siemens.SimaticIT.SystemData.DSG_SD.SDModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>SystemData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.SystemData.DSG_SD.SDModel.Commands.CreateSegregationTagHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.DSG_SD.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.SystemData.DSG_SD.SDModel.Commands.UpdateSegregationTag</name>
+                        <shortname>UpdateSegregationTag</shortname>
+                        <description>Updates a Segregation Tag.</description>
+                        <assembly>Siemens.SimaticIT.SystemData.DSG_SD.SDModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>SystemData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.SystemData.DSG_SD.SDModel.Commands.UpdateSegregationTagHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.DSG_SD.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.SystemData.DSG_SD.SDModel.Commands.DeleteSegregationTag</name>
+                        <shortname>DeleteSegregationTag</shortname>
+                        <description>Deletes a Segregation Tag.</description>
+                        <assembly>Siemens.SimaticIT.SystemData.DSG_SD.SDModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>SystemData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.SystemData.DSG_SD.SDModel.Commands.DeleteSegregationTagHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.DSG_SD.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.SystemData.DSG_SD.SDModel.Commands.SetSessionSegregationTagsSelection</name>
+                        <shortname>SetSessionSegregationTagsSelection</shortname>
+                        <description>Selects or Deselects SessionSegregationTags given in input.</description>
+                        <assembly>Siemens.SimaticIT.SystemData.DSG_SD.SDModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>SystemData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.SystemData.DSG_SD.SDModel.Commands.SetSessionSegregationTagsSelectionHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.DSG_SD.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.SystemData.DSG_SD.SDModel.Commands.ReplaceSegregationTagAssociation</name>
+                        <shortname>ReplaceSegregationTagAssociation</shortname>
+                        <description>Replaces the segregation tags association in a generic instance.</description>
+                        <assembly>Siemens.SimaticIT.SystemData.DSG_SD.SDModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>SystemData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.SystemData.DSG_SD.SDModel.Commands.ReplaceSegregationTagAssociationHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.DSG_SD.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.SystemData.DSG_SD.SDModel.Commands.SetDataSegregationMode</name>
+                        <shortname>SetDataSegregationMode</shortname>
+                        <description>Changes the Data Segregation Mode, i.e. the query behavior when entities have multiple tags</description>
+                        <assembly>Siemens.SimaticIT.SystemData.DSG_SD.SDModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>SystemData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.SystemData.DSG_SD.SDModel.Commands.SetDataSegregationModeHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.DSG_SD.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command></commands>
+    <commandActions></commandActions>
+    <events><event>
+                <name>Siemens.SimaticIT.SystemData.DSG_SD.SDModel.Events.SegregationTagDeleted</name>
+                <shortname>SegregationTagDeleted</shortname>
+                <description> Fired when a Segregation Tag has been deleted.</description>
+                <assembly>Siemens.SimaticIT.SystemData.DSG_SD.SDModel.Events, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                <dotneteventtype></dotneteventtype>
+                <eventtype>Application</eventtype>
+                <domain>SystemData</domain>
+                <taglist>
+                </taglist>
+                <securable>true</securable>
+        </event><event>
+                <name>Siemens.SimaticIT.SystemData.DSG_SD.SDModel.Events.SessionSelectedChanged</name>
+                <shortname>SessionSelectedChanged</shortname>
+                <description> Fired when the selection of Session Segregation Tags has been changed.</description>
+                <assembly>Siemens.SimaticIT.SystemData.DSG_SD.SDModel.Events, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                <dotneteventtype></dotneteventtype>
+                <eventtype>Application</eventtype>
+                <domain>SystemData</domain>
+                <taglist>
+                </taglist>
+                <securable>true</securable>
+        </event><event>
+                <name>Siemens.SimaticIT.SystemData.DSG_SD.SDModel.Events.ReplacedSegregationTagAssociation</name>
+                <shortname>ReplacedSegregationTagAssociation</shortname>
+                <description> Fired to notify the replaced segregation tags association.</description>
+                <assembly>Siemens.SimaticIT.SystemData.DSG_SD.SDModel.Events, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                <dotneteventtype></dotneteventtype>
+                <eventtype>Application</eventtype>
+                <domain>SystemData</domain>
+                <taglist>
+                </taglist>
+                <securable>true</securable>
+        </event></events>
+    <event_handlers></event_handlers>
+    <signals></signals>
+    <readingFunctions></readingFunctions>
+    <entities></entities>
+    <datamodels><datamodel>
+      <assembly>Siemens.SimaticIT.SystemData.DSG_SD.SDModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>WR</mode>
+      <domain>SystemData</domain>
+    </datamodel><datamodel>
+      <assembly>Siemens.SimaticIT.SystemData.DSG_SD.SDModel.ReadingModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>RD</mode>
+      <domain>SystemData</domain>
+    </datamodel><datamodel>
+      <assembly>Siemens.SimaticIT.SystemData.DSG_SD.SDModel.Types, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>WR</mode>
+      <domain>SystemData</domain>
+    </datamodel><datamodel>
+      <assembly>Siemens.SimaticIT.SystemData.DSG_SD.SDModel.Types.ReadingModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>RD</mode>
+      <domain>SystemData</domain>
+    </datamodel></datamodels>
+    <externaldatamodels></externaldatamodels>
+    <appdatamodels></appdatamodels>
+    <uimodules></uimodules>
+    <uicomponents></uicomponents>
+    <wr_entities></wr_entities>
+    <wr_facets></wr_facets>
+  </artifacts>
+  <security>
+    <roles></roles>
+  </security>
+  <runtime>
+    <event_subscriptions></event_subscriptions>
+    <handlergroups></handlergroups>
+  </runtime>
+</projectmanifest>

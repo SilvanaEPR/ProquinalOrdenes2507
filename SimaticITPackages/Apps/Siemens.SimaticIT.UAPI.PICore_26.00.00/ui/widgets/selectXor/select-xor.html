@@ -1,0 +1,36 @@
+﻿
+<div class="label label-property-grid-control-readonly" ng-if="selectXorCtrl.readOnly || selectXorCtrl.ngReadonly">
+{{selectXorCtrl.selectionEntityName.nid}}: {{selectXorCtrl.selectionValue.nid}}
+</div>
+<ng-form class="form-group"
+         ng-if="!(selectXorCtrl.readOnly || selectXorCtrl.ngReadonly)"
+         name='selectXorForm'>
+
+    <div class='property-grid-input-group'
+         ng-class='((selectXorForm.$invalid && selectXorForm.$dirty) || (selectXorForm.$invalid && selectXorForm.$visited)) ? "validator-control-invalid" : "validator-control"'>
+        <span class="input-group-btn xor-select">
+            <sit-select ng-model='selectXorCtrl.selectionEntityName'
+                        class="btn"
+                        sit-value="selectXorCtrl.selectionEntityName"
+                        sit-change="selectXorCtrl.onEntityChange"
+                        sit-options="selectXorCtrl.options"
+                        sit-to-keep="selectXorCtrl.toKeep"
+                        sit-to-display="selectXorCtrl.toDisplay"
+                        style="width:100%; padding:0"
+                        ng-required='selectXorCtrl.validation.required' />
+        </span>
+        <span class="input-group-btn xor-select">
+            <sit-select ng-model='selectXorCtrl.selectionValue'
+                        class="btn"
+                        sit-value="selectXorCtrl.selectionValue"
+                        sit-change="selectXorCtrl.sitChange"
+                        sit-options="selectXorCtrl.entityValueOptions"
+                        sit-to-keep="selectXorCtrl.toKeep"
+                        sit-to-display="selectXorCtrl.toDisplay"
+                        style="width:100%; padding:0"
+                        ng-required='selectXorCtrl.validation.required' />
+        </span>
+        <input type="hidden" ng-model="selectXorCtrl.selectionValue" ng-required="selectXorCtrl.validation.required" sit-form-input-validator />
+    </div>
+
+</ng-form>

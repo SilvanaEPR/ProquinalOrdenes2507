@@ -1,0 +1,32 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="linear-gradient" x1="29.096" y1="29.185" x2="80.649" y2="-15.96" gradientTransform="matrix(0.838, 0, 0, -0.952, -21.721, 30.543)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="0.221" stop-color="#f8f8f8"/>
+      <stop offset="0.541" stop-color="#e5e5e5"/>
+      <stop offset="0.92" stop-color="#c6c6c6"/>
+      <stop offset="1" stop-color="#bebebe"/>
+    </linearGradient>
+  </defs>
+  <g id="g863">
+    <rect id="rect858" x="0.499" y="0.499" width="47.002" height="47.002" rx="0.339" stroke="#147391" stroke-width="0.998" fill="url(#linear-gradient)"/>
+    <path id="path868" d="M8.65,47V1h0" fill="none" stroke="#464646" stroke-width="0.697" stroke-dasharray="0.697 1.393"/>
+    <path id="path868-3" d="M19.148,47V1h0" fill="none" stroke="#464646" stroke-width="0.697" stroke-dasharray="0.697 1.393"/>
+    <path id="path868-3-6" d="M29.648,47V1h0" fill="none" stroke="#464646" stroke-width="0.697" stroke-dasharray="0.697 1.393"/>
+    <path id="path868-3-6-1" d="M40.048,47V1h0" fill="none" stroke="#464646" stroke-width="0.697" stroke-dasharray="0.697 1.393"/>
+    <path id="path868-2" d="M1,39.452H47" fill="none" stroke="#464646" stroke-width="0.697" stroke-dasharray="0.697 1.393"/>
+    <path id="path868-3-0" d="M1,28.854H47" fill="none" stroke="#464646" stroke-width="0.697" stroke-dasharray="0.697 1.393"/>
+    <path id="path868-3-6-7" d="M1,18.554H47" fill="none" stroke="#464646" stroke-width="0.697" stroke-dasharray="0.697 1.393"/>
+    <path id="path868-3-6-1-7" d="M1,7.954H47" fill="none" stroke="#464646" stroke-width="0.697" stroke-dasharray="0.697 1.393"/>
+    <path id="polyline28" d="M7.144,34.415,19.5,21.5l6,4L38.483,13.873" fill="none" stroke="#147391"/>
+    <circle id="circle30" cx="5.734" cy="36.129" r="2" fill="#fff" stroke="#147391"/>
+    <circle id="circle32" cx="19.5" cy="22.161" r="2" fill="#fff" stroke="#147391"/>
+    <circle id="circle34" cx="39.856" cy="12.754" r="2" fill="#fff" stroke="#147391"/>
+    <circle id="circle36" cx="25.5" cy="25.5" r="2" fill="#fff" stroke="#147391"/>
+    <path id="path4706" d="M6.61,19.475,19.932,30.814,31.627,33l8.441-8.542" fill="none" stroke="#147391"/>
+    <circle id="circle32-3" cx="6.653" cy="19.475" r="2" fill="#fff" stroke="#147391"/>
+    <circle id="circle32-3-1" cx="19.932" cy="30.814" r="2" fill="#fff" stroke="#147391"/>
+    <circle id="circle32-3-1-7" cx="31.576" cy="33.051" r="2" fill="#fff" stroke="#147391"/>
+    <circle id="circle32-3-1-2" cx="40.119" cy="24.407" r="2" fill="#fff" stroke="#147391"/>
+  </g>
+</svg>

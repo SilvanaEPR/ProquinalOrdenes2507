@@ -1,0 +1,44 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="linear-gradient" x1="83.422" y1="781.516" x2="134.975" y2="826.661" gradientTransform="translate(-67.243 -741.249) scale(0.838 0.952)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="0.221" stop-color="#f8f8f8"/>
+      <stop offset="0.541" stop-color="#e5e5e5"/>
+      <stop offset="0.92" stop-color="#c6c6c6"/>
+      <stop offset="1" stop-color="#bebebe"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="17.324" y1="36.402" x2="45.818" y2="1.516" gradientTransform="matrix(1, 0, 0, -1, 0, 50)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="0.232" stop-color="#fafafa"/>
+      <stop offset="0.496" stop-color="#ededed"/>
+      <stop offset="0.775" stop-color="#d6d6d6"/>
+      <stop offset="1" stop-color="#bebebe"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="35.318" y1="30.444" x2="46.521" y2="20.805" gradientTransform="matrix(1, 0, 0, -1, 0, 50)" xlink:href="#linear-gradient"/>
+  </defs>
+  <rect id="rect858" x="0.416" y="0.416" width="39.168" height="39.168" rx="0.283" stroke="#147391" fill="url(#linear-gradient)"/>
+  <path id="path868" d="M7.208,39.167V.833h0" fill="none" stroke="#464646" stroke-width="0.581" stroke-dasharray="0.581 1.161"/>
+  <path id="path868-3" d="M15.957,39.167V.833h0" fill="none" stroke="#464646" stroke-width="0.581" stroke-dasharray="0.581 1.161"/>
+  <path id="path868-3-6" d="M24.707,39.167V.833h0" fill="none" stroke="#464646" stroke-width="0.581" stroke-dasharray="0.581 1.161"/>
+  <path id="path868-3-6-1" d="M33.373,39.167V.833h0" fill="none" stroke="#464646" stroke-width="0.581" stroke-dasharray="0.581 1.161"/>
+  <path id="path868-2" d="M.833,32.877H39.167" fill="none" stroke="#464646" stroke-width="0.581" stroke-dasharray="0.581 1.161"/>
+  <path id="path868-3-0" d="M.833,24.045H39.167" fill="none" stroke="#464646" stroke-width="0.581" stroke-dasharray="0.581 1.161"/>
+  <path id="path868-3-6-7" d="M.833,15.462H39.167" fill="none" stroke="#464646" stroke-width="0.581" stroke-dasharray="0.581 1.161"/>
+  <path id="path868-3-6-1-7" d="M.833,6.628H39.167" fill="none" stroke="#464646" stroke-width="0.581" stroke-dasharray="0.581 1.161"/>
+  <path id="polyline28" d="M5.953,28.679l10.3-10.762,5,3.333,10.819-9.689" fill="none" stroke="#147391" stroke-width="0.833"/>
+  <circle id="circle30" cx="4.778" cy="30.108" r="1.667" fill="#fff" stroke="#147391" stroke-width="0.833"/>
+  <circle id="circle32" cx="16.25" cy="18.468" r="1.667" fill="#fff" stroke="#147391" stroke-width="0.833"/>
+  <circle id="circle34" cx="33.213" cy="10.628" r="1.667" fill="#fff" stroke="#147391" stroke-width="0.833"/>
+  <circle id="circle36" cx="21.25" cy="21.25" r="1.667" fill="#fff" stroke="#147391" stroke-width="0.833"/>
+  <path id="path4706" d="M5.508,16.229l11.1,9.449L26.356,27.5l7.034-7.118" fill="none" stroke="#147391" stroke-width="0.833"/>
+  <circle id="circle32-3" cx="5.544" cy="16.229" r="1.667" fill="#fff" stroke="#147391" stroke-width="0.833"/>
+  <circle id="circle32-3-1" cx="16.61" cy="25.678" r="1.667" fill="#fff" stroke="#147391" stroke-width="0.833"/>
+  <circle id="circle32-3-1-7" cx="26.313" cy="27.542" r="1.667" fill="#fff" stroke="#147391" stroke-width="0.833"/>
+  <circle id="circle32-3-1-2" cx="33.432" cy="20.339" r="1.667" fill="#fff" stroke="#147391" stroke-width="0.833"/>
+  <path id="polygon35" d="M25.909,47.514h21.6V27.15l-8.026-8.022H25.909Z" stroke="#464646" stroke-miterlimit="10" stroke-width="0.972" fill="url(#linear-gradient-2)"/>
+  <path id="polygon37" d="M39.483,19.128v8.023h8.026Z" stroke="#464646" stroke-linejoin="round" stroke-width="0.972" fill="url(#linear-gradient-3)"/>
+  <path id="rect39" d="M28.994,41.96H44.42v2.468H28.994Z" fill="none" stroke="#464646" stroke-miterlimit="10"/>
+  <path id="rect41" d="M28.994,37.64H44.42v2.469H28.994Z" fill="none" stroke="#464646" stroke-miterlimit="10"/>
+  <path id="rect43" d="M28.994,33.321H44.42v2.468H28.994Z" fill="none" stroke="#464646" stroke-miterlimit="10"/>
+  <path id="rect45" d="M28.994,29H44.42v2.468H28.994Z" fill="none" stroke="#464646" stroke-miterlimit="10"/>
+</svg>

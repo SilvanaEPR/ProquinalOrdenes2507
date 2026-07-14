@@ -1,0 +1,277 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--created on Friday, 31 March 2017 15:32:33 (UTC)-->
+<!--GUID values are formatted like '0b0e9810-096f-4864-b8e0-0dca91f6ff0f'; ALL OTHER VALUES FOLLOW .NET System.Globalization.CultureInfo.InvariantCulture FORMAT-->
+<Sections>
+  <Section engineeringLevel="LibraryFunctionalBlock" implementationName="2021-2-17-11-18-00" domainName="MasterData">
+    <Entity type="Siemens.SimaticIT.MasterData.BPF_MS.MSModel.DataModel.ProcessContextDefinition">
+      <Property name="NId" kind="Plain" value="PIProcessDefinitionContext" />
+      <Property name="Name" kind="Plain" value="PIProcessDefinitionContext" />
+      <Property name="Description" kind="Plain" value="Defines the relevant information of the Work Order Operation to which the Work Process is linked" />
+      <Property name="ContextEntityType" kind="Plain" value="Siemens.SimaticIT.OperationalData.BPF_OP.OPModel.DataModel.IWorkProcessContext" />
+      <Property name="ProcessDefinitions" kind="ManyToManyReference" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.MasterData.BPF_MS.MSModel.DataModel.ProcessContextDefinitionUserField">
+      <Property name="NId" kind="Plain" value="WorkOrderNId" />
+      <Property name="UserFieldValue" kind="Plain" value="" />
+      <Property name="UserFieldType" kind="Plain" value="String" />
+      <Property name="ProcessContextDefinition" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.SimaticIT.MasterData.BPF_MS.MSModel.DataModel.ProcessContextDefinition">
+          <Property name="NId" kind="Plain" value="PIProcessDefinitionContext" />
+        </LogicalKey>
+      </Property>
+    </Entity>
+    <Entity type="Siemens.SimaticIT.MasterData.BPF_MS.MSModel.DataModel.ProcessContextDefinitionUserField">
+      <Property name="NId" kind="Plain" value="WorkOrderOperationNId" />
+      <Property name="UserFieldValue" kind="Plain" value="" />
+      <Property name="UserFieldType" kind="Plain" value="String" />
+      <Property name="ProcessContextDefinition" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.SimaticIT.MasterData.BPF_MS.MSModel.DataModel.ProcessContextDefinition">
+          <Property name="NId" kind="Plain" value="PIProcessDefinitionContext" />
+        </LogicalKey>
+      </Property>
+    </Entity>
+    <Entity type="Siemens.SimaticIT.MasterData.BPF_MS.MSModel.DataModel.ProcessContextDefinitionUserField">
+      <Property name="NId" kind="Plain" value="TriggeringEntityNId" />
+      <Property name="UserFieldValue" kind="Plain" value="" />
+      <Property name="UserFieldType" kind="Plain" value="String" />
+      <Property name="ProcessContextDefinition" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.SimaticIT.MasterData.BPF_MS.MSModel.DataModel.ProcessContextDefinition">
+          <Property name="NId" kind="Plain" value="PIProcessDefinitionContext" />
+        </LogicalKey>
+      </Property>
+    </Entity>
+    <Entity type="Siemens.SimaticIT.MasterData.BPF_MS.MSModel.DataModel.ProcessContextDefinitionUserField">
+      <Property name="NId" kind="Plain" value="TriggeringEntityRevision" />
+      <Property name="UserFieldValue" kind="Plain" value="" />
+      <Property name="UserFieldType" kind="Plain" value="String" />
+      <Property name="ProcessContextDefinition" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.SimaticIT.MasterData.BPF_MS.MSModel.DataModel.ProcessContextDefinition">
+          <Property name="NId" kind="Plain" value="PIProcessDefinitionContext" />
+        </LogicalKey>
+      </Property>
+    </Entity>
+    <Entity type="Siemens.SimaticIT.MasterData.BPF_MS.MSModel.DataModel.ProcessContextDefinitionUserField">
+      <Property name="NId" kind="Plain" value="TriggeringEntityType" />
+      <Property name="UserFieldValue" kind="Plain" value="" />
+      <Property name="UserFieldType" kind="Plain" value="String" />
+      <Property name="ProcessContextDefinition" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.SimaticIT.MasterData.BPF_MS.MSModel.DataModel.ProcessContextDefinition">
+          <Property name="NId" kind="Plain" value="PIProcessDefinitionContext" />
+        </LogicalKey>
+      </Property>
+    </Entity>
+    <Entity type="Siemens.SimaticIT.MasterData.BPF_MS.MSModel.DataModel.ProcessContextDefinitionUserField">
+      <Property name="NId" kind="Plain" value="TriggeringEntityEquipmentNId" />
+      <Property name="UserFieldValue" kind="Plain" value="" />
+      <Property name="UserFieldType" kind="Plain" value="String" />
+      <Property name="ProcessContextDefinition" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.SimaticIT.MasterData.BPF_MS.MSModel.DataModel.ProcessContextDefinition">
+          <Property name="NId" kind="Plain" value="PIProcessDefinitionContext" />
+        </LogicalKey>
+      </Property>
+    </Entity>
+    <Entity type="Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.DataModel.OperationMaterialSpecificationDirection">
+      <Property name="NId" kind="Plain" value="INPUT" />
+      <Property name="Name" kind="Plain" value="INPUT" />
+      <Property name="Description" kind="Plain" value="INPUT" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.UAPI.MasterData.PICore_MS.MSModel.DataModel.OperationMaterialSpecificationDirection">
+      <Property name="NId" kind="Plain" value="OUTPUT" />
+      <Property name="Name" kind="Plain" value="OUTPUT" />
+      <Property name="Description" kind="Plain" value="OUTPUT" />
+    </Entity>
+  </Section>
+  <Section engineeringLevel="LibraryFunctionalBlock" implementationName="2018-03-26-09-00-00" domainName="ReferenceData">
+    <!-- WorkMaster autonumbering pattern: WM_PIWorkMasterCounter" -->
+    <Entity type="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.NumberingPatternEntity">
+      <Property name="NId" kind="Plain" value="WorkMaster" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.Counter">
+      <Property name="NId" kind="Plain" value="PIWorkMasterCounter" />
+      <Property name="Name" kind="Plain" value="PI Work Master Counter" />
+      <Property name="Description" kind="Plain" value="PI Work Master counter, 9 digit" />
+      <Property name="Seed" kind="Plain" value="1" />
+      <Property name="Increment" kind="Plain" value="1" />
+      <Property name="MaxValue" kind="Plain" value="99999999999" />
+      <Property name="LeadingZeros" kind="Plain" value="True" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.NumberingPattern">
+      <Property name="NId" kind="Plain" value="NId" />
+      <Property name="Name" kind="Plain" value="PI Work Master NId Numbering Pattern" />
+      <Property name="Description" kind="Plain" value="PI Work Master Numbering Pattern: WM_PIWorkMasterCounter" />
+      <Property name="EntityTypeNId" kind="Plain" value="WorkMaster" />
+	    <Property name="DestinationProperty" kind="Plain" value="NId" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.NumberingPatternPart">
+      <Property name="Counter" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.Counter">
+          <Property name="NId" kind="Plain" value="PIWorkMasterCounter" />
+        </LogicalKey>
+      </Property>
+      <Property name="NumberingPattern" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.NumberingPattern">
+          <Property name="NId" kind="Plain" value="NId" />
+          <Property name="EntityTypeNId" kind="Plain" value="WorkMaster" />
+        </LogicalKey>
+      </Property>
+      <Property name="Sequence" kind="Plain" value="2" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.NumberingPatternPart">
+      <Property name="Constant" kind="Plain" value="WM_" />
+      <Property name="Counter" kind="SingleReferenceToParent" />
+      <Property name="NumberingPattern" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.NumberingPattern">
+          <Property name="NId" kind="Plain" value="NId" />
+          <Property name="EntityTypeNId" kind="Plain" value="WorkMaster" />
+        </LogicalKey>
+      </Property>
+      <Property name="Sequence" kind="Plain" value="1" />
+    </Entity>
+    <!-- WorkMasterOperation autonumbering pattern: PIWorkMasterOperationCounter_WorkMaster.NId" -->
+    <Entity type="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.NumberingPatternEntity">
+      <Property name="NId" kind="Plain" value="WorkMasterOperation" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.Counter">
+      <Property name="NId" kind="Plain" value="PIWorkMasterOperationCounter" />
+      <Property name="Name" kind="Plain" value="PI Work Master Operation Counter" />
+      <Property name="Description" kind="Plain" value="PI Work Master Operation counter, 9 digit" />
+      <Property name="Seed" kind="Plain" value="1" />
+      <Property name="Increment" kind="Plain" value="1" />
+      <Property name="MaxValue" kind="Plain" value="999999999" />
+      <Property name="LeadingZeros" kind="Plain" value="True" />
+      <Property name="IsHidden" kind="Plain" value="False" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.NumberingPattern">
+      <Property name="NId" kind="Plain" value="NId" />
+      <Property name="Name" kind="Plain" value="PI Work Master Operation NId Numbering Pattern" />
+      <Property name="Description" kind="Plain" value="PI Work Master Operation Numbering Pattern: PIWorkMasterCounter_WorkMaster.NId" />
+      <Property name="EntityTypeNId" kind="Plain" value="WorkMasterOperation" />
+	    <Property name="DestinationProperty" kind="Plain" value="NId" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.NumberingPatternPart">
+      <Property name="Counter" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.Counter">
+          <Property name="NId" kind="Plain" value="PIWorkMasterOperationCounter" />
+        </LogicalKey>
+      </Property>
+      <Property name="NumberingPattern" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.NumberingPattern">
+          <Property name="NId" kind="Plain" value="NId" />
+          <Property name="EntityTypeNId" kind="Plain" value="WorkMasterOperation" />
+        </LogicalKey>
+      </Property>
+      <Property name="Sequence" kind="Plain" value="1" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.NumberingPatternPart">
+      <Property name="Constant" kind="Plain" value="_" />
+      <Property name="Counter" kind="SingleReferenceToParent" />
+      <Property name="NumberingPattern" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.NumberingPattern">
+          <Property name="NId" kind="Plain" value="NId" />
+          <Property name="EntityTypeNId" kind="Plain" value="WorkMasterOperation" />
+        </LogicalKey>
+      </Property>
+      <Property name="Sequence" kind="Plain" value="2" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.NumberingPatternPart">
+      <Property name="ParameterNId" kind="Plain" value="WorkMasterNId" />
+      <Property name="Counter" kind="SingleReferenceToParent" />
+      <Property name="NumberingPattern" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.NumberingPattern">
+          <Property name="NId" kind="Plain" value="NId" />
+          <Property name="EntityTypeNId" kind="Plain" value="WorkMasterOperation" />
+        </LogicalKey>
+      </Property>
+      <Property name="Sequence" kind="Plain" value="3" />
+    </Entity>
+  </Section>
+  <Section engineeringLevel="LibraryFunctionalBlock" implementationName="2018-11-28-09-00-00" domainName="MasterData">
+    <Entity type="Siemens.SimaticIT.MasterData.TSK_MS.MSModel.DataModel.TaskContextDefinition">
+      <Property name="NId" kind="Plain" value="Common" />
+      <Property name="Name" kind="Plain" value="Common task context" />
+      <Property name="Description" kind="Plain" value="Common task context definition provided by the standard." />
+      <Property name="ContextEntityType" kind="Plain" value="Siemens.SimaticIT.OperationalData.TSK_OP.OPModel.DataModel.ITaskContext" />
+      <Property name="TaskDefinitions" kind="ManyToManyReference" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.MasterData.TSK_MS.MSModel.DataModel.TaskContextDefinitionUserField">
+      <Property name="NId" kind="Plain" value="Activate_Automatically" />
+      <Property name="UserFieldValue" kind="Plain" value="false" />
+      <Property name="UserFieldType" kind="Plain" value="Bool" />
+      <Property name="TaskContextDefinition" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.SimaticIT.MasterData.TSK_MS.MSModel.DataModel.TaskContextDefinition">
+          <Property name="NId" kind="Plain" value="Common" />
+        </LogicalKey>
+      </Property>
+    </Entity>
+    <Entity type="Siemens.SimaticIT.MasterData.TSK_MS.MSModel.DataModel.TaskContextDefinitionUserField">
+      <Property name="NId" kind="Plain" value="Complete_Automatically" />
+      <Property name="UserFieldValue" kind="Plain" value="false" />
+      <Property name="UserFieldType" kind="Plain" value="Bool" />
+      <Property name="TaskContextDefinition" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.SimaticIT.MasterData.TSK_MS.MSModel.DataModel.TaskContextDefinition">
+          <Property name="NId" kind="Plain" value="Common" />
+        </LogicalKey>
+      </Property>
+    </Entity>
+    <Entity type="Siemens.SimaticIT.MasterData.TSK_MS.MSModel.DataModel.TaskContextDefinitionUserField">
+        <Property name="NId" kind="Plain" value="Start_Automatically" />
+        <Property name="UserFieldValue" kind="Plain" value="false" />
+        <Property name="UserFieldType" kind="Plain" value="Bool" />
+        <Property name="TaskContextDefinition" kind="SingleReferenceToParent">
+          <LogicalKey entityType="Siemens.SimaticIT.MasterData.TSK_MS.MSModel.DataModel.TaskContextDefinition">
+            <Property name="NId" kind="Plain" value="Common" />
+          </LogicalKey>
+        </Property>
+     </Entity>
+    <Entity type="Siemens.SimaticIT.MasterData.TSK_MS.MSModel.DataModel.TaskContextDefinitionUserField">
+      <Property name="NId" kind="Plain" value="Assign_From_Equipment_Requirement" />
+      <Property name="UserFieldValue" kind="Plain" value="false" />
+      <Property name="UserFieldType" kind="Plain" value="Bool" />
+      <Property name="TaskContextDefinition" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.SimaticIT.MasterData.TSK_MS.MSModel.DataModel.TaskContextDefinition">
+          <Property name="NId" kind="Plain" value="Common" />
+        </LogicalKey>
+      </Property>
+    </Entity>
+    <Entity type="Siemens.SimaticIT.MasterData.TSK_MS.MSModel.DataModel.TaskContextDefinitionUserField">
+      <Property name="NId" kind="Plain" value="Required_Equipment_Tag" />
+      <Property name="UserFieldValue" kind="Plain" value="" />
+      <Property name="UserFieldType" kind="Plain" value="String" />
+      <Property name="TaskContextDefinition" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.SimaticIT.MasterData.TSK_MS.MSModel.DataModel.TaskContextDefinition">
+          <Property name="NId" kind="Plain" value="Common" />
+        </LogicalKey>
+      </Property>
+    </Entity>
+    <Entity type="Siemens.SimaticIT.MasterData.TSK_MS.MSModel.DataModel.TaskContextDefinitionUserField">
+      <Property name="NId" kind="Plain" value="Update_Parameter_Requirements_Actual_Value" />
+      <Property name="UserFieldValue" kind="Plain" value="false" />
+      <Property name="UserFieldType" kind="Plain" value="Bool" />
+      <Property name="TaskContextDefinition" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.SimaticIT.MasterData.TSK_MS.MSModel.DataModel.TaskContextDefinition">
+          <Property name="NId" kind="Plain" value="Common" />
+        </LogicalKey>
+      </Property>
+    </Entity>
+    <Entity type="Siemens.SimaticIT.MasterData.TSK_MS.MSModel.DataModel.TaskContextDefinitionUserField">
+      <Property name="NId" kind="Plain" value="Set_Operation_Actual_Equipment" />
+      <Property name="UserFieldValue" kind="Plain" value="false" />
+      <Property name="UserFieldType" kind="Plain" value="Bool" />
+      <Property name="TaskContextDefinition" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.SimaticIT.MasterData.TSK_MS.MSModel.DataModel.TaskContextDefinition">
+          <Property name="NId" kind="Plain" value="Common" />
+        </LogicalKey>
+      </Property>
+    </Entity>
+    <Entity type="Siemens.SimaticIT.MasterData.TSK_MS.MSModel.DataModel.TaskContextDefinitionUserField">
+      <Property name="NId" kind="Plain" value="Update_Task_Output_Parameters_By_Equipment" />
+      <Property name="UserFieldValue" kind="Plain" value="false" />
+      <Property name="UserFieldType" kind="Plain" value="Bool" />
+      <Property name="TaskContextDefinition" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.SimaticIT.MasterData.TSK_MS.MSModel.DataModel.TaskContextDefinition">
+          <Property name="NId" kind="Plain" value="Common" />
+        </LogicalKey>
+      </Property>
+    </Entity>
+  </Section>
+</Sections>

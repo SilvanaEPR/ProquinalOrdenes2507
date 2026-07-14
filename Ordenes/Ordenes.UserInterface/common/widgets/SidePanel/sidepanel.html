@@ -1,0 +1,49 @@
+<div class="side-panel-container sit-side-panel">
+    <div class="side-panel-top">
+        <div class="side-panel-header">
+            <div class="side-panel-header-text">{{sidepanelCtrl.title}}</div>
+            <div style="display:flex; align-items:center">
+                <button type="button" class="side-panel-button-resize" ng-if="!sidepanelCtrl.isMinimizeDisabled && sidepanelCtrl.iscollapseButtonShown && sidepanelCtrl.isContentMinimizable" ng-click="sidepanelCtrl.toggleSidePanelContent()"
+                        title="{{sidepanelCtrl.collapseButtonTooltip}}">
+                    <span ng-show="!sidepanelCtrl.isMaximized" sit-class="svg-icon" sit-mom-icon="sidepanelCtrl.maximizePanel" aria-hidden="true" ng-class="{momIcon: sidepanelCtrl.maximizePanel !== null }"></span>
+                    <span ng-show="sidepanelCtrl.isMaximized" sit-class="svg-icon" sit-mom-icon="sidepanelCtrl.minimizePanel" aria-hidden="true" ng-class="{momIcon: sidepanelCtrl.minimizePanel !== null }"></span>
+                </button>
+                <button type="button" class="side-panel-button-close" ng-show="sidepanelCtrl.isCloseButtonShown" ng-click="sidepanelCtrl.closeSidepanel()" title="{{sidepanelCtrl.closeButtonTooltip}}">
+                    <span class="fa fa-times side-panel-close-img" sit-class="svg-icon" sit-mom-icon="sidepanelCtrl.closePanel" aria-hidden="true" ng-class="{momIcon: sidepanelCtrl.closePanel !== null }"></span>
+                </button>
+            </div>
+        </div>
+
+        <div class="side-panel-commandbar-section" ng-class="{'sidepanel-contextual-command':(sidepanelCtrl.commandButtons && sidepanelCtrl.commandButtons.length === 0)}" 
+             ng-if="(sidepanelCtrl.commandButtons && sidepanelCtrl.commandButtons.length !== 0)">
+            <sit-command-bar sit-commands="sidepanelCtrl.ContextualCommandButtons" sit-layout="contextual"></sit-command-bar>
+        </div>
+       
+    </div>
+
+    <div class="side-panel-content" ng-init="sidepanelCtrl.onLoad()" ng-class="{contentHeight:'content-height',contentCommandHeight:'content-command-height',contentActionHeight:'content-action-height',contentButtonHeight:'content-button-height'}[sidepanelCtrl.contentClassType]">
+        <div class="side-panel-notification-area" ng-repeat="message in sidepanelCtrl.messages | filter : { text : '!!' }" ng-if="message.text.length !== 0">
+            <p class="side-panel-message" ng-class="{
+                   'admonition admonition-warning':message.type=='warning',
+                   'admonition admonition-info':message.type=='info'}">
+                <span>{{message.text}}</span>
+            </p>
+        </div>
+        <div class="side-panel-custom" ng-if="sidepanelCtrl.isLoaded" ng-transclude></div>
+    </div>
+
+    <div class="side-panel-bottom" ng-if="(sidepanelCtrl.actionButtons && sidepanelCtrl.actionButtons.length !== 0)">
+        <ul class="side-panel-actions">
+            <li ng-repeat="action in sidepanelCtrl.getActiveActionButtons()">
+                <div ng-if="action.visible">
+                    <button data-internal-type="command-button-command-bar" ng-class="{'last-action-button primary-dialog-button':($first && sidepanelCtrl.actionButtons.length>1)}"
+                            class="bottom-action-button pl-button-dialog"
+                            ng-click="action.onClick()" title="{{action.tooltip || action.label}}" ng-disabled="!action.enabled">
+                        <span data-internal-type="text-container">{{action.label}}</span>
+                    </button>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+</div>

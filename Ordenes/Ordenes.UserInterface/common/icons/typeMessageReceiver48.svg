@@ -1,0 +1,40 @@
+<svg id="Livello_3" data-name="Livello 3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="linear-gradient" x1="-15.045" y1="805.589" x2="9.487" y2="826.256" gradientTransform="translate(31.431 -1403.87) scale(1.89 1.74)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f3f3f3"/>
+      <stop offset="0.5" stop-color="#cdcccc"/>
+      <stop offset="0.63" stop-color="#c8c7c7"/>
+      <stop offset="0.779" stop-color="#bababa"/>
+      <stop offset="0.938" stop-color="#a2a2a1"/>
+      <stop offset="0.99" stop-color="#989898"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="5.88" y1="21.774" x2="24.99" y2="7.333" gradientTransform="matrix(1, 0, 0, -1, 0, 50.579)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#73b4c8"/>
+      <stop offset="0.175" stop-color="#6aaec3"/>
+      <stop offset="0.457" stop-color="#529eb5"/>
+      <stop offset="0.809" stop-color="#2c839f"/>
+      <stop offset="1" stop-color="#147391"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="-95.647" y1="-552.952" x2="-83.78" y2="-561.645" gradientTransform="matrix(1.413, 0, 0, -1.442, 162.032, -763.774)" xlink:href="#linear-gradient-2"/>
+    <linearGradient id="linear-gradient-4" x1="69.632" y1="-37.041" x2="78.734" y2="-46.143" gradientTransform="matrix(0.82, 0, 0, -0.82, -23.58, -8.56)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#bebebe"/>
+    </linearGradient>
+  </defs>
+  <g id="g901">
+    <path id="rect13-9-3" d="M1,1H46V27H1Z" stroke="#474747" stroke-miterlimit="10" fill="url(#linear-gradient)"/>
+    <path id="path15-5" d="M4.183,3.959l15,9.824A7.667,7.667,0,0,0,27.5,13.7L41.644,3.959" fill="none" stroke="#6f6f6f" stroke-miterlimit="10"/>
+    <path id="line17-6" d="M19.259,13.873,4.183,22.822" fill="none" stroke="#6f6f6f" stroke-miterlimit="10"/>
+    <path id="line19-5" d="M41.645,22.822,27.338,13.9" fill="none" stroke="#6f6f6f" stroke-miterlimit="10"/>
+    <path id="path79" d="M24.549,38l-6.5-6.5v3.476c-.322.068-.615.128-.945.174-5.168.717-7.973-.9-11.1-4.571,1.765,6.4,5.436,10.348,12.049,10.33V44.5Z" stroke="#464646" stroke-linejoin="round" fill="url(#linear-gradient-2)"/>
+    <g id="g1002">
+      <path id="path938" d="M27.3,41.825,27.344,36l.407-.848A8.136,8.136,0,0,1,30.2,32.338l.506-.269,1.123.539a10.842,10.842,0,0,0,5.219,1.174,11.54,11.54,0,0,0,5.488-1.192l1.106-.545.76.552a5.7,5.7,0,0,1,2.061,2.521l.494,1.021V47.667H27.263Z" fill="url(#linear-gradient-3)"/>
+      <g id="g994">
+        <path id="path40-5" d="M47.09,47.59V37.749A6.531,6.531,0,0,0,43.149,32a10.018,10.018,0,0,1-11.8,0,6.531,6.531,0,0,0-3.941,5.75V47.59Z" fill="none" stroke="#464646" stroke-miterlimit="10" stroke-width="0.82"/>
+        <path id="path27-9" d="M42.17,25.112c0,2.775-2.2,6.458-4.92,6.458s-4.92-3.683-4.92-6.458a4.921,4.921,0,1,1,9.84,0Z" stroke="#464646" stroke-miterlimit="10" stroke-width="0.82" fill="url(#linear-gradient-4)"/>
+        <path id="line42-7" d="M32.33,47.18v-8.2" fill="none" stroke="#6e6e6e" stroke-miterlimit="10" stroke-width="0.82"/>
+        <path id="line44-0" d="M42.17,47.18v-8.2" fill="none" stroke="#6e6e6e" stroke-miterlimit="10" stroke-width="0.82"/>
+      </g>
+    </g>
+  </g>
+</svg>

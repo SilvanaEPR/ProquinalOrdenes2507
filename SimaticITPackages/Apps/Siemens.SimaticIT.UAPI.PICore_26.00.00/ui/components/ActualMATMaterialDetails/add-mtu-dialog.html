@@ -1,0 +1,20 @@
+<div style="width:900px; height: 550px">
+
+    <div id="new-mtu-container" style="padding-top: 20px;" class="clear-before sidepanel-container-height">       
+        <div style="padding-top: 20px;">
+	        <div>
+	            <sit-pi-table sit-pi-table-id="mtuCatalog" sit-config="Dialog.templatedata.mtuCatalogTableConfig" sit-pi-config="Dialog.templatedata.mtuCatalogDataConfig" sit-view-mode="grid"></sit-pi-table>
+	        </div>
+	        <div ng-show='Dialog.templatedata.mtuQtyPropertyVisible'>
+	        	<sit-property-grid sit-id="editQtyPropertyGrid"
+                               sit-layout="Horizontal"
+                               sit-type="Fixed"
+                               sit-mode="edit"
+                               sit-columns="1"
+                               sit-data="Dialog.templatedata.mtuQtyProperty.Properties">
+            	</sit-property-grid>
+	        </div>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--created on Monday, 23 July 2018 2:04:24 PM (UTC)-->
+<!--GUID values are formatted like '0b0e9810-096f-4864-b8e0-0dca91f6ff0f'; ALL OTHER VALUES FOLLOW .NET System.Globalization.CultureInfo.InvariantCulture FORMAT-->
+<Sections>
+  <Section engineeringLevel="LibraryFunctionalBlock" implementationName="2020-03-17-17-12-00" domainName="ReferenceData">
+    <!-- Numbering pattern for PI MTU NID -->
+    <Entity type="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.NumberingPatternEntity">
+      <Property name="NId" kind="Plain" value="Material.MaterialTrackingUnit" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.NumberingPatternEntityInfo">
+      <Property name="AppName" kind="Plain" value="Material" />
+      <Property name="EntityName" kind="Plain" value="MaterialTrackingUnit" />
+      <Property name="EntityProperty" kind="Plain" value="NId" />
+      <Property name="NumberingPatternEntityNId" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.NumberingPatternEntity">
+          <Property name="NId" kind="Plain" value="Material.MaterialTrackingUnit" />
+        </LogicalKey>
+      </Property>
+    </Entity>
+    <Entity type="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.NumberingPattern">
+      <Property name="NId" kind="Plain" value="NId" />
+      <Property name="Name" kind="Plain" value="PI Material Tracking Unit NId Numbering Pattern" />
+      <Property name="Description" kind="Plain" value="PI Material Tracking Unit Numbering Pattern: MTU_PIMTUCounter" />
+      <Property name="EntityTypeNId" kind="Plain" value="Material.MaterialTrackingUnit" />
+      <Property name="DestinationProperty" kind="Plain" value="NId" />
+    </Entity>
+
+    <Entity type="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.NumberingPatternEntity">
+      <Property name="NId" kind="Plain" value="Material.MaterialTrackingUnitAggregate" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.NumberingPattern">
+      <Property name="NId" kind="Plain" value="NId" />
+      <Property name="Name" kind="Plain" value="PI Material Tracking Unit Aggregate NId Numbering Pattern" />
+      <Property name="Description" kind="Plain" value="PI Material Tracking Unit Aggregate Numbering Pattern: MTUA_PIMTUACounter" />
+      <Property name="EntityTypeNId" kind="Plain" value="Material.MaterialTrackingUnitAggregate" />
+      <Property name="DestinationProperty" kind="Plain" value="NId" />
+    </Entity>
+    <!-- Numbering Pattern Parts for PI MTU -->
+    <Entity type="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.NumberingPatternPart">
+      <Property name="Counter" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.Counter">
+          <Property name="NId" kind="Plain" value="PIMTUCounter" />
+        </LogicalKey>
+      </Property>
+      <Property name="NumberingPattern" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.NumberingPattern">
+          <Property name="NId" kind="Plain" value="NId" />
+          <Property name="EntityTypeNId" kind="Plain" value="Material.MaterialTrackingUnit" />
+        </LogicalKey>
+      </Property>
+      <Property name="Sequence" kind="Plain" value="2" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.NumberingPatternPart">
+      <Property name="Constant" kind="Plain" value="MTU_" />
+      <Property name="Counter" kind="SingleReferenceToParent" />
+      <Property name="NumberingPattern" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.NumberingPattern">
+          <Property name="NId" kind="Plain" value="NId" />
+          <Property name="EntityTypeNId" kind="Plain" value="Material.MaterialTrackingUnit" />
+        </LogicalKey>
+      </Property>
+      <Property name="Sequence" kind="Plain" value="1" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.Counter">
+      <Property name="NId" kind="Plain" value="PIMTUCounter" />
+      <Property name="Name" kind="Plain" value="PI Material Tracking Unit Counter" />
+      <Property name="Description" kind="Plain" value="PI Material Tracking Unit counter, 9 digit" />
+      <Property name="Seed" kind="Plain" value="1" />
+      <Property name="Increment" kind="Plain" value="1" />
+      <Property name="MaxValue" kind="Plain" value="99999999999" />
+      <Property name="LeadingZeros" kind="Plain" value="True" />
+      <Property name="TimeBasedReset" kind="Plain" value="NULL" />
+      <Property name="IsHidden" kind="Plain" value="False" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.NumberingPatternEntityInfo">
+      <Property name="AppName" kind="Plain" value="Material" />
+      <Property name="EntityName" kind="Plain" value="MaterialTrackingUnit" />
+      <Property name="EntityProperty" kind="Plain" value="NId" />
+      <Property name="NumberingPatternEntityNId" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.NumberingPatternEntity">
+          <Property name="NId" kind="Plain" value="Material.MaterialTrackingUnit" />
+        </LogicalKey>
+      </Property>
+    </Entity>
+    <!-- Numbering Pattern Parts for PI MTU -->
+    <Entity type="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.NumberingPatternPart">
+      <Property name="Counter" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.Counter">
+          <Property name="NId" kind="Plain" value="PIMTUACounter" />
+        </LogicalKey>
+      </Property>
+      <Property name="NumberingPattern" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.NumberingPattern">
+          <Property name="NId" kind="Plain" value="NId" />
+          <Property name="EntityTypeNId" kind="Plain" value="Material.MaterialTrackingUnitAggregate" />
+        </LogicalKey>
+      </Property>
+      <Property name="Sequence" kind="Plain" value="2" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.NumberingPatternPart">
+      <Property name="Constant" kind="Plain" value="MTUA_" />
+      <Property name="Counter" kind="SingleReferenceToParent" />
+      <Property name="NumberingPattern" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.NumberingPattern">
+          <Property name="NId" kind="Plain" value="NId" />
+          <Property name="EntityTypeNId" kind="Plain" value="Material.MaterialTrackingUnitAggregate" />
+        </LogicalKey>
+      </Property>
+      <Property name="Sequence" kind="Plain" value="1" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.Counter">
+      <Property name="NId" kind="Plain" value="PIMTUACounter" />
+      <Property name="Name" kind="Plain" value="PI Material Tracking Unit Aggregate Counter" />
+      <Property name="Description" kind="Plain" value="PI Material Tracking Unit Aggregate counter, 9 digit" />
+      <Property name="Seed" kind="Plain" value="1" />
+      <Property name="Increment" kind="Plain" value="1" />
+      <Property name="MaxValue" kind="Plain" value="99999999999" />
+      <Property name="LeadingZeros" kind="Plain" value="True" />
+      <Property name="TimeBasedReset" kind="Plain" value="NULL" />
+      <Property name="IsHidden" kind="Plain" value="False" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.NumberingPatternEntityInfo">
+      <Property name="AppName" kind="Plain" value="Material" />
+      <Property name="EntityName" kind="Plain" value="MaterialTrackingUnitAggregate" />
+      <Property name="EntityProperty" kind="Plain" value="NId" />
+      <Property name="NumberingPatternEntityNId" kind="SingleReferenceToParent">
+        <LogicalKey entityType="Siemens.SimaticIT.ReferenceData.UDM_RF.RFModel.DataModel.NumberingPatternEntity">
+          <Property name="NId" kind="Plain" value="Material.MaterialTrackingUnit" />
+        </LogicalKey>
+      </Property>
+    </Entity>
+  </Section>
+  <Section engineeringLevel="LibraryFunctionalBlock" implementationName="2020-03-17-17-12-00" domainName="OperationalData">
+    <!-- Operation Types -->
+    <Entity type="Siemens.SimaticIT.UAPI.OperationalData.PITnT_OP.OPModel.DataModel.MTUOperationType">
+      <Property name="NId" kind="Plain" value="Split" />
+      <Property name="Name" kind="Plain" value="Split" />
+      <Property name="Description" kind="Plain" value="Split" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.UAPI.OperationalData.PITnT_OP.OPModel.DataModel.MTUOperationType">
+      <Property name="NId" kind="Plain" value="Consume" />
+      <Property name="Name" kind="Plain" value="Consume" />
+      <Property name="Description" kind="Plain" value="Consume" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.UAPI.OperationalData.PITnT_OP.OPModel.DataModel.MTUOperationType">
+      <Property name="NId" kind="Plain" value="Supply" />
+      <Property name="Name" kind="Plain" value="Supply" />
+      <Property name="Description" kind="Plain" value="Supply" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.UAPI.OperationalData.PITnT_OP.OPModel.DataModel.MTUOperationType">
+      <Property name="NId" kind="Plain" value="Release" />
+      <Property name="Name" kind="Plain" value="Release" />
+      <Property name="Description" kind="Plain" value="Release" />
+    </Entity>
+    <Entity type="Siemens.SimaticIT.UAPI.OperationalData.PITnT_OP.OPModel.DataModel.MTUOperationType">
+      <Property name="NId" kind="Plain" value="CreateSample" />
+      <Property name="Name" kind="Plain" value="CreateSample" />
+      <Property name="Description" kind="Plain" value="CreateSample" />
+    </Entity>
+  </Section>
+</Sections>

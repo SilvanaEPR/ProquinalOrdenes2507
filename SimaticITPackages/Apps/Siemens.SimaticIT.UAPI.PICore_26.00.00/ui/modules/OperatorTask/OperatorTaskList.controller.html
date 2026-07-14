@@ -1,0 +1,80 @@
+﻿<!-- This style section has been added to overwrite some platform style
+    issues for process.
+    SHOULD NOT BE USED FOR OTHER PURPOSE-->
+<style type="text/css">
+    .side-panel-large-layout {
+        width: 75% !important;
+        margin-right: 86px !important;
+    }
+    .canvas-ui-view-margin-right {
+        margin-right: 86px !important;
+    }
+    .expr-padding-right {
+        padding-right: 86px !important;
+    }
+    .property-area-container-margin-right {
+        margin-right: 86px;
+    }
+    /*2 following lines have been added because some containers inside the icv are not resizable anymore*/
+    div[data-internal-type="tileViewContainerDiv"] {
+        height: calc(100% - 38px) !important;
+    }
+    div[data-internal-type="tileContainerDiv"] {
+        height: 100% !important;
+    }
+
+    .tile .wide-item-text .wide-item-title {
+        height: 28px;
+    }
+    .ngTopPanel {
+        z-index: 0;
+    }
+    div[name^="siemensSimaticitWitaskWorkinstructioncomponent"] {
+        left: 8px !important;
+    }
+
+    .pi-ux-shopfloor .tile .wide-item-text .wide-item-description-single {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: block;
+    }
+
+    @media screen and (max-width: 700px) {
+        .pi-ux-shopfloor #itemCollectionViewerContainer #gridViewDiv {
+            height: calc(100% + -150px) !important;
+        }
+    }
+</style>
+<div id="OperatorTaskListContainer" class="pi-ux-shopfloor content-area" style="height: 100%" ng-show="!vm.isWorkProcessVisible">
+    <div class="pi-component-title" ng-show="vm.isTitleVisible">{{vm.operatorTaskListTitle}}</div>
+    <div class="otl-flex-row">
+        <div id="globalLeftSideComponent"></div>
+        <div class="otl-flex-column">
+            <div id="Header" class="cockpit-header-container">
+                <div id="taskHeaderComponent"></div>
+            </div>
+            <div class="otl-flex-row">
+                <div id="leftSideTaskComponent"></div>
+                <div class="otl-flex-column">
+                    <pi-optsk-tags class="pi-otl-tag-container" on-register-api="vm.onTaskTagsRegisterApi(api)" on-tag-clicked="vm.onTaskTagClicked(tag)"></pi-optsk-tags>
+                    <div style="flex-grow: 1;height: 100%;margin: 16px 16px 0 16px;overflow: hidden;">
+                        <pi-optsk-task-item-collection-viewer multi-select="false" on-register-api="vm.onTaskICVRegisterApi(api)"
+                                                              on-row-selection-changed="vm.onTaskICVSelectionChanged(rows, row)" on-tile-action-clicked="vm.onTaskTileActionClicked(command)"></pi-optsk-task-item-collection-viewer>
+                    </div>
+                    <pi-optsk-detail on-register-api="vm.onTaskDetailRegisterApi(api)" ng-if="vm.displayStandardTaskDetail" on-operation-clicked="vm.onOperationClicked()"></pi-optsk-detail>
+                    <div id="taskDetailComponent"></div>
+                    <div id="taskFooterComponent"></div>
+                </div>
+                <div id="taskRightSideComponent"></div>
+                <div style="vertical-align:top;height:100%;margin:0 0px 0 0">
+                    <!-- ng-if="!vm.isWorkProcessVisible" has benn put as workaround for the display of the workprocess (conflict with 2 commandbar -->
+                    <pi-optsk-command-bar ng-if="!vm.isWorkProcessVisible" class="pi-otl-cmd-bar" on-register-api="vm.onTaskCBRegisterApi(api)" on-command-clicked="vm.onTaskCBClicked(command)"></pi-optsk-command-bar>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div ng-if="vm.isWorkProcessVisible" style="width: 101%;">
+    <bpmn-runtime work-process-id="vm.workProcessId"></bpmn-runtime>
+</div>

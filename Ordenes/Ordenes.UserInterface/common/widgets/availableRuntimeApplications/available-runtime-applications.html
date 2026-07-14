@@ -1,0 +1,20 @@
+<div style="height:100%; width:100%">
+    <div ng-if="runtimeAppList && runtimeAppList.length > 0">
+        <div class="admonition admonition-info">
+            <span>{{ message }}</span>
+        </div>
+
+        <div ng-repeat="plant in runtimeAppList">
+            <sit-generic-accordion sit-options="accordion" style="height:100%; width:100%;">
+                <sit-generic-accordion-panel sit-options="plant.accordionConfig">
+                    <sit-item-tile style="padding-right:10px;" ng-repeat="app in plant.UIApplications" sit-tile-content="app.tileContent"
+                                   sit-tile-template="customTemplate"></sit-item-tile>
+                </sit-generic-accordion-panel>
+            </sit-generic-accordion>
+        </div>
+    </div>
+
+    <div ng-if="!runtimeAppList || runtimeAppList.length == 0">
+        <span>{{ noRuntimeApplicationsMessage }}</span>
+    </div>
+</div>

@@ -1,0 +1,20 @@
+{
+  "name": "Siemens.SimaticIT.UAPI.PICore.ProcessDefinitionManagement",
+  "type": "standard",
+  "title": "ProcessDefinitionManagement",
+  "icon": "svg typeWorkflowProcess48",
+  "functionalBlock": "Siemens.SimaticIT.UAPI.PICore",
+  "dependencies": [],
+  "states": [
+    {
+      "id": "home.Siemens_SimaticIT_UAPI_PICore_ProcessDefinitionManagement_ProcessDefinitionSelection",
+      "title": "Process Definition Selection",
+      "icon": "svg typeWorkflowProcess48",
+      "securable": true,
+      "roles": [],
+      "header": "picore.titles.processDefinitionManagementHeader"
+    }
+  ],
+  "manifestVersion": "01.01.00",
+  "header": "picore.titles.processDefinitionManagementHeader"
+}

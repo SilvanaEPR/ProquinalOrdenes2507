@@ -1,0 +1,755 @@
+﻿<?xml version="1.0" encoding="utf-8"?><projectmanifest>
+  <header>
+    <manifestversion>11.0</manifestversion>
+    <platformversion>11.0</platformversion>
+    <type>Library</type>
+    <name>Siemens.SimaticIT.EQU_OP</name>
+    <shortname>EQU_OP</shortname>
+    <description>Equipment Operational Data Domain Functional Block</description>
+    <version>08.04.00</version>
+    <companyname>Siemens.SimaticIT</companyname>
+    <author>Siemens.SimaticIT</author>
+    <hash>5qaY+lqvK8IEI0PUSCM/uNxeK+KFlUKC+PnCxzKSUUE=</hash>
+    <modelHash>BIBzrEgTcsqs7Gk0nmir+CcF1Bt6OhE3T5z0+LOO4ys=</modelHash>
+    <modelHashSections>
+      <modelHashSection>
+        <name>projectConfigModelHash</name>
+        <hash>UgYCkycbElKaN3Lp58LIMksivxg18k5947zaemm2a8c=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>dataModelHash</name>
+        <hash>kRQn/m+hhqXy+mk9DfZZb+XjvV6BzIwBwXklU+p8Scc=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>commandModelHash</name>
+        <hash>qwXGGZqYXQT3CQwc3qRLxJePuMRG8JEWYebMTX4ofIs=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>aliasModelHash</name>
+        <hash>FCE0KMXJjmDlnki7ue9cotrur1tAAXlmG5Tm782yrrs=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>eventModelHash</name>
+        <hash>zsVK577e/FCBveSKMN7RCYYY1fRmmhA5ME4JVvp5Hmc=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>typeModelHash</name>
+        <hash>1pCUQMeMV1zI9wPwd+zPXfSRUhyKxTb/4j3YyV+SOBI=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>securityModelHash</name>
+        <hash>HBCAwH1bPzPLFZ0nja4tQ6QtcIjsQ44hwxLWV6Kg8e4=</hash>
+      </modelHashSection>
+    </modelHashSections>
+    <uiHash>na</uiHash>
+    <canbeextended>false</canbeextended>
+    <domain>OperationalData</domain>
+  </header>
+  <reference>
+    <functionalblocks>
+      <functionalblock>
+        <name>Siemens.SimaticIT.UDM_RF</name>
+        <version>07.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.EQU_MS</name>
+        <version>08.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+    </functionalblocks>
+    <extensions></extensions>
+  </reference>
+  <artifacts>
+    <commands><command>
+                        <name>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.Commands.CreateEquipment</name>
+                        <shortname>CreateEquipment</shortname>
+                        <description>Creates an instance of Equipment, starting from the specified Equipment Configuration. One instance can be created from each Equipment Configuration.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.Commands.CreateEquipmentHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.EQU_OP.EQU_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.Commands.DeleteEquipment</name>
+                        <shortname>DeleteEquipment</shortname>
+                        <description>Deletes the Equipment Configuration indentified by the id passed as input, along with its Equipment instance, if one has been created. </description>
+                        <assembly>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.Commands.DeleteEquipmentHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.EQU_OP.EQU_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.Commands.ForceEquipmentStatus</name>
+                        <shortname>ForceEquipmentStatus</shortname>
+                        <description>Sets the status of the Equipment, without checking the validity of the transition.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.Commands.ForceEquipmentStatusHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.EQU_OP.EQU_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.Commands.SetEquipmentStatus</name>
+                        <shortname>SetEquipmentStatus</shortname>
+                        <description>Sets the status of the Equipment, checking the validity of the transition.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.Commands.SetEquipmentStatusHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.EQU_OP.EQU_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.Commands.UpdateEquipment</name>
+                        <shortname>UpdateEquipment</shortname>
+                        <description>Updates an existing Equipment instance. The Equipment is identified by the Equipment Configuration Id, starting from which it has been created.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.Commands.UpdateEquipmentHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.EQU_OP.EQU_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.Commands.UpdateEquipmentProperty</name>
+                        <shortname>UpdateEquipmentProperty</shortname>
+                        <description>Updates the value of an Equipment Property.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.Commands.UpdateEquipmentPropertyHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.EQU_OP.EQU_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.Commands.FreezeEquipment</name>
+                        <shortname>FreezeEquipment</shortname>
+                        <description>Configures the Equipment to be read-only by setting the **IsFrozen** attribute to True. The Equipment is identified by the Equipment Configuration Id, starting from which it has been created.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.Commands.FreezeEquipmentHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.EQU_OP.EQU_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.Commands.UnfreezeEquipment</name>
+                        <shortname>UnfreezeEquipment</shortname>
+                        <description>Removes the read-only setting from the Equipment by setting the **IsFrozen** attribute to False. The Equipment is identified by the Equipment Configuration Id, starting from which it has been created.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.Commands.UnfreezeEquipmentHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.EQU_OP.EQU_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.Commands.UpdateEquipmentGroup</name>
+                        <shortname>UpdateEquipmentGroup</shortname>
+                        <description>Synchronizes the Equipment Group with the Equipment Group Configuration.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.Commands.UpdateEquipmentGroupHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.EQU_OP.EQU_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.Commands.UpdateEquipmentGraphNode</name>
+                        <shortname>UpdateEquipmentGraphNode</shortname>
+                        <description>Synchronizes the Equipment Graph Node with the Equipment Graph Node Configuration.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.Commands.UpdateEquipmentGraphNodeHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.EQU_OP.EQU_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.Commands.UpdateEquipmentGraphLink</name>
+                        <shortname>UpdateEquipmentGraphLink</shortname>
+                        <description>Synchronizes the Equipment Graph link with the Equipment Graph Link Configuration.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.Commands.UpdateEquipmentGraphLinkHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.EQU_OP.EQU_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.Commands.UpdateEquipmentPropertyAttribute</name>
+                        <shortname>UpdateEquipmentPropertyAttribute</shortname>
+                        <description>Updates the value of an Equipment Property Attribute. The Equipment is identified by the Equipment Configuration Id, starting from which it has been created.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.Commands.UpdateEquipmentPropertyAttributeHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.EQU_OP.EQU_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.Commands.UpdateEquipmentGraph</name>
+                        <shortname>UpdateEquipmentGraph</shortname>
+                        <description>Synchronizes the Equipment Graph links and nodes with the Equipment Graph Configuration links and nodes.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.Commands.UpdateEquipmentGraphHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.EQU_OP.EQU_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.Commands.DeleteEquipmentStateMachine</name>
+                        <shortname>DeleteEquipmentStateMachine</shortname>
+                        <description>Deletes the Equipment State Machine indentified by the id passed as input. </description>
+                        <assembly>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.Commands.DeleteEquipmentStateMachineHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.EQU_OP.EQU_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.Commands.CreateEquipmentStateMachines</name>
+                        <shortname>CreateEquipmentStateMachines</shortname>
+                        <description>Create a list of State Machine associated to the Equipment, taking the data from the source Equipment Configuration.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.Commands.CreateEquipmentStateMachinesHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.EQU_OP.EQU_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.Commands.SetEquipmentPropertyValue</name>
+                        <shortname>SetEquipmentPropertyValue</shortname>
+                        <description>Permits to modify an Equipment Property if its Operational value is set to true.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.Commands.SetEquipmentPropertyValueHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.EQU_OP.EQU_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.Commands.SetEquipmentPropertyAttributeValue</name>
+                        <shortname>SetEquipmentPropertyAttributeValue</shortname>
+                        <description>Permits to modify an Equipment Property Attribute if its Operational value is set to true.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.Commands.SetEquipmentPropertyAttributeValueHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.EQU_OP.EQU_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.Commands.FreezeEquipmentGroup</name>
+                        <shortname>FreezeEquipmentGroup</shortname>
+                        <description>Configures the Equipment Group to be read-only by setting the attribute IsFrozen to True.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.Commands.FreezeEquipmentGroupHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.EQU_OP.EQU_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.Commands.UnfreezeEquipmentGroup</name>
+                        <shortname>UnfreezeEquipmentGroup</shortname>
+                        <description>Removes the read-only setting from the Equipment Group by setting the attribute IsFrozen to False.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.Commands.UnfreezeEquipmentGroupHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.EQU_OP.EQU_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.Commands.DeleteEquipmentPropertyAttribute</name>
+                        <shortname>DeleteEquipmentPropertyAttribute</shortname>
+                        <description>Deletes an Equipment Property Attribute.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.Commands.DeleteEquipmentPropertyAttributeHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.EQU_OP.EQU_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.Commands.SynchronizeEquipment</name>
+                        <shortname>SynchronizeEquipment</shortname>
+                        <description>Synchronizes all Equipment Configurations with the runtime Equipment.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.Commands.SynchronizeEquipmentHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.EQU_OP.EQU_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.Commands.SynchronizeEquipmentGroup</name>
+                        <shortname>SynchronizeEquipmentGroup</shortname>
+                        <description>Synchronizes all Equipment Configuration Groups with the runtime Equipment Groups.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.Commands.SynchronizeEquipmentGroupHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.EQU_OP.EQU_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.Commands.SynchronizeEquipmentGraph</name>
+                        <shortname>SynchronizeEquipmentGraph</shortname>
+                        <description>Synchronizes all Equipment Graph Configurations  with the runtime Equipment Graphs. The type of Equipment Graph is specified by the input **Type** parameter, whose possible values are **Hierarchy** and **Flow**.</description>
+                        <assembly>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.Commands.SynchronizeEquipmentGraphHandlerShell</name>
+                                        <assembly>Siemens.SimaticIT.EQU_OP.EQU_CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command></commands>
+    <commandActions></commandActions>
+    <events></events>
+    <event_handlers><event_handler>
+<name>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.Events.EquipmentCommandsShell</name>
+<assembly>Siemens.SimaticIT.EQU_OP.EventHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+<event_name>Siemens.SimaticIT.SystemData.Foundation.Events.CommittedEvent</event_name>
+<target_cpu>AnyCPU</target_cpu>
+<targetframework>netstandard2.0</targetframework>
+<dependencies></dependencies>
+</event_handler><event_handler>
+<name>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.Events.OnEquipmentConfigurationGroupUpdatedShell</name>
+<assembly>Siemens.SimaticIT.EQU_OP.EventHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+<event_name>Siemens.SimaticIT.MasterData.EQU_MS.MSModel.Events.EquipmentConfigurationGroupUpdated</event_name>
+<target_cpu>AnyCPU</target_cpu>
+<targetframework>netstandard2.0</targetframework>
+<dependencies></dependencies>
+</event_handler><event_handler>
+<name>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.Events.OnEquipmentConfigurationPropertyAttributeUpdatedShell</name>
+<assembly>Siemens.SimaticIT.EQU_OP.EventHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+<event_name>Siemens.SimaticIT.MasterData.EQU_MS.MSModel.Events.EquipmentConfigurationPropertyAttributeUpdated</event_name>
+<target_cpu>AnyCPU</target_cpu>
+<targetframework>netstandard2.0</targetframework>
+<dependencies></dependencies>
+</event_handler><event_handler>
+<name>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.Events.OnEquipmentConfigurationPropertyUpdatedShell</name>
+<assembly>Siemens.SimaticIT.EQU_OP.EventHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+<event_name>Siemens.SimaticIT.MasterData.EQU_MS.MSModel.Events.EquipmentConfigurationPropertyUpdated</event_name>
+<target_cpu>AnyCPU</target_cpu>
+<targetframework>netstandard2.0</targetframework>
+<dependencies></dependencies>
+</event_handler><event_handler>
+<name>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.Events.OnEquipmentConfigurationStateMachineUpdatedShell</name>
+<assembly>Siemens.SimaticIT.EQU_OP.EventHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+<event_name>Siemens.SimaticIT.MasterData.EQU_MS.MSModel.Events.EquipmentConfigurationStateMachineUpdated</event_name>
+<target_cpu>AnyCPU</target_cpu>
+<targetframework>netstandard2.0</targetframework>
+<dependencies></dependencies>
+</event_handler><event_handler>
+<name>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.Events.OnEquipmentConfigurationUpdatedShell</name>
+<assembly>Siemens.SimaticIT.EQU_OP.EventHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+<event_name>Siemens.SimaticIT.MasterData.EQU_MS.MSModel.Events.EquipmentConfigurationUpdated</event_name>
+<target_cpu>AnyCPU</target_cpu>
+<targetframework>netstandard2.0</targetframework>
+<dependencies></dependencies>
+</event_handler><event_handler>
+<name>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.Events.OnEquipmentGraphConfigurationUpdatedShell</name>
+<assembly>Siemens.SimaticIT.EQU_OP.EventHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+<event_name>Siemens.SimaticIT.MasterData.EQU_MS.MSModel.Events.EquipmentGraphConfigurationUpdated</event_name>
+<target_cpu>AnyCPU</target_cpu>
+<targetframework>netstandard2.0</targetframework>
+<dependencies></dependencies>
+</event_handler><event_handler>
+<name>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.Events.OnEquipmentGraphLinkConfigurationUpdatedShell</name>
+<assembly>Siemens.SimaticIT.EQU_OP.EventHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+<event_name>Siemens.SimaticIT.MasterData.EQU_MS.MSModel.Events.EquipmentGraphLinkConfigurationUpdated</event_name>
+<target_cpu>AnyCPU</target_cpu>
+<targetframework>netstandard2.0</targetframework>
+<dependencies></dependencies>
+</event_handler><event_handler>
+<name>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.Events.OnEquipmentGraphNodeConfigurationUpdatedShell</name>
+<assembly>Siemens.SimaticIT.EQU_OP.EventHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+<event_name>Siemens.SimaticIT.MasterData.EQU_MS.MSModel.Events.EquipmentGraphNodeConfigurationUpdated</event_name>
+<target_cpu>AnyCPU</target_cpu>
+<targetframework>netstandard2.0</targetframework>
+<dependencies></dependencies>
+</event_handler></event_handlers>
+    <signals></signals>
+    <readingFunctions></readingFunctions>
+    <entities><entity>
+      <name>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.DataModel.ReadingModel.Equipment</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.DataModel.ReadingModel.EquipmentProperty</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.DataModel.ReadingModel.EquipmentGroup</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.DataModel.ReadingModel.EquipmentGraphNode</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.DataModel.ReadingModel.EquipmentGraphLink</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.DataModel.ReadingModel.EquipmentPropertyAttribute</name>
+      <securable>true</securable>
+    </entity><entity>
+      <name>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.DataModel.ReadingModel.EquipmentStateMachine</name>
+      <securable>true</securable>
+    </entity></entities>
+    <datamodels><datamodel>
+      <assembly>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>WR</mode>
+      <domain>OperationalData</domain>
+    </datamodel><datamodel>
+      <assembly>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.ReadingModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>RD</mode>
+      <domain>OperationalData</domain>
+    </datamodel><datamodel>
+      <assembly>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.Types, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>WR</mode>
+      <domain>OperationalData</domain>
+    </datamodel><datamodel>
+      <assembly>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.Types.ReadingModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>RD</mode>
+      <domain>OperationalData</domain>
+    </datamodel></datamodels>
+    <externaldatamodels></externaldatamodels>
+    <appdatamodels></appdatamodels>
+    <uimodules></uimodules>
+    <uicomponents></uicomponents>
+    <wr_entities><wr_entity>
+      <name>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.DataModel.Equipment</name>
+      <shortname>Equipment</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity></parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity></root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.DataModel.EquipmentProperty</name>
+      <shortname>EquipmentProperty</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.DataModel.Equipment</parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.DataModel.Equipment</root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.DataModel.EquipmentGroup</name>
+      <shortname>EquipmentGroup</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity></parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity></root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.DataModel.EquipmentGraphNode</name>
+      <shortname>EquipmentGraphNode</shortname>
+      <haslogicalkey>false</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity></parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity></root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.DataModel.EquipmentGraphLink</name>
+      <shortname>EquipmentGraphLink</shortname>
+      <haslogicalkey>false</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity></parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity></root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.DataModel.EquipmentPropertyAttribute</name>
+      <shortname>EquipmentPropertyAttribute</shortname>
+      <haslogicalkey>true</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.DataModel.EquipmentProperty</parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.DataModel.Equipment</root_entity>
+      <base_entity></base_entity>
+    </wr_entity><wr_entity>
+      <name>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.DataModel.EquipmentStateMachine</name>
+      <shortname>EquipmentStateMachine</shortname>
+      <haslogicalkey>false</haslogicalkey>
+      <autoreference>false</autoreference>
+      <parententity>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.DataModel.Equipment</parententity>
+      <derivefromentity></derivefromentity>
+      <root_entity>Siemens.SimaticIT.OperationalData.EQU_OP.OPModel.DataModel.Equipment</root_entity>
+      <base_entity></base_entity>
+    </wr_entity></wr_entities>
+    <wr_facets></wr_facets>
+  </artifacts>
+  <security>
+    <roles></roles>
+  </security>
+  <runtime>
+    <event_subscriptions></event_subscriptions>
+    <handlergroups></handlergroups>
+  </runtime>
+</projectmanifest>

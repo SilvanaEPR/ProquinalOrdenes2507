@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?><projectmanifest>
+  <header>
+    <manifestversion>11.0</manifestversion>
+    <platformversion>11.0</platformversion>
+    <type>Library</type>
+    <name>Siemens.OpcenterEX.PR.ApplicationLogExt</name>
+    <shortname>ApplicationLogExt</shortname>
+    <description>Application Log Extension</description>
+    <version>14.00.00</version>
+    <companyname>Siemens.OpcenterEX.PR</companyname>
+    <author>Siemens.OpcenterEX.PR</author>
+    <hash>rq1moGTYpWadepxO3uu8dgiaYZUNCsilpL+LTz1scLU=</hash>
+    <modelHash>Ypwj363WRPeKZUEHNNIImO9HYfIwopZaGDprU7rQ0dU=</modelHash>
+    <modelHashSections>
+      <modelHashSection>
+        <name>projectConfigModelHash</name>
+        <hash>6N4hjPDBqkoLDSTj/v9ZP9MQQ8Tyj68M3+8oqd3gXP0=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>dataModelHash</name>
+        <hash>Xkt4gaxZl0UKV3EmfDJbfqwhlT5CZ61U+ZZFxp7DXuY=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>commandModelHash</name>
+        <hash>NJWGrF+FlS3BjHVStVHIqB3Pf7p0XsfcFV93GS0SQJ8=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>aliasModelHash</name>
+        <hash>cdWtFof25lUoH+wgMZZEtJGL5k7aBVT7Ae5HtNcbGxs=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>eventModelHash</name>
+        <hash>AxJpvCtRm3jzgm8LKUiAMFWY9EJ4gVJybnKCVszAZGw=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>typeModelHash</name>
+        <hash>PeCFO5WhhaPy9Mw1iwv7pmHs4/RUu0vXLP2GZFXpHJM=</hash>
+      </modelHashSection>
+      <modelHashSection>
+        <name>securityModelHash</name>
+        <hash>cdWtFof25lUoH+wgMZZEtJGL5k7aBVT7Ae5HtNcbGxs=</hash>
+      </modelHashSection>
+    </modelHashSections>
+    <uiHash>na</uiHash>
+    <canbeextended>false</canbeextended>
+    <domain>OperationalData</domain>
+  </header>
+  <reference>
+    <functionalblocks>
+      <functionalblock>
+        <name>Siemens.SimaticIT.ALG_MS</name>
+        <version>02.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.ALG_OP</name>
+        <version>02.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+      <functionalblock>
+        <name>Siemens.SimaticIT.UDM_RF</name>
+        <version>07.04.00</version>
+        <type>Library</type>
+      </functionalblock>
+    </functionalblocks>
+    <extensions><extension>
+      <name>Siemens.SimaticIT.ALG_OP</name>
+    </extension></extensions>
+  </reference>
+  <artifacts>
+    <commands><command>
+                        <name>Siemens.OpcenterEX.PR.OperationalData.ApplicationLogExt.OPModel.Commands.CreateApplicationLogFromSignal</name>
+                        <shortname>CreateApplicationLogFromSignal</shortname>
+                        <description>To create application log messages.</description>
+                        <assembly>Siemens.OpcenterEX.PR.OperationalData.ApplicationLogExt.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.OpcenterEX.PR.OperationalData.ApplicationLogExt.OPModel.Commands.CreateApplicationLogFromSignalHandlerShell</name>
+                                        <assembly>Siemens.OpcenterEX.PR.ApplicationLogExt.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command><command>
+                        <name>Siemens.OpcenterEX.PR.OperationalData.ApplicationLogExt.OPModel.Commands.WriteApplicationLog</name>
+                        <shortname>WriteApplicationLog</shortname>
+                        <description>Logs messages in the Opcenter EX FN Application Log. INTERNAL USE ONLY.</description>
+                        <assembly>Siemens.OpcenterEX.PR.OperationalData.ApplicationLogExt.OPModel.Commands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <dotnetcommandtype></dotnetcommandtype>
+                        <commandtype>Undefined</commandtype>
+                        <domain>OperationalData</domain>
+                        <visibility>Protected</visibility>
+                        <composite>false</composite>
+                        <taglist>
+                        </taglist>
+                        <securable>true</securable>
+                        <handlers>
+                                <handler>
+                                        <name>Siemens.OpcenterEX.PR.OperationalData.ApplicationLogExt.OPModel.Commands.WriteApplicationLogHandlerShell</name>
+                                        <assembly>Siemens.OpcenterEX.PR.ApplicationLogExt.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                                        <target_cpu>AnyCPU</target_cpu>
+                                        <targetframework>netstandard2.0</targetframework>
+                                        <dependencies></dependencies>
+                                </handler>
+                        </handlers>
+                </command></commands>
+    <commandActions><commandAction>
+                        <name>Siemens.OpcenterEX.PR.OperationalData.ApplicationLogExt.OPModel.Commands.WriteOnETWHandlerShell</name>
+                        <shortname>WriteOnETWHandlerShell</shortname>
+                        <description>If the list of input parameters contains the **EXPR_Severity** key, the post-command writes on ETW and fills a facet containing information on the execution context of the performed action; otherwise the post-command returns without applying any logic. The information can be used for reporting scope.</description>
+                        <assembly>Siemens.OpcenterEX.PR.ApplicationLogExt.CommandHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                        <target_cpu>AnyCPU</target_cpu>
+                        <targetframework>netstandard2.0</targetframework>
+                        <command>Siemens.SimaticIT.OperationalData.ALG_OP.OPModel.Commands.CreateApplicationLog</command>
+                        <type>Post</type>
+                        <is_enabled>true</is_enabled>
+                        <is_optional>false</is_optional>
+                </commandAction></commandActions>
+    <events><event>
+                <name>Siemens.OpcenterEX.PR.OperationalData.ApplicationLogExt.OPModel.Events.ApplicationLogRequested</name>
+                <shortname>ApplicationLogRequested</shortname>
+                <description> This event is triggered every time it is required to log a message on Application Log. Refer to Functional Transactions chapter in Opcenter Execution Process Extensibility Guide.</description>
+                <assembly>Siemens.OpcenterEX.PR.OperationalData.ApplicationLogExt.OPModel.Events, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+                <dotneteventtype></dotneteventtype>
+                <eventtype>Application</eventtype>
+                <domain>OperationalData</domain>
+                <taglist>
+                </taglist>
+                <securable>true</securable>
+        </event></events>
+    <event_handlers><event_handler>
+<name>Siemens.OpcenterEX.PR.OperationalData.ApplicationLogExt.OPModel.Events.OnAddApplicationLogEventShell</name>
+<assembly>Siemens.OpcenterEX.PR.ApplicationLogExt.EventHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+<event_name>Siemens.SimaticIT.SystemData.Foundation.Events.AddApplicationLogEvent</event_name>
+<target_cpu>AnyCPU</target_cpu>
+<targetframework>netstandard2.0</targetframework>
+<dependencies></dependencies>
+</event_handler><event_handler>
+<name>Siemens.OpcenterEX.PR.OperationalData.ApplicationLogExt.OPModel.Events.OnApplicationLogRequestedShell</name>
+<assembly>Siemens.OpcenterEX.PR.ApplicationLogExt.EventHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+<event_name>Siemens.OpcenterEX.PR.OperationalData.ApplicationLogExt.OPModel.Events.ApplicationLogRequested</event_name>
+<target_cpu>AnyCPU</target_cpu>
+<targetframework>netstandard2.0</targetframework>
+<dependencies></dependencies>
+</event_handler></event_handlers>
+    <signals></signals>
+    <readingFunctions></readingFunctions>
+    <entities></entities>
+    <datamodels><datamodel>
+      <assembly>Siemens.OpcenterEX.PR.OperationalData.ApplicationLogExt.OPModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>WR</mode>
+      <domain>OperationalData</domain>
+    </datamodel><datamodel>
+      <assembly>Siemens.OpcenterEX.PR.OperationalData.ApplicationLogExt.OPModel.ReadingModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>RD</mode>
+      <domain>OperationalData</domain>
+    </datamodel><datamodel>
+      <assembly>Siemens.OpcenterEX.PR.OperationalData.ApplicationLogExt.OPModel.Types, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>WR</mode>
+      <domain>OperationalData</domain>
+    </datamodel><datamodel>
+      <assembly>Siemens.OpcenterEX.PR.OperationalData.ApplicationLogExt.OPModel.Types.ReadingModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+      <mode>RD</mode>
+      <domain>OperationalData</domain>
+    </datamodel></datamodels>
+    <externaldatamodels></externaldatamodels>
+    <appdatamodels></appdatamodels>
+    <uimodules></uimodules>
+    <uicomponents></uicomponents>
+    <wr_entities></wr_entities>
+    <wr_facets><wr_facet>
+      <name>Siemens.OpcenterEX.PR.OperationalData.ApplicationLogExt.OPModel.DataModel.ApplicationLogExtension</name>
+      <shortname>ApplicationLogExtension</shortname>
+      <parententity></parententity>
+      <root_entity>Siemens.SimaticIT.OperationalData.ALG_OP.OPModel.DataModel.ApplicationLog</root_entity>
+    </wr_facet></wr_facets>
+  </artifacts>
+  <security>
+    <roles></roles>
+  </security>
+  <runtime>
+    <event_subscriptions></event_subscriptions>
+    <handlergroups></handlergroups>
+  </runtime>
+</projectmanifest>

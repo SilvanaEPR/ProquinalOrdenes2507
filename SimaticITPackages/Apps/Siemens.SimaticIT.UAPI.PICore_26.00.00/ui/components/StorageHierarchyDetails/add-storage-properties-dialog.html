@@ -1,0 +1,35 @@
+﻿<div class="row" style="width:900px; height: 500px">
+    <div>
+        <sit-command-bar sit-type="Tool" sit-label-align="right">
+            <sit-command ng-show="Dialog.templatedata.isToggled"
+                         sit-type="toggle"
+                         sit-name="toggleOn"
+                         sit-label="{{Dialog.templatedata.toggleTooltip}}"
+                         sit-tooltip="{{Dialog.templatedata.toggleTooltip}}"
+                         sit-selected="true"
+                         ng-click="Dialog.templatedata.toggleFunction"
+                         sit-icon="fa-toggle-on">
+            </sit-command>
+            <sit-command ng-show="!Dialog.templatedata.isToggled"
+                         sit-type="toggle"
+                         sit-name="toggleOff"
+                         sit-label="{{Dialog.templatedata.toggleTooltip}}"
+                         sit-tooltip="{{Dialog.templatedata.toggleTooltip}}"
+                         sit-selected="false"
+                         ng-click="Dialog.templatedata.toggleFunction"
+                         sit-icon="fa-toggle-off">
+            </sit-command>
+        </sit-command-bar>
+        <div class="row">
+            <div id="add-storage-properties-container">
+                <div style="padding-top: 20px">
+                    <sit-pi-table sit-pi-table-id="storagePropertiesConfigurationList"
+                                  sit-config="Dialog.templatedata.storagePropertyTableConfig"
+                                  sit-pi-config="Dialog.templatedata.storagePropertyDataConfig"
+                                  sit-view-mode="grid">
+                    </sit-pi-table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

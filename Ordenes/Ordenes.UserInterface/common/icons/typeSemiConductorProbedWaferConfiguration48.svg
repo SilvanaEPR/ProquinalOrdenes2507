@@ -1,0 +1,1268 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="Layer_1"
+   data-name="Layer 1"
+   viewBox="0 0 48 48"
+   version="1.1"
+   sodipodi:docname="typeWaferAttributeSetup48.svg"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
+  <metadata
+     id="metadata364">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs362">
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#New_Gradient_Swatch_1"
+       id="linearGradient1302"
+       gradientUnits="userSpaceOnUse"
+       x1="21.5"
+       y1="21.5"
+       x2="25.5"
+       y2="25.5" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#New_Gradient_Swatch_4"
+       id="linearGradient1304"
+       gradientUnits="userSpaceOnUse"
+       x1="21.5"
+       y1="17.5"
+       x2="25.5"
+       y2="21.5" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#Dark_Blue_Grad"
+       id="linearGradient1306"
+       gradientUnits="userSpaceOnUse"
+       x1="21.5"
+       y1="5.5"
+       x2="25.5"
+       y2="9.5" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#paper_gradient"
+       id="linearGradient1308"
+       gradientUnits="userSpaceOnUse"
+       x1="1.5"
+       y1="25.5"
+       x2="5.5"
+       y2="29.5" />
+    <linearGradient
+       id="linear-gradient-4"
+       x1="32.525002"
+       y1="17.475"
+       x2="37.474998"
+       y2="12.525"
+       gradientTransform="matrix(1.0001653,0,0,-0.99956557,-0.00777972,49.992984)"
+       xlink:href="#linear-gradient" />
+    <linearGradient
+       id="linear-gradient"
+       x1="-15.379"
+       y1="727.93701"
+       x2="18.035999"
+       y2="761.35303"
+       gradientTransform="matrix(1.073,0,0,1.073,20.574,-771.267)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0"
+         stop-color="#fff"
+         id="stop2-5" />
+      <stop
+         offset="0.221"
+         stop-color="#f8f8f8"
+         id="stop4-9" />
+      <stop
+         offset="0.541"
+         stop-color="#e5e5e5"
+         id="stop6-1" />
+      <stop
+         offset="0.92"
+         stop-color="#c6c6c6"
+         id="stop8-6" />
+      <stop
+         offset="1"
+         stop-color="#bebebe"
+         id="stop10-7" />
+    </linearGradient>
+    <linearGradient
+       id="linear-gradient-3"
+       x1="26.167999"
+       y1="23.870001"
+       x2="43.828999"
+       y2="6.2090001"
+       gradientTransform="matrix(1.0001653,0,0,-0.99956557,-0.00777972,49.992984)"
+       xlink:href="#linear-gradient-2" />
+    <linearGradient
+       id="linear-gradient-2"
+       x1="-11.378"
+       y1="713.10901"
+       x2="14.035"
+       y2="738.521"
+       gradientTransform="matrix(1.073,0,0,1.073,20.574,-771.267)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0"
+         stop-color="#73b4c8"
+         id="stop13-3" />
+      <stop
+         offset="0.175"
+         stop-color="#6aaec3"
+         id="stop15-6" />
+      <stop
+         offset="0.457"
+         stop-color="#529eb5"
+         id="stop17-1" />
+      <stop
+         offset="0.809"
+         stop-color="#2c839f"
+         id="stop19-8" />
+      <stop
+         offset="1"
+         stop-color="#147391"
+         id="stop21" />
+    </linearGradient>
+  </defs>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1680"
+     inkscape:window-height="971"
+     id="namedview360"
+     showgrid="false"
+     inkscape:zoom="4.9166667"
+     inkscape:cx="-44.237288"
+     inkscape:cy="24"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="Layer_1" />
+  <linearGradient
+     id="New_Gradient_Swatch_1"
+     data-name="New Gradient Swatch 1"
+     x1="21.5"
+     y1="21.5"
+     x2="25.5"
+     y2="25.5"
+     gradientUnits="userSpaceOnUse">
+    <stop
+       offset="0"
+       stop-color="#cde6eb"
+       id="stop2" />
+    <stop
+       offset="0.221"
+       stop-color="#c6e2e8"
+       id="stop4" />
+    <stop
+       offset="0.542"
+       stop-color="#b3d8e1"
+       id="stop6" />
+    <stop
+       offset="0.921"
+       stop-color="#93c7d5"
+       id="stop8" />
+    <stop
+       offset="1"
+       stop-color="#8cc3d2"
+       id="stop10" />
+  </linearGradient>
+  <linearGradient
+     id="New_Gradient_Swatch_4"
+     data-name="New Gradient Swatch 4"
+     x1="21.5"
+     y1="17.5"
+     x2="25.5"
+     y2="21.5"
+     gradientUnits="userSpaceOnUse">
+    <stop
+       offset="0"
+       stop-color="#afd7e1"
+       id="stop13" />
+    <stop
+       offset="0.159"
+       stop-color="#a4d0dc"
+       id="stop15" />
+    <stop
+       offset="0.706"
+       stop-color="#80bcce"
+       id="stop17" />
+    <stop
+       offset="1"
+       stop-color="#73b4c8"
+       id="stop19" />
+  </linearGradient>
+  <linearGradient
+     id="New_Gradient_Swatch_4-2"
+     x1="21.5"
+     y1="13.5"
+     x2="25.5"
+     y2="17.5"
+     xlink:href="#New_Gradient_Swatch_4" />
+  <linearGradient
+     id="New_Gradient_Swatch_4-3"
+     x1="21.5"
+     y1="9.5"
+     x2="25.5"
+     y2="13.5"
+     xlink:href="#New_Gradient_Swatch_4" />
+  <linearGradient
+     id="Dark_Blue_Grad"
+     data-name="Dark Blue Grad"
+     x1="21.5"
+     y1="5.5"
+     x2="25.5"
+     y2="9.5"
+     gradientUnits="userSpaceOnUse">
+    <stop
+       offset="0"
+       stop-color="#73b4c8"
+       id="stop24" />
+    <stop
+       offset="0.175"
+       stop-color="#6aaec3"
+       id="stop26" />
+    <stop
+       offset="0.457"
+       stop-color="#529eb5"
+       id="stop28" />
+    <stop
+       offset="0.809"
+       stop-color="#2c839f"
+       id="stop30" />
+    <stop
+       offset="1"
+       stop-color="#147391"
+       id="stop32" />
+  </linearGradient>
+  <linearGradient
+     id="New_Gradient_Swatch_1-2"
+     x1="25.5"
+     y1="17.5"
+     x2="29.5"
+     y2="21.5"
+     xlink:href="#New_Gradient_Swatch_1" />
+  <linearGradient
+     id="Light_Blue_Grad"
+     data-name="Light Blue Grad"
+     x1="25.5"
+     y1="13.5"
+     x2="29.5"
+     y2="17.5"
+     gradientUnits="userSpaceOnUse">
+    <stop
+       offset="0"
+       stop-color="#afd7e1"
+       id="stop36" />
+    <stop
+       offset="1"
+       stop-color="#73b4c8"
+       id="stop38" />
+  </linearGradient>
+  <linearGradient
+     id="New_Gradient_Swatch_4-4"
+     x1="25.5"
+     y1="9.5"
+     x2="29.5"
+     y2="13.5"
+     xlink:href="#New_Gradient_Swatch_4" />
+  <linearGradient
+     id="New_Gradient_Swatch_4-5"
+     x1="25.5"
+     y1="5.5"
+     x2="29.5"
+     y2="9.5"
+     xlink:href="#New_Gradient_Swatch_4" />
+  <linearGradient
+     id="New_Gradient_Swatch_1-3"
+     x1="29.5"
+     y1="13.5"
+     x2="33.5"
+     y2="17.5"
+     xlink:href="#New_Gradient_Swatch_1" />
+  <linearGradient
+     id="Dark_Blue_Grad-2"
+     x1="29.5"
+     y1="9.5"
+     x2="33.5"
+     y2="13.5"
+     xlink:href="#Dark_Blue_Grad" />
+  <linearGradient
+     id="New_Gradient_Swatch_4-6"
+     x1="29.5"
+     y1="5.5"
+     x2="33.5"
+     y2="9.5"
+     xlink:href="#New_Gradient_Swatch_4" />
+  <linearGradient
+     id="New_Gradient_Swatch_1-4"
+     x1="33.5"
+     y1="13.5"
+     x2="37.5"
+     y2="17.5"
+     xlink:href="#New_Gradient_Swatch_1" />
+  <linearGradient
+     id="New_Gradient_Swatch_4-7"
+     x1="33.5"
+     y1="9.5"
+     x2="37.5"
+     y2="13.5"
+     xlink:href="#New_Gradient_Swatch_4" />
+  <linearGradient
+     id="New_Gradient_Swatch_4-8"
+     x1="33.5"
+     y1="5.5"
+     x2="37.5"
+     y2="9.5"
+     xlink:href="#New_Gradient_Swatch_4" />
+  <linearGradient
+     id="New_Gradient_Swatch_4-9"
+     x1="37.5"
+     y1="17.5"
+     x2="41.5"
+     y2="21.5"
+     xlink:href="#New_Gradient_Swatch_4" />
+  <linearGradient
+     id="Dark_Blue_Grad-3"
+     x1="37.5"
+     y1="13.5"
+     x2="41.5"
+     y2="17.5"
+     xlink:href="#Dark_Blue_Grad" />
+  <linearGradient
+     id="New_Gradient_Swatch_4-10"
+     x1="37.5"
+     y1="9.5"
+     x2="41.5"
+     y2="13.5"
+     xlink:href="#New_Gradient_Swatch_4" />
+  <linearGradient
+     id="paper_gradient"
+     data-name="paper gradient"
+     x1="1.5"
+     y1="25.5"
+     x2="5.5"
+     y2="29.5"
+     gradientUnits="userSpaceOnUse">
+    <stop
+       offset="0"
+       stop-color="#fff"
+       id="stop52" />
+    <stop
+       offset="0.221"
+       stop-color="#f8f8f8"
+       id="stop54" />
+    <stop
+       offset="0.541"
+       stop-color="#e5e5e5"
+       id="stop56" />
+    <stop
+       offset="0.92"
+       stop-color="#c6c6c6"
+       id="stop58" />
+    <stop
+       offset="1"
+       stop-color="#bebebe"
+       id="stop60" />
+  </linearGradient>
+  <linearGradient
+     id="New_Gradient_Swatch_4-11"
+     x1="5.5"
+     y1="21.5"
+     x2="9.5"
+     y2="25.5"
+     xlink:href="#New_Gradient_Swatch_4" />
+  <linearGradient
+     id="New_Gradient_Swatch_4-12"
+     x1="5.5"
+     y1="17.5"
+     x2="9.5"
+     y2="21.5"
+     xlink:href="#New_Gradient_Swatch_4" />
+  <linearGradient
+     id="New_Gradient_Swatch_4-13"
+     x1="5.5"
+     y1="13.5"
+     x2="9.5"
+     y2="17.5"
+     xlink:href="#New_Gradient_Swatch_4" />
+  <linearGradient
+     id="New_Gradient_Swatch_4-14"
+     x1="5.5"
+     y1="9.5"
+     x2="9.5"
+     y2="13.5"
+     xlink:href="#New_Gradient_Swatch_4" />
+  <linearGradient
+     id="New_Gradient_Swatch_1-5"
+     x1="9.5"
+     x2="13.5"
+     y2="25.5"
+     xlink:href="#New_Gradient_Swatch_1" />
+  <linearGradient
+     id="New_Gradient_Swatch_1-6"
+     x1="9.5"
+     y1="17.5"
+     x2="13.5"
+     y2="21.5"
+     xlink:href="#New_Gradient_Swatch_1" />
+  <linearGradient
+     id="Dark_Blue_Grad-4"
+     x1="9.5"
+     y1="13.5"
+     x2="13.5"
+     y2="17.5"
+     xlink:href="#Dark_Blue_Grad" />
+  <linearGradient
+     id="New_Gradient_Swatch_4-15"
+     x1="9.5"
+     y1="9.5"
+     x2="13.5"
+     y2="13.5"
+     xlink:href="#New_Gradient_Swatch_4" />
+  <linearGradient
+     id="New_Gradient_Swatch_4-16"
+     x1="9.5"
+     y1="5.5"
+     x2="13.5"
+     y2="9.5"
+     xlink:href="#New_Gradient_Swatch_4" />
+  <linearGradient
+     id="New_Gradient_Swatch_4-17"
+     x1="13.5"
+     y1="17.5"
+     x2="17.5"
+     y2="21.5"
+     xlink:href="#New_Gradient_Swatch_4" />
+  <linearGradient
+     id="New_Gradient_Swatch_4-18"
+     x1="13.5"
+     y1="13.5"
+     x2="17.5"
+     y2="17.5"
+     xlink:href="#New_Gradient_Swatch_4" />
+  <linearGradient
+     id="New_Gradient_Swatch_1-7"
+     x1="13.5"
+     y1="9.5"
+     x2="17.5"
+     y2="13.5"
+     xlink:href="#New_Gradient_Swatch_1" />
+  <linearGradient
+     id="New_Gradient_Swatch_4-19"
+     x1="13.5"
+     y1="5.5"
+     x2="17.5"
+     y2="9.5"
+     xlink:href="#New_Gradient_Swatch_4" />
+  <linearGradient
+     id="New_Gradient_Swatch_4-20"
+     x1="17.5"
+     y1="13.5"
+     x2="21.5"
+     y2="17.5"
+     xlink:href="#New_Gradient_Swatch_4" />
+  <linearGradient
+     id="New_Gradient_Swatch_4-21"
+     x1="17.5"
+     y1="9.5"
+     x2="21.5"
+     y2="13.5"
+     xlink:href="#New_Gradient_Swatch_4" />
+  <linearGradient
+     id="New_Gradient_Swatch_4-22"
+     x1="17.5"
+     y1="5.5"
+     x2="21.5"
+     y2="9.5"
+     xlink:href="#New_Gradient_Swatch_4" />
+  <linearGradient
+     id="paper_gradient-2"
+     x1="1.5"
+     y1="17.5"
+     x2="5.5"
+     y2="21.5"
+     xlink:href="#paper_gradient" />
+  <linearGradient
+     id="paper_gradient-3"
+     x1="1.5"
+     y1="13.5"
+     x2="5.5"
+     y2="17.5"
+     xlink:href="#paper_gradient" />
+  <linearGradient
+     id="paper_gradient-4"
+     x1="1.5"
+     y1="9.5"
+     x2="5.5"
+     y2="13.5"
+     xlink:href="#paper_gradient" />
+  <linearGradient
+     id="paper_gradient-5"
+     x1="5.5"
+     y1="5.5"
+     x2="9.5"
+     y2="9.5"
+     xlink:href="#paper_gradient" />
+  <linearGradient
+     id="paper_gradient-6"
+     x1="9.5"
+     y1="1.5"
+     x2="13.5"
+     y2="5.5"
+     xlink:href="#paper_gradient" />
+  <linearGradient
+     id="paper_gradient-7"
+     x1="13.5"
+     y1="1.5"
+     x2="17.5"
+     y2="5.5"
+     xlink:href="#paper_gradient" />
+  <linearGradient
+     id="paper_gradient-8"
+     x1="17.5"
+     y1="1.5"
+     x2="21.5"
+     y2="5.5"
+     xlink:href="#paper_gradient" />
+  <linearGradient
+     id="paper_gradient-9"
+     x1="21.5"
+     y1="1.5"
+     x2="25.5"
+     y2="5.5"
+     xlink:href="#paper_gradient" />
+  <linearGradient
+     id="paper_gradient-10"
+     x1="25.5"
+     y1="1.5"
+     x2="29.5"
+     y2="5.5"
+     xlink:href="#paper_gradient" />
+  <linearGradient
+     id="paper_gradient-11"
+     x1="29.5"
+     y1="1.5"
+     x2="33.5"
+     y2="5.5"
+     xlink:href="#paper_gradient" />
+  <linearGradient
+     id="paper_gradient-12"
+     x1="33.5"
+     y1="1.5"
+     x2="37.5"
+     y2="5.5"
+     xlink:href="#paper_gradient" />
+  <linearGradient
+     id="paper_gradient-13"
+     x1="37.5"
+     y1="5.5"
+     x2="41.5"
+     y2="9.5"
+     xlink:href="#paper_gradient" />
+  <linearGradient
+     id="paper_gradient-14"
+     x1="1.5"
+     y1="29.5"
+     x2="5.5"
+     y2="33.5"
+     xlink:href="#paper_gradient" />
+  <linearGradient
+     id="paper_gradient-15"
+     x1="1.5"
+     y1="33.5"
+     x2="5.5"
+     y2="37.5"
+     xlink:href="#paper_gradient" />
+  <linearGradient
+     id="paper_gradient-16"
+     x1="5.5"
+     y1="33.5"
+     x2="9.5"
+     y2="37.5"
+     xlink:href="#paper_gradient" />
+  <linearGradient
+     id="paper_gradient-17"
+     x1="5.5"
+     y1="37.5"
+     x2="9.5"
+     y2="41.5"
+     xlink:href="#paper_gradient" />
+  <linearGradient
+     id="paper_gradient-18"
+     x1="9.5"
+     y1="37.5"
+     x2="13.5"
+     y2="41.5"
+     xlink:href="#paper_gradient" />
+  <linearGradient
+     id="paper_gradient-19"
+     x1="33.5"
+     y1="37.5"
+     x2="37.5"
+     y2="41.5"
+     xlink:href="#paper_gradient" />
+  <linearGradient
+     id="paper_gradient-20"
+     x1="37.5"
+     y1="37.5"
+     x2="41.5"
+     y2="41.5"
+     xlink:href="#paper_gradient" />
+  <linearGradient
+     id="paper_gradient-21"
+     x1="37.5"
+     y1="33.5"
+     x2="41.5"
+     y2="37.5"
+     xlink:href="#paper_gradient" />
+  <linearGradient
+     id="paper_gradient-22"
+     x1="41.5"
+     y1="33.5"
+     x2="45.5"
+     y2="37.5"
+     xlink:href="#paper_gradient" />
+  <linearGradient
+     id="paper_gradient-23"
+     x1="41.5"
+     y1="29.5"
+     x2="45.5"
+     y2="33.5"
+     xlink:href="#paper_gradient" />
+  <linearGradient
+     id="paper_gradient-24"
+     x1="41.5"
+     y1="25.5"
+     x2="45.5"
+     y2="29.5"
+     xlink:href="#paper_gradient" />
+  <linearGradient
+     id="paper_gradient-25"
+     x1="41.5"
+     y1="21.5"
+     x2="45.5"
+     y2="25.5"
+     xlink:href="#paper_gradient" />
+  <linearGradient
+     id="paper_gradient-26"
+     x1="41.5"
+     y1="17.5"
+     x2="45.5"
+     y2="21.5"
+     xlink:href="#paper_gradient" />
+  <linearGradient
+     id="paper_gradient-27"
+     x1="41.5"
+     y1="13.5"
+     x2="45.5"
+     y2="17.5"
+     xlink:href="#paper_gradient" />
+  <linearGradient
+     id="paper_gradient-28"
+     x1="41.5"
+     y1="9.5"
+     x2="45.5"
+     y2="13.5"
+     xlink:href="#paper_gradient" />
+  <linearGradient
+     id="paper_gradient-29"
+     x1="9.5"
+     y1="41.5"
+     x2="13.5"
+     y2="45.5"
+     xlink:href="#paper_gradient" />
+  <linearGradient
+     id="paper_gradient-30"
+     x1="13.5"
+     y1="41.5"
+     x2="17.5"
+     y2="45.5"
+     xlink:href="#paper_gradient" />
+  <linearGradient
+     id="paper_gradient-31"
+     x1="17.5"
+     y1="41.5"
+     x2="21.5"
+     y2="45.5"
+     xlink:href="#paper_gradient" />
+  <linearGradient
+     id="paper_gradient-32"
+     x1="21.5"
+     y1="41.5"
+     x2="25.5"
+     y2="45.5"
+     xlink:href="#paper_gradient" />
+  <linearGradient
+     id="paper_gradient-33"
+     x1="25.5"
+     y1="41.5"
+     x2="29.5"
+     y2="45.5"
+     xlink:href="#paper_gradient" />
+  <linearGradient
+     id="paper_gradient-34"
+     x1="29.5"
+     y1="41.5"
+     x2="33.5"
+     y2="45.5"
+     xlink:href="#paper_gradient" />
+  <linearGradient
+     id="paper_gradient-35"
+     x1="33.5"
+     y1="41.5"
+     x2="37.5"
+     y2="45.5"
+     xlink:href="#paper_gradient" />
+  <linearGradient
+     id="paper_gradient-36"
+     x1="21.5"
+     y1="29.5"
+     x2="25.5"
+     y2="33.5"
+     xlink:href="#paper_gradient" />
+  <linearGradient
+     id="paper_gradient-37"
+     x1="17.5"
+     y1="21.5"
+     x2="21.5"
+     y2="25.5"
+     xlink:href="#paper_gradient" />
+  <linearGradient
+     id="paper_gradient-38"
+     x1="17.5"
+     y1="17.5"
+     x2="21.5"
+     y2="21.5"
+     xlink:href="#paper_gradient" />
+  <linearGradient
+     id="paper_gradient-39"
+     x1="21.5"
+     y1="33.5"
+     x2="25.5"
+     y2="37.5"
+     xlink:href="#paper_gradient" />
+  <g
+     id="g1293">
+    <g
+       transform="scale(0.93617021)"
+       id="g1292">
+      <path
+         id="rect117"
+         d="m 21.5,21.5 h 4 v 4 h -4 z"
+         style="fill:url(#linearGradient1302);stroke:#147391;stroke-miterlimit:10" />
+      <path
+         id="rect119"
+         d="m 21.5,17.5 h 4 v 4 h -4 z"
+         style="fill:url(#linearGradient1304);stroke:#147391;stroke-miterlimit:10" />
+      <path
+         id="rect121"
+         d="m 21.5,13.5 h 4 v 4 h -4 z"
+         style="fill:url(#New_Gradient_Swatch_4-2);stroke:#147391;stroke-miterlimit:10" />
+      <path
+         id="rect123"
+         d="m 21.5,9.5 h 4 v 4 h -4 z"
+         style="fill:url(#New_Gradient_Swatch_4-3);stroke:#147391;stroke-miterlimit:10" />
+      <path
+         id="rect125"
+         d="m 21.5,5.5 h 4 v 4 h -4 z"
+         style="fill:url(#linearGradient1306);stroke:#147391;stroke-miterlimit:10" />
+      <path
+         id="rect127"
+         d="m 25.5,17.5 h 4 v 4 h -4 z"
+         style="fill:url(#New_Gradient_Swatch_1-2);stroke:#147391;stroke-miterlimit:10" />
+      <path
+         id="rect129"
+         d="m 25.5,13.5 h 4 v 4 h -4 z"
+         style="fill:url(#Light_Blue_Grad);stroke:#147391;stroke-miterlimit:10" />
+      <path
+         id="rect131"
+         d="m 25.5,9.5 h 4 v 4 h -4 z"
+         style="fill:url(#New_Gradient_Swatch_4-4);stroke:#147391;stroke-miterlimit:10" />
+      <path
+         id="rect133"
+         d="m 25.5,5.5 h 4 v 4 h -4 z"
+         style="fill:url(#New_Gradient_Swatch_4-5);stroke:#147391;stroke-miterlimit:10" />
+      <path
+         id="rect135"
+         d="m 29.5,13.5 h 4 v 4 h -4 z"
+         style="fill:url(#New_Gradient_Swatch_1-3);stroke:#147391;stroke-miterlimit:10" />
+      <path
+         id="rect137"
+         d="m 29.5,9.5 h 4 v 4 h -4 z"
+         style="fill:url(#Dark_Blue_Grad-2);stroke:#147391;stroke-miterlimit:10" />
+      <path
+         id="rect139"
+         d="m 29.5,5.5 h 4 v 4 h -4 z"
+         style="fill:url(#New_Gradient_Swatch_4-6);stroke:#147391;stroke-miterlimit:10" />
+      <path
+         id="rect141"
+         d="m 33.5,13.5 h 4 v 4 h -4 z"
+         style="fill:url(#New_Gradient_Swatch_1-4);stroke:#147391;stroke-miterlimit:10" />
+      <path
+         id="rect143"
+         d="m 33.5,9.5 h 4 v 4 h -4 z"
+         style="fill:url(#New_Gradient_Swatch_4-7);stroke:#147391;stroke-miterlimit:10" />
+      <path
+         id="rect145"
+         d="m 33.5,5.5 h 4 v 4 h -4 z"
+         style="fill:url(#New_Gradient_Swatch_4-8);stroke:#147391;stroke-miterlimit:10" />
+      <path
+         id="rect147"
+         d="m 37.5,17.5 h 4 v 4 h -4 z"
+         style="fill:url(#New_Gradient_Swatch_4-9);stroke:#147391;stroke-miterlimit:10" />
+      <path
+         id="rect149"
+         d="m 37.5,13.5 h 4 v 4 h -4 z"
+         style="fill:url(#Dark_Blue_Grad-3);stroke:#147391;stroke-miterlimit:10" />
+      <path
+         id="rect151"
+         d="m 37.5,9.5 h 4 v 4 h -4 z"
+         style="fill:url(#New_Gradient_Swatch_4-10);stroke:#147391;stroke-miterlimit:10" />
+      <path
+         id="rect153"
+         d="m 1.5,25.5 h 4 v 4 h -4 z"
+         style="fill:url(#linearGradient1308);stroke:#464646;stroke-miterlimit:10" />
+      <path
+         id="rect155"
+         d="m 5.5,21.5 h 4 v 4 h -4 z"
+         style="fill:url(#New_Gradient_Swatch_4-11);stroke:#147391;stroke-miterlimit:10" />
+      <path
+         id="rect157"
+         d="m 5.5,17.5 h 4 v 4 h -4 z"
+         style="fill:url(#New_Gradient_Swatch_4-12);stroke:#147391;stroke-miterlimit:10" />
+      <path
+         id="rect159"
+         d="m 5.5,13.5 h 4 v 4 h -4 z"
+         style="fill:url(#New_Gradient_Swatch_4-13);stroke:#147391;stroke-miterlimit:10" />
+      <path
+         id="rect161"
+         d="m 5.5,9.5 h 4 v 4 h -4 z"
+         style="fill:url(#New_Gradient_Swatch_4-14);stroke:#147391;stroke-miterlimit:10" />
+      <path
+         id="rect163"
+         d="m 9.5,21.5 h 4 v 4 h -4 z"
+         style="fill:url(#New_Gradient_Swatch_1-5);stroke:#147391;stroke-miterlimit:10" />
+      <path
+         id="rect165"
+         d="m 9.5,17.5 h 4 v 4 h -4 z"
+         style="fill:url(#New_Gradient_Swatch_1-6);stroke:#147391;stroke-miterlimit:10" />
+      <path
+         id="rect167"
+         d="m 9.5,13.5 h 4 v 4 h -4 z"
+         style="fill:url(#Dark_Blue_Grad-4);stroke:#147391;stroke-miterlimit:10" />
+      <path
+         id="rect169"
+         d="m 9.5,9.5 h 4 v 4 h -4 z"
+         style="fill:url(#New_Gradient_Swatch_4-15);stroke:#147391;stroke-miterlimit:10" />
+      <path
+         id="rect171"
+         d="m 9.5,5.5 h 4 v 4 h -4 z"
+         style="fill:url(#New_Gradient_Swatch_4-16);stroke:#147391;stroke-miterlimit:10" />
+      <path
+         id="rect173"
+         d="m 13.5,17.5 h 4 v 4 h -4 z"
+         style="fill:url(#New_Gradient_Swatch_4-17);stroke:#147391;stroke-miterlimit:10" />
+      <path
+         id="rect175"
+         d="m 13.5,13.5 h 4 v 4 h -4 z"
+         style="fill:url(#New_Gradient_Swatch_4-18);stroke:#147391;stroke-miterlimit:10" />
+      <path
+         id="rect177"
+         d="m 13.5,9.5 h 4 v 4 h -4 z"
+         style="fill:url(#New_Gradient_Swatch_1-7);stroke:#147391;stroke-miterlimit:10" />
+      <path
+         id="rect179"
+         d="m 13.5,5.5 h 4 v 4 h -4 z"
+         style="fill:url(#New_Gradient_Swatch_4-19);stroke:#147391;stroke-miterlimit:10" />
+      <path
+         id="rect181"
+         d="m 17.5,13.5 h 4 v 4 h -4 z"
+         style="fill:url(#New_Gradient_Swatch_4-20);stroke:#147391;stroke-miterlimit:10" />
+      <path
+         id="rect183"
+         d="m 17.5,9.5 h 4 v 4 h -4 z"
+         style="fill:url(#New_Gradient_Swatch_4-21);stroke:#147391;stroke-miterlimit:10" />
+      <path
+         id="rect185"
+         d="m 17.5,5.5 h 4 v 4 h -4 z"
+         style="fill:url(#New_Gradient_Swatch_4-22);stroke:#147391;stroke-miterlimit:10" />
+      <path
+         id="circle187"
+         d="m 4.5,27.5 a 1,1 0 0 1 -1,1 1,1 0 0 1 -1,-1 1,1 0 0 1 1,-1 1,1 0 0 1 1,1 z"
+         style="fill:#464646" />
+      <path
+         id="rect189"
+         d="m 1.5,17.5 h 4 v 4 h -4 z"
+         style="fill:url(#paper_gradient-2);stroke:#464646;stroke-miterlimit:10" />
+      <path
+         id="circle191"
+         d="m 4.5,19.5 a 1,1 0 0 1 -1,1 1,1 0 0 1 -1,-1 1,1 0 0 1 1,-1 1,1 0 0 1 1,1 z"
+         style="fill:#464646" />
+      <path
+         id="rect193"
+         d="m 1.5,13.5 h 4 v 4 h -4 z"
+         style="fill:url(#paper_gradient-3);stroke:#464646;stroke-miterlimit:10" />
+      <path
+         id="circle195"
+         d="m 4.5,15.5 a 1,1 0 0 1 -1,1 1,1 0 0 1 -1,-1 1,1 0 0 1 1,-1 1,1 0 0 1 1,1 z"
+         style="fill:#464646" />
+      <path
+         id="rect197"
+         d="m 1.5,9.5 h 4 v 4 h -4 z"
+         style="fill:url(#paper_gradient-4);stroke:#464646;stroke-miterlimit:10" />
+      <path
+         id="circle199"
+         d="m 4.5,11.5 a 1,1 0 0 1 -1,1 1,1 0 0 1 -1,-1 1,1 0 0 1 1,-1 1,1 0 0 1 1,1 z"
+         style="fill:#464646" />
+      <path
+         id="rect201"
+         d="m 5.5,5.5 h 4 v 4 h -4 z"
+         style="fill:url(#paper_gradient-5);stroke:#464646;stroke-miterlimit:10" />
+      <path
+         id="circle203"
+         d="m 8.5,7.5 a 1,1 0 0 1 -1,1 1,1 0 0 1 -1,-1 1,1 0 0 1 1,-1 1,1 0 0 1 1,1 z"
+         style="fill:#464646" />
+      <path
+         id="rect205"
+         d="m 9.5,1.5 h 4 v 4 h -4 z"
+         style="fill:url(#paper_gradient-6);stroke:#464646;stroke-miterlimit:10" />
+      <path
+         id="circle207"
+         d="m 12.5,3.5 a 1,1 0 0 1 -1,1 1,1 0 0 1 -1,-1 1,1 0 0 1 1,-1 1,1 0 0 1 1,1 z"
+         style="fill:#464646" />
+      <path
+         id="rect209"
+         d="m 13.5,1.5 h 4 v 4 h -4 z"
+         style="fill:url(#paper_gradient-7);stroke:#464646;stroke-miterlimit:10" />
+      <path
+         id="circle211"
+         d="m 16.5,3.5 a 1,1 0 0 1 -1,1 1,1 0 0 1 -1,-1 1,1 0 0 1 1,-1 1,1 0 0 1 1,1 z"
+         style="fill:#464646" />
+      <path
+         id="rect213"
+         d="m 17.5,1.5 h 4 v 4 h -4 z"
+         style="fill:url(#paper_gradient-8);stroke:#464646;stroke-miterlimit:10" />
+      <path
+         id="circle215"
+         d="m 20.5,3.5 a 1,1 0 0 1 -1,1 1,1 0 0 1 -1,-1 1,1 0 0 1 1,-1 1,1 0 0 1 1,1 z"
+         style="fill:#464646" />
+      <path
+         id="rect217"
+         d="m 21.5,1.5 h 4 v 4 h -4 z"
+         style="fill:url(#paper_gradient-9);stroke:#464646;stroke-miterlimit:10" />
+      <path
+         id="circle219"
+         d="m 24.5,3.5 a 1,1 0 0 1 -1,1 1,1 0 0 1 -1,-1 1,1 0 0 1 1,-1 1,1 0 0 1 1,1 z"
+         style="fill:#464646" />
+      <path
+         id="rect221"
+         d="m 25.5,1.5 h 4 v 4 h -4 z"
+         style="fill:url(#paper_gradient-10);stroke:#464646;stroke-miterlimit:10" />
+      <path
+         id="circle223"
+         d="m 28.5,3.5 a 1,1 0 0 1 -1,1 1,1 0 0 1 -1,-1 1,1 0 0 1 1,-1 1,1 0 0 1 1,1 z"
+         style="fill:#464646" />
+      <path
+         id="rect225"
+         d="m 29.5,1.5 h 4 v 4 h -4 z"
+         style="fill:url(#paper_gradient-11);stroke:#464646;stroke-miterlimit:10" />
+      <path
+         id="circle227"
+         d="m 32.5,3.5 a 1,1 0 0 1 -1,1 1,1 0 0 1 -1,-1 1,1 0 0 1 1,-1 1,1 0 0 1 1,1 z"
+         style="fill:#464646" />
+      <path
+         id="rect229"
+         d="m 33.5,1.5 h 4 v 4 h -4 z"
+         style="fill:url(#paper_gradient-12);stroke:#464646;stroke-miterlimit:10" />
+      <path
+         id="circle231"
+         d="m 36.5,3.5 a 1,1 0 0 1 -1,1 1,1 0 0 1 -1,-1 1,1 0 0 1 1,-1 1,1 0 0 1 1,1 z"
+         style="fill:#464646" />
+      <path
+         id="rect233"
+         d="m 37.5,5.5 h 4 v 4 h -4 z"
+         style="fill:url(#paper_gradient-13);stroke:#464646;stroke-miterlimit:10" />
+      <path
+         id="circle235"
+         d="m 40.5,7.5 a 1,1 0 0 1 -1,1 1,1 0 0 1 -1,-1 1,1 0 0 1 1,-1 1,1 0 0 1 1,1 z"
+         style="fill:#464646" />
+      <path
+         id="rect237"
+         d="m 1.5,29.5 h 4 v 4 h -4 z"
+         style="fill:url(#paper_gradient-14);stroke:#464646;stroke-miterlimit:10" />
+      <path
+         id="circle239"
+         d="m 4.5,31.5 a 1,1 0 0 1 -1,1 1,1 0 0 1 -1,-1 1,1 0 0 1 1,-1 1,1 0 0 1 1,1 z"
+         style="fill:#464646" />
+      <path
+         id="rect241"
+         d="m 1.5,33.5 h 4 v 4 h -4 z"
+         style="fill:url(#paper_gradient-15);stroke:#464646;stroke-miterlimit:10" />
+      <path
+         id="circle243"
+         d="m 4.5,35.5 a 1,1 0 0 1 -1,1 1,1 0 0 1 -1,-1 1,1 0 0 1 1,-1 1,1 0 0 1 1,1 z"
+         style="fill:#464646" />
+      <path
+         id="rect245"
+         d="m 5.5,33.5 h 4 v 4 h -4 z"
+         style="fill:url(#paper_gradient-16);stroke:#464646;stroke-miterlimit:10" />
+      <path
+         id="circle247"
+         d="m 8.5,35.5 a 1,1 0 0 1 -1,1 1,1 0 0 1 -1,-1 1,1 0 0 1 1,-1 1,1 0 0 1 1,1 z"
+         style="fill:#464646" />
+      <path
+         id="rect249"
+         d="m 5.5,37.5 h 4 v 4 h -4 z"
+         style="fill:url(#paper_gradient-17);stroke:#464646;stroke-miterlimit:10" />
+      <path
+         id="circle251"
+         d="m 8.5,39.5 a 1,1 0 0 1 -1,1 1,1 0 0 1 -1,-1 1,1 0 0 1 1,-1 1,1 0 0 1 1,1 z"
+         style="fill:#464646" />
+      <path
+         id="rect253"
+         d="m 9.5,37.5 h 4 v 4 h -4 z"
+         style="fill:url(#paper_gradient-18);stroke:#464646;stroke-miterlimit:10" />
+      <path
+         id="circle255"
+         d="m 12.5,39.5 a 1,1 0 0 1 -1,1 1,1 0 0 1 -1,-1 1,1 0 0 1 1,-1 1,1 0 0 1 1,1 z"
+         style="fill:#464646" />
+      <path
+         id="rect257"
+         d="m 33.5,37.5 h 4 v 4 h -4 z"
+         style="fill:url(#paper_gradient-19);stroke:#464646;stroke-miterlimit:10" />
+      <path
+         id="circle259"
+         d="m 36.5,39.5 a 1,1 0 0 1 -1,1 1,1 0 0 1 -1,-1 1,1 0 0 1 1,-1 1,1 0 0 1 1,1 z"
+         style="fill:#464646" />
+      <path
+         id="rect261"
+         d="m 37.5,37.5 h 4 v 4 h -4 z"
+         style="fill:url(#paper_gradient-20);stroke:#464646;stroke-miterlimit:10" />
+      <path
+         id="circle263"
+         d="m 40.5,39.5 a 1,1 0 0 1 -1,1 1,1 0 0 1 -1,-1 1,1 0 0 1 1,-1 1,1 0 0 1 1,1 z"
+         style="fill:#464646" />
+      <path
+         id="rect265"
+         d="m 37.5,33.5 h 4 v 4 h -4 z"
+         style="fill:url(#paper_gradient-21);stroke:#464646;stroke-miterlimit:10" />
+      <path
+         id="circle267"
+         d="m 40.5,35.5 a 1,1 0 0 1 -1,1 1,1 0 0 1 -1,-1 1,1 0 0 1 1,-1 1,1 0 0 1 1,1 z"
+         style="fill:#464646" />
+      <path
+         id="rect269"
+         d="m 41.5,33.5 h 4 v 4 h -4 z"
+         style="fill:url(#paper_gradient-22);stroke:#464646;stroke-miterlimit:10" />
+      <path
+         id="circle271"
+         d="m 44.5,35.5 a 1,1 0 0 1 -1,1 1,1 0 0 1 -1,-1 1,1 0 0 1 1,-1 1,1 0 0 1 1,1 z"
+         style="fill:#464646" />
+      <path
+         id="rect273"
+         d="m 41.5,29.5 h 4 v 4 h -4 z"
+         style="fill:url(#paper_gradient-23);stroke:#464646;stroke-miterlimit:10" />
+      <path
+         id="circle275"
+         d="m 44.5,31.5 a 1,1 0 0 1 -1,1 1,1 0 0 1 -1,-1 1,1 0 0 1 1,-1 1,1 0 0 1 1,1 z"
+         style="fill:#464646" />
+      <path
+         id="rect277"
+         d="m 41.5,25.5 h 4 v 4 h -4 z"
+         style="fill:url(#paper_gradient-24);stroke:#464646;stroke-miterlimit:10" />
+      <path
+         id="circle279"
+         d="m 44.5,27.5 a 1,1 0 0 1 -1,1 1,1 0 0 1 -1,-1 1,1 0 0 1 1,-1 1,1 0 0 1 1,1 z"
+         style="fill:#464646" />
+      <path
+         id="rect281"
+         d="m 41.5,21.5 h 4 v 4 h -4 z"
+         style="fill:url(#paper_gradient-25);stroke:#464646;stroke-miterlimit:10" />
+      <path
+         id="circle283"
+         d="m 44.5,23.5 a 1,1 0 0 1 -1,1 1,1 0 0 1 -1,-1 1,1 0 0 1 1,-1 1,1 0 0 1 1,1 z"
+         style="fill:#464646" />
+      <path
+         id="rect285"
+         d="m 41.5,17.5 h 4 v 4 h -4 z"
+         style="fill:url(#paper_gradient-26);stroke:#464646;stroke-miterlimit:10" />
+      <path
+         id="circle287"
+         d="m 44.5,19.5 a 1,1 0 0 1 -1,1 1,1 0 0 1 -1,-1 1,1 0 0 1 1,-1 1,1 0 0 1 1,1 z"
+         style="fill:#464646" />
+      <path
+         id="rect289"
+         d="m 41.5,13.5 h 4 v 4 h -4 z"
+         style="fill:url(#paper_gradient-27);stroke:#464646;stroke-miterlimit:10" />
+      <path
+         id="circle291"
+         d="m 44.5,15.5 a 1,1 0 0 1 -1,1 1,1 0 0 1 -1,-1 1,1 0 0 1 1,-1 1,1 0 0 1 1,1 z"
+         style="fill:#464646" />
+      <path
+         id="rect293"
+         d="m 41.5,9.5 h 4 v 4 h -4 z"
+         style="fill:url(#paper_gradient-28);stroke:#464646;stroke-miterlimit:10" />
+      <path
+         id="circle295"
+         d="m 44.5,11.5 a 1,1 0 0 1 -1,1 1,1 0 0 1 -1,-1 1,1 0 0 1 1,-1 1,1 0 0 1 1,1 z"
+         style="fill:#464646" />
+      <path
+         id="rect297"
+         d="m 9.5,41.5 h 4 v 4 h -4 z"
+         style="fill:url(#paper_gradient-29);stroke:#464646;stroke-miterlimit:10" />
+      <path
+         id="circle299"
+         d="m 12.5,43.5 a 1,1 0 0 1 -1,1 1,1 0 0 1 -1,-1 1,1 0 0 1 1,-1 1,1 0 0 1 1,1 z"
+         style="fill:#464646" />
+      <path
+         id="rect301"
+         d="m 13.5,41.5 h 4 v 4 h -4 z"
+         style="fill:url(#paper_gradient-30);stroke:#464646;stroke-miterlimit:10" />
+      <path
+         id="circle303"
+         d="m 16.5,43.5 a 1,1 0 0 1 -1,1 1,1 0 0 1 -1,-1 1,1 0 0 1 1,-1 1,1 0 0 1 1,1 z"
+         style="fill:#464646" />
+      <path
+         id="rect305"
+         d="m 17.5,41.5 h 4 v 4 h -4 z"
+         style="fill:url(#paper_gradient-31);stroke:#464646;stroke-miterlimit:10" />
+      <path
+         id="circle307"
+         d="m 20.5,43.5 a 1,1 0 0 1 -1,1 1,1 0 0 1 -1,-1 1,1 0 0 1 1,-1 1,1 0 0 1 1,1 z"
+         style="fill:#464646" />
+      <path
+         id="rect309"
+         d="m 21.5,41.5 h 4 v 4 h -4 z"
+         style="fill:url(#paper_gradient-32);stroke:#464646;stroke-miterlimit:10" />
+      <path
+         id="circle311"
+         d="m 24.5,43.5 a 1,1 0 0 1 -1,1 1,1 0 0 1 -1,-1 1,1 0 0 1 1,-1 1,1 0 0 1 1,1 z"
+         style="fill:#464646" />
+      <path
+         id="rect313"
+         d="m 25.5,41.5 h 4 v 4 h -4 z"
+         style="fill:url(#paper_gradient-33);stroke:#464646;stroke-miterlimit:10" />
+      <path
+         id="circle315"
+         d="m 28.5,43.5 a 1,1 0 0 1 -1,1 1,1 0 0 1 -1,-1 1,1 0 0 1 1,-1 1,1 0 0 1 1,1 z"
+         style="fill:#464646" />
+      <path
+         id="rect317"
+         d="m 29.5,41.5 h 4 v 4 h -4 z"
+         style="fill:url(#paper_gradient-34);stroke:#464646;stroke-miterlimit:10" />
+      <path
+         id="circle319"
+         d="m 32.5,43.5 a 1,1 0 0 1 -1,1 1,1 0 0 1 -1,-1 1,1 0 0 1 1,-1 1,1 0 0 1 1,1 z"
+         style="fill:#464646" />
+      <path
+         id="rect321"
+         d="m 33.5,41.5 h 4 v 4 h -4 z"
+         style="fill:url(#paper_gradient-35);stroke:#464646;stroke-miterlimit:10" />
+      <path
+         id="circle323"
+         d="m 36.5,43.5 a 1,1 0 0 1 -1,1 1,1 0 0 1 -1,-1 1,1 0 0 1 1,-1 1,1 0 0 1 1,1 z"
+         style="fill:#464646" />
+      <path
+         id="rect325"
+         d="m 21.5,29.5 h 4 v 4 h -4 z"
+         style="fill:url(#paper_gradient-36);stroke:#464646;stroke-miterlimit:10" />
+      <path
+         id="circle327"
+         d="m 24.5,31.5 a 1,1 0 0 1 -1,1 1,1 0 0 1 -1,-1 1,1 0 0 1 1,-1 1,1 0 0 1 1,1 z"
+         style="fill:#464646" />
+      <path
+         id="rect329"
+         d="m 17.5,21.5 h 4 v 4 h -4 z"
+         style="fill:url(#paper_gradient-37);stroke:#464646;stroke-miterlimit:10" />
+      <path
+         id="circle331"
+         d="m 20.5,23.5 a 1,1 0 0 1 -1,1 1,1 0 0 1 -1,-1 1,1 0 0 1 1,-1 1,1 0 0 1 1,1 z"
+         style="fill:#464646" />
+      <path
+         id="circle333"
+         d="m 24.5,23.5 a 1,1 0 0 1 -1,1 1,1 0 0 1 -1,-1 1,1 0 0 1 1,-1 1,1 0 0 1 1,1 z"
+         style="fill:#147391" />
+      <path
+         id="circle335"
+         d="m 28.5,19.5 a 1,1 0 0 1 -1,1 1,1 0 0 1 -1,-1 1,1 0 0 1 1,-1 1,1 0 0 1 1,1 z"
+         style="fill:#147391" />
+      <path
+         id="circle337"
+         d="m 16.5,11.5 a 1,1 0 0 1 -1,1 1,1 0 0 1 -1,-1 1,1 0 0 1 1,-1 1,1 0 0 1 1,1 z"
+         style="fill:#147391" />
+      <path
+         id="circle339"
+         d="m 12.5,19.5 a 1,1 0 0 1 -1,1 1,1 0 0 1 -1,-1 1,1 0 0 1 1,-1 1,1 0 0 1 1,1 z"
+         style="fill:#147391" />
+      <path
+         id="circle341"
+         d="m 12.5,23.5 a 1,1 0 0 1 -1,1 1,1 0 0 1 -1,-1 1,1 0 0 1 1,-1 1,1 0 0 1 1,1 z"
+         style="fill:#147391" />
+      <path
+         id="circle343"
+         d="m 36.5,15.5 a 1,1 0 0 1 -1,1 1,1 0 0 1 -1,-1 1,1 0 0 1 1,-1 1,1 0 0 1 1,1 z"
+         style="fill:#147391" />
+      <path
+         id="circle345"
+         d="m 32.5,15.5 a 1,1 0 0 1 -1,1 1,1 0 0 1 -1,-1 1,1 0 0 1 1,-1 1,1 0 0 1 1,1 z"
+         style="fill:#147391" />
+      <path
+         id="circle347"
+         d="m 28.5,15.5 a 1,1 0 0 1 -1,1 1,1 0 0 1 -1,-1 1,1 0 0 1 1,-1 1,1 0 0 1 1,1 z"
+         style="fill:#147391" />
+      <path
+         id="rect349"
+         d="m 17.5,17.5 h 4 v 4 h -4 z"
+         style="fill:url(#paper_gradient-38);stroke:#464646;stroke-miterlimit:10" />
+      <path
+         id="circle351"
+         d="m 20.5,19.5 a 1,1 0 0 1 -1,1 1,1 0 0 1 -1,-1 1,1 0 0 1 1,-1 1,1 0 0 1 1,1 z"
+         style="fill:#464646" />
+      <path
+         id="rect353"
+         d="m 21.5,33.5 h 4 v 4 h -4 z"
+         style="fill:url(#paper_gradient-39);stroke:#464646;stroke-miterlimit:10" />
+      <path
+         id="circle355"
+         d="m 24.5,35.5 a 1,1 0 0 1 -1,1 1,1 0 0 1 -1,-1 1,1 0 0 1 1,-1 1,1 0 0 1 1,1 z"
+         style="fill:#464646" />
+      <path
+         id="circle357"
+         d="m 46.5,23.5 a 23,23 0 0 1 -23,23 23,23 0 0 1 -23,-23 23,23 0 0 1 23,-23 23,23 0 0 1 23,23 z"
+         style="fill:none;stroke:#464646;stroke-miterlimit:10" />
+    </g>
+    <path
+       id="path50"
+       d="m 43.323381,37.998197 4.17669,-1.480357 v -3.117645 l -4.17669,-1.481355 a 0.50008263,0.49978279 0 0 1 -0.314052,-0.633725 0.54909073,0.5487615 0 0 1 0.021,-0.05098 l 1.900314,-3.998261 -2.208365,-2.207041 -4.000661,1.899174 a 0.50008263,0.49978279 0 0 1 -0.66811,-0.231899 0.39306495,0.39282927 0 0 1 -0.018,-0.04298 L 36.55326,22.499933 h -3.120515 l -1.482244,4.153194 a 0.50708379,0.50677975 0 0 1 -0.656109,0.284877 l -0.03001,-0.013 -4.000661,-1.899174 -2.198363,2.211039 1.900313,3.998262 a 0.50008263,0.49978279 0 0 1 -0.240039,0.664712 0.45507519,0.45480234 0 0 1 -0.05101,0.02099 l -4.174689,1.479356 v 3.118644 l 4.17669,1.479358 a 0.50008263,0.49978279 0 0 1 0.314052,0.633724 c -0.006,0.01699 -0.013,0.03499 -0.021,0.05198 l -1.900315,3.998262 2.207365,2.207041 4.000661,-1.893177 a 0.50008263,0.49978279 0 0 1 0.66311,0.245893 0.39206478,0.3918297 0 0 1 0.023,0.05998 l 1.482245,4.198175 h 3.121516 l 1.482245,-4.198175 a 0.49008098,0.48978713 0 0 1 0.686114,-0.313864 l 4.00066,1.899175 2.207365,-2.206042 -1.900314,-3.998261 a 0.50008263,0.49978279 0 0 1 0.24004,-0.664712 0.41906925,0.41881798 0 0 1 0.04,-0.01999 z"
+       style="fill:url(#linear-gradient-3);stroke:#464646;stroke-width:0.99986535;stroke-linejoin:round"
+       inkscape:connector-curvature="0" />
+    <path
+       id="circle52"
+       d="m 38.498583,34.9995 a 3.5005785,3.4984796 0 1 1 -3.500578,-3.49848 3.5005785,3.4984796 0 0 1 3.500578,3.49848 z"
+       stroke-miterlimit="10"
+       style="fill:url(#linear-gradient-4);stroke:#464646;stroke-width:0.99986535;stroke-miterlimit:10"
+       inkscape:connector-curvature="0" />
+  </g>
+</svg>

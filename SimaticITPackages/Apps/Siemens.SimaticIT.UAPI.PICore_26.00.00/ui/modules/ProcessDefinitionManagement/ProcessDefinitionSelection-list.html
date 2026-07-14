@@ -1,0 +1,19 @@
+﻿<div id="ProcessDefinitionListContainer" class="content-area content-area-relative" style="width: 99%; height: calc(100% - 10px) !important">
+
+    <div class="pageInfo">
+        {{ 'picore.titles.processDefinitionSelectionHeader' | translate }} {{vm.entityNId}} {{vm.entityRevision}}
+    </div>
+    <sit-command-bar sit-type="action" sit-layout="vertical" sit-label-align="right" sit-vertical-autofixed="true">
+        <sit-command cmd-icon="Start"
+                     sit-name="com.siemens.customcommand.add"
+                     ng-click="vm.StartWorkProcessButtonHandler"
+                     sit-tooltip="{{ 'picore.buttonsAndTooltips.startWorkProcess' | translate }}"
+                     sit-label="{{ 'picore.buttonsAndTooltips.startWorkProcess' | translate }}"
+                     ng-show="vm.isButtonVisible"
+                     sit-type="main">
+        </sit-command>
+    </sit-command-bar>
+    <div id="ListContainer" style="height: calc(100% - 177px)">
+        <sit-item-collection-viewer sit-data="vm.viewerData" sit-options="vm.viewerOptions" style="display: inline-block; vertical-align: top;width: calc(100% - 70px)"></sit-item-collection-viewer>
+    </div>
+</div>

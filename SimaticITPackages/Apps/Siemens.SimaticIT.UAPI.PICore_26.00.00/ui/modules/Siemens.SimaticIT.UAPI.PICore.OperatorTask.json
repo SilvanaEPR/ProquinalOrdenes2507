@@ -1,0 +1,27 @@
+{
+  "name": "Siemens.SimaticIT.UAPI.PICore.OperatorTask",
+  "type": "standard",
+  "title": "Operator Task",
+  "icon": "svg cmdTaskOperatorExecution24",
+  "functionalBlock": "Siemens.SimaticIT.UAPI.PICore",
+  "dependencies": [],
+  "states": [
+    {
+      "id": "home.Siemens_SimaticIT_UAPI_PICore_OperatorTask_Home",
+      "title": "Home",
+      "icon": "svg cmdHome24",
+      "securable": true,
+      "header": "picore.titles.OperatorTaskHome"
+    },
+    {
+      "id": "home.Siemens_SimaticIT_UAPI_PICore_OperatorTask_OperatorTaskList",
+      "title": "Operator Task List",
+      "header": "Siemens.SimaticIT.UAPI.PICore.OperatorTask.common.OperatorTaskList",
+      "securable": true,
+      "icon": "svg typeTaskOperatorExecution48",
+      "roles": []
+    }
+  ],
+  "manifestVersion": "01.01.00",
+  "header": "picore.titles.OperatorTaskHome"
+}

@@ -1,0 +1,16 @@
+<svg version="1.1" id="Livello_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	  viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+<path class="aw-theme-iconOutline" fill="#464646" d="M3,17.133V24h17.988v-3.699h-0.976v2.721H3.977v-5.889H3z M3,0v8.551h0.977V0.977h10.179l5.867,6.076
+	L20,16.4h0.977L21,6.661L14.569,0H3z"/>
+<rect x="14" y="0.641" class="aw-theme-iconOutline" fill="#464646" width="1" height="6.359"/>
+<rect x="14.041" y="6" class="aw-theme-iconOutline" fill="#464646" width="6.224" height="1"/>
+<polygon class="aw-theme-iconOutline" fill="#464646" points="20.011,20.345 20.986,20.36 20.974,16.328 20,16.305 "/>
+<path class="aw-theme-iconOutline" fill="#464646" d="M1.118,9h16.765v8H1.118V9z M0,18h19V8H0V18z"/>
+<path class="aw-theme-iconOutline" fill="#464646" d="M3.736,13.871v1.93H2.475v-5.602h1.977c1.412,0,2.117,0.595,2.117,1.785c0,0.563-0.202,1.018-0.607,1.365
+	c-0.404,0.348-0.945,0.521-1.623,0.521H3.736z M3.736,11.168v1.746h0.496c0.672,0,1.008-0.295,1.008-0.883
+	c0-0.576-0.336-0.863-1.008-0.863H3.736z"/>
+<path class="aw-theme-iconOutline" fill="#464646" d="M7.389,15.801v-5.602h1.984c1.989,0,2.984,0.91,2.984,2.73c0,0.872-0.271,1.568-0.814,2.09
+	c-0.543,0.521-1.267,0.781-2.17,0.781H7.389z M8.65,11.227v3.551h0.625c0.547,0,0.976-0.164,1.287-0.492s0.467-0.775,0.467-1.34
+	c0-0.534-0.154-0.954-0.463-1.26c-0.309-0.307-0.741-0.459-1.299-0.459H8.65z"/>
+<path class="aw-theme-iconOutline" fill="#464646" d="M16.525,11.227h-1.977v1.375h1.816v1.023h-1.816v2.176h-1.262v-5.602h3.238V11.227z"/>
+</svg>

@@ -1,0 +1,21 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="linear-gradient" x1="55.922" y1="-51.673" x2="74.922" y2="-70.673" gradientTransform="matrix(0.835, 0, 0, -0.835, -42.144, -39.095)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#73b4c8"/>
+      <stop offset="0.175" stop-color="#6aaec3"/>
+      <stop offset="0.457" stop-color="#529eb5"/>
+      <stop offset="0.809" stop-color="#2c839f"/>
+      <stop offset="1" stop-color="#147391"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="55.922" y1="-51.673" x2="74.922" y2="-70.673" gradientTransform="matrix(0.835, 0, 0, -0.835, -20.144, -39.095)" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-3" x1="55.922" y1="-51.673" x2="74.922" y2="-70.673" gradientTransform="matrix(0.835, 0, 0, -0.835, -42.144, -16.095)" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-4" x1="55.922" y1="-51.673" x2="74.922" y2="-70.673" gradientTransform="matrix(0.835, 0, 0, -0.835, -20.144, -16.095)" xlink:href="#linear-gradient"/>
+  </defs>
+  <g id="g859">
+    <path id="path2" d="M48,13V11H35.415V0h-2V11h-20V0h-2V11H0v2H11.415V34H0v2H11.415V48h2V36h20V48h2V36H48V34H35.415V13ZM33.415,34h-20V13h20Z" fill="#969696"/>
+    <path d="M4.565,4.065h15.87v15.87H4.565Z" stroke="#464646" stroke-miterlimit="10" stroke-width="1.13" fill="url(#linear-gradient)"/>
+    <path id="XMLID_20_-6" data-name="XMLID 20 -6" d="M26.565,4.065h15.87v15.87H26.565Z" stroke="#464646" stroke-miterlimit="10" stroke-width="1.13" fill="url(#linear-gradient-2)"/>
+    <path id="XMLID_20_-0" data-name="XMLID 20 -0" d="M4.565,27.065h15.87v15.87H4.565Z" stroke="#464646" stroke-miterlimit="10" stroke-width="1.13" fill="url(#linear-gradient-3)"/>
+    <path id="XMLID_20_-6-5" data-name="XMLID 20 -6-5" d="M26.565,27.065h15.87v15.87H26.565Z" stroke="#464646" stroke-miterlimit="10" stroke-width="1.13" fill="url(#linear-gradient-4)"/>
+  </g>
+</svg>
