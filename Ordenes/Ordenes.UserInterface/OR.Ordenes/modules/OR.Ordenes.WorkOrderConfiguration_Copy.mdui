@@ -2,7 +2,7 @@
   "name": "OR.Ordenes.WorkOrderConfiguration_Copy",
   "type": "model-driven",
   "manifestVersion": "02.01.00",
-  "title": "Work Order Configuration",
+  "title": "Ordenes de Trabajo",
   "icon": "svg cmdWorkOrder24",
   "functionalBlock": "OR.Ordenes",
   "dependencies": [],
@@ -1154,6 +1154,25 @@
               "show": {
                 "expression": "contents.WorkOrderTile.selectedItemsCount == 1 && activeContent=='WorkOrderTile'"
               }
+            },
+            {
+              "id": "GoToOTL",
+              "title": "OR_Ordenes_WorkOrderConfiguration_Copy.GoToOTL",
+              "tooltip": "OR_Ordenes_WorkOrderConfiguration_Copy.GoToOTL",
+              "icon": "svg cmdTaskOperatorExecution24",
+              "main": false,
+              "params": {},
+              "behavior": {
+                "type": "navigation",
+                "destination": "home.Siemens_SimaticIT_UAPI_PICore_OperatorTask_OperatorTaskList",
+                "navigationParams": {
+                  "WorkOrderNId": "contents.WorkOrderTile.selectedItem.NId",
+                  "isItemSelected": "contents.WorkOrderTile.selectedItem"
+                }
+              },
+              "show": {
+                "expression": "contents.WorkOrderTile.selectedItemsCount <= 1 && activeContent=='WorkOrderTile'"
+              }
             }
           ],
           "readingFunctionRef": {
@@ -1770,7 +1789,27 @@
             }
           },
           "help": "",
-          "actions": [],
+          "actions": [
+            {
+              "id": "GoToOTL2",
+              "title": "OR_Ordenes_WorkOrderConfiguration_Copy.GoToOTL",
+              "tooltip": "OR_Ordenes_WorkOrderConfiguration_Copy.GoToOTL",
+              "icon": "svg cmdTaskOperatorExecution24",
+              "main": false,
+              "params": {},
+              "behavior": {
+                "type": "navigation",
+                "destination": "home.Siemens_SimaticIT_UAPI_PICore_OperatorTask_OperatorTaskList",
+                "navigationParams": {
+                  "WorkOrderNId": "contents.Master.selectedItem.NId",
+                  "isItemSelected": "contents.Master.selectedItem"
+                }
+              },
+              "show": {
+                "expression": "activeContent=='Overview'"
+              }
+            }
+          ],
           "readingFunctionRef": {
             "functionName": "RF_GetWorkOrderAndMaterialInfos",
             "app": "PICore",
@@ -3326,6 +3365,26 @@
               "show": {
                 "expression": "activeContent === 'WorkOrderOperation' && contents.WorkOrderOperation.selectedItem && contents.WorkOrderOperation.selectedItemsCount == 1 && contents.Master.selectedItem"
               }
+            },
+            {
+              "id": "GoToOTL3",
+              "title": "OR_Ordenes_WorkOrderConfiguration_Copy.GoToOTL",
+              "tooltip": "OR_Ordenes_WorkOrderConfiguration_Copy.GoToOTL",
+              "icon": "svg cmdTaskOperatorExecution24",
+              "main": false,
+              "params": {},
+              "behavior": {
+                "type": "navigation",
+                "destination": "home.Siemens_SimaticIT_UAPI_PICore_OperatorTask_OperatorTaskList",
+                "navigationParams": {
+                  "WorkOrderNId": "contents.Master.selectedItem.NId",
+                  "WorkOrderOperationNId": "contents.WorkOrderOperation.selectedItem.NId",
+                  "isItemSelected": "contents.WorkOrderOperation.selectedItem"
+                }
+              },
+              "show": {
+                "expression": "activeContent=='WorkOrderOperation'"
+              }
             }
           ],
           "entityRef": {
@@ -3657,6 +3716,25 @@
               },
               "show": {
                 "expression": "activeContent==='WorkProcesses' && contents.Master.selectedItem && contents.WorkProcesses.selectedItem"
+              }
+            },
+            {
+              "id": "GoToOTL4",
+              "title": "OR_Ordenes_WorkOrderConfiguration_Copy.GoToOTL",
+              "tooltip": "OR_Ordenes_WorkOrderConfiguration_Copy.GoToOTL",
+              "icon": "svg cmdTaskOperatorExecution24",
+              "main": false,
+              "params": {},
+              "behavior": {
+                "type": "navigation",
+                "destination": "home.Siemens_SimaticIT_UAPI_PICore_OperatorTask_OperatorTaskList",
+                "navigationParams": {
+                  "WorkOrderNId": "contents.Master.selectedItem.NId",
+                  "isItemSelected": "contents.Master.selectedItem"
+                }
+              },
+              "show": {
+                "expression": "activeContent=='WorkProcesses'"
               }
             }
           ],
@@ -4728,7 +4806,28 @@
             }
           },
           "help": "",
-          "actions": [],
+          "actions": [
+            {
+              "id": "GoToOTL5",
+              "title": "OR_Ordenes_WorkOrderConfiguration_Copy.GoToOTL",
+              "tooltip": "OR_Ordenes_WorkOrderConfiguration_Copy.GoToOTL",
+              "icon": "svg cmdTaskOperatorExecution24",
+              "main": false,
+              "params": {},
+              "behavior": {
+                "type": "navigation",
+                "destination": "home.Siemens_SimaticIT_UAPI_PICore_OperatorTask_OperatorTaskList",
+                "navigationParams": {
+                  "WorkOrderNId": "params.WorkOrder.NId",
+                  "WorkOrderOperationNId": "contents.Master.selectedItem.NId",
+                  "isItemSelected": "contents.Master.selectedItem"
+                }
+              },
+              "show": {
+                "expression": "activeContent=='Overview'"
+              }
+            }
+          ],
           "entityRef": {
             "entity": "WorkOrderOperation",
             "app": "PICore"
@@ -8524,6 +8623,26 @@
               },
               "show": {
                 "expression": "activeContent==='ProcessDefinitions' && contents.Master.selectedItem && contents.ProcessDefinitions.selectedItem"
+              }
+            },
+            {
+              "id": "GoToOTL6",
+              "title": "OR_Ordenes_WorkOrderConfiguration_Copy.GoToOTL",
+              "tooltip": "OR_Ordenes_WorkOrderConfiguration_Copy.GoToOTL",
+              "icon": "svg cmdTaskOperatorExecution24",
+              "main": false,
+              "params": {},
+              "behavior": {
+                "type": "navigation",
+                "destination": "home.Siemens_SimaticIT_UAPI_PICore_OperatorTask_OperatorTaskList",
+                "navigationParams": {
+                  "WorkOrderNId": "contents.Master.selectedItem.WorkOrder.NId",
+                  "WorkOrderOperationNId": "contents.Master.selectedItem.NId",
+                  "isItemSelected": "contents.Master.selectedItem"
+                }
+              },
+              "show": {
+                "expression": "activeContent=='ProcessDefinitions'"
               }
             }
           ],
