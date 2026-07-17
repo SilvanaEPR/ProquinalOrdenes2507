@@ -1154,25 +1154,6 @@
               "show": {
                 "expression": "contents.WorkOrderTile.selectedItemsCount == 1 && activeContent=='WorkOrderTile'"
               }
-            },
-            {
-              "id": "GoToOTL",
-              "title": "OR_Ordenes_WorkOrderConfiguration_Copy.GoToOTL",
-              "tooltip": "OR_Ordenes_WorkOrderConfiguration_Copy.GoToOTL",
-              "icon": "svg cmdTaskOperatorExecution24",
-              "main": false,
-              "params": {},
-              "behavior": {
-                "type": "navigation",
-                "destination": "home.Siemens_SimaticIT_UAPI_PICore_OperatorTask_OperatorTaskList",
-                "navigationParams": {
-                  "WorkOrderNId": "contents.WorkOrderTile.selectedItem.NId",
-                  "isItemSelected": "contents.WorkOrderTile.selectedItem"
-                }
-              },
-              "show": {
-                "expression": "contents.WorkOrderTile.selectedItemsCount <= 1 && activeContent=='WorkOrderTile'"
-              }
             }
           ],
           "readingFunctionRef": {
@@ -1789,27 +1770,7 @@
             }
           },
           "help": "",
-          "actions": [
-            {
-              "id": "GoToOTL2",
-              "title": "OR_Ordenes_WorkOrderConfiguration_Copy.GoToOTL",
-              "tooltip": "OR_Ordenes_WorkOrderConfiguration_Copy.GoToOTL",
-              "icon": "svg cmdTaskOperatorExecution24",
-              "main": false,
-              "params": {},
-              "behavior": {
-                "type": "navigation",
-                "destination": "home.Siemens_SimaticIT_UAPI_PICore_OperatorTask_OperatorTaskList",
-                "navigationParams": {
-                  "WorkOrderNId": "contents.Master.selectedItem.NId",
-                  "isItemSelected": "contents.Master.selectedItem"
-                }
-              },
-              "show": {
-                "expression": "activeContent=='Overview'"
-              }
-            }
-          ],
+          "actions": [],
           "readingFunctionRef": {
             "functionName": "RF_GetWorkOrderAndMaterialInfos",
             "app": "PICore",
@@ -3365,26 +3326,6 @@
               "show": {
                 "expression": "activeContent === 'WorkOrderOperation' && contents.WorkOrderOperation.selectedItem && contents.WorkOrderOperation.selectedItemsCount == 1 && contents.Master.selectedItem"
               }
-            },
-            {
-              "id": "GoToOTL3",
-              "title": "OR_Ordenes_WorkOrderConfiguration_Copy.GoToOTL",
-              "tooltip": "OR_Ordenes_WorkOrderConfiguration_Copy.GoToOTL",
-              "icon": "svg cmdTaskOperatorExecution24",
-              "main": false,
-              "params": {},
-              "behavior": {
-                "type": "navigation",
-                "destination": "home.Siemens_SimaticIT_UAPI_PICore_OperatorTask_OperatorTaskList",
-                "navigationParams": {
-                  "WorkOrderNId": "contents.Master.selectedItem.NId",
-                  "WorkOrderOperationNId": "contents.WorkOrderOperation.selectedItem.NId",
-                  "isItemSelected": "contents.WorkOrderOperation.selectedItem"
-                }
-              },
-              "show": {
-                "expression": "activeContent=='WorkOrderOperation'"
-              }
             }
           ],
           "entityRef": {
@@ -3716,25 +3657,6 @@
               },
               "show": {
                 "expression": "activeContent==='WorkProcesses' && contents.Master.selectedItem && contents.WorkProcesses.selectedItem"
-              }
-            },
-            {
-              "id": "GoToOTL4",
-              "title": "OR_Ordenes_WorkOrderConfiguration_Copy.GoToOTL",
-              "tooltip": "OR_Ordenes_WorkOrderConfiguration_Copy.GoToOTL",
-              "icon": "svg cmdTaskOperatorExecution24",
-              "main": false,
-              "params": {},
-              "behavior": {
-                "type": "navigation",
-                "destination": "home.Siemens_SimaticIT_UAPI_PICore_OperatorTask_OperatorTaskList",
-                "navigationParams": {
-                  "WorkOrderNId": "contents.Master.selectedItem.NId",
-                  "isItemSelected": "contents.Master.selectedItem"
-                }
-              },
-              "show": {
-                "expression": "activeContent=='WorkProcesses'"
               }
             }
           ],
@@ -4806,28 +4728,7 @@
             }
           },
           "help": "",
-          "actions": [
-            {
-              "id": "GoToOTL5",
-              "title": "OR_Ordenes_WorkOrderConfiguration_Copy.GoToOTL",
-              "tooltip": "OR_Ordenes_WorkOrderConfiguration_Copy.GoToOTL",
-              "icon": "svg cmdTaskOperatorExecution24",
-              "main": false,
-              "params": {},
-              "behavior": {
-                "type": "navigation",
-                "destination": "home.Siemens_SimaticIT_UAPI_PICore_OperatorTask_OperatorTaskList",
-                "navigationParams": {
-                  "WorkOrderNId": "params.WorkOrder.NId",
-                  "WorkOrderOperationNId": "contents.Master.selectedItem.NId",
-                  "isItemSelected": "contents.Master.selectedItem"
-                }
-              },
-              "show": {
-                "expression": "activeContent=='Overview'"
-              }
-            }
-          ],
+          "actions": [],
           "entityRef": {
             "entity": "WorkOrderOperation",
             "app": "PICore"
@@ -8624,26 +8525,6 @@
               "show": {
                 "expression": "activeContent==='ProcessDefinitions' && contents.Master.selectedItem && contents.ProcessDefinitions.selectedItem"
               }
-            },
-            {
-              "id": "GoToOTL6",
-              "title": "OR_Ordenes_WorkOrderConfiguration_Copy.GoToOTL",
-              "tooltip": "OR_Ordenes_WorkOrderConfiguration_Copy.GoToOTL",
-              "icon": "svg cmdTaskOperatorExecution24",
-              "main": false,
-              "params": {},
-              "behavior": {
-                "type": "navigation",
-                "destination": "home.Siemens_SimaticIT_UAPI_PICore_OperatorTask_OperatorTaskList",
-                "navigationParams": {
-                  "WorkOrderNId": "contents.Master.selectedItem.WorkOrder.NId",
-                  "WorkOrderOperationNId": "contents.Master.selectedItem.NId",
-                  "isItemSelected": "contents.Master.selectedItem"
-                }
-              },
-              "show": {
-                "expression": "activeContent=='ProcessDefinitions'"
-              }
             }
           ],
           "readingFunctionRef": {
@@ -8710,7 +8591,7 @@
       "id": "home.OR_Ordenes_WorkOrderConfiguration_Copy_RequiredLotsAndMTUs",
       "title": "Material Requirement Management",
       "header": "OR_Ordenes_WorkOrderConfiguration_Copy.WorkOrderOperationMaterialRequirementDetail",
-      "activeContent": "Master",
+      "activeContent": "",
       "layoutTemplate": "masterDetails",
       "icon": "svg typePartBom48",
       "securable": true,
@@ -9565,15 +9446,220 @@
           "id": "MTUsAndLots",
           "title": "OR_Ordenes_WorkOrderConfiguration_Copy.LotsAndMTUs",
           "query": "",
-          "multiplicity": "custom",
+          "multiplicity": "many",
           "master": false,
-          "properties": [],
+          "properties": [
+            {
+              "propertyRef": {
+                "entity": "MaterialRequirementMTU",
+                "app": "Siemens.SimaticIT.UAPI.PICore",
+                "property": "WorkOrderOperationMaterialRequirement"
+              },
+              "name": "WorkOrderOperationMaterialRequirement",
+              "label": "WorkOrderOperationMaterialRequirement",
+              "type": {},
+              "sortable": false,
+              "searchable": false
+            },
+            {
+              "propertyRef": {
+                "entity": "MaterialRequirementMTU",
+                "app": "Siemens.SimaticIT.UAPI.PICore",
+                "property": "MTUNId"
+              },
+              "name": "MTUNId",
+              "label": "MTUNId",
+              "type": "String",
+              "sortable": false,
+              "searchable": false
+            },
+            {
+              "propertyRef": {
+                "entity": "MaterialRequirementMTU",
+                "app": "Siemens.SimaticIT.UAPI.PICore",
+                "property": "MaterialLotNId"
+              },
+              "name": "MaterialLotNId",
+              "label": "MaterialLotNId",
+              "type": "String",
+              "sortable": false,
+              "searchable": false
+            },
+            {
+              "propertyRef": {
+                "entity": "MaterialRequirementMTU",
+                "app": "Siemens.SimaticIT.UAPI.PICore",
+                "property": "EquipmentNId"
+              },
+              "name": "EquipmentNId",
+              "label": "EquipmentNId",
+              "type": "String",
+              "sortable": false,
+              "searchable": false
+            },
+            {
+              "propertyRef": {
+                "entity": "MaterialRequirementMTU",
+                "app": "Siemens.SimaticIT.UAPI.PICore",
+                "property": "MTUAggregateNId"
+              },
+              "name": "MTUAggregateNId",
+              "label": "MTUAggregateNId",
+              "type": "String",
+              "sortable": false,
+              "searchable": false
+            },
+            {
+              "propertyRef": {
+                "entity": "MaterialRequirementMTU",
+                "app": "Siemens.SimaticIT.UAPI.PICore",
+                "property": "Quantity.UoMNId"
+              },
+              "name": "Quantity.UoMNId",
+              "label": "Quantity_UoMNId",
+              "type": "String",
+              "sortable": false,
+              "searchable": false
+            },
+            {
+              "propertyRef": {
+                "entity": "MaterialRequirementMTU",
+                "app": "Siemens.SimaticIT.UAPI.PICore",
+                "property": "Quantity.QuantityValue"
+              },
+              "name": "Quantity.QuantityValue",
+              "label": "Quantity_QuantityValue",
+              "type": "Decimal",
+              "sortable": false,
+              "searchable": false
+            },
+            {
+              "propertyRef": {
+                "entity": "MaterialRequirementMTU",
+                "app": "Siemens.SimaticIT.UAPI.PICore",
+                "property": "Id"
+              },
+              "name": "Id",
+              "label": "Id",
+              "type": "Guid",
+              "sortable": false,
+              "searchable": false
+            },
+            {
+              "propertyRef": {
+                "entity": "MaterialRequirementMTU",
+                "app": "Siemens.SimaticIT.UAPI.PICore",
+                "property": "IsFrozen"
+              },
+              "name": "IsFrozen",
+              "label": "IsFrozen",
+              "type": "Boolean",
+              "sortable": false,
+              "searchable": false
+            },
+            {
+              "propertyRef": {
+                "entity": "MaterialRequirementMTU",
+                "app": "Siemens.SimaticIT.UAPI.PICore",
+                "property": "CreatedOn"
+              },
+              "name": "CreatedOn",
+              "label": "CreatedOn",
+              "type": "DateTimeOffset",
+              "sortable": false,
+              "searchable": false
+            },
+            {
+              "propertyRef": {
+                "entity": "MaterialRequirementMTU",
+                "app": "Siemens.SimaticIT.UAPI.PICore",
+                "property": "LastUpdatedOn"
+              },
+              "name": "LastUpdatedOn",
+              "label": "LastUpdatedOn",
+              "type": "DateTimeOffset",
+              "sortable": false,
+              "searchable": false
+            },
+            {
+              "propertyRef": {
+                "entity": "MaterialRequirementMTU",
+                "app": "Siemens.SimaticIT.UAPI.PICore",
+                "property": "ToBeCleaned"
+              },
+              "name": "ToBeCleaned",
+              "label": "ToBeCleaned",
+              "type": "Boolean",
+              "sortable": false,
+              "searchable": false
+            }
+          ],
           "blueprintSettings": {
-            "viewOptions": "m",
-            "viewMode": "m",
-            "tileConfig": {},
+            "viewOptions": "g",
+            "viewMode": "g",
+            "tileConfig": {
+              "titleField": "",
+              "descriptionField": "",
+              "icon": "",
+              "isCell": false,
+              "propertyFields": [],
+              "indicators": [],
+              "commands": [],
+              "titleFieldSource": "",
+              "descriptionFieldSource": ""
+            },
             "gridConfig": {
-              "columnDefs": []
+              "columnDefs": [
+                {
+                  "field": "MTUNId",
+                  "displayName": "MTUNId",
+                  "type": "String",
+                  "visible": {
+                    "expression": ""
+                  }
+                },
+                {
+                  "field": "MaterialLotNId",
+                  "displayName": "MaterialLotNId",
+                  "type": "String",
+                  "visible": {
+                    "expression": ""
+                  }
+                },
+                {
+                  "field": "EquipmentNId",
+                  "displayName": "EquipmentNId",
+                  "type": "String",
+                  "visible": {
+                    "expression": ""
+                  }
+                },
+                {
+                  "field": "MTUAggregateNId",
+                  "displayName": "MTUAggregateNId",
+                  "type": "String",
+                  "visible": {
+                    "expression": ""
+                  }
+                },
+                {
+                  "field": "Quantity.UoMNId",
+                  "displayName": "Quantity_UoMNId",
+                  "type": "String",
+                  "visible": {
+                    "expression": ""
+                  }
+                },
+                {
+                  "field": "Quantity.QuantityValue",
+                  "displayName": "Quantity_QuantityValue",
+                  "type": "Decimal",
+                  "visible": {
+                    "expression": ""
+                  }
+                }
+              ],
+              "commands": []
             },
             "tagField": "",
             "pagingOptions": {
@@ -9593,14 +9679,31 @@
               "showMatchCase": false,
               "allowedOperators": "",
               "groupEnabled": false
-            }
+            },
+            "enablePaging": true,
+            "serverSidePagination": false,
+            "filterBarOptions": "sqg",
+            "tagsManager": false,
+            "downloadOptions": {
+              "enabled": true,
+              "fileName": "",
+              "separator": ""
+            },
+            "sortingDirection": "asc",
+            "exportManager": false
           },
           "help": "",
           "actions": [],
           "templatePath": "Siemens.SimaticIT.UAPI.PICore/modules/RequiredLotsAndMTUs/RequiredLotsAndMTUs.html",
           "entityRef": {
             "entity": "MaterialRequirementMTU",
-            "app": "PICore"
+            "app": "PICore",
+            "fullInfo": ""
+          },
+          "fieldSources": [],
+          "rootEntity": {
+            "name": "",
+            "app": ""
           }
         },
         "InspectionDefinition": {
